@@ -1,6 +1,5 @@
 package java
 
-
 import (
 	"encoding/json"
 	"fmt"
@@ -28,6 +27,22 @@ func TestOriginalToNode(t *testing.T) {
 	fmt.Println("NODE", n)
 }
 
+func TestAnnotate(t *testing.T) {
+	require := require.New(t)
+
+	f, err := getFixture("java_example_1.json")
+	require.NoError(err)
+
+	c := NewOriginalToNoder()
+	n, err := c.OriginalToNode(f)
+	require.NoError(err)
+	require.NotNil(n)
+
+	err = Annotate(n)
+	require.NoError(err)
+	fmt.Println("NODE", n)
+}
+
 func getFixture(name string) (map[string]interface{}, error) {
 	path := filepath.Join(fixtureDir, name)
 	f, err := os.Open(path)
@@ -48,4 +63,3 @@ func getFixture(name string) (map[string]interface{}, error) {
 
 	return data, nil
 }
-
