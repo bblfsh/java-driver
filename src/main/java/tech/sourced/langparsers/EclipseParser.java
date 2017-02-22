@@ -27,6 +27,7 @@ public class EclipseParser {
     private int nCount = 0;
     private JsonGenerator jG;
     private ObjectMapper mapper;
+    private CompilationUnit cu;
 
     /**
      * Creates a new EclipseParser
@@ -66,7 +67,7 @@ public class EclipseParser {
      */
     public int getAST() throws IOException {
 
-        final ASTNode cu = parser.createAST(null);
+        cu = (CompilationUnit)parser.createAST(null);
         jG.writeStartObject();
 
         jG.writeFieldName("CompilationUnit");
@@ -109,8 +110,11 @@ public class EclipseParser {
                 } else if (child != null) {
                     jG.writeFieldName(descriptor.getId());
                     jG.writeString(child.toString());
-                    jG.writeFieldName("StartPosition");
-                    jG.writeString(String.valueOf(node.getStartPosition()));
+                    jG.writeFieldName("startPosition");
+                    final int position = node.getStartPosition();
+                    jG.writeString(String.valueOf(position));
+                    jG.writeFieldName("line");
+                    jG.writeString(String.valueOf(cu.getLineNumber(position)));
                 }
             }
             jG.writeEndObject();
