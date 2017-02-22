@@ -27,6 +27,9 @@ var typeToRoleTable map[string][]uast.Role = map[string][]uast.Role{
 	"PackageDeclaration": []uast.Role{uast.PackageDeclaration},
 	"MethodDeclaration":  []uast.Role{uast.FunctionDeclaration},
 	"ImportDeclaration":  []uast.Role{uast.ImportDeclaration},
+	"QualifiedName":      []uast.Role{uast.QualifiedIdentifier},
+	"SimpleName":         []uast.Role{uast.SimpleIdentifier},
+	"IfStatement":        []uast.Role{uast.IfStatement},
 }
 
 // Annotate annotates the given UAST.
