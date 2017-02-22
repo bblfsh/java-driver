@@ -9,6 +9,8 @@ import (
 func NewOriginalToNoder() uast.OriginalToNoder {
 	return &uast.BaseOriginalToNoder{
 		InternalTypeKey: "internalClass",
+		LineKey:         "line",
+		OffsetKey:       "startPosition",
 	}
 }
 
