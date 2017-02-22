@@ -14,9 +14,12 @@ import com.fasterxml.jackson.databind.ser.std.StdSerializer;
 
 import org.eclipse.jdt.core.dom.*;
 
+import java.util.HashMap;
 import java.util.List;
 
 import java.io.*;
+import java.util.Map;
+
 
 public class EclipseParser {
 
@@ -92,6 +95,7 @@ public class EclipseParser {
 
         @Override
         public void serialize(ASTNode node, JsonGenerator jG, SerializerProvider provider) throws IOException {
+
             List<StructuralPropertyDescriptor> descriptorList = node.structuralPropertiesForType();
             nCount++;
             jG.writeStartObject();
@@ -105,6 +109,8 @@ public class EclipseParser {
                 } else if (child != null) {
                     jG.writeFieldName(descriptor.getId());
                     jG.writeString(child.toString());
+                    jG.writeFieldName("StartPosition");
+                    jG.writeString(String.valueOf(node.getStartPosition()));
                 }
             }
             jG.writeEndObject();
