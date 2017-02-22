@@ -1,0 +1,13 @@
+language: go
+
+go:
+  - 1.8
+
+services:
+  - docker
+
+script:
+  - make test
+
+after_success:
+  - make push

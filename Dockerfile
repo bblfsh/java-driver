@@ -1,6 +1,15 @@
-FROM openjdk:8-jdk-alpine
-MAINTAINER source{d}
+FROM alpine:3.5
 
-ADD jar /jar
+ARG NATIVE_RUNTIME_VERSION
+ENV NATIVE_RUNTIME_VERSION $NATIVE_RUNTIME_VERSION
 
-CMD ["./jar/babelfish-java-driver"]
+RUN apk add --no-cache openjdk8-jre="$NATIVE_RUNTIME_VERSION"
+
+WORKDIR /opt/driver/bin/
+
+ADD native/target/native-jar-with-dependencies.jar /opt/driver/bin/
+RUN echo "#!/bin/sh" > native && \
+    echo "java -jar native-jar-with-dependencies.jar" > native && \
+    chmod +x native
+
+CMD /opt/driver/bin/native

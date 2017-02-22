@@ -1,0 +1,13 @@
+FROM alpine:3.5
+
+ARG BUILD_USER
+ARG BUILD_UID
+RUN mkdir -p /opt/driver/src && \
+    adduser $BUILD_USER -u $BUILD_UID -D -h /opt/driver/src
+
+ARG NATIVE_RUNTIME_VERSION
+ENV NATIVE_RUNTIME_VERSION $NATIVE_RUNTIME_VERSION
+
+RUN apk add --no-cache make git maven openjdk8="$NATIVE_RUNTIME_VERSION"
+
+WORKDIR /opt/driver/src
