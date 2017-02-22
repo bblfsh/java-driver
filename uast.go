@@ -11,6 +11,12 @@ func NewOriginalToNoder() uast.OriginalToNoder {
 		InternalTypeKey: "internalClass",
 		LineKey:         "line",
 		OffsetKey:       "startPosition",
+		TokenKeys: map[string]bool{
+			"identifier":        true, // SimpleName
+			"escapedValue":      true, // StringLiteral
+			"keyword":           true, // Modifier
+			"primitiveTypeCode": true, // ?
+		},
 	}
 }
 
