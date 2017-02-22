@@ -23,6 +23,7 @@ func NewOriginalToNoder() uast.OriginalToNoder {
 var typeToRoleTable map[string][]uast.Role = map[string][]uast.Role{
 	"PackageDeclaration": []uast.Role{uast.PackageDeclaration},
 	"MethodDeclaration":  []uast.Role{uast.FunctionDeclaration},
+	"ImportDeclaration": []uast.Role{uast.ImportDeclaration},
 }
 
 // Annotate annotates the given UAST.
