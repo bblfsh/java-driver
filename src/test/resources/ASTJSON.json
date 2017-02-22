@@ -1,0 +1,168 @@
+{
+  "driver" : "Java8:1.0.0",
+  "ast" : {
+    "CompilationUnit" : {
+      "types" : [ {
+        "modifiers" : [ {
+          "keyword" : "public"
+        } ],
+        "interface" : "false",
+        "SimpleName/name" : {
+          "identifier" : "RunnableTest"
+        },
+        "bodyDeclarations" : [ {
+          "modifiers" : [ {
+            "keyword" : "public"
+          }, {
+            "keyword" : "static"
+          } ],
+          "constructor" : "false",
+          "PrimitiveType/returnType2" : {
+            "primitiveTypeCode" : "void"
+          },
+          "SimpleName/name" : {
+            "identifier" : "main"
+          },
+          "parameters" : [ {
+            "ArrayType/type" : {
+              "SimpleType/elementType" : {
+                "SimpleName/name" : {
+                  "identifier" : "String"
+                }
+              },
+              "dimensions" : [ { } ]
+            },
+            "varargs" : "false",
+            "SimpleName/name" : {
+              "identifier" : "args"
+            }
+          } ],
+          "Block/body" : {
+            "statements" : [ {
+              "MethodInvocation/expression" : {
+                "QualifiedName/expression" : {
+                  "SimpleName/qualifier" : {
+                    "identifier" : "System"
+                  },
+                  "SimpleName/name" : {
+                    "identifier" : "out"
+                  }
+                },
+                "SimpleName/name" : {
+                  "identifier" : "println"
+                },
+                "arguments" : [ {
+                  "escapedValue" : "\"=== RunnableTest ===\""
+                } ]
+              }
+            }, {
+              "SimpleType/type" : {
+                "SimpleName/name" : {
+                  "identifier" : "Runnable"
+                }
+              },
+              "fragments" : [ {
+                "SimpleName/name" : {
+                  "identifier" : "r1"
+                },
+                "ClassInstanceCreation/initializer" : {
+                  "SimpleType/type" : {
+                    "SimpleName/name" : {
+                      "identifier" : "Runnable"
+                    }
+                  },
+                  "AnonymousClassDeclaration/anonymousClassDeclaration" : {
+                    "bodyDeclarations" : [ {
+                      "modifiers" : [ {
+                        "SimpleName/typeName" : {
+                          "identifier" : "Override"
+                        }
+                      }, {
+                        "keyword" : "public"
+                      } ],
+                      "constructor" : "false",
+                      "PrimitiveType/returnType2" : {
+                        "primitiveTypeCode" : "void"
+                      },
+                      "SimpleName/name" : {
+                        "identifier" : "run"
+                      },
+                      "Block/body" : {
+                        "statements" : [ {
+                          "MethodInvocation/expression" : {
+                            "QualifiedName/expression" : {
+                              "SimpleName/qualifier" : {
+                                "identifier" : "System"
+                              },
+                              "SimpleName/name" : {
+                                "identifier" : "out"
+                              }
+                            },
+                            "SimpleName/name" : {
+                              "identifier" : "println"
+                            },
+                            "arguments" : [ {
+                              "escapedValue" : "\"Hello world one!\""
+                            } ]
+                          }
+                        } ]
+                      }
+                    } ]
+                  }
+                }
+              } ]
+            }, {
+              "SimpleType/type" : {
+                "SimpleName/name" : {
+                  "identifier" : "Runnable"
+                }
+              },
+              "fragments" : [ {
+                "SimpleName/name" : {
+                  "identifier" : "r2"
+                },
+                "LambdaExpression/initializer" : {
+                  "parentheses" : "true",
+                  "MethodInvocation/body" : {
+                    "QualifiedName/expression" : {
+                      "SimpleName/qualifier" : {
+                        "identifier" : "System"
+                      },
+                      "SimpleName/name" : {
+                        "identifier" : "out"
+                      }
+                    },
+                    "SimpleName/name" : {
+                      "identifier" : "println"
+                    },
+                    "arguments" : [ {
+                      "escapedValue" : "\"Hello world two!\""
+                    } ]
+                  }
+                }
+              } ]
+            }, {
+              "MethodInvocation/expression" : {
+                "SimpleName/expression" : {
+                  "identifier" : "r1"
+                },
+                "SimpleName/name" : {
+                  "identifier" : "run"
+                }
+              }
+            }, {
+              "MethodInvocation/expression" : {
+                "SimpleName/expression" : {
+                  "identifier" : "r2"
+                },
+                "SimpleName/name" : {
+                  "identifier" : "run"
+                }
+              }
+            } ]
+          }
+        } ]
+      } ]
+    }
+  }
+}
