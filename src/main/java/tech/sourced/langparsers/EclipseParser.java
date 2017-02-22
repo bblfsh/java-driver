@@ -101,6 +101,11 @@ public class EclipseParser {
             nCount++;
             jG.writeStartObject();
 
+            final int Ntype = node.getNodeType();
+            String ClassName = node.nodeClassForType(Ntype).getName().substring(25);
+            jG.writeFieldName("internalClass");
+            jG.writeString(ClassName);
+
             for (StructuralPropertyDescriptor descriptor : descriptorList) {
                 Object child = node.getStructuralProperty(descriptor);
                 if (child instanceof List) {
@@ -135,9 +140,7 @@ public class EclipseParser {
 
         private void serializeChild(ASTNode child, StructuralPropertyDescriptor descriptor, SerializerProvider provider) throws IOException {
 
-            final int Ntype = child.getNodeType();
-            String ClassName = child.nodeClassForType(Ntype).getName().substring(25);
-            jG.writeFieldName(ClassName.concat("/").concat(descriptor.getId()));
+            jG.writeFieldName(descriptor.getId());
             serialize(child, jG, provider);
         }
     }
