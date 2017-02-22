@@ -43,6 +43,24 @@ func TestAnnotate(t *testing.T) {
 	fmt.Println("NODE", n)
 }
 
+func TestNodeTokens(t *testing.T) {
+	require := require.New(t)
+
+	f, err := getFixture("java_example_1.json")
+	require.NoError(err)
+
+	c := NewOriginalToNoder()
+	n, err := c.OriginalToNode(f)
+	require.NoError(err)
+	require.NotNil(n)
+
+	tokens := n.Tokens()
+	require.True(len(tokens) > 0)
+	for _, tk := range tokens {
+		fmt.Println("TOKEN", tk)
+	}
+}
+
 func getFixture(name string) (map[string]interface{}, error) {
 	path := filepath.Join(fixtureDir, name)
 	f, err := os.Open(path)

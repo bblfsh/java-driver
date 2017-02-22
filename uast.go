@@ -17,13 +17,16 @@ func NewOriginalToNoder() uast.OriginalToNoder {
 			"keyword":           true, // Modifier
 			"primitiveTypeCode": true, // ?
 		},
+		SyntheticTokens: map[string]string{
+			"PackageDeclaration": "package",
+		},
 	}
 }
 
 var typeToRoleTable map[string][]uast.Role = map[string][]uast.Role{
 	"PackageDeclaration": []uast.Role{uast.PackageDeclaration},
 	"MethodDeclaration":  []uast.Role{uast.FunctionDeclaration},
-	"ImportDeclaration": []uast.Role{uast.ImportDeclaration},
+	"ImportDeclaration":  []uast.Role{uast.ImportDeclaration},
 }
 
 // Annotate annotates the given UAST.
