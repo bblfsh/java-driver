@@ -23,25 +23,17 @@ func NewOriginalToNoder() uast.OriginalToNoder {
 	}
 }
 
-var typeToRoleTable map[string][]uast.Role = map[string][]uast.Role{
-	"PackageDeclaration": []uast.Role{uast.PackageDeclaration},
-	"MethodDeclaration":  []uast.Role{uast.FunctionDeclaration},
-	"ImportDeclaration":  []uast.Role{uast.ImportDeclaration},
-	"QualifiedName":      []uast.Role{uast.QualifiedIdentifier},
-	"SimpleName":         []uast.Role{uast.SimpleIdentifier},
-	"IfStatement":        []uast.Role{uast.IfStatement},
-}
+var annotationRules uast.Rule = uast.Rules(
+	uast.OnInternalType("PackageDeclaration").Role(uast.PackageDeclaration),
+	uast.OnInternalType("MethodDeclaration").Role(uast.FunctionDeclaration),
+	uast.OnInternalType("ImportDeclaration").Role(uast.ImportDeclaration),
+	uast.OnInternalType("ImportDeclaration", "QualifiedName").Role(uast.ImportPath),
+	uast.OnInternalType("QualifiedName").Role(uast.QualifiedIdentifier),
+	uast.OnInternalType("SimpleName").Role(uast.SimpleIdentifier),
+	uast.OnInternalType("IfStatement").Role(uast.IfStatement),
+)
 
 // Annotate annotates the given UAST.
 func Annotate(n *uast.Node) error {
-	return uast.PreOrderVisit(n, annotate)
-}
-
-func annotate(n *uast.Node) error {
-	roles, ok := typeToRoleTable[n.InternalType]
-	if ok {
-		n.Roles = append(n.Roles, roles...)
-	}
-
-	return nil
+	return uast.PreOrderVisit(n, annotationRules)
 }
