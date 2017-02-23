@@ -8,7 +8,7 @@ services:
 
 before_script:
   - go get -v github.com/bblfsh/sdk/...
-  - bblfsh-sdk build-system .
+  - bblfsh-sdk prepare-build .
 
 script:
   - make test

@@ -1,8 +1,3 @@
-# Config
-LANGUAGE := java
-NATIVE_RUNTIME_VERSION := 8.121.13-r0
-
-# Java
 MVN_CMD := mvn
 
 test-native:
