@@ -6,6 +6,10 @@ go:
 services:
   - docker
 
+before_script:
+  - go get -v github.com/bblfsh/sdk/...
+  - bblfsh-sdk build-system .
+
 script:
   - make test
 
