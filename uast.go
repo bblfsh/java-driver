@@ -20,6 +20,7 @@ func NewOriginalToNoder() uast.OriginalToNoder {
 		},
 		SyntheticTokens: map[string]string{
 			"PackageDeclaration": "package",
+			"IfStatement":        "if",
 		},
 		//TODO: add names of children (e.g. elseStatement) as
 		//      children node properties.
@@ -33,7 +34,9 @@ var annotationRules uast.Rule = uast.Rules(
 	uast.OnInternalType("ImportDeclaration", "QualifiedName").Role(uast.ImportPath),
 	uast.OnInternalType("QualifiedName").Role(uast.QualifiedIdentifier),
 	uast.OnInternalType("SimpleName").Role(uast.SimpleIdentifier),
-	uast.OnInternalType("IfStatement").Role(uast.IfStatement),
+	uast.OnInternalType("IfStatement").Role(uast.If, uast.Statement),
+	uast.OnInternalRole("elseStatement").Role(uast.IfElse, uast.Statement),
+	//TODO: IfBody, IfCondition
 )
 
 // Annotate annotates the given UAST.
