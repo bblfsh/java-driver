@@ -1,12 +1,14 @@
 package java
 
 import (
+	"bytes"
 	"encoding/json"
 	"fmt"
 	"os"
 	"path/filepath"
 	"testing"
 
+	"github.com/bblfsh/sdk/uast"
 	"github.com/stretchr/testify/require"
 )
 
@@ -41,6 +43,26 @@ func TestAnnotate(t *testing.T) {
 	err = Annotate(n)
 	require.NoError(err)
 	fmt.Println("NODE", n)
+}
+
+func TestAnnotatePrettyAnnotationsOnly(t *testing.T) {
+	require := require.New(t)
+
+	f, err := getFixture("java_example_1.json")
+	require.NoError(err)
+
+	c := NewOriginalToNoder()
+	n, err := c.OriginalToNode(f)
+	require.NoError(err)
+	require.NotNil(n)
+
+	err = Annotate(n)
+	require.NoError(err)
+
+	buf := bytes.NewBuffer(nil)
+	err = n.Pretty(buf, uast.IncludeAnnotations|uast.IncludeChildren|uast.IncludeTokens)
+	require.NoError(err)
+	fmt.Println(buf.String())
 }
 
 func TestNodeTokens(t *testing.T) {

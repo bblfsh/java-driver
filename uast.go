@@ -11,6 +11,7 @@ func NewOriginalToNoder() uast.OriginalToNoder {
 		InternalTypeKey: "internalClass",
 		LineKey:         "line",
 		OffsetKey:       "startPosition",
+		//TODO: Should this be part of the UAST rules?
 		TokenKeys: map[string]bool{
 			"identifier":        true, // SimpleName
 			"escapedValue":      true, // StringLiteral
@@ -20,6 +21,8 @@ func NewOriginalToNoder() uast.OriginalToNoder {
 		SyntheticTokens: map[string]string{
 			"PackageDeclaration": "package",
 		},
+		//TODO: add names of children (e.g. elseStatement) as
+		//      children node properties.
 	}
 }
 
