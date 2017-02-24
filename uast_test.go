@@ -43,6 +43,15 @@ func TestAnnotate(t *testing.T) {
 	err = Annotate(n)
 	require.NoError(err)
 	fmt.Println("NODE", n)
+
+	missingRole := make(map[string]bool)
+	for _, n := range uast.FindAll(n, uast.OnNoRole) {
+		missingRole[n.InternalType] = true
+	}
+
+	for k := range missingRole {
+		fmt.Println("NO ROLE", k)
+	}
 }
 
 func TestAnnotatePrettyAnnotationsOnly(t *testing.T) {
