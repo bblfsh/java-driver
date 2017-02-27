@@ -44,6 +44,9 @@ var AnnotationRules uast.Rule = uast.Rules(
 	uast.OnInternalType("MethodInvocation").Role(uast.MethodInvocation),
 	uast.OnInternalType("IfStatement").Role(uast.If, uast.Statement),
 	uast.OnInternalRole("elseStatement").Role(uast.IfElse, uast.Statement),
+	uast.OnPath(uast.OnInternalType("Assignment")).Role(uast.Assignment),
+	uast.OnPath(uast.OnInternalType("Assignment"), uast.OnInternalRole("leftHandSide")).Role(uast.AssignmentVariable),
+	uast.OnPath(uast.OnInternalType("Assignment"), uast.OnInternalRole("rightHandSide")).Role(uast.AssignmentValue),
 	//TODO: IfBody, IfCondition
 	uast.OnInternalType("NullLiteral").Role(uast.NullLiteral, uast.Literal),
 	uast.OnInternalType("StringLiteral").Role(uast.StringLiteral, uast.Literal),
