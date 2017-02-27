@@ -10,6 +10,9 @@ import org.eclipse.jdt.core.dom.StructuralPropertyDescriptor;
 import java.io.IOException;
 import java.util.List;
 
+/**
+ * Custom Jackson serializer for jdt.core.dom.CompilationUnit
+ */
 public class CompilationUnitSerializer extends StdSerializer<CompilationUnit> {
 
     public CompilationUnitSerializer() {

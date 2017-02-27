@@ -2,10 +2,7 @@ package tech.sourced.babelfish;
 
 import org.apache.commons.io.IOUtils;
 
-import java.io.BufferedInputStream;
-import java.io.BufferedOutputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
+import java.io.*;
 
 public class Main {
 
@@ -13,11 +10,14 @@ public class Main {
 
         BufferedInputStream in = new BufferedInputStream(System.in);
         BufferedOutputStream out = new BufferedOutputStream(System.out);
+        //String sample = "{\"action\" : \"getAST\",\"language\" : \"Java\",\"languageVersion\" : \"8\",\"content\" : \"package Hello;\\n\\n pu####~~~blic class Hello {\\n    1public static void main(String\\n }\\n\"}";
+        //BufferedInputStream in = new BufferedInputStream(new ByteArrayInputStream(sample.getBytes()));
 
         while (true) {
             try {
                 process(in, out);
             } catch (IOException e) {
+                //This should never happen
                 System.out.println("Can't write in the output given " + e.toString());
             }
         }
@@ -33,22 +33,30 @@ public class Main {
 
         while (true) {
             String inStr;
+            final DriverResponse response = new DriverResponse("1.0.0", "Java", "8");
             try {
                 inStr = IOUtils.toString(in, "UTF-8");
+                final DriverRequest request = DriverRequest.unpack(inStr);
+                response.setMapper(responseMapper);
+                response.makeResponse(parser, request.content);
+                response.pack();
+
+                baos.flush();
+                out.write(baos.toByteArray());
+                out.flush();
             } catch (IOException e) {
-                out.write(("A problem occurred while reading " + e.toString()).getBytes());
+
+                response.setMapper(responseMapper);
+                response.cu = null;
+                response.errors.add("IOException");
+                response.errors.add("A problem occurred while reading " + e.toString());
+                response.pack();
+
+                out.write(baos.toByteArray());
                 out.flush();
                 return;
             }
-            DriverRequest request = DriverRequest.unpack(inStr);
-            DriverResponse response = new DriverResponse("1.0.0", "Java", "8");
-            response.setMapper(responseMapper);
-            response.makeResponse(parser, request.getContent());
-            response.pack();
 
-            baos.flush();
-            out.write(baos.toByteArray());
-            out.flush();
         }
     }
 }
