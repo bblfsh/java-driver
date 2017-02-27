@@ -1,4 +1,4 @@
-package java
+package normalizer
 
 import (
 	"github.com/bblfsh/sdk/uast"
