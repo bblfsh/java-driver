@@ -7,7 +7,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.IOException;
 
 /**
- *  Class for the java driver request.
+ * Class for the java driver request.
  */
 public class DriverRequest {
 
@@ -21,10 +21,10 @@ public class DriverRequest {
     /**
      * Creates a new DriverRequest
      *
-     * @param action to do with the content
-     * @param language languaje of the content always java
+     * @param action          to do with the content
+     * @param language        languaje of the content always java
      * @param languageVersion version of the lenguaje
-     * @param content content of the petition, the code to parse
+     * @param content         content of the petition, the code to parse
      */
     public DriverRequest(String action, String language, String languageVersion, String content) {
         this.content = content;

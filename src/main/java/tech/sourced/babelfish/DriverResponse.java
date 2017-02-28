@@ -14,11 +14,11 @@ import java.util.ArrayList;
  * Class for the java driver response
  */
 public class DriverResponse {
-    public String status = "ok";
-    public ArrayList<String> errors = new ArrayList<String>(0);
     final public String driver;
     final public String language;
     final public String languageVersion;
+    public String status = "ok";
+    public ArrayList<String> errors = new ArrayList<String>(0);
     @JsonProperty("AST")
     public CompilationUnit cu;
     private ObjectMapper mapper;
@@ -27,11 +27,11 @@ public class DriverResponse {
     /**
      * Create a new DriverResponse
      *
-     * @param driver version of the driver
-     * @param language languaje for which the driver is made, always java
+     * @param driver          version of the driver
+     * @param language        languaje for which the driver is made, always java
      * @param languageVersion version of the language
      */
-    public DriverResponse(String driver, String language, String languageVersion){
+    public DriverResponse(String driver, String language, String languageVersion) {
         this.driver = driver;
         this.language = language;
         this.languageVersion = languageVersion;
@@ -59,7 +59,7 @@ public class DriverResponse {
             cu = parser.getAST(source);
         } catch (IOException e) {
             errors.add("IOException");
-            errors.add(e.toString());
+            errors.add(e.getMessage());
             status = "error";
         }
     }
