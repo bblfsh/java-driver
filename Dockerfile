@@ -1,6 +1,9 @@
-FROM openjdk:8-jdk-alpine
-MAINTAINER source{d}
+FROM alpine:3.5
 
-ADD jar /jar
+ARG RUNTIME_NATIVE_VERSION
+ENV RUNTIME_NATIVE_VERSION $RUNTIME_NATIVE_VERSION
 
-CMD ["./jar/babelfish-java-driver"]
+RUN apk add --no-cache openjdk8-jre="$RUNTIME_NATIVE_VERSION"
+
+ADD build /opt/driver/bin
+CMD /opt/driver/bin/driver
