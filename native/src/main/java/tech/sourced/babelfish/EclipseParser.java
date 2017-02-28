@@ -29,7 +29,7 @@ public class EclipseParser {
      * @return CompilationUnit of the AST
      * @throws IOException if anything related to I/O or Json generation failed
      */
-    public CompilationUnit getAST(String source) throws IOException {
+    public CompilationUnit parse(String source) throws IOException {
         parser.setSource(source.toCharArray());
         return (CompilationUnit) parser.createAST(null);
 

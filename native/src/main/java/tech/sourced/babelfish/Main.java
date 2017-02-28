@@ -11,15 +11,14 @@ public class Main {
 
         BufferedInputStream in = new BufferedInputStream(System.in);
         BufferedOutputStream out = new BufferedOutputStream(System.out);
-        //String sample = "{\"action\" : \"getAST\",\"language\" : \"Java\",\"languageVersion\" : \"8\",\"content\" : \"package Hello;\\n\\n pu####~~~blic class Hello {\\n    1public static void main(String\\n }\\n\"}";
-        //BufferedInputStream in = new BufferedInputStream(new ByteArrayInputStream(sample.getBytes()));
 
         while (true) {
             try {
                 process(in, out);
             } catch (IOException e) {
-                //This should never happen
-                System.out.println("Can't write in the output given " + e.toString());
+                //This exception only occurs when you can't write in System.out
+                System.err.println("Can't write in the output given " + e.toString());
+                System.exit(1);
             }
         }
 

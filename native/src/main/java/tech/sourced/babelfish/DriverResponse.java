@@ -56,7 +56,7 @@ public class DriverResponse {
      */
     public void makeResponse(EclipseParser parser, String source) {
         try {
-            cu = parser.getAST(source);
+            cu = parser.parse(source);
         } catch (IOException e) {
             errors.add("IOException");
             errors.add(e.getMessage());

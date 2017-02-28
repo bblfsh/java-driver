@@ -38,7 +38,7 @@ public class Java8ParserTest {
         final ByteArrayOutputStream baos = new ByteArrayOutputStream();
         final RequestResponseMapper.RequestMapper responseMapper = mapperGen.getRequestMapper(baos);
 
-        DriverRequest request = new DriverRequest("getAST", "Java", "8", source);
+        DriverRequest request = new DriverRequest("parse", "Java", "8", source);
         request.setMapper(responseMapper);
         request.pack();
 
