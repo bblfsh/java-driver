@@ -9,10 +9,10 @@ public class Main {
 
     public static void main(String args[]) {
 
-        //BufferedInputStream in = new BufferedInputStream(System.in);
+        BufferedInputStream in = new BufferedInputStream(System.in);
         BufferedOutputStream out = new BufferedOutputStream(System.out);
-        String sample = "{\"action\" : \"getAST\",\"language\" : \"Java\",\"languageVersion\" : \"8\",\"content\" : \"package Hello;\\n\\n pu####~~~blic class Hello {\\n    1public static void main(String\\n }\\n\"}";
-        BufferedInputStream in = new BufferedInputStream(new ByteArrayInputStream(sample.getBytes()));
+        //String sample = "{\"action\" : \"getAST\",\"language\" : \"Java\",\"languageVersion\" : \"8\",\"content\" : \"package Hello;\\n\\n pu####~~~blic class Hello {\\n    1public static void main(String\\n }\\n\"}";
+        //BufferedInputStream in = new BufferedInputStream(new ByteArrayInputStream(sample.getBytes()));
 
         while (true) {
             try {
