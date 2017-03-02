@@ -9,7 +9,10 @@ public class Main {
 
     public static void main(String args[]) {
 
-        BufferedInputStream in = new BufferedInputStream(System.in);
+        BufferedReader in =new  BufferedReader(new InputStreamReader(System.in));
+        //String sample = "{\"action\" : \"getAST\",\"language\" : \"Java\",\"languageVersion\" : \"8\",\"content\" : \"package Hello;\\n\\n pu####~~~blic class Hello {\\n    1public static void main(String\\n }\\n\"}";
+
+        //BufferedReader in =new  BufferedReader(new StringReader(sample));
         BufferedOutputStream out = new BufferedOutputStream(System.out);
 
         while (true) {
@@ -24,7 +27,7 @@ public class Main {
 
     }
 
-    static private void process(BufferedInputStream in, BufferedOutputStream out) throws IOException {
+    static private void process(BufferedReader in, BufferedOutputStream out) throws IOException {
 
         final EclipseParser parser = new EclipseParser();
         final RequestResponseMapper mapperGen = new RequestResponseMapper(true);
@@ -32,11 +35,12 @@ public class Main {
         final RequestResponseMapper.ResponseMapper responseMapper = mapperGen.getResponseMapper(baos);
 
         while (true) {
-            String inStr;
+
+
             final DriverResponse response = new DriverResponse("1.0.0", "Java", "8");
             response.setMapper(responseMapper);
             try {
-                inStr = IOUtils.toString(in, "UTF-8");
+                final String inStr = in.readLine();
                 DriverRequest request;
                 try{
                     request = DriverRequest.unpack(inStr);
@@ -46,9 +50,9 @@ public class Main {
                 }
                 response.makeResponse(parser, request.content);
                 response.pack();
+                out.write(baos.toByteArray());
                 baos.flush();
                 baos.reset();
-                out.write(baos.toByteArray());
                 out.flush();
             }catch(JsonMappingException e){
                 exceptionPrinter(e,"Error serializing the AST to JSON: ",baos,out,response);
