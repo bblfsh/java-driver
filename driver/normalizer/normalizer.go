@@ -6,10 +6,10 @@ import (
 	"github.com/bblfsh/sdk/uast"
 )
 
-// NewOriginalToNoder creates a new uast.OriginalToNoder to convert
+// NewToNoder creates a new uast.ToNoder to convert
 // Java ASTs to UAST.
-func NewOriginalToNoder() uast.OriginalToNoder {
-	return &uast.BaseOriginalToNoder{
+func NewToNoder() uast.ToNoder {
+	return &uast.BaseToNoder{
 		InternalTypeKey: "internalClass",
 		LineKey:         "line",
 		OffsetKey:       "startPosition",

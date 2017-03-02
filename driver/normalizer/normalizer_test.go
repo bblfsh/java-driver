@@ -16,14 +16,14 @@ var (
 	fixtureDir = "fixtures"
 )
 
-func TestOriginalToNode(t *testing.T) {
+func TestToNoder(t *testing.T) {
 	require := require.New(t)
 
 	f, err := getFixture("java_example_1.json")
 	require.NoError(err)
 
-	c := NewOriginalToNoder()
-	n, err := c.OriginalToNode(f)
+	c := NewToNoder()
+	n, err := c.ToNode(f)
 	require.NoError(err)
 	require.NotNil(n)
 	fmt.Println("NODE", n)
@@ -35,8 +35,8 @@ func TestAnnotate(t *testing.T) {
 	f, err := getFixture("java_example_1.json")
 	require.NoError(err)
 
-	c := NewOriginalToNoder()
-	n, err := c.OriginalToNode(f)
+	c := NewToNoder()
+	n, err := c.ToNode(f)
 	require.NoError(err)
 	require.NotNil(n)
 
@@ -60,8 +60,8 @@ func TestAnnotatePrettyAnnotationsOnly(t *testing.T) {
 	f, err := getFixture("java_example_1.json")
 	require.NoError(err)
 
-	c := NewOriginalToNoder()
-	n, err := c.OriginalToNode(f)
+	c := NewToNoder()
+	n, err := c.ToNode(f)
 	require.NoError(err)
 	require.NotNil(n)
 
@@ -69,7 +69,7 @@ func TestAnnotatePrettyAnnotationsOnly(t *testing.T) {
 	require.NoError(err)
 
 	buf := bytes.NewBuffer(nil)
-	err = n.Pretty(buf, uast.IncludeAnnotations|uast.IncludeChildren|uast.IncludeTokens)
+	err = uast.Pretty(n, buf, uast.IncludeAnnotations|uast.IncludeChildren|uast.IncludeTokens)
 	require.NoError(err)
 	fmt.Println(buf.String())
 }
@@ -80,12 +80,12 @@ func TestNodeTokens(t *testing.T) {
 	f, err := getFixture("java_example_1.json")
 	require.NoError(err)
 
-	c := NewOriginalToNoder()
-	n, err := c.OriginalToNode(f)
+	c := NewToNoder()
+	n, err := c.ToNode(f)
 	require.NoError(err)
 	require.NotNil(n)
 
-	tokens := n.Tokens()
+	tokens := uast.Tokens(n)
 	require.True(len(tokens) > 0)
 	for _, tk := range tokens {
 		fmt.Println("TOKEN", tk)
