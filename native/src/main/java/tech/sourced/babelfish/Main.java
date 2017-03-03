@@ -8,9 +8,6 @@ public class Main {
 
     public static void main(String args[]) {
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
-        //String sample = "{\"action\" : \"getAST\",\"language\" : \"Java\",\"languageVersion\" : \"8\",\"content\" : \"package Hello;\\n\\n pu####~~~blic class Hello {\\n    1public static void main(String\\n }\\n\"}";
-
-        //BufferedReader in =new  BufferedReader(new StringReader(sample));
         BufferedOutputStream out = new BufferedOutputStream(System.out);
 
         while (true) {
