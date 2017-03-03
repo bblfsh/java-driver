@@ -10,7 +10,6 @@ import java.io.IOException;
  * Class for the java driver request.
  */
 public class DriverRequest {
-
     public String action;
     public String language;
     public String languageVersion;
@@ -23,7 +22,7 @@ public class DriverRequest {
      *
      * @param action          to do with the content
      * @param language        languaje of the content always java
-     * @param languageVersion version of the lenguaje
+     * @param languageVersion version of the language
      * @param content         content of the petition, the code to parse
      */
     public DriverRequest(String action, String language, String languageVersion, String content) {
@@ -42,10 +41,9 @@ public class DriverRequest {
      *
      * @param in String to deserialize
      * @return DriverRequest object from the string
-     * @throws IOException when it's impossible to Jackson to deserialize
+     * @throws IOException when it's impossible for Jackson to deserialize
      */
     public static DriverRequest unpack(String in) throws IOException {
-
         ObjectMapper mapper = new ObjectMapper();
         return mapper.readValue(in, DriverRequest.class);
     }
@@ -75,7 +73,6 @@ public class DriverRequest {
     }
 
     public boolean equals(DriverRequest o) {
-
         return this.action.equals(o.action) && this.language.equals(o.language) && this.languageVersion.equals(o.languageVersion) && this.content.equals(o.content);
     }
 }

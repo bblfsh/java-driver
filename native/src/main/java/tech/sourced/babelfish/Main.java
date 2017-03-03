@@ -1,15 +1,13 @@
 package tech.sourced.babelfish;
 
 import com.fasterxml.jackson.databind.JsonMappingException;
-import org.apache.commons.io.IOUtils;
 
 import java.io.*;
 
 public class Main {
 
     public static void main(String args[]) {
-
-        BufferedReader in =new  BufferedReader(new InputStreamReader(System.in));
+        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
         //String sample = "{\"action\" : \"getAST\",\"language\" : \"Java\",\"languageVersion\" : \"8\",\"content\" : \"package Hello;\\n\\n pu####~~~blic class Hello {\\n    1public static void main(String\\n }\\n\"}";
 
         //BufferedReader in =new  BufferedReader(new StringReader(sample));
@@ -28,7 +26,6 @@ public class Main {
     }
 
     static private void process(BufferedReader in, BufferedOutputStream out) throws IOException {
-
         final EclipseParser parser = new EclipseParser();
         final RequestResponseMapper mapperGen = new RequestResponseMapper(true);
         final ByteArrayOutputStream baos = new ByteArrayOutputStream();
@@ -36,16 +33,15 @@ public class Main {
 
         while (true) {
 
-
             final DriverResponse response = new DriverResponse("1.0.0", "Java", "8");
             response.setMapper(responseMapper);
             try {
                 final String inStr = in.readLine();
                 DriverRequest request;
-                try{
+                try {
                     request = DriverRequest.unpack(inStr);
-                }catch(JsonMappingException e){
-                    exceptionPrinter(e,"Error reading the petition: ",baos,out,response);
+                } catch (JsonMappingException e) {
+                    exceptionPrinter(e, "Error reading the petition: ", baos, out, response);
                     return;
                 }
                 response.makeResponse(parser, request.content);
@@ -54,18 +50,17 @@ public class Main {
                 baos.flush();
                 baos.reset();
                 out.flush();
-            }catch(JsonMappingException e){
-                exceptionPrinter(e,"Error serializing the AST to JSON: ",baos,out,response);
+            } catch (JsonMappingException e) {
+                exceptionPrinter(e, "Error serializing the AST to JSON: ", baos, out, response);
                 return;
-            }catch (IOException e) {
-                exceptionPrinter(e,"A problem occurred while processing the petition: ",baos,out,response);
+            } catch (IOException e) {
+                exceptionPrinter(e, "A problem occurred while processing the petition: ", baos, out, response);
                 return;
             }
-
         }
     }
 
-    static private void exceptionPrinter(Exception e,String errorString,ByteArrayOutputStream baos,BufferedOutputStream out,DriverResponse response)throws IOException{
+    static private void exceptionPrinter(Exception e, String errorString, ByteArrayOutputStream baos, BufferedOutputStream out, DriverResponse response) throws IOException {
         response.cu = null;
         response.errors.add(e.getClass().getCanonicalName());
         response.errors.add(errorString + e.getMessage());

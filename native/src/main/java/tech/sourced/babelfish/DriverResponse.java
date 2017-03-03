@@ -28,7 +28,7 @@ public class DriverResponse {
      * Create a new DriverResponse
      *
      * @param driver          version of the driver
-     * @param language        languaje for which the driver is made, always java
+     * @param language        language for which the driver is made, always java
      * @param languageVersion version of the language
      */
     public DriverResponse(String driver, String language, String languageVersion) {

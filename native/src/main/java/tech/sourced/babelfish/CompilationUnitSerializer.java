@@ -25,7 +25,6 @@ public class CompilationUnitSerializer extends StdSerializer<CompilationUnit> {
 
     @Override
     public void serialize(CompilationUnit cu, JsonGenerator jG, SerializerProvider provider) throws IOException {
-
         jG.writeStartObject();
         jG.writeFieldName("CompilationUnit");
 

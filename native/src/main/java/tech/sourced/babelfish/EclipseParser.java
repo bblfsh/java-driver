@@ -32,6 +32,5 @@ public class EclipseParser {
     public CompilationUnit parse(String source) throws IOException {
         parser.setSource(source.toCharArray());
         return (CompilationUnit) parser.createAST(null);
-
     }
 }

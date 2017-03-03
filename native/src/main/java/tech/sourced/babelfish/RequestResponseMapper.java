@@ -56,7 +56,6 @@ public class RequestResponseMapper {
         public JsonGenerator jG;
 
         public ResponseMapper(Boolean prettyPrint, ByteArrayOutputStream out) throws IOException {
-
             jG = jsonF.createGenerator(out, JsonEncoding.UTF8);
 
             if (prettyPrint) {
