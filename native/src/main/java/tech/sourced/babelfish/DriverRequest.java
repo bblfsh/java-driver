@@ -18,8 +18,8 @@ public class DriverRequest {
     /**
      * Creates a new DriverRequest
      *
-     * @param action          to do with the content
-     * @param content         content of the petition, the code to parse
+     * @param action  to do with the content
+     * @param content content of the petition, the code to parse
      */
     public DriverRequest(String action, String content) {
         this.content = content;

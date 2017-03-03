@@ -25,7 +25,7 @@ public class DriverResponse {
     /**
      * Create a new DriverResponse
      *
-     * @param driver          version of the driver
+     * @param driver version of the driver
      */
     public DriverResponse(String driver) {
         this.driver = driver;

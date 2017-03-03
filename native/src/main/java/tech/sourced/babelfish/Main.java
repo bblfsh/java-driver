@@ -7,8 +7,8 @@ import java.io.*;
 public class Main {
 
     public static void main(String args[]) {
-        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
-        BufferedOutputStream out = new BufferedOutputStream(System.out);
+        final BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+        final BufferedOutputStream out = new BufferedOutputStream(System.out);
 
         while (true) {
             try {
@@ -35,9 +35,9 @@ public class Main {
                 final String inStr = in.readLine();
                 DriverRequest request;
                 try {
-                    if(inStr!=null){
+                    if (inStr != null) {
                         request = DriverRequest.unpack(inStr);
-                    }else{
+                    } else {
                         exceptionPrinter(new NullPointerException(), "reading string ", baos, out, response);
                         return;
                     }
@@ -45,10 +45,9 @@ public class Main {
                     exceptionPrinter(e, "Error reading the petition: ", baos, out, response);
                     return;
                 }
-                if(request.content!= null && request.action!= null){
+                if (request.content != null && request.action != null) {
                     response.makeResponse(parser, request.content);
-                }
-                else{
+                } else {
                     exceptionPrinter(new JsonMappingException(""), "Null request ", baos, out, response);
                     return;
                 }
