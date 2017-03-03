@@ -20,7 +20,7 @@ public class Java8ParserTest {
         final ByteArrayOutputStream baos = new ByteArrayOutputStream();
         final RequestResponseMapper.ResponseMapper responseMapper = mapperGen.getResponseMapper(baos);
 
-        DriverResponse response = new DriverResponse("1.0.0", "Java", "8");
+        DriverResponse response = new DriverResponse("1.0.0");
         response.setMapper(responseMapper);
         response.makeResponse(parser,source);
 
@@ -38,7 +38,7 @@ public class Java8ParserTest {
         final ByteArrayOutputStream baos = new ByteArrayOutputStream();
         final RequestResponseMapper.RequestMapper responseMapper = mapperGen.getRequestMapper(baos);
 
-        DriverRequest request = new DriverRequest("parse", "Java", "8", source);
+        DriverRequest request = new DriverRequest("parse-ast",source);
         request.setMapper(responseMapper);
         request.pack();
 

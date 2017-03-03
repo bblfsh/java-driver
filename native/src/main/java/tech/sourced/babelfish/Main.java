@@ -29,19 +29,29 @@ public class Main {
         final RequestResponseMapper.ResponseMapper responseMapper = mapperGen.getResponseMapper(baos);
 
         while (true) {
-
-            final DriverResponse response = new DriverResponse("1.0.0", "Java", "8");
+            final DriverResponse response = new DriverResponse("1.0.0");
             response.setMapper(responseMapper);
             try {
                 final String inStr = in.readLine();
                 DriverRequest request;
                 try {
-                    request = DriverRequest.unpack(inStr);
+                    if(inStr!=null){
+                        request = DriverRequest.unpack(inStr);
+                    }else{
+                        exceptionPrinter(new NullPointerException(), "reading string ", baos, out, response);
+                        return;
+                    }
                 } catch (JsonMappingException e) {
                     exceptionPrinter(e, "Error reading the petition: ", baos, out, response);
                     return;
                 }
-                response.makeResponse(parser, request.content);
+                if(request.content!= null && request.action!= null){
+                    response.makeResponse(parser, request.content);
+                }
+                else{
+                    exceptionPrinter(new JsonMappingException(""), "Null request ", baos, out, response);
+                    return;
+                }
                 response.pack();
                 out.write(baos.toByteArray());
                 baos.flush();

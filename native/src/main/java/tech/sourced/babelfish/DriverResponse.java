@@ -15,8 +15,6 @@ import java.util.ArrayList;
  */
 public class DriverResponse {
     final public String driver;
-    final public String language;
-    final public String languageVersion;
     public String status = "ok";
     public ArrayList<String> errors = new ArrayList<String>(0);
     @JsonProperty("ast")
@@ -28,13 +26,9 @@ public class DriverResponse {
      * Create a new DriverResponse
      *
      * @param driver          version of the driver
-     * @param language        language for which the driver is made, always java
-     * @param languageVersion version of the language
      */
-    public DriverResponse(String driver, String language, String languageVersion) {
+    public DriverResponse(String driver) {
         this.driver = driver;
-        this.language = language;
-        this.languageVersion = languageVersion;
     }
 
     @JsonIgnore
@@ -78,7 +72,7 @@ public class DriverResponse {
     }
 
     public boolean equals(DriverResponse o) {
-        return this.status.equals(o.status) && this.cu == o.cu && this.driver.equals(driver) && this.language.equals(o.language) && this.languageVersion.equals(o.languageVersion);
+        return this.status.equals(o.status) && this.cu == o.cu && this.driver.equals(driver);
     }
 }
 

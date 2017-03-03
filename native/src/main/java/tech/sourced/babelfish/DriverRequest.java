@@ -11,8 +11,6 @@ import java.io.IOException;
  */
 public class DriverRequest {
     public String action;
-    public String language;
-    public String languageVersion;
     public String content;
     private ObjectMapper mapper;
     private JsonGenerator jG;
@@ -21,15 +19,11 @@ public class DriverRequest {
      * Creates a new DriverRequest
      *
      * @param action          to do with the content
-     * @param language        languaje of the content always java
-     * @param languageVersion version of the language
      * @param content         content of the petition, the code to parse
      */
-    public DriverRequest(String action, String language, String languageVersion, String content) {
+    public DriverRequest(String action, String content) {
         this.content = content;
         this.action = action;
-        this.language = language;
-        this.languageVersion = languageVersion;
     }
 
     public DriverRequest() {
@@ -73,6 +67,6 @@ public class DriverRequest {
     }
 
     public boolean equals(DriverRequest o) {
-        return this.action.equals(o.action) && this.language.equals(o.language) && this.languageVersion.equals(o.languageVersion) && this.content.equals(o.content);
+        return this.action.equals(o.action) && this.content.equals(o.content);
     }
 }
