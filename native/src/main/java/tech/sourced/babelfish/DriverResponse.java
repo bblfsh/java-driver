@@ -19,7 +19,7 @@ public class DriverResponse {
     final public String languageVersion;
     public String status = "ok";
     public ArrayList<String> errors = new ArrayList<String>(0);
-    @JsonProperty("AST")
+    @JsonProperty("ast")
     public CompilationUnit cu;
     private ObjectMapper mapper;
     private JsonGenerator jG;
