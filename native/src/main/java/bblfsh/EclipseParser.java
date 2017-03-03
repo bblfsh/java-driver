@@ -1,4 +1,4 @@
-package tech.sourced.babelfish;
+package bblfsh;
 
 import org.eclipse.jdt.core.dom.AST;
 import org.eclipse.jdt.core.dom.ASTParser;

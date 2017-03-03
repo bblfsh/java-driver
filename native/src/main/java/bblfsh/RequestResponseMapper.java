@@ -1,4 +1,4 @@
-package tech.sourced.babelfish;
+package bblfsh;
 
 import com.fasterxml.jackson.core.JsonEncoding;
 import com.fasterxml.jackson.core.JsonFactory;

@@ -1,4 +1,4 @@
-package tech.sourced.babelfish;
+package bblfsh;
 
 import com.fasterxml.jackson.databind.JsonMappingException;
 
