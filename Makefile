@@ -9,7 +9,7 @@ build-native-internal:
 	$(MVN_CMD) package
 	cp native/target/native-jar-with-dependencies.jar $(BUILD_PATH); \
 	echo "#!/bin/sh" > $(BUILD_PATH)/native; \
-	echo "java -jar native-jar-with-dependencies.jar" >> $(BUILD_PATH)/native; \
+	echo "exec java -jar $(BUILD_PATH)/native-jar-with-dependencies.jar" >> $(BUILD_PATH)/native; \
 	chmod +x $(BUILD_PATH)/native
 
 
