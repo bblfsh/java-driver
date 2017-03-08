@@ -16,37 +16,28 @@ var (
 	fixtureDir = "fixtures"
 )
 
-func TestToNoder(t *testing.T) {
-	require := require.New(t)
-
-	f, err := getFixture("java_example_1.json")
-	require.NoError(err)
-
-	c := NewToNoder()
-	n, err := c.ToNode(f)
-	require.NoError(err)
-	require.NotNil(n)
-	fmt.Println("NODE", n)
-}
-
 func TestAnnotate(t *testing.T) {
 	require := require.New(t)
 
 	f, err := getFixture("java_example_1.json")
 	require.NoError(err)
 
-	c := NewToNoder()
-	n, err := c.ToNode(f)
+	n, err := NativeToNoder.ToNode(f)
 	require.NoError(err)
 	require.NotNil(n)
 
-	err = Annotate(n)
+	err = AnnotationRules.Apply(n)
 	require.NoError(err)
-	fmt.Println("NODE", n)
 
 	missingRole := make(map[string]bool)
-	for _, n := range uast.FindAll(n, uast.OnNoRole) {
-		missingRole[n.InternalType] = true
+	iter := uast.NewPreOrderPathIter(uast.NewPath(n))
+	for {
+		n := iter.Next()
+		if n.IsEmpty() {
+			break
+		}
+
+		missingRole[n.Node().InternalType] = true
 	}
 
 	for k := range missingRole {
@@ -60,12 +51,11 @@ func TestAnnotatePrettyAnnotationsOnly(t *testing.T) {
 	f, err := getFixture("java_example_1.json")
 	require.NoError(err)
 
-	c := NewToNoder()
-	n, err := c.ToNode(f)
+	n, err := NativeToNoder.ToNode(f)
 	require.NoError(err)
 	require.NotNil(n)
 
-	err = Annotate(n)
+	err = AnnotationRules.Apply(n)
 	require.NoError(err)
 
 	buf := bytes.NewBuffer(nil)
@@ -80,8 +70,7 @@ func TestNodeTokens(t *testing.T) {
 	f, err := getFixture("java_example_1.json")
 	require.NoError(err)
 
-	c := NewToNoder()
-	n, err := c.ToNode(f)
+	n, err := NativeToNoder.ToNode(f)
 	require.NoError(err)
 	require.NotNil(n)
 
