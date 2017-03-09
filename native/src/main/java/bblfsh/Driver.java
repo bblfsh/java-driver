@@ -1,87 +1,66 @@
 package bblfsh;
 
-import com.fasterxml.jackson.databind.JsonMappingException;
-
 import java.io.*;
+import java.util.ArrayList;
 
 public class Driver {
 
-    private BufferedReader in;
-    private BufferedOutputStream out;
-    private EclipseParser parser;
+    private final RequestReader reader;
+    private final ResponseWriter writer;
+    private final EclipseParser parser;
 
-    private Driver() {
-
-    }
-
-    public Driver(final InputStream in, final OutputStream out) {
-        this.in = new BufferedReader(new InputStreamReader(in));
-        this.out = new BufferedOutputStream(out);
+    public Driver(final RequestReader reader, final ResponseWriter writer) {
+        this.reader = reader;
+        this.writer = writer;
         this.parser = new EclipseParser();
     }
 
     public void run() throws DriverException {
         while (true) {
-            try {
-                this.process();
-            } catch (IOException ex) {
-                //TODO: handle this finer-grained in process()
-                throw new DriverException("IOException in process()", ex);
-            }
+            this.processOne();
         }
     }
 
-    private void process() throws DriverException, IOException {
-        final RequestResponseMapper mapperGen = new RequestResponseMapper(true);
-        final ByteArrayOutputStream baos = new ByteArrayOutputStream();
-        final RequestResponseMapper.ResponseMapper responseMapper = mapperGen.getResponseMapper(baos);
-
-        while (true) {
-            final Response response = new Response("1.0.0");
-            response.setMapper(responseMapper);
+    public void processOne() throws DriverException {
+        Request request;
+        try {
+            request = this.reader.read();
+        } catch (Exception ex) {
+            final Response response = createFatalResponse(ex);
             try {
-                final String inStr = in.readLine();
-                Request request;
-                try {
-                    if (inStr != null) {
-                        request = Request.unpack(inStr);
-                    } else {
-                        exceptionPrinter(new NullPointerException(), "reading string ", baos, out, response);
-                        return;
-                    }
-                } catch (JsonMappingException e) {
-                    exceptionPrinter(e, "Error reading the petition: ", baos, out, response);
-                    return;
-                }
-                if (request.content != null && request.action != null) {
-                    response.makeResponse(parser, request.content);
-                } else {
-                    exceptionPrinter(new JsonMappingException(""), "Null request ", baos, out, response);
-                    return;
-                }
-                response.pack();
-                out.write(baos.toByteArray());
-                baos.flush();
-                baos.reset();
-                out.flush();
-            } catch (JsonMappingException e) {
-                exceptionPrinter(e, "Error serializing the AST to JSON: ", baos, out, response);
-                return;
-            } catch (IOException e) {
-                exceptionPrinter(e, "A problem occurred while processing the petition: ", baos, out, response);
-                return;
+                this.writer.write(response);
+            } catch (IOException ex2) {
+                throw new DriverException("exception while writing fatal response", ex2);
             }
+
+            return;
+        }
+
+        final Response response = this.processRequest(request);
+        try {
+            this.writer.write(response);
+        } catch (IOException ex) {
+            throw new DriverException("exception writing response", ex);
         }
     }
 
-    static private void exceptionPrinter(Exception e, String errorString, ByteArrayOutputStream baos, BufferedOutputStream out, Response response) throws IOException {
-        response.cu = null;
-        response.errors.add(e.getClass().getCanonicalName());
-        response.errors.add(errorString + e.getMessage());
-        response.status = "fatal";
-        response.pack();
-        out.write(baos.toByteArray());
-        out.flush();
+    private Response createFatalResponse(final Exception e) {
+        final Response r = new Response();
+        r.status = "fatal";
+        r.errors = new ArrayList<>();
+        r.errors.add(e.getMessage());
+        return r;
     }
 
+    private Response processRequest(final Request request) {
+        Response response = new Response();
+        try {
+            response.ast = parser.parse(request.content);
+        } catch (IOException e) {
+            return createFatalResponse(e);
+        }
+
+        response.status = "ok";
+        return response;
+    }
 }

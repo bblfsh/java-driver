@@ -1,11 +1,11 @@
 package bblfsh;
 
-import java.io.*;
-
 public class Main {
 
     public static void main(String args[]) {
-        final Driver driver = new Driver(System.in, System.out);
+        final RequestReader reader = new RequestReader(System.in);
+        final ResponseWriter writer = new ResponseWriter(System.out);
+        final Driver driver = new Driver(reader, writer);
 
         try {
             driver.run();

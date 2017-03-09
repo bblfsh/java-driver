@@ -1,12 +1,7 @@
 package bblfsh;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.core.JsonGenerator;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import org.eclipse.jdt.core.dom.CompilationUnit;
 
-import java.io.IOException;
 import java.util.ArrayList;
 
 
@@ -14,65 +9,29 @@ import java.util.ArrayList;
  * Class for the java driver response
  */
 public class Response {
-    final public String driver;
-    public String status = "ok";
+    public String status;
     public ArrayList<String> errors = new ArrayList<String>(0);
-    @JsonProperty("ast")
-    public CompilationUnit cu;
-    private ObjectMapper mapper;
-    private JsonGenerator jG;
+    public CompilationUnit ast;
 
-    /**
-     * Create a new Response
-     *
-     * @param driver version of the driver
-     */
-    public Response(String driver) {
-        this.driver = driver;
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Response response = (Response) o;
+
+        if (status != null ? !status.equals(response.status) : response.status != null)
+            return false;
+        if (errors != null ? !errors.equals(response.errors) : response.errors != null)
+            return false;
+        return ast != null ? ast.equals(response.ast) : response.ast == null;
     }
 
-    @JsonIgnore
-    /**
-     * Set a previously configured Jackson ObjectMapper to driverResponse.
-     *
-     * @param responseMapper the mapper to set
-     */
-    public void setMapper(RequestResponseMapper.ResponseMapper responseMapper) {
-        mapper = responseMapper.mapper;
-        jG = responseMapper.jG;
-    }
-
-    /**
-     * Parse the code inside source
-     *
-     * @param parser Parser used in the parsing
-     * @param source Source code to parse
-     */
-    public void makeResponse(EclipseParser parser, String source) {
-        try {
-            cu = parser.parse(source);
-        } catch (IOException e) {
-            errors.add("IOException");
-            errors.add(e.getMessage());
-            status = "error";
-        }
-    }
-
-    /**
-     * Serialize Response in the output given by the requestMapper assigned before.
-     *
-     * @throws IOException when the write failed or mapper is not assigned
-     */
-    public void pack() throws IOException {
-        if (mapper != null) {
-            mapper.writeValue(jG, this);
-        } else {
-            throw new IOException("Mapper not assigned, use setMapper before packing");
-        }
-    }
-
-    public boolean equals(Response o) {
-        return this.status.equals(o.status) && this.cu == o.cu && this.driver.equals(driver);
+    @Override
+    public int hashCode() {
+        int result = status != null ? status.hashCode() : 0;
+        result = 31 * result + (errors != null ? errors.hashCode() : 0);
+        result = 31 * result + (ast != null ? ast.hashCode() : 0);
+        return result;
     }
 }
-
