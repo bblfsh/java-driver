@@ -13,7 +13,7 @@ import org.eclipse.jdt.core.dom.CompilationUnit;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 
-public class RequestResponseMapper {
+class RequestResponseMapper {
 
     final Boolean prettyPrint;
 

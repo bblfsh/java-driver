@@ -13,7 +13,7 @@ import java.util.ArrayList;
 /**
  * Class for the java driver response
  */
-public class DriverResponse {
+public class Response {
     final public String driver;
     public String status = "ok";
     public ArrayList<String> errors = new ArrayList<String>(0);
@@ -23,11 +23,11 @@ public class DriverResponse {
     private JsonGenerator jG;
 
     /**
-     * Create a new DriverResponse
+     * Create a new Response
      *
      * @param driver version of the driver
      */
-    public DriverResponse(String driver) {
+    public Response(String driver) {
         this.driver = driver;
     }
 
@@ -59,7 +59,7 @@ public class DriverResponse {
     }
 
     /**
-     * Serialize DriverResponse in the output given by the requestMapper assigned before.
+     * Serialize Response in the output given by the requestMapper assigned before.
      *
      * @throws IOException when the write failed or mapper is not assigned
      */
@@ -71,7 +71,7 @@ public class DriverResponse {
         }
     }
 
-    public boolean equals(DriverResponse o) {
+    public boolean equals(Response o) {
         return this.status.equals(o.status) && this.cu == o.cu && this.driver.equals(driver);
     }
 }

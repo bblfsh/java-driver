@@ -6,18 +6,20 @@ import org.eclipse.jdt.core.dom.CompilationUnit;
 
 import java.io.IOException;
 
+/**
+ * Java AST parser based on Eclipse JDT.
+ * <p>
+ * This class is not thread-safe.
+ * </p>
+ */
 public class EclipseParser {
 
-    final private ASTParser parser;
+    private final ASTParser parser;
 
     /**
      * Creates a new EclipseParser
-     * <p>
-     * EclipseParser is not threadsafe
-     *
-     * @throws IOException when file can't be opened or errors in reading/writing
      */
-    public EclipseParser() throws IOException {
+    public EclipseParser() {
         this.parser = ASTParser.newParser(AST.JLS8);
         parser.setKind(ASTParser.K_COMPILATION_UNIT);
     }
@@ -29,7 +31,7 @@ public class EclipseParser {
      * @return CompilationUnit of the AST
      * @throws IOException if anything related to I/O or Json generation failed
      */
-    public CompilationUnit parse(String source) throws IOException {
+    public CompilationUnit parse(final String source) throws IOException {
         parser.setSource(source.toCharArray());
         return (CompilationUnit) parser.createAST(null);
     }

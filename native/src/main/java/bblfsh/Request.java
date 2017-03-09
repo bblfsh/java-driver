@@ -9,37 +9,37 @@ import java.io.IOException;
 /**
  * Class for the java driver request.
  */
-public class DriverRequest {
+public class Request {
     public String action;
     public String content;
     private ObjectMapper mapper;
     private JsonGenerator jG;
 
     /**
-     * Creates a new DriverRequest
+     * Creates a new Request
      *
      * @param action  to do with the content
      * @param content content of the petition, the code to parse
      */
-    public DriverRequest(String action, String content) {
+    public Request(String action, String content) {
         this.content = content;
         this.action = action;
     }
 
-    public DriverRequest() {
+    public Request() {
 
     }
 
     /**
-     * Deserialize a DriverRequest object from a String given.
+     * Deserialize a Request object from a String given.
      *
      * @param in String to deserialize
-     * @return DriverRequest object from the string
+     * @return Request object from the string
      * @throws IOException when it's impossible for Jackson to deserialize
      */
-    public static DriverRequest unpack(String in) throws IOException {
+    public static Request unpack(String in) throws IOException {
         ObjectMapper mapper = new ObjectMapper();
-        return mapper.readValue(in, DriverRequest.class);
+        return mapper.readValue(in, Request.class);
     }
 
     /**
@@ -54,7 +54,7 @@ public class DriverRequest {
     }
 
     /**
-     * Serialize DriverRequest in the output given by the requestMapper assigned before.
+     * Serialize Request in the output given by the requestMapper assigned before.
      *
      * @throws IOException when the write failed or mapper is not assigned
      */
@@ -66,7 +66,7 @@ public class DriverRequest {
         }
     }
 
-    public boolean equals(DriverRequest o) {
+    public boolean equals(Request o) {
         return this.action.equals(o.action) && this.content.equals(o.content);
     }
 }
