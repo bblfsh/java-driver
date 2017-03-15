@@ -1,0 +1,491 @@
+{
+    "status": "ok",
+    "errors": [],
+    "uast": {
+        "InternalType": "CompilationUnit",
+        "Properties": {},
+        "Children": [
+            {
+                "InternalType": "PackageDeclaration",
+                "Properties": {
+                    "internalRole": "package"
+                },
+                "Children": [
+                    {
+                        "InternalType": "SimpleName",
+                        "Properties": {
+                            "internalRole": "name"
+                        },
+                        "Children": null,
+                        "Token": "Hello",
+                        "StartPosition": {
+                            "Offset": 8,
+                            "Line": 1,
+                            "Col": 0
+                        },
+                        "EndPosition": {
+                            "Offset": 0,
+                            "Line": 0,
+                            "Col": 0
+                        },
+                        "Roles": null
+                    }
+                ],
+                "Token": "package",
+                "StartPosition": {
+                    "Offset": 0,
+                    "Line": 0,
+                    "Col": 0
+                },
+                "EndPosition": {
+                    "Offset": 0,
+                    "Line": 0,
+                    "Col": 0
+                },
+                "Roles": null
+            },
+            {
+                "InternalType": "TypeDeclaration",
+                "Properties": {
+                    "interface": "0",
+                    "internalRole": "types"
+                },
+                "Children": [
+                    {
+                        "InternalType": "Modifier",
+                        "Properties": {
+                            "internalRole": "modifiers"
+                        },
+                        "Children": null,
+                        "Token": "public",
+                        "StartPosition": {
+                            "Offset": 17,
+                            "Line": 3,
+                            "Col": 0
+                        },
+                        "EndPosition": {
+                            "Offset": 0,
+                            "Line": 0,
+                            "Col": 0
+                        },
+                        "Roles": null
+                    },
+                    {
+                        "InternalType": "SimpleName",
+                        "Properties": {
+                            "internalRole": "name"
+                        },
+                        "Children": null,
+                        "Token": "Hello",
+                        "StartPosition": {
+                            "Offset": 30,
+                            "Line": 3,
+                            "Col": 0
+                        },
+                        "EndPosition": {
+                            "Offset": 0,
+                            "Line": 0,
+                            "Col": 0
+                        },
+                        "Roles": null
+                    },
+                    {
+                        "InternalType": "MethodDeclaration",
+                        "Properties": {
+                            "constructor": "0",
+                            "internalRole": "bodyDeclarations"
+                        },
+                        "Children": [
+                            {
+                                "InternalType": "Modifier",
+                                "Properties": {
+                                    "internalRole": "modifiers"
+                                },
+                                "Children": null,
+                                "Token": "public",
+                                "StartPosition": {
+                                    "Offset": 42,
+                                    "Line": 4,
+                                    "Col": 0
+                                },
+                                "EndPosition": {
+                                    "Offset": 0,
+                                    "Line": 0,
+                                    "Col": 0
+                                },
+                                "Roles": null
+                            },
+                            {
+                                "InternalType": "Modifier",
+                                "Properties": {
+                                    "internalRole": "modifiers"
+                                },
+                                "Children": null,
+                                "Token": "static",
+                                "StartPosition": {
+                                    "Offset": 49,
+                                    "Line": 4,
+                                    "Col": 0
+                                },
+                                "EndPosition": {
+                                    "Offset": 0,
+                                    "Line": 0,
+                                    "Col": 0
+                                },
+                                "Roles": null
+                            },
+                            {
+                                "InternalType": "PrimitiveType",
+                                "Properties": {
+                                    "internalRole": "returnType2"
+                                },
+                                "Children": null,
+                                "Token": "void",
+                                "StartPosition": {
+                                    "Offset": 56,
+                                    "Line": 4,
+                                    "Col": 0
+                                },
+                                "EndPosition": {
+                                    "Offset": 0,
+                                    "Line": 0,
+                                    "Col": 0
+                                },
+                                "Roles": null
+                            },
+                            {
+                                "InternalType": "SimpleName",
+                                "Properties": {
+                                    "internalRole": "name"
+                                },
+                                "Children": null,
+                                "Token": "main",
+                                "StartPosition": {
+                                    "Offset": 61,
+                                    "Line": 4,
+                                    "Col": 0
+                                },
+                                "EndPosition": {
+                                    "Offset": 0,
+                                    "Line": 0,
+                                    "Col": 0
+                                },
+                                "Roles": null
+                            },
+                            {
+                                "InternalType": "SingleVariableDeclaration",
+                                "Properties": {
+                                    "internalRole": "parameters",
+                                    "varargs": "0"
+                                },
+                                "Children": [
+                                    {
+                                        "InternalType": "SimpleName",
+                                        "Properties": {
+                                            "internalRole": "name"
+                                        },
+                                        "Children": null,
+                                        "Token": "args",
+                                        "StartPosition": {
+                                            "Offset": 75,
+                                            "Line": 4,
+                                            "Col": 0
+                                        },
+                                        "EndPosition": {
+                                            "Offset": 0,
+                                            "Line": 0,
+                                            "Col": 0
+                                        },
+                                        "Roles": null
+                                    },
+                                    {
+                                        "InternalType": "ArrayType",
+                                        "Properties": {
+                                            "internalRole": "type"
+                                        },
+                                        "Children": [
+                                            {
+                                                "InternalType": "SimpleType",
+                                                "Properties": {
+                                                    "internalRole": "elementType"
+                                                },
+                                                "Children": [
+                                                    {
+                                                        "InternalType": "SimpleName",
+                                                        "Properties": {
+                                                            "internalRole": "name"
+                                                        },
+                                                        "Children": null,
+                                                        "Token": "String",
+                                                        "StartPosition": {
+                                                            "Offset": 66,
+                                                            "Line": 4,
+                                                            "Col": 0
+                                                        },
+                                                        "EndPosition": {
+                                                            "Offset": 0,
+                                                            "Line": 0,
+                                                            "Col": 0
+                                                        },
+                                                        "Roles": null
+                                                    }
+                                                ],
+                                                "Token": "",
+                                                "StartPosition": {
+                                                    "Offset": 0,
+                                                    "Line": 0,
+                                                    "Col": 0
+                                                },
+                                                "EndPosition": {
+                                                    "Offset": 0,
+                                                    "Line": 0,
+                                                    "Col": 0
+                                                },
+                                                "Roles": null
+                                            },
+                                            {
+                                                "InternalType": "Dimension",
+                                                "Properties": {
+                                                    "internalRole": "dimensions"
+                                                },
+                                                "Children": null,
+                                                "Token": "",
+                                                "StartPosition": {
+                                                    "Offset": 0,
+                                                    "Line": 0,
+                                                    "Col": 0
+                                                },
+                                                "EndPosition": {
+                                                    "Offset": 0,
+                                                    "Line": 0,
+                                                    "Col": 0
+                                                },
+                                                "Roles": null
+                                            }
+                                        ],
+                                        "Token": "",
+                                        "StartPosition": {
+                                            "Offset": 0,
+                                            "Line": 0,
+                                            "Col": 0
+                                        },
+                                        "EndPosition": {
+                                            "Offset": 0,
+                                            "Line": 0,
+                                            "Col": 0
+                                        },
+                                        "Roles": null
+                                    }
+                                ],
+                                "Token": "",
+                                "StartPosition": {
+                                    "Offset": 66,
+                                    "Line": 4,
+                                    "Col": 0
+                                },
+                                "EndPosition": {
+                                    "Offset": 0,
+                                    "Line": 0,
+                                    "Col": 0
+                                },
+                                "Roles": null
+                            },
+                            {
+                                "InternalType": "Block",
+                                "Properties": {
+                                    "internalRole": "body"
+                                },
+                                "Children": [
+                                    {
+                                        "InternalType": "ExpressionStatement",
+                                        "Properties": {
+                                            "internalRole": "statements"
+                                        },
+                                        "Children": [
+                                            {
+                                                "InternalType": "MethodInvocation",
+                                                "Properties": {
+                                                    "internalRole": "expression"
+                                                },
+                                                "Children": [
+                                                    {
+                                                        "InternalType": "QualifiedName",
+                                                        "Properties": {
+                                                            "internalRole": "expression"
+                                                        },
+                                                        "Children": [
+                                                            {
+                                                                "InternalType": "SimpleName",
+                                                                "Properties": {
+                                                                    "internalRole": "qualifier"
+                                                                },
+                                                                "Children": null,
+                                                                "Token": "System",
+                                                                "StartPosition": {
+                                                                    "Offset": 91,
+                                                                    "Line": 5,
+                                                                    "Col": 0
+                                                                },
+                                                                "EndPosition": {
+                                                                    "Offset": 0,
+                                                                    "Line": 0,
+                                                                    "Col": 0
+                                                                },
+                                                                "Roles": null
+                                                            },
+                                                            {
+                                                                "InternalType": "SimpleName",
+                                                                "Properties": {
+                                                                    "internalRole": "name"
+                                                                },
+                                                                "Children": null,
+                                                                "Token": "out",
+                                                                "StartPosition": {
+                                                                    "Offset": 98,
+                                                                    "Line": 5,
+                                                                    "Col": 0
+                                                                },
+                                                                "EndPosition": {
+                                                                    "Offset": 0,
+                                                                    "Line": 0,
+                                                                    "Col": 0
+                                                                },
+                                                                "Roles": null
+                                                            }
+                                                        ],
+                                                        "Token": "",
+                                                        "StartPosition": {
+                                                            "Offset": 0,
+                                                            "Line": 0,
+                                                            "Col": 0
+                                                        },
+                                                        "EndPosition": {
+                                                            "Offset": 0,
+                                                            "Line": 0,
+                                                            "Col": 0
+                                                        },
+                                                        "Roles": null
+                                                    },
+                                                    {
+                                                        "InternalType": "SimpleName",
+                                                        "Properties": {
+                                                            "internalRole": "name"
+                                                        },
+                                                        "Children": null,
+                                                        "Token": "println",
+                                                        "StartPosition": {
+                                                            "Offset": 102,
+                                                            "Line": 5,
+                                                            "Col": 0
+                                                        },
+                                                        "EndPosition": {
+                                                            "Offset": 0,
+                                                            "Line": 0,
+                                                            "Col": 0
+                                                        },
+                                                        "Roles": null
+                                                    },
+                                                    {
+                                                        "InternalType": "StringLiteral",
+                                                        "Properties": {
+                                                            "internalRole": "arguments"
+                                                        },
+                                                        "Children": null,
+                                                        "Token": "\"Hello world\"",
+                                                        "StartPosition": {
+                                                            "Offset": 110,
+                                                            "Line": 5,
+                                                            "Col": 0
+                                                        },
+                                                        "EndPosition": {
+                                                            "Offset": 0,
+                                                            "Line": 0,
+                                                            "Col": 0
+                                                        },
+                                                        "Roles": null
+                                                    }
+                                                ],
+                                                "Token": "",
+                                                "StartPosition": {
+                                                    "Offset": 0,
+                                                    "Line": 0,
+                                                    "Col": 0
+                                                },
+                                                "EndPosition": {
+                                                    "Offset": 0,
+                                                    "Line": 0,
+                                                    "Col": 0
+                                                },
+                                                "Roles": null
+                                            }
+                                        ],
+                                        "Token": "",
+                                        "StartPosition": {
+                                            "Offset": 0,
+                                            "Line": 0,
+                                            "Col": 0
+                                        },
+                                        "EndPosition": {
+                                            "Offset": 0,
+                                            "Line": 0,
+                                            "Col": 0
+                                        },
+                                        "Roles": null
+                                    }
+                                ],
+                                "Token": "",
+                                "StartPosition": {
+                                    "Offset": 0,
+                                    "Line": 0,
+                                    "Col": 0
+                                },
+                                "EndPosition": {
+                                    "Offset": 0,
+                                    "Line": 0,
+                                    "Col": 0
+                                },
+                                "Roles": null
+                            }
+                        ],
+                        "Token": "",
+                        "StartPosition": {
+                            "Offset": 42,
+                            "Line": 4,
+                            "Col": 0
+                        },
+                        "EndPosition": {
+                            "Offset": 0,
+                            "Line": 0,
+                            "Col": 0
+                        },
+                        "Roles": null
+                    }
+                ],
+                "Token": "",
+                "StartPosition": {
+                    "Offset": 17,
+                    "Line": 3,
+                    "Col": 0
+                },
+                "EndPosition": {
+                    "Offset": 0,
+                    "Line": 0,
+                    "Col": 0
+                },
+                "Roles": null
+            }
+        ],
+        "Token": "",
+        "StartPosition": {
+            "Offset": 0,
+            "Line": 0,
+            "Col": 0
+        },
+        "EndPosition": {
+            "Offset": 0,
+            "Line": 0,
+            "Col": 0
+        },
+        "Roles": null
+    }
+}

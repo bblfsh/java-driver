@@ -1,0 +1,145 @@
+{
+    "status": "ok",
+    "errors": [],
+    "ast": {
+        "CompilationUnit": {
+            "internalClass": "CompilationUnit",
+            "package": {
+                "internalClass": "PackageDeclaration",
+                "name": {
+                    "identifier": "Hello",
+                    "internalClass": "SimpleName",
+                    "line": 1,
+                    "startPosition": 8
+                }
+            },
+            "types": [
+                {
+                    "bodyDeclarations": [
+                        {
+                            "body": {
+                                "internalClass": "Block",
+                                "statements": [
+                                    {
+                                        "expression": {
+                                            "arguments": [
+                                                {
+                                                    "escapedValue": "\"Hello world\"",
+                                                    "internalClass": "StringLiteral",
+                                                    "line": 5,
+                                                    "startPosition": 110
+                                                }
+                                            ],
+                                            "expression": {
+                                                "internalClass": "QualifiedName",
+                                                "name": {
+                                                    "identifier": "out",
+                                                    "internalClass": "SimpleName",
+                                                    "line": 5,
+                                                    "startPosition": 98
+                                                },
+                                                "qualifier": {
+                                                    "identifier": "System",
+                                                    "internalClass": "SimpleName",
+                                                    "line": 5,
+                                                    "startPosition": 91
+                                                }
+                                            },
+                                            "internalClass": "MethodInvocation",
+                                            "name": {
+                                                "identifier": "println",
+                                                "internalClass": "SimpleName",
+                                                "line": 5,
+                                                "startPosition": 102
+                                            }
+                                        },
+                                        "internalClass": "ExpressionStatement"
+                                    }
+                                ]
+                            },
+                            "constructor": "false",
+                            "internalClass": "MethodDeclaration",
+                            "line": 4,
+                            "modifiers": [
+                                {
+                                    "internalClass": "Modifier",
+                                    "keyword": "public",
+                                    "line": 4,
+                                    "startPosition": 42
+                                },
+                                {
+                                    "internalClass": "Modifier",
+                                    "keyword": "static",
+                                    "line": 4,
+                                    "startPosition": 49
+                                }
+                            ],
+                            "name": {
+                                "identifier": "main",
+                                "internalClass": "SimpleName",
+                                "line": 4,
+                                "startPosition": 61
+                            },
+                            "parameters": [
+                                {
+                                    "internalClass": "SingleVariableDeclaration",
+                                    "line": 4,
+                                    "name": {
+                                        "identifier": "args",
+                                        "internalClass": "SimpleName",
+                                        "line": 4,
+                                        "startPosition": 75
+                                    },
+                                    "startPosition": 66,
+                                    "type": {
+                                        "dimensions": [
+                                            {
+                                                "internalClass": "Dimension"
+                                            }
+                                        ],
+                                        "elementType": {
+                                            "internalClass": "SimpleType",
+                                            "name": {
+                                                "identifier": "String",
+                                                "internalClass": "SimpleName",
+                                                "line": 4,
+                                                "startPosition": 66
+                                            }
+                                        },
+                                        "internalClass": "ArrayType"
+                                    },
+                                    "varargs": "false"
+                                }
+                            ],
+                            "returnType2": {
+                                "internalClass": "PrimitiveType",
+                                "line": 4,
+                                "primitiveTypeCode": "void",
+                                "startPosition": 56
+                            },
+                            "startPosition": 42
+                        }
+                    ],
+                    "interface": "false",
+                    "internalClass": "TypeDeclaration",
+                    "line": 3,
+                    "modifiers": [
+                        {
+                            "internalClass": "Modifier",
+                            "keyword": "public",
+                            "line": 3,
+                            "startPosition": 17
+                        }
+                    ],
+                    "name": {
+                        "identifier": "Hello",
+                        "internalClass": "SimpleName",
+                        "line": 3,
+                        "startPosition": 30
+                    },
+                    "startPosition": 17
+                }
+            ]
+        }
+    }
+}
