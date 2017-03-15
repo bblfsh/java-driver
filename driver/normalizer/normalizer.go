@@ -3,64 +3,39 @@ package normalizer
 import (
 	"github.com/bblfsh/java-driver/driver/normalizer/jdt"
 
-	"github.com/bblfsh/sdk/uast"
+	. "github.com/bblfsh/sdk/uast"
+	. "github.com/bblfsh/sdk/uast/ann"
 )
 
-// NewToNoder creates a new uast.ToNoder to convert
-// Java ASTs to UAST.
-func NewToNoder() uast.ToNoder {
-	return &uast.BaseToNoder{
-		InternalTypeKey: "internalClass",
-		LineKey:         "line",
-		OffsetKey:       "startPosition",
-		//TODO: Should this be part of the UAST rules?
-		TokenKeys: map[string]bool{
-			"identifier":        true, // SimpleName
-			"escapedValue":      true, // StringLiteral
-			"keyword":           true, // Modifier
-			"primitiveTypeCode": true, // ?
-		},
-		SyntheticTokens: map[string]string{
-			"PackageDeclaration": "package",
-			"IfStatement":        "if",
-			"NullLiteral":        "null",
-		},
-		//TODO: add names of children (e.g. elseStatement) as
-		//      children node properties.
-	}
-}
-
-// AnnotationRules for Java UAST.
-var AnnotationRules uast.Rule = uast.Rules(
-	uast.OnInternalType(jdt.CompilationUnit).Role(uast.File),
-	uast.OnInternalType(jdt.PackageDeclaration).Role(uast.PackageDeclaration),
-	uast.OnInternalType(jdt.MethodDeclaration).Role(uast.FunctionDeclaration),
-	uast.OnInternalType(jdt.ImportDeclaration).Role(uast.ImportDeclaration),
-	uast.OnInternalType(jdt.TypeDeclaration).Role(uast.TypeDeclaration),
-	uast.OnInternalType(jdt.ImportDeclaration, jdt.QualifiedName).Role(uast.ImportPath),
-	uast.OnInternalType(jdt.QualifiedName).Role(uast.QualifiedIdentifier),
-	uast.OnInternalType(jdt.SimpleName).Role(uast.SimpleIdentifier),
-	uast.OnInternalType(jdt.Block).Role(uast.BlockScope, uast.Block),
-	uast.OnInternalType(jdt.ExpressionStatement).Role(uast.Statement),
-	uast.OnInternalType(jdt.ReturnStatement).Role(uast.Return, uast.Statement),
-	uast.OnInternalType(jdt.MethodInvocation).Role(uast.MethodInvocation),
-	uast.OnInternalType(jdt.IfStatement).Role(uast.If, uast.Statement),
-	uast.OnInternalRole("elseStatement").Role(uast.IfElse, uast.Statement),
-	uast.OnPath(uast.OnInternalType(jdt.Assignment)).Role(uast.Assignment),
-	uast.OnPath(uast.OnInternalType(jdt.Assignment), uast.OnInternalRole("leftHandSide")).Role(uast.AssignmentVariable),
-	uast.OnPath(uast.OnInternalType(jdt.Assignment), uast.OnInternalRole("rightHandSide")).Role(uast.AssignmentValue),
-	//TODO: IfBody, IfCondition
-	uast.OnInternalType(jdt.NullLiteral).Role(uast.NullLiteral, uast.Literal),
-	uast.OnInternalType(jdt.StringLiteral).Role(uast.StringLiteral, uast.Literal),
-	uast.OnInternalType(jdt.NumberLiteral).Role(uast.NumberLiteral, uast.Literal),
-	uast.OnInternalType(jdt.TypeLiteral).Role(uast.TypeLiteral, uast.Literal),
-	uast.OnInternalType(jdt.ThisExpression).Role(uast.This, uast.Expression),
-	//TODO: synchronized
-	//TODO: try-with-resources
-	uast.OnInternalType(jdt.Javadoc).Role(uast.Documentation, uast.Comment),
+var AnnotationRules = On(Any).Self(
+	On(Not(HasInternalType(jdt.CompilationUnit))).Error("root must be CompilationUnit"),
+	On(HasInternalType(jdt.CompilationUnit)).Roles(File).Descendants(
+		On(HasInternalType(jdt.PackageDeclaration)).Roles(PackageDeclaration),
+		On(HasInternalType(jdt.MethodDeclaration)).Roles(FunctionDeclaration),
+		On(HasInternalType(jdt.ImportDeclaration)).Roles(ImportDeclaration).Children(
+			On(HasInternalType(jdt.QualifiedName)).Roles(ImportPath),
+		),
+		On(HasInternalType(jdt.TypeDeclaration)).Roles(TypeDeclaration),
+		On(HasInternalType(jdt.QualifiedName)).Roles(QualifiedIdentifier),
+		On(HasInternalType(jdt.SimpleName)).Roles(SimpleIdentifier),
+		On(HasInternalType(jdt.Block)).Roles(BlockScope, Block),
+		On(HasInternalType(jdt.ExpressionStatement)).Roles(Statement),
+		On(HasInternalType(jdt.ReturnStatement)).Roles(Return, Statement),
+		On(HasInternalType(jdt.MethodInvocation)).Roles(MethodInvocation),
+		On(HasInternalType(jdt.IfStatement)).Roles(If, Statement),
+		On(HasInternalRole("elseStatement")).Roles(IfElse, Statement),
+		On(HasInternalType(jdt.Assignment)).Roles(Assignment).Children(
+			On(HasInternalRole("leftHandSide")).Roles(AssignmentVariable),
+			On(HasInternalRole("rightHandSide")).Roles(AssignmentValue),
+		),
+		//TODO: IfBody, IfCondition
+		On(HasInternalType(jdt.NullLiteral)).Roles(NullLiteral, Literal),
+		On(HasInternalType(jdt.StringLiteral)).Roles(StringLiteral, Literal),
+		On(HasInternalType(jdt.NumberLiteral)).Roles(NumberLiteral, Literal),
+		On(HasInternalType(jdt.TypeLiteral)).Roles(TypeLiteral, Literal),
+		On(HasInternalType(jdt.ThisExpression)).Roles(This, Expression),
+		//TODO: synchronized
+		//TODO: try-with-resources
+		On(HasInternalType(jdt.Javadoc)).Roles(Documentation, Comment),
+	),
 )
-
-// Annotate annotates the given Java UAST.
-func Annotate(n *uast.Node) error {
-	return uast.PreOrderVisit(n, AnnotationRules)
-}

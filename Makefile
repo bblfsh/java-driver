@@ -1,4 +1,5 @@
 MVN_CMD := mvn
+JAR := native-jar-with-dependencies.jar
 
 test-native-internal:
 	cd native; \
@@ -7,9 +8,8 @@ test-native-internal:
 build-native-internal:
 	cd native; \
 	$(MVN_CMD) package
-	cp native/target/native-jar-with-dependencies.jar $(BUILD_PATH); \
-	echo "#!/bin/sh" > $(BUILD_PATH)/native; \
-	echo "exec java -jar $(BUILD_PATH)/native-jar-with-dependencies.jar" >> $(BUILD_PATH)/native; \
+	cp native/target/$(JAR) $(BUILD_PATH); \
+	cp native/src/main/sh/native.sh $(BUILD_PATH)/native; \
 	chmod +x $(BUILD_PATH)/native
 
 

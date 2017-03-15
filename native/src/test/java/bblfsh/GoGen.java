@@ -1,4 +1,4 @@
-package tech.sourced.langparsers;
+package bblfsh;
 
 import org.eclipse.jdt.core.dom.ASTNode;
 import org.junit.Test;
