@@ -10,8 +10,15 @@ import (
 var AnnotationRules = On(Any).Self(
 	On(Not(HasInternalType(jdt.CompilationUnit))).Error("root must be CompilationUnit"),
 	On(HasInternalType(jdt.CompilationUnit)).Roles(File).Descendants(
+		On(Or(HasInternalType(jdt.MethodDeclaration), HasInternalType(jdt.TypeDeclaration))).Self(
+			On(HasChild(And(HasInternalType(jdt.Modifier), HasToken("public")))).Roles(VisibleFromWorld),
+			On(HasChild(And(HasInternalType(jdt.Modifier), HasToken("private")))).Roles(VisibleFromType),
+			On(HasChild(And(HasInternalType(jdt.Modifier), HasToken("protected")))).Roles(VisibleFromSubtype),
+			On(Not(HasChild(And(HasInternalType(jdt.Modifier),
+				Or(HasToken("public"), HasToken("private"), HasToken("protected")),
+			)))).Roles(VisibleFromPackage),
+		),
 		On(HasInternalType(jdt.PackageDeclaration)).Roles(PackageDeclaration),
-		On(HasInternalType(jdt.MethodDeclaration)).Roles(FunctionDeclaration),
 		On(HasInternalType(jdt.ImportDeclaration)).Roles(ImportDeclaration).Children(
 			On(HasInternalType(jdt.QualifiedName)).Roles(ImportPath),
 		),
@@ -21,7 +28,11 @@ var AnnotationRules = On(Any).Self(
 		On(HasInternalType(jdt.Block)).Roles(BlockScope, Block),
 		On(HasInternalType(jdt.ExpressionStatement)).Roles(Statement),
 		On(HasInternalType(jdt.ReturnStatement)).Roles(Return, Statement),
-		On(HasInternalType(jdt.MethodInvocation)).Roles(MethodInvocation),
+		On(HasInternalType(jdt.MethodInvocation)).Roles(Call).Children(
+			On(HasInternalRole("expression")).Roles(CallReceiver),
+			On(HasInternalRole("name")).Roles(CallCallee),
+			On(HasInternalRole("arguments")).Roles(CallPositionalArgument),
+		),
 		On(HasInternalType(jdt.IfStatement)).Roles(If, Statement),
 		On(HasInternalRole("elseStatement")).Roles(IfElse, Statement),
 		On(HasInternalType(jdt.Assignment)).Roles(Assignment).Children(
