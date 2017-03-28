@@ -48,17 +48,26 @@ var AnnotationRules = On(Any).Self(
 			On(jdt.PropertyArguments).Roles(CallPositionalArgument),
 		),
 
+		// Conditionals
+		On(jdt.IfStatement).Roles(If, Statement).Children(
+			On(jdt.PropertyExpression).Roles(IfCondition),
+			On(jdt.PropertyThenStatement).Roles(IfBody),
+			On(jdt.PropertyElseExpression).Roles(IfElse),
+		),
+
+		On(jdt.SwitchStatement).Roles(Switch, Statement).Children(
+			//TODO: On(jdt.PropertyExpression).Roles(SwitchExpression),
+			On(jdt.SwitchCase).Roles(SwitchCase),
+		),
+
 		// Others
 		On(jdt.Block).Roles(BlockScope, Block),
 		On(jdt.ExpressionStatement).Roles(Statement),
 		On(jdt.ReturnStatement).Roles(Return, Statement),
-		On(jdt.IfStatement).Roles(If, Statement),
-		On(jdt.PropertyElseExpression).Roles(IfElse, Statement),
 		On(jdt.Assignment).Roles(Assignment).Children(
 			On(jdt.PropertyLeftHandSide).Roles(AssignmentVariable),
 			On(jdt.PropertyRightHandSide).Roles(AssignmentValue),
 		),
-		//TODO: IfBody, IfCondition
 		On(jdt.ThisExpression).Roles(This, Expression),
 		//TODO: synchronized
 		//TODO: try-with-resources
