@@ -10,6 +10,11 @@ import (
 var AnnotationRules = On(Any).Self(
 	On(Not(jdt.CompilationUnit)).Error("root must be CompilationUnit"),
 	On(jdt.CompilationUnit).Roles(File).Descendants(
+		// Names
+		On(jdt.QualifiedName).Roles(QualifiedIdentifier),
+		On(jdt.SimpleName).Roles(SimpleIdentifier),
+
+		// Visibility
 		On(Or(jdt.MethodDeclaration, jdt.TypeDeclaration)).Self(
 			On(HasChild(And(jdt.Modifier, jdt.KeywordPublic))).Roles(VisibleFromWorld),
 			On(HasChild(And(jdt.Modifier, jdt.KeywordPrivate))).Roles(VisibleFromType),
@@ -18,21 +23,35 @@ var AnnotationRules = On(Any).Self(
 				Or(jdt.KeywordPublic, jdt.KeywordPrivate, jdt.KeywordProtected),
 			)))).Roles(VisibleFromPackage),
 		),
+
+		// Package and imports
 		On(jdt.PackageDeclaration).Roles(PackageDeclaration),
 		On(jdt.ImportDeclaration).Roles(ImportDeclaration).Children(
 			On(jdt.QualifiedName).Roles(ImportPath),
 		),
+
+		// Type declarations
 		On(jdt.TypeDeclaration).Roles(TypeDeclaration),
-		On(jdt.QualifiedName).Roles(QualifiedIdentifier),
-		On(jdt.SimpleName).Roles(SimpleIdentifier),
-		On(jdt.Block).Roles(BlockScope, Block),
-		On(jdt.ExpressionStatement).Roles(Statement),
-		On(jdt.ReturnStatement).Roles(Return, Statement),
+
+		// Literals
+		On(jdt.BooleanLiteral).Roles(BooleanLiteral),
+		On(jdt.CharacterLiteral).Roles(CharacterLiteral),
+		On(jdt.NullLiteral).Roles(NullLiteral),
+		On(jdt.NumberLiteral).Roles(NumberLiteral),
+		On(jdt.StringLiteral).Roles(StringLiteral),
+		On(jdt.TypeLiteral).Roles(TypeLiteral),
+
+		// Calls
 		On(jdt.MethodInvocation).Roles(Call).Children(
 			On(jdt.PropertyExpression).Roles(CallReceiver),
 			On(jdt.PropertyName).Roles(CallCallee),
 			On(jdt.PropertyArguments).Roles(CallPositionalArgument),
 		),
+
+		// Others
+		On(jdt.Block).Roles(BlockScope, Block),
+		On(jdt.ExpressionStatement).Roles(Statement),
+		On(jdt.ReturnStatement).Roles(Return, Statement),
 		On(jdt.IfStatement).Roles(If, Statement),
 		On(jdt.PropertyElseExpression).Roles(IfElse, Statement),
 		On(jdt.Assignment).Roles(Assignment).Children(
@@ -40,10 +59,6 @@ var AnnotationRules = On(Any).Self(
 			On(jdt.PropertyRightHandSide).Roles(AssignmentValue),
 		),
 		//TODO: IfBody, IfCondition
-		On(jdt.NullLiteral).Roles(NullLiteral, Literal),
-		On(jdt.StringLiteral).Roles(StringLiteral, Literal),
-		On(jdt.NumberLiteral).Roles(NumberLiteral, Literal),
-		On(jdt.TypeLiteral).Roles(TypeLiteral, Literal),
 		On(jdt.ThisExpression).Roles(This, Expression),
 		//TODO: synchronized
 		//TODO: try-with-resources
