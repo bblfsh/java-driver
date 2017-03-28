@@ -29,15 +29,15 @@ var AnnotationRules = On(Any).Self(
 		On(jdt.ExpressionStatement).Roles(Statement),
 		On(jdt.ReturnStatement).Roles(Return, Statement),
 		On(jdt.MethodInvocation).Roles(Call).Children(
-			On(HasInternalRole("expression")).Roles(CallReceiver),
-			On(HasInternalRole("name")).Roles(CallCallee),
-			On(HasInternalRole("arguments")).Roles(CallPositionalArgument),
+			On(jdt.PropertyExpression).Roles(CallReceiver),
+			On(jdt.PropertyName).Roles(CallCallee),
+			On(jdt.PropertyArguments).Roles(CallPositionalArgument),
 		),
 		On(jdt.IfStatement).Roles(If, Statement),
-		On(HasInternalRole("elseStatement")).Roles(IfElse, Statement),
+		On(jdt.PropertyElseExpression).Roles(IfElse, Statement),
 		On(jdt.Assignment).Roles(Assignment).Children(
-			On(HasInternalRole("leftHandSide")).Roles(AssignmentVariable),
-			On(HasInternalRole("rightHandSide")).Roles(AssignmentValue),
+			On(jdt.PropertyLeftHandSide).Roles(AssignmentVariable),
+			On(jdt.PropertyRightHandSide).Roles(AssignmentValue),
 		),
 		//TODO: IfBody, IfCondition
 		On(jdt.NullLiteral).Roles(NullLiteral, Literal),
