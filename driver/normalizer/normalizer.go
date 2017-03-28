@@ -11,11 +11,11 @@ var AnnotationRules = On(Any).Self(
 	On(Not(jdt.CompilationUnit)).Error("root must be CompilationUnit"),
 	On(jdt.CompilationUnit).Roles(File).Descendants(
 		On(Or(jdt.MethodDeclaration, jdt.TypeDeclaration)).Self(
-			On(HasChild(And(jdt.Modifier, HasToken("public")))).Roles(VisibleFromWorld),
-			On(HasChild(And(jdt.Modifier, HasToken("private")))).Roles(VisibleFromType),
-			On(HasChild(And(jdt.Modifier, HasToken("protected")))).Roles(VisibleFromSubtype),
+			On(HasChild(And(jdt.Modifier, jdt.KeywordPublic))).Roles(VisibleFromWorld),
+			On(HasChild(And(jdt.Modifier, jdt.KeywordPrivate))).Roles(VisibleFromType),
+			On(HasChild(And(jdt.Modifier, jdt.KeywordProtected))).Roles(VisibleFromSubtype),
 			On(Not(HasChild(And(jdt.Modifier,
-				Or(HasToken("public"), HasToken("private"), HasToken("protected")),
+				Or(jdt.KeywordPublic, jdt.KeywordPrivate, jdt.KeywordProtected),
 			)))).Roles(VisibleFromPackage),
 		),
 		On(jdt.PackageDeclaration).Roles(PackageDeclaration),

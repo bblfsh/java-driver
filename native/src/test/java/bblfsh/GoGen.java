@@ -11,12 +11,14 @@ import org.reflections.util.ClasspathHelper;
 import org.reflections.util.ConfigurationBuilder;
 
 import java.io.PrintStream;
+import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Locale;
 import java.util.stream.Collectors;
 
 /**
@@ -36,6 +38,8 @@ public class GoGen {
                 .sorted()
                 .distinct()
                 .collect(Collectors.toList());
+
+        final List<String> keywords = keywords();
 
         out.print(""
                 + "// Package jdt defines constants from Eclipse JDT AST.\n"
@@ -63,6 +67,16 @@ public class GoGen {
         for (final String prop : structuralProperties) {
             final String varName = "Property" + StringUtils.capitalize(prop);
             out.printf("\t%s = ann.HasInternalRole(\"%s\")\n", varName, prop);
+        }
+        out.print(")\n");
+        out.print("\n");
+        out.print(""
+                + "// Java Keywords\n"
+                + "var (\n"
+        );
+        for (final String kw : keywords) {
+            final String varName = "Keyword" + StringUtils.capitalize(kw.toLowerCase(Locale.ENGLISH));
+            out.printf("\t%s = ann.HasToken(\"%s\")\n", varName, kw);
         }
         out.print(")\n");
     }
@@ -105,4 +119,22 @@ public class GoGen {
         return result;
     }
 
+    private static List<String> keywords() {
+        final Field[] fields = org.eclipse.jdt.internal.codeassist.impl.Keywords.class
+                .getFields();
+        final List<String> kws = new ArrayList<>();
+        for (final Field field : fields) {
+            if (!char[].class.isAssignableFrom(field.getType())) {
+                continue;
+            }
+
+            try {
+                final char[] kw = (char[]) field.get(null);
+                kws.add(new String(kw));
+            } catch (IllegalAccessException ex) {
+                throw new RuntimeException(ex);
+            }
+        }
+        return kws;
+    }
 }
