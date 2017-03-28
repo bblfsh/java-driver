@@ -8,45 +8,45 @@ import (
 )
 
 var AnnotationRules = On(Any).Self(
-	On(Not(HasInternalType(jdt.CompilationUnit))).Error("root must be CompilationUnit"),
-	On(HasInternalType(jdt.CompilationUnit)).Roles(File).Descendants(
-		On(Or(HasInternalType(jdt.MethodDeclaration), HasInternalType(jdt.TypeDeclaration))).Self(
-			On(HasChild(And(HasInternalType(jdt.Modifier), HasToken("public")))).Roles(VisibleFromWorld),
-			On(HasChild(And(HasInternalType(jdt.Modifier), HasToken("private")))).Roles(VisibleFromType),
-			On(HasChild(And(HasInternalType(jdt.Modifier), HasToken("protected")))).Roles(VisibleFromSubtype),
-			On(Not(HasChild(And(HasInternalType(jdt.Modifier),
+	On(Not(jdt.CompilationUnit)).Error("root must be CompilationUnit"),
+	On(jdt.CompilationUnit).Roles(File).Descendants(
+		On(Or(jdt.MethodDeclaration, jdt.TypeDeclaration)).Self(
+			On(HasChild(And(jdt.Modifier, HasToken("public")))).Roles(VisibleFromWorld),
+			On(HasChild(And(jdt.Modifier, HasToken("private")))).Roles(VisibleFromType),
+			On(HasChild(And(jdt.Modifier, HasToken("protected")))).Roles(VisibleFromSubtype),
+			On(Not(HasChild(And(jdt.Modifier,
 				Or(HasToken("public"), HasToken("private"), HasToken("protected")),
 			)))).Roles(VisibleFromPackage),
 		),
-		On(HasInternalType(jdt.PackageDeclaration)).Roles(PackageDeclaration),
-		On(HasInternalType(jdt.ImportDeclaration)).Roles(ImportDeclaration).Children(
-			On(HasInternalType(jdt.QualifiedName)).Roles(ImportPath),
+		On(jdt.PackageDeclaration).Roles(PackageDeclaration),
+		On(jdt.ImportDeclaration).Roles(ImportDeclaration).Children(
+			On(jdt.QualifiedName).Roles(ImportPath),
 		),
-		On(HasInternalType(jdt.TypeDeclaration)).Roles(TypeDeclaration),
-		On(HasInternalType(jdt.QualifiedName)).Roles(QualifiedIdentifier),
-		On(HasInternalType(jdt.SimpleName)).Roles(SimpleIdentifier),
-		On(HasInternalType(jdt.Block)).Roles(BlockScope, Block),
-		On(HasInternalType(jdt.ExpressionStatement)).Roles(Statement),
-		On(HasInternalType(jdt.ReturnStatement)).Roles(Return, Statement),
-		On(HasInternalType(jdt.MethodInvocation)).Roles(Call).Children(
+		On(jdt.TypeDeclaration).Roles(TypeDeclaration),
+		On(jdt.QualifiedName).Roles(QualifiedIdentifier),
+		On(jdt.SimpleName).Roles(SimpleIdentifier),
+		On(jdt.Block).Roles(BlockScope, Block),
+		On(jdt.ExpressionStatement).Roles(Statement),
+		On(jdt.ReturnStatement).Roles(Return, Statement),
+		On(jdt.MethodInvocation).Roles(Call).Children(
 			On(HasInternalRole("expression")).Roles(CallReceiver),
 			On(HasInternalRole("name")).Roles(CallCallee),
 			On(HasInternalRole("arguments")).Roles(CallPositionalArgument),
 		),
-		On(HasInternalType(jdt.IfStatement)).Roles(If, Statement),
+		On(jdt.IfStatement).Roles(If, Statement),
 		On(HasInternalRole("elseStatement")).Roles(IfElse, Statement),
-		On(HasInternalType(jdt.Assignment)).Roles(Assignment).Children(
+		On(jdt.Assignment).Roles(Assignment).Children(
 			On(HasInternalRole("leftHandSide")).Roles(AssignmentVariable),
 			On(HasInternalRole("rightHandSide")).Roles(AssignmentValue),
 		),
 		//TODO: IfBody, IfCondition
-		On(HasInternalType(jdt.NullLiteral)).Roles(NullLiteral, Literal),
-		On(HasInternalType(jdt.StringLiteral)).Roles(StringLiteral, Literal),
-		On(HasInternalType(jdt.NumberLiteral)).Roles(NumberLiteral, Literal),
-		On(HasInternalType(jdt.TypeLiteral)).Roles(TypeLiteral, Literal),
-		On(HasInternalType(jdt.ThisExpression)).Roles(This, Expression),
+		On(jdt.NullLiteral).Roles(NullLiteral, Literal),
+		On(jdt.StringLiteral).Roles(StringLiteral, Literal),
+		On(jdt.NumberLiteral).Roles(NumberLiteral, Literal),
+		On(jdt.TypeLiteral).Roles(TypeLiteral, Literal),
+		On(jdt.ThisExpression).Roles(This, Expression),
 		//TODO: synchronized
 		//TODO: try-with-resources
-		On(HasInternalType(jdt.Javadoc)).Roles(Documentation, Comment),
+		On(jdt.Javadoc).Roles(Documentation, Comment),
 	),
 )
