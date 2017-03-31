@@ -137,7 +137,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  1: InfixExpression {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: AssignmentValue
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: OpAdd,AssignmentValue
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 43
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 4
@@ -209,7 +209,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  1: InfixExpression {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: AssignmentValue
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: OpSubstract,AssignmentValue
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 56
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 5
@@ -281,7 +281,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  1: InfixExpression {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: AssignmentValue
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: OpMultiply,AssignmentValue
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 69
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 6
@@ -353,7 +353,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  1: InfixExpression {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: AssignmentValue
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: OpDivide,AssignmentValue
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 82
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 7
@@ -425,7 +425,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  1: InfixExpression {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: AssignmentValue
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: OpMod,AssignmentValue
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 95
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 8
@@ -473,6 +473,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  0: PostfixExpression {
+.  .  .  .  .  .  .  .  .  .  .  Roles: OpPostIncrement
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 105
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 10
@@ -506,6 +507,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  0: PostfixExpression {
+.  .  .  .  .  .  .  .  .  .  .  Roles: OpPostDecrement
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 112
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 11
@@ -539,6 +541,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  0: PrefixExpression {
+.  .  .  .  .  .  .  .  .  .  .  Roles: OpPreIncrement
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 120
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 13
@@ -572,6 +575,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  0: PrefixExpression {
+.  .  .  .  .  .  .  .  .  .  .  Roles: OpPreDecrement
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 127
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 14
@@ -629,7 +633,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  1: PrefixExpression {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: AssignmentValue
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: OpPositive,AssignmentValue
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 139
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 16
@@ -689,7 +693,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  1: PrefixExpression {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: AssignmentValue
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: OpNegative,AssignmentValue
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 149
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 17
@@ -749,7 +753,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  1: PrefixExpression {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: AssignmentValue
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: OpBitwiseComplement,AssignmentValue
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 160
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 19
@@ -809,7 +813,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  1: InfixExpression {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: AssignmentValue
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: OpBitwiseAnd,AssignmentValue
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 171
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 21
@@ -881,7 +885,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  1: InfixExpression {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: AssignmentValue
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: OpBooleanXor,AssignmentValue
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 182
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 22
@@ -953,7 +957,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  1: InfixExpression {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: AssignmentValue
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: OpBitwiseOr,AssignmentValue
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 193
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 23
@@ -1025,7 +1029,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  1: InfixExpression {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: AssignmentValue
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: OpBitwiseLeftShift,AssignmentValue
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 204
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 24
@@ -1097,7 +1101,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  1: InfixExpression {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: AssignmentValue
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: OpBitwiseRightShift,AssignmentValue
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 218
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 25
@@ -1169,7 +1173,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  1: InfixExpression {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: AssignmentValue
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: OpBitwiseUnsignedRightShift,AssignmentValue
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 232
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 26
@@ -1302,7 +1306,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  0: Assignment {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment
+.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment,AugmentedAssignmentOperator,AugmentedAssignment,OpAdd
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 266
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 30
@@ -1348,7 +1352,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  0: Assignment {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment
+.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment,AugmentedAssignmentOperator,AugmentedAssignment,OpSubstract
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 276
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 31
@@ -1394,7 +1398,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  0: Assignment {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment
+.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment,AugmentedAssignmentOperator,AugmentedAssignment,OpMultiply
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 286
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 32
@@ -1440,7 +1444,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  0: Assignment {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment
+.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment,AugmentedAssignmentOperator,AugmentedAssignment,OpDivide
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 296
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 33
@@ -1486,7 +1490,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  0: Assignment {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment
+.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment,AugmentedAssignmentOperator,AugmentedAssignment,OpMod
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 306
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 34
@@ -1532,7 +1536,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  0: Assignment {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment
+.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment,AugmentedAssignmentOperator,AugmentedAssignment,OpBitwiseAnd
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 316
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 35
@@ -1578,7 +1582,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  0: Assignment {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment
+.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment,AugmentedAssignmentOperator,AugmentedAssignment,OpBooleanXor
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 326
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 36
@@ -1624,7 +1628,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  0: Assignment {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment
+.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment,AugmentedAssignmentOperator,AugmentedAssignment,OpBitwiseOr
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 336
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 37
@@ -1670,7 +1674,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  0: Assignment {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment
+.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment,AugmentedAssignmentOperator,AugmentedAssignment,OpBitwiseLeftShift
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 346
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 38
@@ -1716,7 +1720,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  0: Assignment {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment
+.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment,AugmentedAssignmentOperator,AugmentedAssignment,OpBitwiseRightShift
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 357
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 39
@@ -1762,7 +1766,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  0: Assignment {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment
+.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment,AugmentedAssignmentOperator,AugmentedAssignment,OpBitwiseUnsignedRightShift
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 368
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 40
@@ -1869,7 +1873,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  1: PrefixExpression {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: AssignmentValue
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: OpBooleanNot,AssignmentValue
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 399
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 44

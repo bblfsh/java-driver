@@ -60,14 +60,60 @@ var AnnotationRules = On(Any).Self(
 			On(jdt.SwitchCase).Roles(SwitchCase),
 		),
 
+		On(jdt.InfixExpression).Self(
+			On(HasProperty("operator", "+")).Roles(OpAdd),
+			On(HasProperty("operator", "-")).Roles(OpSubstract),
+			On(HasProperty("operator", "*")).Roles(OpMultiply),
+			On(HasProperty("operator", "/")).Roles(OpDivide),
+			On(HasProperty("operator", "%")).Roles(OpMod),
+			On(HasProperty("operator", "<<")).Roles(OpBitwiseLeftShift),
+			On(HasProperty("operator", ">>")).Roles(OpBitwiseRightShift),
+			On(HasProperty("operator", ">>>")).Roles(OpBitwiseUnsignedRightShift),
+			On(HasProperty("operator", "&")).Roles(OpBitwiseAnd),
+			On(HasProperty("operator", "|")).Roles(OpBitwiseOr),
+			On(HasProperty("operator", "&&")).Roles(OpBooleanAnd),
+			On(HasProperty("operator", "||")).Roles(OpBooleanOr),
+			On(HasProperty("operator", "^")).Roles(OpBooleanXor),
+		),
+
+		On(jdt.PostfixExpression).Self(
+			On(HasProperty("operator", "++")).Roles(OpPostIncrement),
+			On(HasProperty("operator", "--")).Roles(OpPostDecrement),
+		),
+
+		On(jdt.PrefixExpression).Self(
+			On(HasProperty("operator", "++")).Roles(OpPreIncrement),
+			On(HasProperty("operator", "--")).Roles(OpPreDecrement),
+			On(HasProperty("operator", "+")).Roles(OpPositive),
+			On(HasProperty("operator", "-")).Roles(OpNegative),
+			On(HasProperty("operator", "~")).Roles(OpBitwiseComplement),
+			On(HasProperty("operator", "!")).Roles(OpBooleanNot),
+		),
+
+		On(jdt.Assignment).Roles(Assignment).Children(
+			On(jdt.PropertyLeftHandSide).Roles(AssignmentVariable),
+			On(jdt.PropertyRightHandSide).Roles(AssignmentValue),
+		).Self(
+			On(Not(HasProperty("operator", "="))).Roles(AugmentedAssignmentOperator, AugmentedAssignment).Self(
+				On(HasProperty("operator", "+=")).Roles(OpAdd),
+				On(HasProperty("operator", "-=")).Roles(OpSubstract),
+				On(HasProperty("operator", "*=")).Roles(OpMultiply),
+				On(HasProperty("operator", "/=")).Roles(OpDivide),
+				On(HasProperty("operator", "%=")).Roles(OpMod),
+				On(HasProperty("operator", "&=")).Roles(OpBitwiseAnd),
+				On(HasProperty("operator", "|=")).Roles(OpBitwiseOr),
+				On(HasProperty("operator", "^=")).Roles(OpBooleanXor),
+				On(HasProperty("operator", "<<=")).Roles(OpBitwiseLeftShift),
+				On(HasProperty("operator", ">>=")).Roles(OpBitwiseRightShift),
+				On(HasProperty("operator", ">>>=")).Roles(OpBitwiseUnsignedRightShift),
+			),
+		),
+
 		// Others
 		On(jdt.Block).Roles(BlockScope, Block),
 		On(jdt.ExpressionStatement).Roles(Statement),
 		On(jdt.ReturnStatement).Roles(Return, Statement),
-		On(jdt.Assignment).Roles(Assignment).Children(
-			On(jdt.PropertyLeftHandSide).Roles(AssignmentVariable),
-			On(jdt.PropertyRightHandSide).Roles(AssignmentValue),
-		),
+
 		On(jdt.ThisExpression).Roles(This, Expression),
 		//TODO: synchronized
 		//TODO: try-with-resources
