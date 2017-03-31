@@ -1,6 +1,8 @@
 package bblfsh;
 
-import java.io.*;
+import sun.reflect.annotation.ExceptionProxy;
+
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class Driver {
@@ -15,16 +17,18 @@ public class Driver {
         this.parser = new EclipseParser();
     }
 
-    public void run() throws DriverException {
+    public void run() throws DriverException, CloseException {
         while (true) {
             this.processOne();
         }
     }
 
-    public void processOne() throws DriverException {
+    public void processOne() throws DriverException, CloseException {
         Request request;
         try {
             request = this.reader.read();
+        } catch (CloseException ex) {
+            throw ex;
         } catch (Exception ex) {
             final Response response = createFatalResponse(ex);
             try {

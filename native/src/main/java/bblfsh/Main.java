@@ -9,6 +9,8 @@ public class Main {
 
         try {
             driver.run();
+        } catch (CloseException e) {
+            System.exit(0);
         } catch (DriverException e) {
             System.exit(1);
         }

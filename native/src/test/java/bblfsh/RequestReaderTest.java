@@ -3,6 +3,7 @@ package bblfsh;
 import org.junit.Test;
 
 import java.io.ByteArrayInputStream;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
@@ -50,4 +51,22 @@ public class RequestReaderTest {
         assertThat(request).isEqualTo(expected);
     }
 
+    @Test
+    public void throwOnClosed() throws IOException {
+        final InputStream in = new ByteArrayInputStream(new byte[]{}) {
+            @Override
+            public int read(byte[] var1) throws IOException {
+                throw new IOException("closed");
+            }
+        };
+        final RequestReader reader = new RequestReader(in);
+
+        boolean thrown = false;
+        try {
+            reader.read();
+        } catch (IOException ex) {
+            thrown = true;
+        }
+        assertThat(thrown).isTrue();
+    }
 }

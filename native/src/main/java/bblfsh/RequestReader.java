@@ -1,9 +1,5 @@
 package bblfsh;
 
-import com.fasterxml.jackson.core.JsonEncoding;
-import com.fasterxml.jackson.core.JsonFactory;
-import com.fasterxml.jackson.core.JsonGenerator;
-import com.fasterxml.jackson.core.util.DefaultPrettyPrinter;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
@@ -28,6 +24,9 @@ public class RequestReader {
 
     public Request read() throws IOException {
         final String line = this.reader.readLine();
+        if (line == null) {
+            throw new CloseException("exception while reading line (null)");
+        }
         return mapper.readValue(line, Request.class);
     }
 

@@ -7,7 +7,8 @@ import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.databind.module.SimpleModule;
 import org.eclipse.jdt.core.dom.CompilationUnit;
 
-import java.io.*;
+import java.io.IOException;
+import java.io.OutputStream;
 
 public class ResponseWriter {
 
