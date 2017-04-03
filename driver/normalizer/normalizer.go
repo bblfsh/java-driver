@@ -33,6 +33,20 @@ var AnnotationRules = On(Any).Self(
 		// Type declarations
 		On(jdt.TypeDeclaration).Roles(TypeDeclaration),
 
+		// Method declarations
+		On(jdt.MethodDeclaration).Roles(FunctionDeclaration).Children(
+			//TODO: On(jdt.PropertyTypeParameters).Roles(FunctionDeclarationTypeParameter),
+			//TODO: On(jdt.PropertyReturnType2).Roles(FunctionDeclarationReturnType)
+			On(jdt.PropertyName).Roles(FunctionDeclarationName),
+			On(jdt.PropertyBody).Roles(FunctionDeclarationBody),
+			On(jdt.PropertyParameters).Roles(FunctionDeclarationArgument).Self(
+				On(HasProperty("varargs", "true")).Roles(FunctionDeclarationVarArgsList),
+			).Children(
+				//TODO: On(jdt.PropertyType).Roles(FunctionDeclarationArgumentType),
+				On(jdt.PropertyName).Roles(FunctionDeclarationArgumentName),
+			),
+		),
+
 		// Literals
 		On(jdt.BooleanLiteral).Roles(BooleanLiteral),
 		On(jdt.CharacterLiteral).Roles(CharacterLiteral),
