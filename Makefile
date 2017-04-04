@@ -1,3 +1,7 @@
+-include .sdk/Makefile
+
+$(if $(filter true,$(sdkloaded)),,$(error You must install bblfsh-sdk))
+
 MVN_CMD := mvn
 JAR := native-jar-with-dependencies.jar
 
@@ -12,5 +16,3 @@ build-native-internal:
 	cp native/src/main/sh/native.sh $(BUILD_PATH)/native; \
 	chmod +x $(BUILD_PATH)/native
 
-
-include .sdk/Makefile

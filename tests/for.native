@@ -1,0 +1,151 @@
+{
+    "ast": {
+        "CompilationUnit": {
+            "internalClass": "CompilationUnit",
+            "types": [
+                {
+                    "bodyDeclarations": [
+                        {
+                            "body": {
+                                "internalClass": "Block",
+                                "statements": [
+                                    {
+                                        "body": {
+                                            "internalClass": "Block",
+                                            "statements": [
+                                                {
+                                                    "expression": {
+                                                        "arguments": [
+                                                            {
+                                                                "identifier": "i",
+                                                                "internalClass": "SimpleName",
+                                                                "line": 4,
+                                                                "startPosition": 95
+                                                            }
+                                                        ],
+                                                        "expression": {
+                                                            "internalClass": "QualifiedName",
+                                                            "name": {
+                                                                "identifier": "out",
+                                                                "internalClass": "SimpleName",
+                                                                "line": 4,
+                                                                "startPosition": 83
+                                                            },
+                                                            "qualifier": {
+                                                                "identifier": "System",
+                                                                "internalClass": "SimpleName",
+                                                                "line": 4,
+                                                                "startPosition": 76
+                                                            }
+                                                        },
+                                                        "internalClass": "MethodInvocation",
+                                                        "name": {
+                                                            "identifier": "println",
+                                                            "internalClass": "SimpleName",
+                                                            "line": 4,
+                                                            "startPosition": 87
+                                                        }
+                                                    },
+                                                    "internalClass": "ExpressionStatement"
+                                                }
+                                            ]
+                                        },
+                                        "expression": {
+                                            "internalClass": "InfixExpression",
+                                            "leftOperand": {
+                                                "identifier": "i",
+                                                "internalClass": "SimpleName",
+                                                "line": 3,
+                                                "startPosition": 49
+                                            },
+                                            "line": 3,
+                                            "operator": "<",
+                                            "rightOperand": {
+                                                "internalClass": "NumberLiteral",
+                                                "line": 3,
+                                                "startPosition": 53,
+                                                "token": "10"
+                                            },
+                                            "startPosition": 49
+                                        },
+                                        "initializers": [
+                                            {
+                                                "fragments": [
+                                                    {
+                                                        "initializer": {
+                                                            "internalClass": "NumberLiteral",
+                                                            "line": 3,
+                                                            "startPosition": 46,
+                                                            "token": "0"
+                                                        },
+                                                        "internalClass": "VariableDeclarationFragment",
+                                                        "name": {
+                                                            "identifier": "i",
+                                                            "internalClass": "SimpleName",
+                                                            "line": 3,
+                                                            "startPosition": 42
+                                                        }
+                                                    }
+                                                ],
+                                                "internalClass": "VariableDeclarationExpression",
+                                                "type": {
+                                                    "internalClass": "PrimitiveType",
+                                                    "line": 3,
+                                                    "primitiveTypeCode": "int",
+                                                    "startPosition": 38
+                                                }
+                                            }
+                                        ],
+                                        "internalClass": "ForStatement",
+                                        "updaters": [
+                                            {
+                                                "internalClass": "PostfixExpression",
+                                                "line": 3,
+                                                "operand": {
+                                                    "identifier": "i",
+                                                    "internalClass": "SimpleName",
+                                                    "line": 3,
+                                                    "startPosition": 57
+                                                },
+                                                "operator": "++",
+                                                "startPosition": 57
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "constructor": "false",
+                            "internalClass": "MethodDeclaration",
+                            "line": 2,
+                            "name": {
+                                "identifier": "code",
+                                "internalClass": "SimpleName",
+                                "line": 2,
+                                "startPosition": 19
+                            },
+                            "returnType2": {
+                                "internalClass": "PrimitiveType",
+                                "line": 2,
+                                "primitiveTypeCode": "void",
+                                "startPosition": 14
+                            },
+                            "startPosition": 14
+                        }
+                    ],
+                    "interface": "false",
+                    "internalClass": "TypeDeclaration",
+                    "line": 1,
+                    "name": {
+                        "identifier": "Code",
+                        "internalClass": "SimpleName",
+                        "line": 1,
+                        "startPosition": 6
+                    },
+                    "startPosition": 0
+                }
+            ]
+        }
+    },
+    "errors": [],
+    "status": "ok"
+}

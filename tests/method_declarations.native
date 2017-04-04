@@ -1,0 +1,382 @@
+{
+    "ast": {
+        "CompilationUnit": {
+            "internalClass": "CompilationUnit",
+            "types": [
+                {
+                    "bodyDeclarations": [
+                        {
+                            "body": {
+                                "internalClass": "Block"
+                            },
+                            "constructor": "false",
+                            "internalClass": "MethodDeclaration",
+                            "line": 2,
+                            "name": {
+                                "identifier": "voidToVoid",
+                                "internalClass": "SimpleName",
+                                "line": 2,
+                                "startPosition": 22
+                            },
+                            "returnType2": {
+                                "internalClass": "PrimitiveType",
+                                "line": 2,
+                                "primitiveTypeCode": "void",
+                                "startPosition": 17
+                            },
+                            "startPosition": 17
+                        },
+                        {
+                            "body": {
+                                "internalClass": "Block"
+                            },
+                            "constructor": "false",
+                            "internalClass": "MethodDeclaration",
+                            "line": 3,
+                            "modifiers": [
+                                {
+                                    "internalClass": "Modifier",
+                                    "keyword": "public",
+                                    "line": 3,
+                                    "startPosition": 43
+                                },
+                                {
+                                    "internalClass": "Modifier",
+                                    "keyword": "static",
+                                    "line": 3,
+                                    "startPosition": 50
+                                }
+                            ],
+                            "name": {
+                                "identifier": "publicStaticVoidToVoid",
+                                "internalClass": "SimpleName",
+                                "line": 3,
+                                "startPosition": 62
+                            },
+                            "returnType2": {
+                                "internalClass": "PrimitiveType",
+                                "line": 3,
+                                "primitiveTypeCode": "void",
+                                "startPosition": 57
+                            },
+                            "startPosition": 43
+                        },
+                        {
+                            "body": {
+                                "internalClass": "Block",
+                                "statements": [
+                                    {
+                                        "expression": {
+                                            "identifier": "i",
+                                            "internalClass": "SimpleName",
+                                            "line": 4,
+                                            "startPosition": 124
+                                        },
+                                        "internalClass": "ReturnStatement"
+                                    }
+                                ]
+                            },
+                            "constructor": "false",
+                            "internalClass": "MethodDeclaration",
+                            "line": 4,
+                            "name": {
+                                "identifier": "intToInt",
+                                "internalClass": "SimpleName",
+                                "line": 4,
+                                "startPosition": 99
+                            },
+                            "parameters": [
+                                {
+                                    "internalClass": "SingleVariableDeclaration",
+                                    "line": 4,
+                                    "name": {
+                                        "identifier": "i",
+                                        "internalClass": "SimpleName",
+                                        "line": 4,
+                                        "startPosition": 112
+                                    },
+                                    "startPosition": 108,
+                                    "type": {
+                                        "internalClass": "PrimitiveType",
+                                        "line": 4,
+                                        "primitiveTypeCode": "int",
+                                        "startPosition": 108
+                                    },
+                                    "varargs": "false"
+                                }
+                            ],
+                            "returnType2": {
+                                "internalClass": "PrimitiveType",
+                                "line": 4,
+                                "primitiveTypeCode": "int",
+                                "startPosition": 95
+                            },
+                            "startPosition": 95
+                        },
+                        {
+                            "body": {
+                                "internalClass": "Block",
+                                "statements": [
+                                    {
+                                        "expression": {
+                                            "identifier": "i",
+                                            "internalClass": "SimpleName",
+                                            "line": 5,
+                                            "startPosition": 172
+                                        },
+                                        "internalClass": "ReturnStatement"
+                                    }
+                                ]
+                            },
+                            "constructor": "false",
+                            "internalClass": "MethodDeclaration",
+                            "line": 5,
+                            "name": {
+                                "identifier": "intIntToInt",
+                                "internalClass": "SimpleName",
+                                "line": 5,
+                                "startPosition": 137
+                            },
+                            "parameters": [
+                                {
+                                    "internalClass": "SingleVariableDeclaration",
+                                    "line": 5,
+                                    "name": {
+                                        "identifier": "i",
+                                        "internalClass": "SimpleName",
+                                        "line": 5,
+                                        "startPosition": 153
+                                    },
+                                    "startPosition": 149,
+                                    "type": {
+                                        "internalClass": "PrimitiveType",
+                                        "line": 5,
+                                        "primitiveTypeCode": "int",
+                                        "startPosition": 149
+                                    },
+                                    "varargs": "false"
+                                },
+                                {
+                                    "internalClass": "SingleVariableDeclaration",
+                                    "line": 5,
+                                    "name": {
+                                        "identifier": "j",
+                                        "internalClass": "SimpleName",
+                                        "line": 5,
+                                        "startPosition": 160
+                                    },
+                                    "startPosition": 156,
+                                    "type": {
+                                        "internalClass": "PrimitiveType",
+                                        "line": 5,
+                                        "primitiveTypeCode": "int",
+                                        "startPosition": 156
+                                    },
+                                    "varargs": "false"
+                                }
+                            ],
+                            "returnType2": {
+                                "internalClass": "PrimitiveType",
+                                "line": 5,
+                                "primitiveTypeCode": "int",
+                                "startPosition": 133
+                            },
+                            "startPosition": 133
+                        },
+                        {
+                            "body": {
+                                "internalClass": "Block"
+                            },
+                            "constructor": "false",
+                            "internalClass": "MethodDeclaration",
+                            "line": 6,
+                            "name": {
+                                "identifier": "varIntToVoid",
+                                "internalClass": "SimpleName",
+                                "line": 6,
+                                "startPosition": 186
+                            },
+                            "parameters": [
+                                {
+                                    "internalClass": "SingleVariableDeclaration",
+                                    "line": 6,
+                                    "name": {
+                                        "identifier": "i",
+                                        "internalClass": "SimpleName",
+                                        "line": 6,
+                                        "startPosition": 206
+                                    },
+                                    "startPosition": 199,
+                                    "type": {
+                                        "internalClass": "PrimitiveType",
+                                        "line": 6,
+                                        "primitiveTypeCode": "int",
+                                        "startPosition": 199
+                                    },
+                                    "varargs": "true"
+                                }
+                            ],
+                            "returnType2": {
+                                "internalClass": "PrimitiveType",
+                                "line": 6,
+                                "primitiveTypeCode": "void",
+                                "startPosition": 181
+                            },
+                            "startPosition": 181
+                        },
+                        {
+                            "body": {
+                                "internalClass": "Block",
+                                "statements": [
+                                    {
+                                        "expression": {
+                                            "internalClass": "NullLiteral"
+                                        },
+                                        "internalClass": "ReturnStatement"
+                                    }
+                                ]
+                            },
+                            "constructor": "false",
+                            "internalClass": "MethodDeclaration",
+                            "line": 7,
+                            "name": {
+                                "identifier": "intToGenericT",
+                                "internalClass": "SimpleName",
+                                "line": 7,
+                                "startPosition": 223
+                            },
+                            "parameters": [
+                                {
+                                    "internalClass": "SingleVariableDeclaration",
+                                    "line": 7,
+                                    "name": {
+                                        "identifier": "i",
+                                        "internalClass": "SimpleName",
+                                        "line": 7,
+                                        "startPosition": 241
+                                    },
+                                    "startPosition": 237,
+                                    "type": {
+                                        "internalClass": "PrimitiveType",
+                                        "line": 7,
+                                        "primitiveTypeCode": "int",
+                                        "startPosition": 237
+                                    },
+                                    "varargs": "false"
+                                }
+                            ],
+                            "returnType2": {
+                                "internalClass": "SimpleType",
+                                "name": {
+                                    "identifier": "T",
+                                    "internalClass": "SimpleName",
+                                    "line": 7,
+                                    "startPosition": 221
+                                }
+                            },
+                            "startPosition": 217,
+                            "typeParameters": [
+                                {
+                                    "internalClass": "TypeParameter",
+                                    "name": {
+                                        "identifier": "T",
+                                        "internalClass": "SimpleName",
+                                        "line": 7,
+                                        "startPosition": 218
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "body": {
+                                "internalClass": "Block",
+                                "statements": [
+                                    {
+                                        "expression": {
+                                            "internalClass": "NullLiteral"
+                                        },
+                                        "internalClass": "ReturnStatement"
+                                    }
+                                ]
+                            },
+                            "constructor": "false",
+                            "internalClass": "MethodDeclaration",
+                            "line": 8,
+                            "name": {
+                                "identifier": "genericSToGenericT",
+                                "internalClass": "SimpleName",
+                                "line": 8,
+                                "startPosition": 273
+                            },
+                            "parameters": [
+                                {
+                                    "internalClass": "SingleVariableDeclaration",
+                                    "line": 8,
+                                    "name": {
+                                        "identifier": "i",
+                                        "internalClass": "SimpleName",
+                                        "line": 8,
+                                        "startPosition": 294
+                                    },
+                                    "startPosition": 292,
+                                    "type": {
+                                        "internalClass": "SimpleType",
+                                        "name": {
+                                            "identifier": "S",
+                                            "internalClass": "SimpleName",
+                                            "line": 8,
+                                            "startPosition": 292
+                                        }
+                                    },
+                                    "varargs": "false"
+                                }
+                            ],
+                            "returnType2": {
+                                "internalClass": "SimpleType",
+                                "name": {
+                                    "identifier": "T",
+                                    "internalClass": "SimpleName",
+                                    "line": 8,
+                                    "startPosition": 271
+                                }
+                            },
+                            "startPosition": 265,
+                            "typeParameters": [
+                                {
+                                    "internalClass": "TypeParameter",
+                                    "name": {
+                                        "identifier": "T",
+                                        "internalClass": "SimpleName",
+                                        "line": 8,
+                                        "startPosition": 266
+                                    }
+                                },
+                                {
+                                    "internalClass": "TypeParameter",
+                                    "name": {
+                                        "identifier": "S",
+                                        "internalClass": "SimpleName",
+                                        "line": 8,
+                                        "startPosition": 268
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "interface": "false",
+                    "internalClass": "TypeDeclaration",
+                    "line": 1,
+                    "name": {
+                        "identifier": "Code",
+                        "internalClass": "SimpleName",
+                        "line": 1,
+                        "startPosition": 6
+                    },
+                    "startPosition": 0
+                }
+            ]
+        }
+    },
+    "errors": [],
+    "status": "ok"
+}
