@@ -1,6 +1,8 @@
 package normalizer
 
 import (
+	"errors"
+
 	"github.com/bblfsh/java-driver/driver/normalizer/jdt"
 
 	. "github.com/bblfsh/sdk/uast"
@@ -8,7 +10,7 @@ import (
 )
 
 var AnnotationRules = On(Any).Self(
-	On(Not(jdt.CompilationUnit)).Error("root must be CompilationUnit"),
+	On(Not(jdt.CompilationUnit)).Error(errors.New("root must be CompilationUnit")),
 	On(jdt.CompilationUnit).Roles(File).Descendants(
 		// Names
 		On(jdt.QualifiedName).Roles(QualifiedIdentifier),

@@ -1,10 +1,11 @@
 package normalizer
 
 import (
-	"github.com/bblfsh/sdk/uast"
+	"github.com/bblfsh/sdk/protocol/driver"
+	"github.com/bblfsh/sdk/protocol/native"
 )
 
-var NativeToNoder = &uast.BaseToNoder{
+var ToNoder = &native.ObjectToNoder{
 	InternalTypeKey: "internalClass",
 	LineKey:         "line",
 	OffsetKey:       "startPosition",
@@ -22,4 +23,14 @@ var NativeToNoder = &uast.BaseToNoder{
 	},
 	//TODO: add names of children (e.g. elseStatement) as
 	//      children node properties.
+}
+
+// ASTParserBuilder creates a parser that transform source code files into *uast.Node.
+func ASTParserBuilder(opts driver.ASTParserOptions) (driver.ASTParser, error) {
+	parser, err := native.ExecParser(ToNoder, opts.NativeBin)
+	if err != nil {
+		return nil, err
+	}
+
+	return parser, nil
 }

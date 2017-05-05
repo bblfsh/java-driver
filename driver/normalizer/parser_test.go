@@ -13,7 +13,7 @@ func TestNativeToNoder(t *testing.T) {
 	f, err := getFixture("java_example_1.json")
 	require.NoError(err)
 
-	n, err := NativeToNoder.ToNode(f)
+	n, err := ToNoder.ToNode(f)
 	require.NoError(err)
 	require.NotNil(n)
 	fmt.Println("NODE", n)
