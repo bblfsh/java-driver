@@ -70,11 +70,13 @@ CompilationUnit {
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  0: ForStatement {
+.  .  .  .  .  .  .  .  .  Roles: For,Statement
 .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  internalRole: statements
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  0: VariableDeclarationExpression {
+.  .  .  .  .  .  .  .  .  .  .  Roles: ForInit
 .  .  .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  .  .  internalRole: initializers
 .  .  .  .  .  .  .  .  .  .  .  }
@@ -124,6 +126,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  1: InfixExpression {
+.  .  .  .  .  .  .  .  .  .  .  Roles: ForExpression
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 49
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 3
@@ -161,7 +164,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  2: PostfixExpression {
-.  .  .  .  .  .  .  .  .  .  .  Roles: OpPostIncrement
+.  .  .  .  .  .  .  .  .  .  .  Roles: ForUpdate,OpPostIncrement
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 57
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 3
@@ -187,7 +190,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  3: Block {
-.  .  .  .  .  .  .  .  .  .  .  Roles: BlockScope,Block
+.  .  .  .  .  .  .  .  .  .  .  Roles: ForBody,BlockScope,Block
 .  .  .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  .  .  internalRole: body
 .  .  .  .  .  .  .  .  .  .  .  }

@@ -76,6 +76,30 @@ var AnnotationRules = On(Any).Self(
 			On(jdt.SwitchCase).Roles(SwitchCase),
 		),
 
+		// Loops
+		On(jdt.EnhancedForStatement).Roles(ForEach, Statement).Children(
+			On(jdt.PropertyParameter).Roles(ForInit, ForUpdate),
+			On(jdt.PropertyExpression).Roles(ForExpression),
+			On(jdt.PropertyBody).Roles(ForBody),
+		),
+
+		On(jdt.ForStatement).Roles(For, Statement).Children(
+			On(jdt.PropertyInitializers).Roles(ForInit),
+			On(jdt.PropertyExpression).Roles(ForExpression),
+			On(jdt.PropertyUpdaters).Roles(ForUpdate),
+			On(jdt.PropertyBody).Roles(ForBody),
+		),
+
+		On(jdt.WhileStatement).Roles(While, Statement).Children(
+			On(jdt.PropertyExpression).Roles(WhileCondition),
+			On(jdt.PropertyBody).Roles(WhileBody),
+		),
+
+		On(jdt.DoStatement).Roles(DoWhile, Statement).Children(
+			On(jdt.PropertyExpression).Roles(DoWhileCondition),
+			On(jdt.PropertyBody).Roles(DoWhileBody),
+		),
+
 		On(jdt.InfixExpression).Self(
 			On(HasProperty("operator", "+")).Roles(OpAdd),
 			On(HasProperty("operator", "-")).Roles(OpSubstract),
