@@ -68,7 +68,7 @@ var AnnotationRules = On(Any).Self(
 		On(jdt.IfStatement).Roles(If, Statement).Children(
 			On(jdt.PropertyExpression).Roles(IfCondition),
 			On(jdt.PropertyThenStatement).Roles(IfBody),
-			On(jdt.PropertyElseExpression).Roles(IfElse),
+			On(jdt.PropertyElseStatement).Roles(IfElse),
 		),
 
 		On(jdt.SwitchStatement).Roles(Switch, Statement).Children(
