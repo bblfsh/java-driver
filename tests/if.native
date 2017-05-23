@@ -1,0 +1,97 @@
+{
+    "status": "ok",
+    "errors": [],
+    "ast": {
+        "CompilationUnit": {
+            "internalClass": "CompilationUnit",
+            "types": [
+                {
+                    "bodyDeclarations": [
+                        {
+                            "body": {
+                                "internalClass": "Block",
+                                "statements": [
+                                    {
+                                        "expression": {
+                                            "booleanValue": "true",
+                                            "internalClass": "BooleanLiteral",
+                                            "line": 3,
+                                            "startPosition": 37
+                                        },
+                                        "internalClass": "IfStatement",
+                                        "thenStatement": {
+                                            "internalClass": "Block",
+                                            "statements": [
+                                                {
+                                                    "expression": {
+                                                        "arguments": [
+                                                            {
+                                                                "booleanValue": "true",
+                                                                "internalClass": "BooleanLiteral",
+                                                                "line": 4,
+                                                                "startPosition": 70
+                                                            }
+                                                        ],
+                                                        "expression": {
+                                                            "internalClass": "QualifiedName",
+                                                            "name": {
+                                                                "identifier": "out",
+                                                                "internalClass": "SimpleName",
+                                                                "line": 4,
+                                                                "startPosition": 58
+                                                            },
+                                                            "qualifier": {
+                                                                "identifier": "System",
+                                                                "internalClass": "SimpleName",
+                                                                "line": 4,
+                                                                "startPosition": 51
+                                                            }
+                                                        },
+                                                        "internalClass": "MethodInvocation",
+                                                        "name": {
+                                                            "identifier": "println",
+                                                            "internalClass": "SimpleName",
+                                                            "line": 4,
+                                                            "startPosition": 62
+                                                        }
+                                                    },
+                                                    "internalClass": "ExpressionStatement"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            "constructor": "false",
+                            "internalClass": "MethodDeclaration",
+                            "line": 2,
+                            "name": {
+                                "identifier": "code",
+                                "internalClass": "SimpleName",
+                                "line": 2,
+                                "startPosition": 20
+                            },
+                            "returnType2": {
+                                "internalClass": "PrimitiveType",
+                                "line": 2,
+                                "primitiveTypeCode": "void",
+                                "startPosition": 15
+                            },
+                            "startPosition": 15
+                        }
+                    ],
+                    "interface": "false",
+                    "internalClass": "TypeDeclaration",
+                    "line": 1,
+                    "name": {
+                        "identifier": "Code",
+                        "internalClass": "SimpleName",
+                        "line": 1,
+                        "startPosition": 6
+                    },
+                    "startPosition": 0
+                }
+            ]
+        }
+    }
+}
