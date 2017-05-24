@@ -73,7 +73,16 @@ var AnnotationRules = On(Any).Self(
 
 		On(jdt.SwitchStatement).Roles(Switch, Statement).Children(
 			//TODO: On(jdt.PropertyExpression).Roles(SwitchExpression),
-			On(jdt.SwitchCase).Roles(SwitchCase),
+			On(jdt.SwitchCase).Self(
+				On(HasChild(Any)).Roles(SwitchCase).Children(
+					On(jdt.PropertyExpression).Roles(SwitchCaseCondition),
+				),
+				On(Not(HasChild(Any))).Roles(SwitchDefault),
+			),
+			// FIXME: Switch case bodies are not enclosed in a block, thus it may
+			// contain an arbitrary number of statements (of any kind). So this
+			// is just an initial approach.
+			On(jdt.ExpressionStatement).Roles(SwitchCaseBody),
 		),
 
 		// Loops
