@@ -165,6 +165,8 @@ var AnnotationRules = On(Any).Self(
 			On(jdt.PropertyFinally).Roles(TryFinally),
 		),
 
+		On(jdt.ThrowStatement).Roles(Throw, Statement),
+
 		On(jdt.AssertStatement).Roles(Assert, Statement),
 
 		// Others
