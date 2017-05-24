@@ -155,6 +155,7 @@ var AnnotationRules = On(Any).Self(
 		On(jdt.Block).Roles(BlockScope, Block),
 		On(jdt.ExpressionStatement).Roles(Statement),
 		On(jdt.ReturnStatement).Roles(Return, Statement),
+		On(jdt.BreakStatement).Roles(Break, Statement),
 
 		On(jdt.ThisExpression).Roles(This, Expression),
 		//TODO: synchronized
