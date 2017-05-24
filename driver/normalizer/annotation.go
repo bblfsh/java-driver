@@ -158,6 +158,13 @@ var AnnotationRules = On(Any).Self(
 			),
 		),
 
+		On(jdt.TryStatement).Roles(Try, Statement).Children(
+			// TODO: TryWithResourcesStatement
+			On(jdt.PropertyBody).Roles(TryBody),
+			On(jdt.PropertyCatchClauses).Roles(TryCatch),
+			On(jdt.PropertyFinally).Roles(TryFinally),
+		),
+
 		On(jdt.AssertStatement).Roles(Assert, Statement),
 
 		// Others
@@ -168,7 +175,6 @@ var AnnotationRules = On(Any).Self(
 
 		On(jdt.ThisExpression).Roles(This, Expression),
 		//TODO: synchronized
-		//TODO: try-with-resources
 		On(jdt.Javadoc).Roles(Documentation, Comment),
 	),
 )

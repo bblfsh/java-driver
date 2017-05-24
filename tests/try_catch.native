@@ -1,0 +1,83 @@
+{
+    "status": "ok",
+    "errors": [],
+    "ast": {
+        "CompilationUnit": {
+            "internalClass": "CompilationUnit",
+            "types": [
+                {
+                    "bodyDeclarations": [
+                        {
+                            "body": {
+                                "internalClass": "Block",
+                                "statements": [
+                                    {
+                                        "body": {
+                                            "internalClass": "Block"
+                                        },
+                                        "catchClauses": [
+                                            {
+                                                "body": {
+                                                    "internalClass": "Block"
+                                                },
+                                                "exception": {
+                                                    "internalClass": "SingleVariableDeclaration",
+                                                    "line": 3,
+                                                    "name": {
+                                                        "identifier": "e",
+                                                        "internalClass": "SimpleName",
+                                                        "line": 3,
+                                                        "startPosition": 57
+                                                    },
+                                                    "startPosition": 47,
+                                                    "type": {
+                                                        "internalClass": "SimpleType",
+                                                        "name": {
+                                                            "identifier": "Exception",
+                                                            "internalClass": "SimpleName",
+                                                            "line": 3,
+                                                            "startPosition": 47
+                                                        }
+                                                    },
+                                                    "varargs": "false"
+                                                },
+                                                "internalClass": "CatchClause"
+                                            }
+                                        ],
+                                        "internalClass": "TryStatement"
+                                    }
+                                ]
+                            },
+                            "constructor": "false",
+                            "internalClass": "MethodDeclaration",
+                            "line": 2,
+                            "name": {
+                                "identifier": "code",
+                                "internalClass": "SimpleName",
+                                "line": 2,
+                                "startPosition": 20
+                            },
+                            "returnType2": {
+                                "internalClass": "PrimitiveType",
+                                "line": 2,
+                                "primitiveTypeCode": "void",
+                                "startPosition": 15
+                            },
+                            "startPosition": 15
+                        }
+                    ],
+                    "interface": "false",
+                    "internalClass": "TypeDeclaration",
+                    "line": 1,
+                    "name": {
+                        "identifier": "Code",
+                        "internalClass": "SimpleName",
+                        "line": 1,
+                        "startPosition": 6
+                    },
+                    "startPosition": 0
+                }
+            ]
+        }
+    }
+}
