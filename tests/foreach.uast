@@ -68,6 +68,279 @@ CompilationUnit {
 .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  internalRole: body
 .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  Children: {
+.  .  .  .  .  .  .  .  0: EnhancedForStatement {
+.  .  .  .  .  .  .  .  .  Roles: ForEach,Statement
+.  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  internalRole: statements
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  Children: {
+.  .  .  .  .  .  .  .  .  .  0: SingleVariableDeclaration {
+.  .  .  .  .  .  .  .  .  .  .  Roles: ForInit,ForUpdate
+.  .  .  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  .  .  Offset: 38
+.  .  .  .  .  .  .  .  .  .  .  .  Line: 3
+.  .  .  .  .  .  .  .  .  .  .  .  Col: 0
+.  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  .  .  internalRole: parameter
+.  .  .  .  .  .  .  .  .  .  .  .  varargs: false
+.  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  Children: {
+.  .  .  .  .  .  .  .  .  .  .  .  0: PrimitiveType {
+.  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "int"
+.  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 38
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 3
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  Col: 0
+.  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  internalRole: type
+.  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  1: SimpleName {
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier
+.  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "i"
+.  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 42
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 3
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  Col: 0
+.  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  internalRole: name
+.  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  1: ArrayCreation {
+.  .  .  .  .  .  .  .  .  .  .  Roles: ForExpression
+.  .  .  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  .  .  internalRole: expression
+.  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  Children: {
+.  .  .  .  .  .  .  .  .  .  .  .  0: ArrayType {
+.  .  .  .  .  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  internalRole: type
+.  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  Children: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  0: PrimitiveType {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "int"
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 50
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 3
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Col: 0
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  internalRole: elementType
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  1: Dimension {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  internalRole: dimensions
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  1: ArrayInitializer {
+.  .  .  .  .  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  internalRole: initializer
+.  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  Children: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  0: NumberLiteral {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 56
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 3
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Col: 0
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  internalRole: expressions
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  token: 0
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  1: NumberLiteral {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 59
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 3
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Col: 0
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  internalRole: expressions
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  token: 1
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  2: NumberLiteral {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 62
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 3
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Col: 0
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  internalRole: expressions
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  token: 2
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  3: NumberLiteral {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 65
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 3
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Col: 0
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  internalRole: expressions
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  token: 3
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  4: NumberLiteral {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 68
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 3
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Col: 0
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  internalRole: expressions
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  token: 4
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  5: NumberLiteral {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 71
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 3
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Col: 0
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  internalRole: expressions
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  token: 5
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  6: NumberLiteral {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 74
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 3
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Col: 0
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  internalRole: expressions
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  token: 6
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  7: NumberLiteral {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 77
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 3
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Col: 0
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  internalRole: expressions
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  token: 7
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  8: NumberLiteral {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 80
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 3
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Col: 0
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  internalRole: expressions
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  token: 9
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  2: Block {
+.  .  .  .  .  .  .  .  .  .  .  Roles: ForBody,BlockScope,Block
+.  .  .  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  .  .  internalRole: body
+.  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  Children: {
+.  .  .  .  .  .  .  .  .  .  .  .  0: ExpressionStatement {
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Statement
+.  .  .  .  .  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  internalRole: statements
+.  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  Children: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  0: MethodInvocation {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Call
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  internalRole: expression
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Children: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: QualifiedName {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: QualifiedIdentifier,CallReceiver
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  internalRole: expression
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Children: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: SimpleName {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "System"
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 98
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 4
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Col: 0
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  internalRole: qualifier
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  1: SimpleName {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "out"
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 105
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 4
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Col: 0
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  internalRole: name
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  1: SimpleName {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,CallCallee
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "println"
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 109
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 4
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Col: 0
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  internalRole: name
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  2: SimpleName {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,CallPositionalArgument
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "i"
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 117
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 4
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Col: 0
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  internalRole: arguments
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  }
 .  .  .  .  }

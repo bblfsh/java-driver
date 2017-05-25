@@ -119,12 +119,13 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  1: DoStatement {
+.  .  .  .  .  .  .  .  .  Roles: DoWhile,Statement
 .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  internalRole: statements
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  0: Block {
-.  .  .  .  .  .  .  .  .  .  .  Roles: BlockScope,Block
+.  .  .  .  .  .  .  .  .  .  .  Roles: DoWhileBody,BlockScope,Block
 .  .  .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  .  .  internalRole: body
 .  .  .  .  .  .  .  .  .  .  .  }
@@ -238,6 +239,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  1: InfixExpression {
+.  .  .  .  .  .  .  .  .  .  .  Roles: DoWhileCondition
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 120
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 7
