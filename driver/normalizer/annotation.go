@@ -149,6 +149,8 @@ var AnnotationRules = On(Any).Self(
 			),
 		),
 
+		On(jdt.AssertStatement).Roles(Assert, Statement),
+
 		// Others
 		On(jdt.Block).Roles(BlockScope, Block),
 		On(jdt.ExpressionStatement).Roles(Statement),
