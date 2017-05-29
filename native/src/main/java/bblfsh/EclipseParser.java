@@ -1,10 +1,13 @@
 package bblfsh;
 
+import org.eclipse.jdt.core.JavaCore;
 import org.eclipse.jdt.core.dom.AST;
 import org.eclipse.jdt.core.dom.ASTParser;
 import org.eclipse.jdt.core.dom.CompilationUnit;
 
 import java.io.IOException;
+
+import java.util.Map;
 
 /**
  * Java AST parser based on Eclipse JDT.
@@ -33,6 +36,9 @@ public class EclipseParser {
      */
     public CompilationUnit parse(final String source) throws IOException {
         parser.setSource(source.toCharArray());
+        Map options = JavaCore.getOptions();
+        JavaCore.setComplianceOptions(JavaCore.VERSION_1_8, options);
+        parser.setCompilerOptions(options);
         return (CompilationUnit) parser.createAST(null);
     }
 }
