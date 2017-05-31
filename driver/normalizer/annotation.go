@@ -68,12 +68,21 @@ var AnnotationRules = On(Any).Self(
 		On(jdt.IfStatement).Roles(If, Statement).Children(
 			On(jdt.PropertyExpression).Roles(IfCondition),
 			On(jdt.PropertyThenStatement).Roles(IfBody),
-			On(jdt.PropertyElseExpression).Roles(IfElse),
+			On(jdt.PropertyElseStatement).Roles(IfElse),
 		),
 
 		On(jdt.SwitchStatement).Roles(Switch, Statement).Children(
 			//TODO: On(jdt.PropertyExpression).Roles(SwitchExpression),
-			On(jdt.SwitchCase).Roles(SwitchCase),
+			On(jdt.SwitchCase).Self(
+				On(HasChild(Any)).Roles(SwitchCase).Children(
+					On(jdt.PropertyExpression).Roles(SwitchCaseCondition),
+				),
+				On(Not(HasChild(Any))).Roles(SwitchDefault),
+			),
+			// FIXME: Switch case bodies are not enclosed in a block, thus it may
+			// contain an arbitrary number of statements (of any kind). So this
+			// is just an initial approach.
+			On(jdt.ExpressionStatement).Roles(SwitchCaseBody),
 		),
 
 		// Loops
@@ -149,16 +158,25 @@ var AnnotationRules = On(Any).Self(
 			),
 		),
 
+		On(jdt.TryStatement).Roles(Try, Statement).Children(
+			// TODO: TryWithResourcesStatement
+			On(jdt.PropertyBody).Roles(TryBody),
+			On(jdt.PropertyCatchClauses).Roles(TryCatch),
+			On(jdt.PropertyFinally).Roles(TryFinally),
+		),
+
+		On(jdt.ThrowStatement).Roles(Throw, Statement),
+
 		On(jdt.AssertStatement).Roles(Assert, Statement),
 
 		// Others
 		On(jdt.Block).Roles(BlockScope, Block),
 		On(jdt.ExpressionStatement).Roles(Statement),
 		On(jdt.ReturnStatement).Roles(Return, Statement),
+		On(jdt.BreakStatement).Roles(Break, Statement),
 
 		On(jdt.ThisExpression).Roles(This, Expression),
 		//TODO: synchronized
-		//TODO: try-with-resources
 		On(jdt.Javadoc).Roles(Documentation, Comment),
 	),
 )
