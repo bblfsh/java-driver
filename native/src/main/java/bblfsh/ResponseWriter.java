@@ -7,6 +7,7 @@ import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.databind.module.SimpleModule;
 import org.eclipse.jdt.core.dom.CompilationUnit;
 
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 
@@ -28,8 +29,12 @@ public class ResponseWriter {
     }
 
     public void write(final Response response) throws IOException {
-        mapper.writeValue(this.out, response);
-        this.out.write('\n');
+        // mapper closes the output stream after write, that's why we use an
+        // intermediate output stream
+        ByteArrayOutputStream out = new ByteArrayOutputStream();
+        mapper.writeValue(out, response);
+        out.write('\n');
+        this.out.write(out.toByteArray());
     }
 
 }
