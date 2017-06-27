@@ -52,6 +52,7 @@
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='DoStatement'\] | DoWhile |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='DoStatement'\]/\*\[@internalRole\]\[@internalRole='expression'\] | DoWhileCondition |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='DoStatement'\]/\*\[@internalRole\]\[@internalRole='body'\] | DoWhileBody |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='InfixExpression'\] | BinaryExpression |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='InfixExpression'\]/self::\*\[@operator\]\[@operator='\+'\] | OpAdd |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='InfixExpression'\]/self::\*\[@operator\]\[@operator='\-'\] | OpSubstract |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='InfixExpression'\]/self::\*\[@operator\]\[@operator='\*'\] | OpMultiply |
@@ -65,6 +66,8 @@
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='InfixExpression'\]/self::\*\[@operator\]\[@operator='&&'\] | OpBooleanAnd |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='InfixExpression'\]/self::\*\[@operator\]\[@operator='\|\|'\] | OpBooleanOr |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='InfixExpression'\]/self::\*\[@operator\]\[@operator='^'\] | OpBooleanXor |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='InfixExpression'\]/\*\[@internalRole\]\[@internalRole='leftOperand'\] | BinaryExpressionLeft |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='InfixExpression'\]/\*\[@internalRole\]\[@internalRole='rightOperand'\] | BinaryExpressionRight |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='PostfixExpression'\]/self::\*\[@operator\]\[@operator='\+\+'\] | OpPostIncrement |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='PostfixExpression'\]/self::\*\[@operator\]\[@operator='\-\-'\] | OpPostDecrement |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='PrefixExpression'\]/self::\*\[@operator\]\[@operator='\+\+'\] | OpPreIncrement |
