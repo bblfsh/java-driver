@@ -109,7 +109,7 @@ var AnnotationRules = On(Any).Self(
 			On(jdt.PropertyBody).Roles(DoWhileBody),
 		),
 
-		On(jdt.InfixExpression).Self(
+		On(jdt.InfixExpression).Roles(BinaryExpression, BinaryExpressionOp).Self(
 			On(HasProperty("operator", "+")).Roles(OpAdd),
 			On(HasProperty("operator", "-")).Roles(OpSubstract),
 			On(HasProperty("operator", "*")).Roles(OpMultiply),
@@ -123,6 +123,9 @@ var AnnotationRules = On(Any).Self(
 			On(HasProperty("operator", "&&")).Roles(OpBooleanAnd),
 			On(HasProperty("operator", "||")).Roles(OpBooleanOr),
 			On(HasProperty("operator", "^")).Roles(OpBooleanXor),
+		).Children(
+			On(jdt.PropertyLeftOperand).Roles(BinaryExpressionLeft),
+			On(jdt.PropertyRightOperand).Roles(BinaryExpressionRight),
 		),
 
 		On(jdt.PostfixExpression).Self(
