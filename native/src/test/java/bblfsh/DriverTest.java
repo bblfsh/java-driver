@@ -41,6 +41,20 @@ public class DriverTest {
     }
 
     @Test
+    public void processError() throws DriverException, CloseException {
+        final String input = "{\"content\":\"package\"}\n";
+        final InputStream in = new ByteArrayInputStream(input.getBytes());
+        final RequestReader reader = new RequestReader(in);
+
+        final ByteArrayOutputStream out = new ByteArrayOutputStream();
+        final ResponseWriter writer = new ResponseWriter(out);
+
+        final Driver driver = new Driver(reader, writer);
+        driver.processOne();
+        assertThat(out.toString()).contains("\"status\":\"error\"");
+    }
+
+    @Test
     public void processInvalid() throws DriverException, CloseException {
         final String input = "garbage";
         final InputStream in = new ByteArrayInputStream(input.getBytes());
