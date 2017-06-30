@@ -1,9 +1,15 @@
 package bblfsh;
 
+import org.eclipse.jdt.core.dom.Message;
+
 import sun.reflect.annotation.ExceptionProxy;
 
 import java.io.IOException;
+
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.stream.Stream;
+import java.util.stream.Collectors;
 
 public class Driver {
 
@@ -63,8 +69,10 @@ public class Driver {
         } catch (IOException e) {
             return createFatalResponse(e);
         }
-
-        response.status = "ok";
+        response.errors = Arrays.stream(response.ast.getMessages())
+            .map(Message::getMessage)
+            .collect(Collectors.toCollection(ArrayList::new));
+        response.status = response.errors.isEmpty() ? "ok" : "error";
         return response;
     }
 }
