@@ -25,9 +25,23 @@ var ToNoder = &native.ObjectToNoder{
 	//      children node properties.
 }
 
+func transformationParser(opts driver.UASTParserOptions) (tr driver.UASTParser, err error) {
+	parser, err := native.ExecParser(ToNoder, opts.NativeBin)
+	if err != nil {
+		return tr, err
+	}
+
+	tr = &driver.TransformationUASTParser{
+		UASTParser: parser,
+		Transformation: driver.FillLineColFromOffset,
+	}
+
+	return tr, nil
+}
+
 // UASTParserBuilder creates a parser that transform source code files into *uast.Node.
 func UASTParserBuilder(opts driver.UASTParserOptions) (driver.UASTParser, error) {
-	parser, err := native.ExecParser(ToNoder, opts.NativeBin)
+	parser, err := transformationParser(opts)
 	if err != nil {
 		return nil, err
 	}
