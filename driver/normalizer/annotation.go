@@ -73,7 +73,7 @@ var AnnotationRules = On(Any).Self(
 
 		On(jdt.SwitchStatement).Roles(Switch, Statement).Children(
 			//TODO: On(jdt.PropertyExpression).Roles(SwitchExpression),
-			On(jdt.SwitchCase).Self(
+			On(jdt.SwitchCase).Roles(Statement).Self(
 				On(HasChild(Any)).Roles(SwitchCase).Children(
 					On(jdt.PropertyExpression).Roles(SwitchCaseCondition),
 				),
@@ -173,7 +173,7 @@ var AnnotationRules = On(Any).Self(
 		On(jdt.AssertStatement).Roles(Assert, Statement),
 
 		// Others
-		On(jdt.Block).Roles(BlockScope, Block),
+		On(jdt.Block).Roles(BlockScope, Block, Statement),
 		On(jdt.ExpressionStatement).Roles(Statement),
 		On(jdt.ReturnStatement).Roles(Return, Statement),
 		On(jdt.BreakStatement).Roles(Break, Statement),

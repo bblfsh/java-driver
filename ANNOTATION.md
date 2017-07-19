@@ -33,6 +33,7 @@
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='IfStatement'\]/\*\[@internalRole\]\[@internalRole='thenStatement'\] | IfBody |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='IfStatement'\]/\*\[@internalRole\]\[@internalRole='elseStatement'\] | IfElse |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='SwitchStatement'\] | Switch, Statement |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='SwitchStatement'\]/\*\[@InternalType='SwitchCase'\] | Statement |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='SwitchStatement'\]/\*\[@InternalType='SwitchCase'\]/self::\*\[child::\*\] | SwitchCase |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='SwitchStatement'\]/\*\[@InternalType='SwitchCase'\]/self::\*\[child::\*\]/\*\[@internalRole\]\[@internalRole='expression'\] | SwitchCaseCondition |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='SwitchStatement'\]/\*\[@InternalType='SwitchCase'\]/self::\*\[not\(child::\*\)\] | SwitchDefault |
@@ -99,7 +100,7 @@
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='TryStatement'\]/\*\[@internalRole\]\[@internalRole='finally'\] | TryFinally |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='ThrowStatement'\] | Throw, Statement |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='AssertStatement'\] | Assert, Statement |
-| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='Block'\] | BlockScope, Block |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='Block'\] | BlockScope, Block, Statement |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='ExpressionStatement'\] | Statement |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='ReturnStatement'\] | Return, Statement |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='BreakStatement'\] | Break, Statement |
