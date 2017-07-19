@@ -17,7 +17,7 @@ CompilationUnit {
 .  .  .  }
 .  .  .  Children: {
 .  .  .  .  0: SimpleName {
-.  .  .  .  .  Roles: SimpleIdentifier
+.  .  .  .  .  Roles: SimpleIdentifier,Expression
 .  .  .  .  .  TOKEN "Code"
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 6
@@ -52,7 +52,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  .  1: SimpleName {
-.  .  .  .  .  .  .  Roles: SimpleIdentifier,FunctionDeclarationName
+.  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression,FunctionDeclarationName
 .  .  .  .  .  .  .  TOKEN "code"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 19
@@ -99,7 +99,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  1: SimpleName {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression
 .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "i"
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 42
@@ -147,7 +147,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: NumberLiteral {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,Expression
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 56
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 3
@@ -159,7 +159,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  1: NumberLiteral {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,Expression
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 59
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 3
@@ -171,7 +171,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  2: NumberLiteral {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,Expression
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 62
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 3
@@ -183,7 +183,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  3: NumberLiteral {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,Expression
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 65
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 3
@@ -195,7 +195,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  4: NumberLiteral {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,Expression
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 68
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 3
@@ -207,7 +207,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  5: NumberLiteral {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,Expression
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 71
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 3
@@ -219,7 +219,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  6: NumberLiteral {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,Expression
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 74
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 3
@@ -231,7 +231,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  7: NumberLiteral {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,Expression
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 77
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 3
@@ -243,7 +243,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  8: NumberLiteral {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,Expression
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 80
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 3
@@ -271,19 +271,19 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: MethodInvocation {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Call
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Call,Expression
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  internalRole: expression
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: QualifiedName {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: QualifiedIdentifier,CallReceiver
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: QualifiedIdentifier,Expression,CallReceiver
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  internalRole: expression
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: SimpleName {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "System"
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 98
@@ -295,7 +295,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  1: SimpleName {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "out"
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 105
@@ -309,7 +309,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  1: SimpleName {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,CallCallee
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression,CallCallee
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "println"
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 109
@@ -321,7 +321,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  2: SimpleName {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,CallPositionalArgument
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression,CallPositionalArgument
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "i"
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 117

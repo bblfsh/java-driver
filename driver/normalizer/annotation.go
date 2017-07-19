@@ -13,8 +13,8 @@ var AnnotationRules = On(Any).Self(
 	On(Not(jdt.CompilationUnit)).Error(errors.New("root must be CompilationUnit")),
 	On(jdt.CompilationUnit).Roles(File).Descendants(
 		// Names
-		On(jdt.QualifiedName).Roles(QualifiedIdentifier),
-		On(jdt.SimpleName).Roles(SimpleIdentifier),
+		On(jdt.QualifiedName).Roles(QualifiedIdentifier, Expression),
+		On(jdt.SimpleName).Roles(SimpleIdentifier, Expression),
 
 		// Visibility
 		On(Or(jdt.MethodDeclaration, jdt.TypeDeclaration)).Self(
@@ -50,15 +50,15 @@ var AnnotationRules = On(Any).Self(
 		),
 
 		// Literals
-		On(jdt.BooleanLiteral).Roles(BooleanLiteral),
-		On(jdt.CharacterLiteral).Roles(CharacterLiteral),
-		On(jdt.NullLiteral).Roles(NullLiteral),
-		On(jdt.NumberLiteral).Roles(NumberLiteral),
-		On(jdt.StringLiteral).Roles(StringLiteral),
-		On(jdt.TypeLiteral).Roles(TypeLiteral),
+		On(jdt.BooleanLiteral).Roles(BooleanLiteral, Expression),
+		On(jdt.CharacterLiteral).Roles(CharacterLiteral, Expression),
+		On(jdt.NullLiteral).Roles(NullLiteral, Expression),
+		On(jdt.NumberLiteral).Roles(NumberLiteral, Expression),
+		On(jdt.StringLiteral).Roles(StringLiteral, Expression),
+		On(jdt.TypeLiteral).Roles(TypeLiteral, Expression),
 
 		// Calls
-		On(jdt.MethodInvocation).Roles(Call).Children(
+		On(jdt.MethodInvocation).Roles(Call, Expression).Children(
 			On(jdt.PropertyExpression).Roles(CallReceiver),
 			On(jdt.PropertyName).Roles(CallCallee),
 			On(jdt.PropertyArguments).Roles(CallPositionalArgument),
@@ -109,7 +109,7 @@ var AnnotationRules = On(Any).Self(
 			On(jdt.PropertyBody).Roles(DoWhileBody),
 		),
 
-		On(jdt.InfixExpression).Roles(BinaryExpression, BinaryExpressionOp).Self(
+		On(jdt.InfixExpression).Roles(BinaryExpression, BinaryExpressionOp, Expression).Self(
 			On(HasProperty("operator", "+")).Roles(OpAdd),
 			On(HasProperty("operator", "-")).Roles(OpSubstract),
 			On(HasProperty("operator", "*")).Roles(OpMultiply),
@@ -128,12 +128,12 @@ var AnnotationRules = On(Any).Self(
 			On(jdt.PropertyRightOperand).Roles(BinaryExpressionRight),
 		),
 
-		On(jdt.PostfixExpression).Self(
+		On(jdt.PostfixExpression).Roles(Expression).Self(
 			On(HasProperty("operator", "++")).Roles(OpPostIncrement),
 			On(HasProperty("operator", "--")).Roles(OpPostDecrement),
 		),
 
-		On(jdt.PrefixExpression).Self(
+		On(jdt.PrefixExpression).Roles(Expression).Self(
 			On(HasProperty("operator", "++")).Roles(OpPreIncrement),
 			On(HasProperty("operator", "--")).Roles(OpPreDecrement),
 			On(HasProperty("operator", "+")).Roles(OpPositive),
@@ -142,7 +142,7 @@ var AnnotationRules = On(Any).Self(
 			On(HasProperty("operator", "!")).Roles(OpBooleanNot),
 		),
 
-		On(jdt.Assignment).Roles(Assignment).Children(
+		On(jdt.Assignment).Roles(Assignment, Expression).Children(
 			On(jdt.PropertyLeftHandSide).Roles(AssignmentVariable),
 			On(jdt.PropertyRightHandSide).Roles(AssignmentValue),
 		).Self(

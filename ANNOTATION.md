@@ -2,8 +2,8 @@
 |------|--------|
 | /self::\*\[not\(@InternalType='CompilationUnit'\)\] | Error |
 | /self::\*\[@InternalType='CompilationUnit'\] | File |
-| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='QualifiedName'\] | QualifiedIdentifier |
-| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='SimpleName'\] | SimpleIdentifier |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='QualifiedName'\] | QualifiedIdentifier, Expression |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='SimpleName'\] | SimpleIdentifier, Expression |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[\(@InternalType='MethodDeclaration'\) or \(@InternalType='TypeDeclaration'\)\]/self::\*\[child::\(@InternalType='Modifier'\) and \(@Token='public'\)\] | VisibleFromWorld |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[\(@InternalType='MethodDeclaration'\) or \(@InternalType='TypeDeclaration'\)\]/self::\*\[child::\(@InternalType='Modifier'\) and \(@Token='private'\)\] | VisibleFromType |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[\(@InternalType='MethodDeclaration'\) or \(@InternalType='TypeDeclaration'\)\]/self::\*\[child::\(@InternalType='Modifier'\) and \(@Token='protected'\)\] | VisibleFromSubtype |
@@ -18,13 +18,13 @@
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='MethodDeclaration'\]/\*\[@internalRole\]\[@internalRole='parameters'\] | FunctionDeclarationArgument |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='MethodDeclaration'\]/\*\[@internalRole\]\[@internalRole='parameters'\]/self::\*\[@varargs\]\[@varargs='true'\] | FunctionDeclarationVarArgsList |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='MethodDeclaration'\]/\*\[@internalRole\]\[@internalRole='parameters'\]/\*\[@internalRole\]\[@internalRole='name'\] | FunctionDeclarationArgumentName |
-| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='BooleanLiteral'\] | BooleanLiteral |
-| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='CharacterLiteral'\] | CharacterLiteral |
-| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='NullLiteral'\] | NullLiteral |
-| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='NumberLiteral'\] | NumberLiteral |
-| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='StringLiteral'\] | StringLiteral |
-| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='TypeLiteral'\] | TypeLiteral |
-| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='MethodInvocation'\] | Call |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='BooleanLiteral'\] | BooleanLiteral, Expression |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='CharacterLiteral'\] | CharacterLiteral, Expression |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='NullLiteral'\] | NullLiteral, Expression |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='NumberLiteral'\] | NumberLiteral, Expression |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='StringLiteral'\] | StringLiteral, Expression |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='TypeLiteral'\] | TypeLiteral, Expression |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='MethodInvocation'\] | Call, Expression |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='MethodInvocation'\]/\*\[@internalRole\]\[@internalRole='expression'\] | CallReceiver |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='MethodInvocation'\]/\*\[@internalRole\]\[@internalRole='name'\] | CallCallee |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='MethodInvocation'\]/\*\[@internalRole\]\[@internalRole='arguments'\] | CallPositionalArgument |
@@ -52,7 +52,7 @@
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='DoStatement'\] | DoWhile, Statement |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='DoStatement'\]/\*\[@internalRole\]\[@internalRole='expression'\] | DoWhileCondition |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='DoStatement'\]/\*\[@internalRole\]\[@internalRole='body'\] | DoWhileBody |
-| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='InfixExpression'\] | BinaryExpression, BinaryExpressionOp |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='InfixExpression'\] | BinaryExpression, BinaryExpressionOp, Expression |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='InfixExpression'\]/self::\*\[@operator\]\[@operator='\+'\] | OpAdd |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='InfixExpression'\]/self::\*\[@operator\]\[@operator='\-'\] | OpSubstract |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='InfixExpression'\]/self::\*\[@operator\]\[@operator='\*'\] | OpMultiply |
@@ -68,15 +68,17 @@
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='InfixExpression'\]/self::\*\[@operator\]\[@operator='^'\] | OpBooleanXor |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='InfixExpression'\]/\*\[@internalRole\]\[@internalRole='leftOperand'\] | BinaryExpressionLeft |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='InfixExpression'\]/\*\[@internalRole\]\[@internalRole='rightOperand'\] | BinaryExpressionRight |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='PostfixExpression'\] | Expression |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='PostfixExpression'\]/self::\*\[@operator\]\[@operator='\+\+'\] | OpPostIncrement |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='PostfixExpression'\]/self::\*\[@operator\]\[@operator='\-\-'\] | OpPostDecrement |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='PrefixExpression'\] | Expression |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='PrefixExpression'\]/self::\*\[@operator\]\[@operator='\+\+'\] | OpPreIncrement |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='PrefixExpression'\]/self::\*\[@operator\]\[@operator='\-\-'\] | OpPreDecrement |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='PrefixExpression'\]/self::\*\[@operator\]\[@operator='\+'\] | OpPositive |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='PrefixExpression'\]/self::\*\[@operator\]\[@operator='\-'\] | OpNegative |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='PrefixExpression'\]/self::\*\[@operator\]\[@operator='~'\] | OpBitwiseComplement |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='PrefixExpression'\]/self::\*\[@operator\]\[@operator='\!'\] | OpBooleanNot |
-| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='Assignment'\] | Assignment |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='Assignment'\] | Assignment, Expression |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='Assignment'\]/\*\[@internalRole\]\[@internalRole='leftHandSide'\] | AssignmentVariable |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='Assignment'\]/\*\[@internalRole\]\[@internalRole='rightHandSide'\] | AssignmentValue |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='Assignment'\]/self::\*\[not\(@operator\]\[@operator='='\)\] | AugmentedAssignmentOperator, AugmentedAssignment |

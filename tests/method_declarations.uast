@@ -17,7 +17,7 @@ CompilationUnit {
 .  .  .  }
 .  .  .  Children: {
 .  .  .  .  0: SimpleName {
-.  .  .  .  .  Roles: SimpleIdentifier
+.  .  .  .  .  Roles: SimpleIdentifier,Expression
 .  .  .  .  .  TOKEN "Code"
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 6
@@ -52,7 +52,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  .  1: SimpleName {
-.  .  .  .  .  .  .  Roles: SimpleIdentifier,FunctionDeclarationName
+.  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression,FunctionDeclarationName
 .  .  .  .  .  .  .  TOKEN "voidToVoid"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 22
@@ -117,7 +117,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  .  3: SimpleName {
-.  .  .  .  .  .  .  Roles: SimpleIdentifier,FunctionDeclarationName
+.  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression,FunctionDeclarationName
 .  .  .  .  .  .  .  TOKEN "publicStaticVoidToVoid"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 62
@@ -160,7 +160,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  .  1: SimpleName {
-.  .  .  .  .  .  .  Roles: SimpleIdentifier,FunctionDeclarationName
+.  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression,FunctionDeclarationName
 .  .  .  .  .  .  .  TOKEN "intToInt"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 99
@@ -195,7 +195,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  1: SimpleName {
-.  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,FunctionDeclarationArgumentName
+.  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression,FunctionDeclarationArgumentName
 .  .  .  .  .  .  .  .  .  TOKEN "i"
 .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  Offset: 112
@@ -221,7 +221,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  0: SimpleName {
-.  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier
+.  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression
 .  .  .  .  .  .  .  .  .  .  .  TOKEN "i"
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 124
@@ -262,7 +262,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  .  1: SimpleName {
-.  .  .  .  .  .  .  Roles: SimpleIdentifier,FunctionDeclarationName
+.  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression,FunctionDeclarationName
 .  .  .  .  .  .  .  TOKEN "intIntToInt"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 137
@@ -297,7 +297,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  1: SimpleName {
-.  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,FunctionDeclarationArgumentName
+.  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression,FunctionDeclarationArgumentName
 .  .  .  .  .  .  .  .  .  TOKEN "i"
 .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  Offset: 153
@@ -334,7 +334,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  1: SimpleName {
-.  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,FunctionDeclarationArgumentName
+.  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression,FunctionDeclarationArgumentName
 .  .  .  .  .  .  .  .  .  TOKEN "j"
 .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  Offset: 160
@@ -360,7 +360,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  0: SimpleName {
-.  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier
+.  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression
 .  .  .  .  .  .  .  .  .  .  .  TOKEN "i"
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 172
@@ -401,7 +401,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  .  1: SimpleName {
-.  .  .  .  .  .  .  Roles: SimpleIdentifier,FunctionDeclarationName
+.  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression,FunctionDeclarationName
 .  .  .  .  .  .  .  TOKEN "varIntToVoid"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 186
@@ -436,7 +436,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  1: SimpleName {
-.  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,FunctionDeclarationArgumentName
+.  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression,FunctionDeclarationArgumentName
 .  .  .  .  .  .  .  .  .  TOKEN "i"
 .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  Offset: 206
@@ -475,7 +475,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  0: SimpleName {
-.  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier
+.  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression
 .  .  .  .  .  .  .  .  .  TOKEN "T"
 .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  Offset: 218
@@ -494,7 +494,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  0: SimpleName {
-.  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier
+.  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression
 .  .  .  .  .  .  .  .  .  TOKEN "T"
 .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  Offset: 221
@@ -508,7 +508,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  .  2: SimpleName {
-.  .  .  .  .  .  .  Roles: SimpleIdentifier,FunctionDeclarationName
+.  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression,FunctionDeclarationName
 .  .  .  .  .  .  .  TOKEN "intToGenericT"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 223
@@ -543,7 +543,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  1: SimpleName {
-.  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,FunctionDeclarationArgumentName
+.  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression,FunctionDeclarationArgumentName
 .  .  .  .  .  .  .  .  .  TOKEN "i"
 .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  Offset: 241
@@ -569,7 +569,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  0: NullLiteral {
-.  .  .  .  .  .  .  .  .  .  .  Roles: NullLiteral
+.  .  .  .  .  .  .  .  .  .  .  Roles: NullLiteral,Expression
 .  .  .  .  .  .  .  .  .  .  .  TOKEN "null"
 .  .  .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  .  .  internalRole: expression
@@ -599,7 +599,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  0: SimpleName {
-.  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier
+.  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression
 .  .  .  .  .  .  .  .  .  TOKEN "T"
 .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  Offset: 266
@@ -618,7 +618,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  0: SimpleName {
-.  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier
+.  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression
 .  .  .  .  .  .  .  .  .  TOKEN "S"
 .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  Offset: 268
@@ -637,7 +637,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  0: SimpleName {
-.  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier
+.  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression
 .  .  .  .  .  .  .  .  .  TOKEN "T"
 .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  Offset: 271
@@ -651,7 +651,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  .  3: SimpleName {
-.  .  .  .  .  .  .  Roles: SimpleIdentifier,FunctionDeclarationName
+.  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression,FunctionDeclarationName
 .  .  .  .  .  .  .  TOKEN "genericSToGenericT"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 273
@@ -680,7 +680,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  0: SimpleName {
-.  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier
+.  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression
 .  .  .  .  .  .  .  .  .  .  .  TOKEN "S"
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 292
@@ -694,7 +694,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  1: SimpleName {
-.  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,FunctionDeclarationArgumentName
+.  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression,FunctionDeclarationArgumentName
 .  .  .  .  .  .  .  .  .  TOKEN "i"
 .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  Offset: 294
@@ -720,7 +720,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  0: NullLiteral {
-.  .  .  .  .  .  .  .  .  .  .  Roles: NullLiteral
+.  .  .  .  .  .  .  .  .  .  .  Roles: NullLiteral,Expression
 .  .  .  .  .  .  .  .  .  .  .  TOKEN "null"
 .  .  .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  .  .  internalRole: expression

@@ -17,7 +17,7 @@ CompilationUnit {
 .  .  .  }
 .  .  .  Children: {
 .  .  .  .  0: SimpleName {
-.  .  .  .  .  Roles: SimpleIdentifier
+.  .  .  .  .  Roles: SimpleIdentifier,Expression
 .  .  .  .  .  TOKEN "Code"
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 6
@@ -52,7 +52,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  .  1: SimpleName {
-.  .  .  .  .  .  .  Roles: SimpleIdentifier,FunctionDeclarationName
+.  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression,FunctionDeclarationName
 .  .  .  .  .  .  .  TOKEN "code"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 19
@@ -91,7 +91,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  0: SimpleName {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression
 .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "i"
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 34
@@ -113,7 +113,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  0: Assignment {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment
+.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment,Expression
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 39
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 4
@@ -125,7 +125,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  0: SimpleName {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,AssignmentVariable
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression,AssignmentVariable
 .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "i"
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 39
@@ -137,7 +137,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  1: InfixExpression {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: BinaryExpression,BinaryExpressionOp,OpAdd,AssignmentValue
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: BinaryExpression,BinaryExpressionOp,Expression,OpAdd,AssignmentValue
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 43
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 4
@@ -149,7 +149,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: NumberLiteral {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,BinaryExpressionLeft
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,Expression,BinaryExpressionLeft
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 43
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 4
@@ -161,7 +161,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  1: NumberLiteral {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,BinaryExpressionRight
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,Expression,BinaryExpressionRight
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 47
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 4
@@ -185,7 +185,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  0: Assignment {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment
+.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment,Expression
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 52
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 5
@@ -197,7 +197,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  0: SimpleName {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,AssignmentVariable
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression,AssignmentVariable
 .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "i"
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 52
@@ -209,7 +209,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  1: InfixExpression {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: BinaryExpression,BinaryExpressionOp,OpSubstract,AssignmentValue
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: BinaryExpression,BinaryExpressionOp,Expression,OpSubstract,AssignmentValue
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 56
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 5
@@ -221,7 +221,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: NumberLiteral {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,BinaryExpressionLeft
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,Expression,BinaryExpressionLeft
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 56
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 5
@@ -233,7 +233,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  1: NumberLiteral {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,BinaryExpressionRight
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,Expression,BinaryExpressionRight
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 60
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 5
@@ -257,7 +257,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  0: Assignment {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment
+.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment,Expression
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 65
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 6
@@ -269,7 +269,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  0: SimpleName {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,AssignmentVariable
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression,AssignmentVariable
 .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "i"
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 65
@@ -281,7 +281,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  1: InfixExpression {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: BinaryExpression,BinaryExpressionOp,OpMultiply,AssignmentValue
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: BinaryExpression,BinaryExpressionOp,Expression,OpMultiply,AssignmentValue
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 69
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 6
@@ -293,7 +293,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: NumberLiteral {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,BinaryExpressionLeft
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,Expression,BinaryExpressionLeft
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 69
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 6
@@ -305,7 +305,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  1: NumberLiteral {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,BinaryExpressionRight
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,Expression,BinaryExpressionRight
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 73
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 6
@@ -329,7 +329,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  0: Assignment {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment
+.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment,Expression
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 78
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 7
@@ -341,7 +341,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  0: SimpleName {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,AssignmentVariable
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression,AssignmentVariable
 .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "i"
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 78
@@ -353,7 +353,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  1: InfixExpression {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: BinaryExpression,BinaryExpressionOp,OpDivide,AssignmentValue
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: BinaryExpression,BinaryExpressionOp,Expression,OpDivide,AssignmentValue
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 82
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 7
@@ -365,7 +365,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: NumberLiteral {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,BinaryExpressionLeft
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,Expression,BinaryExpressionLeft
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 82
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 7
@@ -377,7 +377,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  1: NumberLiteral {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,BinaryExpressionRight
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,Expression,BinaryExpressionRight
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 86
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 7
@@ -401,7 +401,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  0: Assignment {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment
+.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment,Expression
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 91
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 8
@@ -413,7 +413,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  0: SimpleName {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,AssignmentVariable
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression,AssignmentVariable
 .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "i"
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 91
@@ -425,7 +425,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  1: InfixExpression {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: BinaryExpression,BinaryExpressionOp,OpMod,AssignmentValue
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: BinaryExpression,BinaryExpressionOp,Expression,OpMod,AssignmentValue
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 95
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 8
@@ -437,7 +437,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: NumberLiteral {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,BinaryExpressionLeft
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,Expression,BinaryExpressionLeft
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 95
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 8
@@ -449,7 +449,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  1: NumberLiteral {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,BinaryExpressionRight
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,Expression,BinaryExpressionRight
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 99
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 8
@@ -473,7 +473,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  0: PostfixExpression {
-.  .  .  .  .  .  .  .  .  .  .  Roles: OpPostIncrement
+.  .  .  .  .  .  .  .  .  .  .  Roles: Expression,OpPostIncrement
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 105
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 10
@@ -485,7 +485,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  0: SimpleName {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression
 .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "i"
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 105
@@ -507,7 +507,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  0: PostfixExpression {
-.  .  .  .  .  .  .  .  .  .  .  Roles: OpPostDecrement
+.  .  .  .  .  .  .  .  .  .  .  Roles: Expression,OpPostDecrement
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 112
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 11
@@ -519,7 +519,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  0: SimpleName {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression
 .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "i"
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 112
@@ -541,7 +541,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  0: PrefixExpression {
-.  .  .  .  .  .  .  .  .  .  .  Roles: OpPreIncrement
+.  .  .  .  .  .  .  .  .  .  .  Roles: Expression,OpPreIncrement
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 120
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 13
@@ -553,7 +553,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  0: SimpleName {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression
 .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "i"
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 122
@@ -575,7 +575,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  0: PrefixExpression {
-.  .  .  .  .  .  .  .  .  .  .  Roles: OpPreDecrement
+.  .  .  .  .  .  .  .  .  .  .  Roles: Expression,OpPreDecrement
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 127
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 14
@@ -587,7 +587,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  0: SimpleName {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression
 .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "i"
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 129
@@ -609,7 +609,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  0: Assignment {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment
+.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment,Expression
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 135
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 16
@@ -621,7 +621,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  0: SimpleName {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,AssignmentVariable
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression,AssignmentVariable
 .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "i"
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 135
@@ -633,7 +633,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  1: PrefixExpression {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: OpPositive,AssignmentValue
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Expression,OpPositive,AssignmentValue
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 139
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 16
@@ -645,7 +645,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: SimpleName {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "i"
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 140
@@ -669,7 +669,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  0: Assignment {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment
+.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment,Expression
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 145
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 17
@@ -681,7 +681,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  0: SimpleName {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,AssignmentVariable
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression,AssignmentVariable
 .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "i"
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 145
@@ -693,7 +693,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  1: PrefixExpression {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: OpNegative,AssignmentValue
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Expression,OpNegative,AssignmentValue
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 149
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 17
@@ -705,7 +705,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: NumberLiteral {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,Expression
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 150
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 17
@@ -729,7 +729,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  0: Assignment {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment
+.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment,Expression
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 156
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 19
@@ -741,7 +741,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  0: SimpleName {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,AssignmentVariable
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression,AssignmentVariable
 .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "i"
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 156
@@ -753,7 +753,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  1: PrefixExpression {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: OpBitwiseComplement,AssignmentValue
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Expression,OpBitwiseComplement,AssignmentValue
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 160
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 19
@@ -765,7 +765,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: SimpleName {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "i"
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 161
@@ -789,7 +789,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  0: Assignment {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment
+.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment,Expression
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 167
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 21
@@ -801,7 +801,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  0: SimpleName {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,AssignmentVariable
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression,AssignmentVariable
 .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "i"
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 167
@@ -813,7 +813,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  1: InfixExpression {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: BinaryExpression,BinaryExpressionOp,OpBitwiseAnd,AssignmentValue
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: BinaryExpression,BinaryExpressionOp,Expression,OpBitwiseAnd,AssignmentValue
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 171
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 21
@@ -825,7 +825,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: NumberLiteral {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,BinaryExpressionLeft
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,Expression,BinaryExpressionLeft
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 171
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 21
@@ -837,7 +837,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  1: NumberLiteral {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,BinaryExpressionRight
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,Expression,BinaryExpressionRight
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 173
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 21
@@ -861,7 +861,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  0: Assignment {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment
+.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment,Expression
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 178
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 22
@@ -873,7 +873,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  0: SimpleName {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,AssignmentVariable
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression,AssignmentVariable
 .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "i"
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 178
@@ -885,7 +885,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  1: InfixExpression {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: BinaryExpression,BinaryExpressionOp,OpBooleanXor,AssignmentValue
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: BinaryExpression,BinaryExpressionOp,Expression,OpBooleanXor,AssignmentValue
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 182
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 22
@@ -897,7 +897,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: NumberLiteral {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,BinaryExpressionLeft
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,Expression,BinaryExpressionLeft
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 182
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 22
@@ -909,7 +909,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  1: NumberLiteral {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,BinaryExpressionRight
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,Expression,BinaryExpressionRight
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 184
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 22
@@ -933,7 +933,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  0: Assignment {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment
+.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment,Expression
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 189
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 23
@@ -945,7 +945,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  0: SimpleName {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,AssignmentVariable
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression,AssignmentVariable
 .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "i"
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 189
@@ -957,7 +957,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  1: InfixExpression {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: BinaryExpression,BinaryExpressionOp,OpBitwiseOr,AssignmentValue
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: BinaryExpression,BinaryExpressionOp,Expression,OpBitwiseOr,AssignmentValue
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 193
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 23
@@ -969,7 +969,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: NumberLiteral {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,BinaryExpressionLeft
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,Expression,BinaryExpressionLeft
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 193
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 23
@@ -981,7 +981,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  1: NumberLiteral {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,BinaryExpressionRight
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,Expression,BinaryExpressionRight
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 195
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 23
@@ -1005,7 +1005,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  0: Assignment {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment
+.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment,Expression
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 200
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 24
@@ -1017,7 +1017,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  0: SimpleName {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,AssignmentVariable
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression,AssignmentVariable
 .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "i"
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 200
@@ -1029,7 +1029,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  1: InfixExpression {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: BinaryExpression,BinaryExpressionOp,OpBitwiseLeftShift,AssignmentValue
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: BinaryExpression,BinaryExpressionOp,Expression,OpBitwiseLeftShift,AssignmentValue
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 204
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 24
@@ -1041,7 +1041,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: NumberLiteral {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,BinaryExpressionLeft
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,Expression,BinaryExpressionLeft
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 204
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 24
@@ -1053,7 +1053,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  1: NumberLiteral {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,BinaryExpressionRight
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,Expression,BinaryExpressionRight
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 209
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 24
@@ -1077,7 +1077,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  0: Assignment {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment
+.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment,Expression
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 214
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 25
@@ -1089,7 +1089,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  0: SimpleName {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,AssignmentVariable
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression,AssignmentVariable
 .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "i"
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 214
@@ -1101,7 +1101,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  1: InfixExpression {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: BinaryExpression,BinaryExpressionOp,OpBitwiseRightShift,AssignmentValue
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: BinaryExpression,BinaryExpressionOp,Expression,OpBitwiseRightShift,AssignmentValue
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 218
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 25
@@ -1113,7 +1113,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: NumberLiteral {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,BinaryExpressionLeft
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,Expression,BinaryExpressionLeft
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 218
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 25
@@ -1125,7 +1125,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  1: NumberLiteral {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,BinaryExpressionRight
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,Expression,BinaryExpressionRight
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 223
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 25
@@ -1149,7 +1149,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  0: Assignment {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment
+.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment,Expression
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 228
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 26
@@ -1161,7 +1161,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  0: SimpleName {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,AssignmentVariable
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression,AssignmentVariable
 .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "i"
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 228
@@ -1173,7 +1173,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  1: InfixExpression {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: BinaryExpression,BinaryExpressionOp,OpBitwiseUnsignedRightShift,AssignmentValue
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: BinaryExpression,BinaryExpressionOp,Expression,OpBitwiseUnsignedRightShift,AssignmentValue
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 232
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 26
@@ -1185,7 +1185,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: NumberLiteral {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,BinaryExpressionLeft
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,Expression,BinaryExpressionLeft
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 232
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 26
@@ -1197,7 +1197,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  1: NumberLiteral {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,BinaryExpressionRight
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,Expression,BinaryExpressionRight
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 238
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 26
@@ -1221,7 +1221,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  0: Assignment {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment
+.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment,Expression
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 244
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 28
@@ -1233,7 +1233,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  0: SimpleName {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,AssignmentVariable
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression,AssignmentVariable
 .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "i"
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 244
@@ -1256,7 +1256,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: BooleanLiteral {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: BooleanLiteral
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: BooleanLiteral,Expression
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 249
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 28
@@ -1270,7 +1270,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  1: NumberLiteral {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,Expression
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 256
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 28
@@ -1282,7 +1282,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  2: NumberLiteral {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,Expression
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 260
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 28
@@ -1306,7 +1306,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  0: Assignment {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment,AugmentedAssignmentOperator,AugmentedAssignment,OpAdd
+.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment,Expression,AugmentedAssignmentOperator,AugmentedAssignment,OpAdd
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 266
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 30
@@ -1318,7 +1318,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  0: SimpleName {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,AssignmentVariable
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression,AssignmentVariable
 .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "i"
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 266
@@ -1330,7 +1330,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  1: NumberLiteral {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,AssignmentValue
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,Expression,AssignmentValue
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 271
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 30
@@ -1352,7 +1352,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  0: Assignment {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment,AugmentedAssignmentOperator,AugmentedAssignment,OpSubstract
+.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment,Expression,AugmentedAssignmentOperator,AugmentedAssignment,OpSubstract
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 276
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 31
@@ -1364,7 +1364,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  0: SimpleName {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,AssignmentVariable
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression,AssignmentVariable
 .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "i"
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 276
@@ -1376,7 +1376,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  1: NumberLiteral {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,AssignmentValue
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,Expression,AssignmentValue
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 281
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 31
@@ -1398,7 +1398,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  0: Assignment {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment,AugmentedAssignmentOperator,AugmentedAssignment,OpMultiply
+.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment,Expression,AugmentedAssignmentOperator,AugmentedAssignment,OpMultiply
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 286
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 32
@@ -1410,7 +1410,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  0: SimpleName {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,AssignmentVariable
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression,AssignmentVariable
 .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "i"
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 286
@@ -1422,7 +1422,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  1: NumberLiteral {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,AssignmentValue
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,Expression,AssignmentValue
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 291
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 32
@@ -1444,7 +1444,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  0: Assignment {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment,AugmentedAssignmentOperator,AugmentedAssignment,OpDivide
+.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment,Expression,AugmentedAssignmentOperator,AugmentedAssignment,OpDivide
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 296
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 33
@@ -1456,7 +1456,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  0: SimpleName {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,AssignmentVariable
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression,AssignmentVariable
 .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "i"
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 296
@@ -1468,7 +1468,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  1: NumberLiteral {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,AssignmentValue
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,Expression,AssignmentValue
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 301
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 33
@@ -1490,7 +1490,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  0: Assignment {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment,AugmentedAssignmentOperator,AugmentedAssignment,OpMod
+.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment,Expression,AugmentedAssignmentOperator,AugmentedAssignment,OpMod
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 306
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 34
@@ -1502,7 +1502,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  0: SimpleName {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,AssignmentVariable
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression,AssignmentVariable
 .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "i"
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 306
@@ -1514,7 +1514,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  1: NumberLiteral {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,AssignmentValue
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,Expression,AssignmentValue
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 311
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 34
@@ -1536,7 +1536,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  0: Assignment {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment,AugmentedAssignmentOperator,AugmentedAssignment,OpBitwiseAnd
+.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment,Expression,AugmentedAssignmentOperator,AugmentedAssignment,OpBitwiseAnd
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 316
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 35
@@ -1548,7 +1548,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  0: SimpleName {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,AssignmentVariable
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression,AssignmentVariable
 .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "i"
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 316
@@ -1560,7 +1560,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  1: NumberLiteral {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,AssignmentValue
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,Expression,AssignmentValue
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 321
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 35
@@ -1582,7 +1582,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  0: Assignment {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment,AugmentedAssignmentOperator,AugmentedAssignment,OpBooleanXor
+.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment,Expression,AugmentedAssignmentOperator,AugmentedAssignment,OpBooleanXor
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 326
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 36
@@ -1594,7 +1594,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  0: SimpleName {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,AssignmentVariable
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression,AssignmentVariable
 .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "i"
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 326
@@ -1606,7 +1606,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  1: NumberLiteral {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,AssignmentValue
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,Expression,AssignmentValue
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 331
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 36
@@ -1628,7 +1628,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  0: Assignment {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment,AugmentedAssignmentOperator,AugmentedAssignment,OpBitwiseOr
+.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment,Expression,AugmentedAssignmentOperator,AugmentedAssignment,OpBitwiseOr
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 336
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 37
@@ -1640,7 +1640,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  0: SimpleName {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,AssignmentVariable
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression,AssignmentVariable
 .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "i"
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 336
@@ -1652,7 +1652,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  1: NumberLiteral {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,AssignmentValue
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,Expression,AssignmentValue
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 341
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 37
@@ -1674,7 +1674,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  0: Assignment {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment,AugmentedAssignmentOperator,AugmentedAssignment,OpBitwiseLeftShift
+.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment,Expression,AugmentedAssignmentOperator,AugmentedAssignment,OpBitwiseLeftShift
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 346
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 38
@@ -1686,7 +1686,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  0: SimpleName {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,AssignmentVariable
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression,AssignmentVariable
 .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "i"
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 346
@@ -1698,7 +1698,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  1: NumberLiteral {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,AssignmentValue
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,Expression,AssignmentValue
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 352
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 38
@@ -1720,7 +1720,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  0: Assignment {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment,AugmentedAssignmentOperator,AugmentedAssignment,OpBitwiseRightShift
+.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment,Expression,AugmentedAssignmentOperator,AugmentedAssignment,OpBitwiseRightShift
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 357
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 39
@@ -1732,7 +1732,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  0: SimpleName {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,AssignmentVariable
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression,AssignmentVariable
 .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "i"
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 357
@@ -1744,7 +1744,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  1: NumberLiteral {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,AssignmentValue
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,Expression,AssignmentValue
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 363
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 39
@@ -1766,7 +1766,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  0: Assignment {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment,AugmentedAssignmentOperator,AugmentedAssignment,OpBitwiseUnsignedRightShift
+.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment,Expression,AugmentedAssignmentOperator,AugmentedAssignment,OpBitwiseUnsignedRightShift
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 368
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 40
@@ -1778,7 +1778,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  0: SimpleName {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,AssignmentVariable
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression,AssignmentVariable
 .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "i"
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 368
@@ -1790,7 +1790,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  1: NumberLiteral {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,AssignmentValue
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,Expression,AssignmentValue
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 375
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 40
@@ -1827,7 +1827,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  0: SimpleName {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression
 .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "b"
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 389
@@ -1849,7 +1849,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  0: Assignment {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment
+.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment,Expression
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 395
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 44
@@ -1861,7 +1861,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  0: SimpleName {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,AssignmentVariable
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression,AssignmentVariable
 .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "b"
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 395
@@ -1873,7 +1873,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  1: PrefixExpression {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: OpBooleanNot,AssignmentValue
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Expression,OpBooleanNot,AssignmentValue
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 399
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 44
@@ -1885,7 +1885,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: BooleanLiteral {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: BooleanLiteral
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: BooleanLiteral,Expression
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 400
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 44
@@ -1909,7 +1909,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  0: Assignment {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment
+.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment,Expression
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 409
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 46
@@ -1921,7 +1921,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  0: SimpleName {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,AssignmentVariable
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression,AssignmentVariable
 .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "b"
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 409
@@ -1933,7 +1933,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  1: InfixExpression {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: BinaryExpression,BinaryExpressionOp,AssignmentValue
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: BinaryExpression,BinaryExpressionOp,Expression,AssignmentValue
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 413
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 46
@@ -1945,7 +1945,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: NumberLiteral {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,BinaryExpressionLeft
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,Expression,BinaryExpressionLeft
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 413
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 46
@@ -1957,7 +1957,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  1: NumberLiteral {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,BinaryExpressionRight
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,Expression,BinaryExpressionRight
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 418
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 46
@@ -1981,7 +1981,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  0: Assignment {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment
+.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment,Expression
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 423
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 47
@@ -1993,7 +1993,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  0: SimpleName {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,AssignmentVariable
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression,AssignmentVariable
 .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "b"
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 423
@@ -2005,7 +2005,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  1: InfixExpression {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: BinaryExpression,BinaryExpressionOp,AssignmentValue
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: BinaryExpression,BinaryExpressionOp,Expression,AssignmentValue
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 427
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 47
@@ -2017,7 +2017,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: NumberLiteral {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,BinaryExpressionLeft
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,Expression,BinaryExpressionLeft
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 427
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 47
@@ -2029,7 +2029,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  1: NumberLiteral {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,BinaryExpressionRight
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,Expression,BinaryExpressionRight
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 431
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 47
@@ -2053,7 +2053,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  0: Assignment {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment
+.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment,Expression
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 436
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 48
@@ -2065,7 +2065,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  0: SimpleName {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,AssignmentVariable
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression,AssignmentVariable
 .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "b"
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 436
@@ -2077,7 +2077,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  1: InfixExpression {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: BinaryExpression,BinaryExpressionOp,AssignmentValue
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: BinaryExpression,BinaryExpressionOp,Expression,AssignmentValue
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 440
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 48
@@ -2089,7 +2089,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: NumberLiteral {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,BinaryExpressionLeft
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,Expression,BinaryExpressionLeft
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 440
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 48
@@ -2101,7 +2101,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  1: NumberLiteral {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,BinaryExpressionRight
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,Expression,BinaryExpressionRight
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 445
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 48
@@ -2125,7 +2125,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  0: Assignment {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment
+.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment,Expression
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 450
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 49
@@ -2137,7 +2137,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  0: SimpleName {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,AssignmentVariable
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression,AssignmentVariable
 .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "b"
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 450
@@ -2149,7 +2149,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  1: InfixExpression {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: BinaryExpression,BinaryExpressionOp,AssignmentValue
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: BinaryExpression,BinaryExpressionOp,Expression,AssignmentValue
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 454
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 49
@@ -2161,7 +2161,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: NumberLiteral {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,BinaryExpressionLeft
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,Expression,BinaryExpressionLeft
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 454
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 49
@@ -2173,7 +2173,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  1: NumberLiteral {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,BinaryExpressionRight
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,Expression,BinaryExpressionRight
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 458
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 49
@@ -2197,7 +2197,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  0: Assignment {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment
+.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment,Expression
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 463
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 50
@@ -2209,7 +2209,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  0: SimpleName {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,AssignmentVariable
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression,AssignmentVariable
 .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "b"
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 463
@@ -2221,7 +2221,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  1: InfixExpression {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: BinaryExpression,BinaryExpressionOp,AssignmentValue
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: BinaryExpression,BinaryExpressionOp,Expression,AssignmentValue
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 467
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 50
@@ -2233,7 +2233,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: NumberLiteral {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,BinaryExpressionLeft
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,Expression,BinaryExpressionLeft
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 467
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 50
@@ -2245,7 +2245,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  1: NumberLiteral {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,BinaryExpressionRight
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: NumberLiteral,Expression,BinaryExpressionRight
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 472
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 50
@@ -2269,7 +2269,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  0: Assignment {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment
+.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment,Expression
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 478
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 52
@@ -2281,7 +2281,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  0: SimpleName {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,AssignmentVariable
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression,AssignmentVariable
 .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "b"
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 478
@@ -2309,7 +2309,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: SimpleName {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "Boolean"
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 486
@@ -2323,7 +2323,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  1: BooleanLiteral {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: BooleanLiteral
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: BooleanLiteral,Expression
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 494
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 52
@@ -2342,7 +2342,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: SimpleName {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "Boolean"
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 511
