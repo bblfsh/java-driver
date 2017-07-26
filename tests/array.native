@@ -1,0 +1,136 @@
+{
+    "status": "ok",
+    "errors": [],
+    "ast": {
+        "CompilationUnit": {
+            "internalClass": "CompilationUnit",
+            "types": [
+                {
+                    "bodyDeclarations": [
+                        {
+                            "body": {
+                                "internalClass": "Block",
+                                "statements": [
+                                    {
+                                        "fragments": [
+                                            {
+                                                "initializer": {
+                                                    "dimensions": [
+                                                        {
+                                                            "internalClass": "NumberLiteral",
+                                                            "line": 3,
+                                                            "startPosition": 50,
+                                                            "token": "1"
+                                                        }
+                                                    ],
+                                                    "internalClass": "ArrayCreation",
+                                                    "type": {
+                                                        "dimensions": [
+                                                            {
+                                                                "internalClass": "Dimension"
+                                                            }
+                                                        ],
+                                                        "elementType": {
+                                                            "internalClass": "PrimitiveType",
+                                                            "line": 3,
+                                                            "primitiveTypeCode": "int",
+                                                            "startPosition": 46
+                                                        },
+                                                        "internalClass": "ArrayType"
+                                                    }
+                                                },
+                                                "internalClass": "VariableDeclarationFragment",
+                                                "name": {
+                                                    "identifier": "a",
+                                                    "internalClass": "SimpleName",
+                                                    "line": 3,
+                                                    "startPosition": 38
+                                                }
+                                            }
+                                        ],
+                                        "internalClass": "VariableDeclarationStatement",
+                                        "type": {
+                                            "dimensions": [
+                                                {
+                                                    "internalClass": "Dimension"
+                                                }
+                                            ],
+                                            "elementType": {
+                                                "internalClass": "PrimitiveType",
+                                                "line": 3,
+                                                "primitiveTypeCode": "int",
+                                                "startPosition": 32
+                                            },
+                                            "internalClass": "ArrayType"
+                                        }
+                                    },
+                                    {
+                                        "fragments": [
+                                            {
+                                                "initializer": {
+                                                    "array": {
+                                                        "identifier": "a",
+                                                        "internalClass": "SimpleName",
+                                                        "line": 4,
+                                                        "startPosition": 66
+                                                    },
+                                                    "index": {
+                                                        "internalClass": "NumberLiteral",
+                                                        "line": 4,
+                                                        "startPosition": 68,
+                                                        "token": "0"
+                                                    },
+                                                    "internalClass": "ArrayAccess"
+                                                },
+                                                "internalClass": "VariableDeclarationFragment",
+                                                "name": {
+                                                    "identifier": "b",
+                                                    "internalClass": "SimpleName",
+                                                    "line": 4,
+                                                    "startPosition": 62
+                                                }
+                                            }
+                                        ],
+                                        "internalClass": "VariableDeclarationStatement",
+                                        "type": {
+                                            "internalClass": "PrimitiveType",
+                                            "line": 4,
+                                            "primitiveTypeCode": "int",
+                                            "startPosition": 58
+                                        }
+                                    }
+                                ]
+                            },
+                            "constructor": "false",
+                            "internalClass": "MethodDeclaration",
+                            "line": 2,
+                            "name": {
+                                "identifier": "code",
+                                "internalClass": "SimpleName",
+                                "line": 2,
+                                "startPosition": 19
+                            },
+                            "returnType2": {
+                                "internalClass": "PrimitiveType",
+                                "line": 2,
+                                "primitiveTypeCode": "void",
+                                "startPosition": 14
+                            },
+                            "startPosition": 14
+                        }
+                    ],
+                    "interface": "false",
+                    "internalClass": "TypeDeclaration",
+                    "line": 1,
+                    "name": {
+                        "identifier": "Code",
+                        "internalClass": "SimpleName",
+                        "line": 1,
+                        "startPosition": 6
+                    },
+                    "startPosition": 0
+                }
+            ]
+        }
+    }
+}
