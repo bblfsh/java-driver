@@ -1,0 +1,145 @@
+{
+    "status": "ok",
+    "errors": [],
+    "ast": {
+        "CompilationUnit": {
+            "imports": [
+                {
+                    "internalClass": "ImportDeclaration",
+                    "line": 1,
+                    "name": {
+                        "internalClass": "QualifiedName",
+                        "name": {
+                            "identifier": "Function",
+                            "internalClass": "SimpleName",
+                            "line": 1,
+                            "startPosition": 26
+                        },
+                        "qualifier": {
+                            "internalClass": "QualifiedName",
+                            "name": {
+                                "identifier": "function",
+                                "internalClass": "SimpleName",
+                                "line": 1,
+                                "startPosition": 17
+                            },
+                            "qualifier": {
+                                "internalClass": "QualifiedName",
+                                "name": {
+                                    "identifier": "util",
+                                    "internalClass": "SimpleName",
+                                    "line": 1,
+                                    "startPosition": 12
+                                },
+                                "qualifier": {
+                                    "identifier": "java",
+                                    "internalClass": "SimpleName",
+                                    "line": 1,
+                                    "startPosition": 7
+                                }
+                            }
+                        }
+                    },
+                    "onDemand": "false",
+                    "startPosition": 0,
+                    "static": "false"
+                }
+            ],
+            "internalClass": "CompilationUnit",
+            "types": [
+                {
+                    "bodyDeclarations": [
+                        {
+                            "body": {
+                                "internalClass": "Block",
+                                "statements": [
+                                    {
+                                        "fragments": [
+                                            {
+                                                "initializer": {
+                                                    "expression": {
+                                                        "identifier": "Integer",
+                                                        "internalClass": "SimpleName",
+                                                        "line": 5,
+                                                        "startPosition": 98
+                                                    },
+                                                    "internalClass": "ExpressionMethodReference",
+                                                    "name": {
+                                                        "identifier": "bitCount",
+                                                        "internalClass": "SimpleName",
+                                                        "line": 5,
+                                                        "startPosition": 107
+                                                    }
+                                                },
+                                                "internalClass": "VariableDeclarationFragment",
+                                                "name": {
+                                                    "identifier": "f",
+                                                    "internalClass": "SimpleName",
+                                                    "line": 5,
+                                                    "startPosition": 94
+                                                }
+                                            }
+                                        ],
+                                        "internalClass": "VariableDeclarationStatement",
+                                        "type": {
+                                            "internalClass": "ParameterizedType",
+                                            "type": {
+                                                "internalClass": "SimpleType",
+                                                "name": {
+                                                    "identifier": "Function",
+                                                    "internalClass": "SimpleName",
+                                                    "line": 5,
+                                                    "startPosition": 67
+                                                }
+                                            },
+                                            "typeArguments": [
+                                                {
+                                                    "internalClass": "SimpleType",
+                                                    "name": {
+                                                        "identifier": "Integer",
+                                                        "internalClass": "SimpleName",
+                                                        "line": 5,
+                                                        "startPosition": 76
+                                                    }
+                                                },
+                                                {
+                                                    "internalClass": "SimpleType",
+                                                    "name": {
+                                                        "identifier": "Integer",
+                                                        "internalClass": "SimpleName",
+                                                        "line": 5,
+                                                        "startPosition": 85
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            "constructor": "true",
+                            "internalClass": "MethodDeclaration",
+                            "line": 4,
+                            "name": {
+                                "identifier": "Code",
+                                "internalClass": "SimpleName",
+                                "line": 4,
+                                "startPosition": 54
+                            },
+                            "startPosition": 54
+                        }
+                    ],
+                    "interface": "false",
+                    "internalClass": "TypeDeclaration",
+                    "line": 3,
+                    "name": {
+                        "identifier": "Code",
+                        "internalClass": "SimpleName",
+                        "line": 3,
+                        "startPosition": 45
+                    },
+                    "startPosition": 39
+                }
+            ]
+        }
+    }
+}

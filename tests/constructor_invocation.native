@@ -1,0 +1,88 @@
+{
+    "status": "ok",
+    "errors": [],
+    "ast": {
+        "CompilationUnit": {
+            "internalClass": "CompilationUnit",
+            "types": [
+                {
+                    "bodyDeclarations": [
+                        {
+                            "body": {
+                                "internalClass": "Block",
+                                "statements": [
+                                    {
+                                        "arguments": [
+                                            {
+                                                "internalClass": "NumberLiteral",
+                                                "line": 3,
+                                                "startPosition": 33,
+                                                "token": "0"
+                                            }
+                                        ],
+                                        "internalClass": "ConstructorInvocation"
+                                    }
+                                ]
+                            },
+                            "constructor": "true",
+                            "internalClass": "MethodDeclaration",
+                            "line": 2,
+                            "name": {
+                                "identifier": "Code",
+                                "internalClass": "SimpleName",
+                                "line": 2,
+                                "startPosition": 15
+                            },
+                            "startPosition": 15
+                        },
+                        {
+                            "body": {
+                                "internalClass": "Block"
+                            },
+                            "constructor": "true",
+                            "internalClass": "MethodDeclaration",
+                            "line": 5,
+                            "name": {
+                                "identifier": "Code",
+                                "internalClass": "SimpleName",
+                                "line": 5,
+                                "startPosition": 43
+                            },
+                            "parameters": [
+                                {
+                                    "internalClass": "SingleVariableDeclaration",
+                                    "line": 5,
+                                    "name": {
+                                        "identifier": "i",
+                                        "internalClass": "SimpleName",
+                                        "line": 5,
+                                        "startPosition": 52
+                                    },
+                                    "startPosition": 48,
+                                    "type": {
+                                        "internalClass": "PrimitiveType",
+                                        "line": 5,
+                                        "primitiveTypeCode": "int",
+                                        "startPosition": 48
+                                    },
+                                    "varargs": "false"
+                                }
+                            ],
+                            "startPosition": 43
+                        }
+                    ],
+                    "interface": "false",
+                    "internalClass": "TypeDeclaration",
+                    "line": 1,
+                    "name": {
+                        "identifier": "Code",
+                        "internalClass": "SimpleName",
+                        "line": 1,
+                        "startPosition": 6
+                    },
+                    "startPosition": 0
+                }
+            ]
+        }
+    }
+}
