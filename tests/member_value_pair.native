@@ -1,0 +1,97 @@
+{
+    "status": "ok",
+    "errors": [],
+    "ast": {
+        "CompilationUnit": {
+            "internalClass": "CompilationUnit",
+            "types": [
+                {
+                    "bodyDeclarations": [
+                        {
+                            "internalClass": "AnnotationTypeMemberDeclaration",
+                            "name": {
+                                "identifier": "a",
+                                "internalClass": "SimpleName",
+                                "line": 2,
+                                "startPosition": 23
+                            },
+                            "type": {
+                                "internalClass": "SimpleType",
+                                "name": {
+                                    "identifier": "String",
+                                    "internalClass": "SimpleName",
+                                    "line": 2,
+                                    "startPosition": 16
+                                }
+                            }
+                        }
+                    ],
+                    "internalClass": "AnnotationTypeDeclaration",
+                    "name": {
+                        "identifier": "A",
+                        "internalClass": "SimpleName",
+                        "line": 1,
+                        "startPosition": 11
+                    }
+                },
+                {
+                    "bodyDeclarations": [
+                        {
+                            "body": {
+                                "internalClass": "Block"
+                            },
+                            "constructor": "true",
+                            "internalClass": "MethodDeclaration",
+                            "line": 7,
+                            "name": {
+                                "identifier": "Code",
+                                "internalClass": "SimpleName",
+                                "line": 7,
+                                "startPosition": 55
+                            },
+                            "startPosition": 55
+                        }
+                    ],
+                    "interface": "false",
+                    "internalClass": "TypeDeclaration",
+                    "line": 5,
+                    "modifiers": [
+                        {
+                            "internalClass": "NormalAnnotation",
+                            "typeName": {
+                                "identifier": "A",
+                                "internalClass": "SimpleName",
+                                "line": 5,
+                                "startPosition": 32
+                            },
+                            "values": [
+                                {
+                                    "internalClass": "MemberValuePair",
+                                    "name": {
+                                        "identifier": "a",
+                                        "internalClass": "SimpleName",
+                                        "line": 5,
+                                        "startPosition": 34
+                                    },
+                                    "value": {
+                                        "escapedValue": "\"\"",
+                                        "internalClass": "StringLiteral",
+                                        "line": 5,
+                                        "startPosition": 36
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "name": {
+                        "identifier": "Code",
+                        "internalClass": "SimpleName",
+                        "line": 6,
+                        "startPosition": 46
+                    },
+                    "startPosition": 31
+                }
+            ]
+        }
+    }
+}
