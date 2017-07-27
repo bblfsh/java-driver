@@ -1,0 +1,106 @@
+{
+    "status": "ok",
+    "errors": [],
+    "ast": {
+        "CompilationUnit": {
+            "internalClass": "CompilationUnit",
+            "types": [
+                {
+                    "bodyDeclarations": [
+                        {
+                            "body": {
+                                "internalClass": "Block"
+                            },
+                            "constructor": "false",
+                            "internalClass": "MethodDeclaration",
+                            "line": 2,
+                            "modifiers": [
+                                {
+                                    "internalClass": "Modifier",
+                                    "keyword": "public",
+                                    "line": 2,
+                                    "startPosition": 12
+                                }
+                            ],
+                            "name": {
+                                "identifier": "a",
+                                "internalClass": "SimpleName",
+                                "line": 2,
+                                "startPosition": 24
+                            },
+                            "returnType2": {
+                                "internalClass": "PrimitiveType",
+                                "line": 2,
+                                "primitiveTypeCode": "void",
+                                "startPosition": 19
+                            },
+                            "startPosition": 12
+                        }
+                    ],
+                    "interface": "false",
+                    "internalClass": "TypeDeclaration",
+                    "line": 1,
+                    "name": {
+                        "identifier": "A",
+                        "internalClass": "SimpleName",
+                        "line": 1,
+                        "startPosition": 6
+                    },
+                    "startPosition": 0
+                },
+                {
+                    "bodyDeclarations": [
+                        {
+                            "body": {
+                                "internalClass": "Block",
+                                "statements": [
+                                    {
+                                        "expression": {
+                                            "internalClass": "SuperMethodInvocation",
+                                            "name": {
+                                                "identifier": "a",
+                                                "internalClass": "SimpleName",
+                                                "line": 6,
+                                                "startPosition": 69
+                                            }
+                                        },
+                                        "internalClass": "ExpressionStatement"
+                                    }
+                                ]
+                            },
+                            "constructor": "true",
+                            "internalClass": "MethodDeclaration",
+                            "line": 6,
+                            "name": {
+                                "identifier": "B",
+                                "internalClass": "SimpleName",
+                                "line": 6,
+                                "startPosition": 57
+                            },
+                            "startPosition": 57
+                        }
+                    ],
+                    "interface": "false",
+                    "internalClass": "TypeDeclaration",
+                    "line": 5,
+                    "name": {
+                        "identifier": "B",
+                        "internalClass": "SimpleName",
+                        "line": 5,
+                        "startPosition": 41
+                    },
+                    "startPosition": 35,
+                    "superclassType": {
+                        "internalClass": "SimpleType",
+                        "name": {
+                            "identifier": "A",
+                            "internalClass": "SimpleName",
+                            "line": 5,
+                            "startPosition": 51
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}
