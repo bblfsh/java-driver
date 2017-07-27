@@ -1,0 +1,102 @@
+{
+    "status": "ok",
+    "errors": [],
+    "ast": {
+        "CompilationUnit": {
+            "internalClass": "CompilationUnit",
+            "types": [
+                {
+                    "bodyDeclarations": [
+                        {
+                            "fragments": [
+                                {
+                                    "internalClass": "VariableDeclarationFragment",
+                                    "name": {
+                                        "identifier": "a",
+                                        "internalClass": "SimpleName",
+                                        "line": 2,
+                                        "startPosition": 40
+                                    }
+                                }
+                            ],
+                            "internalClass": "FieldDeclaration",
+                            "modifiers": [
+                                {
+                                    "internalClass": "Modifier",
+                                    "keyword": "private",
+                                    "line": 2,
+                                    "startPosition": 15
+                                },
+                                {
+                                    "internalClass": "Modifier",
+                                    "keyword": "final",
+                                    "line": 2,
+                                    "startPosition": 23
+                                },
+                                {
+                                    "internalClass": "Modifier",
+                                    "keyword": "static",
+                                    "line": 2,
+                                    "startPosition": 29
+                                }
+                            ],
+                            "type": {
+                                "internalClass": "PrimitiveType",
+                                "line": 2,
+                                "primitiveTypeCode": "int",
+                                "startPosition": 36
+                            }
+                        },
+                        {
+                            "body": {
+                                "internalClass": "Block",
+                                "statements": [
+                                    {
+                                        "expression": {
+                                            "internalClass": "Assignment",
+                                            "leftHandSide": {
+                                                "identifier": "a",
+                                                "internalClass": "SimpleName",
+                                                "line": 4,
+                                                "startPosition": 58
+                                            },
+                                            "line": 4,
+                                            "operator": "=",
+                                            "rightHandSide": {
+                                                "internalClass": "NumberLiteral",
+                                                "line": 4,
+                                                "startPosition": 62,
+                                                "token": "0"
+                                            },
+                                            "startPosition": 58
+                                        },
+                                        "internalClass": "ExpressionStatement"
+                                    }
+                                ]
+                            },
+                            "internalClass": "Initializer",
+                            "modifiers": [
+                                {
+                                    "internalClass": "Modifier",
+                                    "keyword": "static",
+                                    "line": 3,
+                                    "startPosition": 45
+                                }
+                            ]
+                        }
+                    ],
+                    "interface": "false",
+                    "internalClass": "TypeDeclaration",
+                    "line": 1,
+                    "name": {
+                        "identifier": "Code",
+                        "internalClass": "SimpleName",
+                        "line": 1,
+                        "startPosition": 6
+                    },
+                    "startPosition": 0
+                }
+            ]
+        }
+    }
+}
