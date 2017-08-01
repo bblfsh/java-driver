@@ -102,6 +102,7 @@
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='AssertStatement'\] | Assert, Statement |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='AnonymousClassDeclaration'\] | TypeDeclaration, Expression |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='AnonymousClassDeclaration'\]/\*\[@internalRole\]\[@internalRole='bodyDeclarations'\] | TypeDeclarationBody |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='ArrayAccess'\] | Expression |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='ThisExpression'\] | This, Expression |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='Block'\] | BlockScope, Block, Statement |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='ExpressionStatement'\] | Statement |

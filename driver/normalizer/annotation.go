@@ -174,9 +174,10 @@ var AnnotationRules = On(Any).Self(
 
 		// Other expressions
 		On(jdt.AnonymousClassDeclaration).Roles(TypeDeclaration, Expression).Children(
-			// FIXME: missing a role to indicate it's an anonymous class
+			// FIXME: no specific role
 			On(jdt.PropertyBodyDeclarations).Roles(TypeDeclarationBody),
 		),
+		On(jdt.ArrayAccess).Roles(Expression), // FIXME: no specific role
 		On(jdt.ThisExpression).Roles(This, Expression),
 
 		// Other statements
