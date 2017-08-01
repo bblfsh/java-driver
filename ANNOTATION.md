@@ -100,9 +100,11 @@
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='TryStatement'\]/\*\[@internalRole\]\[@internalRole='finally'\] | TryFinally |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='ThrowStatement'\] | Throw, Statement |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='AssertStatement'\] | Assert, Statement |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='AnonymousClassDeclaration'\] | TypeDeclaration, Expression |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='AnonymousClassDeclaration'\]/\*\[@internalRole\]\[@internalRole='bodyDeclarations'\] | TypeDeclarationBody |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='ThisExpression'\] | This, Expression |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='Block'\] | BlockScope, Block, Statement |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='ExpressionStatement'\] | Statement |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='ReturnStatement'\] | Return, Statement |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='BreakStatement'\] | Break, Statement |
-| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='ThisExpression'\] | This, Expression |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='Javadoc'\] | Documentation, Comment |

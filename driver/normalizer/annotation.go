@@ -172,13 +172,19 @@ var AnnotationRules = On(Any).Self(
 
 		On(jdt.AssertStatement).Roles(Assert, Statement),
 
-		// Others
+		// Other expressions
+		On(jdt.AnonymousClassDeclaration).Roles(TypeDeclaration, Expression).Children(
+			// FIXME: missing a role to indicate it's an anonymous class
+			On(jdt.PropertyBodyDeclarations).Roles(TypeDeclarationBody),
+		),
+		On(jdt.ThisExpression).Roles(This, Expression),
+
+		// Other statements
 		On(jdt.Block).Roles(BlockScope, Block, Statement),
 		On(jdt.ExpressionStatement).Roles(Statement),
 		On(jdt.ReturnStatement).Roles(Return, Statement),
 		On(jdt.BreakStatement).Roles(Break, Statement),
 
-		On(jdt.ThisExpression).Roles(This, Expression),
 		//TODO: synchronized
 		On(jdt.Javadoc).Roles(Documentation, Comment),
 	),
