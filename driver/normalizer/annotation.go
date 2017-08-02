@@ -109,6 +109,7 @@ var AnnotationRules = On(Any).Self(
 			On(jdt.PropertyBody).Roles(DoWhileBody),
 		),
 
+		// Operators
 		On(jdt.InfixExpression).Roles(BinaryExpression, BinaryExpressionOp, Expression).Self(
 			On(HasProperty("operator", "+")).Roles(OpAdd),
 			On(HasProperty("operator", "-")).Roles(OpSubstract),
@@ -161,6 +162,7 @@ var AnnotationRules = On(Any).Self(
 			),
 		),
 
+		// Exceptions
 		On(jdt.TryStatement).Roles(Try, Statement).Children(
 			// TODO: TryWithResourcesStatement
 			On(jdt.PropertyBody).Roles(TryBody),
