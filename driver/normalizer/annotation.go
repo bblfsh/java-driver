@@ -177,7 +177,8 @@ var AnnotationRules = On(Any).Self(
 			// FIXME: no specific role
 			On(jdt.PropertyBodyDeclarations).Roles(TypeDeclarationBody),
 		),
-		On(jdt.ArrayAccess).Roles(Expression), // FIXME: no specific role
+		On(jdt.ArrayAccess).Roles(Expression),   // FIXME: no specific role
+		On(jdt.ArrayCreation).Roles(Expression), // FIXME: no specific role
 		On(jdt.ThisExpression).Roles(This, Expression),
 
 		// Other statements
