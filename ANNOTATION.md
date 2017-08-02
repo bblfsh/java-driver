@@ -12,6 +12,8 @@
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='ImportDeclaration'\] | ImportDeclaration |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='ImportDeclaration'\]/\*\[@InternalType='QualifiedName'\] | ImportPath |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='TypeDeclaration'\] | TypeDeclaration |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='AnnotationTypeDeclaration'\] | TypeDeclaration |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='AnnotationTypeDeclaration'\]/\*\[@internalRole\]\[@internalRole='bodyDeclarations'\] | TypeDeclarationBody |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='MethodDeclaration'\] | FunctionDeclaration |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='MethodDeclaration'\]/\*\[@internalRole\]\[@internalRole='name'\] | FunctionDeclarationName |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='MethodDeclaration'\]/\*\[@internalRole\]\[@internalRole='body'\] | FunctionDeclarationBody |

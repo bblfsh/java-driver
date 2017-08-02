@@ -34,6 +34,9 @@ var AnnotationRules = On(Any).Self(
 
 		// Type declarations
 		On(jdt.TypeDeclaration).Roles(TypeDeclaration),
+		On(jdt.AnnotationTypeDeclaration).Roles(TypeDeclaration).Children( // FIXME: Incomplete
+			On(jdt.PropertyBodyDeclarations).Roles(TypeDeclarationBody),
+		),
 
 		// Method declarations
 		On(jdt.MethodDeclaration).Roles(FunctionDeclaration).Children(
