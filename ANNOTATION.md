@@ -1,6 +1,5 @@
 | Path | Action |
 |------|--------|
-| /self::\*\[not\(@InternalType='CompilationUnit'\)\] | Error |
 | /self::\*\[@InternalType='CompilationUnit'\] | File |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='QualifiedName'\] | QualifiedIdentifier, Expression |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='SimpleName'\] | SimpleIdentifier, Expression |
