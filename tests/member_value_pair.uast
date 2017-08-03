@@ -5,6 +5,7 @@ CompilationUnit {
 .  Roles: File
 .  Children: {
 .  .  0: AnnotationTypeDeclaration {
+.  .  .  Roles: TypeDeclaration,Incomplete
 .  .  .  Properties: {
 .  .  .  .  internalRole: types
 .  .  .  }
@@ -22,6 +23,7 @@ CompilationUnit {
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  .  1: AnnotationTypeMemberDeclaration {
+.  .  .  .  .  Roles: TypeDeclarationBody,Incomplete
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: bodyDeclarations
 .  .  .  .  .  }

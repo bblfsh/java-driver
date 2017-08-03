@@ -11,13 +11,26 @@
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='PackageDeclaration'\] | PackageDeclaration |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='ImportDeclaration'\] | ImportDeclaration |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='ImportDeclaration'\]/\*\[@InternalType='QualifiedName'\] | ImportPath |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='AnonymousClassDeclaration'\] | TypeDeclaration, Expression, Incomplete |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='AnonymousClassDeclaration'\]/\*\[@internalRole\]\[@internalRole='bodyDeclarations'\] | TypeDeclarationBody |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='AnnotationTypeDeclaration'\] | TypeDeclaration, Incomplete |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='AnnotationTypeDeclaration'\]/\*\[@internalRole\]\[@internalRole='bodyDeclarations'\] | TypeDeclarationBody |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='EnumDeclaration'\] | TypeDeclaration, Incomplete |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='TypeDeclaration'\] | TypeDeclaration |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='TypeDeclarationStatement'\] | TypeDeclaration, Incomplete |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='MethodDeclaration'\] | FunctionDeclaration |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='MethodDeclaration'\]/\*\[@internalRole\]\[@internalRole='name'\] | FunctionDeclarationName |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='MethodDeclaration'\]/\*\[@internalRole\]\[@internalRole='body'\] | FunctionDeclarationBody |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='MethodDeclaration'\]/\*\[@internalRole\]\[@internalRole='parameters'\] | FunctionDeclarationArgument |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='MethodDeclaration'\]/\*\[@internalRole\]\[@internalRole='parameters'\]/self::\*\[@varargs\]\[@varargs='true'\] | FunctionDeclarationVarArgsList |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='MethodDeclaration'\]/\*\[@internalRole\]\[@internalRole='parameters'\]/\*\[@internalRole\]\[@internalRole='name'\] | FunctionDeclarationArgumentName |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='AnnotationTypeMemberDeclaration'\] | Incomplete |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='EnumConstantDeclaration'\] | Incomplete |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='FieldDeclaration'\] | Incomplete |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='SingleVariableDeclaration'\] | Incomplete |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='VariableDeclarationExpression'\] | Expression, Incomplete |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='VariableDeclarationFragment'\] | Incomplete |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='VariableDeclarationStatement'\] | Statement, Incomplete |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='BooleanLiteral'\] | BooleanLiteral, Expression |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='CharacterLiteral'\] | CharacterLiteral, Expression |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='NullLiteral'\] | NullLiteral, Expression |
@@ -100,9 +113,11 @@
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='TryStatement'\]/\*\[@internalRole\]\[@internalRole='finally'\] | TryFinally |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='ThrowStatement'\] | Throw, Statement |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='AssertStatement'\] | Assert, Statement |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='ArrayAccess'\] | Expression, Incomplete |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='ArrayCreation'\] | Expression, Incomplete |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='ThisExpression'\] | This, Expression |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='Block'\] | BlockScope, Block, Statement |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='ExpressionStatement'\] | Statement |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='ReturnStatement'\] | Return, Statement |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='BreakStatement'\] | Break, Statement |
-| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='ThisExpression'\] | This, Expression |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='Javadoc'\] | Documentation, Comment |

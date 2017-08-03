@@ -33,7 +33,18 @@ var AnnotationRules = On(Any).Self(
 		),
 
 		// Type declarations
+		On(jdt.AnonymousClassDeclaration).Roles(TypeDeclaration, Expression, Incomplete).Children(
+			On(jdt.PropertyBodyDeclarations).Roles(TypeDeclarationBody),
+		),
+		On(jdt.AnnotationTypeDeclaration).Roles(TypeDeclaration, Incomplete).Children(
+			On(jdt.PropertyBodyDeclarations).Roles(TypeDeclarationBody),
+		),
+		On(jdt.EnumDeclaration).Roles(TypeDeclaration, Incomplete),
+
+		// ClassDeclaration | InterfaceDeclaration
 		On(jdt.TypeDeclaration).Roles(TypeDeclaration),
+		// Local (TypeDeclaration | EnumDeclaration)
+		On(jdt.TypeDeclarationStatement).Roles(TypeDeclaration, Incomplete),
 
 		// Method declarations
 		On(jdt.MethodDeclaration).Roles(FunctionDeclaration).Children(
@@ -48,6 +59,15 @@ var AnnotationRules = On(Any).Self(
 				On(jdt.PropertyName).Roles(FunctionDeclarationArgumentName),
 			),
 		),
+
+		// Other declarations
+		On(jdt.AnnotationTypeMemberDeclaration).Roles(Incomplete),
+		On(jdt.EnumConstantDeclaration).Roles(Incomplete),
+		On(jdt.FieldDeclaration).Roles(Incomplete),
+		On(jdt.SingleVariableDeclaration).Roles(Incomplete),
+		On(jdt.VariableDeclarationExpression).Roles(Expression, Incomplete),
+		On(jdt.VariableDeclarationFragment).Roles(Incomplete),
+		On(jdt.VariableDeclarationStatement).Roles(Statement, Incomplete),
 
 		// Literals
 		On(jdt.BooleanLiteral).Roles(BooleanLiteral, Expression),
@@ -109,6 +129,7 @@ var AnnotationRules = On(Any).Self(
 			On(jdt.PropertyBody).Roles(DoWhileBody),
 		),
 
+		// Operators
 		On(jdt.InfixExpression).Roles(BinaryExpression, BinaryExpressionOp, Expression).Self(
 			On(HasProperty("operator", "+")).Roles(OpAdd),
 			On(HasProperty("operator", "-")).Roles(OpSubstract),
@@ -161,6 +182,7 @@ var AnnotationRules = On(Any).Self(
 			),
 		),
 
+		// Exceptions
 		On(jdt.TryStatement).Roles(Try, Statement).Children(
 			// TODO: TryWithResourcesStatement
 			On(jdt.PropertyBody).Roles(TryBody),
@@ -172,13 +194,17 @@ var AnnotationRules = On(Any).Self(
 
 		On(jdt.AssertStatement).Roles(Assert, Statement),
 
-		// Others
+		// Other expressions
+		On(jdt.ArrayAccess).Roles(Expression, Incomplete),
+		On(jdt.ArrayCreation).Roles(Expression, Incomplete),
+		On(jdt.ThisExpression).Roles(This, Expression),
+
+		// Other statements
 		On(jdt.Block).Roles(BlockScope, Block, Statement),
 		On(jdt.ExpressionStatement).Roles(Statement),
 		On(jdt.ReturnStatement).Roles(Return, Statement),
 		On(jdt.BreakStatement).Roles(Break, Statement),
 
-		On(jdt.ThisExpression).Roles(This, Expression),
 		//TODO: synchronized
 		On(jdt.Javadoc).Roles(Documentation, Comment),
 	),
