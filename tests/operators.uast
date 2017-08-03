@@ -41,6 +41,7 @@ CompilationUnit {
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
 .  .  .  .  .  .  0: PrimitiveType {
+.  .  .  .  .  .  .  Roles: Unannotated
 .  .  .  .  .  .  .  TOKEN "void"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 14
@@ -76,6 +77,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  0: PrimitiveType {
+.  .  .  .  .  .  .  .  .  .  .  Roles: Unannotated
 .  .  .  .  .  .  .  .  .  .  .  TOKEN "int"
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 30
@@ -1253,6 +1255,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: ParenthesizedExpression {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Unannotated
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  internalRole: expression
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
@@ -1814,6 +1817,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  0: PrimitiveType {
+.  .  .  .  .  .  .  .  .  .  .  Roles: Unannotated
 .  .  .  .  .  .  .  .  .  .  .  TOKEN "boolean"
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 381
@@ -2303,11 +2307,13 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: ClassInstanceCreation {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Unannotated
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  internalRole: leftOperand
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: SimpleType {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Unannotated
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  internalRole: type
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
@@ -2341,6 +2347,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  1: SimpleType {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Unannotated
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  internalRole: rightOperand
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
