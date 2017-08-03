@@ -178,6 +178,17 @@ var AnnotationRules = On(jdt.CompilationUnit).Roles(File).Descendants(
 		),
 	),
 
+	// Types
+	On(jdt.ArrayType).Roles(Incomplete),
+	On(jdt.IntersectionType).Roles(Incomplete),
+	On(jdt.NameQualifiedType).Roles(Incomplete),
+	On(jdt.ParameterizedType).Roles(Incomplete),
+	On(jdt.PrimitiveType).Roles(Incomplete),
+	On(jdt.QualifiedType).Roles(Incomplete),
+	On(jdt.SimpleType).Roles(Incomplete),
+	On(jdt.UnionType).Roles(Incomplete),
+	On(jdt.WildcardType).Roles(Incomplete),
+
 	// Exceptions
 	On(jdt.TryStatement).Roles(Try, Statement).Children(
 		// TODO: TryWithResourcesStatement

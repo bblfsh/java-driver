@@ -106,6 +106,15 @@
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='Assignment'\]/self::\*\[not\(@operator\]\[@operator='='\)\]/self::\*\[@operator\]\[@operator='<<='\] | OpBitwiseLeftShift |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='Assignment'\]/self::\*\[not\(@operator\]\[@operator='='\)\]/self::\*\[@operator\]\[@operator='>>='\] | OpBitwiseRightShift |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='Assignment'\]/self::\*\[not\(@operator\]\[@operator='='\)\]/self::\*\[@operator\]\[@operator='>>>='\] | OpBitwiseUnsignedRightShift |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='ArrayType'\] | Incomplete |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='IntersectionType'\] | Incomplete |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='NameQualifiedType'\] | Incomplete |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='ParameterizedType'\] | Incomplete |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='PrimitiveType'\] | Incomplete |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='QualifiedType'\] | Incomplete |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='SimpleType'\] | Incomplete |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='UnionType'\] | Incomplete |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='WildcardType'\] | Incomplete |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='TryStatement'\] | Try, Statement |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='TryStatement'\]/\*\[@internalRole\]\[@internalRole='body'\] | TryBody |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='TryStatement'\]/\*\[@internalRole\]\[@internalRole='catchClauses'\] | TryCatch |
