@@ -34,7 +34,7 @@ var AnnotationRules = On(Any).Self(
 
 		// Type declarations
 		On(jdt.TypeDeclaration).Roles(TypeDeclaration),
-		On(jdt.AnnotationTypeDeclaration).Roles(TypeDeclaration).Children( // FIXME: Incomplete
+		On(jdt.AnnotationTypeDeclaration).Roles(TypeDeclaration, Incomplete).Children(
 			On(jdt.PropertyBodyDeclarations).Roles(TypeDeclarationBody),
 		),
 
@@ -178,12 +178,11 @@ var AnnotationRules = On(Any).Self(
 		On(jdt.AssertStatement).Roles(Assert, Statement),
 
 		// Other expressions
-		On(jdt.AnonymousClassDeclaration).Roles(TypeDeclaration, Expression).Children(
-			// FIXME: no specific role
+		On(jdt.AnonymousClassDeclaration).Roles(TypeDeclaration, Expression, Incomplete).Children(
 			On(jdt.PropertyBodyDeclarations).Roles(TypeDeclarationBody),
 		),
-		On(jdt.ArrayAccess).Roles(Expression),   // FIXME: no specific role
-		On(jdt.ArrayCreation).Roles(Expression), // FIXME: no specific role
+		On(jdt.ArrayAccess).Roles(Expression, Incomplete),
+		On(jdt.ArrayCreation).Roles(Expression, Incomplete),
 		On(jdt.ThisExpression).Roles(This, Expression),
 
 		// Other statements
