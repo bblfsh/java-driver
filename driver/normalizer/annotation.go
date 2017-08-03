@@ -208,6 +208,7 @@ var AnnotationRules = On(jdt.CompilationUnit).Roles(File).Descendants(
 
 	// Other statements
 	On(jdt.Block).Roles(BlockScope, Block, Statement),
+	On(jdt.EmptyStatement).Roles(Statement),
 	On(jdt.ExpressionStatement).Roles(Statement),
 	On(jdt.ReturnStatement).Roles(Return, Statement),
 	On(jdt.BreakStatement).Roles(Break, Statement),

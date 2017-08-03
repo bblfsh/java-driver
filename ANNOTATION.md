@@ -125,6 +125,7 @@
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='ArrayCreation'\] | Expression, Incomplete |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='ThisExpression'\] | This, Expression |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='Block'\] | BlockScope, Block, Statement |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='EmptyStatement'\] | Statement |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='ExpressionStatement'\] | Statement |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='ReturnStatement'\] | Return, Statement |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='BreakStatement'\] | Break, Statement |
