@@ -189,6 +189,28 @@ var AnnotationRules = On(jdt.CompilationUnit).Roles(File).Descendants(
 	On(jdt.UnionType).Roles(Incomplete),
 	On(jdt.WildcardType).Roles(Incomplete),
 
+	// Modifiers
+	On(jdt.Modifier).Self(
+		On(jdt.KeywordPublic).Roles(VisibleFromWorld),
+		On(jdt.KeywordProtected).Roles(VisibleFromSubtype),
+		On(jdt.KeywordPrivate).Roles(VisibleFromInstance),
+
+		// class | method | interface
+		On(jdt.KeywordAbstract).Roles(Incomplete),
+		// class | field | method | interface
+		On(jdt.KeywordStatic).Roles(Incomplete),
+		// class | field | method
+		On(jdt.KeywordFinal).Roles(Incomplete),
+		// class | method | interface
+		On(jdt.KeywordStrictfp).Roles(Incomplete),
+		// field
+		On(jdt.KeywordTransient).Roles(Incomplete),
+		On(jdt.KeywordVolatile).Roles(Incomplete),
+		// method
+		On(jdt.KeywordSynchronized).Roles(Incomplete),
+		On(jdt.KeywordNative).Roles(Incomplete),
+	),
+
 	// Exceptions
 	On(jdt.TryStatement).Roles(Try, Statement).Children(
 		// TODO: TryWithResourcesStatement

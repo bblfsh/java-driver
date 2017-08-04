@@ -115,6 +115,17 @@
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='SimpleType'\] | Incomplete |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='UnionType'\] | Incomplete |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='WildcardType'\] | Incomplete |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='Modifier'\]/self::\*\[@Token='public'\] | VisibleFromWorld |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='Modifier'\]/self::\*\[@Token='protected'\] | VisibleFromSubtype |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='Modifier'\]/self::\*\[@Token='private'\] | VisibleFromInstance |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='Modifier'\]/self::\*\[@Token='abstract'\] | Incomplete |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='Modifier'\]/self::\*\[@Token='static'\] | Incomplete |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='Modifier'\]/self::\*\[@Token='final'\] | Incomplete |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='Modifier'\]/self::\*\[@Token='strictfp'\] | Incomplete |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='Modifier'\]/self::\*\[@Token='transient'\] | Incomplete |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='Modifier'\]/self::\*\[@Token='volatile'\] | Incomplete |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='Modifier'\]/self::\*\[@Token='synchronized'\] | Incomplete |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='Modifier'\]/self::\*\[@Token='native'\] | Incomplete |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='TryStatement'\] | Try, Statement |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='TryStatement'\]/\*\[@internalRole\]\[@internalRole='body'\] | TryBody |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='TryStatement'\]/\*\[@internalRole\]\[@internalRole='catchClauses'\] | TryCatch |
