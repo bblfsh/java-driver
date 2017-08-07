@@ -44,14 +44,22 @@ var AnnotationRules = On(jdt.CompilationUnit).Roles(File).Descendants(
 
 	// Method declarations
 	On(jdt.MethodDeclaration).Roles(FunctionDeclaration).Children(
-		//TODO: On(jdt.PropertyTypeParameters).Roles(FunctionDeclarationTypeParameter),
-		//TODO: On(jdt.PropertyReturnType2).Roles(FunctionDeclarationReturnType)
 		On(jdt.PropertyName).Roles(FunctionDeclarationName),
 		On(jdt.PropertyBody).Roles(FunctionDeclarationBody),
 		On(jdt.PropertyParameters).Roles(FunctionDeclarationArgument).Self(
 			On(HasProperty("varargs", "true")).Roles(FunctionDeclarationVarArgsList),
 		).Children(
-			//TODO: On(jdt.PropertyType).Roles(FunctionDeclarationArgumentType),
+			On(jdt.PropertyName).Roles(FunctionDeclarationArgumentName),
+		),
+	),
+	// FIXME: A lambda expression is not really a function declaration
+	// but current UAST doesn't provide anything else for function definitions
+	// so I'm considering a lambda expression a function declaration for now
+	On(jdt.LambdaExpression).Roles(FunctionDeclaration, Incomplete).Children(
+		On(jdt.PropertyBody).Roles(FunctionDeclarationBody),
+		On(jdt.PropertyParameters).Roles(FunctionDeclarationArgument).Self(
+			On(HasProperty("varargs", "true")).Roles(FunctionDeclarationVarArgsList),
+		).Children(
 			On(jdt.PropertyName).Roles(FunctionDeclarationArgumentName),
 		),
 	),
@@ -60,6 +68,7 @@ var AnnotationRules = On(jdt.CompilationUnit).Roles(File).Descendants(
 	On(jdt.AnnotationTypeMemberDeclaration).Roles(Incomplete),
 	On(jdt.EnumConstantDeclaration).Roles(Incomplete),
 	On(jdt.FieldDeclaration).Roles(Incomplete),
+	On(jdt.Initializer).Roles(Incomplete),
 	On(jdt.SingleVariableDeclaration).Roles(Incomplete),
 	On(jdt.VariableDeclarationExpression).Roles(Expression, Incomplete),
 	On(jdt.VariableDeclarationFragment).Roles(Incomplete),
@@ -74,8 +83,25 @@ var AnnotationRules = On(jdt.CompilationUnit).Roles(File).Descendants(
 	On(jdt.TypeLiteral).Roles(TypeLiteral, Expression),
 
 	// Calls
+	On(jdt.ClassInstanceCreation).Roles(Call, Expression, Incomplete).Children(
+		On(jdt.PropertyType).Roles(CallCallee),
+		On(jdt.PropertyArguments).Roles(CallPositionalArgument),
+	),
+	On(jdt.ConstructorInvocation).Roles(Call, Statement, Incomplete).Children(
+		On(jdt.PropertyType).Roles(CallCallee),
+		On(jdt.PropertyArguments).Roles(CallPositionalArgument),
+	),
 	On(jdt.MethodInvocation).Roles(Call, Expression).Children(
 		On(jdt.PropertyExpression).Roles(CallReceiver),
+		On(jdt.PropertyName).Roles(CallCallee),
+		On(jdt.PropertyArguments).Roles(CallPositionalArgument),
+	),
+	On(jdt.SuperConstructorInvocation).Roles(Call, Statement, Incomplete).Children(
+		On(jdt.PropertyExpression).Roles(CallReceiver),
+		On(jdt.PropertyArguments).Roles(CallPositionalArgument),
+	),
+	On(jdt.SuperMethodInvocation).Roles(Call, Expression, Incomplete).Children(
+		On(jdt.PropertyQualifier).Roles(CallCallee),
 		On(jdt.PropertyName).Roles(CallCallee),
 		On(jdt.PropertyArguments).Roles(CallPositionalArgument),
 	),
@@ -226,15 +252,32 @@ var AnnotationRules = On(jdt.CompilationUnit).Roles(File).Descendants(
 	// Other expressions
 	On(jdt.ArrayAccess).Roles(Expression, Incomplete),
 	On(jdt.ArrayCreation).Roles(Expression, Incomplete),
+	On(jdt.CastExpression).Roles(Expression, Incomplete),
+	On(jdt.CreationReference).Roles(Expression, Incomplete),
+	On(jdt.ExpressionMethodReference).Roles(Expression, Incomplete),
+	On(jdt.ParenthesizedExpression).Roles(Expression, Incomplete),
+	On(jdt.SuperMethodReference).Roles(Expression, Incomplete),
 	On(jdt.ThisExpression).Roles(This, Expression),
 
 	// Other statements
 	On(jdt.Block).Roles(BlockScope, Block, Statement),
+	On(jdt.BreakStatement).Roles(Break, Statement),
 	On(jdt.EmptyStatement).Roles(Statement),
 	On(jdt.ExpressionStatement).Roles(Statement),
+	On(jdt.LabeledStatement).Roles(Statement, Incomplete),
 	On(jdt.ReturnStatement).Roles(Return, Statement),
-	On(jdt.BreakStatement).Roles(Break, Statement),
+	On(jdt.SynchronizedStatement).Roles(Statement, Incomplete),
 
-	//TODO: synchronized
+	// Others
+	On(jdt.ArrayInitializer).Roles(Incomplete),
+	On(jdt.Dimension).Roles(Incomplete),
 	On(jdt.Javadoc).Roles(Documentation, Comment),
+	On(jdt.NormalAnnotation).Roles(Incomplete),
+	On(jdt.MemberRef).Roles(Incomplete),
+	On(jdt.MemberValuePair).Roles(Incomplete),
+	On(jdt.MethodRef).Roles(Incomplete),
+	On(jdt.MethodRefParameter).Roles(Incomplete),
+	On(jdt.TagElement).Roles(Incomplete),
+	On(jdt.TextElement).Roles(Incomplete),
+	On(jdt.TypeParameter).Roles(Incomplete),
 )
