@@ -1,0 +1,159 @@
+{
+    "status": "ok",
+    "errors": [],
+    "ast": {
+        "CompilationUnit": {
+            "imports": [
+                {
+                    "internalClass": "ImportDeclaration",
+                    "line": 1,
+                    "name": {
+                        "internalClass": "QualifiedName",
+                        "name": {
+                            "identifier": "annotation",
+                            "internalClass": "SimpleName",
+                            "line": 1,
+                            "startPosition": 17
+                        },
+                        "qualifier": {
+                            "internalClass": "QualifiedName",
+                            "name": {
+                                "identifier": "lang",
+                                "internalClass": "SimpleName",
+                                "line": 1,
+                                "startPosition": 12
+                            },
+                            "qualifier": {
+                                "identifier": "java",
+                                "internalClass": "SimpleName",
+                                "line": 1,
+                                "startPosition": 7
+                            }
+                        }
+                    },
+                    "onDemand": "true",
+                    "startPosition": 0,
+                    "static": "false"
+                }
+            ],
+            "internalClass": "CompilationUnit",
+            "types": [
+                {
+                    "internalClass": "AnnotationTypeDeclaration",
+                    "modifiers": [
+                        {
+                            "internalClass": "SingleMemberAnnotation",
+                            "typeName": {
+                                "identifier": "Target",
+                                "internalClass": "SimpleName",
+                                "line": 3,
+                                "startPosition": 33
+                            },
+                            "value": {
+                                "internalClass": "QualifiedName",
+                                "name": {
+                                    "identifier": "TYPE_USE",
+                                    "internalClass": "SimpleName",
+                                    "line": 3,
+                                    "startPosition": 52
+                                },
+                                "qualifier": {
+                                    "identifier": "ElementType",
+                                    "internalClass": "SimpleName",
+                                    "line": 3,
+                                    "startPosition": 40
+                                }
+                            }
+                        }
+                    ],
+                    "name": {
+                        "identifier": "X",
+                        "internalClass": "SimpleName",
+                        "line": 4,
+                        "startPosition": 73
+                    }
+                },
+                {
+                    "bodyDeclarations": [
+                        {
+                            "body": {
+                                "internalClass": "Block",
+                                "statements": [
+                                    {
+                                        "fragments": [
+                                            {
+                                                "internalClass": "VariableDeclarationFragment",
+                                                "name": {
+                                                    "identifier": "date",
+                                                    "internalClass": "SimpleName",
+                                                    "line": 8,
+                                                    "startPosition": 117
+                                                }
+                                            }
+                                        ],
+                                        "internalClass": "VariableDeclarationStatement",
+                                        "type": {
+                                            "annotations": [
+                                                {
+                                                    "internalClass": "MarkerAnnotation",
+                                                    "typeName": {
+                                                        "identifier": "X",
+                                                        "internalClass": "SimpleName",
+                                                        "line": 8,
+                                                        "startPosition": 110
+                                                    }
+                                                }
+                                            ],
+                                            "internalClass": "NameQualifiedType",
+                                            "name": {
+                                                "identifier": "Date",
+                                                "internalClass": "SimpleName",
+                                                "line": 8,
+                                                "startPosition": 112
+                                            },
+                                            "qualifier": {
+                                                "internalClass": "QualifiedName",
+                                                "name": {
+                                                    "identifier": "util",
+                                                    "internalClass": "SimpleName",
+                                                    "line": 8,
+                                                    "startPosition": 104
+                                                },
+                                                "qualifier": {
+                                                    "identifier": "java",
+                                                    "internalClass": "SimpleName",
+                                                    "line": 8,
+                                                    "startPosition": 99
+                                                }
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            "constructor": "true",
+                            "internalClass": "MethodDeclaration",
+                            "line": 7,
+                            "name": {
+                                "identifier": "A",
+                                "internalClass": "SimpleName",
+                                "line": 7,
+                                "startPosition": 89
+                            },
+                            "startPosition": 89
+                        }
+                    ],
+                    "interface": "false",
+                    "internalClass": "TypeDeclaration",
+                    "line": 6,
+                    "name": {
+                        "identifier": "A",
+                        "internalClass": "SimpleName",
+                        "line": 6,
+                        "startPosition": 84
+                    },
+                    "startPosition": 78
+                }
+            ]
+        }
+    }
+}
