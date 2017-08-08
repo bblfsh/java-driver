@@ -1,0 +1,434 @@
+Status:  ok
+Errors: 
+UAST: 
+CompilationUnit {
+.  Roles: File
+.  Children: {
+.  .  0: ImportDeclaration {
+.  .  .  Roles: ImportDeclaration
+.  .  .  StartPosition: {
+.  .  .  .  Offset: 0
+.  .  .  .  Line: 1
+.  .  .  .  Col: 1
+.  .  .  }
+.  .  .  Properties: {
+.  .  .  .  internalRole: imports
+.  .  .  .  onDemand: true
+.  .  .  .  static: false
+.  .  .  }
+.  .  .  Children: {
+.  .  .  .  0: QualifiedName {
+.  .  .  .  .  Roles: QualifiedIdentifier,Expression,ImportPath
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  internalRole: name
+.  .  .  .  .  }
+.  .  .  .  .  Children: {
+.  .  .  .  .  .  0: QualifiedName {
+.  .  .  .  .  .  .  Roles: QualifiedIdentifier,Expression
+.  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  internalRole: qualifier
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  Children: {
+.  .  .  .  .  .  .  .  0: SimpleName {
+.  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression
+.  .  .  .  .  .  .  .  .  TOKEN "java"
+.  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 7
+.  .  .  .  .  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  .  .  .  .  Col: 8
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  internalRole: qualifier
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  1: SimpleName {
+.  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression
+.  .  .  .  .  .  .  .  .  TOKEN "lang"
+.  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 12
+.  .  .  .  .  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  .  .  .  .  Col: 13
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  internalRole: name
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  }
+.  .  .  .  .  .  1: SimpleName {
+.  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression
+.  .  .  .  .  .  .  TOKEN "annotation"
+.  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  Offset: 17
+.  .  .  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  .  .  Col: 18
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  internalRole: name
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  }
+.  .  .  .  .  }
+.  .  .  .  }
+.  .  .  }
+.  .  }
+.  .  1: AnnotationTypeDeclaration {
+.  .  .  Roles: TypeDeclaration,Incomplete
+.  .  .  Properties: {
+.  .  .  .  internalRole: types
+.  .  .  }
+.  .  .  Children: {
+.  .  .  .  0: SingleMemberAnnotation {
+.  .  .  .  .  Roles: Incomplete
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  internalRole: modifiers
+.  .  .  .  .  }
+.  .  .  .  .  Children: {
+.  .  .  .  .  .  0: SimpleName {
+.  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression
+.  .  .  .  .  .  .  TOKEN "Target"
+.  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  Offset: 32
+.  .  .  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  .  .  Col: 2
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  internalRole: typeName
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  }
+.  .  .  .  .  .  1: QualifiedName {
+.  .  .  .  .  .  .  Roles: QualifiedIdentifier,Expression
+.  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  internalRole: value
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  Children: {
+.  .  .  .  .  .  .  .  0: SimpleName {
+.  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression
+.  .  .  .  .  .  .  .  .  TOKEN "ElementType"
+.  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 39
+.  .  .  .  .  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  .  .  .  .  Col: 9
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  internalRole: qualifier
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  1: SimpleName {
+.  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression
+.  .  .  .  .  .  .  .  .  TOKEN "TYPE_USE"
+.  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 51
+.  .  .  .  .  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  .  .  .  .  Col: 21
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  internalRole: name
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  }
+.  .  .  .  .  }
+.  .  .  .  }
+.  .  .  .  1: SimpleName {
+.  .  .  .  .  Roles: SimpleIdentifier,Expression
+.  .  .  .  .  TOKEN "X"
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 72
+.  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  Col: 42
+.  .  .  .  .  }
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  internalRole: name
+.  .  .  .  .  }
+.  .  .  .  }
+.  .  .  }
+.  .  }
+.  .  2: AnnotationTypeDeclaration {
+.  .  .  Roles: TypeDeclaration,Incomplete
+.  .  .  Properties: {
+.  .  .  .  internalRole: types
+.  .  .  }
+.  .  .  Children: {
+.  .  .  .  0: SingleMemberAnnotation {
+.  .  .  .  .  Roles: Incomplete
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  internalRole: modifiers
+.  .  .  .  .  }
+.  .  .  .  .  Children: {
+.  .  .  .  .  .  0: SimpleName {
+.  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression
+.  .  .  .  .  .  .  TOKEN "Target"
+.  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  Offset: 78
+.  .  .  .  .  .  .  .  Line: 3
+.  .  .  .  .  .  .  .  Col: 2
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  internalRole: typeName
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  }
+.  .  .  .  .  .  1: QualifiedName {
+.  .  .  .  .  .  .  Roles: QualifiedIdentifier,Expression
+.  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  internalRole: value
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  Children: {
+.  .  .  .  .  .  .  .  0: SimpleName {
+.  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression
+.  .  .  .  .  .  .  .  .  TOKEN "ElementType"
+.  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 85
+.  .  .  .  .  .  .  .  .  .  Line: 3
+.  .  .  .  .  .  .  .  .  .  Col: 9
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  internalRole: qualifier
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  1: SimpleName {
+.  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression
+.  .  .  .  .  .  .  .  .  TOKEN "TYPE_USE"
+.  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 97
+.  .  .  .  .  .  .  .  .  .  Line: 3
+.  .  .  .  .  .  .  .  .  .  Col: 21
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  internalRole: name
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  }
+.  .  .  .  .  }
+.  .  .  .  }
+.  .  .  .  1: SimpleName {
+.  .  .  .  .  Roles: SimpleIdentifier,Expression
+.  .  .  .  .  TOKEN "Y"
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 118
+.  .  .  .  .  .  Line: 3
+.  .  .  .  .  .  Col: 42
+.  .  .  .  .  }
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  internalRole: name
+.  .  .  .  .  }
+.  .  .  .  }
+.  .  .  }
+.  .  }
+.  .  3: TypeDeclaration {
+.  .  .  Roles: VisibleFromPackage,TypeDeclaration
+.  .  .  StartPosition: {
+.  .  .  .  Offset: 124
+.  .  .  .  Line: 5
+.  .  .  .  Col: 1
+.  .  .  }
+.  .  .  Properties: {
+.  .  .  .  interface: false
+.  .  .  .  internalRole: types
+.  .  .  }
+.  .  .  Children: {
+.  .  .  .  0: SimpleName {
+.  .  .  .  .  Roles: SimpleIdentifier,Expression
+.  .  .  .  .  TOKEN "A"
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 130
+.  .  .  .  .  .  Line: 5
+.  .  .  .  .  .  Col: 7
+.  .  .  .  .  }
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  internalRole: name
+.  .  .  .  .  }
+.  .  .  .  }
+.  .  .  .  1: TypeDeclaration {
+.  .  .  .  .  Roles: VisibleFromPackage,TypeDeclaration
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 135
+.  .  .  .  .  .  Line: 6
+.  .  .  .  .  .  Col: 2
+.  .  .  .  .  }
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  interface: false
+.  .  .  .  .  .  internalRole: bodyDeclarations
+.  .  .  .  .  }
+.  .  .  .  .  Children: {
+.  .  .  .  .  .  0: SimpleName {
+.  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression
+.  .  .  .  .  .  .  TOKEN "B"
+.  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  Offset: 141
+.  .  .  .  .  .  .  .  Line: 6
+.  .  .  .  .  .  .  .  Col: 8
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  internalRole: name
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  }
+.  .  .  .  .  .  1: TypeDeclaration {
+.  .  .  .  .  .  .  Roles: VisibleFromPackage,TypeDeclaration
+.  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  Offset: 147
+.  .  .  .  .  .  .  .  Line: 7
+.  .  .  .  .  .  .  .  Col: 3
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  interface: false
+.  .  .  .  .  .  .  .  internalRole: bodyDeclarations
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  Children: {
+.  .  .  .  .  .  .  .  0: SimpleName {
+.  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression
+.  .  .  .  .  .  .  .  .  TOKEN "C"
+.  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 153
+.  .  .  .  .  .  .  .  .  .  Line: 7
+.  .  .  .  .  .  .  .  .  .  Col: 9
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  internalRole: name
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  1: MethodDeclaration {
+.  .  .  .  .  .  .  .  .  Roles: VisibleFromWorld,FunctionDeclaration
+.  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 160
+.  .  .  .  .  .  .  .  .  .  Line: 8
+.  .  .  .  .  .  .  .  .  .  Col: 4
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  constructor: true
+.  .  .  .  .  .  .  .  .  .  internalRole: bodyDeclarations
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  Children: {
+.  .  .  .  .  .  .  .  .  .  0: Modifier {
+.  .  .  .  .  .  .  .  .  .  .  Roles: VisibleFromWorld
+.  .  .  .  .  .  .  .  .  .  .  TOKEN "public"
+.  .  .  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  .  .  Offset: 160
+.  .  .  .  .  .  .  .  .  .  .  .  Line: 8
+.  .  .  .  .  .  .  .  .  .  .  .  Col: 4
+.  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  .  .  internalRole: modifiers
+.  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  1: SimpleName {
+.  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression,FunctionDeclarationName
+.  .  .  .  .  .  .  .  .  .  .  TOKEN "C"
+.  .  .  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  .  .  Offset: 167
+.  .  .  .  .  .  .  .  .  .  .  .  Line: 8
+.  .  .  .  .  .  .  .  .  .  .  .  Col: 11
+.  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  .  .  internalRole: name
+.  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  2: QualifiedType {
+.  .  .  .  .  .  .  .  .  .  .  Roles: Incomplete
+.  .  .  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  .  .  internalRole: receiverType
+.  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  Children: {
+.  .  .  .  .  .  .  .  .  .  .  .  0: SimpleType {
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Incomplete
+.  .  .  .  .  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  internalRole: qualifier
+.  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  Children: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  0: MarkerAnnotation {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Incomplete
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  internalRole: annotations
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Children: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: SimpleName {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "X"
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 170
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 8
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Col: 14
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  internalRole: typeName
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  1: SimpleName {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "A"
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 172
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 8
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Col: 16
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  internalRole: name
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  1: MarkerAnnotation {
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Incomplete
+.  .  .  .  .  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  internalRole: annotations
+.  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  Children: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  0: SimpleName {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "Y"
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 175
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 8
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Col: 19
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  internalRole: typeName
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  2: SimpleName {
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression
+.  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "B"
+.  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 177
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 8
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  Col: 21
+.  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  internalRole: name
+.  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  3: SimpleName {
+.  .  .  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression
+.  .  .  .  .  .  .  .  .  .  .  TOKEN "B"
+.  .  .  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  .  .  Offset: 179
+.  .  .  .  .  .  .  .  .  .  .  .  Line: 8
+.  .  .  .  .  .  .  .  .  .  .  .  Col: 23
+.  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  .  .  internalRole: receiverQualifier
+.  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  4: Block {
+.  .  .  .  .  .  .  .  .  .  .  Roles: FunctionDeclarationBody,BlockScope,Block,Statement
+.  .  .  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  .  .  internalRole: body
+.  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  }
+.  .  .  .  .  }
+.  .  .  .  }
+.  .  .  }
+.  .  }
+.  }
+}
+

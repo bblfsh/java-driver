@@ -23,7 +23,6 @@ but there are some missing:
 
 * BlockComment
 * LineComment
-* QualifiedType
 * TypeMethodReference
 * UnionType
 * WildcardType

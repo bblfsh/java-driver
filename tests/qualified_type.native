@@ -1,0 +1,225 @@
+{
+    "status": "ok",
+    "errors": [],
+    "ast": {
+        "CompilationUnit": {
+            "imports": [
+                {
+                    "internalClass": "ImportDeclaration",
+                    "line": 1,
+                    "name": {
+                        "internalClass": "QualifiedName",
+                        "name": {
+                            "identifier": "annotation",
+                            "internalClass": "SimpleName",
+                            "line": 1,
+                            "startPosition": 17
+                        },
+                        "qualifier": {
+                            "internalClass": "QualifiedName",
+                            "name": {
+                                "identifier": "lang",
+                                "internalClass": "SimpleName",
+                                "line": 1,
+                                "startPosition": 12
+                            },
+                            "qualifier": {
+                                "identifier": "java",
+                                "internalClass": "SimpleName",
+                                "line": 1,
+                                "startPosition": 7
+                            }
+                        }
+                    },
+                    "onDemand": "true",
+                    "startPosition": 0,
+                    "static": "false"
+                }
+            ],
+            "internalClass": "CompilationUnit",
+            "types": [
+                {
+                    "internalClass": "AnnotationTypeDeclaration",
+                    "modifiers": [
+                        {
+                            "internalClass": "SingleMemberAnnotation",
+                            "typeName": {
+                                "identifier": "Target",
+                                "internalClass": "SimpleName",
+                                "line": 2,
+                                "startPosition": 32
+                            },
+                            "value": {
+                                "internalClass": "QualifiedName",
+                                "name": {
+                                    "identifier": "TYPE_USE",
+                                    "internalClass": "SimpleName",
+                                    "line": 2,
+                                    "startPosition": 51
+                                },
+                                "qualifier": {
+                                    "identifier": "ElementType",
+                                    "internalClass": "SimpleName",
+                                    "line": 2,
+                                    "startPosition": 39
+                                }
+                            }
+                        }
+                    ],
+                    "name": {
+                        "identifier": "X",
+                        "internalClass": "SimpleName",
+                        "line": 2,
+                        "startPosition": 72
+                    }
+                },
+                {
+                    "internalClass": "AnnotationTypeDeclaration",
+                    "modifiers": [
+                        {
+                            "internalClass": "SingleMemberAnnotation",
+                            "typeName": {
+                                "identifier": "Target",
+                                "internalClass": "SimpleName",
+                                "line": 3,
+                                "startPosition": 78
+                            },
+                            "value": {
+                                "internalClass": "QualifiedName",
+                                "name": {
+                                    "identifier": "TYPE_USE",
+                                    "internalClass": "SimpleName",
+                                    "line": 3,
+                                    "startPosition": 97
+                                },
+                                "qualifier": {
+                                    "identifier": "ElementType",
+                                    "internalClass": "SimpleName",
+                                    "line": 3,
+                                    "startPosition": 85
+                                }
+                            }
+                        }
+                    ],
+                    "name": {
+                        "identifier": "Y",
+                        "internalClass": "SimpleName",
+                        "line": 3,
+                        "startPosition": 118
+                    }
+                },
+                {
+                    "bodyDeclarations": [
+                        {
+                            "bodyDeclarations": [
+                                {
+                                    "bodyDeclarations": [
+                                        {
+                                            "body": {
+                                                "internalClass": "Block"
+                                            },
+                                            "constructor": "true",
+                                            "internalClass": "MethodDeclaration",
+                                            "line": 8,
+                                            "modifiers": [
+                                                {
+                                                    "internalClass": "Modifier",
+                                                    "keyword": "public",
+                                                    "line": 8,
+                                                    "startPosition": 160
+                                                }
+                                            ],
+                                            "name": {
+                                                "identifier": "C",
+                                                "internalClass": "SimpleName",
+                                                "line": 8,
+                                                "startPosition": 167
+                                            },
+                                            "receiverQualifier": {
+                                                "identifier": "B",
+                                                "internalClass": "SimpleName",
+                                                "line": 8,
+                                                "startPosition": 179
+                                            },
+                                            "receiverType": {
+                                                "annotations": [
+                                                    {
+                                                        "internalClass": "MarkerAnnotation",
+                                                        "typeName": {
+                                                            "identifier": "Y",
+                                                            "internalClass": "SimpleName",
+                                                            "line": 8,
+                                                            "startPosition": 175
+                                                        }
+                                                    }
+                                                ],
+                                                "internalClass": "QualifiedType",
+                                                "name": {
+                                                    "identifier": "B",
+                                                    "internalClass": "SimpleName",
+                                                    "line": 8,
+                                                    "startPosition": 177
+                                                },
+                                                "qualifier": {
+                                                    "annotations": [
+                                                        {
+                                                            "internalClass": "MarkerAnnotation",
+                                                            "typeName": {
+                                                                "identifier": "X",
+                                                                "internalClass": "SimpleName",
+                                                                "line": 8,
+                                                                "startPosition": 170
+                                                            }
+                                                        }
+                                                    ],
+                                                    "internalClass": "SimpleType",
+                                                    "name": {
+                                                        "identifier": "A",
+                                                        "internalClass": "SimpleName",
+                                                        "line": 8,
+                                                        "startPosition": 172
+                                                    }
+                                                }
+                                            },
+                                            "startPosition": 160
+                                        }
+                                    ],
+                                    "interface": "false",
+                                    "internalClass": "TypeDeclaration",
+                                    "line": 7,
+                                    "name": {
+                                        "identifier": "C",
+                                        "internalClass": "SimpleName",
+                                        "line": 7,
+                                        "startPosition": 153
+                                    },
+                                    "startPosition": 147
+                                }
+                            ],
+                            "interface": "false",
+                            "internalClass": "TypeDeclaration",
+                            "line": 6,
+                            "name": {
+                                "identifier": "B",
+                                "internalClass": "SimpleName",
+                                "line": 6,
+                                "startPosition": 141
+                            },
+                            "startPosition": 135
+                        }
+                    ],
+                    "interface": "false",
+                    "internalClass": "TypeDeclaration",
+                    "line": 5,
+                    "name": {
+                        "identifier": "A",
+                        "internalClass": "SimpleName",
+                        "line": 5,
+                        "startPosition": 130
+                    },
+                    "startPosition": 124
+                }
+            ]
+        }
+    }
+}
