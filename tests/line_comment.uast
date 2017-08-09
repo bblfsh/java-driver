@@ -1,0 +1,57 @@
+Status:  ok
+Errors: 
+UAST: 
+CompilationUnit {
+.  Roles: File
+.  Children: {
+.  .  0: LineComment {
+.  .  .  Roles: Comment
+.  .  .  StartPosition: {
+.  .  .  .  Offset: 0
+.  .  .  .  Line: 1
+.  .  .  .  Col: 1
+.  .  .  }
+.  .  .  Properties: {
+.  .  .  .  internalRole: comments
+.  .  .  }
+.  .  }
+.  .  1: TypeDeclaration {
+.  .  .  Roles: VisibleFromPackage,TypeDeclaration
+.  .  .  StartPosition: {
+.  .  .  .  Offset: 5
+.  .  .  .  Line: 2
+.  .  .  .  Col: 1
+.  .  .  }
+.  .  .  Properties: {
+.  .  .  .  interface: false
+.  .  .  .  internalRole: types
+.  .  .  }
+.  .  .  Children: {
+.  .  .  .  0: SimpleName {
+.  .  .  .  .  Roles: SimpleIdentifier,Expression
+.  .  .  .  .  TOKEN "A"
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 11
+.  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  Col: 7
+.  .  .  .  .  }
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  internalRole: name
+.  .  .  .  .  }
+.  .  .  .  }
+.  .  .  }
+.  .  }
+.  .  2: LineComment {
+.  .  .  Roles: Comment
+.  .  .  StartPosition: {
+.  .  .  .  Offset: 15
+.  .  .  .  Line: 2
+.  .  .  .  Col: 11
+.  .  .  }
+.  .  .  Properties: {
+.  .  .  .  internalRole: comments
+.  .  .  }
+.  .  }
+.  }
+}
+

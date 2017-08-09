@@ -160,6 +160,9 @@
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='SingleMemberAnnotation'\] | Incomplete |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='TagElement'\] | Incomplete |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='TextElement'\] | Incomplete |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='BlockComment'\] | Comment |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='Javadoc'\] | Documentation, Comment |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='LineComment'\] | Comment |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='ArrayAccess'\] | Expression, Incomplete |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='ArrayCreation'\] | Expression, Incomplete |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='CastExpression'\] | Expression, Incomplete |
@@ -177,5 +180,4 @@
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='SynchronizedStatement'\] | Statement, Incomplete |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='ArrayInitializer'\] | Incomplete |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='Dimension'\] | Incomplete |
-| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='Javadoc'\] | Documentation, Comment |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='TypeParameter'\] | Incomplete |
