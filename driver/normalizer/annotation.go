@@ -249,6 +249,17 @@ var AnnotationRules = On(jdt.CompilationUnit).Roles(File).Descendants(
 
 	On(jdt.AssertStatement).Roles(Assert, Statement),
 
+	// Annotations
+	On(jdt.MarkerAnnotation).Roles(Incomplete),
+	On(jdt.MemberRef).Roles(Incomplete),
+	On(jdt.MemberValuePair).Roles(Incomplete),
+	On(jdt.MethodRef).Roles(Incomplete),
+	On(jdt.MethodRefParameter).Roles(Incomplete),
+	On(jdt.NormalAnnotation).Roles(Incomplete),
+	On(jdt.SingleMemberAnnotation).Roles(Incomplete),
+	On(jdt.TagElement).Roles(Incomplete),
+	On(jdt.TextElement).Roles(Incomplete),
+
 	// Other expressions
 	On(jdt.ArrayAccess).Roles(Expression, Incomplete),
 	On(jdt.ArrayCreation).Roles(Expression, Incomplete),
@@ -272,12 +283,5 @@ var AnnotationRules = On(jdt.CompilationUnit).Roles(File).Descendants(
 	On(jdt.ArrayInitializer).Roles(Incomplete),
 	On(jdt.Dimension).Roles(Incomplete),
 	On(jdt.Javadoc).Roles(Documentation, Comment),
-	On(jdt.NormalAnnotation).Roles(Incomplete),
-	On(jdt.MemberRef).Roles(Incomplete),
-	On(jdt.MemberValuePair).Roles(Incomplete),
-	On(jdt.MethodRef).Roles(Incomplete),
-	On(jdt.MethodRefParameter).Roles(Incomplete),
-	On(jdt.TagElement).Roles(Incomplete),
-	On(jdt.TextElement).Roles(Incomplete),
 	On(jdt.TypeParameter).Roles(Incomplete),
 )

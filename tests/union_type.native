@@ -1,0 +1,91 @@
+{
+    "status": "ok",
+    "errors": [],
+    "ast": {
+        "CompilationUnit": {
+            "internalClass": "CompilationUnit",
+            "types": [
+                {
+                    "bodyDeclarations": [
+                        {
+                            "body": {
+                                "internalClass": "Block",
+                                "statements": [
+                                    {
+                                        "body": {
+                                            "internalClass": "Block"
+                                        },
+                                        "catchClauses": [
+                                            {
+                                                "body": {
+                                                    "internalClass": "Block"
+                                                },
+                                                "exception": {
+                                                    "internalClass": "SingleVariableDeclaration",
+                                                    "line": 4,
+                                                    "name": {
+                                                        "identifier": "e",
+                                                        "internalClass": "SimpleName",
+                                                        "line": 4,
+                                                        "startPosition": 83
+                                                    },
+                                                    "startPosition": 40,
+                                                    "type": {
+                                                        "internalClass": "UnionType",
+                                                        "types": [
+                                                            {
+                                                                "internalClass": "SimpleType",
+                                                                "name": {
+                                                                    "identifier": "NullPointerException",
+                                                                    "internalClass": "SimpleName",
+                                                                    "line": 4,
+                                                                    "startPosition": 40
+                                                                }
+                                                            },
+                                                            {
+                                                                "internalClass": "SimpleType",
+                                                                "name": {
+                                                                    "identifier": "ArithmeticException",
+                                                                    "internalClass": "SimpleName",
+                                                                    "line": 4,
+                                                                    "startPosition": 63
+                                                                }
+                                                            }
+                                                        ]
+                                                    },
+                                                    "varargs": "false"
+                                                },
+                                                "internalClass": "CatchClause"
+                                            }
+                                        ],
+                                        "internalClass": "TryStatement"
+                                    }
+                                ]
+                            },
+                            "constructor": "true",
+                            "internalClass": "MethodDeclaration",
+                            "line": 2,
+                            "name": {
+                                "identifier": "A",
+                                "internalClass": "SimpleName",
+                                "line": 2,
+                                "startPosition": 12
+                            },
+                            "startPosition": 12
+                        }
+                    ],
+                    "interface": "false",
+                    "internalClass": "TypeDeclaration",
+                    "line": 1,
+                    "name": {
+                        "identifier": "A",
+                        "internalClass": "SimpleName",
+                        "line": 1,
+                        "startPosition": 6
+                    },
+                    "startPosition": 0
+                }
+            ]
+        }
+    }
+}

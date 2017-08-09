@@ -151,6 +151,15 @@
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='TryStatement'\]/\*\[@internalRole\]\[@internalRole='finally'\] | TryFinally |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='ThrowStatement'\] | Throw, Statement |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='AssertStatement'\] | Assert, Statement |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='MarkerAnnotation'\] | Incomplete |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='MemberRef'\] | Incomplete |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='MemberValuePair'\] | Incomplete |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='MethodRef'\] | Incomplete |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='MethodRefParameter'\] | Incomplete |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='NormalAnnotation'\] | Incomplete |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='SingleMemberAnnotation'\] | Incomplete |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='TagElement'\] | Incomplete |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='TextElement'\] | Incomplete |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='ArrayAccess'\] | Expression, Incomplete |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='ArrayCreation'\] | Expression, Incomplete |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='CastExpression'\] | Expression, Incomplete |
@@ -169,11 +178,4 @@
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='ArrayInitializer'\] | Incomplete |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='Dimension'\] | Incomplete |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='Javadoc'\] | Documentation, Comment |
-| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='NormalAnnotation'\] | Incomplete |
-| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='MemberRef'\] | Incomplete |
-| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='MemberValuePair'\] | Incomplete |
-| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='MethodRef'\] | Incomplete |
-| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='MethodRefParameter'\] | Incomplete |
-| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='TagElement'\] | Incomplete |
-| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='TextElement'\] | Incomplete |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='TypeParameter'\] | Incomplete |

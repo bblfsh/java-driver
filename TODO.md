@@ -23,13 +23,6 @@ but there are some missing:
 
 * BlockComment
 * LineComment
-* NameQualifiedType
-* ParameterizedType
-* QualifiedType
-* SingleMemberAnnotation
-* TypeMethodReference
-* UnionType
-* WildcardType
 
 Comments are not provided by default by the native driver. This should eventually be fixed.
 
