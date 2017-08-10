@@ -260,6 +260,11 @@ var AnnotationRules = On(jdt.CompilationUnit).Roles(File).Descendants(
 	On(jdt.TagElement).Roles(Incomplete),
 	On(jdt.TextElement).Roles(Incomplete),
 
+	// Comments
+	On(jdt.BlockComment).Roles(Comment),
+	On(jdt.Javadoc).Roles(Documentation, Comment),
+	On(jdt.LineComment).Roles(Comment),
+
 	// Other expressions
 	On(jdt.ArrayAccess).Roles(Expression, Incomplete),
 	On(jdt.ArrayCreation).Roles(Expression, Incomplete),
@@ -282,6 +287,5 @@ var AnnotationRules = On(jdt.CompilationUnit).Roles(File).Descendants(
 	// Others
 	On(jdt.ArrayInitializer).Roles(Incomplete),
 	On(jdt.Dimension).Roles(Incomplete),
-	On(jdt.Javadoc).Roles(Documentation, Comment),
 	On(jdt.TypeParameter).Roles(Incomplete),
 )

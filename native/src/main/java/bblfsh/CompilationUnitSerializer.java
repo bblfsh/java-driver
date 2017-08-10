@@ -4,6 +4,7 @@ import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.databind.SerializerProvider;
 import com.fasterxml.jackson.databind.ser.std.StdSerializer;
 import org.eclipse.jdt.core.dom.ASTNode;
+import org.eclipse.jdt.core.dom.Comment;
 import org.eclipse.jdt.core.dom.CompilationUnit;
 import org.eclipse.jdt.core.dom.StructuralPropertyDescriptor;
 
@@ -58,6 +59,30 @@ public class CompilationUnitSerializer extends StdSerializer<CompilationUnit> {
                 jG.writeNumber(cu.getLineNumber(position));
             }
         }
+
+        if (node == cu) {
+            List<Comment> cl = cu.getCommentList();
+            if (!cl.isEmpty()) {
+                jG.writeFieldName("comments");
+                jG.writeStartArray();
+                for (Comment c: (List<Comment>) cu.getCommentList()) {
+                    if (c.getParent() != null) continue;
+                    jG.writeStartObject();
+                    final int type = c.getNodeType();
+                    String name = c.nodeClassForType(type).getName().substring(25);
+                    jG.writeFieldName("internalClass");
+                    jG.writeString(name);
+                    jG.writeFieldName("startPosition");
+                    final int position = c.getStartPosition();
+                    jG.writeNumber(position);
+                    jG.writeFieldName("line");
+                    jG.writeNumber(cu.getLineNumber(position));
+                    jG.writeEndObject();
+                }
+                jG.writeEndArray();
+            }
+        }
+
         jG.writeEndObject();
     }
 
