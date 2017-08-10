@@ -52,11 +52,7 @@ public class CompilationUnitSerializer extends StdSerializer<CompilationUnit> {
             } else if (child != null) {
                 jG.writeFieldName(descriptor.getId());
                 jG.writeString(child.toString());
-                jG.writeFieldName("startPosition");
-                final int position = node.getStartPosition();
-                jG.writeNumber(position);
-                jG.writeFieldName("line");
-                jG.writeNumber(cu.getLineNumber(position));
+                serializePosition(cu, node, jG);
             }
         }
 
@@ -72,11 +68,7 @@ public class CompilationUnitSerializer extends StdSerializer<CompilationUnit> {
                     String name = c.nodeClassForType(type).getName().substring(25);
                     jG.writeFieldName("internalClass");
                     jG.writeString(name);
-                    jG.writeFieldName("startPosition");
-                    final int position = c.getStartPosition();
-                    jG.writeNumber(position);
-                    jG.writeFieldName("line");
-                    jG.writeNumber(cu.getLineNumber(position));
+                    serializePosition(cu, (ASTNode)c, jG);
                     jG.writeEndObject();
                 }
                 jG.writeEndArray();
@@ -101,5 +93,23 @@ public class CompilationUnitSerializer extends StdSerializer<CompilationUnit> {
     private void serializeChild(CompilationUnit cu, ASTNode child, JsonGenerator jG, StructuralPropertyDescriptor descriptor, SerializerProvider provider) throws IOException {
         jG.writeFieldName(descriptor.getId());
         serializeAll(cu, child, jG, provider);
+    }
+
+    private void serializePosition(CompilationUnit cu, ASTNode node, JsonGenerator jG) throws IOException {
+        final int startPosition = node.getStartPosition();
+        jG.writeFieldName("startPosition");
+        jG.writeNumber(startPosition);
+        jG.writeFieldName("startLine");
+        jG.writeNumber(cu.getLineNumber(startPosition));
+        jG.writeFieldName("startColumn");
+        jG.writeNumber(cu.getColumnNumber(startPosition) + 1); // 1-based numbering
+
+        final int endPosition = startPosition + node.getLength();
+        jG.writeFieldName("endPosition");
+        jG.writeNumber(endPosition);
+        jG.writeFieldName("endLine");
+        jG.writeNumber(cu.getLineNumber(endPosition));
+        jG.writeFieldName("endColumn");
+        jG.writeNumber(cu.getColumnNumber(endPosition) + 1); // 1-based numbering
     }
 }
