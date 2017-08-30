@@ -13,6 +13,7 @@ var ToNoder = &native.ObjectToNoder{
 	EndLineKey:      "endLine",
 	EndColumnKey:    "endColumn",
 	EndOffsetKey:    "endPosition",
+	PositionFill:     native.None,
 
 	//TODO: Should this be part of the UAST rules?
 	TokenKeys: map[string]bool{
@@ -31,11 +32,24 @@ var ToNoder = &native.ObjectToNoder{
 }
 
 // ParserBuilder creates a parser that transform source code files into *uast.Node.
-func ParserBuilder(opts driver.ParserOptions) (driver.Parser, error) {
-	parser, err := native.ExecParser(ToNoder, opts.NativeBin)
+func ParserBuilder(opts driver.ParserOptions) (parser driver.Parser, err error) {
+	parser, err = native.ExecParser(ToNoder, opts.NativeBin)
 	if err != nil {
-		return nil, err
+		return
 	}
 
-	return parser, nil
+	switch ToNoder.PositionFill {
+	case native.OffsetFromLineCol:
+		parser = &driver.TransformationParser{
+			Parser:         parser,
+			Transformation: driver.FillOffsetFromLineCol,
+		}
+	case native.LineColFromOffset:
+		parser = &driver.TransformationParser{
+			Parser:         parser,
+			Transformation: driver.FillLineColFromOffset,
+		}
+	}
+
+	return
 }
