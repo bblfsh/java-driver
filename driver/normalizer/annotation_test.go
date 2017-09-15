@@ -8,7 +8,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"gopkg.in/bblfsh/sdk.v0/uast"
+	"gopkg.in/bblfsh/sdk.v1/uast"
 	"github.com/stretchr/testify/require"
 )
 

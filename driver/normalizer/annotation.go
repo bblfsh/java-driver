@@ -3,8 +3,8 @@ package normalizer
 import (
 	"github.com/bblfsh/java-driver/driver/normalizer/jdt"
 
-	. "gopkg.in/bblfsh/sdk.v0/uast"
-	. "gopkg.in/bblfsh/sdk.v0/uast/ann"
+	. "gopkg.in/bblfsh/sdk.v1/uast"
+	. "gopkg.in/bblfsh/sdk.v1/uast/ann"
 )
 
 var AnnotationRules = On(jdt.CompilationUnit).Roles(File).Descendants(
