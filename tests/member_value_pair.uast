@@ -5,13 +5,13 @@ CompilationUnit {
 .  Roles: File
 .  Children: {
 .  .  0: AnnotationTypeDeclaration {
-.  .  .  Roles: TypeDeclaration,Incomplete
+.  .  .  Roles: Declaration,Type,Incomplete
 .  .  .  Properties: {
 .  .  .  .  internalRole: types
 .  .  .  }
 .  .  .  Children: {
 .  .  .  .  0: SimpleName {
-.  .  .  .  .  Roles: SimpleIdentifier,Expression
+.  .  .  .  .  Roles: Expression,Identifier
 .  .  .  .  .  TOKEN "A"
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 11
@@ -28,19 +28,19 @@ CompilationUnit {
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  .  1: AnnotationTypeMemberDeclaration {
-.  .  .  .  .  Roles: TypeDeclarationBody,Incomplete
+.  .  .  .  .  Roles: Body,Declaration,Type,Incomplete
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: bodyDeclarations
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
 .  .  .  .  .  .  0: SimpleType {
-.  .  .  .  .  .  .  Roles: Incomplete
+.  .  .  .  .  .  .  Roles: Type
 .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  internalRole: type
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  0: SimpleName {
-.  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression
+.  .  .  .  .  .  .  .  .  Roles: Expression,Identifier
 .  .  .  .  .  .  .  .  .  TOKEN "String"
 .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  Offset: 16
@@ -59,7 +59,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  .  1: SimpleName {
-.  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression
+.  .  .  .  .  .  .  Roles: Expression,Identifier
 .  .  .  .  .  .  .  TOKEN "a"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 23
@@ -80,7 +80,7 @@ CompilationUnit {
 .  .  .  }
 .  .  }
 .  .  1: TypeDeclaration {
-.  .  .  Roles: VisibleFromPackage,TypeDeclaration
+.  .  .  Roles: Visibility,Package,Declaration,Type
 .  .  .  StartPosition: {
 .  .  .  .  Offset: 31
 .  .  .  .  Line: 5
@@ -103,7 +103,7 @@ CompilationUnit {
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
 .  .  .  .  .  .  0: SimpleName {
-.  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression
+.  .  .  .  .  .  .  Roles: Expression,Identifier
 .  .  .  .  .  .  .  TOKEN "A"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 32
@@ -126,7 +126,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  0: SimpleName {
-.  .  .  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression
+.  .  .  .  .  .  .  .  .  Roles: Expression,Identifier
 .  .  .  .  .  .  .  .  .  TOKEN "a"
 .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  Offset: 34
@@ -143,7 +143,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  1: StringLiteral {
-.  .  .  .  .  .  .  .  .  Roles: StringLiteral,Expression
+.  .  .  .  .  .  .  .  .  Roles: Expression,Literal,String
 .  .  .  .  .  .  .  .  .  TOKEN """"
 .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  Offset: 36
@@ -164,7 +164,7 @@ CompilationUnit {
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  .  1: SimpleName {
-.  .  .  .  .  Roles: SimpleIdentifier,Expression
+.  .  .  .  .  Roles: Expression,Identifier
 .  .  .  .  .  TOKEN "Code"
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 46
@@ -181,7 +181,7 @@ CompilationUnit {
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  .  2: MethodDeclaration {
-.  .  .  .  .  Roles: VisibleFromPackage,FunctionDeclaration
+.  .  .  .  .  Roles: Visibility,Package,Declaration,Function
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 55
 .  .  .  .  .  .  Line: 7
@@ -198,7 +198,7 @@ CompilationUnit {
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
 .  .  .  .  .  .  0: SimpleName {
-.  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression,FunctionDeclarationName
+.  .  .  .  .  .  .  Roles: Expression,Identifier,Function,Name
 .  .  .  .  .  .  .  TOKEN "Code"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 55
@@ -215,7 +215,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  .  1: Block {
-.  .  .  .  .  .  .  Roles: FunctionDeclarationBody,BlockScope,Block,Statement
+.  .  .  .  .  .  .  Roles: Function,Body,Statement,Block,Scope
 .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  internalRole: body
 .  .  .  .  .  .  .  }

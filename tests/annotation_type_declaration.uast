@@ -5,13 +5,13 @@ CompilationUnit {
 .  Roles: File
 .  Children: {
 .  .  0: AnnotationTypeDeclaration {
-.  .  .  Roles: TypeDeclaration,Incomplete
+.  .  .  Roles: Declaration,Type,Incomplete
 .  .  .  Properties: {
 .  .  .  .  internalRole: types
 .  .  .  }
 .  .  .  Children: {
 .  .  .  .  0: SimpleName {
-.  .  .  .  .  Roles: SimpleIdentifier,Expression
+.  .  .  .  .  Roles: Expression,Identifier
 .  .  .  .  .  TOKEN "A"
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 11

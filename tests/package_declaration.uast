@@ -5,14 +5,14 @@ CompilationUnit {
 .  Roles: File
 .  Children: {
 .  .  0: PackageDeclaration {
-.  .  .  Roles: PackageDeclaration
+.  .  .  Roles: Declaration,Package
 .  .  .  TOKEN "package"
 .  .  .  Properties: {
 .  .  .  .  internalRole: package
 .  .  .  }
 .  .  .  Children: {
 .  .  .  .  0: SimpleName {
-.  .  .  .  .  Roles: SimpleIdentifier,Expression
+.  .  .  .  .  Roles: Expression,Identifier
 .  .  .  .  .  TOKEN "a"
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 8

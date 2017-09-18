@@ -5,13 +5,13 @@ CompilationUnit {
 .  Roles: File
 .  Children: {
 .  .  0: EnumDeclaration {
-.  .  .  Roles: TypeDeclaration,Incomplete
+.  .  .  Roles: Declaration,Type,Incomplete
 .  .  .  Properties: {
 .  .  .  .  internalRole: types
 .  .  .  }
 .  .  .  Children: {
 .  .  .  .  0: SimpleName {
-.  .  .  .  .  Roles: SimpleIdentifier,Expression
+.  .  .  .  .  Roles: Expression,Identifier
 .  .  .  .  .  TOKEN "X"
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 5
@@ -28,13 +28,13 @@ CompilationUnit {
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  .  1: EnumConstantDeclaration {
-.  .  .  .  .  Roles: Incomplete
+.  .  .  .  .  Roles: Declaration,Incomplete
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: enumConstants
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
 .  .  .  .  .  .  0: SimpleName {
-.  .  .  .  .  .  .  Roles: SimpleIdentifier,Expression
+.  .  .  .  .  .  .  Roles: Expression,Identifier
 .  .  .  .  .  .  .  TOKEN "A"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 9
