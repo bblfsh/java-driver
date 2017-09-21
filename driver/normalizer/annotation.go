@@ -116,11 +116,11 @@ var AnnotationRules = On(jdt.CompilationUnit).Roles(uast.File).Descendants(
 
 	On(jdt.SwitchStatement).Roles(uast.Statement, uast.Switch).Children(
 		On(jdt.PropertyExpression).Roles(uast.Expression, uast.Switch),
-		On(jdt.SwitchCase).Roles(uast.Statement, uast.Switch, uast.Case).Self(
-			On(HasChild(Any)).Roles(uast.Switch, uast.Case).Children(
+		On(jdt.SwitchCase).Roles(uast.Statement, uast.Switch).Self(
+			On(HasChild(Any)).Roles(uast.Case).Children(
 				On(jdt.PropertyExpression).Roles(uast.Expression, uast.Switch, uast.Case, uast.Condition),
 			),
-			On(Not(HasChild(Any))).Roles(uast.Switch, uast.Default),
+			On(Not(HasChild(Any))).Roles(uast.Default),
 		),
 		// FIXME: Switch case bodies are not enclosed in a block, thus it may
 		// contain an arbitrary number of statements (of any kind). So this

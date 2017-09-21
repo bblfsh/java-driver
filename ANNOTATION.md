@@ -65,10 +65,10 @@
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='IfStatement'\]/\*\[@internalRole\]\[@internalRole='elseStatement'\] | If, Else, Body |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='SwitchStatement'\] | Statement, Switch |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='SwitchStatement'\]/\*\[@internalRole\]\[@internalRole='expression'\] | Expression, Switch |
-| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='SwitchStatement'\]/\*\[@InternalType='SwitchCase'\] | Statement, Switch, Case |
-| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='SwitchStatement'\]/\*\[@InternalType='SwitchCase'\]/self::\*\[child::\*\] | Switch, Case |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='SwitchStatement'\]/\*\[@InternalType='SwitchCase'\] | Statement, Switch |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='SwitchStatement'\]/\*\[@InternalType='SwitchCase'\]/self::\*\[child::\*\] | Case |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='SwitchStatement'\]/\*\[@InternalType='SwitchCase'\]/self::\*\[child::\*\]/\*\[@internalRole\]\[@internalRole='expression'\] | Expression, Switch, Case, Condition |
-| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='SwitchStatement'\]/\*\[@InternalType='SwitchCase'\]/self::\*\[not\(child::\*\)\] | Switch, Default |
+| /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='SwitchStatement'\]/\*\[@InternalType='SwitchCase'\]/self::\*\[not\(child::\*\)\] | Default |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='SwitchStatement'\]/\*\[@InternalType='ExpressionStatement'\] | Switch, Case, Body |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='EnhancedForStatement'\] | Statement, For, Iterator |
 | /self::\*\[@InternalType='CompilationUnit'\]//\*\[@InternalType='EnhancedForStatement'\]/\*\[@internalRole\]\[@internalRole='parameter'\] | For, Iterator |
