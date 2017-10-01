@@ -12,7 +12,7 @@ test-native-internal:
 build-native-internal:
 	cd native; \
 	$(MVN_CMD) package
-	cp native/target/$(JAR) $(BUILD_PATH); \
-	cp native/src/main/sh/native.sh $(BUILD_PATH)/native; \
-	chmod +x $(BUILD_PATH)/native
+	cp native/target/$(JAR) $(BUILD_PATH)/bin; \
+	cp native/src/main/sh/native.sh $(BUILD_PATH)/bin/native; \
+	chmod +x $(BUILD_PATH)/bin/native
 
