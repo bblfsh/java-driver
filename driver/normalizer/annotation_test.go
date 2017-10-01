@@ -8,8 +8,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"gopkg.in/bblfsh/sdk.v1/uast"
 	"github.com/stretchr/testify/require"
+	"gopkg.in/bblfsh/sdk.v1/uast"
 )
 
 var (
@@ -22,7 +22,7 @@ func TestAnnotate(t *testing.T) {
 	f, err := getFixture("java_example_1.json")
 	require.NoError(err)
 
-	n, err := ToNoder.ToNode(f)
+	n, err := ToNode.ToNode(f)
 	require.NoError(err)
 	require.NotNil(n)
 
@@ -51,7 +51,7 @@ func TestAnnotatePrettyAnnotationsOnly(t *testing.T) {
 	f, err := getFixture("java_example_1.json")
 	require.NoError(err)
 
-	n, err := ToNoder.ToNode(f)
+	n, err := ToNode.ToNode(f)
 	require.NoError(err)
 	require.NotNil(n)
 
@@ -70,7 +70,7 @@ func TestNodeTokens(t *testing.T) {
 	f, err := getFixture("java_example_1.json")
 	require.NoError(err)
 
-	n, err := ToNoder.ToNode(f)
+	n, err := ToNode.ToNode(f)
 	require.NoError(err)
 	require.NotNil(n)
 
