@@ -493,13 +493,13 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  1: TypeMethodReference {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Unannotated
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Declaration,Function
 .  .  .  .  .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  internalRole: initializer
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: ArrayType {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Type,Primitive,List
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Function,Return,Type,Primitive,List
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  internalRole: type
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
@@ -557,7 +557,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  1: SimpleType {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Type
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Function,Argument,Type
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  internalRole: typeArguments
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
@@ -582,7 +582,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  2: SimpleName {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Expression,Identifier
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Expression,Identifier,Function,Name
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "clone"
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 173

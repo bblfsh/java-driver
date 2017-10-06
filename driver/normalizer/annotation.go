@@ -75,6 +75,11 @@ var AnnotationRules = On(jdt.CompilationUnit).Roles(uast.File).Descendants(
 			On(jdt.PropertyName).Roles(uast.Function, uast.Name),
 		),
 	),
+	On(jdt.TypeMethodReference).Roles(uast.Declaration, uast.Function).Children(
+		On(jdt.PropertyName).Roles(uast.Function, uast.Name),
+		On(jdt.PropertyTypeArguments).Roles(uast.Function, uast.Argument),
+		On(jdt.PropertyType).Roles(uast.Function, uast.Return),
+	),
 
 	// Other declarations
 	On(jdt.AnnotationTypeMemberDeclaration).Roles(uast.Declaration, uast.Type, uast.Incomplete),
