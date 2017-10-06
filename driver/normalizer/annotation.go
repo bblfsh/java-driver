@@ -125,6 +125,11 @@ var AnnotationRules = On(jdt.CompilationUnit).Roles(uast.File).Descendants(
 		On(jdt.PropertyThenStatement).Roles(uast.If, uast.Then, uast.Body),
 		On(jdt.PropertyElseStatement).Roles(uast.If, uast.Else, uast.Body),
 	),
+	On(jdt.ConditionalExpression).Roles(uast.Expression, uast.If).Children(
+		On(jdt.PropertyExpression).Roles(uast.If, uast.Condition),
+		On(jdt.PropertyThenExpression).Roles(uast.If, uast.Then),
+		On(jdt.PropertyElseExpression).Roles(uast.If, uast.Else),
+	),
 
 	On(jdt.SwitchStatement).Roles(uast.Statement, uast.Switch).Children(
 		On(jdt.PropertyExpression).Roles(uast.Expression, uast.Switch),
