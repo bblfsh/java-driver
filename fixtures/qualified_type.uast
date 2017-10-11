@@ -92,13 +92,13 @@ CompilationUnit {
 .  .  .  }
 .  .  }
 .  .  1: AnnotationTypeDeclaration {
-.  .  .  Roles: Declaration,Type,Incomplete
+.  .  .  Roles: Declaration,Type,Annotation
 .  .  .  Properties: {
 .  .  .  .  internalRole: types
 .  .  .  }
 .  .  .  Children: {
 .  .  .  .  0: SingleMemberAnnotation {
-.  .  .  .  .  Roles: Incomplete
+.  .  .  .  .  Roles: Annotation,Incomplete
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: modifiers
 .  .  .  .  .  }
@@ -184,13 +184,13 @@ CompilationUnit {
 .  .  .  }
 .  .  }
 .  .  2: AnnotationTypeDeclaration {
-.  .  .  Roles: Declaration,Type,Incomplete
+.  .  .  Roles: Declaration,Type,Annotation
 .  .  .  Properties: {
 .  .  .  .  internalRole: types
 .  .  .  }
 .  .  .  Children: {
 .  .  .  .  0: SingleMemberAnnotation {
-.  .  .  .  .  Roles: Incomplete
+.  .  .  .  .  Roles: Annotation,Incomplete
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: modifiers
 .  .  .  .  .  }
@@ -441,7 +441,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: MarkerAnnotation {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Incomplete
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Annotation,Incomplete
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  internalRole: annotations
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
@@ -485,7 +485,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  1: MarkerAnnotation {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Incomplete
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Annotation,Incomplete
 .  .  .  .  .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  internalRole: annotations
 .  .  .  .  .  .  .  .  .  .  .  .  .  }

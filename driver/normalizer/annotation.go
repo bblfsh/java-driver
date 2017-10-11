@@ -41,18 +41,18 @@ var AnnotationRules = On(jdt.CompilationUnit).Roles(uast.File).Descendants(
 	),
 
 	// Type declarations
-	On(jdt.AnonymousClassDeclaration).Roles(uast.Expression, uast.Declaration, uast.Type, uast.Incomplete).Children(
+	On(jdt.AnonymousClassDeclaration).Roles(uast.Expression, uast.Declaration, uast.Type, uast.Anonymous).Children(
 		On(jdt.PropertyBodyDeclarations).Roles(uast.Body),
 	),
-	On(jdt.AnnotationTypeDeclaration).Roles(uast.Declaration, uast.Type, uast.Incomplete).Children(
+	On(jdt.AnnotationTypeDeclaration).Roles(uast.Declaration, uast.Type, uast.Annotation).Children(
 		On(jdt.PropertyBodyDeclarations).Roles(uast.Body),
 	),
-	On(jdt.EnumDeclaration).Roles(uast.Declaration, uast.Type, uast.Incomplete),
+	On(jdt.EnumDeclaration).Roles(uast.Declaration, uast.Type, uast.Enumeration),
 
 	// ClassDeclaration | InterfaceDeclaration
 	On(jdt.TypeDeclaration).Roles(uast.Declaration, uast.Type),
 	// Local (TypeDeclaration | EnumDeclaration)
-	On(jdt.TypeDeclarationStatement).Roles(uast.Statement, uast.Declaration, uast.Type, uast.Incomplete),
+	On(jdt.TypeDeclarationStatement).Roles(uast.Statement, uast.Declaration, uast.Type),
 
 	// Method declarations
 	On(jdt.MethodDeclaration).Roles(uast.Declaration, uast.Function).Children(
@@ -64,10 +64,7 @@ var AnnotationRules = On(jdt.CompilationUnit).Roles(uast.File).Descendants(
 			On(jdt.PropertyName).Roles(uast.Function, uast.Name),
 		),
 	),
-	// FIXME: A lambda expression is not really a function declaration
-	// but current UAST doesn't provide anything else for function definitions
-	// so I'm considering a lambda expression a function declaration for now
-	On(jdt.LambdaExpression).Roles(uast.Declaration, uast.Function, uast.Incomplete).Children(
+	On(jdt.LambdaExpression).Roles(uast.Declaration, uast.Function, uast.Anonymous).Children(
 		On(jdt.PropertyBody).Roles(uast.Function, uast.Body),
 		On(jdt.PropertyParameters).Roles(uast.Function, uast.Argument).Self(
 			On(HasProperty("varargs", "true")).Roles(uast.Function, uast.ArgsList),
@@ -82,15 +79,15 @@ var AnnotationRules = On(jdt.CompilationUnit).Roles(uast.File).Descendants(
 	),
 
 	// Other declarations
-	On(jdt.AnnotationTypeMemberDeclaration).Roles(uast.Declaration, uast.Type, uast.Incomplete),
-	On(jdt.EnumConstantDeclaration).Roles(uast.Declaration, uast.Incomplete),
-	On(jdt.FieldDeclaration).Roles(uast.Declaration, uast.Incomplete),
+	On(jdt.AnnotationTypeMemberDeclaration).Roles(uast.Declaration, uast.Type, uast.Annotation),
+	On(jdt.EnumConstantDeclaration).Roles(uast.Declaration, uast.Enumeration),
+	On(jdt.FieldDeclaration).Roles(uast.Declaration, uast.Variable),
 	// TODO: differentiate between static (class) and instance initialization
 	On(jdt.Initializer).Roles(uast.Initialization, uast.Block, uast.Incomplete),
-	On(jdt.SingleVariableDeclaration).Roles(uast.Declaration, uast.Incomplete),
-	On(jdt.VariableDeclarationExpression).Roles(uast.Expression, uast.Declaration, uast.Incomplete),
-	On(jdt.VariableDeclarationFragment).Roles(uast.Declaration, uast.Incomplete),
-	On(jdt.VariableDeclarationStatement).Roles(uast.Statement, uast.Declaration, uast.Incomplete),
+	On(jdt.SingleVariableDeclaration).Roles(uast.Declaration, uast.Variable),
+	On(jdt.VariableDeclarationExpression).Roles(uast.Expression, uast.Declaration, uast.Variable),
+	On(jdt.VariableDeclarationFragment).Roles(uast.Declaration, uast.Variable),
+	On(jdt.VariableDeclarationStatement).Roles(uast.Statement, uast.Declaration, uast.Variable),
 
 	// Literals
 	On(jdt.BooleanLiteral).Roles(uast.Expression, uast.Literal, uast.Boolean),
@@ -176,14 +173,20 @@ var AnnotationRules = On(jdt.CompilationUnit).Roles(uast.File).Descendants(
 
 	// Operators
 	On(jdt.InfixExpression).Roles(uast.Expression, uast.Binary, uast.Operator).Self(
-		On(HasProperty("operator", "+")).Roles(uast.Add),
-		On(HasProperty("operator", "-")).Roles(uast.Substract),
-		On(HasProperty("operator", "*")).Roles(uast.Multiply),
-		On(HasProperty("operator", "/")).Roles(uast.Divide),
-		On(HasProperty("operator", "%")).Roles(uast.Modulo),
+		On(HasProperty("operator", "+")).Roles(uast.Add, uast.Arithmetic),
+		On(HasProperty("operator", "-")).Roles(uast.Substract, uast.Arithmetic),
+		On(HasProperty("operator", "*")).Roles(uast.Multiply, uast.Arithmetic),
+		On(HasProperty("operator", "/")).Roles(uast.Divide, uast.Arithmetic),
+		On(HasProperty("operator", "%")).Roles(uast.Modulo, uast.Arithmetic),
 		On(HasProperty("operator", "<<")).Roles(uast.Bitwise, uast.LeftShift),
 		On(HasProperty("operator", ">>")).Roles(uast.Bitwise, uast.RightShift),
 		On(HasProperty("operator", ">>>")).Roles(uast.Bitwise, uast.RightShift, uast.Unsigned),
+		On(HasProperty("operator", "<")).Roles(uast.LessThan, uast.Relational),
+		On(HasProperty("operator", ">")).Roles(uast.GreaterThan, uast.Relational),
+		On(HasProperty("operator", "<=")).Roles(uast.LessThanOrEqual, uast.Relational),
+		On(HasProperty("operator", ">=")).Roles(uast.GreaterThanOrEqual, uast.Relational),
+		On(HasProperty("operator", "==")).Roles(uast.Equal, uast.Relational),
+		On(HasProperty("operator", "==")).Roles(uast.Equal, uast.Not, uast.Relational),
 		On(HasProperty("operator", "&")).Roles(uast.Bitwise, uast.And),
 		On(HasProperty("operator", "|")).Roles(uast.Bitwise, uast.Or),
 		On(HasProperty("operator", "&&")).Roles(uast.Boolean, uast.And),
@@ -195,8 +198,8 @@ var AnnotationRules = On(jdt.CompilationUnit).Roles(uast.File).Descendants(
 	),
 
 	On(jdt.PostfixExpression).Roles(uast.Expression, uast.Operator, uast.Unary, uast.Postfix).Self(
-		On(HasProperty("operator", "++")).Roles(uast.Increment),
-		On(HasProperty("operator", "--")).Roles(uast.Increment),
+	On(HasProperty("operator", "++")).Roles(uast.Increment, uast.Arithmetic),
+		On(HasProperty("operator", "--")).Roles(uast.Increment, uast.Arithmetic),
 	),
 
 	On(jdt.PrefixExpression).Roles(uast.Expression, uast.Operator, uast.Unary).Self(
@@ -260,7 +263,7 @@ var AnnotationRules = On(jdt.CompilationUnit).Roles(uast.File).Descendants(
 
 	// Exceptions
 	On(jdt.TryStatement).Roles(uast.Statement, uast.Try).Children(
-		// TODO: TryWithResourcesStatement
+		On(jdt.PropertyResources).Roles(uast.Try),
 		On(jdt.PropertyBody).Roles(uast.Try, uast.Body),
 		On(jdt.PropertyCatchClauses).Roles(uast.Try, uast.Catch),
 		On(jdt.PropertyFinally).Roles(uast.Try, uast.Finally),
@@ -271,20 +274,22 @@ var AnnotationRules = On(jdt.CompilationUnit).Roles(uast.File).Descendants(
 	On(jdt.AssertStatement).Roles(uast.Statement, uast.Assert),
 
 	// Annotations
-	On(jdt.MarkerAnnotation).Roles(uast.Incomplete),
-	On(jdt.MemberRef).Roles(uast.Incomplete),
-	On(jdt.MemberValuePair).Roles(uast.Incomplete),
-	On(jdt.MethodRef).Roles(uast.Incomplete),
-	On(jdt.MethodRefParameter).Roles(uast.Incomplete),
-	On(jdt.NormalAnnotation).Roles(uast.Incomplete),
-	On(jdt.SingleMemberAnnotation).Roles(uast.Incomplete),
-	On(jdt.TagElement).Roles(uast.Incomplete),
-	On(jdt.TextElement).Roles(uast.Incomplete),
+	On(jdt.MarkerAnnotation).Roles(uast.Annotation, uast.Incomplete),
+	On(jdt.NormalAnnotation).Roles(uast.Annotation, uast.Incomplete),
+	On(jdt.SingleMemberAnnotation).Roles(uast.Annotation, uast.Incomplete),
+	On(jdt.MemberValuePair).Roles(uast.Annotation, uast.Incomplete),
 
 	// Comments
 	On(jdt.BlockComment).Roles(uast.Comment),
 	On(jdt.Javadoc).Roles(uast.Documentation, uast.Comment),
 	On(jdt.LineComment).Roles(uast.Comment),
+
+	// Javadoc tags
+	On(jdt.MemberRef).Roles(uast.Documentation, uast.Variable, uast.Incomplete),
+	On(jdt.MethodRef).Roles(uast.Documentation, uast.Function, uast.Incomplete),
+	On(jdt.MethodRefParameter).Roles(uast.Documentation, uast.Function, uast.Incomplete),
+	On(jdt.TagElement).Roles(uast.Documentation, uast.Incomplete),
+	On(jdt.TextElement).Roles(uast.Documentation, uast.Incomplete),
 
 	// Other expressions
 	On(jdt.ArrayAccess).Roles(uast.Expression, uast.Incomplete),
