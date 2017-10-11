@@ -102,7 +102,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  0: VariableDeclarationExpression {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Expression,Declaration,Incomplete,For,Initialization
+.  .  .  .  .  .  .  .  .  .  .  Roles: Expression,Declaration,Variable,For,Initialization
 .  .  .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  .  .  internalRole: initializers
 .  .  .  .  .  .  .  .  .  .  .  }
@@ -125,7 +125,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  1: VariableDeclarationFragment {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Declaration,Incomplete
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Declaration,Variable
 .  .  .  .  .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  internalRole: fragments
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
@@ -169,7 +169,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  1: InfixExpression {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Expression,For,Condition,Expression,Binary,Operator
+.  .  .  .  .  .  .  .  .  .  .  Roles: Expression,For,Condition,Expression,Binary,Operator,LessThan,Relational
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 49
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 3
