@@ -55,7 +55,13 @@ CompilationUnit {
 .  .  .  .  .  .  internalRole: bodyDeclarations
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
-.  .  .  .  .  .  0: PrimitiveType {
+.  .  .  .  .  .  0: Block {
+.  .  .  .  .  .  .  Roles: Function,Body,Statement,Block,Scope
+.  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  internalRole: body
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  }
+.  .  .  .  .  .  1: PrimitiveType {
 .  .  .  .  .  .  .  Roles: Type,Primitive
 .  .  .  .  .  .  .  TOKEN "void"
 .  .  .  .  .  .  .  StartPosition: {
@@ -72,7 +78,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  internalRole: returnType2
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
-.  .  .  .  .  .  1: SimpleName {
+.  .  .  .  .  .  2: SimpleName {
 .  .  .  .  .  .  .  Roles: Expression,Identifier,Function,Name
 .  .  .  .  .  .  .  TOKEN "voidToVoid"
 .  .  .  .  .  .  .  StartPosition: {
@@ -87,12 +93,6 @@ CompilationUnit {
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  internalRole: name
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  }
-.  .  .  .  .  .  2: Block {
-.  .  .  .  .  .  .  Roles: Function,Body,Statement,Block,Scope
-.  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: body
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  }
@@ -114,7 +114,13 @@ CompilationUnit {
 .  .  .  .  .  .  internalRole: bodyDeclarations
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
-.  .  .  .  .  .  0: Modifier {
+.  .  .  .  .  .  0: Block {
+.  .  .  .  .  .  .  Roles: Function,Body,Statement,Block,Scope
+.  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  internalRole: body
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  }
+.  .  .  .  .  .  1: Modifier {
 .  .  .  .  .  .  .  Roles: Visibility,World
 .  .  .  .  .  .  .  TOKEN "public"
 .  .  .  .  .  .  .  StartPosition: {
@@ -131,7 +137,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  internalRole: modifiers
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
-.  .  .  .  .  .  1: Modifier {
+.  .  .  .  .  .  2: Modifier {
 .  .  .  .  .  .  .  Roles: Incomplete
 .  .  .  .  .  .  .  TOKEN "static"
 .  .  .  .  .  .  .  StartPosition: {
@@ -148,7 +154,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  internalRole: modifiers
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
-.  .  .  .  .  .  2: PrimitiveType {
+.  .  .  .  .  .  3: PrimitiveType {
 .  .  .  .  .  .  .  Roles: Type,Primitive
 .  .  .  .  .  .  .  TOKEN "void"
 .  .  .  .  .  .  .  StartPosition: {
@@ -165,7 +171,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  internalRole: returnType2
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
-.  .  .  .  .  .  3: SimpleName {
+.  .  .  .  .  .  4: SimpleName {
 .  .  .  .  .  .  .  Roles: Expression,Identifier,Function,Name
 .  .  .  .  .  .  .  TOKEN "publicStaticVoidToVoid"
 .  .  .  .  .  .  .  StartPosition: {
@@ -180,12 +186,6 @@ CompilationUnit {
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  internalRole: name
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  }
-.  .  .  .  .  .  4: Block {
-.  .  .  .  .  .  .  Roles: Function,Body,Statement,Block,Scope
-.  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: body
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  }
@@ -538,7 +538,13 @@ CompilationUnit {
 .  .  .  .  .  .  internalRole: bodyDeclarations
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
-.  .  .  .  .  .  0: PrimitiveType {
+.  .  .  .  .  .  0: Block {
+.  .  .  .  .  .  .  Roles: Function,Body,Statement,Block,Scope
+.  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  internalRole: body
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  }
+.  .  .  .  .  .  1: PrimitiveType {
 .  .  .  .  .  .  .  Roles: Type,Primitive
 .  .  .  .  .  .  .  TOKEN "void"
 .  .  .  .  .  .  .  StartPosition: {
@@ -555,7 +561,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  internalRole: returnType2
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
-.  .  .  .  .  .  1: SimpleName {
+.  .  .  .  .  .  2: SimpleName {
 .  .  .  .  .  .  .  Roles: Expression,Identifier,Function,Name
 .  .  .  .  .  .  .  TOKEN "varIntToVoid"
 .  .  .  .  .  .  .  StartPosition: {
@@ -572,7 +578,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  internalRole: name
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
-.  .  .  .  .  .  2: SingleVariableDeclaration {
+.  .  .  .  .  .  3: SingleVariableDeclaration {
 .  .  .  .  .  .  .  Roles: Function,Argument,Function,ArgsList,Declaration,Variable
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 199
@@ -625,12 +631,6 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
-.  .  .  .  .  .  3: Block {
-.  .  .  .  .  .  .  Roles: Function,Body,Statement,Block,Scope
-.  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: body
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  }
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  .  6: MethodDeclaration {
@@ -650,7 +650,30 @@ CompilationUnit {
 .  .  .  .  .  .  internalRole: bodyDeclarations
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
-.  .  .  .  .  .  0: TypeParameter {
+.  .  .  .  .  .  0: Block {
+.  .  .  .  .  .  .  Roles: Function,Body,Statement,Block,Scope
+.  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  internalRole: body
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  Children: {
+.  .  .  .  .  .  .  .  0: ReturnStatement {
+.  .  .  .  .  .  .  .  .  Roles: Statement,Return
+.  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  internalRole: statements
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  Children: {
+.  .  .  .  .  .  .  .  .  .  0: NullLiteral {
+.  .  .  .  .  .  .  .  .  .  .  Roles: Expression,Literal,Null
+.  .  .  .  .  .  .  .  .  .  .  TOKEN "null"
+.  .  .  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  .  .  internalRole: expression
+.  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  }
+.  .  .  .  .  .  1: TypeParameter {
 .  .  .  .  .  .  .  Roles: Type,Incomplete
 .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  internalRole: typeParameters
@@ -675,7 +698,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
-.  .  .  .  .  .  1: SimpleType {
+.  .  .  .  .  .  2: SimpleType {
 .  .  .  .  .  .  .  Roles: Type
 .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  internalRole: returnType2
@@ -700,7 +723,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
-.  .  .  .  .  .  2: SimpleName {
+.  .  .  .  .  .  3: SimpleName {
 .  .  .  .  .  .  .  Roles: Expression,Identifier,Function,Name
 .  .  .  .  .  .  .  TOKEN "intToGenericT"
 .  .  .  .  .  .  .  StartPosition: {
@@ -717,7 +740,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  internalRole: name
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
-.  .  .  .  .  .  3: SingleVariableDeclaration {
+.  .  .  .  .  .  4: SingleVariableDeclaration {
 .  .  .  .  .  .  .  Roles: Function,Argument,Declaration,Variable
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 237
@@ -770,7 +793,26 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
-.  .  .  .  .  .  4: Block {
+.  .  .  .  .  }
+.  .  .  .  }
+.  .  .  .  7: MethodDeclaration {
+.  .  .  .  .  Roles: Visibility,Package,Declaration,Function
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 265
+.  .  .  .  .  .  Line: 8
+.  .  .  .  .  .  Col: 5
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 313
+.  .  .  .  .  .  Line: 8
+.  .  .  .  .  .  Col: 53
+.  .  .  .  .  }
+.  .  .  .  .  Properties: {
+.  .  .  .  .  .  constructor: false
+.  .  .  .  .  .  internalRole: bodyDeclarations
+.  .  .  .  .  }
+.  .  .  .  .  Children: {
+.  .  .  .  .  .  0: Block {
 .  .  .  .  .  .  .  Roles: Function,Body,Statement,Block,Scope
 .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  internalRole: body
@@ -793,26 +835,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
-.  .  .  .  .  }
-.  .  .  .  }
-.  .  .  .  7: MethodDeclaration {
-.  .  .  .  .  Roles: Visibility,Package,Declaration,Function
-.  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  Offset: 265
-.  .  .  .  .  .  Line: 8
-.  .  .  .  .  .  Col: 5
-.  .  .  .  .  }
-.  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 313
-.  .  .  .  .  .  Line: 8
-.  .  .  .  .  .  Col: 53
-.  .  .  .  .  }
-.  .  .  .  .  Properties: {
-.  .  .  .  .  .  constructor: false
-.  .  .  .  .  .  internalRole: bodyDeclarations
-.  .  .  .  .  }
-.  .  .  .  .  Children: {
-.  .  .  .  .  .  0: TypeParameter {
+.  .  .  .  .  .  1: TypeParameter {
 .  .  .  .  .  .  .  Roles: Type,Incomplete
 .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  internalRole: typeParameters
@@ -837,7 +860,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
-.  .  .  .  .  .  1: TypeParameter {
+.  .  .  .  .  .  2: TypeParameter {
 .  .  .  .  .  .  .  Roles: Type,Incomplete
 .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  internalRole: typeParameters
@@ -862,7 +885,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
-.  .  .  .  .  .  2: SimpleType {
+.  .  .  .  .  .  3: SimpleType {
 .  .  .  .  .  .  .  Roles: Type
 .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  internalRole: returnType2
@@ -887,7 +910,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
-.  .  .  .  .  .  3: SimpleName {
+.  .  .  .  .  .  4: SimpleName {
 .  .  .  .  .  .  .  Roles: Expression,Identifier,Function,Name
 .  .  .  .  .  .  .  TOKEN "genericSToGenericT"
 .  .  .  .  .  .  .  StartPosition: {
@@ -904,7 +927,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  internalRole: name
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
-.  .  .  .  .  .  4: SingleVariableDeclaration {
+.  .  .  .  .  .  5: SingleVariableDeclaration {
 .  .  .  .  .  .  .  Roles: Function,Argument,Declaration,Variable
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 292
@@ -961,29 +984,6 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  internalRole: name
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  }
-.  .  .  .  .  .  5: Block {
-.  .  .  .  .  .  .  Roles: Function,Body,Statement,Block,Scope
-.  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: body
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Children: {
-.  .  .  .  .  .  .  .  0: ReturnStatement {
-.  .  .  .  .  .  .  .  .  Roles: Statement,Return
-.  .  .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  .  .  internalRole: statements
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  Children: {
-.  .  .  .  .  .  .  .  .  .  0: NullLiteral {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Expression,Literal,Null
-.  .  .  .  .  .  .  .  .  .  .  TOKEN "null"
-.  .  .  .  .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  .  .  .  .  internalRole: expression
-.  .  .  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  }

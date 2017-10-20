@@ -235,7 +235,13 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  .  3: SwitchCase {
+.  .  .  .  .  .  .  .  .  .  3: BreakStatement {
+.  .  .  .  .  .  .  .  .  .  .  Roles: Statement,Break
+.  .  .  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  .  .  internalRole: statements
+.  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  4: SwitchCase {
 .  .  .  .  .  .  .  .  .  .  .  Roles: Statement,Switch,Case
 .  .  .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  .  .  internalRole: statements
@@ -260,7 +266,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  .  4: ExpressionStatement {
+.  .  .  .  .  .  .  .  .  .  5: ExpressionStatement {
 .  .  .  .  .  .  .  .  .  .  .  Roles: Switch,Case,Body,Statement
 .  .  .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  .  .  internalRole: statements
@@ -352,7 +358,13 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  .  5: SwitchCase {
+.  .  .  .  .  .  .  .  .  .  6: BreakStatement {
+.  .  .  .  .  .  .  .  .  .  .  Roles: Statement,Break
+.  .  .  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  .  .  internalRole: statements
+.  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  7: SwitchCase {
 .  .  .  .  .  .  .  .  .  .  .  Roles: Statement,Switch,Case
 .  .  .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  .  .  internalRole: statements
@@ -377,7 +389,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  .  6: ExpressionStatement {
+.  .  .  .  .  .  .  .  .  .  8: ExpressionStatement {
 .  .  .  .  .  .  .  .  .  .  .  Roles: Switch,Case,Body,Statement
 .  .  .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  .  .  internalRole: statements
@@ -469,7 +481,19 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  .  7: ExpressionStatement {
+.  .  .  .  .  .  .  .  .  .  9: BreakStatement {
+.  .  .  .  .  .  .  .  .  .  .  Roles: Statement,Break
+.  .  .  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  .  .  internalRole: statements
+.  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  10: SwitchCase {
+.  .  .  .  .  .  .  .  .  .  .  Roles: Statement,Switch,Default
+.  .  .  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  .  .  internalRole: statements
+.  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  11: ExpressionStatement {
 .  .  .  .  .  .  .  .  .  .  .  Roles: Switch,Case,Body,Statement
 .  .  .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  .  .  internalRole: statements
@@ -559,30 +583,6 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  .  8: BreakStatement {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Statement,Break
-.  .  .  .  .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  .  .  .  .  internalRole: statements
-.  .  .  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  .  9: BreakStatement {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Statement,Break
-.  .  .  .  .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  .  .  .  .  internalRole: statements
-.  .  .  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  .  10: BreakStatement {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Statement,Break
-.  .  .  .  .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  .  .  .  .  internalRole: statements
-.  .  .  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  .  11: SwitchCase {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Statement,Switch,Default
-.  .  .  .  .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  .  .  .  .  internalRole: statements
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  12: BreakStatement {

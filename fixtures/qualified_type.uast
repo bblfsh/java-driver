@@ -394,7 +394,13 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  internalRole: bodyDeclarations
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
-.  .  .  .  .  .  .  .  .  .  0: Modifier {
+.  .  .  .  .  .  .  .  .  .  0: Block {
+.  .  .  .  .  .  .  .  .  .  .  Roles: Function,Body,Statement,Block,Scope
+.  .  .  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  .  .  internalRole: body
+.  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  1: Modifier {
 .  .  .  .  .  .  .  .  .  .  .  Roles: Visibility,World
 .  .  .  .  .  .  .  .  .  .  .  TOKEN "public"
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
@@ -411,7 +417,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  internalRole: modifiers
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  .  1: SimpleName {
+.  .  .  .  .  .  .  .  .  .  2: SimpleName {
 .  .  .  .  .  .  .  .  .  .  .  Roles: Expression,Identifier,Function,Name
 .  .  .  .  .  .  .  .  .  .  .  TOKEN "C"
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
@@ -428,7 +434,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  internalRole: name
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  .  2: QualifiedType {
+.  .  .  .  .  .  .  .  .  .  3: QualifiedType {
 .  .  .  .  .  .  .  .  .  .  .  Roles: Type,Qualified
 .  .  .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  .  .  internalRole: receiverType
@@ -528,7 +534,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  .  3: SimpleName {
+.  .  .  .  .  .  .  .  .  .  4: SimpleName {
 .  .  .  .  .  .  .  .  .  .  .  Roles: Expression,Identifier
 .  .  .  .  .  .  .  .  .  .  .  TOKEN "B"
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
@@ -543,12 +549,6 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  .  .  internalRole: receiverQualifier
-.  .  .  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  .  4: Block {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Function,Body,Statement,Block,Scope
-.  .  .  .  .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  .  .  .  .  internalRole: body
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  }
