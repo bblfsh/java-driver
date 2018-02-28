@@ -1,0 +1,78 @@
+{
+    "status": "ok",
+    "language": "java",
+    "errors": [],
+    "ast": {
+        "CompilationUnit": {
+            "internalClass": "CompilationUnit",
+            "types": [
+                {
+                    "bodyDeclarations": [
+                        {
+                            "fragments": [
+                                {
+                                    "internalClass": "VariableDeclarationFragment",
+                                    "name": {
+                                        "endColumn": 15,
+                                        "endLine": 2,
+                                        "endPosition": 26,
+                                        "identifier": "foo",
+                                        "internalClass": "SimpleName",
+                                        "startColumn": 12,
+                                        "startLine": 2,
+                                        "startPosition": 23
+                                    }
+                                },
+                                {
+                                    "internalClass": "VariableDeclarationFragment",
+                                    "name": {
+                                        "endColumn": 20,
+                                        "endLine": 2,
+                                        "endPosition": 31,
+                                        "identifier": "bar",
+                                        "internalClass": "SimpleName",
+                                        "startColumn": 17,
+                                        "startLine": 2,
+                                        "startPosition": 28
+                                    }
+                                }
+                            ],
+                            "internalClass": "FieldDeclaration",
+                            "type": {
+                                "internalClass": "SimpleType",
+                                "name": {
+                                    "endColumn": 11,
+                                    "endLine": 2,
+                                    "endPosition": 22,
+                                    "identifier": "String",
+                                    "internalClass": "SimpleName",
+                                    "startColumn": 5,
+                                    "startLine": 2,
+                                    "startPosition": 16
+                                }
+                            }
+                        }
+                    ],
+                    "endColumn": 0,
+                    "endLine": -1,
+                    "endPosition": 34,
+                    "interface": "false",
+                    "internalClass": "TypeDeclaration",
+                    "name": {
+                        "endColumn": 10,
+                        "endLine": 1,
+                        "endPosition": 9,
+                        "identifier": "Foo",
+                        "internalClass": "SimpleName",
+                        "startColumn": 7,
+                        "startLine": 1,
+                        "startPosition": 6
+                    },
+                    "startColumn": 1,
+                    "startLine": 1,
+                    "startPosition": 0
+                }
+            ]
+        }
+    }
+}
