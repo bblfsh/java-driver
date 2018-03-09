@@ -1,0 +1,74 @@
+{
+    "status": "ok",
+    "language": "java",
+    "errors": [],
+    "ast": {
+        "CompilationUnit": {
+            "comments": [
+                {
+                    "endColumn": 40,
+                    "endLine": 3,
+                    "endPosition": 73,
+                    "internalClass": "Javadoc",
+                    "startColumn": 11,
+                    "startLine": 3,
+                    "startPosition": 44,
+                    "text": "/** javadoc comment inline */"
+                },
+                {
+                    "endColumn": 6,
+                    "endLine": 8,
+                    "endPosition": 128,
+                    "internalClass": "Javadoc",
+                    "startColumn": 1,
+                    "startLine": 5,
+                    "startPosition": 77,
+                    "text": "/**\n* This is a multiline JavaDoc\n* comment\n* */"
+                }
+            ],
+            "internalClass": "CompilationUnit",
+            "types": [
+                {
+                    "endColumn": 42,
+                    "endLine": 3,
+                    "endPosition": 75,
+                    "interface": "false",
+                    "internalClass": "TypeDeclaration",
+                    "javadoc": {
+                        "internalClass": "Javadoc",
+                        "tags": [
+                            {
+                                "fragments": [
+                                    {
+                                        "endColumn": 31,
+                                        "endLine": 1,
+                                        "endPosition": 30,
+                                        "internalClass": "TextElement",
+                                        "startColumn": 5,
+                                        "startLine": 1,
+                                        "startPosition": 4,
+                                        "text": "This is a javadoc comment "
+                                    }
+                                ],
+                                "internalClass": "TagElement"
+                            }
+                        ]
+                    },
+                    "name": {
+                        "endColumn": 8,
+                        "endLine": 3,
+                        "endPosition": 41,
+                        "identifier": "A",
+                        "internalClass": "SimpleName",
+                        "startColumn": 7,
+                        "startLine": 3,
+                        "startPosition": 40
+                    },
+                    "startColumn": 1,
+                    "startLine": 1,
+                    "startPosition": 0
+                }
+            ]
+        }
+    }
+}

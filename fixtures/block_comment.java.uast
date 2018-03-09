@@ -19,6 +19,7 @@ CompilationUnit {
 .  .  .  }
 .  .  .  Properties: {
 .  .  .  .  internalRole: comments
+.  .  .  .  text:  block comment before 
 .  .  .  }
 .  .  }
 .  .  1: TypeDeclaration {
@@ -71,6 +72,7 @@ CompilationUnit {
 .  .  .  }
 .  .  .  Properties: {
 .  .  .  .  internalRole: comments
+.  .  .  .  text:  block comment inline 
 .  .  .  }
 .  .  }
 .  .  3: BlockComment {
@@ -87,6 +89,28 @@ CompilationUnit {
 .  .  .  }
 .  .  .  Properties: {
 .  .  .  .  internalRole: comments
+.  .  .  .  text:  block comment after 
+.  .  .  }
+.  .  }
+.  .  4: BlockComment {
+.  .  .  Roles: Comment
+.  .  .  StartPosition: {
+.  .  .  .  Offset: 93
+.  .  .  .  Line: 5
+.  .  .  .  Col: 1
+.  .  .  }
+.  .  .  EndPosition: {
+.  .  .  .  Offset: 146
+.  .  .  .  Line: 9
+.  .  .  .  Col: 4
+.  .  .  }
+.  .  .  Properties: {
+.  .  .  .  internalRole: comments
+.  .  .  .  text: 
+* This is a multiline
+* block comment
+* end
+
 .  .  .  }
 .  .  }
 .  }

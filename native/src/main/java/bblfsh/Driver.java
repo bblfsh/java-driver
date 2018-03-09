@@ -47,6 +47,7 @@ public class Driver {
         }
 
         final Response response = this.processRequest(request);
+        this.writer.setContent(request.content);
         try {
             this.writer.write(response);
         } catch (IOException ex) {

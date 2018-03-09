@@ -12,7 +12,8 @@
                     "internalClass": "BlockComment",
                     "startColumn": 1,
                     "startLine": 1,
-                    "startPosition": 0
+                    "startPosition": 0,
+                    "text": "/* block comment before */"
                 },
                 {
                     "endColumn": 37,
@@ -21,7 +22,8 @@
                     "internalClass": "BlockComment",
                     "startColumn": 11,
                     "startLine": 2,
-                    "startPosition": 37
+                    "startPosition": 37,
+                    "text": "/* block comment inline */"
                 },
                 {
                     "endColumn": 26,
@@ -30,7 +32,18 @@
                     "internalClass": "BlockComment",
                     "startColumn": 1,
                     "startLine": 3,
-                    "startPosition": 66
+                    "startPosition": 66,
+                    "text": "/* block comment after */"
+                },
+                {
+                    "endColumn": 4,
+                    "endLine": 9,
+                    "endPosition": 146,
+                    "internalClass": "BlockComment",
+                    "startColumn": 1,
+                    "startLine": 5,
+                    "startPosition": 93,
+                    "text": "/*\n* This is a multiline\n* block comment\n* end\n*/"
                 }
             ],
             "internalClass": "CompilationUnit",
