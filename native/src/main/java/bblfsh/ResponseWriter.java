@@ -15,6 +15,8 @@ public class ResponseWriter {
 
     private final OutputStream out;
     private final ObjectMapper mapper;
+    private String content;
+    private CompilationUnitSerializer cu;
 
     public ResponseWriter(final OutputStream out) {
         this.out = out;
@@ -24,8 +26,14 @@ public class ResponseWriter {
         mapper.disable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES);
         mapper.enable(DeserializationFeature.ACCEPT_EMPTY_STRING_AS_NULL_OBJECT);
         SimpleModule module = new SimpleModule();
-        module.addSerializer(CompilationUnit.class, new CompilationUnitSerializer());
+        cu = new CompilationUnitSerializer();
+        module.addSerializer(CompilationUnit.class, cu);
         mapper.registerModule(module);
+    }
+
+    public void setContent(String content) {
+        this.content = content;
+        cu.setContent(content);
     }
 
     public void write(final Response response) throws IOException {
