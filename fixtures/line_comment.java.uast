@@ -13,9 +13,9 @@ CompilationUnit {
 .  .  .  .  Col: 1
 .  .  .  }
 .  .  .  EndPosition: {
-.  .  .  .  Offset: 4
+.  .  .  .  Offset: 23
 .  .  .  .  Line: 1
-.  .  .  .  Col: 5
+.  .  .  .  Col: 24
 .  .  .  }
 .  .  .  Properties: {
 .  .  .  .  internalRole: comments
@@ -24,14 +24,14 @@ CompilationUnit {
 .  .  1: TypeDeclaration {
 .  .  .  Roles: Visibility,Package,Declaration,Type
 .  .  .  StartPosition: {
-.  .  .  .  Offset: 5
+.  .  .  .  Offset: 24
 .  .  .  .  Line: 2
 .  .  .  .  Col: 1
 .  .  .  }
 .  .  .  EndPosition: {
-.  .  .  .  Offset: 21
-.  .  .  .  Line: 4294967295
-.  .  .  .  Col: 0
+.  .  .  .  Offset: 53
+.  .  .  .  Line: 3
+.  .  .  .  Col: 2
 .  .  .  }
 .  .  .  Properties: {
 .  .  .  .  interface: false
@@ -42,12 +42,12 @@ CompilationUnit {
 .  .  .  .  .  Roles: Expression,Identifier
 .  .  .  .  .  TOKEN "A"
 .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  Offset: 11
+.  .  .  .  .  .  Offset: 30
 .  .  .  .  .  .  Line: 2
 .  .  .  .  .  .  Col: 7
 .  .  .  .  .  }
 .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 12
+.  .  .  .  .  .  Offset: 31
 .  .  .  .  .  .  Line: 2
 .  .  .  .  .  .  Col: 8
 .  .  .  .  .  }
@@ -60,14 +60,30 @@ CompilationUnit {
 .  .  2: LineComment {
 .  .  .  Roles: Comment
 .  .  .  StartPosition: {
-.  .  .  .  Offset: 15
+.  .  .  .  Offset: 34
 .  .  .  .  Line: 2
 .  .  .  .  Col: 11
 .  .  .  }
 .  .  .  EndPosition: {
-.  .  .  .  Offset: 19
+.  .  .  .  Offset: 51
 .  .  .  .  Line: 2
-.  .  .  .  Col: 15
+.  .  .  .  Col: 28
+.  .  .  }
+.  .  .  Properties: {
+.  .  .  .  internalRole: comments
+.  .  .  }
+.  .  }
+.  .  3: LineComment {
+.  .  .  Roles: Comment
+.  .  .  StartPosition: {
+.  .  .  .  Offset: 54
+.  .  .  .  Line: 4
+.  .  .  .  Col: 1
+.  .  .  }
+.  .  .  EndPosition: {
+.  .  .  .  Offset: 70
+.  .  .  .  Line: 4
+.  .  .  .  Col: 17
 .  .  .  }
 .  .  .  Properties: {
 .  .  .  .  internalRole: comments
