@@ -1,0 +1,164 @@
+{
+    "status": "ok",
+    "language": "java",
+    "errors": [],
+    "ast": {
+        "CompilationUnit": {
+            "internalClass": "CompilationUnit",
+            "types": [
+                {
+                    "bodyDeclarations": [
+                        {
+                            "fragments": [
+                                {
+                                    "internalClass": "VariableDeclarationFragment",
+                                    "name": {
+                                        "endColumn": 15,
+                                        "endLine": 5,
+                                        "endPosition": 107,
+                                        "identifier": "foo",
+                                        "internalClass": "SimpleName",
+                                        "startColumn": 12,
+                                        "startLine": 5,
+                                        "startPosition": 104
+                                    }
+                                }
+                            ],
+                            "internalClass": "FieldDeclaration",
+                            "modifiers": [
+                                {
+                                    "internalClass": "MarkerAnnotation",
+                                    "typeName": {
+                                        "endColumn": 14,
+                                        "endLine": 2,
+                                        "endPosition": 30,
+                                        "identifier": "Testtag1",
+                                        "internalClass": "SimpleName",
+                                        "startColumn": 6,
+                                        "startLine": 2,
+                                        "startPosition": 22
+                                    }
+                                },
+                                {
+                                    "internalClass": "SingleMemberAnnotation",
+                                    "typeName": {
+                                        "endColumn": 14,
+                                        "endLine": 3,
+                                        "endPosition": 44,
+                                        "identifier": "Testtag2",
+                                        "internalClass": "SimpleName",
+                                        "startColumn": 6,
+                                        "startLine": 3,
+                                        "startPosition": 36
+                                    },
+                                    "value": {
+                                        "endColumn": 21,
+                                        "endLine": 3,
+                                        "endPosition": 51,
+                                        "escapedValue": "\"Data\"",
+                                        "internalClass": "StringLiteral",
+                                        "startColumn": 15,
+                                        "startLine": 3,
+                                        "startPosition": 45
+                                    }
+                                },
+                                {
+                                    "internalClass": "NormalAnnotation",
+                                    "typeName": {
+                                        "endColumn": 14,
+                                        "endLine": 4,
+                                        "endPosition": 66,
+                                        "identifier": "Testtag3",
+                                        "internalClass": "SimpleName",
+                                        "startColumn": 6,
+                                        "startLine": 4,
+                                        "startPosition": 58
+                                    },
+                                    "values": [
+                                        {
+                                            "internalClass": "MemberValuePair",
+                                            "name": {
+                                                "endColumn": 17,
+                                                "endLine": 4,
+                                                "endPosition": 69,
+                                                "identifier": "id",
+                                                "internalClass": "SimpleName",
+                                                "startColumn": 15,
+                                                "startLine": 4,
+                                                "startPosition": 67
+                                            },
+                                            "value": {
+                                                "endColumn": 25,
+                                                "endLine": 4,
+                                                "endPosition": 77,
+                                                "escapedValue": "\"foo\"",
+                                                "internalClass": "StringLiteral",
+                                                "startColumn": 20,
+                                                "startLine": 4,
+                                                "startPosition": 72
+                                            }
+                                        },
+                                        {
+                                            "internalClass": "MemberValuePair",
+                                            "name": {
+                                                "endColumn": 31,
+                                                "endLine": 4,
+                                                "endPosition": 83,
+                                                "identifier": "name",
+                                                "internalClass": "SimpleName",
+                                                "startColumn": 27,
+                                                "startLine": 4,
+                                                "startPosition": 79
+                                            },
+                                            "value": {
+                                                "endColumn": 39,
+                                                "endLine": 4,
+                                                "endPosition": 91,
+                                                "escapedValue": "\"bar\"",
+                                                "internalClass": "StringLiteral",
+                                                "startColumn": 34,
+                                                "startLine": 4,
+                                                "startPosition": 86
+                                            }
+                                        }
+                                    ]
+                                }
+                            ],
+                            "type": {
+                                "internalClass": "SimpleType",
+                                "name": {
+                                    "endColumn": 11,
+                                    "endLine": 5,
+                                    "endPosition": 103,
+                                    "identifier": "String",
+                                    "internalClass": "SimpleName",
+                                    "startColumn": 5,
+                                    "startLine": 5,
+                                    "startPosition": 97
+                                }
+                            }
+                        }
+                    ],
+                    "endColumn": 2,
+                    "endLine": 6,
+                    "endPosition": 110,
+                    "interface": "false",
+                    "internalClass": "TypeDeclaration",
+                    "name": {
+                        "endColumn": 15,
+                        "endLine": 1,
+                        "endPosition": 14,
+                        "identifier": "Testcls1",
+                        "internalClass": "SimpleName",
+                        "startColumn": 7,
+                        "startLine": 1,
+                        "startPosition": 6
+                    },
+                    "startColumn": 1,
+                    "startLine": 1,
+                    "startPosition": 0
+                }
+            ]
+        }
+    }
+}

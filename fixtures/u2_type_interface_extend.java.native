@@ -4,88 +4,39 @@
     "errors": [],
     "ast": {
         "CompilationUnit": {
-            "imports": [
-                {
-                    "endColumn": 20,
-                    "endLine": 1,
-                    "endPosition": 19,
-                    "internalClass": "ImportDeclaration",
-                    "name": {
-                        "internalClass": "QualifiedName",
-                        "name": {
-                            "endColumn": 19,
-                            "endLine": 1,
-                            "endPosition": 18,
-                            "identifier": "bar",
-                            "internalClass": "SimpleName",
-                            "startColumn": 16,
-                            "startLine": 1,
-                            "startPosition": 15
-                        },
-                        "qualifier": {
-                            "internalClass": "QualifiedName",
-                            "name": {
-                                "endColumn": 15,
-                                "endLine": 1,
-                                "endPosition": 14,
-                                "identifier": "foo",
-                                "internalClass": "SimpleName",
-                                "startColumn": 12,
-                                "startLine": 1,
-                                "startPosition": 11
-                            },
-                            "qualifier": {
-                                "endColumn": 11,
-                                "endLine": 1,
-                                "endPosition": 10,
-                                "identifier": "com",
-                                "internalClass": "SimpleName",
-                                "startColumn": 8,
-                                "startLine": 1,
-                                "startPosition": 7
-                            }
-                        }
-                    },
-                    "onDemand": "false",
-                    "startColumn": 1,
-                    "startLine": 1,
-                    "startPosition": 0,
-                    "static": "false"
-                }
-            ],
             "internalClass": "CompilationUnit",
             "types": [
                 {
-                    "endColumn": 0,
-                    "endLine": -1,
-                    "endPosition": 50,
+                    "endColumn": 43,
+                    "endLine": 1,
+                    "endPosition": 42,
                     "interface": "true",
                     "internalClass": "TypeDeclaration",
                     "name": {
-                        "endColumn": 14,
-                        "endLine": 3,
-                        "endPosition": 34,
-                        "identifier": "Foo",
+                        "endColumn": 21,
+                        "endLine": 1,
+                        "endPosition": 20,
+                        "identifier": "Testiface1",
                         "internalClass": "SimpleName",
                         "startColumn": 11,
-                        "startLine": 3,
-                        "startPosition": 31
+                        "startLine": 1,
+                        "startPosition": 10
                     },
                     "startColumn": 1,
-                    "startLine": 3,
-                    "startPosition": 21,
+                    "startLine": 1,
+                    "startPosition": 0,
                     "superInterfaceTypes": [
                         {
                             "internalClass": "SimpleType",
                             "name": {
-                                "endColumn": 26,
-                                "endLine": 3,
-                                "endPosition": 46,
-                                "identifier": "Bar",
+                                "endColumn": 40,
+                                "endLine": 1,
+                                "endPosition": 39,
+                                "identifier": "Testiface2",
                                 "internalClass": "SimpleName",
-                                "startColumn": 23,
-                                "startLine": 3,
-                                "startPosition": 43
+                                "startColumn": 30,
+                                "startLine": 1,
+                                "startPosition": 29
                             }
                         }
                     ]

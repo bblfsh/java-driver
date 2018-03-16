@@ -1,6 +1,4 @@
-interface A{}
-class Code {
-  void code() {
-    new A() { public void a() {} };
-  }
+class Testcls1 {
+  void testfnc1() {
+    new Testiface1() { void testfnc2() {} }; }
 }

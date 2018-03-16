@@ -1,4 +1,1 @@
-import com.foo.bar;
-
-interface Foo extends Bar {
-}
+interface Testiface1 extends Testiface2 {}

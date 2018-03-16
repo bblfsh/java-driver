@@ -1,0 +1,258 @@
+{
+    "status": "ok",
+    "language": "java",
+    "errors": [],
+    "ast": {
+        "CompilationUnit": {
+            "internalClass": "CompilationUnit",
+            "types": [
+                {
+                    "bodyDeclarations": [
+                        {
+                            "body": {
+                                "internalClass": "Block",
+                                "statements": [
+                                    {
+                                        "fragments": [
+                                            {
+                                                "initializer": {
+                                                    "body": {
+                                                        "endColumn": 32,
+                                                        "endLine": 3,
+                                                        "endPosition": 70,
+                                                        "internalClass": "InfixExpression",
+                                                        "leftOperand": {
+                                                            "endColumn": 30,
+                                                            "endLine": 3,
+                                                            "endPosition": 68,
+                                                            "identifier": "val",
+                                                            "internalClass": "SimpleName",
+                                                            "startColumn": 27,
+                                                            "startLine": 3,
+                                                            "startPosition": 65
+                                                        },
+                                                        "operator": "+",
+                                                        "rightOperand": {
+                                                            "endColumn": 32,
+                                                            "endLine": 3,
+                                                            "endPosition": 70,
+                                                            "internalClass": "NumberLiteral",
+                                                            "startColumn": 31,
+                                                            "startLine": 3,
+                                                            "startPosition": 69,
+                                                            "token": "1"
+                                                        },
+                                                        "startColumn": 27,
+                                                        "startLine": 3,
+                                                        "startPosition": 65
+                                                    },
+                                                    "endColumn": 32,
+                                                    "endLine": 3,
+                                                    "endPosition": 70,
+                                                    "internalClass": "LambdaExpression",
+                                                    "parameters": [
+                                                        {
+                                                            "internalClass": "VariableDeclarationFragment",
+                                                            "name": {
+                                                                "endColumn": 23,
+                                                                "endLine": 3,
+                                                                "endPosition": 61,
+                                                                "identifier": "val",
+                                                                "internalClass": "SimpleName",
+                                                                "startColumn": 20,
+                                                                "startLine": 3,
+                                                                "startPosition": 58
+                                                            }
+                                                        }
+                                                    ],
+                                                    "parentheses": "false",
+                                                    "startColumn": 20,
+                                                    "startLine": 3,
+                                                    "startPosition": 58
+                                                },
+                                                "internalClass": "VariableDeclarationFragment",
+                                                "name": {
+                                                    "endColumn": 17,
+                                                    "endLine": 3,
+                                                    "endPosition": 55,
+                                                    "identifier": "a",
+                                                    "internalClass": "SimpleName",
+                                                    "startColumn": 16,
+                                                    "startLine": 3,
+                                                    "startPosition": 54
+                                                }
+                                            }
+                                        ],
+                                        "internalClass": "VariableDeclarationStatement",
+                                        "type": {
+                                            "internalClass": "SimpleType",
+                                            "name": {
+                                                "endColumn": 15,
+                                                "endLine": 3,
+                                                "endPosition": 53,
+                                                "identifier": "Interf",
+                                                "internalClass": "SimpleName",
+                                                "startColumn": 9,
+                                                "startLine": 3,
+                                                "startPosition": 47
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "expression": {
+                                            "endColumn": 43,
+                                            "endLine": 4,
+                                            "endPosition": 114,
+                                            "internalClass": "Assignment",
+                                            "leftHandSide": {
+                                                "endColumn": 10,
+                                                "endLine": 4,
+                                                "endPosition": 81,
+                                                "identifier": "a",
+                                                "internalClass": "SimpleName",
+                                                "startColumn": 9,
+                                                "startLine": 4,
+                                                "startPosition": 80
+                                            },
+                                            "operator": "=",
+                                            "rightHandSide": {
+                                                "body": {
+                                                    "internalClass": "Block",
+                                                    "statements": [
+                                                        {
+                                                            "expression": {
+                                                                "endColumn": 40,
+                                                                "endLine": 4,
+                                                                "endPosition": 111,
+                                                                "internalClass": "InfixExpression",
+                                                                "leftOperand": {
+                                                                    "endColumn": 38,
+                                                                    "endLine": 4,
+                                                                    "endPosition": 109,
+                                                                    "identifier": "val",
+                                                                    "internalClass": "SimpleName",
+                                                                    "startColumn": 35,
+                                                                    "startLine": 4,
+                                                                    "startPosition": 106
+                                                                },
+                                                                "operator": "+",
+                                                                "rightOperand": {
+                                                                    "endColumn": 40,
+                                                                    "endLine": 4,
+                                                                    "endPosition": 111,
+                                                                    "internalClass": "NumberLiteral",
+                                                                    "startColumn": 39,
+                                                                    "startLine": 4,
+                                                                    "startPosition": 110,
+                                                                    "token": "1"
+                                                                },
+                                                                "startColumn": 35,
+                                                                "startLine": 4,
+                                                                "startPosition": 106
+                                                            },
+                                                            "internalClass": "ReturnStatement"
+                                                        }
+                                                    ]
+                                                },
+                                                "endColumn": 43,
+                                                "endLine": 4,
+                                                "endPosition": 114,
+                                                "internalClass": "LambdaExpression",
+                                                "parameters": [
+                                                    {
+                                                        "endColumn": 21,
+                                                        "endLine": 4,
+                                                        "endPosition": 92,
+                                                        "internalClass": "SingleVariableDeclaration",
+                                                        "name": {
+                                                            "endColumn": 21,
+                                                            "endLine": 4,
+                                                            "endPosition": 92,
+                                                            "identifier": "val",
+                                                            "internalClass": "SimpleName",
+                                                            "startColumn": 18,
+                                                            "startLine": 4,
+                                                            "startPosition": 89
+                                                        },
+                                                        "startColumn": 14,
+                                                        "startLine": 4,
+                                                        "startPosition": 85,
+                                                        "type": {
+                                                            "endColumn": 17,
+                                                            "endLine": 4,
+                                                            "endPosition": 88,
+                                                            "internalClass": "PrimitiveType",
+                                                            "primitiveTypeCode": "int",
+                                                            "startColumn": 14,
+                                                            "startLine": 4,
+                                                            "startPosition": 85
+                                                        },
+                                                        "varargs": "false"
+                                                    }
+                                                ],
+                                                "parentheses": "true",
+                                                "startColumn": 13,
+                                                "startLine": 4,
+                                                "startPosition": 84
+                                            },
+                                            "startColumn": 9,
+                                            "startLine": 4,
+                                            "startPosition": 80
+                                        },
+                                        "internalClass": "ExpressionStatement"
+                                    }
+                                ]
+                            },
+                            "constructor": "false",
+                            "endColumn": 6,
+                            "endLine": 5,
+                            "endPosition": 121,
+                            "internalClass": "MethodDeclaration",
+                            "name": {
+                                "endColumn": 18,
+                                "endLine": 2,
+                                "endPosition": 34,
+                                "identifier": "testfnc1",
+                                "internalClass": "SimpleName",
+                                "startColumn": 10,
+                                "startLine": 2,
+                                "startPosition": 26
+                            },
+                            "returnType2": {
+                                "endColumn": 9,
+                                "endLine": 2,
+                                "endPosition": 25,
+                                "internalClass": "PrimitiveType",
+                                "primitiveTypeCode": "void",
+                                "startColumn": 5,
+                                "startLine": 2,
+                                "startPosition": 21
+                            },
+                            "startColumn": 5,
+                            "startLine": 2,
+                            "startPosition": 21
+                        }
+                    ],
+                    "endColumn": 2,
+                    "endLine": 6,
+                    "endPosition": 123,
+                    "interface": "false",
+                    "internalClass": "TypeDeclaration",
+                    "name": {
+                        "endColumn": 15,
+                        "endLine": 1,
+                        "endPosition": 14,
+                        "identifier": "Testcls1",
+                        "internalClass": "SimpleName",
+                        "startColumn": 7,
+                        "startLine": 1,
+                        "startPosition": 6
+                    },
+                    "startColumn": 1,
+                    "startLine": 1,
+                    "startPosition": 0
+                }
+            ]
+        }
+    }
+}

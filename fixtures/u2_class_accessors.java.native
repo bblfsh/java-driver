@@ -1,0 +1,222 @@
+{
+    "status": "ok",
+    "language": "java",
+    "errors": [],
+    "ast": {
+        "CompilationUnit": {
+            "internalClass": "CompilationUnit",
+            "types": [
+                {
+                    "bodyDeclarations": [
+                        {
+                            "fragments": [
+                                {
+                                    "internalClass": "VariableDeclarationFragment",
+                                    "name": {
+                                        "endColumn": 16,
+                                        "endLine": 2,
+                                        "endPosition": 32,
+                                        "identifier": "a",
+                                        "internalClass": "SimpleName",
+                                        "startColumn": 15,
+                                        "startLine": 2,
+                                        "startPosition": 31
+                                    }
+                                }
+                            ],
+                            "internalClass": "FieldDeclaration",
+                            "modifiers": [
+                                {
+                                    "endColumn": 10,
+                                    "endLine": 2,
+                                    "endPosition": 26,
+                                    "internalClass": "Modifier",
+                                    "keyword": "private",
+                                    "startColumn": 3,
+                                    "startLine": 2,
+                                    "startPosition": 19
+                                }
+                            ],
+                            "type": {
+                                "endColumn": 14,
+                                "endLine": 2,
+                                "endPosition": 30,
+                                "internalClass": "PrimitiveType",
+                                "primitiveTypeCode": "int",
+                                "startColumn": 11,
+                                "startLine": 2,
+                                "startPosition": 27
+                            }
+                        },
+                        {
+                            "body": {
+                                "internalClass": "Block",
+                                "statements": [
+                                    {
+                                        "expression": {
+                                            "endColumn": 24,
+                                            "endLine": 3,
+                                            "endPosition": 57,
+                                            "identifier": "a",
+                                            "internalClass": "SimpleName",
+                                            "startColumn": 23,
+                                            "startLine": 3,
+                                            "startPosition": 56
+                                        },
+                                        "internalClass": "ReturnStatement"
+                                    }
+                                ]
+                            },
+                            "constructor": "false",
+                            "endColumn": 27,
+                            "endLine": 3,
+                            "endPosition": 60,
+                            "internalClass": "MethodDeclaration",
+                            "name": {
+                                "endColumn": 11,
+                                "endLine": 3,
+                                "endPosition": 44,
+                                "identifier": "getA",
+                                "internalClass": "SimpleName",
+                                "startColumn": 7,
+                                "startLine": 3,
+                                "startPosition": 40
+                            },
+                            "returnType2": {
+                                "endColumn": 6,
+                                "endLine": 3,
+                                "endPosition": 39,
+                                "internalClass": "PrimitiveType",
+                                "primitiveTypeCode": "int",
+                                "startColumn": 3,
+                                "startLine": 3,
+                                "startPosition": 36
+                            },
+                            "startColumn": 3,
+                            "startLine": 3,
+                            "startPosition": 36
+                        },
+                        {
+                            "body": {
+                                "internalClass": "Block",
+                                "statements": [
+                                    {
+                                        "expression": {
+                                            "endColumn": 33,
+                                            "endLine": 4,
+                                            "endPosition": 93,
+                                            "internalClass": "Assignment",
+                                            "leftHandSide": {
+                                                "endColumn": 26,
+                                                "endLine": 4,
+                                                "endPosition": 86,
+                                                "identifier": "a",
+                                                "internalClass": "SimpleName",
+                                                "startColumn": 25,
+                                                "startLine": 4,
+                                                "startPosition": 85
+                                            },
+                                            "operator": "=",
+                                            "rightHandSide": {
+                                                "endColumn": 33,
+                                                "endLine": 4,
+                                                "endPosition": 93,
+                                                "identifier": "newA",
+                                                "internalClass": "SimpleName",
+                                                "startColumn": 29,
+                                                "startLine": 4,
+                                                "startPosition": 89
+                                            },
+                                            "startColumn": 25,
+                                            "startLine": 4,
+                                            "startPosition": 85
+                                        },
+                                        "internalClass": "ExpressionStatement"
+                                    }
+                                ]
+                            },
+                            "constructor": "false",
+                            "endColumn": 36,
+                            "endLine": 4,
+                            "endPosition": 96,
+                            "internalClass": "MethodDeclaration",
+                            "name": {
+                                "endColumn": 12,
+                                "endLine": 4,
+                                "endPosition": 72,
+                                "identifier": "setA",
+                                "internalClass": "SimpleName",
+                                "startColumn": 8,
+                                "startLine": 4,
+                                "startPosition": 68
+                            },
+                            "parameters": [
+                                {
+                                    "endColumn": 21,
+                                    "endLine": 4,
+                                    "endPosition": 81,
+                                    "internalClass": "SingleVariableDeclaration",
+                                    "name": {
+                                        "endColumn": 21,
+                                        "endLine": 4,
+                                        "endPosition": 81,
+                                        "identifier": "newA",
+                                        "internalClass": "SimpleName",
+                                        "startColumn": 17,
+                                        "startLine": 4,
+                                        "startPosition": 77
+                                    },
+                                    "startColumn": 13,
+                                    "startLine": 4,
+                                    "startPosition": 73,
+                                    "type": {
+                                        "endColumn": 16,
+                                        "endLine": 4,
+                                        "endPosition": 76,
+                                        "internalClass": "PrimitiveType",
+                                        "primitiveTypeCode": "int",
+                                        "startColumn": 13,
+                                        "startLine": 4,
+                                        "startPosition": 73
+                                    },
+                                    "varargs": "false"
+                                }
+                            ],
+                            "returnType2": {
+                                "endColumn": 7,
+                                "endLine": 4,
+                                "endPosition": 67,
+                                "internalClass": "PrimitiveType",
+                                "primitiveTypeCode": "void",
+                                "startColumn": 3,
+                                "startLine": 4,
+                                "startPosition": 63
+                            },
+                            "startColumn": 3,
+                            "startLine": 4,
+                            "startPosition": 63
+                        }
+                    ],
+                    "endColumn": 2,
+                    "endLine": 5,
+                    "endPosition": 98,
+                    "interface": "false",
+                    "internalClass": "TypeDeclaration",
+                    "name": {
+                        "endColumn": 15,
+                        "endLine": 1,
+                        "endPosition": 14,
+                        "identifier": "Testcls1",
+                        "internalClass": "SimpleName",
+                        "startColumn": 7,
+                        "startLine": 1,
+                        "startPosition": 6
+                    },
+                    "startColumn": 1,
+                    "startLine": 1,
+                    "startPosition": 0
+                }
+            ]
+        }
+    }
+}

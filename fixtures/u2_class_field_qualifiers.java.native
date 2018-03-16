@@ -1,0 +1,284 @@
+{
+    "status": "ok",
+    "language": "java",
+    "errors": [],
+    "ast": {
+        "CompilationUnit": {
+            "internalClass": "CompilationUnit",
+            "types": [
+                {
+                    "bodyDeclarations": [
+                        {
+                            "fragments": [
+                                {
+                                    "internalClass": "VariableDeclarationFragment",
+                                    "name": {
+                                        "endColumn": 18,
+                                        "endLine": 2,
+                                        "endPosition": 34,
+                                        "identifier": "foo",
+                                        "internalClass": "SimpleName",
+                                        "startColumn": 15,
+                                        "startLine": 2,
+                                        "startPosition": 31
+                                    }
+                                }
+                            ],
+                            "internalClass": "FieldDeclaration",
+                            "modifiers": [
+                                {
+                                    "endColumn": 10,
+                                    "endLine": 2,
+                                    "endPosition": 26,
+                                    "internalClass": "Modifier",
+                                    "keyword": "private",
+                                    "startColumn": 3,
+                                    "startLine": 2,
+                                    "startPosition": 19
+                                }
+                            ],
+                            "type": {
+                                "endColumn": 14,
+                                "endLine": 2,
+                                "endPosition": 30,
+                                "internalClass": "PrimitiveType",
+                                "primitiveTypeCode": "int",
+                                "startColumn": 11,
+                                "startLine": 2,
+                                "startPosition": 27
+                            }
+                        },
+                        {
+                            "fragments": [
+                                {
+                                    "internalClass": "VariableDeclarationFragment",
+                                    "name": {
+                                        "endColumn": 20,
+                                        "endLine": 3,
+                                        "endPosition": 55,
+                                        "identifier": "bar",
+                                        "internalClass": "SimpleName",
+                                        "startColumn": 17,
+                                        "startLine": 3,
+                                        "startPosition": 52
+                                    }
+                                }
+                            ],
+                            "internalClass": "FieldDeclaration",
+                            "modifiers": [
+                                {
+                                    "endColumn": 12,
+                                    "endLine": 3,
+                                    "endPosition": 47,
+                                    "internalClass": "Modifier",
+                                    "keyword": "protected",
+                                    "startColumn": 3,
+                                    "startLine": 3,
+                                    "startPosition": 38
+                                }
+                            ],
+                            "type": {
+                                "endColumn": 16,
+                                "endLine": 3,
+                                "endPosition": 51,
+                                "internalClass": "PrimitiveType",
+                                "primitiveTypeCode": "int",
+                                "startColumn": 13,
+                                "startLine": 3,
+                                "startPosition": 48
+                            }
+                        },
+                        {
+                            "fragments": [
+                                {
+                                    "internalClass": "VariableDeclarationFragment",
+                                    "name": {
+                                        "endColumn": 17,
+                                        "endLine": 4,
+                                        "endPosition": 73,
+                                        "identifier": "baz",
+                                        "internalClass": "SimpleName",
+                                        "startColumn": 14,
+                                        "startLine": 4,
+                                        "startPosition": 70
+                                    }
+                                }
+                            ],
+                            "internalClass": "FieldDeclaration",
+                            "modifiers": [
+                                {
+                                    "endColumn": 9,
+                                    "endLine": 4,
+                                    "endPosition": 65,
+                                    "internalClass": "Modifier",
+                                    "keyword": "public",
+                                    "startColumn": 3,
+                                    "startLine": 4,
+                                    "startPosition": 59
+                                }
+                            ],
+                            "type": {
+                                "endColumn": 13,
+                                "endLine": 4,
+                                "endPosition": 69,
+                                "internalClass": "PrimitiveType",
+                                "primitiveTypeCode": "int",
+                                "startColumn": 10,
+                                "startLine": 4,
+                                "startPosition": 66
+                            }
+                        },
+                        {
+                            "fragments": [
+                                {
+                                    "internalClass": "VariableDeclarationFragment",
+                                    "name": {
+                                        "endColumn": 20,
+                                        "endLine": 5,
+                                        "endPosition": 94,
+                                        "identifier": "pok",
+                                        "internalClass": "SimpleName",
+                                        "startColumn": 17,
+                                        "startLine": 5,
+                                        "startPosition": 91
+                                    }
+                                }
+                            ],
+                            "internalClass": "FieldDeclaration",
+                            "modifiers": [
+                                {
+                                    "endColumn": 12,
+                                    "endLine": 5,
+                                    "endPosition": 86,
+                                    "internalClass": "Modifier",
+                                    "keyword": "transient",
+                                    "startColumn": 3,
+                                    "startLine": 5,
+                                    "startPosition": 77
+                                }
+                            ],
+                            "type": {
+                                "endColumn": 16,
+                                "endLine": 5,
+                                "endPosition": 90,
+                                "internalClass": "PrimitiveType",
+                                "primitiveTypeCode": "int",
+                                "startColumn": 13,
+                                "startLine": 5,
+                                "startPosition": 87
+                            }
+                        },
+                        {
+                            "fragments": [
+                                {
+                                    "internalClass": "VariableDeclarationFragment",
+                                    "name": {
+                                        "endColumn": 19,
+                                        "endLine": 6,
+                                        "endPosition": 114,
+                                        "identifier": "pol",
+                                        "internalClass": "SimpleName",
+                                        "startColumn": 16,
+                                        "startLine": 6,
+                                        "startPosition": 111
+                                    }
+                                }
+                            ],
+                            "internalClass": "FieldDeclaration",
+                            "modifiers": [
+                                {
+                                    "endColumn": 11,
+                                    "endLine": 6,
+                                    "endPosition": 106,
+                                    "internalClass": "Modifier",
+                                    "keyword": "volatile",
+                                    "startColumn": 3,
+                                    "startLine": 6,
+                                    "startPosition": 98
+                                }
+                            ],
+                            "type": {
+                                "endColumn": 15,
+                                "endLine": 6,
+                                "endPosition": 110,
+                                "internalClass": "PrimitiveType",
+                                "primitiveTypeCode": "int",
+                                "startColumn": 12,
+                                "startLine": 6,
+                                "startPosition": 107
+                            }
+                        },
+                        {
+                            "fragments": [
+                                {
+                                    "initializer": {
+                                        "endColumn": 21,
+                                        "endLine": 7,
+                                        "endPosition": 136,
+                                        "internalClass": "NumberLiteral",
+                                        "startColumn": 20,
+                                        "startLine": 7,
+                                        "startPosition": 135,
+                                        "token": "1"
+                                    },
+                                    "internalClass": "VariableDeclarationFragment",
+                                    "name": {
+                                        "endColumn": 17,
+                                        "endLine": 7,
+                                        "endPosition": 132,
+                                        "identifier": "blah",
+                                        "internalClass": "SimpleName",
+                                        "startColumn": 13,
+                                        "startLine": 7,
+                                        "startPosition": 128
+                                    }
+                                }
+                            ],
+                            "internalClass": "FieldDeclaration",
+                            "modifiers": [
+                                {
+                                    "endColumn": 8,
+                                    "endLine": 7,
+                                    "endPosition": 123,
+                                    "internalClass": "Modifier",
+                                    "keyword": "final",
+                                    "startColumn": 3,
+                                    "startLine": 7,
+                                    "startPosition": 118
+                                }
+                            ],
+                            "type": {
+                                "endColumn": 12,
+                                "endLine": 7,
+                                "endPosition": 127,
+                                "internalClass": "PrimitiveType",
+                                "primitiveTypeCode": "int",
+                                "startColumn": 9,
+                                "startLine": 7,
+                                "startPosition": 124
+                            }
+                        }
+                    ],
+                    "endColumn": 2,
+                    "endLine": 8,
+                    "endPosition": 139,
+                    "interface": "false",
+                    "internalClass": "TypeDeclaration",
+                    "name": {
+                        "endColumn": 15,
+                        "endLine": 1,
+                        "endPosition": 14,
+                        "identifier": "Testcls1",
+                        "internalClass": "SimpleName",
+                        "startColumn": 7,
+                        "startLine": 1,
+                        "startPosition": 6
+                    },
+                    "startColumn": 1,
+                    "startLine": 1,
+                    "startPosition": 0
+                }
+            ]
+        }
+    }
+}
