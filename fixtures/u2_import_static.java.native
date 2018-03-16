@@ -1,0 +1,81 @@
+{
+    "status": "ok",
+    "language": "java",
+    "errors": [],
+    "ast": {
+        "CompilationUnit": {
+            "imports": [
+                {
+                    "endColumn": 27,
+                    "endLine": 1,
+                    "endPosition": 26,
+                    "internalClass": "ImportDeclaration",
+                    "name": {
+                        "internalClass": "QualifiedName",
+                        "name": {
+                            "endColumn": 26,
+                            "endLine": 1,
+                            "endPosition": 25,
+                            "identifier": "Bar",
+                            "internalClass": "SimpleName",
+                            "startColumn": 23,
+                            "startLine": 1,
+                            "startPosition": 22
+                        },
+                        "qualifier": {
+                            "internalClass": "QualifiedName",
+                            "name": {
+                                "endColumn": 22,
+                                "endLine": 1,
+                                "endPosition": 21,
+                                "identifier": "foo",
+                                "internalClass": "SimpleName",
+                                "startColumn": 19,
+                                "startLine": 1,
+                                "startPosition": 18
+                            },
+                            "qualifier": {
+                                "endColumn": 18,
+                                "endLine": 1,
+                                "endPosition": 17,
+                                "identifier": "com",
+                                "internalClass": "SimpleName",
+                                "startColumn": 15,
+                                "startLine": 1,
+                                "startPosition": 14
+                            }
+                        }
+                    },
+                    "onDemand": "false",
+                    "startColumn": 1,
+                    "startLine": 1,
+                    "startPosition": 0,
+                    "static": "true"
+                }
+            ],
+            "internalClass": "CompilationUnit",
+            "types": [
+                {
+                    "endColumn": 0,
+                    "endLine": -1,
+                    "endPosition": 42,
+                    "interface": "false",
+                    "internalClass": "TypeDeclaration",
+                    "name": {
+                        "endColumn": 12,
+                        "endLine": 3,
+                        "endPosition": 39,
+                        "identifier": "Empty",
+                        "internalClass": "SimpleName",
+                        "startColumn": 7,
+                        "startLine": 3,
+                        "startPosition": 34
+                    },
+                    "startColumn": 1,
+                    "startLine": 3,
+                    "startPosition": 28
+                }
+            ]
+        }
+    }
+}
