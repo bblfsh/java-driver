@@ -1,1 +1,1 @@
-class Foo {}
+class Testcls1 {}
