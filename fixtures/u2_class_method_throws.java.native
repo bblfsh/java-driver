@@ -4,13 +4,24 @@
     "errors": [],
     "ast": {
         "CompilationUnit": {
+            "endColumn": 0,
+            "endPosition": 48,
             "internalClass": "CompilationUnit",
+            "startColumn": 1,
+            "startLine": 1,
+            "startPosition": 0,
             "types": [
                 {
                     "bodyDeclarations": [
                         {
                             "body": {
-                                "internalClass": "Block"
+                                "endColumn": 35,
+                                "endLine": 2,
+                                "endPosition": 46,
+                                "internalClass": "Block",
+                                "startColumn": 33,
+                                "startLine": 2,
+                                "startPosition": 44
                             },
                             "constructor": "false",
                             "endColumn": 35,
@@ -42,6 +53,9 @@
                             "startPosition": 16,
                             "thrownExceptionTypes": [
                                 {
+                                    "endColumn": 32,
+                                    "endLine": 2,
+                                    "endPosition": 43,
                                     "internalClass": "SimpleType",
                                     "name": {
                                         "endColumn": 32,
@@ -52,13 +66,15 @@
                                         "startColumn": 23,
                                         "startLine": 2,
                                         "startPosition": 34
-                                    }
+                                    },
+                                    "startColumn": 23,
+                                    "startLine": 2,
+                                    "startPosition": 34
                                 }
                             ]
                         }
                     ],
                     "endColumn": 0,
-                    "endLine": -1,
                     "endPosition": 48,
                     "interface": "false",
                     "internalClass": "TypeDeclaration",

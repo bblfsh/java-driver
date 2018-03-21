@@ -4,6 +4,8 @@
     "errors": [],
     "ast": {
         "CompilationUnit": {
+            "endColumn": 0,
+            "endPosition": 18,
             "imports": [
                 {
                     "endColumn": 18,
@@ -11,6 +13,9 @@
                     "endPosition": 17,
                     "internalClass": "ImportDeclaration",
                     "name": {
+                        "endColumn": 15,
+                        "endLine": 1,
+                        "endPosition": 14,
                         "internalClass": "QualifiedName",
                         "name": {
                             "endColumn": 15,
@@ -31,7 +36,10 @@
                             "startColumn": 8,
                             "startLine": 1,
                             "startPosition": 7
-                        }
+                        },
+                        "startColumn": 8,
+                        "startLine": 1,
+                        "startPosition": 7
                     },
                     "onDemand": "true",
                     "startColumn": 1,
@@ -40,7 +48,10 @@
                     "static": "false"
                 }
             ],
-            "internalClass": "CompilationUnit"
+            "internalClass": "CompilationUnit",
+            "startColumn": 1,
+            "startLine": 1,
+            "startPosition": 0
         }
     }
 }

@@ -59,9 +59,9 @@ public class CompilationUnitSerializer extends StdSerializer<CompilationUnit> {
             } else if (child != null) {
                 jG.writeFieldName(descriptor.getId());
                 jG.writeString(child.toString());
-                serializePosition(cu, node, jG);
             }
         }
+        serializePosition(cu, node, jG);
 
         if (node == cu) {
             List<Comment> cl = cu.getCommentList();
@@ -115,19 +115,21 @@ public class CompilationUnitSerializer extends StdSerializer<CompilationUnit> {
 
     private void serializePosition(CompilationUnit cu, ASTNode node, JsonGenerator jG) throws IOException {
         final int startPosition = node.getStartPosition();
-        jG.writeFieldName("startPosition");
-        jG.writeNumber(startPosition);
-        jG.writeFieldName("startLine");
-        jG.writeNumber(cu.getLineNumber(startPosition));
-        jG.writeFieldName("startColumn");
-        jG.writeNumber(cu.getColumnNumber(startPosition) + 1); // 1-based numbering
+        serializePositionFields(cu, jG, startPosition, "start");
 
         final int endPosition = startPosition + node.getLength();
-        jG.writeFieldName("endPosition");
-        jG.writeNumber(endPosition);
-        jG.writeFieldName("endLine");
-        jG.writeNumber(cu.getLineNumber(endPosition));
-        jG.writeFieldName("endColumn");
-        jG.writeNumber(cu.getColumnNumber(endPosition) + 1); // 1-based numbering
+        serializePositionFields(cu, jG, endPosition, "end");
+    }
+
+    private void serializePositionFields(CompilationUnit cu, JsonGenerator jG, int pos, String pref) throws IOException {
+        jG.writeFieldName(pref+"Position");
+        jG.writeNumber(pos);
+        final int line = cu.getLineNumber(pos);
+        if (line >= 0) {
+            jG.writeFieldName(pref+"Line");
+            jG.writeNumber(line);
+        }
+        jG.writeFieldName(pref+"Column");
+        jG.writeNumber(cu.getColumnNumber(pos) + 1); // 1-based numbering
     }
 }

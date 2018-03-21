@@ -4,13 +4,24 @@
     "errors": [],
     "ast": {
         "CompilationUnit": {
+            "endColumn": 0,
+            "endPosition": 95,
             "internalClass": "CompilationUnit",
+            "startColumn": 1,
+            "startLine": 1,
+            "startPosition": 0,
             "types": [
                 {
                     "bodyDeclarations": [
                         {
+                            "endColumn": 16,
+                            "endLine": 2,
+                            "endPosition": 25,
                             "fragments": [
                                 {
+                                    "endColumn": 15,
+                                    "endLine": 2,
+                                    "endPosition": 24,
                                     "internalClass": "VariableDeclarationFragment",
                                     "name": {
                                         "endColumn": 15,
@@ -21,7 +32,10 @@
                                         "startColumn": 14,
                                         "startLine": 2,
                                         "startPosition": 23
-                                    }
+                                    },
+                                    "startColumn": 14,
+                                    "startLine": 2,
+                                    "startPosition": 23
                                 }
                             ],
                             "internalClass": "FieldDeclaration",
@@ -37,6 +51,9 @@
                                     "startPosition": 12
                                 }
                             ],
+                            "startColumn": 3,
+                            "startLine": 2,
+                            "startPosition": 12,
                             "type": {
                                 "endColumn": 13,
                                 "endLine": 2,
@@ -71,8 +88,14 @@
                 {
                     "bodyDeclarations": [
                         {
+                            "endColumn": 16,
+                            "endLine": 6,
+                            "endPosition": 64,
                             "fragments": [
                                 {
+                                    "endColumn": 15,
+                                    "endLine": 6,
+                                    "endPosition": 63,
                                     "internalClass": "VariableDeclarationFragment",
                                     "name": {
                                         "endColumn": 15,
@@ -83,7 +106,10 @@
                                         "startColumn": 14,
                                         "startLine": 6,
                                         "startPosition": 62
-                                    }
+                                    },
+                                    "startColumn": 14,
+                                    "startLine": 6,
+                                    "startPosition": 62
                                 }
                             ],
                             "internalClass": "FieldDeclaration",
@@ -99,6 +125,9 @@
                                     "startPosition": 51
                                 }
                             ],
+                            "startColumn": 3,
+                            "startLine": 6,
+                            "startPosition": 51,
                             "type": {
                                 "endColumn": 13,
                                 "endLine": 6,
@@ -112,17 +141,35 @@
                         },
                         {
                             "body": {
+                                "endColumn": 28,
+                                "endLine": 7,
+                                "endPosition": 92,
                                 "internalClass": "Block",
+                                "startColumn": 7,
+                                "startLine": 7,
+                                "startPosition": 71,
                                 "statements": [
                                     {
+                                        "endColumn": 26,
+                                        "endLine": 7,
+                                        "endPosition": 90,
                                         "expression": {
                                             "endColumn": 25,
                                             "endLine": 7,
                                             "endPosition": 89,
                                             "internalClass": "Assignment",
                                             "leftHandSide": {
+                                                "endColumn": 15,
+                                                "endLine": 7,
+                                                "endPosition": 79,
                                                 "expression": {
-                                                    "internalClass": "ThisExpression"
+                                                    "endColumn": 13,
+                                                    "endLine": 7,
+                                                    "endPosition": 77,
+                                                    "internalClass": "ThisExpression",
+                                                    "startColumn": 9,
+                                                    "startLine": 7,
+                                                    "startPosition": 73
                                                 },
                                                 "internalClass": "FieldAccess",
                                                 "name": {
@@ -134,10 +181,16 @@
                                                     "startColumn": 14,
                                                     "startLine": 7,
                                                     "startPosition": 78
-                                                }
+                                                },
+                                                "startColumn": 9,
+                                                "startLine": 7,
+                                                "startPosition": 73
                                             },
                                             "operator": "=",
                                             "rightHandSide": {
+                                                "endColumn": 25,
+                                                "endLine": 7,
+                                                "endPosition": 89,
                                                 "internalClass": "SuperFieldAccess",
                                                 "name": {
                                                     "endColumn": 25,
@@ -148,13 +201,19 @@
                                                     "startColumn": 24,
                                                     "startLine": 7,
                                                     "startPosition": 88
-                                                }
+                                                },
+                                                "startColumn": 18,
+                                                "startLine": 7,
+                                                "startPosition": 82
                                             },
                                             "startColumn": 9,
                                             "startLine": 7,
                                             "startPosition": 73
                                         },
-                                        "internalClass": "ExpressionStatement"
+                                        "internalClass": "ExpressionStatement",
+                                        "startColumn": 9,
+                                        "startLine": 7,
+                                        "startPosition": 73
                                     }
                                 ]
                             },
@@ -197,6 +256,9 @@
                     "startLine": 5,
                     "startPosition": 29,
                     "superclassType": {
+                        "endColumn": 18,
+                        "endLine": 5,
+                        "endPosition": 46,
                         "internalClass": "SimpleType",
                         "name": {
                             "endColumn": 18,
@@ -207,7 +269,10 @@
                             "startColumn": 17,
                             "startLine": 5,
                             "startPosition": 45
-                        }
+                        },
+                        "startColumn": 17,
+                        "startLine": 5,
+                        "startPosition": 45
                     }
                 }
             ]

@@ -4,9 +4,29 @@ Errors:
 UAST: 
 CompilationUnit {
 .  Roles: File
+.  StartPosition: {
+.  .  Offset: 0
+.  .  Line: 1
+.  .  Col: 1
+.  }
+.  EndPosition: {
+.  .  Offset: 37
+.  .  Line: 0
+.  .  Col: 0
+.  }
 .  Children: {
 .  .  0: AnnotationTypeDeclaration {
 .  .  .  Roles: Declaration,Type,Annotation
+.  .  .  StartPosition: {
+.  .  .  .  Offset: 0
+.  .  .  .  Line: 1
+.  .  .  .  Col: 1
+.  .  .  }
+.  .  .  EndPosition: {
+.  .  .  .  Offset: 37
+.  .  .  .  Line: 0
+.  .  .  .  Col: 0
+.  .  .  }
 .  .  .  Properties: {
 .  .  .  .  internalRole: types
 .  .  .  }
@@ -30,6 +50,16 @@ CompilationUnit {
 .  .  .  .  }
 .  .  .  .  1: AnnotationTypeMemberDeclaration {
 .  .  .  .  .  Roles: Body,Declaration,Type,Annotation
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 17
+.  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  Col: 3
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 35
+.  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  Col: 21
+.  .  .  .  .  }
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: bodyDeclarations
 .  .  .  .  .  }

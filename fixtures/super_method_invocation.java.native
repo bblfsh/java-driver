@@ -4,13 +4,24 @@
     "errors": [],
     "ast": {
         "CompilationUnit": {
+            "endColumn": 0,
+            "endPosition": 78,
             "internalClass": "CompilationUnit",
+            "startColumn": 1,
+            "startLine": 1,
+            "startPosition": 0,
             "types": [
                 {
                     "bodyDeclarations": [
                         {
                             "body": {
-                                "internalClass": "Block"
+                                "endColumn": 21,
+                                "endLine": 2,
+                                "endPosition": 30,
+                                "internalClass": "Block",
+                                "startColumn": 19,
+                                "startLine": 2,
+                                "startPosition": 28
                             },
                             "constructor": "false",
                             "endColumn": 21,
@@ -77,10 +88,22 @@
                     "bodyDeclarations": [
                         {
                             "body": {
+                                "endColumn": 21,
+                                "endLine": 6,
+                                "endPosition": 75,
                                 "internalClass": "Block",
+                                "startColumn": 7,
+                                "startLine": 6,
+                                "startPosition": 61,
                                 "statements": [
                                     {
+                                        "endColumn": 19,
+                                        "endLine": 6,
+                                        "endPosition": 73,
                                         "expression": {
+                                            "endColumn": 18,
+                                            "endLine": 6,
+                                            "endPosition": 72,
                                             "internalClass": "SuperMethodInvocation",
                                             "name": {
                                                 "endColumn": 16,
@@ -91,9 +114,15 @@
                                                 "startColumn": 15,
                                                 "startLine": 6,
                                                 "startPosition": 69
-                                            }
+                                            },
+                                            "startColumn": 9,
+                                            "startLine": 6,
+                                            "startPosition": 63
                                         },
-                                        "internalClass": "ExpressionStatement"
+                                        "internalClass": "ExpressionStatement",
+                                        "startColumn": 9,
+                                        "startLine": 6,
+                                        "startPosition": 63
                                     }
                                 ]
                             },
@@ -136,6 +165,9 @@
                     "startLine": 5,
                     "startPosition": 35,
                     "superclassType": {
+                        "endColumn": 18,
+                        "endLine": 5,
+                        "endPosition": 52,
                         "internalClass": "SimpleType",
                         "name": {
                             "endColumn": 18,
@@ -146,7 +178,10 @@
                             "startColumn": 17,
                             "startLine": 5,
                             "startPosition": 51
-                        }
+                        },
+                        "startColumn": 17,
+                        "startLine": 5,
+                        "startPosition": 51
                     }
                 }
             ]

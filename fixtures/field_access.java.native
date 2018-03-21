@@ -4,13 +4,24 @@
     "errors": [],
     "ast": {
         "CompilationUnit": {
+            "endColumn": 0,
+            "endPosition": 69,
             "internalClass": "CompilationUnit",
+            "startColumn": 1,
+            "startLine": 1,
+            "startPosition": 0,
             "types": [
                 {
                     "bodyDeclarations": [
                         {
+                            "endColumn": 23,
+                            "endLine": 2,
+                            "endPosition": 35,
                             "fragments": [
                                 {
+                                    "endColumn": 22,
+                                    "endLine": 2,
+                                    "endPosition": 34,
                                     "internalClass": "VariableDeclarationFragment",
                                     "name": {
                                         "endColumn": 22,
@@ -21,7 +32,10 @@
                                         "startColumn": 21,
                                         "startLine": 2,
                                         "startPosition": 33
-                                    }
+                                    },
+                                    "startColumn": 21,
+                                    "startLine": 2,
+                                    "startPosition": 33
                                 }
                             ],
                             "internalClass": "FieldDeclaration",
@@ -47,6 +61,9 @@
                                     "startPosition": 23
                                 }
                             ],
+                            "startColumn": 3,
+                            "startLine": 2,
+                            "startPosition": 15,
                             "type": {
                                 "endColumn": 20,
                                 "endLine": 2,
@@ -60,17 +77,35 @@
                         },
                         {
                             "body": {
+                                "endColumn": 4,
+                                "endLine": 5,
+                                "endPosition": 66,
                                 "internalClass": "Block",
+                                "startColumn": 10,
+                                "startLine": 3,
+                                "startPosition": 45,
                                 "statements": [
                                     {
+                                        "endColumn": 16,
+                                        "endLine": 4,
+                                        "endPosition": 62,
                                         "expression": {
                                             "endColumn": 15,
                                             "endLine": 4,
                                             "endPosition": 61,
                                             "internalClass": "Assignment",
                                             "leftHandSide": {
+                                                "endColumn": 11,
+                                                "endLine": 4,
+                                                "endPosition": 57,
                                                 "expression": {
-                                                    "internalClass": "ThisExpression"
+                                                    "endColumn": 9,
+                                                    "endLine": 4,
+                                                    "endPosition": 55,
+                                                    "internalClass": "ThisExpression",
+                                                    "startColumn": 5,
+                                                    "startLine": 4,
+                                                    "startPosition": 51
                                                 },
                                                 "internalClass": "FieldAccess",
                                                 "name": {
@@ -82,7 +117,10 @@
                                                     "startColumn": 10,
                                                     "startLine": 4,
                                                     "startPosition": 56
-                                                }
+                                                },
+                                                "startColumn": 5,
+                                                "startLine": 4,
+                                                "startPosition": 51
                                             },
                                             "operator": "=",
                                             "rightHandSide": {
@@ -99,7 +137,10 @@
                                             "startLine": 4,
                                             "startPosition": 51
                                         },
-                                        "internalClass": "ExpressionStatement"
+                                        "internalClass": "ExpressionStatement",
+                                        "startColumn": 5,
+                                        "startLine": 4,
+                                        "startPosition": 51
                                     }
                                 ]
                             },

@@ -4,6 +4,8 @@
     "errors": [],
     "ast": {
         "CompilationUnit": {
+            "endColumn": 0,
+            "endPosition": 20,
             "imports": [
                 {
                     "endColumn": 20,
@@ -11,6 +13,9 @@
                     "endPosition": 19,
                     "internalClass": "ImportDeclaration",
                     "name": {
+                        "endColumn": 19,
+                        "endLine": 1,
+                        "endPosition": 18,
                         "internalClass": "QualifiedName",
                         "name": {
                             "endColumn": 19,
@@ -23,6 +28,9 @@
                             "startPosition": 15
                         },
                         "qualifier": {
+                            "endColumn": 15,
+                            "endLine": 1,
+                            "endPosition": 14,
                             "internalClass": "QualifiedName",
                             "name": {
                                 "endColumn": 15,
@@ -43,8 +51,14 @@
                                 "startColumn": 8,
                                 "startLine": 1,
                                 "startPosition": 7
-                            }
-                        }
+                            },
+                            "startColumn": 8,
+                            "startLine": 1,
+                            "startPosition": 7
+                        },
+                        "startColumn": 8,
+                        "startLine": 1,
+                        "startPosition": 7
                     },
                     "onDemand": "false",
                     "startColumn": 1,
@@ -53,7 +67,10 @@
                     "static": "false"
                 }
             ],
-            "internalClass": "CompilationUnit"
+            "internalClass": "CompilationUnit",
+            "startColumn": 1,
+            "startLine": 1,
+            "startPosition": 0
         }
     }
 }
