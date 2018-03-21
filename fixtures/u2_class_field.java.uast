@@ -4,6 +4,16 @@ Errors:
 UAST: 
 CompilationUnit {
 .  Roles: File
+.  StartPosition: {
+.  .  Offset: 0
+.  .  Line: 1
+.  .  Col: 1
+.  }
+.  EndPosition: {
+.  .  Offset: 70
+.  .  Line: 0
+.  .  Col: 0
+.  }
 .  Children: {
 .  .  0: TypeDeclaration {
 .  .  .  Roles: Visibility,Package,Declaration,Type
@@ -41,12 +51,32 @@ CompilationUnit {
 .  .  .  .  }
 .  .  .  .  1: FieldDeclaration {
 .  .  .  .  .  Roles: Declaration,Variable
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 21
+.  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  Col: 5
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 32
+.  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  Col: 16
+.  .  .  .  .  }
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: bodyDeclarations
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
 .  .  .  .  .  .  0: SimpleType {
 .  .  .  .  .  .  .  Roles: Type
+.  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  Offset: 21
+.  .  .  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  .  .  Col: 5
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  Offset: 27
+.  .  .  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  .  .  Col: 11
+.  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  internalRole: type
 .  .  .  .  .  .  .  }
@@ -72,6 +102,16 @@ CompilationUnit {
 .  .  .  .  .  .  }
 .  .  .  .  .  .  1: VariableDeclarationFragment {
 .  .  .  .  .  .  .  Roles: Declaration,Variable
+.  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  Offset: 28
+.  .  .  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  .  .  Col: 12
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  Offset: 31
+.  .  .  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  .  .  Col: 15
+.  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  internalRole: fragments
 .  .  .  .  .  .  .  }
@@ -99,6 +139,16 @@ CompilationUnit {
 .  .  .  .  }
 .  .  .  .  2: FieldDeclaration {
 .  .  .  .  .  Roles: Declaration,Variable
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 37
+.  .  .  .  .  .  Line: 3
+.  .  .  .  .  .  Col: 5
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 49
+.  .  .  .  .  .  Line: 3
+.  .  .  .  .  .  Col: 17
+.  .  .  .  .  }
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: bodyDeclarations
 .  .  .  .  .  }
@@ -122,6 +172,16 @@ CompilationUnit {
 .  .  .  .  .  .  }
 .  .  .  .  .  .  1: VariableDeclarationFragment {
 .  .  .  .  .  .  .  Roles: Declaration,Variable
+.  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  Offset: 41
+.  .  .  .  .  .  .  .  Line: 3
+.  .  .  .  .  .  .  .  Col: 9
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  Offset: 48
+.  .  .  .  .  .  .  .  Line: 3
+.  .  .  .  .  .  .  .  Col: 16
+.  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  internalRole: fragments
 .  .  .  .  .  .  .  }
@@ -166,6 +226,16 @@ CompilationUnit {
 .  .  .  .  }
 .  .  .  .  3: FieldDeclaration {
 .  .  .  .  .  Roles: Declaration,Variable
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 54
+.  .  .  .  .  .  Line: 4
+.  .  .  .  .  .  Col: 5
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 67
+.  .  .  .  .  .  Line: 4
+.  .  .  .  .  .  Col: 18
+.  .  .  .  .  }
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: bodyDeclarations
 .  .  .  .  .  }
@@ -189,6 +259,16 @@ CompilationUnit {
 .  .  .  .  .  .  }
 .  .  .  .  .  .  1: VariableDeclarationFragment {
 .  .  .  .  .  .  .  Roles: Declaration,Variable
+.  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  Offset: 58
+.  .  .  .  .  .  .  .  Line: 4
+.  .  .  .  .  .  .  .  Col: 9
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  Offset: 61
+.  .  .  .  .  .  .  .  Line: 4
+.  .  .  .  .  .  .  .  Col: 12
+.  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  internalRole: fragments
 .  .  .  .  .  .  .  }
@@ -214,6 +294,16 @@ CompilationUnit {
 .  .  .  .  .  .  }
 .  .  .  .  .  .  2: VariableDeclarationFragment {
 .  .  .  .  .  .  .  Roles: Declaration,Variable
+.  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  Offset: 63
+.  .  .  .  .  .  .  .  Line: 4
+.  .  .  .  .  .  .  .  Col: 14
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  Offset: 66
+.  .  .  .  .  .  .  .  Line: 4
+.  .  .  .  .  .  .  .  Col: 17
+.  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  internalRole: fragments
 .  .  .  .  .  .  .  }

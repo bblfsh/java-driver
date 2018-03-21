@@ -4,13 +4,24 @@
     "errors": [],
     "ast": {
         "CompilationUnit": {
+            "endColumn": 0,
+            "endPosition": 96,
             "internalClass": "CompilationUnit",
+            "startColumn": 1,
+            "startLine": 1,
+            "startPosition": 0,
             "types": [
                 {
                     "bodyDeclarations": [
                         {
+                            "endColumn": 17,
+                            "endLine": 2,
+                            "endPosition": 29,
                             "fragments": [
                                 {
+                                    "endColumn": 16,
+                                    "endLine": 2,
+                                    "endPosition": 28,
                                     "internalClass": "VariableDeclarationFragment",
                                     "name": {
                                         "endColumn": 16,
@@ -21,7 +32,10 @@
                                         "startColumn": 15,
                                         "startLine": 2,
                                         "startPosition": 27
-                                    }
+                                    },
+                                    "startColumn": 15,
+                                    "startLine": 2,
+                                    "startPosition": 27
                                 }
                             ],
                             "internalClass": "FieldDeclaration",
@@ -37,6 +51,9 @@
                                     "startPosition": 15
                                 }
                             ],
+                            "startColumn": 3,
+                            "startLine": 2,
+                            "startPosition": 15,
                             "type": {
                                 "endColumn": 14,
                                 "endLine": 2,
@@ -50,21 +67,45 @@
                         },
                         {
                             "body": {
+                                "endColumn": 4,
+                                "endLine": 5,
+                                "endPosition": 93,
                                 "internalClass": "Block",
+                                "startColumn": 20,
+                                "startLine": 3,
+                                "startPosition": 49,
                                 "statements": [
                                     {
                                         "body": {
+                                            "endColumn": 39,
+                                            "endLine": 4,
+                                            "endPosition": 89,
                                             "internalClass": "Block",
+                                            "startColumn": 24,
+                                            "startLine": 4,
+                                            "startPosition": 74,
                                             "statements": [
                                                 {
+                                                    "endColumn": 37,
+                                                    "endLine": 4,
+                                                    "endPosition": 87,
                                                     "expression": {
                                                         "endColumn": 36,
                                                         "endLine": 4,
                                                         "endPosition": 86,
                                                         "internalClass": "Assignment",
                                                         "leftHandSide": {
+                                                            "endColumn": 32,
+                                                            "endLine": 4,
+                                                            "endPosition": 82,
                                                             "expression": {
-                                                                "internalClass": "ThisExpression"
+                                                                "endColumn": 30,
+                                                                "endLine": 4,
+                                                                "endPosition": 80,
+                                                                "internalClass": "ThisExpression",
+                                                                "startColumn": 26,
+                                                                "startLine": 4,
+                                                                "startPosition": 76
                                                             },
                                                             "internalClass": "FieldAccess",
                                                             "name": {
@@ -76,7 +117,10 @@
                                                                 "startColumn": 31,
                                                                 "startLine": 4,
                                                                 "startPosition": 81
-                                                            }
+                                                            },
+                                                            "startColumn": 26,
+                                                            "startLine": 4,
+                                                            "startPosition": 76
                                                         },
                                                         "operator": "=",
                                                         "rightHandSide": {
@@ -93,14 +137,29 @@
                                                         "startLine": 4,
                                                         "startPosition": 76
                                                     },
-                                                    "internalClass": "ExpressionStatement"
+                                                    "internalClass": "ExpressionStatement",
+                                                    "startColumn": 26,
+                                                    "startLine": 4,
+                                                    "startPosition": 76
                                                 }
                                             ]
                                         },
+                                        "endColumn": 39,
+                                        "endLine": 4,
+                                        "endPosition": 89,
                                         "expression": {
-                                            "internalClass": "ThisExpression"
+                                            "endColumn": 22,
+                                            "endLine": 4,
+                                            "endPosition": 72,
+                                            "internalClass": "ThisExpression",
+                                            "startColumn": 18,
+                                            "startLine": 4,
+                                            "startPosition": 68
                                         },
-                                        "internalClass": "SynchronizedStatement"
+                                        "internalClass": "SynchronizedStatement",
+                                        "startColumn": 5,
+                                        "startLine": 4,
+                                        "startPosition": 55
                                     }
                                 ]
                             },

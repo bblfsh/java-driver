@@ -4,6 +4,16 @@ Errors:
 UAST: 
 CompilationUnit {
 .  Roles: File
+.  StartPosition: {
+.  .  Offset: 0
+.  .  Line: 1
+.  .  Col: 1
+.  }
+.  EndPosition: {
+.  .  Offset: 44
+.  .  Line: 0
+.  .  Col: 0
+.  }
 .  Children: {
 .  .  0: TypeDeclaration {
 .  .  .  Roles: Visibility,Package,Declaration,Type
@@ -56,13 +66,7 @@ CompilationUnit {
 .  .  .  .  .  .  internalRole: bodyDeclarations
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
-.  .  .  .  .  .  0: Block {
-.  .  .  .  .  .  .  Roles: Function,Body,Statement,Block,Scope
-.  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: body
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  }
-.  .  .  .  .  .  1: PrimitiveType {
+.  .  .  .  .  .  0: PrimitiveType {
 .  .  .  .  .  .  .  Roles: Type,Primitive
 .  .  .  .  .  .  .  TOKEN "void"
 .  .  .  .  .  .  .  StartPosition: {
@@ -79,7 +83,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  internalRole: returnType2
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
-.  .  .  .  .  .  2: SimpleName {
+.  .  .  .  .  .  1: SimpleName {
 .  .  .  .  .  .  .  Roles: Expression,Identifier,Function,Name
 .  .  .  .  .  .  .  TOKEN "code"
 .  .  .  .  .  .  .  StartPosition: {
@@ -96,7 +100,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  internalRole: name
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
-.  .  .  .  .  .  3: SingleVariableDeclaration {
+.  .  .  .  .  .  2: SingleVariableDeclaration {
 .  .  .  .  .  .  .  Roles: Function,Argument,Declaration,Variable
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 25
@@ -147,6 +151,22 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  internalRole: name
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  }
+.  .  .  .  .  .  3: Block {
+.  .  .  .  .  .  .  Roles: Function,Body,Statement,Block,Scope
+.  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  Offset: 36
+.  .  .  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  .  .  Col: 24
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  Offset: 41
+.  .  .  .  .  .  .  .  Line: 3
+.  .  .  .  .  .  .  .  Col: 4
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  internalRole: body
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  }

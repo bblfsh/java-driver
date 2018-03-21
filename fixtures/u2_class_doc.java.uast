@@ -4,6 +4,16 @@ Errors:
 UAST: 
 CompilationUnit {
 .  Roles: File
+.  StartPosition: {
+.  .  Offset: 0
+.  .  Line: 1
+.  .  Col: 1
+.  }
+.  EndPosition: {
+.  .  Offset: 42
+.  .  Line: 0
+.  .  Col: 0
+.  }
 .  Children: {
 .  .  0: TypeDeclaration {
 .  .  .  Roles: Visibility,Package,Declaration,Type
@@ -24,12 +34,32 @@ CompilationUnit {
 .  .  .  Children: {
 .  .  .  .  0: Javadoc {
 .  .  .  .  .  Roles: Documentation,Comment
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 0
+.  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  Col: 1
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 23
+.  .  .  .  .  .  Line: 3
+.  .  .  .  .  .  Col: 4
+.  .  .  .  .  }
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: javadoc
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
 .  .  .  .  .  .  0: TagElement {
 .  .  .  .  .  .  .  Roles: Documentation,Incomplete
+.  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  Offset: 7
+.  .  .  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  .  .  Col: 4
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  Offset: 19
+.  .  .  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  .  .  Col: 16
+.  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  internalRole: tags
 .  .  .  .  .  .  .  }

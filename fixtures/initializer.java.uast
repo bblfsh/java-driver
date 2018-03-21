@@ -4,6 +4,16 @@ Errors:
 UAST: 
 CompilationUnit {
 .  Roles: File
+.  StartPosition: {
+.  .  Offset: 0
+.  .  Line: 1
+.  .  Col: 1
+.  }
+.  EndPosition: {
+.  .  Offset: 71
+.  .  Line: 0
+.  .  Col: 0
+.  }
 .  Children: {
 .  .  0: TypeDeclaration {
 .  .  .  Roles: Visibility,Package,Declaration,Type
@@ -41,6 +51,16 @@ CompilationUnit {
 .  .  .  .  }
 .  .  .  .  1: FieldDeclaration {
 .  .  .  .  .  Roles: Declaration,Variable
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 15
+.  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  Col: 3
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 42
+.  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  Col: 30
+.  .  .  .  .  }
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: bodyDeclarations
 .  .  .  .  .  }
@@ -115,6 +135,16 @@ CompilationUnit {
 .  .  .  .  .  .  }
 .  .  .  .  .  .  4: VariableDeclarationFragment {
 .  .  .  .  .  .  .  Roles: Declaration,Variable
+.  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  Offset: 40
+.  .  .  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  .  .  Col: 28
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  Offset: 41
+.  .  .  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  .  .  Col: 29
+.  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  internalRole: fragments
 .  .  .  .  .  .  .  }
@@ -142,6 +172,16 @@ CompilationUnit {
 .  .  .  .  }
 .  .  .  .  2: Initializer {
 .  .  .  .  .  Roles: Initialization,Block,Incomplete
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 45
+.  .  .  .  .  .  Line: 3
+.  .  .  .  .  .  Col: 3
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 68
+.  .  .  .  .  .  Line: 5
+.  .  .  .  .  .  Col: 4
+.  .  .  .  .  }
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: bodyDeclarations
 .  .  .  .  .  }
@@ -165,12 +205,32 @@ CompilationUnit {
 .  .  .  .  .  .  }
 .  .  .  .  .  .  1: Block {
 .  .  .  .  .  .  .  Roles: Statement,Block,Scope
+.  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  Offset: 52
+.  .  .  .  .  .  .  .  Line: 3
+.  .  .  .  .  .  .  .  Col: 10
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  Offset: 68
+.  .  .  .  .  .  .  .  Line: 5
+.  .  .  .  .  .  .  .  Col: 4
+.  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  internalRole: body
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  0: ExpressionStatement {
 .  .  .  .  .  .  .  .  .  Roles: Statement
+.  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 58
+.  .  .  .  .  .  .  .  .  .  Line: 4
+.  .  .  .  .  .  .  .  .  .  Col: 5
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 64
+.  .  .  .  .  .  .  .  .  .  Line: 4
+.  .  .  .  .  .  .  .  .  .  Col: 11
+.  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  internalRole: statements
 .  .  .  .  .  .  .  .  .  }

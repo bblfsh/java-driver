@@ -4,6 +4,16 @@ Errors:
 UAST: 
 CompilationUnit {
 .  Roles: File
+.  StartPosition: {
+.  .  Offset: 0
+.  .  Line: 1
+.  .  Col: 1
+.  }
+.  EndPosition: {
+.  .  Offset: 68
+.  .  Line: 0
+.  .  Col: 0
+.  }
 .  Children: {
 .  .  0: TypeDeclaration {
 .  .  .  Roles: Visibility,Package,Declaration,Type
@@ -14,7 +24,7 @@ CompilationUnit {
 .  .  .  }
 .  .  .  EndPosition: {
 .  .  .  .  Offset: 68
-.  .  .  .  Line: 4294967295
+.  .  .  .  Line: 0
 .  .  .  .  Col: 0
 .  .  .  }
 .  .  .  Properties: {
@@ -24,6 +34,16 @@ CompilationUnit {
 .  .  .  Children: {
 .  .  .  .  0: MarkerAnnotation {
 .  .  .  .  .  Roles: Annotation,Incomplete
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 0
+.  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  Col: 1
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 7
+.  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  Col: 8
+.  .  .  .  .  }
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: modifiers
 .  .  .  .  .  }
@@ -49,6 +69,16 @@ CompilationUnit {
 .  .  .  .  }
 .  .  .  .  1: SingleMemberAnnotation {
 .  .  .  .  .  Roles: Annotation,Incomplete
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 8
+.  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  Col: 1
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 23
+.  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  Col: 16
+.  .  .  .  .  }
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: modifiers
 .  .  .  .  .  }
@@ -91,6 +121,16 @@ CompilationUnit {
 .  .  .  .  }
 .  .  .  .  2: NormalAnnotation {
 .  .  .  .  .  Roles: Annotation,Incomplete
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 24
+.  .  .  .  .  .  Line: 3
+.  .  .  .  .  .  Col: 1
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 55
+.  .  .  .  .  .  Line: 3
+.  .  .  .  .  .  Col: 32
+.  .  .  .  .  }
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: modifiers
 .  .  .  .  .  }
@@ -114,6 +154,16 @@ CompilationUnit {
 .  .  .  .  .  .  }
 .  .  .  .  .  .  1: MemberValuePair {
 .  .  .  .  .  .  .  Roles: Annotation,Incomplete
+.  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  Offset: 30
+.  .  .  .  .  .  .  .  Line: 3
+.  .  .  .  .  .  .  .  Col: 7
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  Offset: 40
+.  .  .  .  .  .  .  .  Line: 3
+.  .  .  .  .  .  .  .  Col: 17
+.  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  internalRole: values
 .  .  .  .  .  .  .  }
@@ -156,6 +206,16 @@ CompilationUnit {
 .  .  .  .  .  .  }
 .  .  .  .  .  .  2: MemberValuePair {
 .  .  .  .  .  .  .  Roles: Annotation,Incomplete
+.  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  Offset: 42
+.  .  .  .  .  .  .  .  Line: 3
+.  .  .  .  .  .  .  .  Col: 19
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  Offset: 54
+.  .  .  .  .  .  .  .  Line: 3
+.  .  .  .  .  .  .  .  Col: 31
+.  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  internalRole: values
 .  .  .  .  .  .  .  }

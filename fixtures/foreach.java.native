@@ -4,19 +4,39 @@
     "errors": [],
     "ast": {
         "CompilationUnit": {
+            "endColumn": 0,
+            "endPosition": 133,
             "internalClass": "CompilationUnit",
+            "startColumn": 1,
+            "startLine": 1,
+            "startPosition": 0,
             "types": [
                 {
                     "bodyDeclarations": [
                         {
                             "body": {
+                                "endColumn": 3,
+                                "endLine": 6,
+                                "endPosition": 130,
                                 "internalClass": "Block",
+                                "startColumn": 14,
+                                "startLine": 2,
+                                "startPosition": 26,
                                 "statements": [
                                     {
                                         "body": {
+                                            "endColumn": 7,
+                                            "endLine": 5,
+                                            "endPosition": 127,
                                             "internalClass": "Block",
+                                            "startColumn": 57,
+                                            "startLine": 3,
+                                            "startPosition": 84,
                                             "statements": [
                                                 {
+                                                    "endColumn": 35,
+                                                    "endLine": 4,
+                                                    "endPosition": 120,
                                                     "expression": {
                                                         "arguments": [
                                                             {
@@ -30,7 +50,13 @@
                                                                 "startPosition": 117
                                                             }
                                                         ],
+                                                        "endColumn": 34,
+                                                        "endLine": 4,
+                                                        "endPosition": 119,
                                                         "expression": {
+                                                            "endColumn": 23,
+                                                            "endLine": 4,
+                                                            "endPosition": 108,
                                                             "internalClass": "QualifiedName",
                                                             "name": {
                                                                 "endColumn": 23,
@@ -51,7 +77,10 @@
                                                                 "startColumn": 13,
                                                                 "startLine": 4,
                                                                 "startPosition": 98
-                                                            }
+                                                            },
+                                                            "startColumn": 13,
+                                                            "startLine": 4,
+                                                            "startPosition": 98
                                                         },
                                                         "internalClass": "MethodInvocation",
                                                         "name": {
@@ -63,14 +92,29 @@
                                                             "startColumn": 24,
                                                             "startLine": 4,
                                                             "startPosition": 109
-                                                        }
+                                                        },
+                                                        "startColumn": 13,
+                                                        "startLine": 4,
+                                                        "startPosition": 98
                                                     },
-                                                    "internalClass": "ExpressionStatement"
+                                                    "internalClass": "ExpressionStatement",
+                                                    "startColumn": 13,
+                                                    "startLine": 4,
+                                                    "startPosition": 98
                                                 }
                                             ]
                                         },
+                                        "endColumn": 7,
+                                        "endLine": 5,
+                                        "endPosition": 127,
                                         "expression": {
+                                            "endColumn": 55,
+                                            "endLine": 3,
+                                            "endPosition": 82,
                                             "initializer": {
+                                                "endColumn": 55,
+                                                "endLine": 3,
+                                                "endPosition": 82,
                                                 "expressions": [
                                                     {
                                                         "endColumn": 30,
@@ -163,13 +207,25 @@
                                                         "token": "9"
                                                     }
                                                 ],
-                                                "internalClass": "ArrayInitializer"
+                                                "internalClass": "ArrayInitializer",
+                                                "startColumn": 28,
+                                                "startLine": 3,
+                                                "startPosition": 55
                                             },
                                             "internalClass": "ArrayCreation",
+                                            "startColumn": 19,
+                                            "startLine": 3,
+                                            "startPosition": 46,
                                             "type": {
                                                 "dimensions": [
                                                     {
-                                                        "internalClass": "Dimension"
+                                                        "endColumn": 28,
+                                                        "endLine": 3,
+                                                        "endPosition": 55,
+                                                        "internalClass": "Dimension",
+                                                        "startColumn": 26,
+                                                        "startLine": 3,
+                                                        "startPosition": 53
                                                     }
                                                 ],
                                                 "elementType": {
@@ -182,7 +238,13 @@
                                                     "startLine": 3,
                                                     "startPosition": 50
                                                 },
-                                                "internalClass": "ArrayType"
+                                                "endColumn": 28,
+                                                "endLine": 3,
+                                                "endPosition": 55,
+                                                "internalClass": "ArrayType",
+                                                "startColumn": 23,
+                                                "startLine": 3,
+                                                "startPosition": 50
                                             }
                                         },
                                         "internalClass": "EnhancedForStatement",
@@ -215,7 +277,10 @@
                                                 "startPosition": 38
                                             },
                                             "varargs": "false"
-                                        }
+                                        },
+                                        "startColumn": 6,
+                                        "startLine": 3,
+                                        "startPosition": 33
                                     }
                                 ]
                             },

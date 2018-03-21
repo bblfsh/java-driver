@@ -4,6 +4,16 @@ Errors:
 UAST: 
 CompilationUnit {
 .  Roles: File
+.  StartPosition: {
+.  .  Offset: 0
+.  .  Line: 1
+.  .  Col: 1
+.  }
+.  EndPosition: {
+.  .  Offset: 20
+.  .  Line: 0
+.  .  Col: 0
+.  }
 .  Children: {
 .  .  0: ImportDeclaration {
 .  .  .  Roles: Declaration,Import
@@ -25,12 +35,32 @@ CompilationUnit {
 .  .  .  Children: {
 .  .  .  .  0: QualifiedName {
 .  .  .  .  .  Roles: Expression,Identifier,Qualified,Pathname,Import
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 7
+.  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  Col: 8
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 18
+.  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  Col: 19
+.  .  .  .  .  }
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: name
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
 .  .  .  .  .  .  0: QualifiedName {
 .  .  .  .  .  .  .  Roles: Expression,Identifier,Qualified
+.  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  Offset: 7
+.  .  .  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  .  .  Col: 8
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  Offset: 14
+.  .  .  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  .  .  Col: 15
+.  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  internalRole: qualifier
 .  .  .  .  .  .  .  }

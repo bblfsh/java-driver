@@ -4,10 +4,30 @@ Errors:
 UAST: 
 CompilationUnit {
 .  Roles: File
+.  StartPosition: {
+.  .  Offset: 0
+.  .  Line: 1
+.  .  Col: 1
+.  }
+.  EndPosition: {
+.  .  Offset: 11
+.  .  Line: 0
+.  .  Col: 0
+.  }
 .  Children: {
 .  .  0: PackageDeclaration {
 .  .  .  Roles: Declaration,Package
 .  .  .  TOKEN "package"
+.  .  .  StartPosition: {
+.  .  .  .  Offset: 0
+.  .  .  .  Line: 1
+.  .  .  .  Col: 1
+.  .  .  }
+.  .  .  EndPosition: {
+.  .  .  .  Offset: 10
+.  .  .  .  Line: 1
+.  .  .  .  Col: 11
+.  .  .  }
 .  .  .  Properties: {
 .  .  .  .  internalRole: package
 .  .  .  }

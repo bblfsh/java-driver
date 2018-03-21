@@ -4,6 +4,8 @@
     "errors": [],
     "ast": {
         "CompilationUnit": {
+            "endColumn": 0,
+            "endPosition": 75,
             "imports": [
                 {
                     "endColumn": 36,
@@ -11,6 +13,9 @@
                     "endPosition": 35,
                     "internalClass": "ImportDeclaration",
                     "name": {
+                        "endColumn": 35,
+                        "endLine": 1,
+                        "endPosition": 34,
                         "internalClass": "QualifiedName",
                         "name": {
                             "endColumn": 35,
@@ -23,6 +28,9 @@
                             "startPosition": 26
                         },
                         "qualifier": {
+                            "endColumn": 26,
+                            "endLine": 1,
+                            "endPosition": 25,
                             "internalClass": "QualifiedName",
                             "name": {
                                 "endColumn": 26,
@@ -35,6 +43,9 @@
                                 "startPosition": 17
                             },
                             "qualifier": {
+                                "endColumn": 17,
+                                "endLine": 1,
+                                "endPosition": 16,
                                 "internalClass": "QualifiedName",
                                 "name": {
                                     "endColumn": 17,
@@ -55,9 +66,18 @@
                                     "startColumn": 8,
                                     "startLine": 1,
                                     "startPosition": 7
-                                }
-                            }
-                        }
+                                },
+                                "startColumn": 8,
+                                "startLine": 1,
+                                "startPosition": 7
+                            },
+                            "startColumn": 8,
+                            "startLine": 1,
+                            "startPosition": 7
+                        },
+                        "startColumn": 8,
+                        "startLine": 1,
+                        "startPosition": 7
                     },
                     "onDemand": "false",
                     "startColumn": 1,
@@ -67,15 +87,30 @@
                 }
             ],
             "internalClass": "CompilationUnit",
+            "startColumn": 1,
+            "startLine": 1,
+            "startPosition": 0,
             "types": [
                 {
                     "bodyDeclarations": [
                         {
                             "body": {
+                                "endColumn": 4,
+                                "endLine": 6,
+                                "endPosition": 72,
                                 "internalClass": "Block",
+                                "startColumn": 10,
+                                "startLine": 4,
+                                "startPosition": 61,
                                 "statements": [
                                     {
-                                        "internalClass": "EmptyStatement"
+                                        "endColumn": 6,
+                                        "endLine": 5,
+                                        "endPosition": 68,
+                                        "internalClass": "EmptyStatement",
+                                        "startColumn": 5,
+                                        "startLine": 5,
+                                        "startPosition": 67
                                     }
                                 ]
                             },

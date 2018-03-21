@@ -4,6 +4,16 @@ Errors:
 UAST: 
 CompilationUnit {
 .  Roles: File
+.  StartPosition: {
+.  .  Offset: 0
+.  .  Line: 1
+.  .  Col: 1
+.  }
+.  EndPosition: {
+.  .  Offset: 16
+.  .  Line: 0
+.  .  Col: 0
+.  }
 .  Children: {
 .  .  0: TypeDeclaration {
 .  .  .  Roles: Visibility,Package,Declaration,Type
@@ -14,7 +24,7 @@ CompilationUnit {
 .  .  .  }
 .  .  .  EndPosition: {
 .  .  .  .  Offset: 16
-.  .  .  .  Line: 4294967295
+.  .  .  .  Line: 0
 .  .  .  .  Col: 0
 .  .  .  }
 .  .  .  Properties: {
@@ -41,6 +51,16 @@ CompilationUnit {
 .  .  .  .  }
 .  .  .  .  1: TypeParameter {
 .  .  .  .  .  Roles: Type,Incomplete
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 11
+.  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  Col: 12
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 12
+.  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  Col: 13
+.  .  .  .  .  }
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: typeParameters
 .  .  .  .  .  }

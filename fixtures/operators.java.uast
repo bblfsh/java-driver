@@ -4,6 +4,16 @@ Errors:
 UAST: 
 CompilationUnit {
 .  Roles: File
+.  StartPosition: {
+.  .  Offset: 0
+.  .  Line: 1
+.  .  Col: 1
+.  }
+.  EndPosition: {
+.  .  Offset: 525
+.  .  Line: 0
+.  .  Col: 0
+.  }
 .  Children: {
 .  .  0: TypeDeclaration {
 .  .  .  Roles: Visibility,Package,Declaration,Type
@@ -92,12 +102,32 @@ CompilationUnit {
 .  .  .  .  .  .  }
 .  .  .  .  .  .  2: Block {
 .  .  .  .  .  .  .  Roles: Function,Body,Statement,Block,Scope
+.  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  Offset: 26
+.  .  .  .  .  .  .  .  Line: 2
+.  .  .  .  .  .  .  .  Col: 14
+.  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  Offset: 522
+.  .  .  .  .  .  .  .  Line: 53
+.  .  .  .  .  .  .  .  Col: 3
+.  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  internalRole: body
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  0: VariableDeclarationStatement {
 .  .  .  .  .  .  .  .  .  Roles: Statement,Declaration,Variable
+.  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 30
+.  .  .  .  .  .  .  .  .  .  Line: 3
+.  .  .  .  .  .  .  .  .  .  Col: 3
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 36
+.  .  .  .  .  .  .  .  .  .  Line: 3
+.  .  .  .  .  .  .  .  .  .  Col: 9
+.  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  internalRole: statements
 .  .  .  .  .  .  .  .  .  }
@@ -121,6 +151,16 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  1: VariableDeclarationFragment {
 .  .  .  .  .  .  .  .  .  .  .  Roles: Declaration,Variable
+.  .  .  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  .  .  Offset: 34
+.  .  .  .  .  .  .  .  .  .  .  .  Line: 3
+.  .  .  .  .  .  .  .  .  .  .  .  Col: 7
+.  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  .  .  .  .  Offset: 35
+.  .  .  .  .  .  .  .  .  .  .  .  Line: 3
+.  .  .  .  .  .  .  .  .  .  .  .  Col: 8
+.  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  .  .  internalRole: fragments
 .  .  .  .  .  .  .  .  .  .  .  }
@@ -148,6 +188,16 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  1: ExpressionStatement {
 .  .  .  .  .  .  .  .  .  Roles: Statement
+.  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 39
+.  .  .  .  .  .  .  .  .  .  Line: 4
+.  .  .  .  .  .  .  .  .  .  Col: 3
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 49
+.  .  .  .  .  .  .  .  .  .  Line: 4
+.  .  .  .  .  .  .  .  .  .  Col: 13
+.  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  internalRole: statements
 .  .  .  .  .  .  .  .  .  }
@@ -245,6 +295,16 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  2: ExpressionStatement {
 .  .  .  .  .  .  .  .  .  Roles: Statement
+.  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 52
+.  .  .  .  .  .  .  .  .  .  Line: 5
+.  .  .  .  .  .  .  .  .  .  Col: 3
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 62
+.  .  .  .  .  .  .  .  .  .  Line: 5
+.  .  .  .  .  .  .  .  .  .  Col: 13
+.  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  internalRole: statements
 .  .  .  .  .  .  .  .  .  }
@@ -342,6 +402,16 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  3: ExpressionStatement {
 .  .  .  .  .  .  .  .  .  Roles: Statement
+.  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 65
+.  .  .  .  .  .  .  .  .  .  Line: 6
+.  .  .  .  .  .  .  .  .  .  Col: 3
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 75
+.  .  .  .  .  .  .  .  .  .  Line: 6
+.  .  .  .  .  .  .  .  .  .  Col: 13
+.  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  internalRole: statements
 .  .  .  .  .  .  .  .  .  }
@@ -439,6 +509,16 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  4: ExpressionStatement {
 .  .  .  .  .  .  .  .  .  Roles: Statement
+.  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 78
+.  .  .  .  .  .  .  .  .  .  Line: 7
+.  .  .  .  .  .  .  .  .  .  Col: 3
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 88
+.  .  .  .  .  .  .  .  .  .  Line: 7
+.  .  .  .  .  .  .  .  .  .  Col: 13
+.  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  internalRole: statements
 .  .  .  .  .  .  .  .  .  }
@@ -536,6 +616,16 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  5: ExpressionStatement {
 .  .  .  .  .  .  .  .  .  Roles: Statement
+.  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 91
+.  .  .  .  .  .  .  .  .  .  Line: 8
+.  .  .  .  .  .  .  .  .  .  Col: 3
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 101
+.  .  .  .  .  .  .  .  .  .  Line: 8
+.  .  .  .  .  .  .  .  .  .  Col: 13
+.  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  internalRole: statements
 .  .  .  .  .  .  .  .  .  }
@@ -633,6 +723,16 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  6: ExpressionStatement {
 .  .  .  .  .  .  .  .  .  Roles: Statement
+.  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 105
+.  .  .  .  .  .  .  .  .  .  Line: 10
+.  .  .  .  .  .  .  .  .  .  Col: 3
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 109
+.  .  .  .  .  .  .  .  .  .  Line: 10
+.  .  .  .  .  .  .  .  .  .  Col: 7
+.  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  internalRole: statements
 .  .  .  .  .  .  .  .  .  }
@@ -677,6 +777,16 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  7: ExpressionStatement {
 .  .  .  .  .  .  .  .  .  Roles: Statement
+.  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 112
+.  .  .  .  .  .  .  .  .  .  Line: 11
+.  .  .  .  .  .  .  .  .  .  Col: 3
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 116
+.  .  .  .  .  .  .  .  .  .  Line: 11
+.  .  .  .  .  .  .  .  .  .  Col: 7
+.  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  internalRole: statements
 .  .  .  .  .  .  .  .  .  }
@@ -721,6 +831,16 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  8: ExpressionStatement {
 .  .  .  .  .  .  .  .  .  Roles: Statement
+.  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 120
+.  .  .  .  .  .  .  .  .  .  Line: 13
+.  .  .  .  .  .  .  .  .  .  Col: 3
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 124
+.  .  .  .  .  .  .  .  .  .  Line: 13
+.  .  .  .  .  .  .  .  .  .  Col: 7
+.  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  internalRole: statements
 .  .  .  .  .  .  .  .  .  }
@@ -765,6 +885,16 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  9: ExpressionStatement {
 .  .  .  .  .  .  .  .  .  Roles: Statement
+.  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 127
+.  .  .  .  .  .  .  .  .  .  Line: 14
+.  .  .  .  .  .  .  .  .  .  Col: 3
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 131
+.  .  .  .  .  .  .  .  .  .  Line: 14
+.  .  .  .  .  .  .  .  .  .  Col: 7
+.  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  internalRole: statements
 .  .  .  .  .  .  .  .  .  }
@@ -809,6 +939,16 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  10: ExpressionStatement {
 .  .  .  .  .  .  .  .  .  Roles: Statement
+.  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 135
+.  .  .  .  .  .  .  .  .  .  Line: 16
+.  .  .  .  .  .  .  .  .  .  Col: 3
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 142
+.  .  .  .  .  .  .  .  .  .  Line: 16
+.  .  .  .  .  .  .  .  .  .  Col: 10
+.  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  internalRole: statements
 .  .  .  .  .  .  .  .  .  }
@@ -889,6 +1029,16 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  11: ExpressionStatement {
 .  .  .  .  .  .  .  .  .  Roles: Statement
+.  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 145
+.  .  .  .  .  .  .  .  .  .  Line: 17
+.  .  .  .  .  .  .  .  .  .  Col: 3
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 152
+.  .  .  .  .  .  .  .  .  .  Line: 17
+.  .  .  .  .  .  .  .  .  .  Col: 10
+.  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  internalRole: statements
 .  .  .  .  .  .  .  .  .  }
@@ -969,6 +1119,16 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  12: ExpressionStatement {
 .  .  .  .  .  .  .  .  .  Roles: Statement
+.  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 156
+.  .  .  .  .  .  .  .  .  .  Line: 19
+.  .  .  .  .  .  .  .  .  .  Col: 3
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 163
+.  .  .  .  .  .  .  .  .  .  Line: 19
+.  .  .  .  .  .  .  .  .  .  Col: 10
+.  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  internalRole: statements
 .  .  .  .  .  .  .  .  .  }
@@ -1049,6 +1209,16 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  13: ExpressionStatement {
 .  .  .  .  .  .  .  .  .  Roles: Statement
+.  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 167
+.  .  .  .  .  .  .  .  .  .  Line: 21
+.  .  .  .  .  .  .  .  .  .  Col: 3
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 175
+.  .  .  .  .  .  .  .  .  .  Line: 21
+.  .  .  .  .  .  .  .  .  .  Col: 11
+.  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  internalRole: statements
 .  .  .  .  .  .  .  .  .  }
@@ -1146,6 +1316,16 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  14: ExpressionStatement {
 .  .  .  .  .  .  .  .  .  Roles: Statement
+.  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 178
+.  .  .  .  .  .  .  .  .  .  Line: 22
+.  .  .  .  .  .  .  .  .  .  Col: 3
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 186
+.  .  .  .  .  .  .  .  .  .  Line: 22
+.  .  .  .  .  .  .  .  .  .  Col: 11
+.  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  internalRole: statements
 .  .  .  .  .  .  .  .  .  }
@@ -1243,6 +1423,16 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  15: ExpressionStatement {
 .  .  .  .  .  .  .  .  .  Roles: Statement
+.  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 189
+.  .  .  .  .  .  .  .  .  .  Line: 23
+.  .  .  .  .  .  .  .  .  .  Col: 3
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 197
+.  .  .  .  .  .  .  .  .  .  Line: 23
+.  .  .  .  .  .  .  .  .  .  Col: 11
+.  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  internalRole: statements
 .  .  .  .  .  .  .  .  .  }
@@ -1340,6 +1530,16 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  16: ExpressionStatement {
 .  .  .  .  .  .  .  .  .  Roles: Statement
+.  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 200
+.  .  .  .  .  .  .  .  .  .  Line: 24
+.  .  .  .  .  .  .  .  .  .  Col: 3
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 211
+.  .  .  .  .  .  .  .  .  .  Line: 24
+.  .  .  .  .  .  .  .  .  .  Col: 14
+.  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  internalRole: statements
 .  .  .  .  .  .  .  .  .  }
@@ -1437,6 +1637,16 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  17: ExpressionStatement {
 .  .  .  .  .  .  .  .  .  Roles: Statement
+.  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 214
+.  .  .  .  .  .  .  .  .  .  Line: 25
+.  .  .  .  .  .  .  .  .  .  Col: 3
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 225
+.  .  .  .  .  .  .  .  .  .  Line: 25
+.  .  .  .  .  .  .  .  .  .  Col: 14
+.  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  internalRole: statements
 .  .  .  .  .  .  .  .  .  }
@@ -1534,6 +1744,16 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  18: ExpressionStatement {
 .  .  .  .  .  .  .  .  .  Roles: Statement
+.  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 228
+.  .  .  .  .  .  .  .  .  .  Line: 26
+.  .  .  .  .  .  .  .  .  .  Col: 3
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 240
+.  .  .  .  .  .  .  .  .  .  Line: 26
+.  .  .  .  .  .  .  .  .  .  Col: 15
+.  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  internalRole: statements
 .  .  .  .  .  .  .  .  .  }
@@ -1631,6 +1851,16 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  19: ExpressionStatement {
 .  .  .  .  .  .  .  .  .  Roles: Statement
+.  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 244
+.  .  .  .  .  .  .  .  .  .  Line: 28
+.  .  .  .  .  .  .  .  .  .  Col: 3
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 262
+.  .  .  .  .  .  .  .  .  .  Line: 28
+.  .  .  .  .  .  .  .  .  .  Col: 21
+.  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  internalRole: statements
 .  .  .  .  .  .  .  .  .  }
@@ -1671,12 +1901,32 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  1: ConditionalExpression {
 .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Expression,If,Assignment,Binary,Right
+.  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 248
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 28
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  Col: 7
+.  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 261
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 28
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  Col: 20
+.  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  internalRole: rightHandSide
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: ParenthesizedExpression {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: If,Condition,Expression,Incomplete
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 248
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 28
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Col: 7
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 254
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 28
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Col: 13
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  internalRole: expression
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
@@ -1742,6 +1992,16 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  20: ExpressionStatement {
 .  .  .  .  .  .  .  .  .  Roles: Statement
+.  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 266
+.  .  .  .  .  .  .  .  .  .  Line: 30
+.  .  .  .  .  .  .  .  .  .  Col: 3
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 273
+.  .  .  .  .  .  .  .  .  .  Line: 30
+.  .  .  .  .  .  .  .  .  .  Col: 10
+.  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  internalRole: statements
 .  .  .  .  .  .  .  .  .  }
@@ -1803,6 +2063,16 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  21: ExpressionStatement {
 .  .  .  .  .  .  .  .  .  Roles: Statement
+.  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 276
+.  .  .  .  .  .  .  .  .  .  Line: 31
+.  .  .  .  .  .  .  .  .  .  Col: 3
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 283
+.  .  .  .  .  .  .  .  .  .  Line: 31
+.  .  .  .  .  .  .  .  .  .  Col: 10
+.  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  internalRole: statements
 .  .  .  .  .  .  .  .  .  }
@@ -1864,6 +2134,16 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  22: ExpressionStatement {
 .  .  .  .  .  .  .  .  .  Roles: Statement
+.  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 286
+.  .  .  .  .  .  .  .  .  .  Line: 32
+.  .  .  .  .  .  .  .  .  .  Col: 3
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 293
+.  .  .  .  .  .  .  .  .  .  Line: 32
+.  .  .  .  .  .  .  .  .  .  Col: 10
+.  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  internalRole: statements
 .  .  .  .  .  .  .  .  .  }
@@ -1925,6 +2205,16 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  23: ExpressionStatement {
 .  .  .  .  .  .  .  .  .  Roles: Statement
+.  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 296
+.  .  .  .  .  .  .  .  .  .  Line: 33
+.  .  .  .  .  .  .  .  .  .  Col: 3
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 303
+.  .  .  .  .  .  .  .  .  .  Line: 33
+.  .  .  .  .  .  .  .  .  .  Col: 10
+.  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  internalRole: statements
 .  .  .  .  .  .  .  .  .  }
@@ -1986,6 +2276,16 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  24: ExpressionStatement {
 .  .  .  .  .  .  .  .  .  Roles: Statement
+.  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 306
+.  .  .  .  .  .  .  .  .  .  Line: 34
+.  .  .  .  .  .  .  .  .  .  Col: 3
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 313
+.  .  .  .  .  .  .  .  .  .  Line: 34
+.  .  .  .  .  .  .  .  .  .  Col: 10
+.  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  internalRole: statements
 .  .  .  .  .  .  .  .  .  }
@@ -2047,6 +2347,16 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  25: ExpressionStatement {
 .  .  .  .  .  .  .  .  .  Roles: Statement
+.  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 316
+.  .  .  .  .  .  .  .  .  .  Line: 35
+.  .  .  .  .  .  .  .  .  .  Col: 3
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 323
+.  .  .  .  .  .  .  .  .  .  Line: 35
+.  .  .  .  .  .  .  .  .  .  Col: 10
+.  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  internalRole: statements
 .  .  .  .  .  .  .  .  .  }
@@ -2108,6 +2418,16 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  26: ExpressionStatement {
 .  .  .  .  .  .  .  .  .  Roles: Statement
+.  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 326
+.  .  .  .  .  .  .  .  .  .  Line: 36
+.  .  .  .  .  .  .  .  .  .  Col: 3
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 333
+.  .  .  .  .  .  .  .  .  .  Line: 36
+.  .  .  .  .  .  .  .  .  .  Col: 10
+.  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  internalRole: statements
 .  .  .  .  .  .  .  .  .  }
@@ -2169,6 +2489,16 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  27: ExpressionStatement {
 .  .  .  .  .  .  .  .  .  Roles: Statement
+.  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 336
+.  .  .  .  .  .  .  .  .  .  Line: 37
+.  .  .  .  .  .  .  .  .  .  Col: 3
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 343
+.  .  .  .  .  .  .  .  .  .  Line: 37
+.  .  .  .  .  .  .  .  .  .  Col: 10
+.  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  internalRole: statements
 .  .  .  .  .  .  .  .  .  }
@@ -2230,6 +2560,16 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  28: ExpressionStatement {
 .  .  .  .  .  .  .  .  .  Roles: Statement
+.  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 346
+.  .  .  .  .  .  .  .  .  .  Line: 38
+.  .  .  .  .  .  .  .  .  .  Col: 3
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 354
+.  .  .  .  .  .  .  .  .  .  Line: 38
+.  .  .  .  .  .  .  .  .  .  Col: 11
+.  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  internalRole: statements
 .  .  .  .  .  .  .  .  .  }
@@ -2291,6 +2631,16 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  29: ExpressionStatement {
 .  .  .  .  .  .  .  .  .  Roles: Statement
+.  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 357
+.  .  .  .  .  .  .  .  .  .  Line: 39
+.  .  .  .  .  .  .  .  .  .  Col: 3
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 365
+.  .  .  .  .  .  .  .  .  .  Line: 39
+.  .  .  .  .  .  .  .  .  .  Col: 11
+.  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  internalRole: statements
 .  .  .  .  .  .  .  .  .  }
@@ -2352,6 +2702,16 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  30: ExpressionStatement {
 .  .  .  .  .  .  .  .  .  Roles: Statement
+.  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 368
+.  .  .  .  .  .  .  .  .  .  Line: 40
+.  .  .  .  .  .  .  .  .  .  Col: 3
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 377
+.  .  .  .  .  .  .  .  .  .  Line: 40
+.  .  .  .  .  .  .  .  .  .  Col: 12
+.  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  internalRole: statements
 .  .  .  .  .  .  .  .  .  }
@@ -2413,6 +2773,16 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  31: VariableDeclarationStatement {
 .  .  .  .  .  .  .  .  .  Roles: Statement,Declaration,Variable
+.  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 381
+.  .  .  .  .  .  .  .  .  .  Line: 42
+.  .  .  .  .  .  .  .  .  .  Col: 3
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 391
+.  .  .  .  .  .  .  .  .  .  Line: 42
+.  .  .  .  .  .  .  .  .  .  Col: 13
+.  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  internalRole: statements
 .  .  .  .  .  .  .  .  .  }
@@ -2436,6 +2806,16 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  1: VariableDeclarationFragment {
 .  .  .  .  .  .  .  .  .  .  .  Roles: Declaration,Variable
+.  .  .  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  .  .  Offset: 389
+.  .  .  .  .  .  .  .  .  .  .  .  Line: 42
+.  .  .  .  .  .  .  .  .  .  .  .  Col: 11
+.  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  .  .  .  .  Offset: 390
+.  .  .  .  .  .  .  .  .  .  .  .  Line: 42
+.  .  .  .  .  .  .  .  .  .  .  .  Col: 12
+.  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  .  .  internalRole: fragments
 .  .  .  .  .  .  .  .  .  .  .  }
@@ -2463,6 +2843,16 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  32: ExpressionStatement {
 .  .  .  .  .  .  .  .  .  Roles: Statement
+.  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 395
+.  .  .  .  .  .  .  .  .  .  Line: 44
+.  .  .  .  .  .  .  .  .  .  Col: 3
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 405
+.  .  .  .  .  .  .  .  .  .  Line: 44
+.  .  .  .  .  .  .  .  .  .  Col: 13
+.  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  internalRole: statements
 .  .  .  .  .  .  .  .  .  }
@@ -2543,6 +2933,16 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  33: ExpressionStatement {
 .  .  .  .  .  .  .  .  .  Roles: Statement
+.  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 409
+.  .  .  .  .  .  .  .  .  .  Line: 46
+.  .  .  .  .  .  .  .  .  .  Col: 3
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 420
+.  .  .  .  .  .  .  .  .  .  Line: 46
+.  .  .  .  .  .  .  .  .  .  Col: 14
+.  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  internalRole: statements
 .  .  .  .  .  .  .  .  .  }
@@ -2640,6 +3040,16 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  34: ExpressionStatement {
 .  .  .  .  .  .  .  .  .  Roles: Statement
+.  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 423
+.  .  .  .  .  .  .  .  .  .  Line: 47
+.  .  .  .  .  .  .  .  .  .  Col: 3
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 433
+.  .  .  .  .  .  .  .  .  .  Line: 47
+.  .  .  .  .  .  .  .  .  .  Col: 13
+.  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  internalRole: statements
 .  .  .  .  .  .  .  .  .  }
@@ -2737,6 +3147,16 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  35: ExpressionStatement {
 .  .  .  .  .  .  .  .  .  Roles: Statement
+.  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 436
+.  .  .  .  .  .  .  .  .  .  Line: 48
+.  .  .  .  .  .  .  .  .  .  Col: 3
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 447
+.  .  .  .  .  .  .  .  .  .  Line: 48
+.  .  .  .  .  .  .  .  .  .  Col: 14
+.  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  internalRole: statements
 .  .  .  .  .  .  .  .  .  }
@@ -2834,6 +3254,16 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  36: ExpressionStatement {
 .  .  .  .  .  .  .  .  .  Roles: Statement
+.  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 450
+.  .  .  .  .  .  .  .  .  .  Line: 49
+.  .  .  .  .  .  .  .  .  .  Col: 3
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 460
+.  .  .  .  .  .  .  .  .  .  Line: 49
+.  .  .  .  .  .  .  .  .  .  Col: 13
+.  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  internalRole: statements
 .  .  .  .  .  .  .  .  .  }
@@ -2931,6 +3361,16 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  37: ExpressionStatement {
 .  .  .  .  .  .  .  .  .  Roles: Statement
+.  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 463
+.  .  .  .  .  .  .  .  .  .  Line: 50
+.  .  .  .  .  .  .  .  .  .  Col: 3
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 474
+.  .  .  .  .  .  .  .  .  .  Line: 50
+.  .  .  .  .  .  .  .  .  .  Col: 14
+.  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  internalRole: statements
 .  .  .  .  .  .  .  .  .  }
@@ -3028,6 +3468,16 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  38: ExpressionStatement {
 .  .  .  .  .  .  .  .  .  Roles: Statement
+.  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 478
+.  .  .  .  .  .  .  .  .  .  Line: 52
+.  .  .  .  .  .  .  .  .  .  Col: 3
+.  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  .  .  Offset: 519
+.  .  .  .  .  .  .  .  .  .  Line: 52
+.  .  .  .  .  .  .  .  .  .  Col: 44
+.  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  internalRole: statements
 .  .  .  .  .  .  .  .  .  }
@@ -3068,18 +3518,48 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  1: InstanceofExpression {
 .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Assignment,Binary,Right
+.  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 482
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 52
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  Col: 7
+.  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 518
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 52
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  Col: 43
+.  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  internalRole: rightHandSide
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: ClassInstanceCreation {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Expression,Call,Instance
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 482
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 52
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Col: 7
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 499
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 52
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Col: 24
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  internalRole: leftOperand
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: SimpleType {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Call,Callee,Type
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 486
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 52
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Col: 11
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 493
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 52
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Col: 18
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  internalRole: type
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
@@ -3124,6 +3604,16 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  1: SimpleType {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Type
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 511
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 52
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Col: 36
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 518
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 52
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Col: 43
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  internalRole: rightOperand
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }

@@ -4,9 +4,29 @@ Errors:
 UAST: 
 CompilationUnit {
 .  Roles: File
+.  StartPosition: {
+.  .  Offset: 0
+.  .  Line: 1
+.  .  Col: 1
+.  }
+.  EndPosition: {
+.  .  Offset: 15
+.  .  Line: 0
+.  .  Col: 0
+.  }
 .  Children: {
 .  .  0: EnumDeclaration {
 .  .  .  Roles: Declaration,Type,Enumeration
+.  .  .  StartPosition: {
+.  .  .  .  Offset: 0
+.  .  .  .  Line: 1
+.  .  .  .  Col: 1
+.  .  .  }
+.  .  .  EndPosition: {
+.  .  .  .  Offset: 12
+.  .  .  .  Line: 1
+.  .  .  .  Col: 13
+.  .  .  }
 .  .  .  Properties: {
 .  .  .  .  internalRole: types
 .  .  .  }
@@ -30,6 +50,16 @@ CompilationUnit {
 .  .  .  .  }
 .  .  .  .  1: EnumConstantDeclaration {
 .  .  .  .  .  Roles: Declaration,Enumeration
+.  .  .  .  .  StartPosition: {
+.  .  .  .  .  .  Offset: 9
+.  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  Col: 10
+.  .  .  .  .  }
+.  .  .  .  .  EndPosition: {
+.  .  .  .  .  .  Offset: 10
+.  .  .  .  .  .  Line: 1
+.  .  .  .  .  .  Col: 11
+.  .  .  .  .  }
 .  .  .  .  .  Properties: {
 .  .  .  .  .  .  internalRole: enumConstants
 .  .  .  .  .  }
