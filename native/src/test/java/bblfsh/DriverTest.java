@@ -69,4 +69,18 @@ public class DriverTest {
         final String result = new String(out.toByteArray());
         assertThat(result).isEqualTo("{\"status\":\"fatal\",\"errors\":[\"Unrecognized token 'garbage': was expecting ('true', 'false' or 'null')\\n at [Source: garbage; line: 1, column: 15]\"]}\n");
     }
+
+    @Test
+    public void processComment() throws DriverException, CloseException {
+        final String input = "{\"content\":\"class EOF_Test { public void method() {\\r\\n   /*\\r\\n*/ } }\"}";
+        final InputStream in = new ByteArrayInputStream(input.getBytes());
+        final RequestReader reader = new RequestReader(in);
+
+        final ByteArrayOutputStream out = new ByteArrayOutputStream();
+        final ResponseWriter writer = new ResponseWriter(out);
+
+        final Driver driver = new Driver(reader, writer);
+        driver.processOne();
+        //TODO: check output
+    }
 }
