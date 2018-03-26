@@ -57,7 +57,8 @@ public class CommentVisitor extends ASTVisitor {
 
             int startCol = lineCount == startLineNumber ? startLineColumn : 0;
             int endCol = lineCount == endLineNumber ? endLineColumn : source[lineCount].length();
-            String blockCommentLine = source[lineCount].substring(startLineColumn, endCol).trim();
+
+            String blockCommentLine = source[lineCount].substring(startCol, endCol).trim();
 
             blockComment.append(blockCommentLine);
             if (lineCount != endLineNumber) {
