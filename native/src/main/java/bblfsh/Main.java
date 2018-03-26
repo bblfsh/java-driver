@@ -12,6 +12,7 @@ public class Main {
         } catch (CloseException e) {
             System.exit(0);
         } catch (DriverException e) {
+            e.printStackTrace(System.err);
             System.exit(1);
         }
     }
