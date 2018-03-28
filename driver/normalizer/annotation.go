@@ -61,7 +61,7 @@ var AnnotationRules = On(jdt.CompilationUnit).Roles(uast.File).Descendants(
 		On(jdt.PropertyParameters).Roles(uast.Function, uast.Argument).Self(
 			On(HasProperty("varargs", "true")).Roles(uast.Function, uast.ArgsList),
 		).Children(
-			On(jdt.PropertyName).Roles(uast.Function, uast.Name),
+			On(jdt.PropertyName).Roles(uast.Function, uast.Name, uast.Argument),
 		),
 	),
 	On(jdt.LambdaExpression).Roles(uast.Declaration, uast.Function, uast.Anonymous).Children(
@@ -69,7 +69,7 @@ var AnnotationRules = On(jdt.CompilationUnit).Roles(uast.File).Descendants(
 		On(jdt.PropertyParameters).Roles(uast.Function, uast.Argument).Self(
 			On(HasProperty("varargs", "true")).Roles(uast.Function, uast.ArgsList),
 		).Children(
-			On(jdt.PropertyName).Roles(uast.Function, uast.Name),
+			On(jdt.PropertyName).Roles(uast.Function, uast.Name, uast.Argument),
 		),
 	),
 	On(jdt.TypeMethodReference).Roles(uast.Declaration, uast.Function).Children(
