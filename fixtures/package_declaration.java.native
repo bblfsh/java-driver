@@ -4,31 +4,49 @@
     "errors": [],
     "ast": {
         "CompilationUnit": {
-            "endColumn": 0,
-            "endPosition": 11,
-            "internalClass": "CompilationUnit",
-            "package": {
-                "endColumn": 11,
-                "endLine": 1,
-                "endPosition": 10,
-                "internalClass": "PackageDeclaration",
-                "name": {
-                    "endColumn": 10,
-                    "endLine": 1,
-                    "endPosition": 9,
-                    "identifier": "a",
-                    "internalClass": "SimpleName",
-                    "startColumn": 9,
-                    "startLine": 1,
-                    "startPosition": 8
-                },
-                "startColumn": 1,
-                "startLine": 1,
-                "startPosition": 0
+            "@end": {
+                "@type": "ast:Position",
+                "col": 0,
+                "off": 11
             },
-            "startColumn": 1,
-            "startLine": 1,
-            "startPosition": 0
+            "@start": {
+                "@type": "ast:Position",
+                "col": 1,
+                "line": 1,
+                "off": 0
+            },
+            "@type": "CompilationUnit",
+            "package": {
+                "@end": {
+                    "@type": "ast:Position",
+                    "col": 11,
+                    "line": 1,
+                    "off": 10
+                },
+                "@start": {
+                    "@type": "ast:Position",
+                    "col": 1,
+                    "line": 1,
+                    "off": 0
+                },
+                "@type": "PackageDeclaration",
+                "name": {
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 10,
+                        "line": 1,
+                        "off": 9
+                    },
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 9,
+                        "line": 1,
+                        "off": 8
+                    },
+                    "@type": "SimpleName",
+                    "identifier": "a"
+                }
+            }
         }
     }
 }

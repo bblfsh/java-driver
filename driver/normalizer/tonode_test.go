@@ -1,5 +1,5 @@
 package normalizer
-
+/*
 import (
 	"testing"
 
@@ -16,3 +16,4 @@ func TestNativeToNode(t *testing.T) {
 	require.NoError(err)
 	require.NotNil(n)
 }
+*/

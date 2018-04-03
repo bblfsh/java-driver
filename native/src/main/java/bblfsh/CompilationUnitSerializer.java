@@ -47,7 +47,7 @@ public class CompilationUnitSerializer extends StdSerializer<CompilationUnit> {
 
         final int Ntype = node.getNodeType();
         String ClassName = node.nodeClassForType(Ntype).getName().substring(25);
-        jG.writeFieldName("internalClass");
+        jG.writeFieldName("@type");
         jG.writeString(ClassName);
 
         for (StructuralPropertyDescriptor descriptor : descriptorList) {
@@ -115,21 +115,29 @@ public class CompilationUnitSerializer extends StdSerializer<CompilationUnit> {
 
     private void serializePosition(CompilationUnit cu, ASTNode node, JsonGenerator jG) throws IOException {
         final int startPosition = node.getStartPosition();
-        serializePositionFields(cu, jG, startPosition, "start");
+        serializePositionFields(cu, jG, startPosition, "@start");
 
         final int endPosition = startPosition + node.getLength();
-        serializePositionFields(cu, jG, endPosition, "end");
+        serializePositionFields(cu, jG, endPosition, "@end");
     }
 
-    private void serializePositionFields(CompilationUnit cu, JsonGenerator jG, int pos, String pref) throws IOException {
-        jG.writeFieldName(pref+"Position");
+    private void serializePositionFields(CompilationUnit cu, JsonGenerator jG, int pos, String name) throws IOException {
+        jG.writeFieldName(name);
+        jG.writeStartObject();
+
+        jG.writeFieldName("@type");
+        jG.writeString("ast:Position");
+
+        jG.writeFieldName("off");
         jG.writeNumber(pos);
         final int line = cu.getLineNumber(pos);
         if (line >= 0) {
-            jG.writeFieldName(pref+"Line");
+            jG.writeFieldName("line");
             jG.writeNumber(line);
         }
-        jG.writeFieldName(pref+"Column");
+        jG.writeFieldName("col");
         jG.writeNumber(cu.getColumnNumber(pos) + 1); // 1-based numbering
+
+        jG.writeEndObject();
     }
 }

@@ -1,24 +1,52 @@
 package normalizer
 
-import (
-	"github.com/bblfsh/java-driver/driver/normalizer/jdt"
 
-	"gopkg.in/bblfsh/sdk.v1/uast"
-	. "gopkg.in/bblfsh/sdk.v1/uast/ann"
-	"gopkg.in/bblfsh/sdk.v1/uast/transformer"
-	"gopkg.in/bblfsh/sdk.v1/uast/transformer/annotatter"
+import (
+	"gopkg.in/bblfsh/sdk.v1/uast/role"
+	. "gopkg.in/bblfsh/sdk.v1/uast/transformer"
 )
 
-// Transformers is the of list `transformer.Transfomer` to apply to a UAST, to
-// learn more about the Transformers and the available ones take a look to:
-// https://godoc.org/gopkg.in/bblfsh/sdk.v1/uast/transformers
-var Transformers = []transformer.Tranformer{
-	annotatter.NewAnnotatter(AnnotationRules),
+// Native is the of list `transformer.Transformer` to apply to a native AST.
+// To learn more about the Transformers and the available ones take a look to:
+// https://godoc.org/gopkg.in/bblfsh/sdk.v1/uast/transformer
+var Native = Transformers([][]Transformer{
+	{
+		// ResponseMetadata is a transform that trims response metadata from AST.
+		//
+		// https://godoc.org/gopkg.in/bblfsh/sdk.v1/uast#ResponseMetadata
+		ResponseMetadata{
+			TopLevelIsRootNode: false,
+		},
+	},
+	// The main block of transformation rules.
+	{Mappings(Annotations...)},
+	{
+		// RolesDedup is used to remove duplicate roles assigned by multiple
+		// transformation rules.
+		RolesDedup(),
+	},
+}...)
+
+// Code is a special block of transformations that are applied at the end
+// and can access original source code file. It can be used to improve or
+// fix positional information.
+//
+// https://godoc.org/gopkg.in/bblfsh/sdk.v1/uast/transformer/positioner
+var Code []CodeTransformer // Java already provides all the information we need
+
+// mapAST is a helper for describing a single AST transformation for a given node type.
+func mapAST(typ string, ast, norm ObjectOp, roles ...role.Role) Mapping {
+	return ASTMap(typ,
+		ASTObjectLeft(typ, ast),
+		ASTObjectRight(typ, norm, nil, roles...),
+	)
 }
 
-// AnnotationRules describes how a UAST should be annotated with `uast.Role`.
-//
-// https://godoc.org/gopkg.in/bblfsh/sdk.v1/uast/ann
+// Annotations is a list of individual transformations to annotate a native AST with roles.
+var Annotations = []Mapping{
+}
+
+/*
 var AnnotationRules = On(jdt.CompilationUnit).Roles(uast.File).Descendants(
 	// Names
 	On(jdt.QualifiedName).Roles(uast.Expression, uast.Identifier, uast.Qualified),
@@ -315,3 +343,4 @@ var AnnotationRules = On(jdt.CompilationUnit).Roles(uast.File).Descendants(
 	On(jdt.Dimension).Roles(uast.Type, uast.Incomplete),
 	On(jdt.TypeParameter).Roles(uast.Type, uast.Incomplete),
 )
+*/
