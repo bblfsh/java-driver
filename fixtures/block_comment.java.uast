@@ -17,6 +17,7 @@ CompilationUnit {
 .  Children: {
 .  .  0: BlockComment {
 .  .  .  Roles: Comment
+.  .  .  TOKEN " block comment before "
 .  .  .  StartPosition: {
 .  .  .  .  Offset: 0
 .  .  .  .  Line: 1
@@ -29,11 +30,10 @@ CompilationUnit {
 .  .  .  }
 .  .  .  Properties: {
 .  .  .  .  internalRole: comments
-.  .  .  .  text:  block comment before 
 .  .  .  }
 .  .  }
 .  .  1: TypeDeclaration {
-.  .  .  Roles: Visibility,Package,Declaration,Type
+.  .  .  Roles: Declaration,Package,Type,Visibility
 .  .  .  StartPosition: {
 .  .  .  .  Offset: 27
 .  .  .  .  Line: 2
@@ -70,6 +70,7 @@ CompilationUnit {
 .  .  }
 .  .  2: BlockComment {
 .  .  .  Roles: Comment
+.  .  .  TOKEN " block comment inline "
 .  .  .  StartPosition: {
 .  .  .  .  Offset: 37
 .  .  .  .  Line: 2
@@ -82,11 +83,11 @@ CompilationUnit {
 .  .  .  }
 .  .  .  Properties: {
 .  .  .  .  internalRole: comments
-.  .  .  .  text:  block comment inline 
 .  .  .  }
 .  .  }
 .  .  3: BlockComment {
 .  .  .  Roles: Comment
+.  .  .  TOKEN " block comment after "
 .  .  .  StartPosition: {
 .  .  .  .  Offset: 66
 .  .  .  .  Line: 3
@@ -99,11 +100,15 @@ CompilationUnit {
 .  .  .  }
 .  .  .  Properties: {
 .  .  .  .  internalRole: comments
-.  .  .  .  text:  block comment after 
 .  .  .  }
 .  .  }
 .  .  4: BlockComment {
 .  .  .  Roles: Comment
+.  .  .  TOKEN "
+* This is a multiline
+* block comment
+* end
+"
 .  .  .  StartPosition: {
 .  .  .  .  Offset: 93
 .  .  .  .  Line: 5
@@ -116,11 +121,6 @@ CompilationUnit {
 .  .  .  }
 .  .  .  Properties: {
 .  .  .  .  internalRole: comments
-.  .  .  .  text: 
-* This is a multiline
-* block comment
-* end
-
 .  .  .  }
 .  .  }
 .  }
