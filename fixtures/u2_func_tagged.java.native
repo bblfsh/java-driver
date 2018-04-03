@@ -16,6 +16,8 @@
                 "off": 0
             },
             "@type": "CompilationUnit",
+            "imports": null,
+            "package": null,
             "types": [
                 {
                     "@end": {
@@ -59,9 +61,12 @@
                                     "line": 5,
                                     "off": 114
                                 },
-                                "@type": "Block"
+                                "@type": "Block",
+                                "statements": null
                             },
                             "constructor": "false",
+                            "extraDimensions2": null,
+                            "javadoc": null,
                             "modifiers": [
                                 {
                                     "@end": {
@@ -285,6 +290,9 @@
                                 "@type": "SimpleName",
                                 "identifier": "testfunc1"
                             },
+                            "parameters": null,
+                            "receiverQualifier": null,
+                            "receiverType": null,
                             "returnType2": {
                                 "@end": {
                                     "@type": "ast:Position",
@@ -299,11 +307,16 @@
                                     "off": 97
                                 },
                                 "@type": "PrimitiveType",
+                                "annotations": null,
                                 "primitiveTypeCode": "void"
-                            }
+                            },
+                            "thrownExceptionTypes": null,
+                            "typeParameters": null
                         }
                     ],
                     "interface": "false",
+                    "javadoc": null,
+                    "modifiers": null,
                     "name": {
                         "@end": {
                             "@type": "ast:Position",
@@ -319,7 +332,10 @@
                         },
                         "@type": "SimpleName",
                         "identifier": "Testcls1"
-                    }
+                    },
+                    "superInterfaceTypes": null,
+                    "superclassType": null,
+                    "typeParameters": null
                 }
             ]
         }

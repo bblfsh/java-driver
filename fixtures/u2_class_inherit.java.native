@@ -16,6 +16,8 @@
                 "off": 0
             },
             "@type": "CompilationUnit",
+            "imports": null,
+            "package": null,
             "types": [
                 {
                     "@end": {
@@ -31,7 +33,10 @@
                         "off": 0
                     },
                     "@type": "TypeDeclaration",
+                    "bodyDeclarations": null,
                     "interface": "false",
+                    "javadoc": null,
+                    "modifiers": null,
                     "name": {
                         "@end": {
                             "@type": "ast:Position",
@@ -48,6 +53,7 @@
                         "@type": "SimpleName",
                         "identifier": "Testcls1"
                     },
+                    "superInterfaceTypes": null,
                     "superclassType": {
                         "@end": {
                             "@type": "ast:Position",
@@ -62,6 +68,7 @@
                             "off": 23
                         },
                         "@type": "SimpleType",
+                        "annotations": null,
                         "name": {
                             "@end": {
                                 "@type": "ast:Position",
@@ -78,7 +85,8 @@
                             "@type": "SimpleName",
                             "identifier": "Testcls2"
                         }
-                    }
+                    },
+                    "typeParameters": null
                 }
             ]
         }

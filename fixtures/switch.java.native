@@ -16,6 +16,8 @@
                 "off": 0
             },
             "@type": "CompilationUnit",
+            "imports": null,
+            "package": null,
             "types": [
                 {
                     "@end": {
@@ -231,7 +233,8 @@
                                                         },
                                                         "@type": "SimpleName",
                                                         "identifier": "println"
-                                                    }
+                                                    },
+                                                    "typeArguments": null
                                                 }
                                             },
                                             {
@@ -247,7 +250,8 @@
                                                     "line": 4,
                                                     "off": 97
                                                 },
-                                                "@type": "BreakStatement"
+                                                "@type": "BreakStatement",
+                                                "label": null
                                             },
                                             {
                                                 "@end": {
@@ -388,7 +392,8 @@
                                                         },
                                                         "@type": "SimpleName",
                                                         "identifier": "println"
-                                                    }
+                                                    },
+                                                    "typeArguments": null
                                                 }
                                             },
                                             {
@@ -404,7 +409,8 @@
                                                     "line": 5,
                                                     "off": 149
                                                 },
-                                                "@type": "BreakStatement"
+                                                "@type": "BreakStatement",
+                                                "label": null
                                             },
                                             {
                                                 "@end": {
@@ -545,7 +551,8 @@
                                                         },
                                                         "@type": "SimpleName",
                                                         "identifier": "println"
-                                                    }
+                                                    },
+                                                    "typeArguments": null
                                                 }
                                             },
                                             {
@@ -561,7 +568,8 @@
                                                     "line": 6,
                                                     "off": 201
                                                 },
-                                                "@type": "BreakStatement"
+                                                "@type": "BreakStatement",
+                                                "label": null
                                             },
                                             {
                                                 "@end": {
@@ -576,7 +584,8 @@
                                                     "line": 7,
                                                     "off": 220
                                                 },
-                                                "@type": "SwitchCase"
+                                                "@type": "SwitchCase",
+                                                "expression": null
                                             },
                                             {
                                                 "@end": {
@@ -686,7 +695,8 @@
                                                         },
                                                         "@type": "SimpleName",
                                                         "identifier": "println"
-                                                    }
+                                                    },
+                                                    "typeArguments": null
                                                 }
                                             },
                                             {
@@ -702,13 +712,17 @@
                                                     "line": 7,
                                                     "off": 260
                                                 },
-                                                "@type": "BreakStatement"
+                                                "@type": "BreakStatement",
+                                                "label": null
                                             }
                                         ]
                                     }
                                 ]
                             },
                             "constructor": "false",
+                            "extraDimensions2": null,
+                            "javadoc": null,
+                            "modifiers": null,
                             "name": {
                                 "@end": {
                                     "@type": "ast:Position",
@@ -725,6 +739,9 @@
                                 "@type": "SimpleName",
                                 "identifier": "code"
                             },
+                            "parameters": null,
+                            "receiverQualifier": null,
+                            "receiverType": null,
                             "returnType2": {
                                 "@end": {
                                     "@type": "ast:Position",
@@ -739,11 +756,16 @@
                                     "off": 17
                                 },
                                 "@type": "PrimitiveType",
+                                "annotations": null,
                                 "primitiveTypeCode": "void"
-                            }
+                            },
+                            "thrownExceptionTypes": null,
+                            "typeParameters": null
                         }
                     ],
                     "interface": "false",
+                    "javadoc": null,
+                    "modifiers": null,
                     "name": {
                         "@end": {
                             "@type": "ast:Position",
@@ -759,7 +781,10 @@
                         },
                         "@type": "SimpleName",
                         "identifier": "Code"
-                    }
+                    },
+                    "superInterfaceTypes": null,
+                    "superclassType": null,
+                    "typeParameters": null
                 }
             ]
         }

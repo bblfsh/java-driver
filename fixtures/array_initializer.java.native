@@ -16,6 +16,8 @@
                 "off": 0
             },
             "@type": "CompilationUnit",
+            "imports": null,
+            "package": null,
             "types": [
                 {
                     "@end": {
@@ -90,6 +92,7 @@
                                                     "off": 38
                                                 },
                                                 "@type": "VariableDeclarationFragment",
+                                                "extraDimensions2": null,
                                                 "initializer": {
                                                     "@end": {
                                                         "@type": "ast:Position",
@@ -141,6 +144,7 @@
                                                 }
                                             }
                                         ],
+                                        "modifiers": null,
                                         "type": {
                                             "@end": {
                                                 "@type": "ast:Position",
@@ -169,7 +173,8 @@
                                                         "line": 3,
                                                         "off": 35
                                                     },
-                                                    "@type": "Dimension"
+                                                    "@type": "Dimension",
+                                                    "annotations": null
                                                 }
                                             ],
                                             "elementType": {
@@ -186,6 +191,7 @@
                                                     "off": 32
                                                 },
                                                 "@type": "PrimitiveType",
+                                                "annotations": null,
                                                 "primitiveTypeCode": "int"
                                             }
                                         }
@@ -193,6 +199,9 @@
                                 ]
                             },
                             "constructor": "false",
+                            "extraDimensions2": null,
+                            "javadoc": null,
+                            "modifiers": null,
                             "name": {
                                 "@end": {
                                     "@type": "ast:Position",
@@ -209,6 +218,9 @@
                                 "@type": "SimpleName",
                                 "identifier": "code"
                             },
+                            "parameters": null,
+                            "receiverQualifier": null,
+                            "receiverType": null,
                             "returnType2": {
                                 "@end": {
                                     "@type": "ast:Position",
@@ -223,11 +235,16 @@
                                     "off": 14
                                 },
                                 "@type": "PrimitiveType",
+                                "annotations": null,
                                 "primitiveTypeCode": "void"
-                            }
+                            },
+                            "thrownExceptionTypes": null,
+                            "typeParameters": null
                         }
                     ],
                     "interface": "false",
+                    "javadoc": null,
+                    "modifiers": null,
                     "name": {
                         "@end": {
                             "@type": "ast:Position",
@@ -243,7 +260,10 @@
                         },
                         "@type": "SimpleName",
                         "identifier": "Code"
-                    }
+                    },
+                    "superInterfaceTypes": null,
+                    "superclassType": null,
+                    "typeParameters": null
                 }
             ]
         }

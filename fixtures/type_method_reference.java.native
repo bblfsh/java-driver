@@ -113,6 +113,7 @@
                     "static": "false"
                 }
             ],
+            "package": null,
             "types": [
                 {
                     "@end": {
@@ -128,6 +129,8 @@
                         "off": 31
                     },
                     "@type": "AnnotationTypeDeclaration",
+                    "bodyDeclarations": null,
+                    "javadoc": null,
                     "modifiers": [
                         {
                             "@end": {
@@ -254,7 +257,11 @@
                                 "off": 92
                             },
                             "@type": "MethodDeclaration",
+                            "body": null,
                             "constructor": "false",
+                            "extraDimensions2": null,
+                            "javadoc": null,
+                            "modifiers": null,
                             "name": {
                                 "@end": {
                                     "@type": "ast:Position",
@@ -286,6 +293,9 @@
                                         "off": 104
                                     },
                                     "@type": "SingleVariableDeclaration",
+                                    "extraDimensions2": null,
+                                    "initializer": null,
+                                    "modifiers": null,
                                     "name": {
                                         "@end": {
                                             "@type": "ast:Position",
@@ -330,7 +340,8 @@
                                                     "line": 5,
                                                     "off": 108
                                                 },
-                                                "@type": "Dimension"
+                                                "@type": "Dimension",
+                                                "annotations": null
                                             }
                                         ],
                                         "elementType": {
@@ -347,12 +358,16 @@
                                                 "off": 104
                                             },
                                             "@type": "PrimitiveType",
+                                            "annotations": null,
                                             "primitiveTypeCode": "int"
                                         }
                                     },
-                                    "varargs": "false"
+                                    "varargs": "false",
+                                    "varargsAnnotations": null
                                 }
                             ],
+                            "receiverQualifier": null,
+                            "receiverType": null,
                             "returnType2": {
                                 "@end": {
                                     "@type": "ast:Position",
@@ -367,6 +382,7 @@
                                     "off": 92
                                 },
                                 "@type": "SimpleType",
+                                "annotations": null,
                                 "name": {
                                     "@end": {
                                         "@type": "ast:Position",
@@ -383,10 +399,14 @@
                                     "@type": "SimpleName",
                                     "identifier": "Object"
                                 }
-                            }
+                            },
+                            "thrownExceptionTypes": null,
+                            "typeParameters": null
                         }
                     ],
                     "interface": "true",
+                    "javadoc": null,
+                    "modifiers": null,
                     "name": {
                         "@end": {
                             "@type": "ast:Position",
@@ -402,7 +422,10 @@
                         },
                         "@type": "SimpleName",
                         "identifier": "I"
-                    }
+                    },
+                    "superInterfaceTypes": null,
+                    "superclassType": null,
+                    "typeParameters": null
                 },
                 {
                     "@end": {
@@ -477,6 +500,7 @@
                                                     "off": 150
                                                 },
                                                 "@type": "VariableDeclarationFragment",
+                                                "extraDimensions2": null,
                                                 "initializer": {
                                                     "@end": {
                                                         "@type": "ast:Position",
@@ -535,7 +559,8 @@
                                                                     "line": 9,
                                                                     "off": 161
                                                                 },
-                                                                "@type": "Dimension"
+                                                                "@type": "Dimension",
+                                                                "annotations": null
                                                             }
                                                         ],
                                                         "elementType": {
@@ -603,6 +628,7 @@
                                                                 "off": 166
                                                             },
                                                             "@type": "SimpleType",
+                                                            "annotations": null,
                                                             "name": {
                                                                 "@end": {
                                                                     "@type": "ast:Position",
@@ -640,6 +666,7 @@
                                                 }
                                             }
                                         ],
+                                        "modifiers": null,
                                         "type": {
                                             "@end": {
                                                 "@type": "ast:Position",
@@ -654,6 +681,7 @@
                                                 "off": 148
                                             },
                                             "@type": "SimpleType",
+                                            "annotations": null,
                                             "name": {
                                                 "@end": {
                                                     "@type": "ast:Position",
@@ -675,6 +703,9 @@
                                 ]
                             },
                             "constructor": "false",
+                            "extraDimensions2": null,
+                            "javadoc": null,
+                            "modifiers": null,
                             "name": {
                                 "@end": {
                                     "@type": "ast:Position",
@@ -691,6 +722,9 @@
                                 "@type": "SimpleName",
                                 "identifier": "bar"
                             },
+                            "parameters": null,
+                            "receiverQualifier": null,
+                            "receiverType": null,
                             "returnType2": {
                                 "@end": {
                                     "@type": "ast:Position",
@@ -705,11 +739,16 @@
                                     "off": 131
                                 },
                                 "@type": "PrimitiveType",
+                                "annotations": null,
                                 "primitiveTypeCode": "void"
-                            }
+                            },
+                            "thrownExceptionTypes": null,
+                            "typeParameters": null
                         }
                     ],
                     "interface": "false",
+                    "javadoc": null,
+                    "modifiers": null,
                     "name": {
                         "@end": {
                             "@type": "ast:Position",
@@ -725,7 +764,10 @@
                         },
                         "@type": "SimpleName",
                         "identifier": "X"
-                    }
+                    },
+                    "superInterfaceTypes": null,
+                    "superclassType": null,
+                    "typeParameters": null
                 }
             ]
         }

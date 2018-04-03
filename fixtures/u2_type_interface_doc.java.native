@@ -17,6 +17,8 @@
             },
             "@type": "CompilationUnit",
             "comments": [],
+            "imports": null,
+            "package": null,
             "types": [
                 {
                     "@end": {
@@ -32,6 +34,7 @@
                         "off": 0
                     },
                     "@type": "TypeDeclaration",
+                    "bodyDeclarations": null,
                     "interface": "true",
                     "javadoc": {
                         "@end": {
@@ -79,10 +82,12 @@
                                         "@type": "TextElement",
                                         "text": "Javadoc comment"
                                     }
-                                ]
+                                ],
+                                "tagName": null
                             }
                         ]
                     },
+                    "modifiers": null,
                     "name": {
                         "@end": {
                             "@type": "ast:Position",
@@ -98,7 +103,10 @@
                         },
                         "@type": "SimpleName",
                         "identifier": "Testiface1"
-                    }
+                    },
+                    "superInterfaceTypes": null,
+                    "superclassType": null,
+                    "typeParameters": null
                 }
             ]
         }

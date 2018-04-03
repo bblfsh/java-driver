@@ -16,6 +16,8 @@
                 "off": 0
             },
             "@type": "CompilationUnit",
+            "imports": null,
+            "package": null,
             "types": [
                 {
                     "@end": {
@@ -88,7 +90,8 @@
                                                 "line": 3,
                                                 "off": 26
                                             },
-                                            "@type": "Block"
+                                            "@type": "Block",
+                                            "statements": null
                                         },
                                         "catchClauses": [
                                             {
@@ -118,7 +121,8 @@
                                                         "line": 4,
                                                         "off": 86
                                                     },
-                                                    "@type": "Block"
+                                                    "@type": "Block",
+                                                    "statements": null
                                                 },
                                                 "exception": {
                                                     "@end": {
@@ -134,6 +138,9 @@
                                                         "off": 40
                                                     },
                                                     "@type": "SingleVariableDeclaration",
+                                                    "extraDimensions2": null,
+                                                    "initializer": null,
+                                                    "modifiers": null,
                                                     "name": {
                                                         "@end": {
                                                             "@type": "ast:Position",
@@ -179,6 +186,7 @@
                                                                     "off": 40
                                                                 },
                                                                 "@type": "SimpleType",
+                                                                "annotations": null,
                                                                 "name": {
                                                                     "@end": {
                                                                         "@type": "ast:Position",
@@ -210,6 +218,7 @@
                                                                     "off": 63
                                                                 },
                                                                 "@type": "SimpleType",
+                                                                "annotations": null,
                                                                 "name": {
                                                                     "@end": {
                                                                         "@type": "ast:Position",
@@ -229,14 +238,20 @@
                                                             }
                                                         ]
                                                     },
-                                                    "varargs": "false"
+                                                    "varargs": "false",
+                                                    "varargsAnnotations": null
                                                 }
                                             }
-                                        ]
+                                        ],
+                                        "finally": null,
+                                        "resources": null
                                     }
                                 ]
                             },
                             "constructor": "true",
+                            "extraDimensions2": null,
+                            "javadoc": null,
+                            "modifiers": null,
                             "name": {
                                 "@end": {
                                     "@type": "ast:Position",
@@ -252,10 +267,18 @@
                                 },
                                 "@type": "SimpleName",
                                 "identifier": "A"
-                            }
+                            },
+                            "parameters": null,
+                            "receiverQualifier": null,
+                            "receiverType": null,
+                            "returnType2": null,
+                            "thrownExceptionTypes": null,
+                            "typeParameters": null
                         }
                     ],
                     "interface": "false",
+                    "javadoc": null,
+                    "modifiers": null,
                     "name": {
                         "@end": {
                             "@type": "ast:Position",
@@ -271,7 +294,10 @@
                         },
                         "@type": "SimpleName",
                         "identifier": "A"
-                    }
+                    },
+                    "superInterfaceTypes": null,
+                    "superclassType": null,
+                    "typeParameters": null
                 }
             ]
         }

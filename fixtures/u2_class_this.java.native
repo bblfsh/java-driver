@@ -16,6 +16,8 @@
                 "off": 0
             },
             "@type": "CompilationUnit",
+            "imports": null,
+            "package": null,
             "types": [
                 {
                     "@end": {
@@ -61,6 +63,8 @@
                                         "off": 23
                                     },
                                     "@type": "VariableDeclarationFragment",
+                                    "extraDimensions2": null,
+                                    "initializer": null,
                                     "name": {
                                         "@end": {
                                             "@type": "ast:Position",
@@ -79,6 +83,8 @@
                                     }
                                 }
                             ],
+                            "javadoc": null,
+                            "modifiers": null,
                             "type": {
                                 "@end": {
                                     "@type": "ast:Position",
@@ -93,6 +99,7 @@
                                     "off": 19
                                 },
                                 "@type": "PrimitiveType",
+                                "annotations": null,
                                 "primitiveTypeCode": "int"
                             }
                         },
@@ -180,7 +187,8 @@
                                                         "line": 4,
                                                         "off": 50
                                                     },
-                                                    "@type": "ThisExpression"
+                                                    "@type": "ThisExpression",
+                                                    "qualifier": null
                                                 },
                                                 "name": {
                                                     "@end": {
@@ -221,6 +229,9 @@
                                 ]
                             },
                             "constructor": "false",
+                            "extraDimensions2": null,
+                            "javadoc": null,
+                            "modifiers": null,
                             "name": {
                                 "@end": {
                                     "@type": "ast:Position",
@@ -237,6 +248,9 @@
                                 "@type": "SimpleName",
                                 "identifier": "testfnc1"
                             },
+                            "parameters": null,
+                            "receiverQualifier": null,
+                            "receiverType": null,
                             "returnType2": {
                                 "@end": {
                                     "@type": "ast:Position",
@@ -251,11 +265,16 @@
                                     "off": 28
                                 },
                                 "@type": "PrimitiveType",
+                                "annotations": null,
                                 "primitiveTypeCode": "void"
-                            }
+                            },
+                            "thrownExceptionTypes": null,
+                            "typeParameters": null
                         }
                     ],
                     "interface": "false",
+                    "javadoc": null,
+                    "modifiers": null,
                     "name": {
                         "@end": {
                             "@type": "ast:Position",
@@ -271,7 +290,10 @@
                         },
                         "@type": "SimpleName",
                         "identifier": "Testcls1"
-                    }
+                    },
+                    "superInterfaceTypes": null,
+                    "superclassType": null,
+                    "typeParameters": null
                 }
             ]
         }

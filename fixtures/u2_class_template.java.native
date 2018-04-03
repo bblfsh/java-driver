@@ -16,6 +16,8 @@
                 "off": 0
             },
             "@type": "CompilationUnit",
+            "imports": null,
+            "package": null,
             "types": [
                 {
                     "@end": {
@@ -30,7 +32,10 @@
                         "off": 0
                     },
                     "@type": "TypeDeclaration",
+                    "bodyDeclarations": null,
                     "interface": "false",
+                    "javadoc": null,
+                    "modifiers": null,
                     "name": {
                         "@end": {
                             "@type": "ast:Position",
@@ -47,6 +52,8 @@
                         "@type": "SimpleName",
                         "identifier": "Foo"
                     },
+                    "superInterfaceTypes": null,
+                    "superclassType": null,
                     "typeParameters": [
                         {
                             "@end": {
@@ -62,6 +69,7 @@
                                 "off": 11
                             },
                             "@type": "TypeParameter",
+                            "modifiers": null,
                             "name": {
                                 "@end": {
                                     "@type": "ast:Position",
@@ -77,7 +85,8 @@
                                 },
                                 "@type": "SimpleName",
                                 "identifier": "T"
-                            }
+                            },
+                            "typeBounds": null
                         }
                     ]
                 }

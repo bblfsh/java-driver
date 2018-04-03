@@ -59,6 +59,9 @@ public class CompilationUnitSerializer extends StdSerializer<CompilationUnit> {
             } else if (child != null) {
                 jG.writeFieldName(descriptor.getId());
                 jG.writeString(child.toString());
+            } else {
+                jG.writeFieldName(descriptor.getId());
+                jG.writeNull();
             }
         }
         serializePosition(cu, node, jG);
@@ -97,10 +100,11 @@ public class CompilationUnitSerializer extends StdSerializer<CompilationUnit> {
                                     JsonGenerator jG,
                                     StructuralPropertyDescriptor descriptor,
                                     SerializerProvider provider) throws IOException {
+        jG.writeFieldName(descriptor.getId());
         if (children.size() < 1) {
+            jG.writeNull();
             return;
         }
-        jG.writeFieldName(descriptor.getId());
         jG.writeStartArray();
         for (ASTNode node : children) {
             serializeAll(cu, node, jG, provider);

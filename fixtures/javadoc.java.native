@@ -50,6 +50,8 @@
                     "text": "/**\n* This is a multiline JavaDoc\n* comment\n* */"
                 }
             ],
+            "imports": null,
+            "package": null,
             "types": [
                 {
                     "@end": {
@@ -65,6 +67,7 @@
                         "off": 0
                     },
                     "@type": "TypeDeclaration",
+                    "bodyDeclarations": null,
                     "interface": "false",
                     "javadoc": {
                         "@end": {
@@ -112,10 +115,12 @@
                                         "@type": "TextElement",
                                         "text": "This is a javadoc comment "
                                     }
-                                ]
+                                ],
+                                "tagName": null
                             }
                         ]
                     },
+                    "modifiers": null,
                     "name": {
                         "@end": {
                             "@type": "ast:Position",
@@ -131,7 +136,10 @@
                         },
                         "@type": "SimpleName",
                         "identifier": "A"
-                    }
+                    },
+                    "superInterfaceTypes": null,
+                    "superclassType": null,
+                    "typeParameters": null
                 }
             ]
         }
