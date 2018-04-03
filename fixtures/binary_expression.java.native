@@ -16,6 +16,8 @@
                 "off": 0
             },
             "@type": "CompilationUnit",
+            "imports": null,
+            "package": null,
             "types": [
                 {
                     "@end": {
@@ -90,6 +92,7 @@
                                                     "off": 37
                                                 },
                                                 "@type": "VariableDeclarationFragment",
+                                                "extraDimensions2": null,
                                                 "initializer": {
                                                     "@end": {
                                                         "@type": "ast:Position",
@@ -104,6 +107,7 @@
                                                         "off": 41
                                                     },
                                                     "@type": "InfixExpression",
+                                                    "extendedOperands": null,
                                                     "leftOperand": {
                                                         "@end": {
                                                             "@type": "ast:Position",
@@ -156,6 +160,7 @@
                                                 }
                                             }
                                         ],
+                                        "modifiers": null,
                                         "type": {
                                             "@end": {
                                                 "@type": "ast:Position",
@@ -170,12 +175,16 @@
                                                 "off": 33
                                             },
                                             "@type": "PrimitiveType",
+                                            "annotations": null,
                                             "primitiveTypeCode": "int"
                                         }
                                     }
                                 ]
                             },
                             "constructor": "false",
+                            "extraDimensions2": null,
+                            "javadoc": null,
+                            "modifiers": null,
                             "name": {
                                 "@end": {
                                     "@type": "ast:Position",
@@ -192,6 +201,9 @@
                                 "@type": "SimpleName",
                                 "identifier": "code"
                             },
+                            "parameters": null,
+                            "receiverQualifier": null,
+                            "receiverType": null,
                             "returnType2": {
                                 "@end": {
                                     "@type": "ast:Position",
@@ -206,11 +218,16 @@
                                     "off": 15
                                 },
                                 "@type": "PrimitiveType",
+                                "annotations": null,
                                 "primitiveTypeCode": "void"
-                            }
+                            },
+                            "thrownExceptionTypes": null,
+                            "typeParameters": null
                         }
                     ],
                     "interface": "false",
+                    "javadoc": null,
+                    "modifiers": null,
                     "name": {
                         "@end": {
                             "@type": "ast:Position",
@@ -226,7 +243,10 @@
                         },
                         "@type": "SimpleName",
                         "identifier": "Code"
-                    }
+                    },
+                    "superInterfaceTypes": null,
+                    "superclassType": null,
+                    "typeParameters": null
                 }
             ]
         }

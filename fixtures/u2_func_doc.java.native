@@ -17,6 +17,8 @@
             },
             "@type": "CompilationUnit",
             "comments": [],
+            "imports": null,
+            "package": null,
             "types": [
                 {
                     "@end": {
@@ -60,9 +62,11 @@
                                     "line": 5,
                                     "off": 76
                                 },
-                                "@type": "Block"
+                                "@type": "Block",
+                                "statements": null
                             },
                             "constructor": "false",
+                            "extraDimensions2": null,
                             "javadoc": {
                                 "@end": {
                                     "@type": "ast:Position",
@@ -109,10 +113,12 @@
                                                 "@type": "TextElement",
                                                 "text": "Javadoc comment"
                                             }
-                                        ]
+                                        ],
+                                        "tagName": null
                                     }
                                 ]
                             },
+                            "modifiers": null,
                             "name": {
                                 "@end": {
                                     "@type": "ast:Position",
@@ -129,6 +135,9 @@
                                 "@type": "SimpleName",
                                 "identifier": "testfnc1"
                             },
+                            "parameters": null,
+                            "receiverQualifier": null,
+                            "receiverType": null,
                             "returnType2": {
                                 "@end": {
                                     "@type": "ast:Position",
@@ -143,11 +152,16 @@
                                     "off": 60
                                 },
                                 "@type": "PrimitiveType",
+                                "annotations": null,
                                 "primitiveTypeCode": "void"
-                            }
+                            },
+                            "thrownExceptionTypes": null,
+                            "typeParameters": null
                         }
                     ],
                     "interface": "false",
+                    "javadoc": null,
+                    "modifiers": null,
                     "name": {
                         "@end": {
                             "@type": "ast:Position",
@@ -163,7 +177,10 @@
                         },
                         "@type": "SimpleName",
                         "identifier": "Testcls1"
-                    }
+                    },
+                    "superInterfaceTypes": null,
+                    "superclassType": null,
+                    "typeParameters": null
                 }
             ]
         }

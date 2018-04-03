@@ -16,6 +16,8 @@
                 "off": 0
             },
             "@type": "CompilationUnit",
+            "imports": null,
+            "package": null,
             "types": [
                 {
                     "@end": {
@@ -58,9 +60,13 @@
                                     "line": 2,
                                     "off": 44
                                 },
-                                "@type": "Block"
+                                "@type": "Block",
+                                "statements": null
                             },
                             "constructor": "false",
+                            "extraDimensions2": null,
+                            "javadoc": null,
+                            "modifiers": null,
                             "name": {
                                 "@end": {
                                     "@type": "ast:Position",
@@ -77,6 +83,9 @@
                                 "@type": "SimpleName",
                                 "identifier": "foo"
                             },
+                            "parameters": null,
+                            "receiverQualifier": null,
+                            "receiverType": null,
                             "returnType2": {
                                 "@end": {
                                     "@type": "ast:Position",
@@ -91,6 +100,7 @@
                                     "off": 16
                                 },
                                 "@type": "PrimitiveType",
+                                "annotations": null,
                                 "primitiveTypeCode": "void"
                             },
                             "thrownExceptionTypes": [
@@ -108,6 +118,7 @@
                                         "off": 34
                                     },
                                     "@type": "SimpleType",
+                                    "annotations": null,
                                     "name": {
                                         "@end": {
                                             "@type": "ast:Position",
@@ -125,10 +136,13 @@
                                         "identifier": "Exception"
                                     }
                                 }
-                            ]
+                            ],
+                            "typeParameters": null
                         }
                     ],
                     "interface": "false",
+                    "javadoc": null,
+                    "modifiers": null,
                     "name": {
                         "@end": {
                             "@type": "ast:Position",
@@ -144,7 +158,10 @@
                         },
                         "@type": "SimpleName",
                         "identifier": "Foo"
-                    }
+                    },
+                    "superInterfaceTypes": null,
+                    "superclassType": null,
+                    "typeParameters": null
                 }
             ]
         }

@@ -16,6 +16,8 @@
                 "off": 0
             },
             "@type": "CompilationUnit",
+            "imports": null,
+            "package": null,
             "types": [
                 {
                     "@end": {
@@ -95,6 +97,9 @@
                                 ]
                             },
                             "constructor": "false",
+                            "extraDimensions2": null,
+                            "javadoc": null,
+                            "modifiers": null,
                             "name": {
                                 "@end": {
                                     "@type": "ast:Position",
@@ -126,6 +131,9 @@
                                         "off": 34
                                     },
                                     "@type": "SingleVariableDeclaration",
+                                    "extraDimensions2": null,
+                                    "initializer": null,
+                                    "modifiers": null,
                                     "name": {
                                         "@end": {
                                             "@type": "ast:Position",
@@ -156,9 +164,11 @@
                                             "off": 34
                                         },
                                         "@type": "PrimitiveType",
+                                        "annotations": null,
                                         "primitiveTypeCode": "int"
                                     },
-                                    "varargs": "false"
+                                    "varargs": "false",
+                                    "varargsAnnotations": null
                                 },
                                 {
                                     "@end": {
@@ -174,6 +184,9 @@
                                         "off": 41
                                     },
                                     "@type": "SingleVariableDeclaration",
+                                    "extraDimensions2": null,
+                                    "initializer": null,
+                                    "modifiers": null,
                                     "name": {
                                         "@end": {
                                             "@type": "ast:Position",
@@ -204,11 +217,15 @@
                                             "off": 41
                                         },
                                         "@type": "PrimitiveType",
+                                        "annotations": null,
                                         "primitiveTypeCode": "int"
                                     },
-                                    "varargs": "false"
+                                    "varargs": "false",
+                                    "varargsAnnotations": null
                                 }
                             ],
+                            "receiverQualifier": null,
+                            "receiverType": null,
                             "returnType2": {
                                 "@end": {
                                     "@type": "ast:Position",
@@ -223,11 +240,16 @@
                                     "off": 21
                                 },
                                 "@type": "PrimitiveType",
+                                "annotations": null,
                                 "primitiveTypeCode": "int"
-                            }
+                            },
+                            "thrownExceptionTypes": null,
+                            "typeParameters": null
                         }
                     ],
                     "interface": "false",
+                    "javadoc": null,
+                    "modifiers": null,
                     "name": {
                         "@end": {
                             "@type": "ast:Position",
@@ -243,7 +265,10 @@
                         },
                         "@type": "SimpleName",
                         "identifier": "Testcls1"
-                    }
+                    },
+                    "superInterfaceTypes": null,
+                    "superclassType": null,
+                    "typeParameters": null
                 }
             ]
         }

@@ -16,6 +16,8 @@
                 "off": 0
             },
             "@type": "CompilationUnit",
+            "imports": null,
+            "package": null,
             "types": [
                 {
                     "@end": {
@@ -131,9 +133,13 @@
                                                                 "line": 3,
                                                                 "off": 76
                                                             },
-                                                            "@type": "Block"
+                                                            "@type": "Block",
+                                                            "statements": null
                                                         },
                                                         "constructor": "false",
+                                                        "extraDimensions2": null,
+                                                        "javadoc": null,
+                                                        "modifiers": null,
                                                         "name": {
                                                             "@end": {
                                                                 "@type": "ast:Position",
@@ -150,6 +156,9 @@
                                                             "@type": "SimpleName",
                                                             "identifier": "testfnc2"
                                                         },
+                                                        "parameters": null,
+                                                        "receiverQualifier": null,
+                                                        "receiverType": null,
                                                         "returnType2": {
                                                             "@end": {
                                                                 "@type": "ast:Position",
@@ -164,11 +173,16 @@
                                                                 "off": 60
                                                             },
                                                             "@type": "PrimitiveType",
+                                                            "annotations": null,
                                                             "primitiveTypeCode": "void"
-                                                        }
+                                                        },
+                                                        "thrownExceptionTypes": null,
+                                                        "typeParameters": null
                                                     }
                                                 ]
                                             },
+                                            "arguments": null,
+                                            "expression": null,
                                             "type": {
                                                 "@end": {
                                                     "@type": "ast:Position",
@@ -183,6 +197,7 @@
                                                     "off": 45
                                                 },
                                                 "@type": "SimpleType",
+                                                "annotations": null,
                                                 "name": {
                                                     "@end": {
                                                         "@type": "ast:Position",
@@ -199,12 +214,16 @@
                                                     "@type": "SimpleName",
                                                     "identifier": "Testiface1"
                                                 }
-                                            }
+                                            },
+                                            "typeArguments": null
                                         }
                                     }
                                 ]
                             },
                             "constructor": "false",
+                            "extraDimensions2": null,
+                            "javadoc": null,
+                            "modifiers": null,
                             "name": {
                                 "@end": {
                                     "@type": "ast:Position",
@@ -221,6 +240,9 @@
                                 "@type": "SimpleName",
                                 "identifier": "testfnc1"
                             },
+                            "parameters": null,
+                            "receiverQualifier": null,
+                            "receiverType": null,
                             "returnType2": {
                                 "@end": {
                                     "@type": "ast:Position",
@@ -235,11 +257,16 @@
                                     "off": 19
                                 },
                                 "@type": "PrimitiveType",
+                                "annotations": null,
                                 "primitiveTypeCode": "void"
-                            }
+                            },
+                            "thrownExceptionTypes": null,
+                            "typeParameters": null
                         }
                     ],
                     "interface": "false",
+                    "javadoc": null,
+                    "modifiers": null,
                     "name": {
                         "@end": {
                             "@type": "ast:Position",
@@ -255,7 +282,10 @@
                         },
                         "@type": "SimpleName",
                         "identifier": "Testcls1"
-                    }
+                    },
+                    "superInterfaceTypes": null,
+                    "superclassType": null,
+                    "typeParameters": null
                 }
             ]
         }

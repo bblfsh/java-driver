@@ -4,7 +4,7 @@ import (
 	"testing"
 	"path/filepath"
 
-	"github.com/bblfsh/go-driver/driver/normalizer"
+	"github.com/bblfsh/java-driver/driver/normalizer"
 	"gopkg.in/bblfsh/sdk.v1/sdk/driver"
 	"gopkg.in/bblfsh/sdk.v1/sdk/driver/fixtures"
 )

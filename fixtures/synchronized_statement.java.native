@@ -16,6 +16,8 @@
                 "off": 0
             },
             "@type": "CompilationUnit",
+            "imports": null,
+            "package": null,
             "types": [
                 {
                     "@end": {
@@ -61,6 +63,8 @@
                                         "off": 27
                                     },
                                     "@type": "VariableDeclarationFragment",
+                                    "extraDimensions2": null,
+                                    "initializer": null,
                                     "name": {
                                         "@end": {
                                             "@type": "ast:Position",
@@ -79,6 +83,7 @@
                                     }
                                 }
                             ],
+                            "javadoc": null,
                             "modifiers": [
                                 {
                                     "@end": {
@@ -111,6 +116,7 @@
                                     "off": 23
                                 },
                                 "@type": "PrimitiveType",
+                                "annotations": null,
                                 "primitiveTypeCode": "int"
                             }
                         },
@@ -227,7 +233,8 @@
                                                                     "line": 4,
                                                                     "off": 76
                                                                 },
-                                                                "@type": "ThisExpression"
+                                                                "@type": "ThisExpression",
+                                                                "qualifier": null
                                                             },
                                                             "name": {
                                                                 "@end": {
@@ -280,12 +287,16 @@
                                                 "line": 4,
                                                 "off": 68
                                             },
-                                            "@type": "ThisExpression"
+                                            "@type": "ThisExpression",
+                                            "qualifier": null
                                         }
                                     }
                                 ]
                             },
                             "constructor": "false",
+                            "extraDimensions2": null,
+                            "javadoc": null,
+                            "modifiers": null,
                             "name": {
                                 "@end": {
                                     "@type": "ast:Position",
@@ -317,6 +328,9 @@
                                         "off": 42
                                     },
                                     "@type": "SingleVariableDeclaration",
+                                    "extraDimensions2": null,
+                                    "initializer": null,
+                                    "modifiers": null,
                                     "name": {
                                         "@end": {
                                             "@type": "ast:Position",
@@ -347,11 +361,15 @@
                                             "off": 42
                                         },
                                         "@type": "PrimitiveType",
+                                        "annotations": null,
                                         "primitiveTypeCode": "int"
                                     },
-                                    "varargs": "false"
+                                    "varargs": "false",
+                                    "varargsAnnotations": null
                                 }
                             ],
+                            "receiverQualifier": null,
+                            "receiverType": null,
                             "returnType2": {
                                 "@end": {
                                     "@type": "ast:Position",
@@ -366,11 +384,16 @@
                                     "off": 32
                                 },
                                 "@type": "PrimitiveType",
+                                "annotations": null,
                                 "primitiveTypeCode": "void"
-                            }
+                            },
+                            "thrownExceptionTypes": null,
+                            "typeParameters": null
                         }
                     ],
                     "interface": "false",
+                    "javadoc": null,
+                    "modifiers": null,
                     "name": {
                         "@end": {
                             "@type": "ast:Position",
@@ -386,7 +409,10 @@
                         },
                         "@type": "SimpleName",
                         "identifier": "Code"
-                    }
+                    },
+                    "superInterfaceTypes": null,
+                    "superclassType": null,
+                    "typeParameters": null
                 }
             ]
         }

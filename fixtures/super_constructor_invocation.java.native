@@ -16,6 +16,8 @@
                 "off": 0
             },
             "@type": "CompilationUnit",
+            "imports": null,
+            "package": null,
             "types": [
                 {
                     "@end": {
@@ -74,11 +76,17 @@
                                             "line": 2,
                                             "off": 18
                                         },
-                                        "@type": "SuperConstructorInvocation"
+                                        "@type": "SuperConstructorInvocation",
+                                        "arguments": null,
+                                        "expression": null,
+                                        "typeArguments": null
                                     }
                                 ]
                             },
                             "constructor": "true",
+                            "extraDimensions2": null,
+                            "javadoc": null,
+                            "modifiers": null,
                             "name": {
                                 "@end": {
                                     "@type": "ast:Position",
@@ -94,10 +102,18 @@
                                 },
                                 "@type": "SimpleName",
                                 "identifier": "A"
-                            }
+                            },
+                            "parameters": null,
+                            "receiverQualifier": null,
+                            "receiverType": null,
+                            "returnType2": null,
+                            "thrownExceptionTypes": null,
+                            "typeParameters": null
                         }
                     ],
                     "interface": "false",
+                    "javadoc": null,
+                    "modifiers": null,
                     "name": {
                         "@end": {
                             "@type": "ast:Position",
@@ -113,7 +129,10 @@
                         },
                         "@type": "SimpleName",
                         "identifier": "A"
-                    }
+                    },
+                    "superInterfaceTypes": null,
+                    "superclassType": null,
+                    "typeParameters": null
                 }
             ]
         }

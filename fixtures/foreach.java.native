@@ -16,6 +16,8 @@
                 "off": 0
             },
             "@type": "CompilationUnit",
+            "imports": null,
+            "package": null,
             "types": [
                 {
                     "@end": {
@@ -198,7 +200,8 @@
                                                             },
                                                             "@type": "SimpleName",
                                                             "identifier": "println"
-                                                        }
+                                                        },
+                                                        "typeArguments": null
                                                     }
                                                 }
                                             ]
@@ -217,6 +220,7 @@
                                                 "off": 46
                                             },
                                             "@type": "ArrayCreation",
+                                            "dimensions": null,
                                             "initializer": {
                                                 "@end": {
                                                     "@type": "ast:Position",
@@ -406,7 +410,8 @@
                                                             "line": 3,
                                                             "off": 53
                                                         },
-                                                        "@type": "Dimension"
+                                                        "@type": "Dimension",
+                                                        "annotations": null
                                                     }
                                                 ],
                                                 "elementType": {
@@ -423,6 +428,7 @@
                                                         "off": 50
                                                     },
                                                     "@type": "PrimitiveType",
+                                                    "annotations": null,
                                                     "primitiveTypeCode": "int"
                                                 }
                                             }
@@ -441,6 +447,9 @@
                                                 "off": 38
                                             },
                                             "@type": "SingleVariableDeclaration",
+                                            "extraDimensions2": null,
+                                            "initializer": null,
+                                            "modifiers": null,
                                             "name": {
                                                 "@end": {
                                                     "@type": "ast:Position",
@@ -471,14 +480,19 @@
                                                     "off": 38
                                                 },
                                                 "@type": "PrimitiveType",
+                                                "annotations": null,
                                                 "primitiveTypeCode": "int"
                                             },
-                                            "varargs": "false"
+                                            "varargs": "false",
+                                            "varargsAnnotations": null
                                         }
                                     }
                                 ]
                             },
                             "constructor": "false",
+                            "extraDimensions2": null,
+                            "javadoc": null,
+                            "modifiers": null,
                             "name": {
                                 "@end": {
                                     "@type": "ast:Position",
@@ -495,6 +509,9 @@
                                 "@type": "SimpleName",
                                 "identifier": "code"
                             },
+                            "parameters": null,
+                            "receiverQualifier": null,
+                            "receiverType": null,
                             "returnType2": {
                                 "@end": {
                                     "@type": "ast:Position",
@@ -509,11 +526,16 @@
                                     "off": 14
                                 },
                                 "@type": "PrimitiveType",
+                                "annotations": null,
                                 "primitiveTypeCode": "void"
-                            }
+                            },
+                            "thrownExceptionTypes": null,
+                            "typeParameters": null
                         }
                     ],
                     "interface": "false",
+                    "javadoc": null,
+                    "modifiers": null,
                     "name": {
                         "@end": {
                             "@type": "ast:Position",
@@ -529,7 +551,10 @@
                         },
                         "@type": "SimpleName",
                         "identifier": "Code"
-                    }
+                    },
+                    "superInterfaceTypes": null,
+                    "superclassType": null,
+                    "typeParameters": null
                 }
             ]
         }
