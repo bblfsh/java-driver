@@ -4,53 +4,83 @@
     "errors": [],
     "ast": {
         "CompilationUnit": {
-            "endColumn": 0,
-            "endPosition": 28,
-            "internalClass": "CompilationUnit",
-            "startColumn": 1,
-            "startLine": 1,
-            "startPosition": 0,
+            "@end": {
+                "@type": "ast:Position",
+                "col": 0,
+                "off": 28
+            },
+            "@start": {
+                "@type": "ast:Position",
+                "col": 1,
+                "line": 1,
+                "off": 0
+            },
+            "@type": "CompilationUnit",
             "types": [
                 {
-                    "endColumn": 18,
-                    "endLine": 2,
-                    "endPosition": 27,
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 18,
+                        "line": 2,
+                        "off": 27
+                    },
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 1,
+                        "line": 1,
+                        "off": 0
+                    },
+                    "@type": "TypeDeclaration",
                     "interface": "false",
-                    "internalClass": "TypeDeclaration",
                     "modifiers": [
                         {
-                            "endColumn": 10,
-                            "endLine": 1,
-                            "endPosition": 9,
-                            "internalClass": "MarkerAnnotation",
-                            "startColumn": 1,
-                            "startLine": 1,
-                            "startPosition": 0,
+                            "@end": {
+                                "@type": "ast:Position",
+                                "col": 10,
+                                "line": 1,
+                                "off": 9
+                            },
+                            "@start": {
+                                "@type": "ast:Position",
+                                "col": 1,
+                                "line": 1,
+                                "off": 0
+                            },
+                            "@type": "MarkerAnnotation",
                             "typeName": {
-                                "endColumn": 10,
-                                "endLine": 1,
-                                "endPosition": 9,
-                                "identifier": "testtag1",
-                                "internalClass": "SimpleName",
-                                "startColumn": 2,
-                                "startLine": 1,
-                                "startPosition": 1
+                                "@end": {
+                                    "@type": "ast:Position",
+                                    "col": 10,
+                                    "line": 1,
+                                    "off": 9
+                                },
+                                "@start": {
+                                    "@type": "ast:Position",
+                                    "col": 2,
+                                    "line": 1,
+                                    "off": 1
+                                },
+                                "@type": "SimpleName",
+                                "identifier": "testtag1"
                             }
                         }
                     ],
                     "name": {
-                        "endColumn": 15,
-                        "endLine": 2,
-                        "endPosition": 24,
-                        "identifier": "Testcls1",
-                        "internalClass": "SimpleName",
-                        "startColumn": 7,
-                        "startLine": 2,
-                        "startPosition": 16
-                    },
-                    "startColumn": 1,
-                    "startLine": 1,
-                    "startPosition": 0
+                        "@end": {
+                            "@type": "ast:Position",
+                            "col": 15,
+                            "line": 2,
+                            "off": 24
+                        },
+                        "@start": {
+                            "@type": "ast:Position",
+                            "col": 7,
+                            "line": 2,
+                            "off": 16
+                        },
+                        "@type": "SimpleName",
+                        "identifier": "Testcls1"
+                    }
                 }
             ]
         }

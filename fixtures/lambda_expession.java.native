@@ -4,259 +4,409 @@
     "errors": [],
     "ast": {
         "CompilationUnit": {
-            "endColumn": 0,
-            "endPosition": 85,
-            "internalClass": "CompilationUnit",
-            "startColumn": 1,
-            "startLine": 1,
-            "startPosition": 0,
+            "@end": {
+                "@type": "ast:Position",
+                "col": 0,
+                "off": 85
+            },
+            "@start": {
+                "@type": "ast:Position",
+                "col": 1,
+                "line": 1,
+                "off": 0
+            },
+            "@type": "CompilationUnit",
             "types": [
                 {
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 2,
+                        "line": 3,
+                        "off": 30
+                    },
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 1,
+                        "line": 1,
+                        "off": 0
+                    },
+                    "@type": "TypeDeclaration",
                     "bodyDeclarations": [
                         {
+                            "@end": {
+                                "@type": "ast:Position",
+                                "col": 16,
+                                "line": 2,
+                                "off": 28
+                            },
+                            "@start": {
+                                "@type": "ast:Position",
+                                "col": 3,
+                                "line": 2,
+                                "off": 15
+                            },
+                            "@type": "MethodDeclaration",
                             "constructor": "false",
-                            "endColumn": 16,
-                            "endLine": 2,
-                            "endPosition": 28,
-                            "internalClass": "MethodDeclaration",
                             "name": {
-                                "endColumn": 8,
-                                "endLine": 2,
-                                "endPosition": 20,
-                                "identifier": "f",
-                                "internalClass": "SimpleName",
-                                "startColumn": 7,
-                                "startLine": 2,
-                                "startPosition": 19
+                                "@end": {
+                                    "@type": "ast:Position",
+                                    "col": 8,
+                                    "line": 2,
+                                    "off": 20
+                                },
+                                "@start": {
+                                    "@type": "ast:Position",
+                                    "col": 7,
+                                    "line": 2,
+                                    "off": 19
+                                },
+                                "@type": "SimpleName",
+                                "identifier": "f"
                             },
                             "parameters": [
                                 {
-                                    "endColumn": 14,
-                                    "endLine": 2,
-                                    "endPosition": 26,
-                                    "internalClass": "SingleVariableDeclaration",
-                                    "name": {
-                                        "endColumn": 14,
-                                        "endLine": 2,
-                                        "endPosition": 26,
-                                        "identifier": "a",
-                                        "internalClass": "SimpleName",
-                                        "startColumn": 13,
-                                        "startLine": 2,
-                                        "startPosition": 25
+                                    "@end": {
+                                        "@type": "ast:Position",
+                                        "col": 14,
+                                        "line": 2,
+                                        "off": 26
                                     },
-                                    "startColumn": 9,
-                                    "startLine": 2,
-                                    "startPosition": 21,
+                                    "@start": {
+                                        "@type": "ast:Position",
+                                        "col": 9,
+                                        "line": 2,
+                                        "off": 21
+                                    },
+                                    "@type": "SingleVariableDeclaration",
+                                    "name": {
+                                        "@end": {
+                                            "@type": "ast:Position",
+                                            "col": 14,
+                                            "line": 2,
+                                            "off": 26
+                                        },
+                                        "@start": {
+                                            "@type": "ast:Position",
+                                            "col": 13,
+                                            "line": 2,
+                                            "off": 25
+                                        },
+                                        "@type": "SimpleName",
+                                        "identifier": "a"
+                                    },
                                     "type": {
-                                        "endColumn": 12,
-                                        "endLine": 2,
-                                        "endPosition": 24,
-                                        "internalClass": "PrimitiveType",
-                                        "primitiveTypeCode": "int",
-                                        "startColumn": 9,
-                                        "startLine": 2,
-                                        "startPosition": 21
+                                        "@end": {
+                                            "@type": "ast:Position",
+                                            "col": 12,
+                                            "line": 2,
+                                            "off": 24
+                                        },
+                                        "@start": {
+                                            "@type": "ast:Position",
+                                            "col": 9,
+                                            "line": 2,
+                                            "off": 21
+                                        },
+                                        "@type": "PrimitiveType",
+                                        "primitiveTypeCode": "int"
                                     },
                                     "varargs": "false"
                                 }
                             ],
                             "returnType2": {
-                                "endColumn": 6,
-                                "endLine": 2,
-                                "endPosition": 18,
-                                "internalClass": "PrimitiveType",
-                                "primitiveTypeCode": "int",
-                                "startColumn": 3,
-                                "startLine": 2,
-                                "startPosition": 15
-                            },
-                            "startColumn": 3,
-                            "startLine": 2,
-                            "startPosition": 15
+                                "@end": {
+                                    "@type": "ast:Position",
+                                    "col": 6,
+                                    "line": 2,
+                                    "off": 18
+                                },
+                                "@start": {
+                                    "@type": "ast:Position",
+                                    "col": 3,
+                                    "line": 2,
+                                    "off": 15
+                                },
+                                "@type": "PrimitiveType",
+                                "primitiveTypeCode": "int"
+                            }
                         }
                     ],
-                    "endColumn": 2,
-                    "endLine": 3,
-                    "endPosition": 30,
                     "interface": "true",
-                    "internalClass": "TypeDeclaration",
                     "name": {
-                        "endColumn": 12,
-                        "endLine": 1,
-                        "endPosition": 11,
-                        "identifier": "I",
-                        "internalClass": "SimpleName",
-                        "startColumn": 11,
-                        "startLine": 1,
-                        "startPosition": 10
-                    },
-                    "startColumn": 1,
-                    "startLine": 1,
-                    "startPosition": 0
+                        "@end": {
+                            "@type": "ast:Position",
+                            "col": 12,
+                            "line": 1,
+                            "off": 11
+                        },
+                        "@start": {
+                            "@type": "ast:Position",
+                            "col": 11,
+                            "line": 1,
+                            "off": 10
+                        },
+                        "@type": "SimpleName",
+                        "identifier": "I"
+                    }
                 },
                 {
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 2,
+                        "line": 8,
+                        "off": 84
+                    },
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 1,
+                        "line": 4,
+                        "off": 31
+                    },
+                    "@type": "TypeDeclaration",
                     "bodyDeclarations": [
                         {
+                            "@end": {
+                                "@type": "ast:Position",
+                                "col": 4,
+                                "line": 7,
+                                "off": 82
+                            },
+                            "@start": {
+                                "@type": "ast:Position",
+                                "col": 3,
+                                "line": 5,
+                                "off": 46
+                            },
+                            "@type": "MethodDeclaration",
                             "body": {
-                                "endColumn": 4,
-                                "endLine": 7,
-                                "endPosition": 82,
-                                "internalClass": "Block",
-                                "startColumn": 10,
-                                "startLine": 5,
-                                "startPosition": 53,
+                                "@end": {
+                                    "@type": "ast:Position",
+                                    "col": 4,
+                                    "line": 7,
+                                    "off": 82
+                                },
+                                "@start": {
+                                    "@type": "ast:Position",
+                                    "col": 10,
+                                    "line": 5,
+                                    "off": 53
+                                },
+                                "@type": "Block",
                                 "statements": [
                                     {
-                                        "endColumn": 24,
-                                        "endLine": 6,
-                                        "endPosition": 78,
+                                        "@end": {
+                                            "@type": "ast:Position",
+                                            "col": 24,
+                                            "line": 6,
+                                            "off": 78
+                                        },
+                                        "@start": {
+                                            "@type": "ast:Position",
+                                            "col": 5,
+                                            "line": 6,
+                                            "off": 59
+                                        },
+                                        "@type": "VariableDeclarationStatement",
                                         "fragments": [
                                             {
-                                                "endColumn": 23,
-                                                "endLine": 6,
-                                                "endPosition": 77,
+                                                "@end": {
+                                                    "@type": "ast:Position",
+                                                    "col": 23,
+                                                    "line": 6,
+                                                    "off": 77
+                                                },
+                                                "@start": {
+                                                    "@type": "ast:Position",
+                                                    "col": 7,
+                                                    "line": 6,
+                                                    "off": 61
+                                                },
+                                                "@type": "VariableDeclarationFragment",
                                                 "initializer": {
+                                                    "@end": {
+                                                        "@type": "ast:Position",
+                                                        "col": 23,
+                                                        "line": 6,
+                                                        "off": 77
+                                                    },
+                                                    "@start": {
+                                                        "@type": "ast:Position",
+                                                        "col": 11,
+                                                        "line": 6,
+                                                        "off": 65
+                                                    },
+                                                    "@type": "LambdaExpression",
                                                     "body": {
-                                                        "endColumn": 23,
-                                                        "endLine": 6,
-                                                        "endPosition": 77,
-                                                        "internalClass": "InfixExpression",
+                                                        "@end": {
+                                                            "@type": "ast:Position",
+                                                            "col": 23,
+                                                            "line": 6,
+                                                            "off": 77
+                                                        },
+                                                        "@start": {
+                                                            "@type": "ast:Position",
+                                                            "col": 18,
+                                                            "line": 6,
+                                                            "off": 72
+                                                        },
+                                                        "@type": "InfixExpression",
                                                         "leftOperand": {
-                                                            "endColumn": 19,
-                                                            "endLine": 6,
-                                                            "endPosition": 73,
-                                                            "identifier": "i",
-                                                            "internalClass": "SimpleName",
-                                                            "startColumn": 18,
-                                                            "startLine": 6,
-                                                            "startPosition": 72
+                                                            "@end": {
+                                                                "@type": "ast:Position",
+                                                                "col": 19,
+                                                                "line": 6,
+                                                                "off": 73
+                                                            },
+                                                            "@start": {
+                                                                "@type": "ast:Position",
+                                                                "col": 18,
+                                                                "line": 6,
+                                                                "off": 72
+                                                            },
+                                                            "@type": "SimpleName",
+                                                            "identifier": "i"
                                                         },
                                                         "operator": "+",
                                                         "rightOperand": {
-                                                            "endColumn": 23,
-                                                            "endLine": 6,
-                                                            "endPosition": 77,
-                                                            "internalClass": "NumberLiteral",
-                                                            "startColumn": 22,
-                                                            "startLine": 6,
-                                                            "startPosition": 76,
+                                                            "@end": {
+                                                                "@type": "ast:Position",
+                                                                "col": 23,
+                                                                "line": 6,
+                                                                "off": 77
+                                                            },
+                                                            "@start": {
+                                                                "@type": "ast:Position",
+                                                                "col": 22,
+                                                                "line": 6,
+                                                                "off": 76
+                                                            },
+                                                            "@type": "NumberLiteral",
                                                             "token": "1"
-                                                        },
-                                                        "startColumn": 18,
-                                                        "startLine": 6,
-                                                        "startPosition": 72
+                                                        }
                                                     },
-                                                    "endColumn": 23,
-                                                    "endLine": 6,
-                                                    "endPosition": 77,
-                                                    "internalClass": "LambdaExpression",
                                                     "parameters": [
                                                         {
-                                                            "endColumn": 13,
-                                                            "endLine": 6,
-                                                            "endPosition": 67,
-                                                            "internalClass": "VariableDeclarationFragment",
-                                                            "name": {
-                                                                "endColumn": 13,
-                                                                "endLine": 6,
-                                                                "endPosition": 67,
-                                                                "identifier": "i",
-                                                                "internalClass": "SimpleName",
-                                                                "startColumn": 12,
-                                                                "startLine": 6,
-                                                                "startPosition": 66
+                                                            "@end": {
+                                                                "@type": "ast:Position",
+                                                                "col": 13,
+                                                                "line": 6,
+                                                                "off": 67
                                                             },
-                                                            "startColumn": 12,
-                                                            "startLine": 6,
-                                                            "startPosition": 66
+                                                            "@start": {
+                                                                "@type": "ast:Position",
+                                                                "col": 12,
+                                                                "line": 6,
+                                                                "off": 66
+                                                            },
+                                                            "@type": "VariableDeclarationFragment",
+                                                            "name": {
+                                                                "@end": {
+                                                                    "@type": "ast:Position",
+                                                                    "col": 13,
+                                                                    "line": 6,
+                                                                    "off": 67
+                                                                },
+                                                                "@start": {
+                                                                    "@type": "ast:Position",
+                                                                    "col": 12,
+                                                                    "line": 6,
+                                                                    "off": 66
+                                                                },
+                                                                "@type": "SimpleName",
+                                                                "identifier": "i"
+                                                            }
                                                         }
                                                     ],
-                                                    "parentheses": "true",
-                                                    "startColumn": 11,
-                                                    "startLine": 6,
-                                                    "startPosition": 65
+                                                    "parentheses": "true"
                                                 },
-                                                "internalClass": "VariableDeclarationFragment",
                                                 "name": {
-                                                    "endColumn": 8,
-                                                    "endLine": 6,
-                                                    "endPosition": 62,
-                                                    "identifier": "f",
-                                                    "internalClass": "SimpleName",
-                                                    "startColumn": 7,
-                                                    "startLine": 6,
-                                                    "startPosition": 61
-                                                },
-                                                "startColumn": 7,
-                                                "startLine": 6,
-                                                "startPosition": 61
+                                                    "@end": {
+                                                        "@type": "ast:Position",
+                                                        "col": 8,
+                                                        "line": 6,
+                                                        "off": 62
+                                                    },
+                                                    "@start": {
+                                                        "@type": "ast:Position",
+                                                        "col": 7,
+                                                        "line": 6,
+                                                        "off": 61
+                                                    },
+                                                    "@type": "SimpleName",
+                                                    "identifier": "f"
+                                                }
                                             }
                                         ],
-                                        "internalClass": "VariableDeclarationStatement",
-                                        "startColumn": 5,
-                                        "startLine": 6,
-                                        "startPosition": 59,
                                         "type": {
-                                            "endColumn": 6,
-                                            "endLine": 6,
-                                            "endPosition": 60,
-                                            "internalClass": "SimpleType",
-                                            "name": {
-                                                "endColumn": 6,
-                                                "endLine": 6,
-                                                "endPosition": 60,
-                                                "identifier": "I",
-                                                "internalClass": "SimpleName",
-                                                "startColumn": 5,
-                                                "startLine": 6,
-                                                "startPosition": 59
+                                            "@end": {
+                                                "@type": "ast:Position",
+                                                "col": 6,
+                                                "line": 6,
+                                                "off": 60
                                             },
-                                            "startColumn": 5,
-                                            "startLine": 6,
-                                            "startPosition": 59
+                                            "@start": {
+                                                "@type": "ast:Position",
+                                                "col": 5,
+                                                "line": 6,
+                                                "off": 59
+                                            },
+                                            "@type": "SimpleType",
+                                            "name": {
+                                                "@end": {
+                                                    "@type": "ast:Position",
+                                                    "col": 6,
+                                                    "line": 6,
+                                                    "off": 60
+                                                },
+                                                "@start": {
+                                                    "@type": "ast:Position",
+                                                    "col": 5,
+                                                    "line": 6,
+                                                    "off": 59
+                                                },
+                                                "@type": "SimpleName",
+                                                "identifier": "I"
+                                            }
                                         }
                                     }
                                 ]
                             },
                             "constructor": "true",
-                            "endColumn": 4,
-                            "endLine": 7,
-                            "endPosition": 82,
-                            "internalClass": "MethodDeclaration",
                             "name": {
-                                "endColumn": 7,
-                                "endLine": 5,
-                                "endPosition": 50,
-                                "identifier": "Code",
-                                "internalClass": "SimpleName",
-                                "startColumn": 3,
-                                "startLine": 5,
-                                "startPosition": 46
-                            },
-                            "startColumn": 3,
-                            "startLine": 5,
-                            "startPosition": 46
+                                "@end": {
+                                    "@type": "ast:Position",
+                                    "col": 7,
+                                    "line": 5,
+                                    "off": 50
+                                },
+                                "@start": {
+                                    "@type": "ast:Position",
+                                    "col": 3,
+                                    "line": 5,
+                                    "off": 46
+                                },
+                                "@type": "SimpleName",
+                                "identifier": "Code"
+                            }
                         }
                     ],
-                    "endColumn": 2,
-                    "endLine": 8,
-                    "endPosition": 84,
                     "interface": "false",
-                    "internalClass": "TypeDeclaration",
                     "name": {
-                        "endColumn": 11,
-                        "endLine": 4,
-                        "endPosition": 41,
-                        "identifier": "Code",
-                        "internalClass": "SimpleName",
-                        "startColumn": 7,
-                        "startLine": 4,
-                        "startPosition": 37
-                    },
-                    "startColumn": 1,
-                    "startLine": 4,
-                    "startPosition": 31
+                        "@end": {
+                            "@type": "ast:Position",
+                            "col": 11,
+                            "line": 4,
+                            "off": 41
+                        },
+                        "@start": {
+                            "@type": "ast:Position",
+                            "col": 7,
+                            "line": 4,
+                            "off": 37
+                        },
+                        "@type": "SimpleName",
+                        "identifier": "Code"
+                    }
                 }
             ]
         }

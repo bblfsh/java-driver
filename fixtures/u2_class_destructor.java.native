@@ -4,85 +4,133 @@
     "errors": [],
     "ast": {
         "CompilationUnit": {
-            "endColumn": 0,
-            "endPosition": 47,
-            "internalClass": "CompilationUnit",
-            "startColumn": 1,
-            "startLine": 1,
-            "startPosition": 0,
+            "@end": {
+                "@type": "ast:Position",
+                "col": 0,
+                "off": 47
+            },
+            "@start": {
+                "@type": "ast:Position",
+                "col": 1,
+                "line": 1,
+                "off": 0
+            },
+            "@type": "CompilationUnit",
             "types": [
                 {
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 2,
+                        "line": 3,
+                        "off": 46
+                    },
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 1,
+                        "line": 1,
+                        "off": 0
+                    },
+                    "@type": "TypeDeclaration",
                     "bodyDeclarations": [
                         {
+                            "@end": {
+                                "@type": "ast:Position",
+                                "col": 28,
+                                "line": 2,
+                                "off": 44
+                            },
+                            "@start": {
+                                "@type": "ast:Position",
+                                "col": 3,
+                                "line": 2,
+                                "off": 19
+                            },
+                            "@type": "MethodDeclaration",
                             "body": {
-                                "endColumn": 28,
-                                "endLine": 2,
-                                "endPosition": 44,
-                                "internalClass": "Block",
-                                "startColumn": 26,
-                                "startLine": 2,
-                                "startPosition": 42
+                                "@end": {
+                                    "@type": "ast:Position",
+                                    "col": 28,
+                                    "line": 2,
+                                    "off": 44
+                                },
+                                "@start": {
+                                    "@type": "ast:Position",
+                                    "col": 26,
+                                    "line": 2,
+                                    "off": 42
+                                },
+                                "@type": "Block"
                             },
                             "constructor": "false",
-                            "endColumn": 28,
-                            "endLine": 2,
-                            "endPosition": 44,
-                            "internalClass": "MethodDeclaration",
                             "modifiers": [
                                 {
-                                    "endColumn": 9,
-                                    "endLine": 2,
-                                    "endPosition": 25,
-                                    "internalClass": "Modifier",
-                                    "keyword": "public",
-                                    "startColumn": 3,
-                                    "startLine": 2,
-                                    "startPosition": 19
+                                    "@end": {
+                                        "@type": "ast:Position",
+                                        "col": 9,
+                                        "line": 2,
+                                        "off": 25
+                                    },
+                                    "@start": {
+                                        "@type": "ast:Position",
+                                        "col": 3,
+                                        "line": 2,
+                                        "off": 19
+                                    },
+                                    "@type": "Modifier",
+                                    "keyword": "public"
                                 }
                             ],
                             "name": {
-                                "endColumn": 23,
-                                "endLine": 2,
-                                "endPosition": 39,
-                                "identifier": "finalize",
-                                "internalClass": "SimpleName",
-                                "startColumn": 15,
-                                "startLine": 2,
-                                "startPosition": 31
+                                "@end": {
+                                    "@type": "ast:Position",
+                                    "col": 23,
+                                    "line": 2,
+                                    "off": 39
+                                },
+                                "@start": {
+                                    "@type": "ast:Position",
+                                    "col": 15,
+                                    "line": 2,
+                                    "off": 31
+                                },
+                                "@type": "SimpleName",
+                                "identifier": "finalize"
                             },
                             "returnType2": {
-                                "endColumn": 14,
-                                "endLine": 2,
-                                "endPosition": 30,
-                                "internalClass": "PrimitiveType",
-                                "primitiveTypeCode": "void",
-                                "startColumn": 10,
-                                "startLine": 2,
-                                "startPosition": 26
-                            },
-                            "startColumn": 3,
-                            "startLine": 2,
-                            "startPosition": 19
+                                "@end": {
+                                    "@type": "ast:Position",
+                                    "col": 14,
+                                    "line": 2,
+                                    "off": 30
+                                },
+                                "@start": {
+                                    "@type": "ast:Position",
+                                    "col": 10,
+                                    "line": 2,
+                                    "off": 26
+                                },
+                                "@type": "PrimitiveType",
+                                "primitiveTypeCode": "void"
+                            }
                         }
                     ],
-                    "endColumn": 2,
-                    "endLine": 3,
-                    "endPosition": 46,
                     "interface": "false",
-                    "internalClass": "TypeDeclaration",
                     "name": {
-                        "endColumn": 15,
-                        "endLine": 1,
-                        "endPosition": 14,
-                        "identifier": "Testcls1",
-                        "internalClass": "SimpleName",
-                        "startColumn": 7,
-                        "startLine": 1,
-                        "startPosition": 6
-                    },
-                    "startColumn": 1,
-                    "startLine": 1,
-                    "startPosition": 0
+                        "@end": {
+                            "@type": "ast:Position",
+                            "col": 15,
+                            "line": 1,
+                            "off": 14
+                        },
+                        "@start": {
+                            "@type": "ast:Position",
+                            "col": 7,
+                            "line": 1,
+                            "off": 6
+                        },
+                        "@type": "SimpleName",
+                        "identifier": "Testcls1"
+                    }
                 }
             ]
         }

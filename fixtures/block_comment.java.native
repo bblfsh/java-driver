@@ -4,74 +4,116 @@
     "errors": [],
     "ast": {
         "CompilationUnit": {
+            "@end": {
+                "@type": "ast:Position",
+                "col": 0,
+                "off": 147
+            },
+            "@start": {
+                "@type": "ast:Position",
+                "col": 1,
+                "line": 1,
+                "off": 0
+            },
+            "@type": "CompilationUnit",
             "comments": [
                 {
-                    "endColumn": 27,
-                    "endLine": 1,
-                    "endPosition": 26,
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 27,
+                        "line": 1,
+                        "off": 26
+                    },
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 1,
+                        "line": 1,
+                        "off": 0
+                    },
                     "internalClass": "BlockComment",
-                    "startColumn": 1,
-                    "startLine": 1,
-                    "startPosition": 0,
                     "text": "/* block comment before */"
                 },
                 {
-                    "endColumn": 37,
-                    "endLine": 2,
-                    "endPosition": 63,
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 37,
+                        "line": 2,
+                        "off": 63
+                    },
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 11,
+                        "line": 2,
+                        "off": 37
+                    },
                     "internalClass": "BlockComment",
-                    "startColumn": 11,
-                    "startLine": 2,
-                    "startPosition": 37,
                     "text": "/* block comment inline */"
                 },
                 {
-                    "endColumn": 26,
-                    "endLine": 3,
-                    "endPosition": 91,
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 26,
+                        "line": 3,
+                        "off": 91
+                    },
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 1,
+                        "line": 3,
+                        "off": 66
+                    },
                     "internalClass": "BlockComment",
-                    "startColumn": 1,
-                    "startLine": 3,
-                    "startPosition": 66,
                     "text": "/* block comment after */"
                 },
                 {
-                    "endColumn": 4,
-                    "endLine": 9,
-                    "endPosition": 146,
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 4,
+                        "line": 9,
+                        "off": 146
+                    },
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 1,
+                        "line": 5,
+                        "off": 93
+                    },
                     "internalClass": "BlockComment",
-                    "startColumn": 1,
-                    "startLine": 5,
-                    "startPosition": 93,
                     "text": "/*\n* This is a multiline\n* block comment\n* end\n*/"
                 }
             ],
-            "endColumn": 0,
-            "endPosition": 147,
-            "internalClass": "CompilationUnit",
-            "startColumn": 1,
-            "startLine": 1,
-            "startPosition": 0,
             "types": [
                 {
-                    "endColumn": 39,
-                    "endLine": 2,
-                    "endPosition": 65,
-                    "interface": "false",
-                    "internalClass": "TypeDeclaration",
-                    "name": {
-                        "endColumn": 8,
-                        "endLine": 2,
-                        "endPosition": 34,
-                        "identifier": "A",
-                        "internalClass": "SimpleName",
-                        "startColumn": 7,
-                        "startLine": 2,
-                        "startPosition": 33
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 39,
+                        "line": 2,
+                        "off": 65
                     },
-                    "startColumn": 1,
-                    "startLine": 2,
-                    "startPosition": 27
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 1,
+                        "line": 2,
+                        "off": 27
+                    },
+                    "@type": "TypeDeclaration",
+                    "interface": "false",
+                    "name": {
+                        "@end": {
+                            "@type": "ast:Position",
+                            "col": 8,
+                            "line": 2,
+                            "off": 34
+                        },
+                        "@start": {
+                            "@type": "ast:Position",
+                            "col": 7,
+                            "line": 2,
+                            "off": 33
+                        },
+                        "@type": "SimpleName",
+                        "identifier": "A"
+                    }
                 }
             ]
         }

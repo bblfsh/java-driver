@@ -4,192 +4,306 @@
     "errors": [],
     "ast": {
         "CompilationUnit": {
-            "endColumn": 0,
-            "endPosition": 70,
-            "internalClass": "CompilationUnit",
-            "startColumn": 1,
-            "startLine": 1,
-            "startPosition": 0,
+            "@end": {
+                "@type": "ast:Position",
+                "col": 0,
+                "off": 70
+            },
+            "@start": {
+                "@type": "ast:Position",
+                "col": 1,
+                "line": 1,
+                "off": 0
+            },
+            "@type": "CompilationUnit",
             "types": [
                 {
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 2,
+                        "line": 5,
+                        "off": 69
+                    },
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 1,
+                        "line": 1,
+                        "off": 0
+                    },
+                    "@type": "TypeDeclaration",
                     "bodyDeclarations": [
                         {
-                            "endColumn": 16,
-                            "endLine": 2,
-                            "endPosition": 32,
+                            "@end": {
+                                "@type": "ast:Position",
+                                "col": 16,
+                                "line": 2,
+                                "off": 32
+                            },
+                            "@start": {
+                                "@type": "ast:Position",
+                                "col": 5,
+                                "line": 2,
+                                "off": 21
+                            },
+                            "@type": "FieldDeclaration",
                             "fragments": [
                                 {
-                                    "endColumn": 15,
-                                    "endLine": 2,
-                                    "endPosition": 31,
-                                    "internalClass": "VariableDeclarationFragment",
-                                    "name": {
-                                        "endColumn": 15,
-                                        "endLine": 2,
-                                        "endPosition": 31,
-                                        "identifier": "foo",
-                                        "internalClass": "SimpleName",
-                                        "startColumn": 12,
-                                        "startLine": 2,
-                                        "startPosition": 28
+                                    "@end": {
+                                        "@type": "ast:Position",
+                                        "col": 15,
+                                        "line": 2,
+                                        "off": 31
                                     },
-                                    "startColumn": 12,
-                                    "startLine": 2,
-                                    "startPosition": 28
+                                    "@start": {
+                                        "@type": "ast:Position",
+                                        "col": 12,
+                                        "line": 2,
+                                        "off": 28
+                                    },
+                                    "@type": "VariableDeclarationFragment",
+                                    "name": {
+                                        "@end": {
+                                            "@type": "ast:Position",
+                                            "col": 15,
+                                            "line": 2,
+                                            "off": 31
+                                        },
+                                        "@start": {
+                                            "@type": "ast:Position",
+                                            "col": 12,
+                                            "line": 2,
+                                            "off": 28
+                                        },
+                                        "@type": "SimpleName",
+                                        "identifier": "foo"
+                                    }
                                 }
                             ],
-                            "internalClass": "FieldDeclaration",
-                            "startColumn": 5,
-                            "startLine": 2,
-                            "startPosition": 21,
                             "type": {
-                                "endColumn": 11,
-                                "endLine": 2,
-                                "endPosition": 27,
-                                "internalClass": "SimpleType",
-                                "name": {
-                                    "endColumn": 11,
-                                    "endLine": 2,
-                                    "endPosition": 27,
-                                    "identifier": "String",
-                                    "internalClass": "SimpleName",
-                                    "startColumn": 5,
-                                    "startLine": 2,
-                                    "startPosition": 21
+                                "@end": {
+                                    "@type": "ast:Position",
+                                    "col": 11,
+                                    "line": 2,
+                                    "off": 27
                                 },
-                                "startColumn": 5,
-                                "startLine": 2,
-                                "startPosition": 21
+                                "@start": {
+                                    "@type": "ast:Position",
+                                    "col": 5,
+                                    "line": 2,
+                                    "off": 21
+                                },
+                                "@type": "SimpleType",
+                                "name": {
+                                    "@end": {
+                                        "@type": "ast:Position",
+                                        "col": 11,
+                                        "line": 2,
+                                        "off": 27
+                                    },
+                                    "@start": {
+                                        "@type": "ast:Position",
+                                        "col": 5,
+                                        "line": 2,
+                                        "off": 21
+                                    },
+                                    "@type": "SimpleName",
+                                    "identifier": "String"
+                                }
                             }
                         },
                         {
-                            "endColumn": 17,
-                            "endLine": 3,
-                            "endPosition": 49,
+                            "@end": {
+                                "@type": "ast:Position",
+                                "col": 17,
+                                "line": 3,
+                                "off": 49
+                            },
+                            "@start": {
+                                "@type": "ast:Position",
+                                "col": 5,
+                                "line": 3,
+                                "off": 37
+                            },
+                            "@type": "FieldDeclaration",
                             "fragments": [
                                 {
-                                    "endColumn": 16,
-                                    "endLine": 3,
-                                    "endPosition": 48,
+                                    "@end": {
+                                        "@type": "ast:Position",
+                                        "col": 16,
+                                        "line": 3,
+                                        "off": 48
+                                    },
+                                    "@start": {
+                                        "@type": "ast:Position",
+                                        "col": 9,
+                                        "line": 3,
+                                        "off": 41
+                                    },
+                                    "@type": "VariableDeclarationFragment",
                                     "initializer": {
-                                        "endColumn": 16,
-                                        "endLine": 3,
-                                        "endPosition": 48,
-                                        "internalClass": "NumberLiteral",
-                                        "startColumn": 15,
-                                        "startLine": 3,
-                                        "startPosition": 47,
+                                        "@end": {
+                                            "@type": "ast:Position",
+                                            "col": 16,
+                                            "line": 3,
+                                            "off": 48
+                                        },
+                                        "@start": {
+                                            "@type": "ast:Position",
+                                            "col": 15,
+                                            "line": 3,
+                                            "off": 47
+                                        },
+                                        "@type": "NumberLiteral",
                                         "token": "3"
                                     },
-                                    "internalClass": "VariableDeclarationFragment",
                                     "name": {
-                                        "endColumn": 12,
-                                        "endLine": 3,
-                                        "endPosition": 44,
-                                        "identifier": "bar",
-                                        "internalClass": "SimpleName",
-                                        "startColumn": 9,
-                                        "startLine": 3,
-                                        "startPosition": 41
-                                    },
-                                    "startColumn": 9,
-                                    "startLine": 3,
-                                    "startPosition": 41
+                                        "@end": {
+                                            "@type": "ast:Position",
+                                            "col": 12,
+                                            "line": 3,
+                                            "off": 44
+                                        },
+                                        "@start": {
+                                            "@type": "ast:Position",
+                                            "col": 9,
+                                            "line": 3,
+                                            "off": 41
+                                        },
+                                        "@type": "SimpleName",
+                                        "identifier": "bar"
+                                    }
                                 }
                             ],
-                            "internalClass": "FieldDeclaration",
-                            "startColumn": 5,
-                            "startLine": 3,
-                            "startPosition": 37,
                             "type": {
-                                "endColumn": 8,
-                                "endLine": 3,
-                                "endPosition": 40,
-                                "internalClass": "PrimitiveType",
-                                "primitiveTypeCode": "int",
-                                "startColumn": 5,
-                                "startLine": 3,
-                                "startPosition": 37
+                                "@end": {
+                                    "@type": "ast:Position",
+                                    "col": 8,
+                                    "line": 3,
+                                    "off": 40
+                                },
+                                "@start": {
+                                    "@type": "ast:Position",
+                                    "col": 5,
+                                    "line": 3,
+                                    "off": 37
+                                },
+                                "@type": "PrimitiveType",
+                                "primitiveTypeCode": "int"
                             }
                         },
                         {
-                            "endColumn": 18,
-                            "endLine": 4,
-                            "endPosition": 67,
+                            "@end": {
+                                "@type": "ast:Position",
+                                "col": 18,
+                                "line": 4,
+                                "off": 67
+                            },
+                            "@start": {
+                                "@type": "ast:Position",
+                                "col": 5,
+                                "line": 4,
+                                "off": 54
+                            },
+                            "@type": "FieldDeclaration",
                             "fragments": [
                                 {
-                                    "endColumn": 12,
-                                    "endLine": 4,
-                                    "endPosition": 61,
-                                    "internalClass": "VariableDeclarationFragment",
-                                    "name": {
-                                        "endColumn": 12,
-                                        "endLine": 4,
-                                        "endPosition": 61,
-                                        "identifier": "baz",
-                                        "internalClass": "SimpleName",
-                                        "startColumn": 9,
-                                        "startLine": 4,
-                                        "startPosition": 58
+                                    "@end": {
+                                        "@type": "ast:Position",
+                                        "col": 12,
+                                        "line": 4,
+                                        "off": 61
                                     },
-                                    "startColumn": 9,
-                                    "startLine": 4,
-                                    "startPosition": 58
+                                    "@start": {
+                                        "@type": "ast:Position",
+                                        "col": 9,
+                                        "line": 4,
+                                        "off": 58
+                                    },
+                                    "@type": "VariableDeclarationFragment",
+                                    "name": {
+                                        "@end": {
+                                            "@type": "ast:Position",
+                                            "col": 12,
+                                            "line": 4,
+                                            "off": 61
+                                        },
+                                        "@start": {
+                                            "@type": "ast:Position",
+                                            "col": 9,
+                                            "line": 4,
+                                            "off": 58
+                                        },
+                                        "@type": "SimpleName",
+                                        "identifier": "baz"
+                                    }
                                 },
                                 {
-                                    "endColumn": 17,
-                                    "endLine": 4,
-                                    "endPosition": 66,
-                                    "internalClass": "VariableDeclarationFragment",
-                                    "name": {
-                                        "endColumn": 17,
-                                        "endLine": 4,
-                                        "endPosition": 66,
-                                        "identifier": "pok",
-                                        "internalClass": "SimpleName",
-                                        "startColumn": 14,
-                                        "startLine": 4,
-                                        "startPosition": 63
+                                    "@end": {
+                                        "@type": "ast:Position",
+                                        "col": 17,
+                                        "line": 4,
+                                        "off": 66
                                     },
-                                    "startColumn": 14,
-                                    "startLine": 4,
-                                    "startPosition": 63
+                                    "@start": {
+                                        "@type": "ast:Position",
+                                        "col": 14,
+                                        "line": 4,
+                                        "off": 63
+                                    },
+                                    "@type": "VariableDeclarationFragment",
+                                    "name": {
+                                        "@end": {
+                                            "@type": "ast:Position",
+                                            "col": 17,
+                                            "line": 4,
+                                            "off": 66
+                                        },
+                                        "@start": {
+                                            "@type": "ast:Position",
+                                            "col": 14,
+                                            "line": 4,
+                                            "off": 63
+                                        },
+                                        "@type": "SimpleName",
+                                        "identifier": "pok"
+                                    }
                                 }
                             ],
-                            "internalClass": "FieldDeclaration",
-                            "startColumn": 5,
-                            "startLine": 4,
-                            "startPosition": 54,
                             "type": {
-                                "endColumn": 8,
-                                "endLine": 4,
-                                "endPosition": 57,
-                                "internalClass": "PrimitiveType",
-                                "primitiveTypeCode": "int",
-                                "startColumn": 5,
-                                "startLine": 4,
-                                "startPosition": 54
+                                "@end": {
+                                    "@type": "ast:Position",
+                                    "col": 8,
+                                    "line": 4,
+                                    "off": 57
+                                },
+                                "@start": {
+                                    "@type": "ast:Position",
+                                    "col": 5,
+                                    "line": 4,
+                                    "off": 54
+                                },
+                                "@type": "PrimitiveType",
+                                "primitiveTypeCode": "int"
                             }
                         }
                     ],
-                    "endColumn": 2,
-                    "endLine": 5,
-                    "endPosition": 69,
                     "interface": "false",
-                    "internalClass": "TypeDeclaration",
                     "name": {
-                        "endColumn": 15,
-                        "endLine": 1,
-                        "endPosition": 14,
-                        "identifier": "Testfnc1",
-                        "internalClass": "SimpleName",
-                        "startColumn": 7,
-                        "startLine": 1,
-                        "startPosition": 6
-                    },
-                    "startColumn": 1,
-                    "startLine": 1,
-                    "startPosition": 0
+                        "@end": {
+                            "@type": "ast:Position",
+                            "col": 15,
+                            "line": 1,
+                            "off": 14
+                        },
+                        "@start": {
+                            "@type": "ast:Position",
+                            "col": 7,
+                            "line": 1,
+                            "off": 6
+                        },
+                        "@type": "SimpleName",
+                        "identifier": "Testfnc1"
+                    }
                 }
             ]
         }

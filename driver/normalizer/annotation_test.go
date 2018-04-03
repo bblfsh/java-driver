@@ -1,5 +1,5 @@
 package normalizer
-
+/*
 import (
 	"bytes"
 	"encoding/json"
@@ -101,3 +101,4 @@ func getFixture(name string) (map[string]interface{}, error) {
 
 	return data, nil
 }
+*/

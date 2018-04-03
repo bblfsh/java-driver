@@ -4,106 +4,166 @@
     "errors": [],
     "ast": {
         "CompilationUnit": {
+            "@end": {
+                "@type": "ast:Position",
+                "col": 0,
+                "off": 81
+            },
+            "@start": {
+                "@type": "ast:Position",
+                "col": 1,
+                "line": 1,
+                "off": 0
+            },
+            "@type": "CompilationUnit",
             "comments": [],
-            "endColumn": 0,
-            "endPosition": 81,
-            "internalClass": "CompilationUnit",
-            "startColumn": 1,
-            "startLine": 1,
-            "startPosition": 0,
             "types": [
                 {
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 2,
+                        "line": 6,
+                        "off": 80
+                    },
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 1,
+                        "line": 1,
+                        "off": 0
+                    },
+                    "@type": "TypeDeclaration",
                     "bodyDeclarations": [
                         {
+                            "@end": {
+                                "@type": "ast:Position",
+                                "col": 23,
+                                "line": 5,
+                                "off": 78
+                            },
+                            "@start": {
+                                "@type": "ast:Position",
+                                "col": 5,
+                                "line": 2,
+                                "off": 21
+                            },
+                            "@type": "MethodDeclaration",
                             "body": {
-                                "endColumn": 23,
-                                "endLine": 5,
-                                "endPosition": 78,
-                                "internalClass": "Block",
-                                "startColumn": 21,
-                                "startLine": 5,
-                                "startPosition": 76
+                                "@end": {
+                                    "@type": "ast:Position",
+                                    "col": 23,
+                                    "line": 5,
+                                    "off": 78
+                                },
+                                "@start": {
+                                    "@type": "ast:Position",
+                                    "col": 21,
+                                    "line": 5,
+                                    "off": 76
+                                },
+                                "@type": "Block"
                             },
                             "constructor": "false",
-                            "endColumn": 23,
-                            "endLine": 5,
-                            "endPosition": 78,
-                            "internalClass": "MethodDeclaration",
                             "javadoc": {
-                                "endColumn": 8,
-                                "endLine": 4,
-                                "endPosition": 55,
-                                "internalClass": "Javadoc",
-                                "startColumn": 5,
-                                "startLine": 2,
-                                "startPosition": 21,
+                                "@end": {
+                                    "@type": "ast:Position",
+                                    "col": 8,
+                                    "line": 4,
+                                    "off": 55
+                                },
+                                "@start": {
+                                    "@type": "ast:Position",
+                                    "col": 5,
+                                    "line": 2,
+                                    "off": 21
+                                },
+                                "@type": "Javadoc",
                                 "tags": [
                                     {
-                                        "endColumn": 23,
-                                        "endLine": 3,
-                                        "endPosition": 47,
+                                        "@end": {
+                                            "@type": "ast:Position",
+                                            "col": 23,
+                                            "line": 3,
+                                            "off": 47
+                                        },
+                                        "@start": {
+                                            "@type": "ast:Position",
+                                            "col": 8,
+                                            "line": 3,
+                                            "off": 32
+                                        },
+                                        "@type": "TagElement",
                                         "fragments": [
                                             {
-                                                "endColumn": 23,
-                                                "endLine": 3,
-                                                "endPosition": 47,
-                                                "internalClass": "TextElement",
-                                                "startColumn": 8,
-                                                "startLine": 3,
-                                                "startPosition": 32,
+                                                "@end": {
+                                                    "@type": "ast:Position",
+                                                    "col": 23,
+                                                    "line": 3,
+                                                    "off": 47
+                                                },
+                                                "@start": {
+                                                    "@type": "ast:Position",
+                                                    "col": 8,
+                                                    "line": 3,
+                                                    "off": 32
+                                                },
+                                                "@type": "TextElement",
                                                 "text": "Javadoc comment"
                                             }
-                                        ],
-                                        "internalClass": "TagElement",
-                                        "startColumn": 8,
-                                        "startLine": 3,
-                                        "startPosition": 32
+                                        ]
                                     }
                                 ]
                             },
                             "name": {
-                                "endColumn": 18,
-                                "endLine": 5,
-                                "endPosition": 73,
-                                "identifier": "testfnc1",
-                                "internalClass": "SimpleName",
-                                "startColumn": 10,
-                                "startLine": 5,
-                                "startPosition": 65
+                                "@end": {
+                                    "@type": "ast:Position",
+                                    "col": 18,
+                                    "line": 5,
+                                    "off": 73
+                                },
+                                "@start": {
+                                    "@type": "ast:Position",
+                                    "col": 10,
+                                    "line": 5,
+                                    "off": 65
+                                },
+                                "@type": "SimpleName",
+                                "identifier": "testfnc1"
                             },
                             "returnType2": {
-                                "endColumn": 9,
-                                "endLine": 5,
-                                "endPosition": 64,
-                                "internalClass": "PrimitiveType",
-                                "primitiveTypeCode": "void",
-                                "startColumn": 5,
-                                "startLine": 5,
-                                "startPosition": 60
-                            },
-                            "startColumn": 5,
-                            "startLine": 2,
-                            "startPosition": 21
+                                "@end": {
+                                    "@type": "ast:Position",
+                                    "col": 9,
+                                    "line": 5,
+                                    "off": 64
+                                },
+                                "@start": {
+                                    "@type": "ast:Position",
+                                    "col": 5,
+                                    "line": 5,
+                                    "off": 60
+                                },
+                                "@type": "PrimitiveType",
+                                "primitiveTypeCode": "void"
+                            }
                         }
                     ],
-                    "endColumn": 2,
-                    "endLine": 6,
-                    "endPosition": 80,
                     "interface": "false",
-                    "internalClass": "TypeDeclaration",
                     "name": {
-                        "endColumn": 15,
-                        "endLine": 1,
-                        "endPosition": 14,
-                        "identifier": "Testcls1",
-                        "internalClass": "SimpleName",
-                        "startColumn": 7,
-                        "startLine": 1,
-                        "startPosition": 6
-                    },
-                    "startColumn": 1,
-                    "startLine": 1,
-                    "startPosition": 0
+                        "@end": {
+                            "@type": "ast:Position",
+                            "col": 15,
+                            "line": 1,
+                            "off": 14
+                        },
+                        "@start": {
+                            "@type": "ast:Position",
+                            "col": 7,
+                            "line": 1,
+                            "off": 6
+                        },
+                        "@type": "SimpleName",
+                        "identifier": "Testcls1"
+                    }
                 }
             ]
         }

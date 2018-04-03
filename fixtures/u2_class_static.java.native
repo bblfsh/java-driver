@@ -4,43 +4,67 @@
     "errors": [],
     "ast": {
         "CompilationUnit": {
-            "endColumn": 0,
-            "endPosition": 19,
-            "internalClass": "CompilationUnit",
-            "startColumn": 1,
-            "startLine": 1,
-            "startPosition": 0,
+            "@end": {
+                "@type": "ast:Position",
+                "col": 0,
+                "off": 19
+            },
+            "@start": {
+                "@type": "ast:Position",
+                "col": 1,
+                "line": 1,
+                "off": 0
+            },
+            "@type": "CompilationUnit",
             "types": [
                 {
-                    "endColumn": 0,
-                    "endPosition": 19,
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 0,
+                        "off": 19
+                    },
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 1,
+                        "line": 1,
+                        "off": 0
+                    },
+                    "@type": "TypeDeclaration",
                     "interface": "false",
-                    "internalClass": "TypeDeclaration",
                     "modifiers": [
                         {
-                            "endColumn": 7,
-                            "endLine": 1,
-                            "endPosition": 6,
-                            "internalClass": "Modifier",
-                            "keyword": "static",
-                            "startColumn": 1,
-                            "startLine": 1,
-                            "startPosition": 0
+                            "@end": {
+                                "@type": "ast:Position",
+                                "col": 7,
+                                "line": 1,
+                                "off": 6
+                            },
+                            "@start": {
+                                "@type": "ast:Position",
+                                "col": 1,
+                                "line": 1,
+                                "off": 0
+                            },
+                            "@type": "Modifier",
+                            "keyword": "static"
                         }
                     ],
                     "name": {
-                        "endColumn": 17,
-                        "endLine": 1,
-                        "endPosition": 16,
-                        "identifier": "Foo",
-                        "internalClass": "SimpleName",
-                        "startColumn": 14,
-                        "startLine": 1,
-                        "startPosition": 13
-                    },
-                    "startColumn": 1,
-                    "startLine": 1,
-                    "startPosition": 0
+                        "@end": {
+                            "@type": "ast:Position",
+                            "col": 17,
+                            "line": 1,
+                            "off": 16
+                        },
+                        "@start": {
+                            "@type": "ast:Position",
+                            "col": 14,
+                            "line": 1,
+                            "off": 13
+                        },
+                        "@type": "SimpleName",
+                        "identifier": "Foo"
+                    }
                 }
             ]
         }

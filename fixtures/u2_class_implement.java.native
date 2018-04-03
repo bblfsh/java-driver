@@ -4,51 +4,81 @@
     "errors": [],
     "ast": {
         "CompilationUnit": {
-            "endColumn": 0,
-            "endPosition": 40,
-            "internalClass": "CompilationUnit",
-            "startColumn": 1,
-            "startLine": 1,
-            "startPosition": 0,
+            "@end": {
+                "@type": "ast:Position",
+                "col": 0,
+                "off": 40
+            },
+            "@start": {
+                "@type": "ast:Position",
+                "col": 1,
+                "line": 1,
+                "off": 0
+            },
+            "@type": "CompilationUnit",
             "types": [
                 {
-                    "endColumn": 40,
-                    "endLine": 1,
-                    "endPosition": 39,
-                    "interface": "false",
-                    "internalClass": "TypeDeclaration",
-                    "name": {
-                        "endColumn": 15,
-                        "endLine": 1,
-                        "endPosition": 14,
-                        "identifier": "Testcls1",
-                        "internalClass": "SimpleName",
-                        "startColumn": 7,
-                        "startLine": 1,
-                        "startPosition": 6
+                    "@end": {
+                        "@type": "ast:Position",
+                        "col": 40,
+                        "line": 1,
+                        "off": 39
                     },
-                    "startColumn": 1,
-                    "startLine": 1,
-                    "startPosition": 0,
+                    "@start": {
+                        "@type": "ast:Position",
+                        "col": 1,
+                        "line": 1,
+                        "off": 0
+                    },
+                    "@type": "TypeDeclaration",
+                    "interface": "false",
+                    "name": {
+                        "@end": {
+                            "@type": "ast:Position",
+                            "col": 15,
+                            "line": 1,
+                            "off": 14
+                        },
+                        "@start": {
+                            "@type": "ast:Position",
+                            "col": 7,
+                            "line": 1,
+                            "off": 6
+                        },
+                        "@type": "SimpleName",
+                        "identifier": "Testcls1"
+                    },
                     "superInterfaceTypes": [
                         {
-                            "endColumn": 37,
-                            "endLine": 1,
-                            "endPosition": 36,
-                            "internalClass": "SimpleType",
-                            "name": {
-                                "endColumn": 37,
-                                "endLine": 1,
-                                "endPosition": 36,
-                                "identifier": "Testiface1",
-                                "internalClass": "SimpleName",
-                                "startColumn": 27,
-                                "startLine": 1,
-                                "startPosition": 26
+                            "@end": {
+                                "@type": "ast:Position",
+                                "col": 37,
+                                "line": 1,
+                                "off": 36
                             },
-                            "startColumn": 27,
-                            "startLine": 1,
-                            "startPosition": 26
+                            "@start": {
+                                "@type": "ast:Position",
+                                "col": 27,
+                                "line": 1,
+                                "off": 26
+                            },
+                            "@type": "SimpleType",
+                            "name": {
+                                "@end": {
+                                    "@type": "ast:Position",
+                                    "col": 37,
+                                    "line": 1,
+                                    "off": 36
+                                },
+                                "@start": {
+                                    "@type": "ast:Position",
+                                    "col": 27,
+                                    "line": 1,
+                                    "off": 26
+                                },
+                                "@type": "SimpleName",
+                                "identifier": "Testiface1"
+                            }
                         }
                     ]
                 }
