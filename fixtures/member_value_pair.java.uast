@@ -16,7 +16,7 @@ CompilationUnit {
 .  }
 .  Children: {
 .  .  0: AnnotationTypeDeclaration {
-.  .  .  Roles: Declaration,Type,Annotation
+.  .  .  Roles: Annotation,Declaration,Type
 .  .  .  StartPosition: {
 .  .  .  .  Offset: 0
 .  .  .  .  Line: 1
@@ -49,7 +49,7 @@ CompilationUnit {
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  .  1: AnnotationTypeMemberDeclaration {
-.  .  .  .  .  Roles: Body,Declaration,Type,Annotation
+.  .  .  .  .  Roles: Annotation,Body,Declaration,Type
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 16
 .  .  .  .  .  .  Line: 2
@@ -121,7 +121,7 @@ CompilationUnit {
 .  .  .  }
 .  .  }
 .  .  1: TypeDeclaration {
-.  .  .  Roles: Visibility,Package,Declaration,Type
+.  .  .  Roles: Declaration,Package,Type,Visibility
 .  .  .  StartPosition: {
 .  .  .  .  Offset: 31
 .  .  .  .  Line: 5
@@ -242,7 +242,7 @@ CompilationUnit {
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  .  2: MethodDeclaration {
-.  .  .  .  .  Roles: Visibility,Package,Declaration,Function
+.  .  .  .  .  Roles: Declaration,Function,Package,Visibility
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 55
 .  .  .  .  .  .  Line: 7
@@ -259,7 +259,7 @@ CompilationUnit {
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
 .  .  .  .  .  .  0: SimpleName {
-.  .  .  .  .  .  .  Roles: Expression,Identifier,Function,Name
+.  .  .  .  .  .  .  Roles: Expression,Function,Identifier,Name
 .  .  .  .  .  .  .  TOKEN "Code"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 55
@@ -276,7 +276,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  .  1: Block {
-.  .  .  .  .  .  .  Roles: Function,Body,Statement,Block,Scope
+.  .  .  .  .  .  .  Roles: Block,Body,Function,Scope,Statement
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 62
 .  .  .  .  .  .  .  .  Line: 7

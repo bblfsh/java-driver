@@ -16,7 +16,7 @@ CompilationUnit {
 .  }
 .  Children: {
 .  .  0: TypeDeclaration {
-.  .  .  Roles: Visibility,Package,Declaration,Type
+.  .  .  Roles: Declaration,Package,Type,Visibility
 .  .  .  StartPosition: {
 .  .  .  .  Offset: 0
 .  .  .  .  Line: 1
@@ -50,7 +50,7 @@ CompilationUnit {
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  .  1: MethodDeclaration {
-.  .  .  .  .  Roles: Visibility,Package,Declaration,Function
+.  .  .  .  .  Roles: Declaration,Function,Package,Visibility
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 15
 .  .  .  .  .  .  Line: 2
@@ -67,7 +67,7 @@ CompilationUnit {
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
 .  .  .  .  .  .  0: SimpleName {
-.  .  .  .  .  .  .  Roles: Expression,Identifier,Function,Name
+.  .  .  .  .  .  .  Roles: Expression,Function,Identifier,Name
 .  .  .  .  .  .  .  TOKEN "Code"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 15
@@ -84,7 +84,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  .  1: Block {
-.  .  .  .  .  .  .  Roles: Function,Body,Statement,Block,Scope
+.  .  .  .  .  .  .  Roles: Block,Body,Function,Scope,Statement
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 22
 .  .  .  .  .  .  .  .  Line: 2
@@ -100,7 +100,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  0: LabeledStatement {
-.  .  .  .  .  .  .  .  .  Roles: Statement,Incomplete
+.  .  .  .  .  .  .  .  .  Roles: Incomplete,Statement
 .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  Offset: 28
 .  .  .  .  .  .  .  .  .  .  Line: 3
@@ -133,7 +133,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  1: Block {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Statement,Block,Scope
+.  .  .  .  .  .  .  .  .  .  .  Roles: Block,Scope,Statement
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 35
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 3
@@ -149,7 +149,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  0: VariableDeclarationStatement {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Statement,Declaration,Variable
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Declaration,Statement,Variable
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 36
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 3
@@ -165,7 +165,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: PrimitiveType {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Type,Primitive
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Primitive,Type
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "int"
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 36

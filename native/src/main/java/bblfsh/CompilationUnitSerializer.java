@@ -81,7 +81,7 @@ public class CompilationUnitSerializer extends StdSerializer<CompilationUnit> {
 
                     jG.writeStartObject();
                     final int type = c.getNodeType();
-                    jG.writeFieldName("internalClass");
+                    jG.writeFieldName("@type");
                     String name = c.nodeClassForType(type).getName().substring(25);
                     jG.writeString(name);
                     jG.writeFieldName("text");

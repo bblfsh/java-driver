@@ -16,7 +16,7 @@ CompilationUnit {
 .  }
 .  Children: {
 .  .  0: TypeDeclaration {
-.  .  .  Roles: Visibility,Package,Declaration,Type
+.  .  .  Roles: Declaration,Package,Type,Visibility
 .  .  .  StartPosition: {
 .  .  .  .  Offset: 0
 .  .  .  .  Line: 1
@@ -66,7 +66,7 @@ CompilationUnit {
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
 .  .  .  .  .  .  0: Modifier {
-.  .  .  .  .  .  .  Roles: Visibility,Instance
+.  .  .  .  .  .  .  Roles: Instance,Visibility
 .  .  .  .  .  .  .  TOKEN "private"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 15
@@ -117,7 +117,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  .  3: PrimitiveType {
-.  .  .  .  .  .  .  Roles: Type,Primitive
+.  .  .  .  .  .  .  Roles: Primitive,Type
 .  .  .  .  .  .  .  TOKEN "int"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 36
@@ -171,7 +171,7 @@ CompilationUnit {
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  .  2: Initializer {
-.  .  .  .  .  Roles: Initialization,Block,Incomplete
+.  .  .  .  .  Roles: Block,Incomplete,Initialization
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 45
 .  .  .  .  .  .  Line: 3
@@ -204,7 +204,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  .  1: Block {
-.  .  .  .  .  .  .  Roles: Statement,Block,Scope
+.  .  .  .  .  .  .  Roles: Block,Scope,Statement
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 52
 .  .  .  .  .  .  .  .  Line: 3
@@ -236,7 +236,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  0: Assignment {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Expression,Assignment,Operator,Binary
+.  .  .  .  .  .  .  .  .  .  .  Roles: Assignment,Binary,Expression,Operator
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 58
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 4
@@ -249,11 +249,17 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  Properties: {
 .  .  .  .  .  .  .  .  .  .  .  .  internalRole: expression
-.  .  .  .  .  .  .  .  .  .  .  .  operator: =
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  Children: {
-.  .  .  .  .  .  .  .  .  .  .  .  0: SimpleName {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Expression,Identifier,Assignment,Binary,Left
+.  .  .  .  .  .  .  .  .  .  .  .  0: ast:Operator {
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Assignment,Binary,Expression,Operator
+.  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "="
+.  .  .  .  .  .  .  .  .  .  .  .  .  Properties: {
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  internalRole: operator
+.  .  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  }
+.  .  .  .  .  .  .  .  .  .  .  .  1: SimpleName {
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Assignment,Binary,Expression,Identifier,Left
 .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "a"
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 58
@@ -269,8 +275,8 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  internalRole: leftHandSide
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  .  .  .  1: NumberLiteral {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Expression,Literal,Number,Assignment,Binary,Right
+.  .  .  .  .  .  .  .  .  .  .  .  2: NumberLiteral {
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Assignment,Binary,Expression,Literal,Number,Right
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 62
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 4

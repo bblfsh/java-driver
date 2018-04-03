@@ -16,7 +16,7 @@ CompilationUnit {
 .  }
 .  Children: {
 .  .  0: TypeDeclaration {
-.  .  .  Roles: Visibility,Package,Declaration,Type
+.  .  .  Roles: Declaration,Package,Type,Visibility
 .  .  .  StartPosition: {
 .  .  .  .  Offset: 0
 .  .  .  .  Line: 1
@@ -50,7 +50,7 @@ CompilationUnit {
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  .  1: MethodDeclaration {
-.  .  .  .  .  Roles: Visibility,Package,Declaration,Function
+.  .  .  .  .  Roles: Declaration,Function,Package,Visibility
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 15
 .  .  .  .  .  .  Line: 2
@@ -67,7 +67,7 @@ CompilationUnit {
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
 .  .  .  .  .  .  0: PrimitiveType {
-.  .  .  .  .  .  .  Roles: Type,Primitive
+.  .  .  .  .  .  .  Roles: Primitive,Type
 .  .  .  .  .  .  .  TOKEN "void"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 15
@@ -84,7 +84,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  .  1: SimpleName {
-.  .  .  .  .  .  .  Roles: Expression,Identifier,Function,Name
+.  .  .  .  .  .  .  Roles: Expression,Function,Identifier,Name
 .  .  .  .  .  .  .  TOKEN "code"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 20
@@ -101,7 +101,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  .  2: Block {
-.  .  .  .  .  .  .  Roles: Function,Body,Statement,Block,Scope
+.  .  .  .  .  .  .  Roles: Block,Body,Function,Scope,Statement
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 27
 .  .  .  .  .  .  .  .  Line: 2
@@ -117,7 +117,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  0: IfStatement {
-.  .  .  .  .  .  .  .  .  Roles: Statement,If
+.  .  .  .  .  .  .  .  .  Roles: If,Statement
 .  .  .  .  .  .  .  .  .  TOKEN "if"
 .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  Offset: 33
@@ -134,7 +134,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  0: BooleanLiteral {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Expression,Literal,Boolean,If,Condition
+.  .  .  .  .  .  .  .  .  .  .  Roles: Boolean,Condition,Expression,If,Literal
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 37
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 3
@@ -151,7 +151,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  1: Block {
-.  .  .  .  .  .  .  .  .  .  .  Roles: If,Then,Body,Statement,Block,Scope
+.  .  .  .  .  .  .  .  .  .  .  Roles: Block,Body,If,Scope,Statement,Then
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 43
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 3
@@ -183,7 +183,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: MethodInvocation {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Expression,Call
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Call,Expression
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 51
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 4
@@ -199,7 +199,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: QualifiedName {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Expression,Identifier,Qualified,Call,Receiver
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Call,Expression,Identifier,Qualified,Receiver
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 51
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 4
@@ -251,7 +251,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  1: SimpleName {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Expression,Identifier,Call,Callee
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Call,Callee,Expression,Identifier
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "println"
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 62
@@ -268,7 +268,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  2: BooleanLiteral {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Expression,Literal,Boolean,Call,Argument,Positional
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Argument,Boolean,Call,Expression,Literal,Positional
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 70
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 4

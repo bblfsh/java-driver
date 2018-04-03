@@ -16,7 +16,7 @@ CompilationUnit {
 .  }
 .  Children: {
 .  .  0: TypeDeclaration {
-.  .  .  Roles: Visibility,Package,Declaration,Type
+.  .  .  Roles: Declaration,Package,Type,Visibility
 .  .  .  StartPosition: {
 .  .  .  .  Offset: 0
 .  .  .  .  Line: 1
@@ -50,7 +50,7 @@ CompilationUnit {
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  .  1: MethodDeclaration {
-.  .  .  .  .  Roles: Visibility,Package,Declaration,Function
+.  .  .  .  .  Roles: Declaration,Function,Package,Visibility
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 15
 .  .  .  .  .  .  Line: 2
@@ -67,7 +67,7 @@ CompilationUnit {
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
 .  .  .  .  .  .  0: SimpleName {
-.  .  .  .  .  .  .  Roles: Expression,Identifier,Function,Name
+.  .  .  .  .  .  .  Roles: Expression,Function,Identifier,Name
 .  .  .  .  .  .  .  TOKEN "Code"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 15
@@ -84,7 +84,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  .  1: Block {
-.  .  .  .  .  .  .  Roles: Function,Body,Statement,Block,Scope
+.  .  .  .  .  .  .  Roles: Block,Body,Function,Scope,Statement
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 22
 .  .  .  .  .  .  .  .  Line: 2
@@ -100,7 +100,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  0: ConstructorInvocation {
-.  .  .  .  .  .  .  .  .  Roles: Statement,Call,Incomplete
+.  .  .  .  .  .  .  .  .  Roles: Call,Incomplete,Statement
 .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  Offset: 28
 .  .  .  .  .  .  .  .  .  .  Line: 3
@@ -116,7 +116,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  0: NumberLiteral {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Expression,Literal,Number,Call,Argument,Positional
+.  .  .  .  .  .  .  .  .  .  .  Roles: Argument,Call,Expression,Literal,Number,Positional
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 33
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 3
@@ -139,7 +139,7 @@ CompilationUnit {
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  .  2: MethodDeclaration {
-.  .  .  .  .  Roles: Visibility,Package,Declaration,Function
+.  .  .  .  .  Roles: Declaration,Function,Package,Visibility
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 43
 .  .  .  .  .  .  Line: 5
@@ -156,7 +156,7 @@ CompilationUnit {
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
 .  .  .  .  .  .  0: SimpleName {
-.  .  .  .  .  .  .  Roles: Expression,Identifier,Function,Name
+.  .  .  .  .  .  .  Roles: Expression,Function,Identifier,Name
 .  .  .  .  .  .  .  TOKEN "Code"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 43
@@ -173,7 +173,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  .  1: SingleVariableDeclaration {
-.  .  .  .  .  .  .  Roles: Function,Argument,Declaration,Variable
+.  .  .  .  .  .  .  Roles: Argument,Declaration,Function,Variable
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 48
 .  .  .  .  .  .  .  .  Line: 5
@@ -190,7 +190,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  0: PrimitiveType {
-.  .  .  .  .  .  .  .  .  Roles: Type,Primitive
+.  .  .  .  .  .  .  .  .  Roles: Primitive,Type
 .  .  .  .  .  .  .  .  .  TOKEN "int"
 .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  Offset: 48
@@ -207,7 +207,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  1: SimpleName {
-.  .  .  .  .  .  .  .  .  Roles: Expression,Identifier,Function,Name,Argument
+.  .  .  .  .  .  .  .  .  Roles: Argument,Expression,Function,Identifier,Name
 .  .  .  .  .  .  .  .  .  TOKEN "i"
 .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  Offset: 52
@@ -226,7 +226,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  .  2: Block {
-.  .  .  .  .  .  .  Roles: Function,Body,Statement,Block,Scope
+.  .  .  .  .  .  .  Roles: Block,Body,Function,Scope,Statement
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 55
 .  .  .  .  .  .  .  .  Line: 5

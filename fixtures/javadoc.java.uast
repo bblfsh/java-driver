@@ -16,7 +16,7 @@ CompilationUnit {
 .  }
 .  Children: {
 .  .  0: TypeDeclaration {
-.  .  .  Roles: Visibility,Package,Declaration,Type
+.  .  .  Roles: Declaration,Package,Type,Visibility
 .  .  .  StartPosition: {
 .  .  .  .  Offset: 0
 .  .  .  .  Line: 1
@@ -33,7 +33,7 @@ CompilationUnit {
 .  .  .  }
 .  .  .  Children: {
 .  .  .  .  0: Javadoc {
-.  .  .  .  .  Roles: Documentation,Comment
+.  .  .  .  .  Roles: Comment,Documentation
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 0
 .  .  .  .  .  .  Line: 1
@@ -105,7 +105,8 @@ CompilationUnit {
 .  .  .  }
 .  .  }
 .  .  1: Javadoc {
-.  .  .  Roles: Documentation,Comment
+.  .  .  Roles: Comment,Documentation
+.  .  .  TOKEN "* javadoc comment inline "
 .  .  .  StartPosition: {
 .  .  .  .  Offset: 44
 .  .  .  .  Line: 3
@@ -118,11 +119,14 @@ CompilationUnit {
 .  .  .  }
 .  .  .  Properties: {
 .  .  .  .  internalRole: comments
-.  .  .  .  text:  javadoc comment inline 
 .  .  .  }
 .  .  }
 .  .  2: Javadoc {
-.  .  .  Roles: Documentation,Comment
+.  .  .  Roles: Comment,Documentation
+.  .  .  TOKEN "*
+* This is a multiline JavaDoc
+* comment
+* "
 .  .  .  StartPosition: {
 .  .  .  .  Offset: 77
 .  .  .  .  Line: 5
@@ -135,10 +139,6 @@ CompilationUnit {
 .  .  .  }
 .  .  .  Properties: {
 .  .  .  .  internalRole: comments
-.  .  .  .  text: 
-* This is a multiline JavaDoc
-* comment
-* 
 .  .  .  }
 .  .  }
 .  }

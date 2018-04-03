@@ -16,7 +16,7 @@ CompilationUnit {
 .  }
 .  Children: {
 .  .  0: AnnotationTypeDeclaration {
-.  .  .  Roles: Declaration,Type,Annotation
+.  .  .  Roles: Annotation,Declaration,Type
 .  .  .  StartPosition: {
 .  .  .  .  Offset: 0
 .  .  .  .  Line: 1
@@ -49,7 +49,7 @@ CompilationUnit {
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  .  1: AnnotationTypeMemberDeclaration {
-.  .  .  .  .  Roles: Body,Declaration,Type,Annotation
+.  .  .  .  .  Roles: Annotation,Body,Declaration,Type
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 17
 .  .  .  .  .  .  Line: 2
@@ -65,7 +65,7 @@ CompilationUnit {
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
 .  .  .  .  .  .  0: PrimitiveType {
-.  .  .  .  .  .  .  Roles: Type,Primitive
+.  .  .  .  .  .  .  Roles: Primitive,Type
 .  .  .  .  .  .  .  TOKEN "int"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 17

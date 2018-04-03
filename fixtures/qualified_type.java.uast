@@ -34,7 +34,7 @@ CompilationUnit {
 .  .  .  }
 .  .  .  Children: {
 .  .  .  .  0: QualifiedName {
-.  .  .  .  .  Roles: Expression,Identifier,Qualified,Pathname,Import
+.  .  .  .  .  Roles: Expression,Identifier,Import,Pathname,Qualified
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 7
 .  .  .  .  .  .  Line: 1
@@ -123,7 +123,7 @@ CompilationUnit {
 .  .  .  }
 .  .  }
 .  .  1: AnnotationTypeDeclaration {
-.  .  .  Roles: Declaration,Type,Annotation
+.  .  .  Roles: Annotation,Declaration,Type
 .  .  .  StartPosition: {
 .  .  .  .  Offset: 31
 .  .  .  .  Line: 2
@@ -245,7 +245,7 @@ CompilationUnit {
 .  .  .  }
 .  .  }
 .  .  2: AnnotationTypeDeclaration {
-.  .  .  Roles: Declaration,Type,Annotation
+.  .  .  Roles: Annotation,Declaration,Type
 .  .  .  StartPosition: {
 .  .  .  .  Offset: 77
 .  .  .  .  Line: 3
@@ -367,7 +367,7 @@ CompilationUnit {
 .  .  .  }
 .  .  }
 .  .  3: TypeDeclaration {
-.  .  .  Roles: Visibility,Package,Declaration,Type
+.  .  .  Roles: Declaration,Package,Type,Visibility
 .  .  .  StartPosition: {
 .  .  .  .  Offset: 124
 .  .  .  .  Line: 5
@@ -401,7 +401,7 @@ CompilationUnit {
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  .  1: TypeDeclaration {
-.  .  .  .  .  Roles: Visibility,Package,Declaration,Type
+.  .  .  .  .  Roles: Declaration,Package,Type,Visibility
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 135
 .  .  .  .  .  .  Line: 6
@@ -435,7 +435,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  .  1: TypeDeclaration {
-.  .  .  .  .  .  .  Roles: Visibility,Package,Declaration,Type
+.  .  .  .  .  .  .  Roles: Declaration,Package,Type,Visibility
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 147
 .  .  .  .  .  .  .  .  Line: 7
@@ -469,7 +469,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  1: MethodDeclaration {
-.  .  .  .  .  .  .  .  .  Roles: Visibility,World,Declaration,Function
+.  .  .  .  .  .  .  .  .  Roles: Declaration,Function,Visibility,World
 .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  Offset: 160
 .  .  .  .  .  .  .  .  .  .  Line: 8
@@ -503,7 +503,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  1: SimpleName {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Expression,Identifier,Function,Name
+.  .  .  .  .  .  .  .  .  .  .  Roles: Expression,Function,Identifier,Name
 .  .  .  .  .  .  .  .  .  .  .  TOKEN "C"
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 167
@@ -520,7 +520,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  2: QualifiedType {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Type,Qualified
+.  .  .  .  .  .  .  .  .  .  .  Roles: Qualified,Type
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 169
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 8
@@ -677,7 +677,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  4: Block {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Function,Body,Statement,Block,Scope
+.  .  .  .  .  .  .  .  .  .  .  Roles: Block,Body,Function,Scope,Statement
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 186
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 8

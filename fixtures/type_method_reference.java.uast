@@ -34,7 +34,7 @@ CompilationUnit {
 .  .  .  }
 .  .  .  Children: {
 .  .  .  .  0: QualifiedName {
-.  .  .  .  .  Roles: Expression,Identifier,Qualified,Pathname,Import
+.  .  .  .  .  Roles: Expression,Identifier,Import,Pathname,Qualified
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 7
 .  .  .  .  .  .  Line: 1
@@ -123,7 +123,7 @@ CompilationUnit {
 .  .  .  }
 .  .  }
 .  .  1: AnnotationTypeDeclaration {
-.  .  .  Roles: Declaration,Type,Annotation
+.  .  .  Roles: Annotation,Declaration,Type
 .  .  .  StartPosition: {
 .  .  .  .  Offset: 31
 .  .  .  .  Line: 2
@@ -245,7 +245,7 @@ CompilationUnit {
 .  .  .  }
 .  .  }
 .  .  2: TypeDeclaration {
-.  .  .  Roles: Visibility,Package,Declaration,Type
+.  .  .  Roles: Declaration,Package,Type,Visibility
 .  .  .  StartPosition: {
 .  .  .  .  Offset: 78
 .  .  .  .  Line: 5
@@ -279,7 +279,7 @@ CompilationUnit {
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  .  1: MethodDeclaration {
-.  .  .  .  .  Roles: Visibility,Package,Declaration,Function
+.  .  .  .  .  Roles: Declaration,Function,Package,Visibility
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 92
 .  .  .  .  .  .  Line: 5
@@ -331,7 +331,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  .  1: SimpleName {
-.  .  .  .  .  .  .  Roles: Expression,Identifier,Function,Name
+.  .  .  .  .  .  .  Roles: Expression,Function,Identifier,Name
 .  .  .  .  .  .  .  TOKEN "copy"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 99
@@ -348,7 +348,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  .  2: SingleVariableDeclaration {
-.  .  .  .  .  .  .  Roles: Function,Argument,Declaration,Variable
+.  .  .  .  .  .  .  Roles: Argument,Declaration,Function,Variable
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 104
 .  .  .  .  .  .  .  .  Line: 5
@@ -365,7 +365,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  0: ArrayType {
-.  .  .  .  .  .  .  .  .  Roles: Type,Primitive,List
+.  .  .  .  .  .  .  .  .  Roles: List,Primitive,Type
 .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  Offset: 104
 .  .  .  .  .  .  .  .  .  .  Line: 5
@@ -381,7 +381,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  0: PrimitiveType {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Type,Primitive
+.  .  .  .  .  .  .  .  .  .  .  Roles: Primitive,Type
 .  .  .  .  .  .  .  .  .  .  .  TOKEN "int"
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 104
@@ -398,7 +398,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  1: Dimension {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Type,Incomplete
+.  .  .  .  .  .  .  .  .  .  .  Roles: Incomplete,Type
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 108
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 5
@@ -416,7 +416,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  1: SimpleName {
-.  .  .  .  .  .  .  .  .  Roles: Expression,Identifier,Function,Name,Argument
+.  .  .  .  .  .  .  .  .  Roles: Argument,Expression,Function,Identifier,Name
 .  .  .  .  .  .  .  .  .  TOKEN "xs"
 .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  Offset: 111
@@ -439,7 +439,7 @@ CompilationUnit {
 .  .  .  }
 .  .  }
 .  .  3: TypeDeclaration {
-.  .  .  Roles: Visibility,Package,Declaration,Type
+.  .  .  Roles: Declaration,Package,Type,Visibility
 .  .  .  StartPosition: {
 .  .  .  .  Offset: 119
 .  .  .  .  Line: 7
@@ -473,7 +473,7 @@ CompilationUnit {
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  .  1: MethodDeclaration {
-.  .  .  .  .  Roles: Visibility,Package,Declaration,Function
+.  .  .  .  .  Roles: Declaration,Function,Package,Visibility
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 131
 .  .  .  .  .  .  Line: 8
@@ -490,7 +490,7 @@ CompilationUnit {
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
 .  .  .  .  .  .  0: PrimitiveType {
-.  .  .  .  .  .  .  Roles: Type,Primitive
+.  .  .  .  .  .  .  Roles: Primitive,Type
 .  .  .  .  .  .  .  TOKEN "void"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 131
@@ -507,7 +507,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  .  1: SimpleName {
-.  .  .  .  .  .  .  Roles: Expression,Identifier,Function,Name
+.  .  .  .  .  .  .  Roles: Expression,Function,Identifier,Name
 .  .  .  .  .  .  .  TOKEN "bar"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 136
@@ -524,7 +524,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  .  2: Block {
-.  .  .  .  .  .  .  Roles: Function,Body,Statement,Block,Scope
+.  .  .  .  .  .  .  Roles: Block,Body,Function,Scope,Statement
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 142
 .  .  .  .  .  .  .  .  Line: 8
@@ -540,7 +540,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  0: VariableDeclarationStatement {
-.  .  .  .  .  .  .  .  .  Roles: Statement,Declaration,Variable
+.  .  .  .  .  .  .  .  .  Roles: Declaration,Statement,Variable
 .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  Offset: 148
 .  .  .  .  .  .  .  .  .  .  Line: 9
@@ -640,7 +640,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: ArrayType {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Function,Return,Type,Primitive,List
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Function,List,Primitive,Return,Type
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 154
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 9
@@ -656,7 +656,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: PrimitiveType {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Type,Primitive
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Primitive,Type
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "int"
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 154
@@ -710,7 +710,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  1: Dimension {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Type,Incomplete
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Incomplete,Type
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 161
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 9
@@ -728,7 +728,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  1: SimpleType {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Function,Argument,Type
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Argument,Function,Type
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 166
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 9
@@ -763,7 +763,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  2: SimpleName {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Expression,Identifier,Function,Name
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Expression,Function,Identifier,Name
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "clone"
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 173

@@ -16,7 +16,7 @@ CompilationUnit {
 .  }
 .  Children: {
 .  .  0: TypeDeclaration {
-.  .  .  Roles: Visibility,Package,Declaration,Type
+.  .  .  Roles: Declaration,Package,Type,Visibility
 .  .  .  StartPosition: {
 .  .  .  .  Offset: 0
 .  .  .  .  Line: 1
@@ -50,7 +50,7 @@ CompilationUnit {
 .  .  .  .  .  }
 .  .  .  .  }
 .  .  .  .  1: MethodDeclaration {
-.  .  .  .  .  Roles: Visibility,Package,Declaration,Function
+.  .  .  .  .  Roles: Declaration,Function,Package,Visibility
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 15
 .  .  .  .  .  .  Line: 2
@@ -67,7 +67,7 @@ CompilationUnit {
 .  .  .  .  .  }
 .  .  .  .  .  Children: {
 .  .  .  .  .  .  0: TypeParameter {
-.  .  .  .  .  .  .  Roles: Type,Incomplete
+.  .  .  .  .  .  .  Roles: Incomplete,Type
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 16
 .  .  .  .  .  .  .  .  Line: 2
@@ -172,7 +172,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  .  1: SimpleName {
-.  .  .  .  .  .  .  Roles: Expression,Identifier,Function,Name
+.  .  .  .  .  .  .  Roles: Expression,Function,Identifier,Name
 .  .  .  .  .  .  .  TOKEN "Code"
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 49
@@ -189,7 +189,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  .  2: SingleVariableDeclaration {
-.  .  .  .  .  .  .  Roles: Function,Argument,Declaration,Variable
+.  .  .  .  .  .  .  Roles: Argument,Declaration,Function,Variable
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 54
 .  .  .  .  .  .  .  .  Line: 2
@@ -241,7 +241,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  1: SimpleName {
-.  .  .  .  .  .  .  .  .  Roles: Expression,Identifier,Function,Name,Argument
+.  .  .  .  .  .  .  .  .  Roles: Argument,Expression,Function,Identifier,Name
 .  .  .  .  .  .  .  .  .  TOKEN "a"
 .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  Offset: 56
@@ -260,7 +260,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  }
 .  .  .  .  .  .  }
 .  .  .  .  .  .  3: Block {
-.  .  .  .  .  .  .  Roles: Function,Body,Statement,Block,Scope
+.  .  .  .  .  .  .  Roles: Block,Body,Function,Scope,Statement
 .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  Offset: 59
 .  .  .  .  .  .  .  .  Line: 2
@@ -292,7 +292,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  0: MethodInvocation {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Expression,Call
+.  .  .  .  .  .  .  .  .  .  .  Roles: Call,Expression
 .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  Offset: 65
 .  .  .  .  .  .  .  .  .  .  .  .  Line: 3
@@ -308,7 +308,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  0: QualifiedName {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Expression,Identifier,Qualified,Call,Receiver
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Call,Expression,Identifier,Qualified,Receiver
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 65
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 3
@@ -360,7 +360,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  1: SimpleName {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Expression,Identifier,Call,Callee
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Call,Callee,Expression,Identifier
 .  .  .  .  .  .  .  .  .  .  .  .  .  TOKEN "println"
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 76
@@ -377,7 +377,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  2: CastExpression {
-.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Call,Argument,Positional,Expression,Incomplete
+.  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Argument,Call,Expression,Incomplete,Positional
 .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 84
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 3
@@ -393,7 +393,7 @@ CompilationUnit {
 .  .  .  .  .  .  .  .  .  .  .  .  .  }
 .  .  .  .  .  .  .  .  .  .  .  .  .  Children: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  0: IntersectionType {
-.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: Type,And
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Roles: And,Type
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Offset: 85
 .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  Line: 3
