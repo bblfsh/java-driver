@@ -1,4 +1,5 @@
 package normalizer
+
 /*
 import (
 	"bytes"
@@ -9,7 +10,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/require"
-	"gopkg.in/bblfsh/sdk.v1/uast"
+	"gopkg.in/bblfsh/sdk.v2/uast"
 )
 
 var (

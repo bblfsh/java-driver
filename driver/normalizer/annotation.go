@@ -1,19 +1,19 @@
 package normalizer
 
 import (
-	"gopkg.in/bblfsh/sdk.v1/uast"
-	"gopkg.in/bblfsh/sdk.v1/uast/role"
-	. "gopkg.in/bblfsh/sdk.v1/uast/transformer"
+	"gopkg.in/bblfsh/sdk.v2/uast"
+	"gopkg.in/bblfsh/sdk.v2/uast/role"
+	. "gopkg.in/bblfsh/sdk.v2/uast/transformer"
 )
 
 // Native is the of list `transformer.Transformer` to apply to a native AST.
 // To learn more about the Transformers and the available ones take a look to:
-// https://godoc.org/gopkg.in/bblfsh/sdk.v1/uast/transformer
+// https://godoc.org/gopkg.in/bblfsh/sdk.v2/uast/transformer
 var Native = Transformers([][]Transformer{
 	{
 		// ResponseMetadata is a transform that trims response metadata from AST.
 		//
-		// https://godoc.org/gopkg.in/bblfsh/sdk.v1/uast#ResponseMetadata
+		// https://godoc.org/gopkg.in/bblfsh/sdk.v2/uast#ResponseMetadata
 		ResponseMetadata{
 			TopLevelIsRootNode: false,
 		},
@@ -31,7 +31,7 @@ var Native = Transformers([][]Transformer{
 // and can access original source code file. It can be used to improve or
 // fix positional information.
 //
-// https://godoc.org/gopkg.in/bblfsh/sdk.v1/uast/transformer/positioner
+// https://godoc.org/gopkg.in/bblfsh/sdk.v2/uast/transformer/positioner
 var Code []CodeTransformer // Java already provides all the information we need
 
 var (

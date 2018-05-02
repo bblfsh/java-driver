@@ -1,12 +1,12 @@
 package fixtures
 
 import (
-	"testing"
 	"path/filepath"
+	"testing"
 
 	"github.com/bblfsh/java-driver/driver/normalizer"
-	"gopkg.in/bblfsh/sdk.v1/sdk/driver"
-	"gopkg.in/bblfsh/sdk.v1/sdk/driver/fixtures"
+	"gopkg.in/bblfsh/sdk.v2/sdk/driver"
+	"gopkg.in/bblfsh/sdk.v2/sdk/driver/fixtures"
 )
 
 const projectRoot = "../../"
