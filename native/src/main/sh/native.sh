@@ -1,5 +1,5 @@
 #!/bin/sh
 JAR=native-jar-with-dependencies.jar
-BIN="`readlink -f $0`"
+BIN="`realpath $0`"
 DIR="`dirname "$BIN"`"
 exec java -jar "$DIR/$JAR"
