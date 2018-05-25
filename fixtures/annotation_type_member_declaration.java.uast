@@ -1,124 +1,118 @@
-Status:  ok
-Language:  java
-Errors: 
-UAST: 
-CompilationUnit {
-.  Roles: File
-.  StartPosition: {
-.  .  Offset: 0
-.  .  Line: 1
-.  .  Col: 1
-.  }
-.  EndPosition: {
-.  .  Offset: 37
-.  .  Line: 0
-.  .  Col: 0
-.  }
-.  Children: {
-.  .  0: AnnotationTypeDeclaration {
-.  .  .  Roles: Annotation,Declaration,Type
-.  .  .  StartPosition: {
-.  .  .  .  Offset: 0
-.  .  .  .  Line: 1
-.  .  .  .  Col: 1
-.  .  .  }
-.  .  .  EndPosition: {
-.  .  .  .  Offset: 37
-.  .  .  .  Line: 0
-.  .  .  .  Col: 0
-.  .  .  }
-.  .  .  Properties: {
-.  .  .  .  internalRole: types
-.  .  .  }
-.  .  .  Children: {
-.  .  .  .  0: SimpleName {
-.  .  .  .  .  Roles: Expression,Identifier
-.  .  .  .  .  TOKEN "A"
-.  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  Offset: 11
-.  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  Col: 12
-.  .  .  .  .  }
-.  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 12
-.  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  Col: 13
-.  .  .  .  .  }
-.  .  .  .  .  Properties: {
-.  .  .  .  .  .  internalRole: name
-.  .  .  .  .  }
-.  .  .  .  }
-.  .  .  .  1: AnnotationTypeMemberDeclaration {
-.  .  .  .  .  Roles: Annotation,Body,Declaration,Type
-.  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  Offset: 17
-.  .  .  .  .  .  Line: 2
-.  .  .  .  .  .  Col: 3
-.  .  .  .  .  }
-.  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 35
-.  .  .  .  .  .  Line: 2
-.  .  .  .  .  .  Col: 21
-.  .  .  .  .  }
-.  .  .  .  .  Properties: {
-.  .  .  .  .  .  internalRole: bodyDeclarations
-.  .  .  .  .  }
-.  .  .  .  .  Children: {
-.  .  .  .  .  .  0: PrimitiveType {
-.  .  .  .  .  .  .  Roles: Primitive,Type
-.  .  .  .  .  .  .  TOKEN "int"
-.  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  Offset: 17
-.  .  .  .  .  .  .  .  Line: 2
-.  .  .  .  .  .  .  .  Col: 3
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  Offset: 20
-.  .  .  .  .  .  .  .  Line: 2
-.  .  .  .  .  .  .  .  Col: 6
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: type
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  }
-.  .  .  .  .  .  1: SimpleName {
-.  .  .  .  .  .  .  Roles: Expression,Identifier
-.  .  .  .  .  .  .  TOKEN "a"
-.  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  Offset: 21
-.  .  .  .  .  .  .  .  Line: 2
-.  .  .  .  .  .  .  .  Col: 7
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  Offset: 22
-.  .  .  .  .  .  .  .  Line: 2
-.  .  .  .  .  .  .  .  Col: 8
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: name
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  }
-.  .  .  .  .  .  2: NumberLiteral {
-.  .  .  .  .  .  .  Roles: Expression,Literal,Number
-.  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  Offset: 33
-.  .  .  .  .  .  .  .  Line: 2
-.  .  .  .  .  .  .  .  Col: 19
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  Offset: 34
-.  .  .  .  .  .  .  .  Line: 2
-.  .  .  .  .  .  .  .  Col: 20
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: default
-.  .  .  .  .  .  .  .  token: 0
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  }
-.  .  .  .  .  }
-.  .  .  .  }
-.  .  .  }
-.  .  }
-.  }
+{ '@type': "CompilationUnit",
+   '@role': [File],
+   '@pos': { '@type': "uast:Positions",
+      start: { '@type': "uast:Position",
+         offset: 0,
+         line: 1,
+         col: 1,
+      },
+      end: { '@type': "uast:Position",
+         offset: 37,
+         col: 0,
+      },
+   },
+   imports: ~,
+   package: ~,
+   types: [
+      { '@type': "AnnotationTypeDeclaration",
+         '@role': [Annotation, Declaration, Type],
+         '@pos': { '@type': "uast:Positions",
+            start: { '@type': "uast:Position",
+               offset: 0,
+               line: 1,
+               col: 1,
+            },
+            end: { '@type': "uast:Position",
+               offset: 37,
+               col: 0,
+            },
+         },
+         bodyDeclarations: [
+            { '@type': "AnnotationTypeMemberDeclaration",
+               '@role': [Annotation, Body, Declaration, Type],
+               '@pos': { '@type': "uast:Positions",
+                  start: { '@type': "uast:Position",
+                     offset: 17,
+                     line: 2,
+                     col: 3,
+                  },
+                  end: { '@type': "uast:Position",
+                     offset: 35,
+                     line: 2,
+                     col: 21,
+                  },
+               },
+               default: { '@type': "NumberLiteral",
+                  '@role': [Expression, Literal, Number],
+                  '@pos': { '@type': "uast:Positions",
+                     start: { '@type': "uast:Position",
+                        offset: 33,
+                        line: 2,
+                        col: 19,
+                     },
+                     end: { '@type': "uast:Position",
+                        offset: 34,
+                        line: 2,
+                        col: 20,
+                     },
+                  },
+                  token: "0",
+               },
+               javadoc: ~,
+               modifiers: ~,
+               name: { '@type': "SimpleName",
+                  '@token': "a",
+                  '@role': [Expression, Identifier],
+                  '@pos': { '@type': "uast:Positions",
+                     start: { '@type': "uast:Position",
+                        offset: 21,
+                        line: 2,
+                        col: 7,
+                     },
+                     end: { '@type': "uast:Position",
+                        offset: 22,
+                        line: 2,
+                        col: 8,
+                     },
+                  },
+               },
+               type: { '@type': "PrimitiveType",
+                  '@token': "int",
+                  '@role': [Primitive, Type],
+                  '@pos': { '@type': "uast:Positions",
+                     start: { '@type': "uast:Position",
+                        offset: 17,
+                        line: 2,
+                        col: 3,
+                     },
+                     end: { '@type': "uast:Position",
+                        offset: 20,
+                        line: 2,
+                        col: 6,
+                     },
+                  },
+                  annotations: ~,
+               },
+            },
+         ],
+         javadoc: ~,
+         modifiers: ~,
+         name: { '@type': "SimpleName",
+            '@token': "A",
+            '@role': [Expression, Identifier],
+            '@pos': { '@type': "uast:Positions",
+               start: { '@type': "uast:Position",
+                  offset: 11,
+                  line: 1,
+                  col: 12,
+               },
+               end: { '@type': "uast:Position",
+                  offset: 12,
+                  line: 1,
+                  col: 13,
+               },
+            },
+         },
+      },
+   ],
 }
-

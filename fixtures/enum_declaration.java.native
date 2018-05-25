@@ -1,97 +1,92 @@
 {
-    "status": "ok",
-    "language": "java",
-    "errors": [],
-    "ast": {
-        "CompilationUnit": {
-            "@end": {
-                "@type": "ast:Position",
-                "col": 0,
-                "off": 15
+   CompilationUnit: { '@type': "CompilationUnit",
+      '@role': [Unannotated],
+      '@pos': { '@type': "uast:Positions",
+         start: { '@type': "uast:Position",
+            offset: 0,
+            line: 1,
+            col: 1,
+         },
+         end: { '@type': "uast:Position",
+            offset: 15,
+            col: 0,
+         },
+      },
+      imports: ~,
+      package: ~,
+      types: [
+         { '@type': "EnumDeclaration",
+            '@role': [Unannotated],
+            '@pos': { '@type': "uast:Positions",
+               start: { '@type': "uast:Position",
+                  offset: 0,
+                  line: 1,
+                  col: 1,
+               },
+               end: { '@type': "uast:Position",
+                  offset: 12,
+                  line: 1,
+                  col: 13,
+               },
             },
-            "@start": {
-                "@type": "ast:Position",
-                "col": 1,
-                "line": 1,
-                "off": 0
+            bodyDeclarations: ~,
+            enumConstants: [
+               { '@type': "EnumConstantDeclaration",
+                  '@role': [Unannotated],
+                  '@pos': { '@type': "uast:Positions",
+                     start: { '@type': "uast:Position",
+                        offset: 9,
+                        line: 1,
+                        col: 10,
+                     },
+                     end: { '@type': "uast:Position",
+                        offset: 10,
+                        line: 1,
+                        col: 11,
+                     },
+                  },
+                  anonymousClassDeclaration: ~,
+                  arguments: ~,
+                  javadoc: ~,
+                  modifiers: ~,
+                  name: { '@type': "SimpleName",
+                     '@role': [Unannotated],
+                     '@pos': { '@type': "uast:Positions",
+                        start: { '@type': "uast:Position",
+                           offset: 9,
+                           line: 1,
+                           col: 10,
+                        },
+                        end: { '@type': "uast:Position",
+                           offset: 10,
+                           line: 1,
+                           col: 11,
+                        },
+                     },
+                     identifier: "A",
+                  },
+               },
+            ],
+            javadoc: ~,
+            modifiers: ~,
+            name: { '@type': "SimpleName",
+               '@role': [Unannotated],
+               '@pos': { '@type': "uast:Positions",
+                  start: { '@type': "uast:Position",
+                     offset: 5,
+                     line: 1,
+                     col: 6,
+                  },
+                  end: { '@type': "uast:Position",
+                     offset: 6,
+                     line: 1,
+                     col: 7,
+                  },
+               },
+               identifier: "X",
             },
-            "@type": "CompilationUnit",
-            "imports": null,
-            "package": null,
-            "types": [
-                {
-                    "@end": {
-                        "@type": "ast:Position",
-                        "col": 13,
-                        "line": 1,
-                        "off": 12
-                    },
-                    "@start": {
-                        "@type": "ast:Position",
-                        "col": 1,
-                        "line": 1,
-                        "off": 0
-                    },
-                    "@type": "EnumDeclaration",
-                    "bodyDeclarations": null,
-                    "enumConstants": [
-                        {
-                            "@end": {
-                                "@type": "ast:Position",
-                                "col": 11,
-                                "line": 1,
-                                "off": 10
-                            },
-                            "@start": {
-                                "@type": "ast:Position",
-                                "col": 10,
-                                "line": 1,
-                                "off": 9
-                            },
-                            "@type": "EnumConstantDeclaration",
-                            "anonymousClassDeclaration": null,
-                            "arguments": null,
-                            "javadoc": null,
-                            "modifiers": null,
-                            "name": {
-                                "@end": {
-                                    "@type": "ast:Position",
-                                    "col": 11,
-                                    "line": 1,
-                                    "off": 10
-                                },
-                                "@start": {
-                                    "@type": "ast:Position",
-                                    "col": 10,
-                                    "line": 1,
-                                    "off": 9
-                                },
-                                "@type": "SimpleName",
-                                "identifier": "A"
-                            }
-                        }
-                    ],
-                    "javadoc": null,
-                    "modifiers": null,
-                    "name": {
-                        "@end": {
-                            "@type": "ast:Position",
-                            "col": 7,
-                            "line": 1,
-                            "off": 6
-                        },
-                        "@start": {
-                            "@type": "ast:Position",
-                            "col": 6,
-                            "line": 1,
-                            "off": 5
-                        },
-                        "@type": "SimpleName",
-                        "identifier": "X"
-                    },
-                    "superInterfaceTypes": null
-                }
-            ]
-        }
-    }
+            superInterfaceTypes: ~,
+         },
+      ],
+   },
 }

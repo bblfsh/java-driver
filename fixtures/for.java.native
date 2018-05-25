@@ -1,450 +1,445 @@
 {
-    "status": "ok",
-    "language": "java",
-    "errors": [],
-    "ast": {
-        "CompilationUnit": {
-            "@end": {
-                "@type": "ast:Position",
-                "col": 0,
-                "off": 111
+   CompilationUnit: { '@type': "CompilationUnit",
+      '@role': [Unannotated],
+      '@pos': { '@type': "uast:Positions",
+         start: { '@type': "uast:Position",
+            offset: 0,
+            line: 1,
+            col: 1,
+         },
+         end: { '@type': "uast:Position",
+            offset: 111,
+            col: 0,
+         },
+      },
+      imports: ~,
+      package: ~,
+      types: [
+         { '@type': "TypeDeclaration",
+            '@role': [Unannotated],
+            '@pos': { '@type': "uast:Positions",
+               start: { '@type': "uast:Position",
+                  offset: 0,
+                  line: 1,
+                  col: 1,
+               },
+               end: { '@type': "uast:Position",
+                  offset: 110,
+                  line: 7,
+                  col: 2,
+               },
             },
-            "@start": {
-                "@type": "ast:Position",
-                "col": 1,
-                "line": 1,
-                "off": 0
+            bodyDeclarations: [
+               { '@type': "MethodDeclaration",
+                  '@role': [Unannotated],
+                  '@pos': { '@type': "uast:Positions",
+                     start: { '@type': "uast:Position",
+                        offset: 14,
+                        line: 2,
+                        col: 2,
+                     },
+                     end: { '@type': "uast:Position",
+                        offset: 108,
+                        line: 6,
+                        col: 3,
+                     },
+                  },
+                  body: { '@type': "Block",
+                     '@role': [Unannotated],
+                     '@pos': { '@type': "uast:Positions",
+                        start: { '@type': "uast:Position",
+                           offset: 26,
+                           line: 2,
+                           col: 14,
+                        },
+                        end: { '@type': "uast:Position",
+                           offset: 108,
+                           line: 6,
+                           col: 3,
+                        },
+                     },
+                     statements: [
+                        { '@type': "ForStatement",
+                           '@role': [Unannotated],
+                           '@pos': { '@type': "uast:Positions",
+                              start: { '@type': "uast:Position",
+                                 offset: 33,
+                                 line: 3,
+                                 col: 6,
+                              },
+                              end: { '@type': "uast:Position",
+                                 offset: 105,
+                                 line: 5,
+                                 col: 7,
+                              },
+                           },
+                           body: { '@type': "Block",
+                              '@role': [Unannotated],
+                              '@pos': { '@type': "uast:Positions",
+                                 start: { '@type': "uast:Position",
+                                    offset: 62,
+                                    line: 3,
+                                    col: 35,
+                                 },
+                                 end: { '@type': "uast:Position",
+                                    offset: 105,
+                                    line: 5,
+                                    col: 7,
+                                 },
+                              },
+                              statements: [
+                                 { '@type': "ExpressionStatement",
+                                    '@role': [Unannotated],
+                                    '@pos': { '@type': "uast:Positions",
+                                       start: { '@type': "uast:Position",
+                                          offset: 76,
+                                          line: 4,
+                                          col: 13,
+                                       },
+                                       end: { '@type': "uast:Position",
+                                          offset: 98,
+                                          line: 4,
+                                          col: 35,
+                                       },
+                                    },
+                                    expression: { '@type': "MethodInvocation",
+                                       '@role': [Unannotated],
+                                       '@pos': { '@type': "uast:Positions",
+                                          start: { '@type': "uast:Position",
+                                             offset: 76,
+                                             line: 4,
+                                             col: 13,
+                                          },
+                                          end: { '@type': "uast:Position",
+                                             offset: 97,
+                                             line: 4,
+                                             col: 34,
+                                          },
+                                       },
+                                       arguments: [
+                                          { '@type': "SimpleName",
+                                             '@role': [Unannotated],
+                                             '@pos': { '@type': "uast:Positions",
+                                                start: { '@type': "uast:Position",
+                                                   offset: 95,
+                                                   line: 4,
+                                                   col: 32,
+                                                },
+                                                end: { '@type': "uast:Position",
+                                                   offset: 96,
+                                                   line: 4,
+                                                   col: 33,
+                                                },
+                                             },
+                                             identifier: "i",
+                                          },
+                                       ],
+                                       expression: { '@type': "QualifiedName",
+                                          '@role': [Unannotated],
+                                          '@pos': { '@type': "uast:Positions",
+                                             start: { '@type': "uast:Position",
+                                                offset: 76,
+                                                line: 4,
+                                                col: 13,
+                                             },
+                                             end: { '@type': "uast:Position",
+                                                offset: 86,
+                                                line: 4,
+                                                col: 23,
+                                             },
+                                          },
+                                          name: { '@type': "SimpleName",
+                                             '@role': [Unannotated],
+                                             '@pos': { '@type': "uast:Positions",
+                                                start: { '@type': "uast:Position",
+                                                   offset: 83,
+                                                   line: 4,
+                                                   col: 20,
+                                                },
+                                                end: { '@type': "uast:Position",
+                                                   offset: 86,
+                                                   line: 4,
+                                                   col: 23,
+                                                },
+                                             },
+                                             identifier: "out",
+                                          },
+                                          qualifier: { '@type': "SimpleName",
+                                             '@role': [Unannotated],
+                                             '@pos': { '@type': "uast:Positions",
+                                                start: { '@type': "uast:Position",
+                                                   offset: 76,
+                                                   line: 4,
+                                                   col: 13,
+                                                },
+                                                end: { '@type': "uast:Position",
+                                                   offset: 82,
+                                                   line: 4,
+                                                   col: 19,
+                                                },
+                                             },
+                                             identifier: "System",
+                                          },
+                                       },
+                                       name: { '@type': "SimpleName",
+                                          '@role': [Unannotated],
+                                          '@pos': { '@type': "uast:Positions",
+                                             start: { '@type': "uast:Position",
+                                                offset: 87,
+                                                line: 4,
+                                                col: 24,
+                                             },
+                                             end: { '@type': "uast:Position",
+                                                offset: 94,
+                                                line: 4,
+                                                col: 31,
+                                             },
+                                          },
+                                          identifier: "println",
+                                       },
+                                       typeArguments: ~,
+                                    },
+                                 },
+                              ],
+                           },
+                           expression: { '@type': "InfixExpression",
+                              '@role': [Unannotated],
+                              '@pos': { '@type': "uast:Positions",
+                                 start: { '@type': "uast:Position",
+                                    offset: 49,
+                                    line: 3,
+                                    col: 22,
+                                 },
+                                 end: { '@type': "uast:Position",
+                                    offset: 55,
+                                    line: 3,
+                                    col: 28,
+                                 },
+                              },
+                              extendedOperands: ~,
+                              leftOperand: { '@type': "SimpleName",
+                                 '@role': [Unannotated],
+                                 '@pos': { '@type': "uast:Positions",
+                                    start: { '@type': "uast:Position",
+                                       offset: 49,
+                                       line: 3,
+                                       col: 22,
+                                    },
+                                    end: { '@type': "uast:Position",
+                                       offset: 50,
+                                       line: 3,
+                                       col: 23,
+                                    },
+                                 },
+                                 identifier: "i",
+                              },
+                              operator: "<",
+                              rightOperand: { '@type': "NumberLiteral",
+                                 '@role': [Unannotated],
+                                 '@pos': { '@type': "uast:Positions",
+                                    start: { '@type': "uast:Position",
+                                       offset: 53,
+                                       line: 3,
+                                       col: 26,
+                                    },
+                                    end: { '@type': "uast:Position",
+                                       offset: 55,
+                                       line: 3,
+                                       col: 28,
+                                    },
+                                 },
+                                 token: "10",
+                              },
+                           },
+                           initializers: [
+                              { '@type': "VariableDeclarationExpression",
+                                 '@role': [Unannotated],
+                                 '@pos': { '@type': "uast:Positions",
+                                    start: { '@type': "uast:Position",
+                                       offset: 38,
+                                       line: 3,
+                                       col: 11,
+                                    },
+                                    end: { '@type': "uast:Position",
+                                       offset: 47,
+                                       line: 3,
+                                       col: 20,
+                                    },
+                                 },
+                                 fragments: [
+                                    { '@type': "VariableDeclarationFragment",
+                                       '@role': [Unannotated],
+                                       '@pos': { '@type': "uast:Positions",
+                                          start: { '@type': "uast:Position",
+                                             offset: 42,
+                                             line: 3,
+                                             col: 15,
+                                          },
+                                          end: { '@type': "uast:Position",
+                                             offset: 47,
+                                             line: 3,
+                                             col: 20,
+                                          },
+                                       },
+                                       'extraDimensions2': ~,
+                                       initializer: { '@type': "NumberLiteral",
+                                          '@role': [Unannotated],
+                                          '@pos': { '@type': "uast:Positions",
+                                             start: { '@type': "uast:Position",
+                                                offset: 46,
+                                                line: 3,
+                                                col: 19,
+                                             },
+                                             end: { '@type': "uast:Position",
+                                                offset: 47,
+                                                line: 3,
+                                                col: 20,
+                                             },
+                                          },
+                                          token: "0",
+                                       },
+                                       name: { '@type': "SimpleName",
+                                          '@role': [Unannotated],
+                                          '@pos': { '@type': "uast:Positions",
+                                             start: { '@type': "uast:Position",
+                                                offset: 42,
+                                                line: 3,
+                                                col: 15,
+                                             },
+                                             end: { '@type': "uast:Position",
+                                                offset: 43,
+                                                line: 3,
+                                                col: 16,
+                                             },
+                                          },
+                                          identifier: "i",
+                                       },
+                                    },
+                                 ],
+                                 modifiers: ~,
+                                 type: { '@type': "PrimitiveType",
+                                    '@role': [Unannotated],
+                                    '@pos': { '@type': "uast:Positions",
+                                       start: { '@type': "uast:Position",
+                                          offset: 38,
+                                          line: 3,
+                                          col: 11,
+                                       },
+                                       end: { '@type': "uast:Position",
+                                          offset: 41,
+                                          line: 3,
+                                          col: 14,
+                                       },
+                                    },
+                                    annotations: ~,
+                                    primitiveTypeCode: "int",
+                                 },
+                              },
+                           ],
+                           updaters: [
+                              { '@type': "PostfixExpression",
+                                 '@role': [Unannotated],
+                                 '@pos': { '@type': "uast:Positions",
+                                    start: { '@type': "uast:Position",
+                                       offset: 57,
+                                       line: 3,
+                                       col: 30,
+                                    },
+                                    end: { '@type': "uast:Position",
+                                       offset: 60,
+                                       line: 3,
+                                       col: 33,
+                                    },
+                                 },
+                                 operand: { '@type': "SimpleName",
+                                    '@role': [Unannotated],
+                                    '@pos': { '@type': "uast:Positions",
+                                       start: { '@type': "uast:Position",
+                                          offset: 57,
+                                          line: 3,
+                                          col: 30,
+                                       },
+                                       end: { '@type': "uast:Position",
+                                          offset: 58,
+                                          line: 3,
+                                          col: 31,
+                                       },
+                                    },
+                                    identifier: "i",
+                                 },
+                                 operator: "++",
+                              },
+                           ],
+                        },
+                     ],
+                  },
+                  constructor: "false",
+                  'extraDimensions2': ~,
+                  javadoc: ~,
+                  modifiers: ~,
+                  name: { '@type': "SimpleName",
+                     '@role': [Unannotated],
+                     '@pos': { '@type': "uast:Positions",
+                        start: { '@type': "uast:Position",
+                           offset: 19,
+                           line: 2,
+                           col: 7,
+                        },
+                        end: { '@type': "uast:Position",
+                           offset: 23,
+                           line: 2,
+                           col: 11,
+                        },
+                     },
+                     identifier: "code",
+                  },
+                  parameters: ~,
+                  receiverQualifier: ~,
+                  receiverType: ~,
+                  'returnType2': { '@type': "PrimitiveType",
+                     '@role': [Unannotated],
+                     '@pos': { '@type': "uast:Positions",
+                        start: { '@type': "uast:Position",
+                           offset: 14,
+                           line: 2,
+                           col: 2,
+                        },
+                        end: { '@type': "uast:Position",
+                           offset: 18,
+                           line: 2,
+                           col: 6,
+                        },
+                     },
+                     annotations: ~,
+                     primitiveTypeCode: "void",
+                  },
+                  thrownExceptionTypes: ~,
+                  typeParameters: ~,
+               },
+            ],
+            interface: "false",
+            javadoc: ~,
+            modifiers: ~,
+            name: { '@type': "SimpleName",
+               '@role': [Unannotated],
+               '@pos': { '@type': "uast:Positions",
+                  start: { '@type': "uast:Position",
+                     offset: 6,
+                     line: 1,
+                     col: 7,
+                  },
+                  end: { '@type': "uast:Position",
+                     offset: 10,
+                     line: 1,
+                     col: 11,
+                  },
+               },
+               identifier: "Code",
             },
-            "@type": "CompilationUnit",
-            "imports": null,
-            "package": null,
-            "types": [
-                {
-                    "@end": {
-                        "@type": "ast:Position",
-                        "col": 2,
-                        "line": 7,
-                        "off": 110
-                    },
-                    "@start": {
-                        "@type": "ast:Position",
-                        "col": 1,
-                        "line": 1,
-                        "off": 0
-                    },
-                    "@type": "TypeDeclaration",
-                    "bodyDeclarations": [
-                        {
-                            "@end": {
-                                "@type": "ast:Position",
-                                "col": 3,
-                                "line": 6,
-                                "off": 108
-                            },
-                            "@start": {
-                                "@type": "ast:Position",
-                                "col": 2,
-                                "line": 2,
-                                "off": 14
-                            },
-                            "@type": "MethodDeclaration",
-                            "body": {
-                                "@end": {
-                                    "@type": "ast:Position",
-                                    "col": 3,
-                                    "line": 6,
-                                    "off": 108
-                                },
-                                "@start": {
-                                    "@type": "ast:Position",
-                                    "col": 14,
-                                    "line": 2,
-                                    "off": 26
-                                },
-                                "@type": "Block",
-                                "statements": [
-                                    {
-                                        "@end": {
-                                            "@type": "ast:Position",
-                                            "col": 7,
-                                            "line": 5,
-                                            "off": 105
-                                        },
-                                        "@start": {
-                                            "@type": "ast:Position",
-                                            "col": 6,
-                                            "line": 3,
-                                            "off": 33
-                                        },
-                                        "@type": "ForStatement",
-                                        "body": {
-                                            "@end": {
-                                                "@type": "ast:Position",
-                                                "col": 7,
-                                                "line": 5,
-                                                "off": 105
-                                            },
-                                            "@start": {
-                                                "@type": "ast:Position",
-                                                "col": 35,
-                                                "line": 3,
-                                                "off": 62
-                                            },
-                                            "@type": "Block",
-                                            "statements": [
-                                                {
-                                                    "@end": {
-                                                        "@type": "ast:Position",
-                                                        "col": 35,
-                                                        "line": 4,
-                                                        "off": 98
-                                                    },
-                                                    "@start": {
-                                                        "@type": "ast:Position",
-                                                        "col": 13,
-                                                        "line": 4,
-                                                        "off": 76
-                                                    },
-                                                    "@type": "ExpressionStatement",
-                                                    "expression": {
-                                                        "@end": {
-                                                            "@type": "ast:Position",
-                                                            "col": 34,
-                                                            "line": 4,
-                                                            "off": 97
-                                                        },
-                                                        "@start": {
-                                                            "@type": "ast:Position",
-                                                            "col": 13,
-                                                            "line": 4,
-                                                            "off": 76
-                                                        },
-                                                        "@type": "MethodInvocation",
-                                                        "arguments": [
-                                                            {
-                                                                "@end": {
-                                                                    "@type": "ast:Position",
-                                                                    "col": 33,
-                                                                    "line": 4,
-                                                                    "off": 96
-                                                                },
-                                                                "@start": {
-                                                                    "@type": "ast:Position",
-                                                                    "col": 32,
-                                                                    "line": 4,
-                                                                    "off": 95
-                                                                },
-                                                                "@type": "SimpleName",
-                                                                "identifier": "i"
-                                                            }
-                                                        ],
-                                                        "expression": {
-                                                            "@end": {
-                                                                "@type": "ast:Position",
-                                                                "col": 23,
-                                                                "line": 4,
-                                                                "off": 86
-                                                            },
-                                                            "@start": {
-                                                                "@type": "ast:Position",
-                                                                "col": 13,
-                                                                "line": 4,
-                                                                "off": 76
-                                                            },
-                                                            "@type": "QualifiedName",
-                                                            "name": {
-                                                                "@end": {
-                                                                    "@type": "ast:Position",
-                                                                    "col": 23,
-                                                                    "line": 4,
-                                                                    "off": 86
-                                                                },
-                                                                "@start": {
-                                                                    "@type": "ast:Position",
-                                                                    "col": 20,
-                                                                    "line": 4,
-                                                                    "off": 83
-                                                                },
-                                                                "@type": "SimpleName",
-                                                                "identifier": "out"
-                                                            },
-                                                            "qualifier": {
-                                                                "@end": {
-                                                                    "@type": "ast:Position",
-                                                                    "col": 19,
-                                                                    "line": 4,
-                                                                    "off": 82
-                                                                },
-                                                                "@start": {
-                                                                    "@type": "ast:Position",
-                                                                    "col": 13,
-                                                                    "line": 4,
-                                                                    "off": 76
-                                                                },
-                                                                "@type": "SimpleName",
-                                                                "identifier": "System"
-                                                            }
-                                                        },
-                                                        "name": {
-                                                            "@end": {
-                                                                "@type": "ast:Position",
-                                                                "col": 31,
-                                                                "line": 4,
-                                                                "off": 94
-                                                            },
-                                                            "@start": {
-                                                                "@type": "ast:Position",
-                                                                "col": 24,
-                                                                "line": 4,
-                                                                "off": 87
-                                                            },
-                                                            "@type": "SimpleName",
-                                                            "identifier": "println"
-                                                        },
-                                                        "typeArguments": null
-                                                    }
-                                                }
-                                            ]
-                                        },
-                                        "expression": {
-                                            "@end": {
-                                                "@type": "ast:Position",
-                                                "col": 28,
-                                                "line": 3,
-                                                "off": 55
-                                            },
-                                            "@start": {
-                                                "@type": "ast:Position",
-                                                "col": 22,
-                                                "line": 3,
-                                                "off": 49
-                                            },
-                                            "@type": "InfixExpression",
-                                            "extendedOperands": null,
-                                            "leftOperand": {
-                                                "@end": {
-                                                    "@type": "ast:Position",
-                                                    "col": 23,
-                                                    "line": 3,
-                                                    "off": 50
-                                                },
-                                                "@start": {
-                                                    "@type": "ast:Position",
-                                                    "col": 22,
-                                                    "line": 3,
-                                                    "off": 49
-                                                },
-                                                "@type": "SimpleName",
-                                                "identifier": "i"
-                                            },
-                                            "operator": "<",
-                                            "rightOperand": {
-                                                "@end": {
-                                                    "@type": "ast:Position",
-                                                    "col": 28,
-                                                    "line": 3,
-                                                    "off": 55
-                                                },
-                                                "@start": {
-                                                    "@type": "ast:Position",
-                                                    "col": 26,
-                                                    "line": 3,
-                                                    "off": 53
-                                                },
-                                                "@type": "NumberLiteral",
-                                                "token": "10"
-                                            }
-                                        },
-                                        "initializers": [
-                                            {
-                                                "@end": {
-                                                    "@type": "ast:Position",
-                                                    "col": 20,
-                                                    "line": 3,
-                                                    "off": 47
-                                                },
-                                                "@start": {
-                                                    "@type": "ast:Position",
-                                                    "col": 11,
-                                                    "line": 3,
-                                                    "off": 38
-                                                },
-                                                "@type": "VariableDeclarationExpression",
-                                                "fragments": [
-                                                    {
-                                                        "@end": {
-                                                            "@type": "ast:Position",
-                                                            "col": 20,
-                                                            "line": 3,
-                                                            "off": 47
-                                                        },
-                                                        "@start": {
-                                                            "@type": "ast:Position",
-                                                            "col": 15,
-                                                            "line": 3,
-                                                            "off": 42
-                                                        },
-                                                        "@type": "VariableDeclarationFragment",
-                                                        "extraDimensions2": null,
-                                                        "initializer": {
-                                                            "@end": {
-                                                                "@type": "ast:Position",
-                                                                "col": 20,
-                                                                "line": 3,
-                                                                "off": 47
-                                                            },
-                                                            "@start": {
-                                                                "@type": "ast:Position",
-                                                                "col": 19,
-                                                                "line": 3,
-                                                                "off": 46
-                                                            },
-                                                            "@type": "NumberLiteral",
-                                                            "token": "0"
-                                                        },
-                                                        "name": {
-                                                            "@end": {
-                                                                "@type": "ast:Position",
-                                                                "col": 16,
-                                                                "line": 3,
-                                                                "off": 43
-                                                            },
-                                                            "@start": {
-                                                                "@type": "ast:Position",
-                                                                "col": 15,
-                                                                "line": 3,
-                                                                "off": 42
-                                                            },
-                                                            "@type": "SimpleName",
-                                                            "identifier": "i"
-                                                        }
-                                                    }
-                                                ],
-                                                "modifiers": null,
-                                                "type": {
-                                                    "@end": {
-                                                        "@type": "ast:Position",
-                                                        "col": 14,
-                                                        "line": 3,
-                                                        "off": 41
-                                                    },
-                                                    "@start": {
-                                                        "@type": "ast:Position",
-                                                        "col": 11,
-                                                        "line": 3,
-                                                        "off": 38
-                                                    },
-                                                    "@type": "PrimitiveType",
-                                                    "annotations": null,
-                                                    "primitiveTypeCode": "int"
-                                                }
-                                            }
-                                        ],
-                                        "updaters": [
-                                            {
-                                                "@end": {
-                                                    "@type": "ast:Position",
-                                                    "col": 33,
-                                                    "line": 3,
-                                                    "off": 60
-                                                },
-                                                "@start": {
-                                                    "@type": "ast:Position",
-                                                    "col": 30,
-                                                    "line": 3,
-                                                    "off": 57
-                                                },
-                                                "@type": "PostfixExpression",
-                                                "operand": {
-                                                    "@end": {
-                                                        "@type": "ast:Position",
-                                                        "col": 31,
-                                                        "line": 3,
-                                                        "off": 58
-                                                    },
-                                                    "@start": {
-                                                        "@type": "ast:Position",
-                                                        "col": 30,
-                                                        "line": 3,
-                                                        "off": 57
-                                                    },
-                                                    "@type": "SimpleName",
-                                                    "identifier": "i"
-                                                },
-                                                "operator": "++"
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
-                            "constructor": "false",
-                            "extraDimensions2": null,
-                            "javadoc": null,
-                            "modifiers": null,
-                            "name": {
-                                "@end": {
-                                    "@type": "ast:Position",
-                                    "col": 11,
-                                    "line": 2,
-                                    "off": 23
-                                },
-                                "@start": {
-                                    "@type": "ast:Position",
-                                    "col": 7,
-                                    "line": 2,
-                                    "off": 19
-                                },
-                                "@type": "SimpleName",
-                                "identifier": "code"
-                            },
-                            "parameters": null,
-                            "receiverQualifier": null,
-                            "receiverType": null,
-                            "returnType2": {
-                                "@end": {
-                                    "@type": "ast:Position",
-                                    "col": 6,
-                                    "line": 2,
-                                    "off": 18
-                                },
-                                "@start": {
-                                    "@type": "ast:Position",
-                                    "col": 2,
-                                    "line": 2,
-                                    "off": 14
-                                },
-                                "@type": "PrimitiveType",
-                                "annotations": null,
-                                "primitiveTypeCode": "void"
-                            },
-                            "thrownExceptionTypes": null,
-                            "typeParameters": null
-                        }
-                    ],
-                    "interface": "false",
-                    "javadoc": null,
-                    "modifiers": null,
-                    "name": {
-                        "@end": {
-                            "@type": "ast:Position",
-                            "col": 11,
-                            "line": 1,
-                            "off": 10
-                        },
-                        "@start": {
-                            "@type": "ast:Position",
-                            "col": 7,
-                            "line": 1,
-                            "off": 6
-                        },
-                        "@type": "SimpleName",
-                        "identifier": "Code"
-                    },
-                    "superInterfaceTypes": null,
-                    "superclassType": null,
-                    "typeParameters": null
-                }
-            ]
-        }
-    }
+            superInterfaceTypes: ~,
+            superclassType: ~,
+            typeParameters: ~,
+         },
+      ],
+   },
 }

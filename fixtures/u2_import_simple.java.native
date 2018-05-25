@@ -1,120 +1,115 @@
 {
-    "status": "ok",
-    "language": "java",
-    "errors": [],
-    "ast": {
-        "CompilationUnit": {
-            "@end": {
-                "@type": "ast:Position",
-                "col": 0,
-                "off": 20
+   CompilationUnit: { '@type': "CompilationUnit",
+      '@role': [Unannotated],
+      '@pos': { '@type': "uast:Positions",
+         start: { '@type': "uast:Position",
+            offset: 0,
+            line: 1,
+            col: 1,
+         },
+         end: { '@type': "uast:Position",
+            offset: 20,
+            col: 0,
+         },
+      },
+      imports: [
+         { '@type': "ImportDeclaration",
+            '@role': [Unannotated],
+            '@pos': { '@type': "uast:Positions",
+               start: { '@type': "uast:Position",
+                  offset: 0,
+                  line: 1,
+                  col: 1,
+               },
+               end: { '@type': "uast:Position",
+                  offset: 19,
+                  line: 1,
+                  col: 20,
+               },
             },
-            "@start": {
-                "@type": "ast:Position",
-                "col": 1,
-                "line": 1,
-                "off": 0
+            name: { '@type': "QualifiedName",
+               '@role': [Unannotated],
+               '@pos': { '@type': "uast:Positions",
+                  start: { '@type': "uast:Position",
+                     offset: 7,
+                     line: 1,
+                     col: 8,
+                  },
+                  end: { '@type': "uast:Position",
+                     offset: 18,
+                     line: 1,
+                     col: 19,
+                  },
+               },
+               name: { '@type': "SimpleName",
+                  '@role': [Unannotated],
+                  '@pos': { '@type': "uast:Positions",
+                     start: { '@type': "uast:Position",
+                        offset: 15,
+                        line: 1,
+                        col: 16,
+                     },
+                     end: { '@type': "uast:Position",
+                        offset: 18,
+                        line: 1,
+                        col: 19,
+                     },
+                  },
+                  identifier: "bar",
+               },
+               qualifier: { '@type': "QualifiedName",
+                  '@role': [Unannotated],
+                  '@pos': { '@type': "uast:Positions",
+                     start: { '@type': "uast:Position",
+                        offset: 7,
+                        line: 1,
+                        col: 8,
+                     },
+                     end: { '@type': "uast:Position",
+                        offset: 14,
+                        line: 1,
+                        col: 15,
+                     },
+                  },
+                  name: { '@type': "SimpleName",
+                     '@role': [Unannotated],
+                     '@pos': { '@type': "uast:Positions",
+                        start: { '@type': "uast:Position",
+                           offset: 11,
+                           line: 1,
+                           col: 12,
+                        },
+                        end: { '@type': "uast:Position",
+                           offset: 14,
+                           line: 1,
+                           col: 15,
+                        },
+                     },
+                     identifier: "foo",
+                  },
+                  qualifier: { '@type': "SimpleName",
+                     '@role': [Unannotated],
+                     '@pos': { '@type': "uast:Positions",
+                        start: { '@type': "uast:Position",
+                           offset: 7,
+                           line: 1,
+                           col: 8,
+                        },
+                        end: { '@type': "uast:Position",
+                           offset: 10,
+                           line: 1,
+                           col: 11,
+                        },
+                     },
+                     identifier: "com",
+                  },
+               },
             },
-            "@type": "CompilationUnit",
-            "imports": [
-                {
-                    "@end": {
-                        "@type": "ast:Position",
-                        "col": 20,
-                        "line": 1,
-                        "off": 19
-                    },
-                    "@start": {
-                        "@type": "ast:Position",
-                        "col": 1,
-                        "line": 1,
-                        "off": 0
-                    },
-                    "@type": "ImportDeclaration",
-                    "name": {
-                        "@end": {
-                            "@type": "ast:Position",
-                            "col": 19,
-                            "line": 1,
-                            "off": 18
-                        },
-                        "@start": {
-                            "@type": "ast:Position",
-                            "col": 8,
-                            "line": 1,
-                            "off": 7
-                        },
-                        "@type": "QualifiedName",
-                        "name": {
-                            "@end": {
-                                "@type": "ast:Position",
-                                "col": 19,
-                                "line": 1,
-                                "off": 18
-                            },
-                            "@start": {
-                                "@type": "ast:Position",
-                                "col": 16,
-                                "line": 1,
-                                "off": 15
-                            },
-                            "@type": "SimpleName",
-                            "identifier": "bar"
-                        },
-                        "qualifier": {
-                            "@end": {
-                                "@type": "ast:Position",
-                                "col": 15,
-                                "line": 1,
-                                "off": 14
-                            },
-                            "@start": {
-                                "@type": "ast:Position",
-                                "col": 8,
-                                "line": 1,
-                                "off": 7
-                            },
-                            "@type": "QualifiedName",
-                            "name": {
-                                "@end": {
-                                    "@type": "ast:Position",
-                                    "col": 15,
-                                    "line": 1,
-                                    "off": 14
-                                },
-                                "@start": {
-                                    "@type": "ast:Position",
-                                    "col": 12,
-                                    "line": 1,
-                                    "off": 11
-                                },
-                                "@type": "SimpleName",
-                                "identifier": "foo"
-                            },
-                            "qualifier": {
-                                "@end": {
-                                    "@type": "ast:Position",
-                                    "col": 11,
-                                    "line": 1,
-                                    "off": 10
-                                },
-                                "@start": {
-                                    "@type": "ast:Position",
-                                    "col": 8,
-                                    "line": 1,
-                                    "off": 7
-                                },
-                                "@type": "SimpleName",
-                                "identifier": "com"
-                            }
-                        }
-                    },
-                    "onDemand": "false",
-                    "static": "false"
-                }
-            ],
-            "package": null,
-            "types": null
-        }
-    }
+            onDemand: "false",
+            static: "false",
+         },
+      ],
+      package: ~,
+      types: ~,
+   },
 }

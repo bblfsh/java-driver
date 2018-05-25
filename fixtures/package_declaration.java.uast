@@ -1,56 +1,50 @@
-Status:  ok
-Language:  java
-Errors: 
-UAST: 
-CompilationUnit {
-.  Roles: File
-.  StartPosition: {
-.  .  Offset: 0
-.  .  Line: 1
-.  .  Col: 1
-.  }
-.  EndPosition: {
-.  .  Offset: 11
-.  .  Line: 0
-.  .  Col: 0
-.  }
-.  Children: {
-.  .  0: PackageDeclaration {
-.  .  .  Roles: Declaration,Package
-.  .  .  TOKEN "package"
-.  .  .  StartPosition: {
-.  .  .  .  Offset: 0
-.  .  .  .  Line: 1
-.  .  .  .  Col: 1
-.  .  .  }
-.  .  .  EndPosition: {
-.  .  .  .  Offset: 10
-.  .  .  .  Line: 1
-.  .  .  .  Col: 11
-.  .  .  }
-.  .  .  Properties: {
-.  .  .  .  internalRole: package
-.  .  .  }
-.  .  .  Children: {
-.  .  .  .  0: SimpleName {
-.  .  .  .  .  Roles: Expression,Identifier
-.  .  .  .  .  TOKEN "a"
-.  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  Offset: 8
-.  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  Col: 9
-.  .  .  .  .  }
-.  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 9
-.  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  Col: 10
-.  .  .  .  .  }
-.  .  .  .  .  Properties: {
-.  .  .  .  .  .  internalRole: name
-.  .  .  .  .  }
-.  .  .  .  }
-.  .  .  }
-.  .  }
-.  }
+{ '@type': "CompilationUnit",
+   '@role': [File],
+   '@pos': { '@type': "uast:Positions",
+      start: { '@type': "uast:Position",
+         offset: 0,
+         line: 1,
+         col: 1,
+      },
+      end: { '@type': "uast:Position",
+         offset: 11,
+         col: 0,
+      },
+   },
+   imports: ~,
+   package: { '@type': "PackageDeclaration",
+      '@token': "package",
+      '@role': [Declaration, Package],
+      '@pos': { '@type': "uast:Positions",
+         start: { '@type': "uast:Position",
+            offset: 0,
+            line: 1,
+            col: 1,
+         },
+         end: { '@type': "uast:Position",
+            offset: 10,
+            line: 1,
+            col: 11,
+         },
+      },
+      annotations: ~,
+      javadoc: ~,
+      name: { '@type': "SimpleName",
+         '@token': "a",
+         '@role': [Expression, Identifier],
+         '@pos': { '@type': "uast:Positions",
+            start: { '@type': "uast:Position",
+               offset: 8,
+               line: 1,
+               col: 9,
+            },
+            end: { '@type': "uast:Position",
+               offset: 9,
+               line: 1,
+               col: 10,
+            },
+         },
+      },
+   },
+   types: ~,
 }
-

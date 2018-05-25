@@ -1,1198 +1,1198 @@
-Status:  ok
-Language:  java
-Errors: 
-UAST: 
-CompilationUnit {
-.  Roles: File
-.  StartPosition: {
-.  .  Offset: 0
-.  .  Line: 1
-.  .  Col: 1
-.  }
-.  EndPosition: {
-.  .  Offset: 316
-.  .  Line: 0
-.  .  Col: 0
-.  }
-.  Children: {
-.  .  0: TypeDeclaration {
-.  .  .  Roles: Declaration,Package,Type,Visibility
-.  .  .  StartPosition: {
-.  .  .  .  Offset: 0
-.  .  .  .  Line: 1
-.  .  .  .  Col: 1
-.  .  .  }
-.  .  .  EndPosition: {
-.  .  .  .  Offset: 315
-.  .  .  .  Line: 9
-.  .  .  .  Col: 2
-.  .  .  }
-.  .  .  Properties: {
-.  .  .  .  interface: false
-.  .  .  .  internalRole: types
-.  .  .  }
-.  .  .  Children: {
-.  .  .  .  0: SimpleName {
-.  .  .  .  .  Roles: Expression,Identifier
-.  .  .  .  .  TOKEN "Code"
-.  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  Offset: 6
-.  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  Col: 7
-.  .  .  .  .  }
-.  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 10
-.  .  .  .  .  .  Line: 1
-.  .  .  .  .  .  Col: 11
-.  .  .  .  .  }
-.  .  .  .  .  Properties: {
-.  .  .  .  .  .  internalRole: name
-.  .  .  .  .  }
-.  .  .  .  }
-.  .  .  .  1: MethodDeclaration {
-.  .  .  .  .  Roles: Declaration,Function,Package,Visibility
-.  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  Offset: 17
-.  .  .  .  .  .  Line: 2
-.  .  .  .  .  .  Col: 5
-.  .  .  .  .  }
-.  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 38
-.  .  .  .  .  .  Line: 2
-.  .  .  .  .  .  Col: 26
-.  .  .  .  .  }
-.  .  .  .  .  Properties: {
-.  .  .  .  .  .  constructor: false
-.  .  .  .  .  .  internalRole: bodyDeclarations
-.  .  .  .  .  }
-.  .  .  .  .  Children: {
-.  .  .  .  .  .  0: PrimitiveType {
-.  .  .  .  .  .  .  Roles: Primitive,Type
-.  .  .  .  .  .  .  TOKEN "void"
-.  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  Offset: 17
-.  .  .  .  .  .  .  .  Line: 2
-.  .  .  .  .  .  .  .  Col: 5
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  Offset: 21
-.  .  .  .  .  .  .  .  Line: 2
-.  .  .  .  .  .  .  .  Col: 9
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: returnType2
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  }
-.  .  .  .  .  .  1: SimpleName {
-.  .  .  .  .  .  .  Roles: Expression,Function,Identifier,Name
-.  .  .  .  .  .  .  TOKEN "voidToVoid"
-.  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  Offset: 22
-.  .  .  .  .  .  .  .  Line: 2
-.  .  .  .  .  .  .  .  Col: 10
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  Offset: 32
-.  .  .  .  .  .  .  .  Line: 2
-.  .  .  .  .  .  .  .  Col: 20
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: name
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  }
-.  .  .  .  .  .  2: Block {
-.  .  .  .  .  .  .  Roles: Block,Body,Function,Scope,Statement
-.  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  Offset: 35
-.  .  .  .  .  .  .  .  Line: 2
-.  .  .  .  .  .  .  .  Col: 23
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  Offset: 38
-.  .  .  .  .  .  .  .  Line: 2
-.  .  .  .  .  .  .  .  Col: 26
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: body
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  }
-.  .  .  .  .  }
-.  .  .  .  }
-.  .  .  .  2: MethodDeclaration {
-.  .  .  .  .  Roles: Declaration,Function,Visibility,World
-.  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  Offset: 43
-.  .  .  .  .  .  Line: 3
-.  .  .  .  .  .  Col: 5
-.  .  .  .  .  }
-.  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 90
-.  .  .  .  .  .  Line: 3
-.  .  .  .  .  .  Col: 52
-.  .  .  .  .  }
-.  .  .  .  .  Properties: {
-.  .  .  .  .  .  constructor: false
-.  .  .  .  .  .  internalRole: bodyDeclarations
-.  .  .  .  .  }
-.  .  .  .  .  Children: {
-.  .  .  .  .  .  0: Modifier {
-.  .  .  .  .  .  .  Roles: Visibility,World
-.  .  .  .  .  .  .  TOKEN "public"
-.  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  Offset: 43
-.  .  .  .  .  .  .  .  Line: 3
-.  .  .  .  .  .  .  .  Col: 5
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  Offset: 49
-.  .  .  .  .  .  .  .  Line: 3
-.  .  .  .  .  .  .  .  Col: 11
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: modifiers
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  }
-.  .  .  .  .  .  1: Modifier {
-.  .  .  .  .  .  .  Roles: Incomplete
-.  .  .  .  .  .  .  TOKEN "static"
-.  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  Offset: 50
-.  .  .  .  .  .  .  .  Line: 3
-.  .  .  .  .  .  .  .  Col: 12
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  Offset: 56
-.  .  .  .  .  .  .  .  Line: 3
-.  .  .  .  .  .  .  .  Col: 18
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: modifiers
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  }
-.  .  .  .  .  .  2: PrimitiveType {
-.  .  .  .  .  .  .  Roles: Primitive,Type
-.  .  .  .  .  .  .  TOKEN "void"
-.  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  Offset: 57
-.  .  .  .  .  .  .  .  Line: 3
-.  .  .  .  .  .  .  .  Col: 19
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  Offset: 61
-.  .  .  .  .  .  .  .  Line: 3
-.  .  .  .  .  .  .  .  Col: 23
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: returnType2
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  }
-.  .  .  .  .  .  3: SimpleName {
-.  .  .  .  .  .  .  Roles: Expression,Function,Identifier,Name
-.  .  .  .  .  .  .  TOKEN "publicStaticVoidToVoid"
-.  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  Offset: 62
-.  .  .  .  .  .  .  .  Line: 3
-.  .  .  .  .  .  .  .  Col: 24
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  Offset: 84
-.  .  .  .  .  .  .  .  Line: 3
-.  .  .  .  .  .  .  .  Col: 46
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: name
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  }
-.  .  .  .  .  .  4: Block {
-.  .  .  .  .  .  .  Roles: Block,Body,Function,Scope,Statement
-.  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  Offset: 87
-.  .  .  .  .  .  .  .  Line: 3
-.  .  .  .  .  .  .  .  Col: 49
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  Offset: 90
-.  .  .  .  .  .  .  .  Line: 3
-.  .  .  .  .  .  .  .  Col: 52
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: body
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  }
-.  .  .  .  .  }
-.  .  .  .  }
-.  .  .  .  3: MethodDeclaration {
-.  .  .  .  .  Roles: Declaration,Function,Package,Visibility
-.  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  Offset: 95
-.  .  .  .  .  .  Line: 4
-.  .  .  .  .  .  Col: 5
-.  .  .  .  .  }
-.  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 128
-.  .  .  .  .  .  Line: 4
-.  .  .  .  .  .  Col: 38
-.  .  .  .  .  }
-.  .  .  .  .  Properties: {
-.  .  .  .  .  .  constructor: false
-.  .  .  .  .  .  internalRole: bodyDeclarations
-.  .  .  .  .  }
-.  .  .  .  .  Children: {
-.  .  .  .  .  .  0: PrimitiveType {
-.  .  .  .  .  .  .  Roles: Primitive,Type
-.  .  .  .  .  .  .  TOKEN "int"
-.  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  Offset: 95
-.  .  .  .  .  .  .  .  Line: 4
-.  .  .  .  .  .  .  .  Col: 5
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  Offset: 98
-.  .  .  .  .  .  .  .  Line: 4
-.  .  .  .  .  .  .  .  Col: 8
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: returnType2
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  }
-.  .  .  .  .  .  1: SimpleName {
-.  .  .  .  .  .  .  Roles: Expression,Function,Identifier,Name
-.  .  .  .  .  .  .  TOKEN "intToInt"
-.  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  Offset: 99
-.  .  .  .  .  .  .  .  Line: 4
-.  .  .  .  .  .  .  .  Col: 9
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  Offset: 107
-.  .  .  .  .  .  .  .  Line: 4
-.  .  .  .  .  .  .  .  Col: 17
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: name
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  }
-.  .  .  .  .  .  2: SingleVariableDeclaration {
-.  .  .  .  .  .  .  Roles: Argument,Declaration,Function,Variable
-.  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  Offset: 108
-.  .  .  .  .  .  .  .  Line: 4
-.  .  .  .  .  .  .  .  Col: 18
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  Offset: 113
-.  .  .  .  .  .  .  .  Line: 4
-.  .  .  .  .  .  .  .  Col: 23
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: parameters
-.  .  .  .  .  .  .  .  varargs: false
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Children: {
-.  .  .  .  .  .  .  .  0: PrimitiveType {
-.  .  .  .  .  .  .  .  .  Roles: Primitive,Type
-.  .  .  .  .  .  .  .  .  TOKEN "int"
-.  .  .  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  .  .  Offset: 108
-.  .  .  .  .  .  .  .  .  .  Line: 4
-.  .  .  .  .  .  .  .  .  .  Col: 18
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  .  .  Offset: 111
-.  .  .  .  .  .  .  .  .  .  Line: 4
-.  .  .  .  .  .  .  .  .  .  Col: 21
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  .  .  internalRole: type
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  1: SimpleName {
-.  .  .  .  .  .  .  .  .  Roles: Argument,Expression,Function,Identifier,Name
-.  .  .  .  .  .  .  .  .  TOKEN "i"
-.  .  .  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  .  .  Offset: 112
-.  .  .  .  .  .  .  .  .  .  Line: 4
-.  .  .  .  .  .  .  .  .  .  Col: 22
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  .  .  Offset: 113
-.  .  .  .  .  .  .  .  .  .  Line: 4
-.  .  .  .  .  .  .  .  .  .  Col: 23
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  .  .  internalRole: name
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  }
-.  .  .  .  .  .  3: Block {
-.  .  .  .  .  .  .  Roles: Block,Body,Function,Scope,Statement
-.  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  Offset: 115
-.  .  .  .  .  .  .  .  Line: 4
-.  .  .  .  .  .  .  .  Col: 25
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  Offset: 128
-.  .  .  .  .  .  .  .  Line: 4
-.  .  .  .  .  .  .  .  Col: 38
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: body
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Children: {
-.  .  .  .  .  .  .  .  0: ReturnStatement {
-.  .  .  .  .  .  .  .  .  Roles: Return,Statement
-.  .  .  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  .  .  Offset: 117
-.  .  .  .  .  .  .  .  .  .  Line: 4
-.  .  .  .  .  .  .  .  .  .  Col: 27
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  .  .  Offset: 126
-.  .  .  .  .  .  .  .  .  .  Line: 4
-.  .  .  .  .  .  .  .  .  .  Col: 36
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  .  .  internalRole: statements
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  Children: {
-.  .  .  .  .  .  .  .  .  .  0: SimpleName {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Expression,Identifier
-.  .  .  .  .  .  .  .  .  .  .  TOKEN "i"
-.  .  .  .  .  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  .  .  .  .  Offset: 124
-.  .  .  .  .  .  .  .  .  .  .  .  Line: 4
-.  .  .  .  .  .  .  .  .  .  .  .  Col: 34
-.  .  .  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  .  .  .  .  Offset: 125
-.  .  .  .  .  .  .  .  .  .  .  .  Line: 4
-.  .  .  .  .  .  .  .  .  .  .  .  Col: 35
-.  .  .  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  .  .  .  .  internalRole: expression
-.  .  .  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  }
-.  .  .  .  .  }
-.  .  .  .  }
-.  .  .  .  4: MethodDeclaration {
-.  .  .  .  .  Roles: Declaration,Function,Package,Visibility
-.  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  Offset: 133
-.  .  .  .  .  .  Line: 5
-.  .  .  .  .  .  Col: 5
-.  .  .  .  .  }
-.  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 176
-.  .  .  .  .  .  Line: 5
-.  .  .  .  .  .  Col: 48
-.  .  .  .  .  }
-.  .  .  .  .  Properties: {
-.  .  .  .  .  .  constructor: false
-.  .  .  .  .  .  internalRole: bodyDeclarations
-.  .  .  .  .  }
-.  .  .  .  .  Children: {
-.  .  .  .  .  .  0: PrimitiveType {
-.  .  .  .  .  .  .  Roles: Primitive,Type
-.  .  .  .  .  .  .  TOKEN "int"
-.  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  Offset: 133
-.  .  .  .  .  .  .  .  Line: 5
-.  .  .  .  .  .  .  .  Col: 5
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  Offset: 136
-.  .  .  .  .  .  .  .  Line: 5
-.  .  .  .  .  .  .  .  Col: 8
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: returnType2
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  }
-.  .  .  .  .  .  1: SimpleName {
-.  .  .  .  .  .  .  Roles: Expression,Function,Identifier,Name
-.  .  .  .  .  .  .  TOKEN "intIntToInt"
-.  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  Offset: 137
-.  .  .  .  .  .  .  .  Line: 5
-.  .  .  .  .  .  .  .  Col: 9
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  Offset: 148
-.  .  .  .  .  .  .  .  Line: 5
-.  .  .  .  .  .  .  .  Col: 20
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: name
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  }
-.  .  .  .  .  .  2: SingleVariableDeclaration {
-.  .  .  .  .  .  .  Roles: Argument,Declaration,Function,Variable
-.  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  Offset: 149
-.  .  .  .  .  .  .  .  Line: 5
-.  .  .  .  .  .  .  .  Col: 21
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  Offset: 154
-.  .  .  .  .  .  .  .  Line: 5
-.  .  .  .  .  .  .  .  Col: 26
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: parameters
-.  .  .  .  .  .  .  .  varargs: false
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Children: {
-.  .  .  .  .  .  .  .  0: PrimitiveType {
-.  .  .  .  .  .  .  .  .  Roles: Primitive,Type
-.  .  .  .  .  .  .  .  .  TOKEN "int"
-.  .  .  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  .  .  Offset: 149
-.  .  .  .  .  .  .  .  .  .  Line: 5
-.  .  .  .  .  .  .  .  .  .  Col: 21
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  .  .  Offset: 152
-.  .  .  .  .  .  .  .  .  .  Line: 5
-.  .  .  .  .  .  .  .  .  .  Col: 24
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  .  .  internalRole: type
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  1: SimpleName {
-.  .  .  .  .  .  .  .  .  Roles: Argument,Expression,Function,Identifier,Name
-.  .  .  .  .  .  .  .  .  TOKEN "i"
-.  .  .  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  .  .  Offset: 153
-.  .  .  .  .  .  .  .  .  .  Line: 5
-.  .  .  .  .  .  .  .  .  .  Col: 25
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  .  .  Offset: 154
-.  .  .  .  .  .  .  .  .  .  Line: 5
-.  .  .  .  .  .  .  .  .  .  Col: 26
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  .  .  internalRole: name
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  }
-.  .  .  .  .  .  3: SingleVariableDeclaration {
-.  .  .  .  .  .  .  Roles: Argument,Declaration,Function,Variable
-.  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  Offset: 156
-.  .  .  .  .  .  .  .  Line: 5
-.  .  .  .  .  .  .  .  Col: 28
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  Offset: 161
-.  .  .  .  .  .  .  .  Line: 5
-.  .  .  .  .  .  .  .  Col: 33
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: parameters
-.  .  .  .  .  .  .  .  varargs: false
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Children: {
-.  .  .  .  .  .  .  .  0: PrimitiveType {
-.  .  .  .  .  .  .  .  .  Roles: Primitive,Type
-.  .  .  .  .  .  .  .  .  TOKEN "int"
-.  .  .  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  .  .  Offset: 156
-.  .  .  .  .  .  .  .  .  .  Line: 5
-.  .  .  .  .  .  .  .  .  .  Col: 28
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  .  .  Offset: 159
-.  .  .  .  .  .  .  .  .  .  Line: 5
-.  .  .  .  .  .  .  .  .  .  Col: 31
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  .  .  internalRole: type
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  1: SimpleName {
-.  .  .  .  .  .  .  .  .  Roles: Argument,Expression,Function,Identifier,Name
-.  .  .  .  .  .  .  .  .  TOKEN "j"
-.  .  .  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  .  .  Offset: 160
-.  .  .  .  .  .  .  .  .  .  Line: 5
-.  .  .  .  .  .  .  .  .  .  Col: 32
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  .  .  Offset: 161
-.  .  .  .  .  .  .  .  .  .  Line: 5
-.  .  .  .  .  .  .  .  .  .  Col: 33
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  .  .  internalRole: name
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  }
-.  .  .  .  .  .  4: Block {
-.  .  .  .  .  .  .  Roles: Block,Body,Function,Scope,Statement
-.  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  Offset: 163
-.  .  .  .  .  .  .  .  Line: 5
-.  .  .  .  .  .  .  .  Col: 35
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  Offset: 176
-.  .  .  .  .  .  .  .  Line: 5
-.  .  .  .  .  .  .  .  Col: 48
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: body
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Children: {
-.  .  .  .  .  .  .  .  0: ReturnStatement {
-.  .  .  .  .  .  .  .  .  Roles: Return,Statement
-.  .  .  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  .  .  Offset: 165
-.  .  .  .  .  .  .  .  .  .  Line: 5
-.  .  .  .  .  .  .  .  .  .  Col: 37
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  .  .  Offset: 174
-.  .  .  .  .  .  .  .  .  .  Line: 5
-.  .  .  .  .  .  .  .  .  .  Col: 46
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  .  .  internalRole: statements
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  Children: {
-.  .  .  .  .  .  .  .  .  .  0: SimpleName {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Expression,Identifier
-.  .  .  .  .  .  .  .  .  .  .  TOKEN "i"
-.  .  .  .  .  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  .  .  .  .  Offset: 172
-.  .  .  .  .  .  .  .  .  .  .  .  Line: 5
-.  .  .  .  .  .  .  .  .  .  .  .  Col: 44
-.  .  .  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  .  .  .  .  Offset: 173
-.  .  .  .  .  .  .  .  .  .  .  .  Line: 5
-.  .  .  .  .  .  .  .  .  .  .  .  Col: 45
-.  .  .  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  .  .  .  .  internalRole: expression
-.  .  .  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  }
-.  .  .  .  .  }
-.  .  .  .  }
-.  .  .  .  5: MethodDeclaration {
-.  .  .  .  .  Roles: Declaration,Function,Package,Visibility
-.  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  Offset: 181
-.  .  .  .  .  .  Line: 6
-.  .  .  .  .  .  Col: 5
-.  .  .  .  .  }
-.  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 212
-.  .  .  .  .  .  Line: 6
-.  .  .  .  .  .  Col: 36
-.  .  .  .  .  }
-.  .  .  .  .  Properties: {
-.  .  .  .  .  .  constructor: false
-.  .  .  .  .  .  internalRole: bodyDeclarations
-.  .  .  .  .  }
-.  .  .  .  .  Children: {
-.  .  .  .  .  .  0: PrimitiveType {
-.  .  .  .  .  .  .  Roles: Primitive,Type
-.  .  .  .  .  .  .  TOKEN "void"
-.  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  Offset: 181
-.  .  .  .  .  .  .  .  Line: 6
-.  .  .  .  .  .  .  .  Col: 5
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  Offset: 185
-.  .  .  .  .  .  .  .  Line: 6
-.  .  .  .  .  .  .  .  Col: 9
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: returnType2
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  }
-.  .  .  .  .  .  1: SimpleName {
-.  .  .  .  .  .  .  Roles: Expression,Function,Identifier,Name
-.  .  .  .  .  .  .  TOKEN "varIntToVoid"
-.  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  Offset: 186
-.  .  .  .  .  .  .  .  Line: 6
-.  .  .  .  .  .  .  .  Col: 10
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  Offset: 198
-.  .  .  .  .  .  .  .  Line: 6
-.  .  .  .  .  .  .  .  Col: 22
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: name
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  }
-.  .  .  .  .  .  2: SingleVariableDeclaration {
-.  .  .  .  .  .  .  Roles: ArgsList,Argument,Declaration,Function,Variable
-.  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  Offset: 199
-.  .  .  .  .  .  .  .  Line: 6
-.  .  .  .  .  .  .  .  Col: 23
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  Offset: 207
-.  .  .  .  .  .  .  .  Line: 6
-.  .  .  .  .  .  .  .  Col: 31
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: parameters
-.  .  .  .  .  .  .  .  varargs: true
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Children: {
-.  .  .  .  .  .  .  .  0: PrimitiveType {
-.  .  .  .  .  .  .  .  .  Roles: Primitive,Type
-.  .  .  .  .  .  .  .  .  TOKEN "int"
-.  .  .  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  .  .  Offset: 199
-.  .  .  .  .  .  .  .  .  .  Line: 6
-.  .  .  .  .  .  .  .  .  .  Col: 23
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  .  .  Offset: 202
-.  .  .  .  .  .  .  .  .  .  Line: 6
-.  .  .  .  .  .  .  .  .  .  Col: 26
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  .  .  internalRole: type
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  1: SimpleName {
-.  .  .  .  .  .  .  .  .  Roles: Argument,Expression,Function,Identifier,Name
-.  .  .  .  .  .  .  .  .  TOKEN "i"
-.  .  .  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  .  .  Offset: 206
-.  .  .  .  .  .  .  .  .  .  Line: 6
-.  .  .  .  .  .  .  .  .  .  Col: 30
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  .  .  Offset: 207
-.  .  .  .  .  .  .  .  .  .  Line: 6
-.  .  .  .  .  .  .  .  .  .  Col: 31
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  .  .  internalRole: name
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  }
-.  .  .  .  .  .  3: Block {
-.  .  .  .  .  .  .  Roles: Block,Body,Function,Scope,Statement
-.  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  Offset: 209
-.  .  .  .  .  .  .  .  Line: 6
-.  .  .  .  .  .  .  .  Col: 33
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  Offset: 212
-.  .  .  .  .  .  .  .  Line: 6
-.  .  .  .  .  .  .  .  Col: 36
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: body
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  }
-.  .  .  .  .  }
-.  .  .  .  }
-.  .  .  .  6: MethodDeclaration {
-.  .  .  .  .  Roles: Declaration,Function,Package,Visibility
-.  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  Offset: 217
-.  .  .  .  .  .  Line: 7
-.  .  .  .  .  .  Col: 5
-.  .  .  .  .  }
-.  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 260
-.  .  .  .  .  .  Line: 7
-.  .  .  .  .  .  Col: 48
-.  .  .  .  .  }
-.  .  .  .  .  Properties: {
-.  .  .  .  .  .  constructor: false
-.  .  .  .  .  .  internalRole: bodyDeclarations
-.  .  .  .  .  }
-.  .  .  .  .  Children: {
-.  .  .  .  .  .  0: TypeParameter {
-.  .  .  .  .  .  .  Roles: Incomplete,Type
-.  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  Offset: 218
-.  .  .  .  .  .  .  .  Line: 7
-.  .  .  .  .  .  .  .  Col: 6
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  Offset: 219
-.  .  .  .  .  .  .  .  Line: 7
-.  .  .  .  .  .  .  .  Col: 7
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: typeParameters
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Children: {
-.  .  .  .  .  .  .  .  0: SimpleName {
-.  .  .  .  .  .  .  .  .  Roles: Expression,Identifier
-.  .  .  .  .  .  .  .  .  TOKEN "T"
-.  .  .  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  .  .  Offset: 218
-.  .  .  .  .  .  .  .  .  .  Line: 7
-.  .  .  .  .  .  .  .  .  .  Col: 6
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  .  .  Offset: 219
-.  .  .  .  .  .  .  .  .  .  Line: 7
-.  .  .  .  .  .  .  .  .  .  Col: 7
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  .  .  internalRole: name
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  }
-.  .  .  .  .  .  1: SimpleType {
-.  .  .  .  .  .  .  Roles: Type
-.  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  Offset: 221
-.  .  .  .  .  .  .  .  Line: 7
-.  .  .  .  .  .  .  .  Col: 9
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  Offset: 222
-.  .  .  .  .  .  .  .  Line: 7
-.  .  .  .  .  .  .  .  Col: 10
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: returnType2
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Children: {
-.  .  .  .  .  .  .  .  0: SimpleName {
-.  .  .  .  .  .  .  .  .  Roles: Expression,Identifier
-.  .  .  .  .  .  .  .  .  TOKEN "T"
-.  .  .  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  .  .  Offset: 221
-.  .  .  .  .  .  .  .  .  .  Line: 7
-.  .  .  .  .  .  .  .  .  .  Col: 9
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  .  .  Offset: 222
-.  .  .  .  .  .  .  .  .  .  Line: 7
-.  .  .  .  .  .  .  .  .  .  Col: 10
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  .  .  internalRole: name
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  }
-.  .  .  .  .  .  2: SimpleName {
-.  .  .  .  .  .  .  Roles: Expression,Function,Identifier,Name
-.  .  .  .  .  .  .  TOKEN "intToGenericT"
-.  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  Offset: 223
-.  .  .  .  .  .  .  .  Line: 7
-.  .  .  .  .  .  .  .  Col: 11
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  Offset: 236
-.  .  .  .  .  .  .  .  Line: 7
-.  .  .  .  .  .  .  .  Col: 24
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: name
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  }
-.  .  .  .  .  .  3: SingleVariableDeclaration {
-.  .  .  .  .  .  .  Roles: Argument,Declaration,Function,Variable
-.  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  Offset: 237
-.  .  .  .  .  .  .  .  Line: 7
-.  .  .  .  .  .  .  .  Col: 25
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  Offset: 242
-.  .  .  .  .  .  .  .  Line: 7
-.  .  .  .  .  .  .  .  Col: 30
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: parameters
-.  .  .  .  .  .  .  .  varargs: false
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Children: {
-.  .  .  .  .  .  .  .  0: PrimitiveType {
-.  .  .  .  .  .  .  .  .  Roles: Primitive,Type
-.  .  .  .  .  .  .  .  .  TOKEN "int"
-.  .  .  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  .  .  Offset: 237
-.  .  .  .  .  .  .  .  .  .  Line: 7
-.  .  .  .  .  .  .  .  .  .  Col: 25
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  .  .  Offset: 240
-.  .  .  .  .  .  .  .  .  .  Line: 7
-.  .  .  .  .  .  .  .  .  .  Col: 28
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  .  .  internalRole: type
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  1: SimpleName {
-.  .  .  .  .  .  .  .  .  Roles: Argument,Expression,Function,Identifier,Name
-.  .  .  .  .  .  .  .  .  TOKEN "i"
-.  .  .  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  .  .  Offset: 241
-.  .  .  .  .  .  .  .  .  .  Line: 7
-.  .  .  .  .  .  .  .  .  .  Col: 29
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  .  .  Offset: 242
-.  .  .  .  .  .  .  .  .  .  Line: 7
-.  .  .  .  .  .  .  .  .  .  Col: 30
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  .  .  internalRole: name
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  }
-.  .  .  .  .  .  4: Block {
-.  .  .  .  .  .  .  Roles: Block,Body,Function,Scope,Statement
-.  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  Offset: 244
-.  .  .  .  .  .  .  .  Line: 7
-.  .  .  .  .  .  .  .  Col: 32
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  Offset: 260
-.  .  .  .  .  .  .  .  Line: 7
-.  .  .  .  .  .  .  .  Col: 48
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: body
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Children: {
-.  .  .  .  .  .  .  .  0: ReturnStatement {
-.  .  .  .  .  .  .  .  .  Roles: Return,Statement
-.  .  .  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  .  .  Offset: 246
-.  .  .  .  .  .  .  .  .  .  Line: 7
-.  .  .  .  .  .  .  .  .  .  Col: 34
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  .  .  Offset: 258
-.  .  .  .  .  .  .  .  .  .  Line: 7
-.  .  .  .  .  .  .  .  .  .  Col: 46
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  .  .  internalRole: statements
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  Children: {
-.  .  .  .  .  .  .  .  .  .  0: NullLiteral {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Expression,Literal,Null
-.  .  .  .  .  .  .  .  .  .  .  TOKEN "null"
-.  .  .  .  .  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  .  .  .  .  Offset: 253
-.  .  .  .  .  .  .  .  .  .  .  .  Line: 7
-.  .  .  .  .  .  .  .  .  .  .  .  Col: 41
-.  .  .  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  .  .  .  .  Offset: 257
-.  .  .  .  .  .  .  .  .  .  .  .  Line: 7
-.  .  .  .  .  .  .  .  .  .  .  .  Col: 45
-.  .  .  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  .  .  .  .  internalRole: expression
-.  .  .  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  }
-.  .  .  .  .  }
-.  .  .  .  }
-.  .  .  .  7: MethodDeclaration {
-.  .  .  .  .  Roles: Declaration,Function,Package,Visibility
-.  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  Offset: 265
-.  .  .  .  .  .  Line: 8
-.  .  .  .  .  .  Col: 5
-.  .  .  .  .  }
-.  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 313
-.  .  .  .  .  .  Line: 8
-.  .  .  .  .  .  Col: 53
-.  .  .  .  .  }
-.  .  .  .  .  Properties: {
-.  .  .  .  .  .  constructor: false
-.  .  .  .  .  .  internalRole: bodyDeclarations
-.  .  .  .  .  }
-.  .  .  .  .  Children: {
-.  .  .  .  .  .  0: TypeParameter {
-.  .  .  .  .  .  .  Roles: Incomplete,Type
-.  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  Offset: 266
-.  .  .  .  .  .  .  .  Line: 8
-.  .  .  .  .  .  .  .  Col: 6
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  Offset: 267
-.  .  .  .  .  .  .  .  Line: 8
-.  .  .  .  .  .  .  .  Col: 7
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: typeParameters
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Children: {
-.  .  .  .  .  .  .  .  0: SimpleName {
-.  .  .  .  .  .  .  .  .  Roles: Expression,Identifier
-.  .  .  .  .  .  .  .  .  TOKEN "T"
-.  .  .  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  .  .  Offset: 266
-.  .  .  .  .  .  .  .  .  .  Line: 8
-.  .  .  .  .  .  .  .  .  .  Col: 6
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  .  .  Offset: 267
-.  .  .  .  .  .  .  .  .  .  Line: 8
-.  .  .  .  .  .  .  .  .  .  Col: 7
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  .  .  internalRole: name
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  }
-.  .  .  .  .  .  1: TypeParameter {
-.  .  .  .  .  .  .  Roles: Incomplete,Type
-.  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  Offset: 268
-.  .  .  .  .  .  .  .  Line: 8
-.  .  .  .  .  .  .  .  Col: 8
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  Offset: 269
-.  .  .  .  .  .  .  .  Line: 8
-.  .  .  .  .  .  .  .  Col: 9
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: typeParameters
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Children: {
-.  .  .  .  .  .  .  .  0: SimpleName {
-.  .  .  .  .  .  .  .  .  Roles: Expression,Identifier
-.  .  .  .  .  .  .  .  .  TOKEN "S"
-.  .  .  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  .  .  Offset: 268
-.  .  .  .  .  .  .  .  .  .  Line: 8
-.  .  .  .  .  .  .  .  .  .  Col: 8
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  .  .  Offset: 269
-.  .  .  .  .  .  .  .  .  .  Line: 8
-.  .  .  .  .  .  .  .  .  .  Col: 9
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  .  .  internalRole: name
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  }
-.  .  .  .  .  .  2: SimpleType {
-.  .  .  .  .  .  .  Roles: Type
-.  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  Offset: 271
-.  .  .  .  .  .  .  .  Line: 8
-.  .  .  .  .  .  .  .  Col: 11
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  Offset: 272
-.  .  .  .  .  .  .  .  Line: 8
-.  .  .  .  .  .  .  .  Col: 12
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: returnType2
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Children: {
-.  .  .  .  .  .  .  .  0: SimpleName {
-.  .  .  .  .  .  .  .  .  Roles: Expression,Identifier
-.  .  .  .  .  .  .  .  .  TOKEN "T"
-.  .  .  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  .  .  Offset: 271
-.  .  .  .  .  .  .  .  .  .  Line: 8
-.  .  .  .  .  .  .  .  .  .  Col: 11
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  .  .  Offset: 272
-.  .  .  .  .  .  .  .  .  .  Line: 8
-.  .  .  .  .  .  .  .  .  .  Col: 12
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  .  .  internalRole: name
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  }
-.  .  .  .  .  .  3: SimpleName {
-.  .  .  .  .  .  .  Roles: Expression,Function,Identifier,Name
-.  .  .  .  .  .  .  TOKEN "genericSToGenericT"
-.  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  Offset: 273
-.  .  .  .  .  .  .  .  Line: 8
-.  .  .  .  .  .  .  .  Col: 13
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  Offset: 291
-.  .  .  .  .  .  .  .  Line: 8
-.  .  .  .  .  .  .  .  Col: 31
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: name
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  }
-.  .  .  .  .  .  4: SingleVariableDeclaration {
-.  .  .  .  .  .  .  Roles: Argument,Declaration,Function,Variable
-.  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  Offset: 292
-.  .  .  .  .  .  .  .  Line: 8
-.  .  .  .  .  .  .  .  Col: 32
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  Offset: 295
-.  .  .  .  .  .  .  .  Line: 8
-.  .  .  .  .  .  .  .  Col: 35
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: parameters
-.  .  .  .  .  .  .  .  varargs: false
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Children: {
-.  .  .  .  .  .  .  .  0: SimpleType {
-.  .  .  .  .  .  .  .  .  Roles: Type
-.  .  .  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  .  .  Offset: 292
-.  .  .  .  .  .  .  .  .  .  Line: 8
-.  .  .  .  .  .  .  .  .  .  Col: 32
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  .  .  Offset: 293
-.  .  .  .  .  .  .  .  .  .  Line: 8
-.  .  .  .  .  .  .  .  .  .  Col: 33
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  .  .  internalRole: type
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  Children: {
-.  .  .  .  .  .  .  .  .  .  0: SimpleName {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Expression,Identifier
-.  .  .  .  .  .  .  .  .  .  .  TOKEN "S"
-.  .  .  .  .  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  .  .  .  .  Offset: 292
-.  .  .  .  .  .  .  .  .  .  .  .  Line: 8
-.  .  .  .  .  .  .  .  .  .  .  .  Col: 32
-.  .  .  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  .  .  .  .  Offset: 293
-.  .  .  .  .  .  .  .  .  .  .  .  Line: 8
-.  .  .  .  .  .  .  .  .  .  .  .  Col: 33
-.  .  .  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  .  .  .  .  internalRole: name
-.  .  .  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  1: SimpleName {
-.  .  .  .  .  .  .  .  .  Roles: Argument,Expression,Function,Identifier,Name
-.  .  .  .  .  .  .  .  .  TOKEN "i"
-.  .  .  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  .  .  Offset: 294
-.  .  .  .  .  .  .  .  .  .  Line: 8
-.  .  .  .  .  .  .  .  .  .  Col: 34
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  .  .  Offset: 295
-.  .  .  .  .  .  .  .  .  .  Line: 8
-.  .  .  .  .  .  .  .  .  .  Col: 35
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  .  .  internalRole: name
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  }
-.  .  .  .  .  .  5: Block {
-.  .  .  .  .  .  .  Roles: Block,Body,Function,Scope,Statement
-.  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  Offset: 297
-.  .  .  .  .  .  .  .  Line: 8
-.  .  .  .  .  .  .  .  Col: 37
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  Offset: 313
-.  .  .  .  .  .  .  .  Line: 8
-.  .  .  .  .  .  .  .  Col: 53
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  internalRole: body
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  Children: {
-.  .  .  .  .  .  .  .  0: ReturnStatement {
-.  .  .  .  .  .  .  .  .  Roles: Return,Statement
-.  .  .  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  .  .  Offset: 299
-.  .  .  .  .  .  .  .  .  .  Line: 8
-.  .  .  .  .  .  .  .  .  .  Col: 39
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  .  .  Offset: 311
-.  .  .  .  .  .  .  .  .  .  Line: 8
-.  .  .  .  .  .  .  .  .  .  Col: 51
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  .  .  internalRole: statements
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  Children: {
-.  .  .  .  .  .  .  .  .  .  0: NullLiteral {
-.  .  .  .  .  .  .  .  .  .  .  Roles: Expression,Literal,Null
-.  .  .  .  .  .  .  .  .  .  .  TOKEN "null"
-.  .  .  .  .  .  .  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  .  .  .  .  .  .  Offset: 306
-.  .  .  .  .  .  .  .  .  .  .  .  Line: 8
-.  .  .  .  .  .  .  .  .  .  .  .  Col: 46
-.  .  .  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  .  .  .  .  .  .  Offset: 310
-.  .  .  .  .  .  .  .  .  .  .  .  Line: 8
-.  .  .  .  .  .  .  .  .  .  .  .  Col: 50
-.  .  .  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  .  .  Properties: {
-.  .  .  .  .  .  .  .  .  .  .  .  internalRole: expression
-.  .  .  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  .  }
-.  .  .  .  .  .  .  }
-.  .  .  .  .  .  }
-.  .  .  .  .  }
-.  .  .  .  }
-.  .  .  }
-.  .  }
-.  }
+{ '@type': "CompilationUnit",
+   '@role': [File],
+   '@pos': { '@type': "uast:Positions",
+      start: { '@type': "uast:Position",
+         offset: 0,
+         line: 1,
+         col: 1,
+      },
+      end: { '@type': "uast:Position",
+         offset: 316,
+         col: 0,
+      },
+   },
+   imports: ~,
+   package: ~,
+   types: [
+      { '@type': "TypeDeclaration",
+         '@role': [Declaration, Package, Type, Visibility],
+         '@pos': { '@type': "uast:Positions",
+            start: { '@type': "uast:Position",
+               offset: 0,
+               line: 1,
+               col: 1,
+            },
+            end: { '@type': "uast:Position",
+               offset: 315,
+               line: 9,
+               col: 2,
+            },
+         },
+         bodyDeclarations: [
+            { '@type': "MethodDeclaration",
+               '@role': [Declaration, Function, Package, Visibility],
+               '@pos': { '@type': "uast:Positions",
+                  start: { '@type': "uast:Position",
+                     offset: 17,
+                     line: 2,
+                     col: 5,
+                  },
+                  end: { '@type': "uast:Position",
+                     offset: 38,
+                     line: 2,
+                     col: 26,
+                  },
+               },
+               body: { '@type': "Block",
+                  '@role': [Block, Body, Function, Scope, Statement],
+                  '@pos': { '@type': "uast:Positions",
+                     start: { '@type': "uast:Position",
+                        offset: 35,
+                        line: 2,
+                        col: 23,
+                     },
+                     end: { '@type': "uast:Position",
+                        offset: 38,
+                        line: 2,
+                        col: 26,
+                     },
+                  },
+                  statements: ~,
+               },
+               constructor: "false",
+               'extraDimensions2': ~,
+               javadoc: ~,
+               modifiers: ~,
+               name: { '@type': "SimpleName",
+                  '@token': "voidToVoid",
+                  '@role': [Expression, Function, Identifier, Name],
+                  '@pos': { '@type': "uast:Positions",
+                     start: { '@type': "uast:Position",
+                        offset: 22,
+                        line: 2,
+                        col: 10,
+                     },
+                     end: { '@type': "uast:Position",
+                        offset: 32,
+                        line: 2,
+                        col: 20,
+                     },
+                  },
+               },
+               parameters: ~,
+               receiverQualifier: ~,
+               receiverType: ~,
+               'returnType2': { '@type': "PrimitiveType",
+                  '@token': "void",
+                  '@role': [Primitive, Type],
+                  '@pos': { '@type': "uast:Positions",
+                     start: { '@type': "uast:Position",
+                        offset: 17,
+                        line: 2,
+                        col: 5,
+                     },
+                     end: { '@type': "uast:Position",
+                        offset: 21,
+                        line: 2,
+                        col: 9,
+                     },
+                  },
+                  annotations: ~,
+               },
+               thrownExceptionTypes: ~,
+               typeParameters: ~,
+            },
+            { '@type': "MethodDeclaration",
+               '@role': [Declaration, Function, Visibility, World],
+               '@pos': { '@type': "uast:Positions",
+                  start: { '@type': "uast:Position",
+                     offset: 43,
+                     line: 3,
+                     col: 5,
+                  },
+                  end: { '@type': "uast:Position",
+                     offset: 90,
+                     line: 3,
+                     col: 52,
+                  },
+               },
+               body: { '@type': "Block",
+                  '@role': [Block, Body, Function, Scope, Statement],
+                  '@pos': { '@type': "uast:Positions",
+                     start: { '@type': "uast:Position",
+                        offset: 87,
+                        line: 3,
+                        col: 49,
+                     },
+                     end: { '@type': "uast:Position",
+                        offset: 90,
+                        line: 3,
+                        col: 52,
+                     },
+                  },
+                  statements: ~,
+               },
+               constructor: "false",
+               'extraDimensions2': ~,
+               javadoc: ~,
+               modifiers: [
+                  { '@type': "Modifier",
+                     '@token': "public",
+                     '@role': [Visibility, World],
+                     '@pos': { '@type': "uast:Positions",
+                        start: { '@type': "uast:Position",
+                           offset: 43,
+                           line: 3,
+                           col: 5,
+                        },
+                        end: { '@type': "uast:Position",
+                           offset: 49,
+                           line: 3,
+                           col: 11,
+                        },
+                     },
+                  },
+                  { '@type': "Modifier",
+                     '@token': "static",
+                     '@role': [Incomplete],
+                     '@pos': { '@type': "uast:Positions",
+                        start: { '@type': "uast:Position",
+                           offset: 50,
+                           line: 3,
+                           col: 12,
+                        },
+                        end: { '@type': "uast:Position",
+                           offset: 56,
+                           line: 3,
+                           col: 18,
+                        },
+                     },
+                  },
+               ],
+               name: { '@type': "SimpleName",
+                  '@token': "publicStaticVoidToVoid",
+                  '@role': [Expression, Function, Identifier, Name],
+                  '@pos': { '@type': "uast:Positions",
+                     start: { '@type': "uast:Position",
+                        offset: 62,
+                        line: 3,
+                        col: 24,
+                     },
+                     end: { '@type': "uast:Position",
+                        offset: 84,
+                        line: 3,
+                        col: 46,
+                     },
+                  },
+               },
+               parameters: ~,
+               receiverQualifier: ~,
+               receiverType: ~,
+               'returnType2': { '@type': "PrimitiveType",
+                  '@token': "void",
+                  '@role': [Primitive, Type],
+                  '@pos': { '@type': "uast:Positions",
+                     start: { '@type': "uast:Position",
+                        offset: 57,
+                        line: 3,
+                        col: 19,
+                     },
+                     end: { '@type': "uast:Position",
+                        offset: 61,
+                        line: 3,
+                        col: 23,
+                     },
+                  },
+                  annotations: ~,
+               },
+               thrownExceptionTypes: ~,
+               typeParameters: ~,
+            },
+            { '@type': "MethodDeclaration",
+               '@role': [Declaration, Function, Package, Visibility],
+               '@pos': { '@type': "uast:Positions",
+                  start: { '@type': "uast:Position",
+                     offset: 95,
+                     line: 4,
+                     col: 5,
+                  },
+                  end: { '@type': "uast:Position",
+                     offset: 128,
+                     line: 4,
+                     col: 38,
+                  },
+               },
+               body: { '@type': "Block",
+                  '@role': [Block, Body, Function, Scope, Statement],
+                  '@pos': { '@type': "uast:Positions",
+                     start: { '@type': "uast:Position",
+                        offset: 115,
+                        line: 4,
+                        col: 25,
+                     },
+                     end: { '@type': "uast:Position",
+                        offset: 128,
+                        line: 4,
+                        col: 38,
+                     },
+                  },
+                  statements: [
+                     { '@type': "ReturnStatement",
+                        '@role': [Return, Statement],
+                        '@pos': { '@type': "uast:Positions",
+                           start: { '@type': "uast:Position",
+                              offset: 117,
+                              line: 4,
+                              col: 27,
+                           },
+                           end: { '@type': "uast:Position",
+                              offset: 126,
+                              line: 4,
+                              col: 36,
+                           },
+                        },
+                        expression: { '@type': "SimpleName",
+                           '@token': "i",
+                           '@role': [Expression, Identifier],
+                           '@pos': { '@type': "uast:Positions",
+                              start: { '@type': "uast:Position",
+                                 offset: 124,
+                                 line: 4,
+                                 col: 34,
+                              },
+                              end: { '@type': "uast:Position",
+                                 offset: 125,
+                                 line: 4,
+                                 col: 35,
+                              },
+                           },
+                        },
+                     },
+                  ],
+               },
+               constructor: "false",
+               'extraDimensions2': ~,
+               javadoc: ~,
+               modifiers: ~,
+               name: { '@type': "SimpleName",
+                  '@token': "intToInt",
+                  '@role': [Expression, Function, Identifier, Name],
+                  '@pos': { '@type': "uast:Positions",
+                     start: { '@type': "uast:Position",
+                        offset: 99,
+                        line: 4,
+                        col: 9,
+                     },
+                     end: { '@type': "uast:Position",
+                        offset: 107,
+                        line: 4,
+                        col: 17,
+                     },
+                  },
+               },
+               parameters: [
+                  { '@type': "SingleVariableDeclaration",
+                     '@role': [Argument, Declaration, Function, Variable],
+                     '@pos': { '@type': "uast:Positions",
+                        start: { '@type': "uast:Position",
+                           offset: 108,
+                           line: 4,
+                           col: 18,
+                        },
+                        end: { '@type': "uast:Position",
+                           offset: 113,
+                           line: 4,
+                           col: 23,
+                        },
+                     },
+                     'extraDimensions2': ~,
+                     initializer: ~,
+                     modifiers: ~,
+                     name: { '@type': "SimpleName",
+                        '@token': "i",
+                        '@role': [Argument, Expression, Function, Identifier, Name],
+                        '@pos': { '@type': "uast:Positions",
+                           start: { '@type': "uast:Position",
+                              offset: 112,
+                              line: 4,
+                              col: 22,
+                           },
+                           end: { '@type': "uast:Position",
+                              offset: 113,
+                              line: 4,
+                              col: 23,
+                           },
+                        },
+                     },
+                     type: { '@type': "PrimitiveType",
+                        '@token': "int",
+                        '@role': [Primitive, Type],
+                        '@pos': { '@type': "uast:Positions",
+                           start: { '@type': "uast:Position",
+                              offset: 108,
+                              line: 4,
+                              col: 18,
+                           },
+                           end: { '@type': "uast:Position",
+                              offset: 111,
+                              line: 4,
+                              col: 21,
+                           },
+                        },
+                        annotations: ~,
+                     },
+                     varargs: "false",
+                     varargsAnnotations: ~,
+                  },
+               ],
+               receiverQualifier: ~,
+               receiverType: ~,
+               'returnType2': { '@type': "PrimitiveType",
+                  '@token': "int",
+                  '@role': [Primitive, Type],
+                  '@pos': { '@type': "uast:Positions",
+                     start: { '@type': "uast:Position",
+                        offset: 95,
+                        line: 4,
+                        col: 5,
+                     },
+                     end: { '@type': "uast:Position",
+                        offset: 98,
+                        line: 4,
+                        col: 8,
+                     },
+                  },
+                  annotations: ~,
+               },
+               thrownExceptionTypes: ~,
+               typeParameters: ~,
+            },
+            { '@type': "MethodDeclaration",
+               '@role': [Declaration, Function, Package, Visibility],
+               '@pos': { '@type': "uast:Positions",
+                  start: { '@type': "uast:Position",
+                     offset: 133,
+                     line: 5,
+                     col: 5,
+                  },
+                  end: { '@type': "uast:Position",
+                     offset: 176,
+                     line: 5,
+                     col: 48,
+                  },
+               },
+               body: { '@type': "Block",
+                  '@role': [Block, Body, Function, Scope, Statement],
+                  '@pos': { '@type': "uast:Positions",
+                     start: { '@type': "uast:Position",
+                        offset: 163,
+                        line: 5,
+                        col: 35,
+                     },
+                     end: { '@type': "uast:Position",
+                        offset: 176,
+                        line: 5,
+                        col: 48,
+                     },
+                  },
+                  statements: [
+                     { '@type': "ReturnStatement",
+                        '@role': [Return, Statement],
+                        '@pos': { '@type': "uast:Positions",
+                           start: { '@type': "uast:Position",
+                              offset: 165,
+                              line: 5,
+                              col: 37,
+                           },
+                           end: { '@type': "uast:Position",
+                              offset: 174,
+                              line: 5,
+                              col: 46,
+                           },
+                        },
+                        expression: { '@type': "SimpleName",
+                           '@token': "i",
+                           '@role': [Expression, Identifier],
+                           '@pos': { '@type': "uast:Positions",
+                              start: { '@type': "uast:Position",
+                                 offset: 172,
+                                 line: 5,
+                                 col: 44,
+                              },
+                              end: { '@type': "uast:Position",
+                                 offset: 173,
+                                 line: 5,
+                                 col: 45,
+                              },
+                           },
+                        },
+                     },
+                  ],
+               },
+               constructor: "false",
+               'extraDimensions2': ~,
+               javadoc: ~,
+               modifiers: ~,
+               name: { '@type': "SimpleName",
+                  '@token': "intIntToInt",
+                  '@role': [Expression, Function, Identifier, Name],
+                  '@pos': { '@type': "uast:Positions",
+                     start: { '@type': "uast:Position",
+                        offset: 137,
+                        line: 5,
+                        col: 9,
+                     },
+                     end: { '@type': "uast:Position",
+                        offset: 148,
+                        line: 5,
+                        col: 20,
+                     },
+                  },
+               },
+               parameters: [
+                  { '@type': "SingleVariableDeclaration",
+                     '@role': [Argument, Declaration, Function, Variable],
+                     '@pos': { '@type': "uast:Positions",
+                        start: { '@type': "uast:Position",
+                           offset: 149,
+                           line: 5,
+                           col: 21,
+                        },
+                        end: { '@type': "uast:Position",
+                           offset: 154,
+                           line: 5,
+                           col: 26,
+                        },
+                     },
+                     'extraDimensions2': ~,
+                     initializer: ~,
+                     modifiers: ~,
+                     name: { '@type': "SimpleName",
+                        '@token': "i",
+                        '@role': [Argument, Expression, Function, Identifier, Name],
+                        '@pos': { '@type': "uast:Positions",
+                           start: { '@type': "uast:Position",
+                              offset: 153,
+                              line: 5,
+                              col: 25,
+                           },
+                           end: { '@type': "uast:Position",
+                              offset: 154,
+                              line: 5,
+                              col: 26,
+                           },
+                        },
+                     },
+                     type: { '@type': "PrimitiveType",
+                        '@token': "int",
+                        '@role': [Primitive, Type],
+                        '@pos': { '@type': "uast:Positions",
+                           start: { '@type': "uast:Position",
+                              offset: 149,
+                              line: 5,
+                              col: 21,
+                           },
+                           end: { '@type': "uast:Position",
+                              offset: 152,
+                              line: 5,
+                              col: 24,
+                           },
+                        },
+                        annotations: ~,
+                     },
+                     varargs: "false",
+                     varargsAnnotations: ~,
+                  },
+                  { '@type': "SingleVariableDeclaration",
+                     '@role': [Argument, Declaration, Function, Variable],
+                     '@pos': { '@type': "uast:Positions",
+                        start: { '@type': "uast:Position",
+                           offset: 156,
+                           line: 5,
+                           col: 28,
+                        },
+                        end: { '@type': "uast:Position",
+                           offset: 161,
+                           line: 5,
+                           col: 33,
+                        },
+                     },
+                     'extraDimensions2': ~,
+                     initializer: ~,
+                     modifiers: ~,
+                     name: { '@type': "SimpleName",
+                        '@token': "j",
+                        '@role': [Argument, Expression, Function, Identifier, Name],
+                        '@pos': { '@type': "uast:Positions",
+                           start: { '@type': "uast:Position",
+                              offset: 160,
+                              line: 5,
+                              col: 32,
+                           },
+                           end: { '@type': "uast:Position",
+                              offset: 161,
+                              line: 5,
+                              col: 33,
+                           },
+                        },
+                     },
+                     type: { '@type': "PrimitiveType",
+                        '@token': "int",
+                        '@role': [Primitive, Type],
+                        '@pos': { '@type': "uast:Positions",
+                           start: { '@type': "uast:Position",
+                              offset: 156,
+                              line: 5,
+                              col: 28,
+                           },
+                           end: { '@type': "uast:Position",
+                              offset: 159,
+                              line: 5,
+                              col: 31,
+                           },
+                        },
+                        annotations: ~,
+                     },
+                     varargs: "false",
+                     varargsAnnotations: ~,
+                  },
+               ],
+               receiverQualifier: ~,
+               receiverType: ~,
+               'returnType2': { '@type': "PrimitiveType",
+                  '@token': "int",
+                  '@role': [Primitive, Type],
+                  '@pos': { '@type': "uast:Positions",
+                     start: { '@type': "uast:Position",
+                        offset: 133,
+                        line: 5,
+                        col: 5,
+                     },
+                     end: { '@type': "uast:Position",
+                        offset: 136,
+                        line: 5,
+                        col: 8,
+                     },
+                  },
+                  annotations: ~,
+               },
+               thrownExceptionTypes: ~,
+               typeParameters: ~,
+            },
+            { '@type': "MethodDeclaration",
+               '@role': [Declaration, Function, Package, Visibility],
+               '@pos': { '@type': "uast:Positions",
+                  start: { '@type': "uast:Position",
+                     offset: 181,
+                     line: 6,
+                     col: 5,
+                  },
+                  end: { '@type': "uast:Position",
+                     offset: 212,
+                     line: 6,
+                     col: 36,
+                  },
+               },
+               body: { '@type': "Block",
+                  '@role': [Block, Body, Function, Scope, Statement],
+                  '@pos': { '@type': "uast:Positions",
+                     start: { '@type': "uast:Position",
+                        offset: 209,
+                        line: 6,
+                        col: 33,
+                     },
+                     end: { '@type': "uast:Position",
+                        offset: 212,
+                        line: 6,
+                        col: 36,
+                     },
+                  },
+                  statements: ~,
+               },
+               constructor: "false",
+               'extraDimensions2': ~,
+               javadoc: ~,
+               modifiers: ~,
+               name: { '@type': "SimpleName",
+                  '@token': "varIntToVoid",
+                  '@role': [Expression, Function, Identifier, Name],
+                  '@pos': { '@type': "uast:Positions",
+                     start: { '@type': "uast:Position",
+                        offset: 186,
+                        line: 6,
+                        col: 10,
+                     },
+                     end: { '@type': "uast:Position",
+                        offset: 198,
+                        line: 6,
+                        col: 22,
+                     },
+                  },
+               },
+               parameters: [
+                  { '@type': "SingleVariableDeclaration",
+                     '@role': [ArgsList, Argument, Declaration, Function, Variable],
+                     '@pos': { '@type': "uast:Positions",
+                        start: { '@type': "uast:Position",
+                           offset: 199,
+                           line: 6,
+                           col: 23,
+                        },
+                        end: { '@type': "uast:Position",
+                           offset: 207,
+                           line: 6,
+                           col: 31,
+                        },
+                     },
+                     'extraDimensions2': ~,
+                     initializer: ~,
+                     modifiers: ~,
+                     name: { '@type': "SimpleName",
+                        '@token': "i",
+                        '@role': [Argument, Expression, Function, Identifier, Name],
+                        '@pos': { '@type': "uast:Positions",
+                           start: { '@type': "uast:Position",
+                              offset: 206,
+                              line: 6,
+                              col: 30,
+                           },
+                           end: { '@type': "uast:Position",
+                              offset: 207,
+                              line: 6,
+                              col: 31,
+                           },
+                        },
+                     },
+                     type: { '@type': "PrimitiveType",
+                        '@token': "int",
+                        '@role': [Primitive, Type],
+                        '@pos': { '@type': "uast:Positions",
+                           start: { '@type': "uast:Position",
+                              offset: 199,
+                              line: 6,
+                              col: 23,
+                           },
+                           end: { '@type': "uast:Position",
+                              offset: 202,
+                              line: 6,
+                              col: 26,
+                           },
+                        },
+                        annotations: ~,
+                     },
+                     varargs: "true",
+                     varargsAnnotations: ~,
+                  },
+               ],
+               receiverQualifier: ~,
+               receiverType: ~,
+               'returnType2': { '@type': "PrimitiveType",
+                  '@token': "void",
+                  '@role': [Primitive, Type],
+                  '@pos': { '@type': "uast:Positions",
+                     start: { '@type': "uast:Position",
+                        offset: 181,
+                        line: 6,
+                        col: 5,
+                     },
+                     end: { '@type': "uast:Position",
+                        offset: 185,
+                        line: 6,
+                        col: 9,
+                     },
+                  },
+                  annotations: ~,
+               },
+               thrownExceptionTypes: ~,
+               typeParameters: ~,
+            },
+            { '@type': "MethodDeclaration",
+               '@role': [Declaration, Function, Package, Visibility],
+               '@pos': { '@type': "uast:Positions",
+                  start: { '@type': "uast:Position",
+                     offset: 217,
+                     line: 7,
+                     col: 5,
+                  },
+                  end: { '@type': "uast:Position",
+                     offset: 260,
+                     line: 7,
+                     col: 48,
+                  },
+               },
+               body: { '@type': "Block",
+                  '@role': [Block, Body, Function, Scope, Statement],
+                  '@pos': { '@type': "uast:Positions",
+                     start: { '@type': "uast:Position",
+                        offset: 244,
+                        line: 7,
+                        col: 32,
+                     },
+                     end: { '@type': "uast:Position",
+                        offset: 260,
+                        line: 7,
+                        col: 48,
+                     },
+                  },
+                  statements: [
+                     { '@type': "ReturnStatement",
+                        '@role': [Return, Statement],
+                        '@pos': { '@type': "uast:Positions",
+                           start: { '@type': "uast:Position",
+                              offset: 246,
+                              line: 7,
+                              col: 34,
+                           },
+                           end: { '@type': "uast:Position",
+                              offset: 258,
+                              line: 7,
+                              col: 46,
+                           },
+                        },
+                        expression: { '@type': "NullLiteral",
+                           '@token': "null",
+                           '@role': [Expression, Literal, 'Null'],
+                           '@pos': { '@type': "uast:Positions",
+                              start: { '@type': "uast:Position",
+                                 offset: 253,
+                                 line: 7,
+                                 col: 41,
+                              },
+                              end: { '@type': "uast:Position",
+                                 offset: 257,
+                                 line: 7,
+                                 col: 45,
+                              },
+                           },
+                        },
+                     },
+                  ],
+               },
+               constructor: "false",
+               'extraDimensions2': ~,
+               javadoc: ~,
+               modifiers: ~,
+               name: { '@type': "SimpleName",
+                  '@token': "intToGenericT",
+                  '@role': [Expression, Function, Identifier, Name],
+                  '@pos': { '@type': "uast:Positions",
+                     start: { '@type': "uast:Position",
+                        offset: 223,
+                        line: 7,
+                        col: 11,
+                     },
+                     end: { '@type': "uast:Position",
+                        offset: 236,
+                        line: 7,
+                        col: 24,
+                     },
+                  },
+               },
+               parameters: [
+                  { '@type': "SingleVariableDeclaration",
+                     '@role': [Argument, Declaration, Function, Variable],
+                     '@pos': { '@type': "uast:Positions",
+                        start: { '@type': "uast:Position",
+                           offset: 237,
+                           line: 7,
+                           col: 25,
+                        },
+                        end: { '@type': "uast:Position",
+                           offset: 242,
+                           line: 7,
+                           col: 30,
+                        },
+                     },
+                     'extraDimensions2': ~,
+                     initializer: ~,
+                     modifiers: ~,
+                     name: { '@type': "SimpleName",
+                        '@token': "i",
+                        '@role': [Argument, Expression, Function, Identifier, Name],
+                        '@pos': { '@type': "uast:Positions",
+                           start: { '@type': "uast:Position",
+                              offset: 241,
+                              line: 7,
+                              col: 29,
+                           },
+                           end: { '@type': "uast:Position",
+                              offset: 242,
+                              line: 7,
+                              col: 30,
+                           },
+                        },
+                     },
+                     type: { '@type': "PrimitiveType",
+                        '@token': "int",
+                        '@role': [Primitive, Type],
+                        '@pos': { '@type': "uast:Positions",
+                           start: { '@type': "uast:Position",
+                              offset: 237,
+                              line: 7,
+                              col: 25,
+                           },
+                           end: { '@type': "uast:Position",
+                              offset: 240,
+                              line: 7,
+                              col: 28,
+                           },
+                        },
+                        annotations: ~,
+                     },
+                     varargs: "false",
+                     varargsAnnotations: ~,
+                  },
+               ],
+               receiverQualifier: ~,
+               receiverType: ~,
+               'returnType2': { '@type': "SimpleType",
+                  '@role': [Type],
+                  '@pos': { '@type': "uast:Positions",
+                     start: { '@type': "uast:Position",
+                        offset: 221,
+                        line: 7,
+                        col: 9,
+                     },
+                     end: { '@type': "uast:Position",
+                        offset: 222,
+                        line: 7,
+                        col: 10,
+                     },
+                  },
+                  annotations: ~,
+                  name: { '@type': "SimpleName",
+                     '@token': "T",
+                     '@role': [Expression, Identifier],
+                     '@pos': { '@type': "uast:Positions",
+                        start: { '@type': "uast:Position",
+                           offset: 221,
+                           line: 7,
+                           col: 9,
+                        },
+                        end: { '@type': "uast:Position",
+                           offset: 222,
+                           line: 7,
+                           col: 10,
+                        },
+                     },
+                  },
+               },
+               thrownExceptionTypes: ~,
+               typeParameters: [
+                  { '@type': "TypeParameter",
+                     '@role': [Incomplete, Type],
+                     '@pos': { '@type': "uast:Positions",
+                        start: { '@type': "uast:Position",
+                           offset: 218,
+                           line: 7,
+                           col: 6,
+                        },
+                        end: { '@type': "uast:Position",
+                           offset: 219,
+                           line: 7,
+                           col: 7,
+                        },
+                     },
+                     modifiers: ~,
+                     name: { '@type': "SimpleName",
+                        '@token': "T",
+                        '@role': [Expression, Identifier],
+                        '@pos': { '@type': "uast:Positions",
+                           start: { '@type': "uast:Position",
+                              offset: 218,
+                              line: 7,
+                              col: 6,
+                           },
+                           end: { '@type': "uast:Position",
+                              offset: 219,
+                              line: 7,
+                              col: 7,
+                           },
+                        },
+                     },
+                     typeBounds: ~,
+                  },
+               ],
+            },
+            { '@type': "MethodDeclaration",
+               '@role': [Declaration, Function, Package, Visibility],
+               '@pos': { '@type': "uast:Positions",
+                  start: { '@type': "uast:Position",
+                     offset: 265,
+                     line: 8,
+                     col: 5,
+                  },
+                  end: { '@type': "uast:Position",
+                     offset: 313,
+                     line: 8,
+                     col: 53,
+                  },
+               },
+               body: { '@type': "Block",
+                  '@role': [Block, Body, Function, Scope, Statement],
+                  '@pos': { '@type': "uast:Positions",
+                     start: { '@type': "uast:Position",
+                        offset: 297,
+                        line: 8,
+                        col: 37,
+                     },
+                     end: { '@type': "uast:Position",
+                        offset: 313,
+                        line: 8,
+                        col: 53,
+                     },
+                  },
+                  statements: [
+                     { '@type': "ReturnStatement",
+                        '@role': [Return, Statement],
+                        '@pos': { '@type': "uast:Positions",
+                           start: { '@type': "uast:Position",
+                              offset: 299,
+                              line: 8,
+                              col: 39,
+                           },
+                           end: { '@type': "uast:Position",
+                              offset: 311,
+                              line: 8,
+                              col: 51,
+                           },
+                        },
+                        expression: { '@type': "NullLiteral",
+                           '@token': "null",
+                           '@role': [Expression, Literal, 'Null'],
+                           '@pos': { '@type': "uast:Positions",
+                              start: { '@type': "uast:Position",
+                                 offset: 306,
+                                 line: 8,
+                                 col: 46,
+                              },
+                              end: { '@type': "uast:Position",
+                                 offset: 310,
+                                 line: 8,
+                                 col: 50,
+                              },
+                           },
+                        },
+                     },
+                  ],
+               },
+               constructor: "false",
+               'extraDimensions2': ~,
+               javadoc: ~,
+               modifiers: ~,
+               name: { '@type': "SimpleName",
+                  '@token': "genericSToGenericT",
+                  '@role': [Expression, Function, Identifier, Name],
+                  '@pos': { '@type': "uast:Positions",
+                     start: { '@type': "uast:Position",
+                        offset: 273,
+                        line: 8,
+                        col: 13,
+                     },
+                     end: { '@type': "uast:Position",
+                        offset: 291,
+                        line: 8,
+                        col: 31,
+                     },
+                  },
+               },
+               parameters: [
+                  { '@type': "SingleVariableDeclaration",
+                     '@role': [Argument, Declaration, Function, Variable],
+                     '@pos': { '@type': "uast:Positions",
+                        start: { '@type': "uast:Position",
+                           offset: 292,
+                           line: 8,
+                           col: 32,
+                        },
+                        end: { '@type': "uast:Position",
+                           offset: 295,
+                           line: 8,
+                           col: 35,
+                        },
+                     },
+                     'extraDimensions2': ~,
+                     initializer: ~,
+                     modifiers: ~,
+                     name: { '@type': "SimpleName",
+                        '@token': "i",
+                        '@role': [Argument, Expression, Function, Identifier, Name],
+                        '@pos': { '@type': "uast:Positions",
+                           start: { '@type': "uast:Position",
+                              offset: 294,
+                              line: 8,
+                              col: 34,
+                           },
+                           end: { '@type': "uast:Position",
+                              offset: 295,
+                              line: 8,
+                              col: 35,
+                           },
+                        },
+                     },
+                     type: { '@type': "SimpleType",
+                        '@role': [Type],
+                        '@pos': { '@type': "uast:Positions",
+                           start: { '@type': "uast:Position",
+                              offset: 292,
+                              line: 8,
+                              col: 32,
+                           },
+                           end: { '@type': "uast:Position",
+                              offset: 293,
+                              line: 8,
+                              col: 33,
+                           },
+                        },
+                        annotations: ~,
+                        name: { '@type': "SimpleName",
+                           '@token': "S",
+                           '@role': [Expression, Identifier],
+                           '@pos': { '@type': "uast:Positions",
+                              start: { '@type': "uast:Position",
+                                 offset: 292,
+                                 line: 8,
+                                 col: 32,
+                              },
+                              end: { '@type': "uast:Position",
+                                 offset: 293,
+                                 line: 8,
+                                 col: 33,
+                              },
+                           },
+                        },
+                     },
+                     varargs: "false",
+                     varargsAnnotations: ~,
+                  },
+               ],
+               receiverQualifier: ~,
+               receiverType: ~,
+               'returnType2': { '@type': "SimpleType",
+                  '@role': [Type],
+                  '@pos': { '@type': "uast:Positions",
+                     start: { '@type': "uast:Position",
+                        offset: 271,
+                        line: 8,
+                        col: 11,
+                     },
+                     end: { '@type': "uast:Position",
+                        offset: 272,
+                        line: 8,
+                        col: 12,
+                     },
+                  },
+                  annotations: ~,
+                  name: { '@type': "SimpleName",
+                     '@token': "T",
+                     '@role': [Expression, Identifier],
+                     '@pos': { '@type': "uast:Positions",
+                        start: { '@type': "uast:Position",
+                           offset: 271,
+                           line: 8,
+                           col: 11,
+                        },
+                        end: { '@type': "uast:Position",
+                           offset: 272,
+                           line: 8,
+                           col: 12,
+                        },
+                     },
+                  },
+               },
+               thrownExceptionTypes: ~,
+               typeParameters: [
+                  { '@type': "TypeParameter",
+                     '@role': [Incomplete, Type],
+                     '@pos': { '@type': "uast:Positions",
+                        start: { '@type': "uast:Position",
+                           offset: 266,
+                           line: 8,
+                           col: 6,
+                        },
+                        end: { '@type': "uast:Position",
+                           offset: 267,
+                           line: 8,
+                           col: 7,
+                        },
+                     },
+                     modifiers: ~,
+                     name: { '@type': "SimpleName",
+                        '@token': "T",
+                        '@role': [Expression, Identifier],
+                        '@pos': { '@type': "uast:Positions",
+                           start: { '@type': "uast:Position",
+                              offset: 266,
+                              line: 8,
+                              col: 6,
+                           },
+                           end: { '@type': "uast:Position",
+                              offset: 267,
+                              line: 8,
+                              col: 7,
+                           },
+                        },
+                     },
+                     typeBounds: ~,
+                  },
+                  { '@type': "TypeParameter",
+                     '@role': [Incomplete, Type],
+                     '@pos': { '@type': "uast:Positions",
+                        start: { '@type': "uast:Position",
+                           offset: 268,
+                           line: 8,
+                           col: 8,
+                        },
+                        end: { '@type': "uast:Position",
+                           offset: 269,
+                           line: 8,
+                           col: 9,
+                        },
+                     },
+                     modifiers: ~,
+                     name: { '@type': "SimpleName",
+                        '@token': "S",
+                        '@role': [Expression, Identifier],
+                        '@pos': { '@type': "uast:Positions",
+                           start: { '@type': "uast:Position",
+                              offset: 268,
+                              line: 8,
+                              col: 8,
+                           },
+                           end: { '@type': "uast:Position",
+                              offset: 269,
+                              line: 8,
+                              col: 9,
+                           },
+                        },
+                     },
+                     typeBounds: ~,
+                  },
+               ],
+            },
+         ],
+         interface: "false",
+         javadoc: ~,
+         modifiers: ~,
+         name: { '@type': "SimpleName",
+            '@token': "Code",
+            '@role': [Expression, Identifier],
+            '@pos': { '@type': "uast:Positions",
+               start: { '@type': "uast:Position",
+                  offset: 6,
+                  line: 1,
+                  col: 7,
+               },
+               end: { '@type': "uast:Position",
+                  offset: 10,
+                  line: 1,
+                  col: 11,
+               },
+            },
+         },
+         superInterfaceTypes: ~,
+         superclassType: ~,
+         typeParameters: ~,
+      },
+   ],
 }
-

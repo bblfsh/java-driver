@@ -1,56 +1,51 @@
 {
-    "status": "ok",
-    "language": "java",
-    "errors": [],
-    "ast": {
-        "CompilationUnit": {
-            "@end": {
-                "@type": "ast:Position",
-                "col": 0,
-                "off": 11
+   CompilationUnit: { '@type': "CompilationUnit",
+      '@role': [Unannotated],
+      '@pos': { '@type': "uast:Positions",
+         start: { '@type': "uast:Position",
+            offset: 0,
+            line: 1,
+            col: 1,
+         },
+         end: { '@type': "uast:Position",
+            offset: 11,
+            col: 0,
+         },
+      },
+      imports: ~,
+      package: { '@type': "PackageDeclaration",
+         '@role': [Unannotated],
+         '@pos': { '@type': "uast:Positions",
+            start: { '@type': "uast:Position",
+               offset: 0,
+               line: 1,
+               col: 1,
             },
-            "@start": {
-                "@type": "ast:Position",
-                "col": 1,
-                "line": 1,
-                "off": 0
+            end: { '@type': "uast:Position",
+               offset: 10,
+               line: 1,
+               col: 11,
             },
-            "@type": "CompilationUnit",
-            "imports": null,
-            "package": {
-                "@end": {
-                    "@type": "ast:Position",
-                    "col": 11,
-                    "line": 1,
-                    "off": 10
-                },
-                "@start": {
-                    "@type": "ast:Position",
-                    "col": 1,
-                    "line": 1,
-                    "off": 0
-                },
-                "@type": "PackageDeclaration",
-                "annotations": null,
-                "javadoc": null,
-                "name": {
-                    "@end": {
-                        "@type": "ast:Position",
-                        "col": 10,
-                        "line": 1,
-                        "off": 9
-                    },
-                    "@start": {
-                        "@type": "ast:Position",
-                        "col": 9,
-                        "line": 1,
-                        "off": 8
-                    },
-                    "@type": "SimpleName",
-                    "identifier": "a"
-                }
+         },
+         annotations: ~,
+         javadoc: ~,
+         name: { '@type': "SimpleName",
+            '@role': [Unannotated],
+            '@pos': { '@type': "uast:Positions",
+               start: { '@type': "uast:Position",
+                  offset: 8,
+                  line: 1,
+                  col: 9,
+               },
+               end: { '@type': "uast:Position",
+                  offset: 9,
+                  line: 1,
+                  col: 10,
+               },
             },
-            "types": null
-        }
-    }
+            identifier: "a",
+         },
+      },
+      types: ~,
+   },
 }

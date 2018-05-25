@@ -1,267 +1,262 @@
 {
-    "status": "ok",
-    "language": "java",
-    "errors": [],
-    "ast": {
-        "CompilationUnit": {
-            "@end": {
-                "@type": "ast:Position",
-                "col": 0,
-                "off": 60
+   CompilationUnit: { '@type': "CompilationUnit",
+      '@role': [Unannotated],
+      '@pos': { '@type': "uast:Positions",
+         start: { '@type': "uast:Position",
+            offset: 0,
+            line: 1,
+            col: 1,
+         },
+         end: { '@type': "uast:Position",
+            offset: 60,
+            col: 0,
+         },
+      },
+      imports: ~,
+      package: ~,
+      types: [
+         { '@type': "TypeDeclaration",
+            '@role': [Unannotated],
+            '@pos': { '@type': "uast:Positions",
+               start: { '@type': "uast:Position",
+                  offset: 0,
+                  line: 1,
+                  col: 1,
+               },
+               end: { '@type': "uast:Position",
+                  offset: 59,
+                  line: 6,
+                  col: 2,
+               },
             },
-            "@start": {
-                "@type": "ast:Position",
-                "col": 1,
-                "line": 1,
-                "off": 0
+            bodyDeclarations: [
+               { '@type': "MethodDeclaration",
+                  '@role': [Unannotated],
+                  '@pos': { '@type': "uast:Positions",
+                     start: { '@type': "uast:Position",
+                        offset: 15,
+                        line: 2,
+                        col: 3,
+                     },
+                     end: { '@type': "uast:Position",
+                        offset: 40,
+                        line: 4,
+                        col: 4,
+                     },
+                  },
+                  body: { '@type': "Block",
+                     '@role': [Unannotated],
+                     '@pos': { '@type': "uast:Positions",
+                        start: { '@type': "uast:Position",
+                           offset: 22,
+                           line: 2,
+                           col: 10,
+                        },
+                        end: { '@type': "uast:Position",
+                           offset: 40,
+                           line: 4,
+                           col: 4,
+                        },
+                     },
+                     statements: [
+                        { '@type': "ConstructorInvocation",
+                           '@role': [Unannotated],
+                           '@pos': { '@type': "uast:Positions",
+                              start: { '@type': "uast:Position",
+                                 offset: 28,
+                                 line: 3,
+                                 col: 5,
+                              },
+                              end: { '@type': "uast:Position",
+                                 offset: 36,
+                                 line: 3,
+                                 col: 13,
+                              },
+                           },
+                           arguments: [
+                              { '@type': "NumberLiteral",
+                                 '@role': [Unannotated],
+                                 '@pos': { '@type': "uast:Positions",
+                                    start: { '@type': "uast:Position",
+                                       offset: 33,
+                                       line: 3,
+                                       col: 10,
+                                    },
+                                    end: { '@type': "uast:Position",
+                                       offset: 34,
+                                       line: 3,
+                                       col: 11,
+                                    },
+                                 },
+                                 token: "0",
+                              },
+                           ],
+                           typeArguments: ~,
+                        },
+                     ],
+                  },
+                  constructor: "true",
+                  'extraDimensions2': ~,
+                  javadoc: ~,
+                  modifiers: ~,
+                  name: { '@type': "SimpleName",
+                     '@role': [Unannotated],
+                     '@pos': { '@type': "uast:Positions",
+                        start: { '@type': "uast:Position",
+                           offset: 15,
+                           line: 2,
+                           col: 3,
+                        },
+                        end: { '@type': "uast:Position",
+                           offset: 19,
+                           line: 2,
+                           col: 7,
+                        },
+                     },
+                     identifier: "Code",
+                  },
+                  parameters: ~,
+                  receiverQualifier: ~,
+                  receiverType: ~,
+                  'returnType2': ~,
+                  thrownExceptionTypes: ~,
+                  typeParameters: ~,
+               },
+               { '@type': "MethodDeclaration",
+                  '@role': [Unannotated],
+                  '@pos': { '@type': "uast:Positions",
+                     start: { '@type': "uast:Position",
+                        offset: 43,
+                        line: 5,
+                        col: 3,
+                     },
+                     end: { '@type': "uast:Position",
+                        offset: 57,
+                        line: 5,
+                        col: 17,
+                     },
+                  },
+                  body: { '@type': "Block",
+                     '@role': [Unannotated],
+                     '@pos': { '@type': "uast:Positions",
+                        start: { '@type': "uast:Position",
+                           offset: 55,
+                           line: 5,
+                           col: 15,
+                        },
+                        end: { '@type': "uast:Position",
+                           offset: 57,
+                           line: 5,
+                           col: 17,
+                        },
+                     },
+                     statements: ~,
+                  },
+                  constructor: "true",
+                  'extraDimensions2': ~,
+                  javadoc: ~,
+                  modifiers: ~,
+                  name: { '@type': "SimpleName",
+                     '@role': [Unannotated],
+                     '@pos': { '@type': "uast:Positions",
+                        start: { '@type': "uast:Position",
+                           offset: 43,
+                           line: 5,
+                           col: 3,
+                        },
+                        end: { '@type': "uast:Position",
+                           offset: 47,
+                           line: 5,
+                           col: 7,
+                        },
+                     },
+                     identifier: "Code",
+                  },
+                  parameters: [
+                     { '@type': "SingleVariableDeclaration",
+                        '@role': [Unannotated],
+                        '@pos': { '@type': "uast:Positions",
+                           start: { '@type': "uast:Position",
+                              offset: 48,
+                              line: 5,
+                              col: 8,
+                           },
+                           end: { '@type': "uast:Position",
+                              offset: 53,
+                              line: 5,
+                              col: 13,
+                           },
+                        },
+                        'extraDimensions2': ~,
+                        initializer: ~,
+                        modifiers: ~,
+                        name: { '@type': "SimpleName",
+                           '@role': [Unannotated],
+                           '@pos': { '@type': "uast:Positions",
+                              start: { '@type': "uast:Position",
+                                 offset: 52,
+                                 line: 5,
+                                 col: 12,
+                              },
+                              end: { '@type': "uast:Position",
+                                 offset: 53,
+                                 line: 5,
+                                 col: 13,
+                              },
+                           },
+                           identifier: "i",
+                        },
+                        type: { '@type': "PrimitiveType",
+                           '@role': [Unannotated],
+                           '@pos': { '@type': "uast:Positions",
+                              start: { '@type': "uast:Position",
+                                 offset: 48,
+                                 line: 5,
+                                 col: 8,
+                              },
+                              end: { '@type': "uast:Position",
+                                 offset: 51,
+                                 line: 5,
+                                 col: 11,
+                              },
+                           },
+                           annotations: ~,
+                           primitiveTypeCode: "int",
+                        },
+                        varargs: "false",
+                        varargsAnnotations: ~,
+                     },
+                  ],
+                  receiverQualifier: ~,
+                  receiverType: ~,
+                  'returnType2': ~,
+                  thrownExceptionTypes: ~,
+                  typeParameters: ~,
+               },
+            ],
+            interface: "false",
+            javadoc: ~,
+            modifiers: ~,
+            name: { '@type': "SimpleName",
+               '@role': [Unannotated],
+               '@pos': { '@type': "uast:Positions",
+                  start: { '@type': "uast:Position",
+                     offset: 6,
+                     line: 1,
+                     col: 7,
+                  },
+                  end: { '@type': "uast:Position",
+                     offset: 10,
+                     line: 1,
+                     col: 11,
+                  },
+               },
+               identifier: "Code",
             },
-            "@type": "CompilationUnit",
-            "imports": null,
-            "package": null,
-            "types": [
-                {
-                    "@end": {
-                        "@type": "ast:Position",
-                        "col": 2,
-                        "line": 6,
-                        "off": 59
-                    },
-                    "@start": {
-                        "@type": "ast:Position",
-                        "col": 1,
-                        "line": 1,
-                        "off": 0
-                    },
-                    "@type": "TypeDeclaration",
-                    "bodyDeclarations": [
-                        {
-                            "@end": {
-                                "@type": "ast:Position",
-                                "col": 4,
-                                "line": 4,
-                                "off": 40
-                            },
-                            "@start": {
-                                "@type": "ast:Position",
-                                "col": 3,
-                                "line": 2,
-                                "off": 15
-                            },
-                            "@type": "MethodDeclaration",
-                            "body": {
-                                "@end": {
-                                    "@type": "ast:Position",
-                                    "col": 4,
-                                    "line": 4,
-                                    "off": 40
-                                },
-                                "@start": {
-                                    "@type": "ast:Position",
-                                    "col": 10,
-                                    "line": 2,
-                                    "off": 22
-                                },
-                                "@type": "Block",
-                                "statements": [
-                                    {
-                                        "@end": {
-                                            "@type": "ast:Position",
-                                            "col": 13,
-                                            "line": 3,
-                                            "off": 36
-                                        },
-                                        "@start": {
-                                            "@type": "ast:Position",
-                                            "col": 5,
-                                            "line": 3,
-                                            "off": 28
-                                        },
-                                        "@type": "ConstructorInvocation",
-                                        "arguments": [
-                                            {
-                                                "@end": {
-                                                    "@type": "ast:Position",
-                                                    "col": 11,
-                                                    "line": 3,
-                                                    "off": 34
-                                                },
-                                                "@start": {
-                                                    "@type": "ast:Position",
-                                                    "col": 10,
-                                                    "line": 3,
-                                                    "off": 33
-                                                },
-                                                "@type": "NumberLiteral",
-                                                "token": "0"
-                                            }
-                                        ],
-                                        "typeArguments": null
-                                    }
-                                ]
-                            },
-                            "constructor": "true",
-                            "extraDimensions2": null,
-                            "javadoc": null,
-                            "modifiers": null,
-                            "name": {
-                                "@end": {
-                                    "@type": "ast:Position",
-                                    "col": 7,
-                                    "line": 2,
-                                    "off": 19
-                                },
-                                "@start": {
-                                    "@type": "ast:Position",
-                                    "col": 3,
-                                    "line": 2,
-                                    "off": 15
-                                },
-                                "@type": "SimpleName",
-                                "identifier": "Code"
-                            },
-                            "parameters": null,
-                            "receiverQualifier": null,
-                            "receiverType": null,
-                            "returnType2": null,
-                            "thrownExceptionTypes": null,
-                            "typeParameters": null
-                        },
-                        {
-                            "@end": {
-                                "@type": "ast:Position",
-                                "col": 17,
-                                "line": 5,
-                                "off": 57
-                            },
-                            "@start": {
-                                "@type": "ast:Position",
-                                "col": 3,
-                                "line": 5,
-                                "off": 43
-                            },
-                            "@type": "MethodDeclaration",
-                            "body": {
-                                "@end": {
-                                    "@type": "ast:Position",
-                                    "col": 17,
-                                    "line": 5,
-                                    "off": 57
-                                },
-                                "@start": {
-                                    "@type": "ast:Position",
-                                    "col": 15,
-                                    "line": 5,
-                                    "off": 55
-                                },
-                                "@type": "Block",
-                                "statements": null
-                            },
-                            "constructor": "true",
-                            "extraDimensions2": null,
-                            "javadoc": null,
-                            "modifiers": null,
-                            "name": {
-                                "@end": {
-                                    "@type": "ast:Position",
-                                    "col": 7,
-                                    "line": 5,
-                                    "off": 47
-                                },
-                                "@start": {
-                                    "@type": "ast:Position",
-                                    "col": 3,
-                                    "line": 5,
-                                    "off": 43
-                                },
-                                "@type": "SimpleName",
-                                "identifier": "Code"
-                            },
-                            "parameters": [
-                                {
-                                    "@end": {
-                                        "@type": "ast:Position",
-                                        "col": 13,
-                                        "line": 5,
-                                        "off": 53
-                                    },
-                                    "@start": {
-                                        "@type": "ast:Position",
-                                        "col": 8,
-                                        "line": 5,
-                                        "off": 48
-                                    },
-                                    "@type": "SingleVariableDeclaration",
-                                    "extraDimensions2": null,
-                                    "initializer": null,
-                                    "modifiers": null,
-                                    "name": {
-                                        "@end": {
-                                            "@type": "ast:Position",
-                                            "col": 13,
-                                            "line": 5,
-                                            "off": 53
-                                        },
-                                        "@start": {
-                                            "@type": "ast:Position",
-                                            "col": 12,
-                                            "line": 5,
-                                            "off": 52
-                                        },
-                                        "@type": "SimpleName",
-                                        "identifier": "i"
-                                    },
-                                    "type": {
-                                        "@end": {
-                                            "@type": "ast:Position",
-                                            "col": 11,
-                                            "line": 5,
-                                            "off": 51
-                                        },
-                                        "@start": {
-                                            "@type": "ast:Position",
-                                            "col": 8,
-                                            "line": 5,
-                                            "off": 48
-                                        },
-                                        "@type": "PrimitiveType",
-                                        "annotations": null,
-                                        "primitiveTypeCode": "int"
-                                    },
-                                    "varargs": "false",
-                                    "varargsAnnotations": null
-                                }
-                            ],
-                            "receiverQualifier": null,
-                            "receiverType": null,
-                            "returnType2": null,
-                            "thrownExceptionTypes": null,
-                            "typeParameters": null
-                        }
-                    ],
-                    "interface": "false",
-                    "javadoc": null,
-                    "modifiers": null,
-                    "name": {
-                        "@end": {
-                            "@type": "ast:Position",
-                            "col": 11,
-                            "line": 1,
-                            "off": 10
-                        },
-                        "@start": {
-                            "@type": "ast:Position",
-                            "col": 7,
-                            "line": 1,
-                            "off": 6
-                        },
-                        "@type": "SimpleName",
-                        "identifier": "Code"
-                    },
-                    "superInterfaceTypes": null,
-                    "superclassType": null,
-                    "typeParameters": null
-                }
-            ]
-        }
-    }
+            superInterfaceTypes: ~,
+            superclassType: ~,
+            typeParameters: ~,
+         },
+      ],
+   },
 }

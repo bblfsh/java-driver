@@ -2,6 +2,7 @@ package normalizer
 
 import (
 	"gopkg.in/bblfsh/sdk.v2/uast"
+	"gopkg.in/bblfsh/sdk.v2/uast/nodes"
 	"gopkg.in/bblfsh/sdk.v2/uast/role"
 	. "gopkg.in/bblfsh/sdk.v2/uast/transformer"
 )
@@ -115,9 +116,9 @@ func annotateModifiers(typ string, mod string, roles ...role.Role) Mapping {
 	if mod == "" {
 		c = All(Not(Has{
 			uast.KeyToken: In(
-				uast.String("public"),
-				uast.String("private"),
-				uast.String("protected"),
+				nodes.String("public"),
+				nodes.String("private"),
+				nodes.String("protected"),
 			),
 		}))
 	}
@@ -540,15 +541,15 @@ type opSwitchStmtGroup struct {
 	vr string
 }
 
-func (op opSwitchStmtGroup) Check(st *State, n uast.Node) (bool, error) {
-	cases, ok := n.(uast.Array)
+func (op opSwitchStmtGroup) Check(st *State, n nodes.Node) (bool, error) {
+	cases, ok := n.(nodes.Array)
 	if !ok {
 		return false, nil
 	}
-	var out uast.Array
+	var out nodes.Array
 	for _, c := range cases {
-		co, ok := c.(uast.Object)
-		if !ok || co.Type() != "SwitchCase" {
+		co, ok := c.(nodes.Object)
+		if !ok || uast.TypeOf(co) != "SwitchCase" {
 			return false, nil
 		}
 		so, ok := co["body"]
@@ -561,7 +562,7 @@ func (op opSwitchStmtGroup) Check(st *State, n uast.Node) (bool, error) {
 		if so == nil {
 			continue
 		}
-		stmts, ok := so.(uast.Array)
+		stmts, ok := so.(nodes.Array)
 		if !ok {
 			return false, nil
 		}
@@ -580,26 +581,26 @@ func (op opSwitchStmtGroup) Check(st *State, n uast.Node) (bool, error) {
 	return true, nil
 }
 
-func (op opSwitchStmtGroup) Construct(st *State, _ uast.Node) (uast.Node, error) {
+func (op opSwitchStmtGroup) Construct(st *State, _ nodes.Node) (nodes.Node, error) {
 	o, err := st.MustGetVar(op.vr)
 	if err != nil {
 		return nil, err
 	}
-	stmts, ok := o.(uast.Array)
+	stmts, ok := o.(nodes.Array)
 	if !ok {
 		return nil, ErrExpectedList.New(o)
 	}
-	var out uast.Array
+	var out nodes.Array
 	var (
-		ccase uast.Object
-		cur   uast.Array
+		ccase nodes.Object
+		cur   nodes.Array
 	)
 	for _, s := range stmts {
-		so, ok := s.(uast.Object)
+		so, ok := s.(nodes.Object)
 		if !ok {
 			return nil, ErrExpectedObject.New(s)
 		}
-		if so.Type() == "SwitchCase" {
+		if uast.TypeOf(so) == "SwitchCase" {
 			if ccase != nil {
 				ccase["body"] = cur
 				out = append(out, ccase)
