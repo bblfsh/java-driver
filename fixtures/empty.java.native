@@ -1,23 +1,18 @@
 {
-    "status": "ok",
-    "language": "java",
-    "errors": [],
-    "ast": {
-        "CompilationUnit": {
-            "@end": {
-                "@type": "ast:Position",
-                "col": 0,
-                "off": 0
-            },
-            "@start": {
-                "@type": "ast:Position",
-                "col": 0,
-                "off": 0
-            },
-            "@type": "CompilationUnit",
-            "imports": null,
-            "package": null,
-            "types": null
-        }
-    }
+   CompilationUnit: { '@type': "CompilationUnit",
+      '@role': [Unannotated],
+      '@pos': { '@type': "uast:Positions",
+         start: { '@type': "uast:Position",
+            offset: 0,
+            col: 0,
+         },
+         end: { '@type': "uast:Position",
+            offset: 0,
+            col: 0,
+         },
+      },
+      imports: ~,
+      package: ~,
+      types: ~,
+   },
 }

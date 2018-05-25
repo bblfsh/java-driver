@@ -1,128 +1,122 @@
-Status:  ok
-Language:  java
-Errors: 
-UAST: 
-CompilationUnit {
-.  Roles: File
-.  StartPosition: {
-.  .  Offset: 0
-.  .  Line: 1
-.  .  Col: 1
-.  }
-.  EndPosition: {
-.  .  Offset: 147
-.  .  Line: 0
-.  .  Col: 0
-.  }
-.  Children: {
-.  .  0: BlockComment {
-.  .  .  Roles: Comment
-.  .  .  TOKEN " block comment before "
-.  .  .  StartPosition: {
-.  .  .  .  Offset: 0
-.  .  .  .  Line: 1
-.  .  .  .  Col: 1
-.  .  .  }
-.  .  .  EndPosition: {
-.  .  .  .  Offset: 26
-.  .  .  .  Line: 1
-.  .  .  .  Col: 27
-.  .  .  }
-.  .  .  Properties: {
-.  .  .  .  internalRole: comments
-.  .  .  }
-.  .  }
-.  .  1: TypeDeclaration {
-.  .  .  Roles: Declaration,Package,Type,Visibility
-.  .  .  StartPosition: {
-.  .  .  .  Offset: 27
-.  .  .  .  Line: 2
-.  .  .  .  Col: 1
-.  .  .  }
-.  .  .  EndPosition: {
-.  .  .  .  Offset: 65
-.  .  .  .  Line: 2
-.  .  .  .  Col: 39
-.  .  .  }
-.  .  .  Properties: {
-.  .  .  .  interface: false
-.  .  .  .  internalRole: types
-.  .  .  }
-.  .  .  Children: {
-.  .  .  .  0: SimpleName {
-.  .  .  .  .  Roles: Expression,Identifier
-.  .  .  .  .  TOKEN "A"
-.  .  .  .  .  StartPosition: {
-.  .  .  .  .  .  Offset: 33
-.  .  .  .  .  .  Line: 2
-.  .  .  .  .  .  Col: 7
-.  .  .  .  .  }
-.  .  .  .  .  EndPosition: {
-.  .  .  .  .  .  Offset: 34
-.  .  .  .  .  .  Line: 2
-.  .  .  .  .  .  Col: 8
-.  .  .  .  .  }
-.  .  .  .  .  Properties: {
-.  .  .  .  .  .  internalRole: name
-.  .  .  .  .  }
-.  .  .  .  }
-.  .  .  }
-.  .  }
-.  .  2: BlockComment {
-.  .  .  Roles: Comment
-.  .  .  TOKEN " block comment inline "
-.  .  .  StartPosition: {
-.  .  .  .  Offset: 37
-.  .  .  .  Line: 2
-.  .  .  .  Col: 11
-.  .  .  }
-.  .  .  EndPosition: {
-.  .  .  .  Offset: 63
-.  .  .  .  Line: 2
-.  .  .  .  Col: 37
-.  .  .  }
-.  .  .  Properties: {
-.  .  .  .  internalRole: comments
-.  .  .  }
-.  .  }
-.  .  3: BlockComment {
-.  .  .  Roles: Comment
-.  .  .  TOKEN " block comment after "
-.  .  .  StartPosition: {
-.  .  .  .  Offset: 66
-.  .  .  .  Line: 3
-.  .  .  .  Col: 1
-.  .  .  }
-.  .  .  EndPosition: {
-.  .  .  .  Offset: 91
-.  .  .  .  Line: 3
-.  .  .  .  Col: 26
-.  .  .  }
-.  .  .  Properties: {
-.  .  .  .  internalRole: comments
-.  .  .  }
-.  .  }
-.  .  4: BlockComment {
-.  .  .  Roles: Comment
-.  .  .  TOKEN "
-* This is a multiline
-* block comment
-* end
-"
-.  .  .  StartPosition: {
-.  .  .  .  Offset: 93
-.  .  .  .  Line: 5
-.  .  .  .  Col: 1
-.  .  .  }
-.  .  .  EndPosition: {
-.  .  .  .  Offset: 146
-.  .  .  .  Line: 9
-.  .  .  .  Col: 4
-.  .  .  }
-.  .  .  Properties: {
-.  .  .  .  internalRole: comments
-.  .  .  }
-.  .  }
-.  }
+{ '@type': "CompilationUnit",
+   '@role': [File],
+   '@pos': { '@type': "uast:Positions",
+      start: { '@type': "uast:Position",
+         offset: 0,
+         line: 1,
+         col: 1,
+      },
+      end: { '@type': "uast:Position",
+         offset: 147,
+         col: 0,
+      },
+   },
+   comments: [
+      { '@type': "BlockComment",
+         '@token': " block comment before ",
+         '@role': [Comment],
+         '@pos': { '@type': "uast:Positions",
+            start: { '@type': "uast:Position",
+               offset: 0,
+               line: 1,
+               col: 1,
+            },
+            end: { '@type': "uast:Position",
+               offset: 26,
+               line: 1,
+               col: 27,
+            },
+         },
+      },
+      { '@type': "BlockComment",
+         '@token': " block comment inline ",
+         '@role': [Comment],
+         '@pos': { '@type': "uast:Positions",
+            start: { '@type': "uast:Position",
+               offset: 37,
+               line: 2,
+               col: 11,
+            },
+            end: { '@type': "uast:Position",
+               offset: 63,
+               line: 2,
+               col: 37,
+            },
+         },
+      },
+      { '@type': "BlockComment",
+         '@token': " block comment after ",
+         '@role': [Comment],
+         '@pos': { '@type': "uast:Positions",
+            start: { '@type': "uast:Position",
+               offset: 66,
+               line: 3,
+               col: 1,
+            },
+            end: { '@type': "uast:Position",
+               offset: 91,
+               line: 3,
+               col: 26,
+            },
+         },
+      },
+      { '@type': "BlockComment",
+         '@token': "\n* This is a multiline\n* block comment\n* end\n",
+         '@role': [Comment],
+         '@pos': { '@type': "uast:Positions",
+            start: { '@type': "uast:Position",
+               offset: 93,
+               line: 5,
+               col: 1,
+            },
+            end: { '@type': "uast:Position",
+               offset: 146,
+               line: 9,
+               col: 4,
+            },
+         },
+      },
+   ],
+   imports: ~,
+   package: ~,
+   types: [
+      { '@type': "TypeDeclaration",
+         '@role': [Declaration, Package, Type, Visibility],
+         '@pos': { '@type': "uast:Positions",
+            start: { '@type': "uast:Position",
+               offset: 27,
+               line: 2,
+               col: 1,
+            },
+            end: { '@type': "uast:Position",
+               offset: 65,
+               line: 2,
+               col: 39,
+            },
+         },
+         bodyDeclarations: ~,
+         interface: "false",
+         javadoc: ~,
+         modifiers: ~,
+         name: { '@type': "SimpleName",
+            '@token': "A",
+            '@role': [Expression, Identifier],
+            '@pos': { '@type': "uast:Positions",
+               start: { '@type': "uast:Position",
+                  offset: 33,
+                  line: 2,
+                  col: 7,
+               },
+               end: { '@type': "uast:Position",
+                  offset: 34,
+                  line: 2,
+                  col: 8,
+               },
+            },
+         },
+         superInterfaceTypes: ~,
+         superclassType: ~,
+         typeParameters: ~,
+      },
+   ],
 }
-

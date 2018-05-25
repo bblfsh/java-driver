@@ -1,113 +1,108 @@
 {
-    "status": "ok",
-    "language": "java",
-    "errors": [],
-    "ast": {
-        "CompilationUnit": {
-            "@end": {
-                "@type": "ast:Position",
-                "col": 0,
-                "off": 71
+   CompilationUnit: { '@type': "CompilationUnit",
+      '@role': [Unannotated],
+      '@pos': { '@type': "uast:Positions",
+         start: { '@type': "uast:Position",
+            offset: 0,
+            line: 1,
+            col: 1,
+         },
+         end: { '@type': "uast:Position",
+            offset: 71,
+            col: 0,
+         },
+      },
+      comments: [
+         { '@type': "LineComment",
+            '@role': [Unannotated],
+            '@pos': { '@type': "uast:Positions",
+               start: { '@type': "uast:Position",
+                  offset: 0,
+                  line: 1,
+                  col: 1,
+               },
+               end: { '@type': "uast:Position",
+                  offset: 23,
+                  line: 1,
+                  col: 24,
+               },
             },
-            "@start": {
-                "@type": "ast:Position",
-                "col": 1,
-                "line": 1,
-                "off": 0
+            text: "// first comment before",
+         },
+         { '@type': "LineComment",
+            '@role': [Unannotated],
+            '@pos': { '@type': "uast:Positions",
+               start: { '@type': "uast:Position",
+                  offset: 34,
+                  line: 2,
+                  col: 11,
+               },
+               end: { '@type': "uast:Position",
+                  offset: 51,
+                  line: 2,
+                  col: 28,
+               },
             },
-            "@type": "CompilationUnit",
-            "comments": [
-                {
-                    "@end": {
-                        "@type": "ast:Position",
-                        "col": 24,
-                        "line": 1,
-                        "off": 23
-                    },
-                    "@start": {
-                        "@type": "ast:Position",
-                        "col": 1,
-                        "line": 1,
-                        "off": 0
-                    },
-                    "@type": "LineComment",
-                    "text": "// first comment before"
-                },
-                {
-                    "@end": {
-                        "@type": "ast:Position",
-                        "col": 28,
-                        "line": 2,
-                        "off": 51
-                    },
-                    "@start": {
-                        "@type": "ast:Position",
-                        "col": 11,
-                        "line": 2,
-                        "off": 34
-                    },
-                    "@type": "LineComment",
-                    "text": "// comment inline"
-                },
-                {
-                    "@end": {
-                        "@type": "ast:Position",
-                        "col": 17,
-                        "line": 4,
-                        "off": 70
-                    },
-                    "@start": {
-                        "@type": "ast:Position",
-                        "col": 1,
-                        "line": 4,
-                        "off": 54
-                    },
-                    "@type": "LineComment",
-                    "text": "// comment after"
-                }
-            ],
-            "imports": null,
-            "package": null,
-            "types": [
-                {
-                    "@end": {
-                        "@type": "ast:Position",
-                        "col": 2,
-                        "line": 3,
-                        "off": 53
-                    },
-                    "@start": {
-                        "@type": "ast:Position",
-                        "col": 1,
-                        "line": 2,
-                        "off": 24
-                    },
-                    "@type": "TypeDeclaration",
-                    "bodyDeclarations": null,
-                    "interface": "false",
-                    "javadoc": null,
-                    "modifiers": null,
-                    "name": {
-                        "@end": {
-                            "@type": "ast:Position",
-                            "col": 8,
-                            "line": 2,
-                            "off": 31
-                        },
-                        "@start": {
-                            "@type": "ast:Position",
-                            "col": 7,
-                            "line": 2,
-                            "off": 30
-                        },
-                        "@type": "SimpleName",
-                        "identifier": "A"
-                    },
-                    "superInterfaceTypes": null,
-                    "superclassType": null,
-                    "typeParameters": null
-                }
-            ]
-        }
-    }
+            text: "// comment inline",
+         },
+         { '@type': "LineComment",
+            '@role': [Unannotated],
+            '@pos': { '@type': "uast:Positions",
+               start: { '@type': "uast:Position",
+                  offset: 54,
+                  line: 4,
+                  col: 1,
+               },
+               end: { '@type': "uast:Position",
+                  offset: 70,
+                  line: 4,
+                  col: 17,
+               },
+            },
+            text: "// comment after",
+         },
+      ],
+      imports: ~,
+      package: ~,
+      types: [
+         { '@type': "TypeDeclaration",
+            '@role': [Unannotated],
+            '@pos': { '@type': "uast:Positions",
+               start: { '@type': "uast:Position",
+                  offset: 24,
+                  line: 2,
+                  col: 1,
+               },
+               end: { '@type': "uast:Position",
+                  offset: 53,
+                  line: 3,
+                  col: 2,
+               },
+            },
+            bodyDeclarations: ~,
+            interface: "false",
+            javadoc: ~,
+            modifiers: ~,
+            name: { '@type': "SimpleName",
+               '@role': [Unannotated],
+               '@pos': { '@type': "uast:Positions",
+                  start: { '@type': "uast:Position",
+                     offset: 30,
+                     line: 2,
+                     col: 7,
+                  },
+                  end: { '@type': "uast:Position",
+                     offset: 31,
+                     line: 2,
+                     col: 8,
+                  },
+               },
+               identifier: "A",
+            },
+            superInterfaceTypes: ~,
+            superclassType: ~,
+            typeParameters: ~,
+         },
+      ],
+   },
 }

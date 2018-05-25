@@ -118,11 +118,19 @@ public class CompilationUnitSerializer extends StdSerializer<CompilationUnit> {
     }
 
     private void serializePosition(CompilationUnit cu, ASTNode node, JsonGenerator jG) throws IOException {
+        jG.writeFieldName("@pos");
+        jG.writeStartObject();
+
+        jG.writeFieldName("@type");
+        jG.writeString("uast:Positions");
+
         final int startPosition = node.getStartPosition();
-        serializePositionFields(cu, jG, startPosition, "@start");
+        serializePositionFields(cu, jG, startPosition, "start");
 
         final int endPosition = startPosition + node.getLength();
-        serializePositionFields(cu, jG, endPosition, "@end");
+        serializePositionFields(cu, jG, endPosition, "end");
+
+        jG.writeEndObject();
     }
 
     private void serializePositionFields(CompilationUnit cu, JsonGenerator jG, int pos, String name) throws IOException {
@@ -130,9 +138,9 @@ public class CompilationUnitSerializer extends StdSerializer<CompilationUnit> {
         jG.writeStartObject();
 
         jG.writeFieldName("@type");
-        jG.writeString("ast:Position");
+        jG.writeString("uast:Position");
 
-        jG.writeFieldName("off");
+        jG.writeFieldName("offset");
         jG.writeNumber(pos);
         final int line = cu.getLineNumber(pos);
         if (line >= 0) {
