@@ -1,11 +1,7 @@
 package normalizer
 
 import (
-	"strings"
-	"unicode"
-
 	"gopkg.in/bblfsh/sdk.v2/uast"
-	"gopkg.in/bblfsh/sdk.v2/uast/nodes"
 	. "gopkg.in/bblfsh/sdk.v2/uast/transformer"
 )
 
@@ -60,35 +56,15 @@ var Normalizers = []Mapping{
 	),
 	MapSemantic("", "BlockComment", uast.Comment{}, nil,
 		Obj{
-			"text": comment{
-				tokens: [2]string{"/*", "*/"},
-				text:   "text",
-				pref:   "pref", suff: "suff", tab: "tab",
-			},
+			"text": CommentText([2]string{"/*", "*/"}, "comm"),
 		},
-		Obj{
-			"Block":  Bool(true),
-			"Text":   Var("text"),
-			"Prefix": Var("pref"),
-			"Suffix": Var("suff"),
-			"Tab":    Var("tab"),
-		},
+		CommentNode(true, "comm", nil),
 	),
 	MapSemantic("", "LineComment", uast.Comment{}, nil,
 		Obj{
-			"text": comment{
-				tokens: [2]string{"//", ""},
-				text:   "text",
-				pref:   "pref", suff: "suff", tab: "tab",
-			},
+			"text": CommentText([2]string{"//", ""}, "comm"),
 		},
-		Obj{
-			"Block":  Bool(false),
-			"Text":   Var("text"),
-			"Prefix": Var("pref"),
-			"Suffix": Var("suff"),
-			"Tab":    Var("tab"),
-		},
+		CommentNode(false, "comm", nil),
 	),
 	MapSemantic("", "Block", uast.Block{}, nil,
 		Obj{
@@ -175,67 +151,4 @@ var Normalizers = []Mapping{
 			),
 		},
 	),
-}
-
-type comment struct {
-	tokens          [2]string
-	text            string
-	pref, suff, tab string
-}
-
-func (op comment) Check(st *State, n nodes.Node) (bool, error) {
-	s, ok := n.(nodes.String)
-	if !ok {
-		return false, nil
-	}
-	text := string(s)
-	if !strings.HasPrefix(text, op.tokens[0]) || !strings.HasSuffix(text, op.tokens[1]) {
-		return false, nil
-	}
-	text = strings.TrimPrefix(text, op.tokens[0])
-	text = strings.TrimSuffix(text, op.tokens[1])
-	var (
-		pref, suff, tab string
-	)
-
-	// find prefix
-	i := 0
-	for ; i < len(text) && unicode.IsSpace(rune(text[i])); i++ {
-	}
-	pref = text[:i]
-	text = text[i:]
-
-	// find suffix
-	i = len(text) - 1
-	for ; i >= 0 && unicode.IsSpace(rune(text[i])); i-- {
-	}
-	suff = text[i+1:]
-	text = text[:i+1]
-
-	// TODO: set tab
-
-	err := st.SetVars(Vars{
-		op.text: nodes.String(text),
-		op.pref: nodes.String(pref),
-		op.suff: nodes.String(suff),
-		op.tab:  nodes.String(tab),
-	})
-	return err == nil, err
-}
-
-func (op comment) Construct(st *State, n nodes.Node) (nodes.Node, error) {
-	var (
-		text, pref, suff, tab nodes.String
-	)
-
-	err := st.MustGetVars(VarsPtrs{
-		op.text: &text,
-		op.pref: &pref, op.suff: &suff, op.tab: &tab,
-	})
-	if err != nil {
-		return nil, err
-	}
-	// FIXME: handle tab
-	text = pref + text + suff
-	return nodes.String(op.tokens[0] + string(text) + op.tokens[1]), nil
 }
