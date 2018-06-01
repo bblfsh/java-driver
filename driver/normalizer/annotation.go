@@ -122,10 +122,11 @@ func annotateModifiers(typ string, mod string, roles ...role.Role) Mapping {
 			),
 		}))
 	}
-	return MapAST(typ, Obj{
-		"modifiers": Check(c, Var("mod")),
-	}, Obj{
-		"modifiers": Var("mod"),
+	return AnnotateType(typ, ObjMap{
+		"modifiers": Map(
+			Check(c, Var("mod")),
+			Var("mod"),
+		),
 	}, roles...)
 }
 
@@ -150,15 +151,11 @@ var Annotations = []Mapping{
 
 	// Visibility
 	AnnotateType("TypeDeclaration",
-		FieldRoles{
-			"modifiers": {Op: Is(nil)},
-		},
+		ObjMap{"modifiers": Is(nil)},
 		role.Visibility, role.Package,
 	),
 	AnnotateType("MethodDeclaration",
-		FieldRoles{
-			"modifiers": {Op: Is(nil)},
-		},
+		ObjMap{"modifiers": Is(nil)},
 		role.Visibility, role.Package,
 	),
 
@@ -175,13 +172,13 @@ var Annotations = []Mapping{
 	// Package and imports
 	AnnotateType("ImportDeclaration", nil, role.Declaration, role.Import),
 	AnnotateType("ImportDeclaration", FieldRoles{
-		"name": {Sub: FieldRoles{
-			uast.KeyType: {Op: String("QualifiedName")},
+		"name": {Sub: ObjMap{
+			uast.KeyType: String("QualifiedName"),
 		}, Roles: role.Roles{role.Pathname, role.Import}},
 	}),
 	AnnotateType("ImportDeclaration", FieldRoles{
-		"qualifier": {Sub: FieldRoles{
-			uast.KeyType: {Op: String("QualifiedName")},
+		"qualifier": {Sub: ObjMap{
+			uast.KeyType: String("QualifiedName"),
 		}, Roles: role.Roles{role.Pathname, role.Import}},
 	}),
 
@@ -214,7 +211,7 @@ var Annotations = []Mapping{
 	AnnotateType("TypeDeclarationStatement", nil, role.Statement, role.Declaration, role.Type),
 
 	// Method declarations
-	MapAST("MethodDeclaration", Fields{
+	AnnotateType("MethodDeclaration", MapObj(Fields{
 		{Name: "name", Op: ObjectRoles("name")},
 		{Name: "body", Op: OptObjectRoles("body")},
 		{Name: "parameters", Op: Each("param", ObjectRolesCustom("p", Obj{
@@ -228,7 +225,7 @@ var Annotations = []Mapping{
 			"name":    ObjectRoles("pname", role.Function, role.Name, role.Argument),
 			"varargs": Var("variadic"),
 		}, LookupArrOpVar("variadic", variadicRoles), role.Function, role.Argument))},
-	}, role.Declaration, role.Function),
+	}), role.Declaration, role.Function),
 
 	AnnotateType("LambdaExpression", FieldRoles{
 		"body": {Roles: role.Roles{role.Function, role.Body}},
@@ -339,13 +336,13 @@ var Annotations = []Mapping{
 		role.Expression, role.If,
 	),
 
-	MapAST("SwitchStatement", Obj{
+	AnnotateType("SwitchStatement", MapObj(Obj{
 		"expression": ObjectRoles("expr"),
 		"statements": Var("stmts"),
 	}, Obj{
 		"expression": ObjectRoles("expr", role.Switch, role.Expression),
 		"statements": opSwitchStmtGroup{vr: "stmts"}, // will add "body" field to SwitchCase
-	}, role.Statement, role.Switch),
+	}), role.Statement, role.Switch),
 
 	// Loops
 	AnnotateType("EnhancedForStatement",
@@ -381,8 +378,8 @@ var Annotations = []Mapping{
 	),
 
 	// Operators
-	MapASTCustom("InfixExpression",
-		Obj{
+	AnnotateTypeCustom("InfixExpression",
+		MapObj(Obj{
 			"leftOperand":  ObjectRoles("left"),
 			"rightOperand": ObjectRoles("right"),
 			"operator":     Var("op"),
@@ -390,30 +387,30 @@ var Annotations = []Mapping{
 			{Name: "operator", Op: Operator("op", infixRoles, role.Binary)},
 			{Name: "leftOperand", Op: ObjectRoles("left", role.Expression, role.Binary, role.Left)},
 			{Name: "rightOperand", Op: ObjectRoles("right", role.Expression, role.Binary, role.Right)},
-		},
+		}),
 		LookupArrOpVar("op", infixRoles), role.Expression, role.Binary, role.Operator,
 	),
 
-	MapASTCustom("PostfixExpression",
-		Obj{
+	AnnotateTypeCustom("PostfixExpression",
+		MapObj(Obj{
 			"operator": Var("op"),
 		}, Fields{ // ->
 			{Name: "operator", Op: Operator("op", postfixRoles, role.Unary, role.Postfix)},
-		},
+		}),
 		LookupArrOpVar("op", postfixRoles), role.Expression, role.Operator, role.Unary, role.Postfix,
 	),
 
-	MapASTCustom("PrefixExpression",
-		Obj{
+	AnnotateTypeCustom("PrefixExpression",
+		MapObj(Obj{
 			"operator": Var("op"),
 		}, Fields{ // ->
 			{Name: "operator", Op: Operator("op", prefixRoles, role.Unary)},
-		},
+		}),
 		LookupArrOpVar("op", prefixRoles), role.Expression, role.Operator, role.Unary,
 	),
 
-	MapASTCustom("Assignment",
-		Obj{
+	AnnotateTypeCustom("Assignment",
+		MapObj(Obj{
 			"leftHandSide":  ObjectRoles("left"),
 			"rightHandSide": ObjectRoles("right"),
 			"operator":      Var("op"),
@@ -421,7 +418,7 @@ var Annotations = []Mapping{
 			{Name: "operator", Op: Operator("op", assignRoles, role.Assignment, role.Binary)},
 			{Name: "leftHandSide", Op: ObjectRoles("left", role.Assignment, role.Binary, role.Left)},
 			{Name: "rightHandSide", Op: ObjectRoles("right", role.Assignment, role.Binary, role.Right)},
-		},
+		}),
 		LookupArrOpVar("op", assignRoles), role.Expression, role.Assignment, role.Operator, role.Binary,
 	),
 
@@ -436,7 +433,7 @@ var Annotations = []Mapping{
 	AnnotateType("WildcardType", nil, role.Type, role.Incomplete),
 
 	// Modifiers
-	AnnotateTypeCustom(nil, "Modifier",
+	AnnotateTypeCustom("Modifier",
 		FieldRoles{
 			"keyword": {Rename: uast.KeyToken, Op: Var("mod")},
 		},
@@ -463,23 +460,23 @@ var Annotations = []Mapping{
 	AnnotateType("MemberValuePair", nil, role.Annotation, role.Incomplete),
 
 	// Comments
-	MapAST("BlockComment", Obj{
+	AnnotateType("BlockComment", MapObj(Obj{
 		"text": UncommentCLike("text"),
 	}, Obj{
 		uast.KeyToken: Var("text"),
-	}, role.Comment),
+	}), role.Comment),
 
-	MapAST("Javadoc", Fields{
+	AnnotateType("Javadoc", MapObj(Fields{
 		{Name: "text", Op: UncommentCLike("text"), Optional: "txt"},
 	}, Fields{
 		{Name: uast.KeyToken, Op: Var("text"), Optional: "txt"},
-	}, role.Documentation, role.Comment),
+	}), role.Documentation, role.Comment),
 
-	MapAST("LineComment", Obj{
+	AnnotateType("LineComment", MapObj(Obj{
 		"text": UncommentCLike("text"),
 	}, Obj{
 		uast.KeyToken: Var("text"),
-	}, role.Comment),
+	}), role.Comment),
 
 	// Javadoc tags
 	AnnotateType("MemberRef", nil, role.Documentation, role.Variable, role.Incomplete),
@@ -532,13 +529,17 @@ var (
 
 var (
 	casesMapping    = Mappings(caseMap, defaultMap)
-	casesRevMapping = Mappings(caseMap.Reverse(), defaultMap.Reverse())
+	casesRevMapping = Mappings(Reverse(caseMap), Reverse(defaultMap))
 )
 
 var _ Op = opSwitchStmtGroup{}
 
 type opSwitchStmtGroup struct {
 	vr string
+}
+
+func (opSwitchStmtGroup) Kinds() nodes.Kind {
+	return nodes.KindArray
 }
 
 func (op opSwitchStmtGroup) Check(st *State, n nodes.Node) (bool, error) {

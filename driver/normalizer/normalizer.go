@@ -13,7 +13,7 @@ var Normalize = Transformers([][]Transformer{
 }...)
 
 var Normalizers = []Mapping{
-	MapSemantic("", "StringLiteral", uast.String{}, nil,
+	MapSemantic("StringLiteral", uast.String{}, MapObj(
 		Obj{
 			"escapedValue": Quote(Var("val")),
 		},
@@ -21,16 +21,16 @@ var Normalizers = []Mapping{
 			"Value":  Var("val"),
 			"Format": String(""),
 		},
-	),
-	MapSemantic("", "SimpleName", uast.Identifier{}, nil,
+	)),
+	MapSemantic("SimpleName", uast.Identifier{}, MapObj(
 		Obj{
 			"identifier": Var("name"),
 		},
 		Obj{
 			"Name": Var("name"),
 		},
-	),
-	MapSemantic("", "QualifiedName", uast.QualifiedIdentifier{}, nil,
+	)),
+	MapSemantic("QualifiedName", uast.QualifiedIdentifier{}, MapObj(
 		Obj{
 			"name": Var("name"),
 			"qualifier": Check(Has{
@@ -40,8 +40,8 @@ var Normalizers = []Mapping{
 		Obj{
 			"Names": Arr(Var("par"), Var("name")),
 		},
-	),
-	MapSemantic("", "QualifiedName", uast.QualifiedIdentifier{}, nil,
+	)),
+	MapSemantic("QualifiedName", uast.QualifiedIdentifier{}, MapObj(
 		Obj{
 			"name": Var("name"),
 			"qualifier": UASTType(uast.QualifiedIdentifier{}, Obj{
@@ -53,28 +53,28 @@ var Normalizers = []Mapping{
 		Obj{
 			"Names": Append(Var("names"), Arr(Var("name"))),
 		},
-	),
-	MapSemantic("", "BlockComment", uast.Comment{}, nil,
+	)),
+	MapSemantic("BlockComment", uast.Comment{}, MapObj(
 		Obj{
 			"text": CommentText([2]string{"/*", "*/"}, "comm"),
 		},
 		CommentNode(true, "comm", nil),
-	),
-	MapSemantic("", "LineComment", uast.Comment{}, nil,
+	)),
+	MapSemantic("LineComment", uast.Comment{}, MapObj(
 		Obj{
 			"text": CommentText([2]string{"//", ""}, "comm"),
 		},
 		CommentNode(false, "comm", nil),
-	),
-	MapSemantic("", "Block", uast.Block{}, nil,
+	)),
+	MapSemantic("Block", uast.Block{}, MapObj(
 		Obj{
 			"statements": Var("stmts"),
 		},
 		Obj{
 			"Stmts": Var("stmts"),
 		},
-	),
-	MapSemantic("", "ImportDeclaration", uast.Import{}, nil,
+	)),
+	MapSemantic("ImportDeclaration", uast.Import{}, MapObj(
 		Obj{
 			"name":     Var("name"),
 			"onDemand": String("true"),
@@ -87,8 +87,8 @@ var Normalizers = []Mapping{
 			// TODO: handle static when we have scopes
 			"Scope": Obj{"static": Var("static")},
 		},
-	),
-	MapSemantic("", "ImportDeclaration", uast.Import{}, nil,
+	)),
+	MapSemantic("ImportDeclaration", uast.Import{}, MapObj(
 		Obj{
 			"name": Part("path", UASTType(uast.QualifiedIdentifier{}, Obj{
 				"Names": Append(Var("names"), Arr(Var("name"))),
@@ -105,9 +105,9 @@ var Normalizers = []Mapping{
 			// TODO: handle static when we have scopes
 			"Scope": Obj{"static": Var("static")},
 		},
-	),
+	)),
 
-	MapSemantic("", "MethodDeclaration", uast.FunctionGroup{}, nil,
+	MapSemantic("MethodDeclaration", uast.FunctionGroup{}, MapObj(
 		Obj{
 			"constructor":          Var("constr"),
 			"extraDimensions2":     Is(nil), // TODO: find an example
@@ -150,5 +150,5 @@ var Normalizers = []Mapping{
 				},
 			),
 		},
-	),
+	)),
 }
