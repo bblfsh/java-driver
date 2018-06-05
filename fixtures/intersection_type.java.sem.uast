@@ -61,7 +61,7 @@
                         },
                         Name: "Code",
                      },
-                     Obj: { '@type': "uast:Function",
+                     Node: { '@type': "uast:Function",
                         Body: { '@type': "uast:Block",
                            '@pos': { '@type': "uast:Positions",
                               start: { '@type': "uast:Position",
@@ -75,7 +75,7 @@
                                  col: 4,
                               },
                            },
-                           Stmts: [
+                           Statements: [
                               { '@type': "ExpressionStatement",
                                  '@role': [Statement],
                                  '@pos': { '@type': "uast:Positions",
@@ -283,9 +283,8 @@
                               },
                            ],
                         },
-                        Recv: ~,
                         Type: { '@type': "uast:FunctionType",
-                           Args: [
+                           Arguments: [
                               { '@type': "SingleVariableDeclaration",
                                  '@role': [Declaration, Variable],
                                  '@pos': { '@type': "uast:Positions",
@@ -353,11 +352,7 @@
                                  varargsAnnotations: ~,
                               },
                            ],
-                           Returns: [
-                              { '@type': "uast:Argument",
-                                 Type: ~,
-                              },
-                           ],
+                           Returns: ~,
                         },
                      },
                   },

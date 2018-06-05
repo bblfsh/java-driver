@@ -104,7 +104,7 @@
                },
             ],
          },
-         Scope: {
+         Target: {
             static: "false",
          },
       },
@@ -175,7 +175,7 @@
                         },
                         Name: "a",
                      },
-                     Obj: { '@type': "uast:Function",
+                     Node: { '@type': "uast:Function",
                         Body: { '@type': "uast:Block",
                            '@pos': { '@type': "uast:Positions",
                               start: { '@type': "uast:Position",
@@ -189,7 +189,7 @@
                                  col: 38,
                               },
                            },
-                           Stmts: [
+                           Statements: [
                               { '@type': "ReturnStatement",
                                  '@role': [Return, Statement],
                                  '@pos': { '@type': "uast:Positions",
@@ -259,9 +259,8 @@
                               },
                            ],
                         },
-                        Recv: ~,
                         Type: { '@type': "uast:FunctionType",
-                           Args: [
+                           Arguments: [
                               { '@type': "SingleVariableDeclaration",
                                  '@role': [Declaration, Variable],
                                  '@pos': { '@type': "uast:Positions",
@@ -317,6 +316,10 @@
                            ],
                            Returns: [
                               { '@type': "uast:Argument",
+                                 Init: ~,
+                                 MapVariadic: false,
+                                 Name: ~,
+                                 Receiver: false,
                                  Type: { '@type': "PrimitiveType",
                                     '@token': "int",
                                     '@role': [Primitive, Type],
@@ -334,6 +337,7 @@
                                     },
                                     annotations: ~,
                                  },
+                                 Variadic: false,
                               },
                            ],
                         },
@@ -416,7 +420,7 @@
                         },
                         Name: "B",
                      },
-                     Obj: { '@type': "uast:Function",
+                     Node: { '@type': "uast:Function",
                         Body: { '@type': "uast:Block",
                            '@pos': { '@type': "uast:Positions",
                               start: { '@type': "uast:Position",
@@ -430,7 +434,7 @@
                                  col: 51,
                               },
                            },
-                           Stmts: [
+                           Statements: [
                               { '@type': "VariableDeclarationStatement",
                                  '@role': [Declaration, Statement, Variable],
                                  '@pos': { '@type': "uast:Positions",
@@ -624,14 +628,9 @@
                               },
                            ],
                         },
-                        Recv: ~,
                         Type: { '@type': "uast:FunctionType",
-                           Args: ~,
-                           Returns: [
-                              { '@type': "uast:Argument",
-                                 Type: ~,
-                              },
-                           ],
+                           Arguments: ~,
+                           Returns: ~,
                         },
                      },
                   },

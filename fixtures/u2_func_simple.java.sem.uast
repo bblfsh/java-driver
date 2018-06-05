@@ -61,7 +61,7 @@
                         },
                         Name: "testfnc1",
                      },
-                     Obj: { '@type': "uast:Function",
+                     Node: { '@type': "uast:Function",
                         Body: { '@type': "uast:Block",
                            '@pos': { '@type': "uast:Positions",
                               start: { '@type': "uast:Position",
@@ -75,7 +75,7 @@
                                  col: 6,
                               },
                            },
-                           Stmts: [
+                           Statements: [
                               { '@type': "ReturnStatement",
                                  '@role': [Return, Statement],
                                  '@pos': { '@type': "uast:Positions",
@@ -108,9 +108,8 @@
                               },
                            ],
                         },
-                        Recv: ~,
                         Type: { '@type': "uast:FunctionType",
-                           Args: [
+                           Arguments: [
                               { '@type': "SingleVariableDeclaration",
                                  '@role': [Declaration, Variable],
                                  '@pos': { '@type': "uast:Positions",
@@ -218,6 +217,10 @@
                            ],
                            Returns: [
                               { '@type': "uast:Argument",
+                                 Init: ~,
+                                 MapVariadic: false,
+                                 Name: ~,
+                                 Receiver: false,
                                  Type: { '@type': "PrimitiveType",
                                     '@token': "int",
                                     '@role': [Primitive, Type],
@@ -235,6 +238,7 @@
                                     },
                                     annotations: ~,
                                  },
+                                 Variadic: false,
                               },
                            ],
                         },

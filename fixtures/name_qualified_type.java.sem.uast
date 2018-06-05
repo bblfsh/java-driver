@@ -88,7 +88,7 @@
                },
             ],
          },
-         Scope: {
+         Target: {
             static: "false",
          },
       },
@@ -252,7 +252,7 @@
                         },
                         Name: "A",
                      },
-                     Obj: { '@type': "uast:Function",
+                     Node: { '@type': "uast:Function",
                         Body: { '@type': "uast:Block",
                            '@pos': { '@type': "uast:Positions",
                               start: { '@type': "uast:Position",
@@ -266,7 +266,7 @@
                                  col: 4,
                               },
                            },
-                           Stmts: [
+                           Statements: [
                               { '@type': "VariableDeclarationStatement",
                                  '@role': [Declaration, Statement, Variable],
                                  '@pos': { '@type': "uast:Positions",
@@ -427,14 +427,9 @@
                               },
                            ],
                         },
-                        Recv: ~,
                         Type: { '@type': "uast:FunctionType",
-                           Args: ~,
-                           Returns: [
-                              { '@type': "uast:Argument",
-                                 Type: ~,
-                              },
-                           ],
+                           Arguments: ~,
+                           Returns: ~,
                         },
                      },
                   },
