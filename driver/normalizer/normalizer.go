@@ -31,28 +31,38 @@ var Normalizers = []Mapping{
 		},
 	)),
 	MapSemantic("QualifiedName", uast.QualifiedIdentifier{}, MapObj(
-		Obj{
-			"name": Var("name"),
-			"qualifier": Check(Has{
-				uast.KeyType: String(uast.TypeOf(uast.Identifier{})),
-			}, Var("par")),
-		},
-		Obj{
-			"Names": Arr(Var("par"), Var("name")),
-		},
-	)),
-	MapSemantic("QualifiedName", uast.QualifiedIdentifier{}, MapObj(
-		Obj{
-			"name": Var("name"),
-			"qualifier": UASTType(uast.QualifiedIdentifier{}, Obj{
-				// FIXME: start position
-				uast.KeyPos: AnyNode(nil),
-				"Names":     Var("names"),
-			}),
-		},
-		Obj{
-			"Names": Append(Var("names"), Arr(Var("name"))),
-		},
+		CasesObj("case",
+			// common
+			Obj{"name": Var("name")},
+			Objs{
+				// the last name = identifier
+				{
+					"qualifier": Check(Has{
+						uast.KeyType: String(uast.TypeOf(uast.Identifier{})),
+					}, Var("par")),
+				},
+				// linked list
+				{
+					"qualifier": UASTType(uast.QualifiedIdentifier{}, Obj{
+						// FIXME: start position
+						uast.KeyPos: AnyNode(nil),
+						"Names":     Var("names"),
+					}),
+				},
+			},
+		),
+		CasesObj("case", nil,
+			Objs{
+				// the last name = identifier
+				{
+					"Names": Arr(Var("par"), Var("name")),
+				},
+				// linked list
+				{
+					"Names": Append(Var("names"), Arr(Var("name"))),
+				},
+			},
+		),
 	)),
 	MapSemantic("BlockComment", uast.Comment{}, MapObj(
 		Obj{
@@ -71,54 +81,88 @@ var Normalizers = []Mapping{
 			"statements": Var("stmts"),
 		},
 		Obj{
-			"Stmts": Var("stmts"),
+			"Statements": Var("stmts"),
 		},
 	)),
 	MapSemantic("ImportDeclaration", uast.Import{}, MapObj(
-		Obj{
-			"name":     Var("name"),
-			"onDemand": String("true"),
-			"static":   Var("static"),
-		},
-		Obj{
-			"Path":  Var("name"),
-			"All":   Bool(true),
-			"Names": Arr(),
-			// TODO: handle static when we have scopes
-			"Scope": Obj{"static": Var("static")},
-		},
-	)),
-	MapSemantic("ImportDeclaration", uast.Import{}, MapObj(
-		Obj{
-			"name": Part("path", UASTType(uast.QualifiedIdentifier{}, Obj{
-				"Names": Append(Var("names"), Arr(Var("name"))),
-			})),
-			"onDemand": String("false"),
-			"static":   Var("static"),
-		},
-		Obj{
-			"Path": Part("path", UASTType(uast.QualifiedIdentifier{}, Obj{
-				"Names": Var("names"),
-			})),
-			"All":   Bool(false),
-			"Names": Arr(Var("name")),
-			// TODO: handle static when we have scopes
-			"Scope": Obj{"static": Var("static")},
-		},
+		CasesObj("case",
+			// common
+			Obj{
+				"static": Var("static"),
+			},
+			Objs{
+				// star import (on demand)
+				{
+					"name":     Var("name"),
+					"onDemand": String("true"),
+				},
+				// normal import
+				{
+					"name": Part("path", UASTType(uast.QualifiedIdentifier{}, Obj{
+						"Names": Append(Var("names"), Arr(Var("name"))),
+					})),
+					"onDemand": String("false"),
+				},
+			},
+		),
+		CasesObj("case",
+			// common
+			Obj{
+				// TODO: handle static when we have scopes
+				"Target": Obj{"static": Var("static")},
+			},
+			Objs{
+				// star import (on demand)
+				{
+					"Path":  Var("name"),
+					"All":   Bool(true),
+					"Names": Arr(),
+				},
+				{
+					"Path": Part("path", UASTType(uast.QualifiedIdentifier{}, Obj{
+						"Names": Var("names"),
+					})),
+					"All":   Bool(false),
+					"Names": Arr(Var("name")),
+				},
+			},
+		),
 	)),
 
 	MapSemantic("MethodDeclaration", uast.FunctionGroup{}, MapObj(
 		Obj{
-			"constructor":          Var("constr"),
-			"extraDimensions2":     Is(nil), // TODO: find an example
-			"javadoc":              Var("doc"),
-			"modifiers":            Var("ann"), // TODO: it's an array, we should expand it somewhere
-			"name":                 Var("name"),
-			"body":                 Var("body"),
-			"parameters":           Var("args"),
-			"receiverQualifier":    Is(nil), // FIXME: handle receiver
-			"receiverType":         Is(nil),
-			"returnType2":          Var("out1"),
+			"constructor":       Var("constr"),
+			"extraDimensions2":  Is(nil), // TODO: find an example
+			"javadoc":           Var("doc"),
+			"modifiers":         Var("ann"), // TODO: it's an array, we should expand it somewhere
+			"name":              Var("name"),
+			"body":              Var("body"),
+			"parameters":        Var("args"),
+			"receiverQualifier": Is(nil), // FIXME: handle receiver
+			"receiverType":      Is(nil),
+			"returnType2": Cases("out_case",
+				// no return type (constructor)
+				Is(nil),
+				// void
+				Obj{
+					uast.KeyType:        String("PrimitiveType"),
+					uast.KeyPos:         AnyNode(nil),
+					"annotations":       Is(nil),
+					"primitiveTypeCode": String("void"),
+				},
+				// any other type
+				Check(
+					Not(And(
+						Is(nil),
+						Has{
+							uast.KeyType:        String("PrimitiveType"),
+							"annotations":       Is(nil),
+							"primitiveTypeCode": String("void"),
+						},
+					)),
+					Var("out1"),
+				),
+			),
 			"thrownExceptionTypes": Var("exc"),
 			"typeParameters":       Var("tmpl"),
 		},
@@ -129,18 +173,23 @@ var Normalizers = []Mapping{
 				UASTType(uast.Alias{}, Obj{
 					// FIXME: add position
 					"Name": Var("name"),
-					"Obj": UASTType(uast.Function{}, Obj{
+					"Node": UASTType(uast.Function{}, Obj{
 						"Type": UASTType(uast.FunctionType{}, Obj{
-							"Args": Var("args"),
-							"Returns": Arr(
-								UASTType(uast.Argument{}, Obj{
-									// TODO: can be void, so should be removed in this case
-									"Type": Var("out1"),
-								}),
+							"Arguments": Var("args"),
+							"Returns": Cases("out_case",
+								// no return (constructor)
+								Is(nil),
+								// void return
+								Is(nil),
+								// normal return type
+								Arr(
+									UASTType(uast.Argument{}, Obj{
+										"Type": Var("out1"),
+									}),
+								),
 							),
 						}),
 						"Body": Var("body"),
-						"Recv": Is(nil),
 					}),
 				}),
 				Obj{ // FIXME: store them as annotations at least
