@@ -32,6 +32,9 @@ var Suite = &fixtures.Suite{
 			"MethodDeclaration",
 		},
 	},
+	Docker: fixtures.DockerConfig{
+		Image: "openjdk:8",
+	},
 }
 
 func TestJavaDriver(t *testing.T) {
