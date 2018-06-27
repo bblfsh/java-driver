@@ -18,13 +18,8 @@ var Suite = &fixtures.Suite{
 	NewDriver: func() driver.BaseDriver {
 		return driver.NewExecDriverAt(filepath.Join(projectRoot, "build/bin/native"))
 	},
-	Transforms: driver.Transforms{
-		Preprocess: normalizer.Preprocess,
-		Normalize:  normalizer.Normalize,
-		Native:     normalizer.Native,
-		Code:       normalizer.Code,
-	},
-	BenchName: "wildcard_type", // TODO: find a really large java file
+	Transforms: normalizer.Transforms,
+	BenchName:  "wildcard_type", // TODO: find a really large java file
 	Semantic: fixtures.SemanticConfig{
 		BlacklistTypes: []string{
 			"StringLiteral",
