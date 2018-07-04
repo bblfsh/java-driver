@@ -131,13 +131,23 @@ var Normalizers = []Mapping{
 
 	MapSemantic("MethodDeclaration", uast.FunctionGroup{}, MapObj(
 		Obj{
-			"constructor":       Var("constr"),
-			"extraDimensions2":  Is(nil), // TODO: find an example
-			"javadoc":           Var("doc"),
-			"modifiers":         Var("ann"), // TODO: it's an array, we should expand it somewhere
-			"name":              Var("name"),
-			"body":              Var("body"),
-			"parameters":        Var("args"),
+			"constructor":      Var("constr"),
+			"extraDimensions2": Is(nil), // TODO: find an example
+			"javadoc":          Var("doc"),
+			"modifiers":        Var("ann"), // TODO: it's an array, we should expand it somewhere
+			"name":             Var("name"),
+			"body":             Var("body"),
+			"parameters": Each("args", Obj{
+				uast.KeyType:         String("SingleVariableDeclaration"),
+				uast.KeyPos:          Var("apos"),
+				"extraDimensions2":   Is(nil),
+				"initializer":        Var("ainit"),
+				"modifiers":          Is(nil),
+				"name":               Var("aname"),
+				"type":               Var("atype"),
+				"varargs":            Cases("varg", String("false"), String("true")),
+				"varargsAnnotations": Is(nil),
+			}),
 			"receiverQualifier": Is(nil), // FIXME: handle receiver
 			"receiverType":      Is(nil),
 			"returnType2": Cases("out_case",
@@ -175,7 +185,13 @@ var Normalizers = []Mapping{
 					"Name": Var("name"),
 					"Node": UASTType(uast.Function{}, Obj{
 						"Type": UASTType(uast.FunctionType{}, Obj{
-							"Arguments": Var("args"),
+							"Arguments": Each("args", UASTType(uast.Argument{}, Obj{
+								uast.KeyPos: Var("apos"),
+								"Name":      Var("aname"),
+								"Type":      Var("atype"),
+								"Init":      Var("ainit"),
+								"Variadic":  Cases("varg", Bool(false), Bool(true)),
+							})),
 							"Returns": Cases("out_case",
 								// no return (constructor)
 								Is(nil),
