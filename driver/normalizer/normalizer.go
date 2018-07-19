@@ -148,8 +148,11 @@ var Normalizers = []Mapping{
 				"varargs":            Cases("varg", String("false"), String("true")),
 				"varargsAnnotations": Is(nil),
 			}),
-			"receiverQualifier": Is(nil), // FIXME: handle receiver
-			"receiverType":      Is(nil),
+			"receiverQualifier": Var("recv_name"),
+			"receiverType": Cases("recv",
+				Is(nil),
+				Check(NotNil(), Var("recv_type")),
+			),
 			"returnType2": Cases("out_case",
 				// no return type (constructor)
 				Is(nil),
@@ -185,13 +188,19 @@ var Normalizers = []Mapping{
 					"Name": Var("name"),
 					"Node": UASTType(uast.Function{}, Obj{
 						"Type": UASTType(uast.FunctionType{}, Obj{
-							"Arguments": Each("args", UASTType(uast.Argument{}, Obj{
-								uast.KeyPos: Var("apos"),
-								"Name":      Var("aname"),
-								"Type":      Var("atype"),
-								"Init":      Var("ainit"),
-								"Variadic":  Cases("varg", Bool(false), Bool(true)),
-							})),
+							"Arguments": Cases("recv",
+								// default receiver
+								argsPart,
+								// additional receiver
+								PrependOne(
+									UASTType(uast.Argument{}, Obj{
+										"Name":     Var("recv_name"),
+										"Type":     Var("recv_type"),
+										"Receiver": Bool(true),
+									}),
+									argsPart,
+								),
+							),
 							"Returns": Cases("out_case",
 								// no return (constructor)
 								Is(nil),
@@ -217,3 +226,11 @@ var Normalizers = []Mapping{
 		},
 	)),
 }
+
+var argsPart = Each("args", UASTType(uast.Argument{}, Obj{
+	uast.KeyPos: Var("apos"),
+	"Name":      Var("aname"),
+	"Type":      Var("atype"),
+	"Init":      Var("ainit"),
+	"Variadic":  Cases("varg", Bool(false), Bool(true)),
+}))
