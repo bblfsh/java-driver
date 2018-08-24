@@ -5,7 +5,7 @@ go-runtime:
 native:
   image: 'openjdk:8-jre-alpine'
   static:
-    - path: 'src/main/sh/native.sh'
+    - path: 'native.sh'
       dest: 'native'
   build:
     image: 'openjdk:8-slim'

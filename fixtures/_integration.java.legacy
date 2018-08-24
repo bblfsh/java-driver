@@ -28,7 +28,9 @@ CompilationUnit {
 .  .  .  .  internalRole: types
 .  .  .  }
 .  .  .  Children: {
-.  .  .  .  0: Identifier {
+.  .  .  .  0: SimpleName {
+.  .  .  .  .  Roles: Expression,Identifier
+.  .  .  .  .  TOKEN "Testcls1"
 .  .  .  .  .  StartPosition: {
 .  .  .  .  .  .  Offset: 6
 .  .  .  .  .  .  Line: 1
@@ -40,7 +42,6 @@ CompilationUnit {
 .  .  .  .  .  .  Col: 15
 .  .  .  .  .  }
 .  .  .  .  .  Properties: {
-.  .  .  .  .  .  Name: Testcls1
 .  .  .  .  .  .  internalRole: name
 .  .  .  .  .  }
 .  .  .  .  }
