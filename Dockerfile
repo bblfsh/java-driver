@@ -57,7 +57,7 @@ LABEL maintainer="source{d}" \
 WORKDIR /opt/driver
 
 # copy static files from driver source directory
-ADD ./native/src/main/sh/native.sh ./bin/native
+ADD ./native/native.sh ./bin/native
 
 
 # copy build artifacts for native driver
