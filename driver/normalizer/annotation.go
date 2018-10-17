@@ -107,6 +107,17 @@ var (
 		"true":  {role.ArgsList},
 		"false": {},
 	})
+	primitiveRoles = StringToRolesMap(map[string][]role.Role{
+		"boolean": {role.Boolean},
+		"byte":    {role.Byte},
+		"char":    {role.Character},
+		"short":   {role.Number},
+		"int":     {role.Number},
+		"long":    {role.Number},
+		"float":   {role.Number},
+		"double":  {role.Number},
+		"void":    {},
+	})
 )
 
 func annotateModifiers(typ string, mod string, roles ...role.Role) Mapping {
@@ -142,10 +153,11 @@ var Annotations = []Mapping{
 		},
 		role.Expression, role.Identifier,
 	),
-	AnnotateType("PrimitiveType",
+	AnnotateTypeCustom("PrimitiveType",
 		FieldRoles{
-			"primitiveTypeCode": {Rename: uast.KeyToken},
+			"primitiveTypeCode": {Rename: uast.KeyToken, Op: Var("typ")},
 		},
+		LookupArrOpVar("typ", primitiveRoles),
 		role.Type, role.Primitive,
 	),
 
