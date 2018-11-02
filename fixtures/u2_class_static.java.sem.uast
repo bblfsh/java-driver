@@ -1,4 +1,4 @@
-{ '@type': "CompilationUnit",
+{ '@type': "java:CompilationUnit",
    '@role': [File],
    '@pos': { '@type': "uast:Positions",
       start: { '@type': "uast:Position",
@@ -14,7 +14,7 @@
    imports: ~,
    package: ~,
    types: [
-      { '@type': "TypeDeclaration",
+      { '@type': "java:TypeDeclaration",
          '@role': [Declaration, Package, Type, Visibility],
          '@pos': { '@type': "uast:Positions",
             start: { '@type': "uast:Position",
@@ -31,7 +31,7 @@
          interface: "false",
          javadoc: ~,
          modifiers: [
-            { '@type': "Modifier",
+            { '@type': "java:Modifier",
                '@token': "static",
                '@role': [Incomplete],
                '@pos': { '@type': "uast:Positions",

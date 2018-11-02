@@ -1,4 +1,4 @@
-{ '@type': "CompilationUnit",
+{ '@type': "java:CompilationUnit",
    '@role': [File],
    '@pos': { '@type': "uast:Positions",
       start: { '@type': "uast:Position",
@@ -14,7 +14,7 @@
    imports: ~,
    package: ~,
    types: [
-      { '@type': "TypeDeclaration",
+      { '@type': "java:TypeDeclaration",
          '@role': [Declaration, Package, Type, Visibility],
          '@pos': { '@type': "uast:Positions",
             start: { '@type': "uast:Position",
@@ -45,7 +45,7 @@
                Nodes: [
                   ~,
                   [
-                     { '@type': "Modifier",
+                     { '@type': "java:Modifier",
                         '@token': "abstract",
                         '@role': [Incomplete],
                         '@pos': { '@type': "uast:Positions",
@@ -97,7 +97,7 @@
          interface: "false",
          javadoc: ~,
          modifiers: [
-            { '@type': "Modifier",
+            { '@type': "java:Modifier",
                '@token': "abstract",
                '@role': [Incomplete],
                '@pos': { '@type': "uast:Positions",
@@ -133,7 +133,7 @@
          superclassType: ~,
          typeParameters: ~,
       },
-      { '@type': "TypeDeclaration",
+      { '@type': "java:TypeDeclaration",
          '@role': [Declaration, Package, Type, Visibility],
          '@pos': { '@type': "uast:Positions",
             start: { '@type': "uast:Position",
@@ -164,7 +164,7 @@
                Nodes: [
                   ~,
                   [
-                     { '@type': "Modifier",
+                     { '@type': "java:Modifier",
                         '@token': "final",
                         '@role': [Incomplete],
                         '@pos': { '@type': "uast:Positions",
@@ -242,7 +242,7 @@
                Nodes: [
                   ~,
                   [
-                     { '@type': "Modifier",
+                     { '@type': "java:Modifier",
                         '@token': "native",
                         '@role': [Incomplete],
                         '@pos': { '@type': "uast:Positions",
@@ -306,7 +306,7 @@
                Nodes: [
                   ~,
                   [
-                     { '@type': "Modifier",
+                     { '@type': "java:Modifier",
                         '@token': "private",
                         '@role': [Instance, Visibility],
                         '@pos': { '@type': "uast:Positions",
@@ -384,7 +384,7 @@
                Nodes: [
                   ~,
                   [
-                     { '@type': "Modifier",
+                     { '@type': "java:Modifier",
                         '@token': "protected",
                         '@role': [Subtype, Visibility],
                         '@pos': { '@type': "uast:Positions",
@@ -462,7 +462,7 @@
                Nodes: [
                   ~,
                   [
-                     { '@type': "Modifier",
+                     { '@type': "java:Modifier",
                         '@token': "public",
                         '@role': [Visibility, World],
                         '@pos': { '@type': "uast:Positions",
@@ -540,7 +540,7 @@
                Nodes: [
                   ~,
                   [
-                     { '@type': "Modifier",
+                     { '@type': "java:Modifier",
                         '@token': "static",
                         '@role': [Incomplete],
                         '@pos': { '@type': "uast:Positions",
@@ -618,7 +618,7 @@
                Nodes: [
                   ~,
                   [
-                     { '@type': "Modifier",
+                     { '@type': "java:Modifier",
                         '@token': "strictfp",
                         '@role': [Incomplete],
                         '@pos': { '@type': "uast:Positions",
@@ -696,7 +696,7 @@
                Nodes: [
                   ~,
                   [
-                     { '@type': "Modifier",
+                     { '@type': "java:Modifier",
                         '@token': "synchronized",
                         '@role': [Incomplete],
                         '@pos': { '@type': "uast:Positions",

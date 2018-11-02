@@ -1,4 +1,4 @@
-{ '@type': "CompilationUnit",
+{ '@type': "java:CompilationUnit",
    '@role': [File],
    '@pos': { '@type': "uast:Positions",
       start: { '@type': "uast:Position",
@@ -14,7 +14,7 @@
    imports: ~,
    package: ~,
    types: [
-      { '@type': "TypeDeclaration",
+      { '@type': "java:TypeDeclaration",
          '@role': [Declaration, Package, Type, Visibility],
          '@pos': { '@type': "uast:Positions",
             start: { '@type': "uast:Position",
@@ -76,7 +76,7 @@
                               },
                            },
                            Statements: [
-                              { '@type': "ConstructorInvocation",
+                              { '@type': "java:ConstructorInvocation",
                                  '@role': [Call, Incomplete, Statement],
                                  '@pos': { '@type': "uast:Positions",
                                     start: { '@type': "uast:Position",
@@ -91,7 +91,7 @@
                                     },
                                  },
                                  arguments: [
-                                    { '@type': "NumberLiteral",
+                                    { '@type': "java:NumberLiteral",
                                        '@role': [Argument, Call, Expression, Literal, Number, Positional],
                                        '@pos': { '@type': "uast:Positions",
                                           start: { '@type': "uast:Position",
@@ -206,7 +206,7 @@
                                     Name: "i",
                                  },
                                  Receiver: false,
-                                 Type: { '@type': "PrimitiveType",
+                                 Type: { '@type': "java:PrimitiveType",
                                     '@token': "int",
                                     '@role': [Number, Primitive, Type],
                                     '@pos': { '@type': "uast:Positions",

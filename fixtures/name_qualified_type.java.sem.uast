@@ -1,4 +1,4 @@
-{ '@type': "CompilationUnit",
+{ '@type': "java:CompilationUnit",
    '@role': [File],
    '@pos': { '@type': "uast:Positions",
       start: { '@type': "uast:Position",
@@ -95,7 +95,7 @@
    ],
    package: ~,
    types: [
-      { '@type': "AnnotationTypeDeclaration",
+      { '@type': "java:AnnotationTypeDeclaration",
          '@role': [Annotation, Declaration, Type],
          '@pos': { '@type': "uast:Positions",
             start: { '@type': "uast:Position",
@@ -112,7 +112,7 @@
          bodyDeclarations: ~,
          javadoc: ~,
          modifiers: [
-            { '@type': "SingleMemberAnnotation",
+            { '@type': "java:SingleMemberAnnotation",
                '@role': [Annotation, Incomplete],
                '@pos': { '@type': "uast:Positions",
                   start: { '@type': "uast:Position",
@@ -205,7 +205,7 @@
             Name: "X",
          },
       },
-      { '@type': "TypeDeclaration",
+      { '@type': "java:TypeDeclaration",
          '@role': [Declaration, Package, Type, Visibility],
          '@pos': { '@type': "uast:Positions",
             start: { '@type': "uast:Position",
@@ -267,7 +267,7 @@
                               },
                            },
                            Statements: [
-                              { '@type': "VariableDeclarationStatement",
+                              { '@type': "java:VariableDeclarationStatement",
                                  '@role': [Declaration, Statement, Variable],
                                  '@pos': { '@type': "uast:Positions",
                                     start: { '@type': "uast:Position",
@@ -282,7 +282,7 @@
                                     },
                                  },
                                  fragments: [
-                                    { '@type': "VariableDeclarationFragment",
+                                    { '@type': "java:VariableDeclarationFragment",
                                        '@role': [Declaration, Variable],
                                        '@pos': { '@type': "uast:Positions",
                                           start: { '@type': "uast:Position",
@@ -316,7 +316,7 @@
                                     },
                                  ],
                                  modifiers: ~,
-                                 type: { '@type': "NameQualifiedType",
+                                 type: { '@type': "java:NameQualifiedType",
                                     '@role': [Name, Qualified, Type],
                                     '@pos': { '@type': "uast:Positions",
                                        start: { '@type': "uast:Position",
@@ -331,7 +331,7 @@
                                        },
                                     },
                                     annotations: [
-                                       { '@type': "MarkerAnnotation",
+                                       { '@type': "java:MarkerAnnotation",
                                           '@role': [Annotation, Incomplete],
                                           '@pos': { '@type': "uast:Positions",
                                              start: { '@type': "uast:Position",

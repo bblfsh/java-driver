@@ -1,4 +1,4 @@
-{ '@type': "CompilationUnit",
+{ '@type': "java:CompilationUnit",
    '@role': [File],
    '@pos': { '@type': "uast:Positions",
       start: { '@type': "uast:Position",
@@ -14,7 +14,7 @@
    imports: ~,
    package: ~,
    types: [
-      { '@type': "AnnotationTypeDeclaration",
+      { '@type': "java:AnnotationTypeDeclaration",
          '@role': [Annotation, Declaration, Type],
          '@pos': { '@type': "uast:Positions",
             start: { '@type': "uast:Position",
