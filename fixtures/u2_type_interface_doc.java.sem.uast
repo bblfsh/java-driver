@@ -1,4 +1,4 @@
-{ '@type': "CompilationUnit",
+{ '@type': "java:CompilationUnit",
    '@role': [File],
    '@pos': { '@type': "uast:Positions",
       start: { '@type': "uast:Position",
@@ -15,7 +15,7 @@
    imports: ~,
    package: ~,
    types: [
-      { '@type': "TypeDeclaration",
+      { '@type': "java:TypeDeclaration",
          '@role': [Declaration, Package, Type, Visibility],
          '@pos': { '@type': "uast:Positions",
             start: { '@type': "uast:Position",
@@ -31,7 +31,7 @@
          },
          bodyDeclarations: ~,
          interface: "true",
-         javadoc: { '@type': "Javadoc",
+         javadoc: { '@type': "java:Javadoc",
             '@role': [Comment, Documentation],
             '@pos': { '@type': "uast:Positions",
                start: { '@type': "uast:Position",
@@ -46,7 +46,7 @@
                },
             },
             tags: [
-               { '@type': "TagElement",
+               { '@type': "java:TagElement",
                   '@role': [Documentation, Incomplete],
                   '@pos': { '@type': "uast:Positions",
                      start: { '@type': "uast:Position",
@@ -61,7 +61,7 @@
                      },
                   },
                   fragments: [
-                     { '@type': "TextElement",
+                     { '@type': "java:TextElement",
                         '@role': [Documentation, Incomplete],
                         '@pos': { '@type': "uast:Positions",
                            start: { '@type': "uast:Position",

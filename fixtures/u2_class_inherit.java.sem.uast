@@ -1,4 +1,4 @@
-{ '@type': "CompilationUnit",
+{ '@type': "java:CompilationUnit",
    '@role': [File],
    '@pos': { '@type': "uast:Positions",
       start: { '@type': "uast:Position",
@@ -14,7 +14,7 @@
    imports: ~,
    package: ~,
    types: [
-      { '@type': "TypeDeclaration",
+      { '@type': "java:TypeDeclaration",
          '@role': [Declaration, Package, Type, Visibility],
          '@pos': { '@type': "uast:Positions",
             start: { '@type': "uast:Position",
@@ -48,7 +48,7 @@
             Name: "Testcls1",
          },
          superInterfaceTypes: ~,
-         superclassType: { '@type': "SimpleType",
+         superclassType: { '@type': "java:SimpleType",
             '@role': [Type],
             '@pos': { '@type': "uast:Positions",
                start: { '@type': "uast:Position",

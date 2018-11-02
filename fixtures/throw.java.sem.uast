@@ -1,4 +1,4 @@
-{ '@type': "CompilationUnit",
+{ '@type': "java:CompilationUnit",
    '@role': [File],
    '@pos': { '@type': "uast:Positions",
       start: { '@type': "uast:Position",
@@ -14,7 +14,7 @@
    imports: ~,
    package: ~,
    types: [
-      { '@type': "TypeDeclaration",
+      { '@type': "java:TypeDeclaration",
          '@role': [Declaration, Package, Type, Visibility],
          '@pos': { '@type': "uast:Positions",
             start: { '@type': "uast:Position",
@@ -76,7 +76,7 @@
                               },
                            },
                            Statements: [
-                              { '@type': "ThrowStatement",
+                              { '@type': "java:ThrowStatement",
                                  '@role': [Statement, Throw],
                                  '@pos': { '@type': "uast:Positions",
                                     start: { '@type': "uast:Position",
@@ -90,7 +90,7 @@
                                        col: 16,
                                     },
                                  },
-                                 expression: { '@type': "NullLiteral",
+                                 expression: { '@type': "java:NullLiteral",
                                     '@token': "null",
                                     '@role': [Expression, Literal, 'Null'],
                                     '@pos': { '@type': "uast:Positions",

@@ -1,4 +1,4 @@
-{ '@type': "CompilationUnit",
+{ '@type': "java:CompilationUnit",
    '@role': [File],
    '@pos': { '@type': "uast:Positions",
       start: { '@type': "uast:Position",
@@ -15,7 +15,7 @@
    imports: ~,
    package: ~,
    types: [
-      { '@type': "TypeDeclaration",
+      { '@type': "java:TypeDeclaration",
          '@role': [Declaration, Package, Type, Visibility],
          '@pos': { '@type': "uast:Positions",
             start: { '@type': "uast:Position",
@@ -44,7 +44,7 @@
                   },
                },
                Nodes: [
-                  { '@type': "Javadoc",
+                  { '@type': "java:Javadoc",
                      '@role': [Comment, Documentation],
                      '@pos': { '@type': "uast:Positions",
                         start: { '@type': "uast:Position",
@@ -59,7 +59,7 @@
                         },
                      },
                      tags: [
-                        { '@type': "TagElement",
+                        { '@type': "java:TagElement",
                            '@role': [Documentation, Incomplete],
                            '@pos': { '@type': "uast:Positions",
                               start: { '@type': "uast:Position",
@@ -74,7 +74,7 @@
                               },
                            },
                            fragments: [
-                              { '@type': "TagElement",
+                              { '@type': "java:TagElement",
                                  '@role': [Documentation, Incomplete],
                                  '@pos': { '@type': "uast:Positions",
                                     start: { '@type': "uast:Position",
@@ -89,7 +89,7 @@
                                     },
                                  },
                                  fragments: [
-                                    { '@type': "MethodRef",
+                                    { '@type': "java:MethodRef",
                                        '@role': [Documentation, Function, Incomplete],
                                        '@pos': { '@type': "uast:Positions",
                                           start: { '@type': "uast:Position",
@@ -119,7 +119,7 @@
                                           Name: "Code",
                                        },
                                        parameters: [
-                                          { '@type': "MethodRefParameter",
+                                          { '@type': "java:MethodRefParameter",
                                              '@role': [Documentation, Function, Incomplete],
                                              '@pos': { '@type': "uast:Positions",
                                                 start: { '@type': "uast:Position",
@@ -148,7 +148,7 @@
                                                 },
                                                 Name: "a",
                                              },
-                                             type: { '@type': "PrimitiveType",
+                                             type: { '@type': "java:PrimitiveType",
                                                 '@token': "int",
                                                 '@role': [Number, Primitive, Type],
                                                 '@pos': { '@type': "uast:Positions",
@@ -173,7 +173,7 @@
                                  ],
                                  tagName: "@link",
                               },
-                              { '@type': "TextElement",
+                              { '@type': "java:TextElement",
                                  '@role': [Documentation, Incomplete],
                                  '@pos': { '@type': "uast:Positions",
                                     start: { '@type': "uast:Position",

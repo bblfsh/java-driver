@@ -1,4 +1,4 @@
-{ '@type': "CompilationUnit",
+{ '@type': "java:CompilationUnit",
    '@role': [File],
    '@pos': { '@type': "uast:Positions",
       start: { '@type': "uast:Position",
@@ -14,7 +14,7 @@
    imports: ~,
    package: ~,
    types: [
-      { '@type': "EnumDeclaration",
+      { '@type': "java:EnumDeclaration",
          '@role': [Declaration, Enumeration, Type],
          '@pos': { '@type': "uast:Positions",
             start: { '@type': "uast:Position",
@@ -30,7 +30,7 @@
          },
          bodyDeclarations: ~,
          enumConstants: [
-            { '@type': "EnumConstantDeclaration",
+            { '@type': "java:EnumConstantDeclaration",
                '@role': [Declaration, Enumeration],
                '@pos': { '@type': "uast:Positions",
                   start: { '@type': "uast:Position",
