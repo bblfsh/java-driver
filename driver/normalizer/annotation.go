@@ -55,6 +55,8 @@ var (
 		// method
 		"synchronized": {role.Incomplete},
 		"native":       {role.Incomplete},
+		// interface method
+		"default": {role.Incomplete},
 	})
 	infixRoles = StringToRolesMap(map[string][]role.Role{
 		"+":   {role.Arithmetic, role.Add},
