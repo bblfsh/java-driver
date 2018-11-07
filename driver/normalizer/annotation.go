@@ -496,8 +496,8 @@ var Annotations = []Mapping{
 	AnnotateType("MemberRef", nil, role.Documentation, role.Variable, role.Incomplete),
 	AnnotateType("MethodRef", nil, role.Documentation, role.Function, role.Incomplete),
 	AnnotateType("MethodRefParameter", nil, role.Documentation, role.Function, role.Incomplete),
-	AnnotateType("TagElement", nil, role.Documentation, role.Incomplete),
-	AnnotateType("TextElement", nil, role.Documentation, role.Incomplete),
+	AnnotateType("TagElement", nil, role.Comment, role.Documentation, role.Incomplete),
+	AnnotateType("TextElement", nil, role.Comment, role.Documentation, role.Incomplete),
 
 	// Other expressions
 	AnnotateType("ArrayAccess", nil, role.Expression, role.Incomplete),

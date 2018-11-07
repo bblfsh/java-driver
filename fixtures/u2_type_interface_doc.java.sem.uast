@@ -47,7 +47,7 @@
             },
             tags: [
                { '@type': "java:TagElement",
-                  '@role': [Documentation, Incomplete],
+                  '@role': [Comment, Documentation, Incomplete],
                   '@pos': { '@type': "uast:Positions",
                      start: { '@type': "uast:Position",
                         offset: 7,
@@ -62,7 +62,7 @@
                   },
                   fragments: [
                      { '@type': "java:TextElement",
-                        '@role': [Documentation, Incomplete],
+                        '@role': [Comment, Documentation, Incomplete],
                         '@pos': { '@type': "uast:Positions",
                            start: { '@type': "uast:Position",
                               offset: 7,
