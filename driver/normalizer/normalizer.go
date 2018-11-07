@@ -225,6 +225,13 @@ var Normalizers = []Mapping{
 			),
 		},
 	)),
+
+	MapSemantic("Javadoc", uast.Comment{}, MapObj(
+		Obj{
+			"text": CommentText([2]string{"/**", "*/"}, "comm"),
+		},
+		CommentNode(true, "comm", nil),
+	)),
 }
 
 var argsPart = Each("args", UASTType(uast.Argument{}, Obj{
