@@ -6,5 +6,7 @@ class Code {
             case 2: System.out.println("1"); break;
             default: System.out.println("default"); break;
         }
+        switch (1) {
+        }
     }
 }
