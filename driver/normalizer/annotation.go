@@ -558,7 +558,7 @@ func (opSwitchStmtGroup) Kinds() nodes.Kind {
 
 func (op opSwitchStmtGroup) Check(st *State, n nodes.Node) (bool, error) {
 	cases, ok := n.(nodes.Array)
-	if !ok {
+	if !ok && n != nil {
 		return false, nil
 	}
 	var out nodes.Array
@@ -602,7 +602,7 @@ func (op opSwitchStmtGroup) Construct(st *State, _ nodes.Node) (nodes.Node, erro
 		return nil, err
 	}
 	stmts, ok := o.(nodes.Array)
-	if !ok {
+	if !ok && o != nil {
 		return nil, ErrExpectedList.New(o)
 	}
 	var out nodes.Array
