@@ -123,7 +123,7 @@ var (
 )
 
 func annotateModifiers(typ string, mod string, roles ...role.Role) Mapping {
-	c := Any(Has{
+	c := AnyElem(Has{
 		uast.KeyToken: String(mod),
 	})
 	if mod == "" {
