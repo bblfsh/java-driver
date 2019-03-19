@@ -1,6 +1,5 @@
 {
    CompilationUnit: { '@type': "CompilationUnit",
-      '@role': [Unannotated],
       '@pos': { '@type': "uast:Positions",
          start: { '@type': "uast:Position",
             offset: 0,
@@ -14,7 +13,6 @@
       },
       imports: [
          { '@type': "ImportDeclaration",
-            '@role': [Unannotated],
             '@pos': { '@type': "uast:Positions",
                start: { '@type': "uast:Position",
                   offset: 0,
@@ -28,7 +26,6 @@
                },
             },
             name: { '@type': "QualifiedName",
-               '@role': [Unannotated],
                '@pos': { '@type': "uast:Positions",
                   start: { '@type': "uast:Position",
                      offset: 7,
@@ -42,7 +39,6 @@
                   },
                },
                name: { '@type': "SimpleName",
-                  '@role': [Unannotated],
                   '@pos': { '@type': "uast:Positions",
                      start: { '@type': "uast:Position",
                         offset: 11,
@@ -58,7 +54,6 @@
                   identifier: "foo",
                },
                qualifier: { '@type': "SimpleName",
-                  '@role': [Unannotated],
                   '@pos': { '@type': "uast:Positions",
                      start: { '@type': "uast:Position",
                         offset: 7,

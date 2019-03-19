@@ -1,6 +1,5 @@
 {
    CompilationUnit: { '@type': "CompilationUnit",
-      '@role': [Unannotated],
       '@pos': { '@type': "uast:Positions",
          start: { '@type': "uast:Position",
             offset: 0,
@@ -16,7 +15,6 @@
       package: ~,
       types: [
          { '@type': "EnumDeclaration",
-            '@role': [Unannotated],
             '@pos': { '@type': "uast:Positions",
                start: { '@type': "uast:Position",
                   offset: 0,
@@ -32,7 +30,6 @@
             bodyDeclarations: ~,
             enumConstants: [
                { '@type': "EnumConstantDeclaration",
-                  '@role': [Unannotated],
                   '@pos': { '@type': "uast:Positions",
                      start: { '@type': "uast:Position",
                         offset: 9,
@@ -50,7 +47,6 @@
                   javadoc: ~,
                   modifiers: ~,
                   name: { '@type': "SimpleName",
-                     '@role': [Unannotated],
                      '@pos': { '@type': "uast:Positions",
                         start: { '@type': "uast:Position",
                            offset: 9,
@@ -70,7 +66,6 @@
             javadoc: ~,
             modifiers: ~,
             name: { '@type': "SimpleName",
-               '@role': [Unannotated],
                '@pos': { '@type': "uast:Positions",
                   start: { '@type': "uast:Position",
                      offset: 5,

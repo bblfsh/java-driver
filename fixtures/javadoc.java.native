@@ -1,6 +1,5 @@
 {
    CompilationUnit: { '@type': "CompilationUnit",
-      '@role': [Unannotated],
       '@pos': { '@type': "uast:Positions",
          start: { '@type': "uast:Position",
             offset: 0,
@@ -14,7 +13,6 @@
       },
       comments: [
          { '@type': "Javadoc",
-            '@role': [Unannotated],
             '@pos': { '@type': "uast:Positions",
                start: { '@type': "uast:Position",
                   offset: 44,
@@ -30,7 +28,6 @@
             text: "/** javadoc comment inline */",
          },
          { '@type': "Javadoc",
-            '@role': [Unannotated],
             '@pos': { '@type': "uast:Positions",
                start: { '@type': "uast:Position",
                   offset: 77,
@@ -50,7 +47,6 @@
       package: ~,
       types: [
          { '@type': "TypeDeclaration",
-            '@role': [Unannotated],
             '@pos': { '@type': "uast:Positions",
                start: { '@type': "uast:Position",
                   offset: 0,
@@ -66,7 +62,6 @@
             bodyDeclarations: ~,
             interface: "false",
             javadoc: { '@type': "Javadoc",
-               '@role': [Unannotated],
                '@pos': { '@type': "uast:Positions",
                   start: { '@type': "uast:Position",
                      offset: 0,
@@ -81,7 +76,6 @@
                },
                tags: [
                   { '@type': "TagElement",
-                     '@role': [Unannotated],
                      '@pos': { '@type': "uast:Positions",
                         start: { '@type': "uast:Position",
                            offset: 4,
@@ -96,7 +90,6 @@
                      },
                      fragments: [
                         { '@type': "TextElement",
-                           '@role': [Unannotated],
                            '@pos': { '@type': "uast:Positions",
                               start: { '@type': "uast:Position",
                                  offset: 4,
@@ -118,7 +111,6 @@
             },
             modifiers: ~,
             name: { '@type': "SimpleName",
-               '@role': [Unannotated],
                '@pos': { '@type': "uast:Positions",
                   start: { '@type': "uast:Position",
                      offset: 40,
