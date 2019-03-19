@@ -116,19 +116,11 @@
                     </archive>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.0.0-M3</version>
+            </plugin>
         </plugins>
-        <pluginManagement>
-            <plugins>
-                <plugin>
-                    <!-- Pin version to workaround
-                    "Error: Could not find or load main class org.apache.maven.surefire.booter.ForkedBooter"
-                    See http://archive.is/uKy4m for details.
-                    TODO(bzz) removed after java is update to >8u191-b12 (does not exist for openjdk:8-slim) -->
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-surefire-plugin</artifactId>
-                    <version>3.0.0-M3</version>
-                </plugin>
-            </plugins>
-        </pluginManagement>
     </build>
 </project>
