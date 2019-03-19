@@ -1,6 +1,5 @@
 {
    CompilationUnit: { '@type': "CompilationUnit",
-      '@role': [Unannotated],
       '@pos': { '@type': "uast:Positions",
          start: { '@type': "uast:Position",
             offset: 0,
@@ -14,7 +13,6 @@
       },
       comments: [
          { '@type': "LineComment",
-            '@role': [Unannotated],
             '@pos': { '@type': "uast:Positions",
                start: { '@type': "uast:Position",
                   offset: 0,
@@ -30,7 +28,6 @@
             text: "// first comment before",
          },
          { '@type': "LineComment",
-            '@role': [Unannotated],
             '@pos': { '@type': "uast:Positions",
                start: { '@type': "uast:Position",
                   offset: 34,
@@ -46,7 +43,6 @@
             text: "// comment inline",
          },
          { '@type': "LineComment",
-            '@role': [Unannotated],
             '@pos': { '@type': "uast:Positions",
                start: { '@type': "uast:Position",
                   offset: 54,
@@ -66,7 +62,6 @@
       package: ~,
       types: [
          { '@type': "TypeDeclaration",
-            '@role': [Unannotated],
             '@pos': { '@type': "uast:Positions",
                start: { '@type': "uast:Position",
                   offset: 24,
@@ -84,7 +79,6 @@
             javadoc: ~,
             modifiers: ~,
             name: { '@type': "SimpleName",
-               '@role': [Unannotated],
                '@pos': { '@type': "uast:Positions",
                   start: { '@type': "uast:Position",
                      offset: 30,

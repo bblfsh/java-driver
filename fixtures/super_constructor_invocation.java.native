@@ -1,6 +1,5 @@
 {
    CompilationUnit: { '@type': "CompilationUnit",
-      '@role': [Unannotated],
       '@pos': { '@type': "uast:Positions",
          start: { '@type': "uast:Position",
             offset: 0,
@@ -16,7 +15,6 @@
       package: ~,
       types: [
          { '@type': "TypeDeclaration",
-            '@role': [Unannotated],
             '@pos': { '@type': "uast:Positions",
                start: { '@type': "uast:Position",
                   offset: 0,
@@ -31,7 +29,6 @@
             },
             bodyDeclarations: [
                { '@type': "MethodDeclaration",
-                  '@role': [Unannotated],
                   '@pos': { '@type': "uast:Positions",
                      start: { '@type': "uast:Position",
                         offset: 12,
@@ -45,7 +42,6 @@
                      },
                   },
                   body: { '@type': "Block",
-                     '@role': [Unannotated],
                      '@pos': { '@type': "uast:Positions",
                         start: { '@type': "uast:Position",
                            offset: 16,
@@ -60,7 +56,6 @@
                      },
                      statements: [
                         { '@type': "SuperConstructorInvocation",
-                           '@role': [Unannotated],
                            '@pos': { '@type': "uast:Positions",
                               start: { '@type': "uast:Position",
                                  offset: 18,
@@ -84,7 +79,6 @@
                   javadoc: ~,
                   modifiers: ~,
                   name: { '@type': "SimpleName",
-                     '@role': [Unannotated],
                      '@pos': { '@type': "uast:Positions",
                         start: { '@type': "uast:Position",
                            offset: 12,
@@ -111,7 +105,6 @@
             javadoc: ~,
             modifiers: ~,
             name: { '@type': "SimpleName",
-               '@role': [Unannotated],
                '@pos': { '@type': "uast:Positions",
                   start: { '@type': "uast:Position",
                      offset: 6,

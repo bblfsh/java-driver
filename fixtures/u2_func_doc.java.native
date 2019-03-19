@@ -1,6 +1,5 @@
 {
    CompilationUnit: { '@type': "CompilationUnit",
-      '@role': [Unannotated],
       '@pos': { '@type': "uast:Positions",
          start: { '@type': "uast:Position",
             offset: 0,
@@ -17,7 +16,6 @@
       package: ~,
       types: [
          { '@type': "TypeDeclaration",
-            '@role': [Unannotated],
             '@pos': { '@type': "uast:Positions",
                start: { '@type': "uast:Position",
                   offset: 0,
@@ -32,7 +30,6 @@
             },
             bodyDeclarations: [
                { '@type': "MethodDeclaration",
-                  '@role': [Unannotated],
                   '@pos': { '@type': "uast:Positions",
                      start: { '@type': "uast:Position",
                         offset: 21,
@@ -46,7 +43,6 @@
                      },
                   },
                   body: { '@type': "Block",
-                     '@role': [Unannotated],
                      '@pos': { '@type': "uast:Positions",
                         start: { '@type': "uast:Position",
                            offset: 76,
@@ -64,7 +60,6 @@
                   constructor: "false",
                   'extraDimensions2': ~,
                   javadoc: { '@type': "Javadoc",
-                     '@role': [Unannotated],
                      '@pos': { '@type': "uast:Positions",
                         start: { '@type': "uast:Position",
                            offset: 21,
@@ -79,7 +74,6 @@
                      },
                      tags: [
                         { '@type': "TagElement",
-                           '@role': [Unannotated],
                            '@pos': { '@type': "uast:Positions",
                               start: { '@type': "uast:Position",
                                  offset: 32,
@@ -94,7 +88,6 @@
                            },
                            fragments: [
                               { '@type': "TextElement",
-                                 '@role': [Unannotated],
                                  '@pos': { '@type': "uast:Positions",
                                     start: { '@type': "uast:Position",
                                        offset: 32,
@@ -116,7 +109,6 @@
                   },
                   modifiers: ~,
                   name: { '@type': "SimpleName",
-                     '@role': [Unannotated],
                      '@pos': { '@type': "uast:Positions",
                         start: { '@type': "uast:Position",
                            offset: 65,
@@ -135,7 +127,6 @@
                   receiverQualifier: ~,
                   receiverType: ~,
                   'returnType2': { '@type': "PrimitiveType",
-                     '@role': [Unannotated],
                      '@pos': { '@type': "uast:Positions",
                         start: { '@type': "uast:Position",
                            offset: 60,
@@ -159,7 +150,6 @@
             javadoc: ~,
             modifiers: ~,
             name: { '@type': "SimpleName",
-               '@role': [Unannotated],
                '@pos': { '@type': "uast:Positions",
                   start: { '@type': "uast:Position",
                      offset: 6,

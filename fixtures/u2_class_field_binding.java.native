@@ -1,6 +1,5 @@
 {
    CompilationUnit: { '@type': "CompilationUnit",
-      '@role': [Unannotated],
       '@pos': { '@type': "uast:Positions",
          start: { '@type': "uast:Position",
             offset: 0,
@@ -16,7 +15,6 @@
       package: ~,
       types: [
          { '@type': "TypeDeclaration",
-            '@role': [Unannotated],
             '@pos': { '@type': "uast:Positions",
                start: { '@type': "uast:Position",
                   offset: 0,
@@ -31,7 +29,6 @@
             },
             bodyDeclarations: [
                { '@type': "FieldDeclaration",
-                  '@role': [Unannotated],
                   '@pos': { '@type': "uast:Positions",
                      start: { '@type': "uast:Position",
                         offset: 21,
@@ -46,7 +43,6 @@
                   },
                   fragments: [
                      { '@type': "VariableDeclarationFragment",
-                        '@role': [Unannotated],
                         '@pos': { '@type': "uast:Positions",
                            start: { '@type': "uast:Position",
                               offset: 35,
@@ -62,7 +58,6 @@
                         'extraDimensions2': ~,
                         initializer: ~,
                         name: { '@type': "SimpleName",
-                           '@role': [Unannotated],
                            '@pos': { '@type': "uast:Positions",
                               start: { '@type': "uast:Position",
                                  offset: 35,
@@ -82,7 +77,6 @@
                   javadoc: ~,
                   modifiers: [
                      { '@type': "Modifier",
-                        '@role': [Unannotated],
                         '@pos': { '@type': "uast:Positions",
                            start: { '@type': "uast:Position",
                               offset: 21,
@@ -99,7 +93,6 @@
                      },
                   ],
                   type: { '@type': "SimpleType",
-                     '@role': [Unannotated],
                      '@pos': { '@type': "uast:Positions",
                         start: { '@type': "uast:Position",
                            offset: 28,
@@ -114,7 +107,6 @@
                      },
                      annotations: ~,
                      name: { '@type': "SimpleName",
-                        '@role': [Unannotated],
                         '@pos': { '@type': "uast:Positions",
                            start: { '@type': "uast:Position",
                               offset: 28,
@@ -136,7 +128,6 @@
             javadoc: ~,
             modifiers: ~,
             name: { '@type': "SimpleName",
-               '@role': [Unannotated],
                '@pos': { '@type': "uast:Positions",
                   start: { '@type': "uast:Position",
                      offset: 6,
