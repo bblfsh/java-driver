@@ -22,7 +22,7 @@ public class DriverTest {
         final Driver driver = new Driver(reader, writer);
         driver.processOne();
         driver.processOne();
-        //TODO: check output
+        // TODO: check output
     }
 
     @Test
@@ -37,7 +37,8 @@ public class DriverTest {
         final Driver driver = new Driver(reader, writer);
         try {
             driver.run();
-        } catch (CloseException ex) { }
+        } catch (CloseException ex) {
+        }
     }
 
     @Test
@@ -67,7 +68,8 @@ public class DriverTest {
         driver.processOne();
 
         final String result = new String(out.toByteArray());
-        assertThat(result).isEqualTo("{\"status\":\"fatal\",\"errors\":[\"Unrecognized token 'garbage': was expecting ('true', 'false' or 'null')\\n at [Source: (String)\\\"garbage\\\"; line: 1, column: 15]\"]}\n");
+        assertThat(result).isEqualTo(
+                "{\"status\":\"fatal\",\"errors\":[\"Unrecognized token 'garbage': was expecting ('true', 'false' or 'null')\\n at [Source: (String)\\\"garbage\\\"; line: 1, column: 15]\"]}\n");
     }
 
     @Test
@@ -81,6 +83,6 @@ public class DriverTest {
 
         final Driver driver = new Driver(reader, writer);
         driver.processOne();
-        //TODO: check output
+        // TODO: check output
     }
 }

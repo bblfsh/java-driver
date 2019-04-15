@@ -40,8 +40,8 @@ public class CompilationUnitSerializer extends StdSerializer<CompilationUnit> {
         jG.writeEndObject();
     }
 
-    private void serializeAll(CompilationUnit cu, ASTNode node, JsonGenerator jG,
-                              SerializerProvider provider) throws IOException {
+    private void serializeAll(CompilationUnit cu, ASTNode node, JsonGenerator jG, SerializerProvider provider)
+            throws IOException {
         List<StructuralPropertyDescriptor> descriptorList = node.structuralPropertiesForType();
         jG.writeStartObject();
 
@@ -72,9 +72,10 @@ public class CompilationUnitSerializer extends StdSerializer<CompilationUnit> {
                 jG.writeFieldName("comments");
                 jG.writeStartArray();
 
-                for (Comment c: (List<Comment>) cu.getCommentList()) {
-                    if (c.getParent() != null)
+                for (Comment c : cl) {
+                    if (c.getParent() != null) {
                         continue;
+                    }
 
                     CommentVisitor visitor = new CommentVisitor(cu, contentLines);
                     c.accept(visitor);
@@ -86,7 +87,7 @@ public class CompilationUnitSerializer extends StdSerializer<CompilationUnit> {
                     jG.writeString(name);
                     jG.writeFieldName("text");
                     jG.writeString(visitor.getCommentText());
-                    serializePosition(cu, (ASTNode)c, jG);
+                    serializePosition(cu, (ASTNode) c, jG);
                     jG.writeEndObject();
                 }
                 jG.writeEndArray();
@@ -96,10 +97,8 @@ public class CompilationUnitSerializer extends StdSerializer<CompilationUnit> {
         jG.writeEndObject();
     }
 
-    private void serializeChildList(CompilationUnit cu, List<ASTNode> children,
-                                    JsonGenerator jG,
-                                    StructuralPropertyDescriptor descriptor,
-                                    SerializerProvider provider) throws IOException {
+    private void serializeChildList(CompilationUnit cu, List<ASTNode> children, JsonGenerator jG,
+            StructuralPropertyDescriptor descriptor, SerializerProvider provider) throws IOException {
         jG.writeFieldName(descriptor.getId());
         if (children.size() < 1) {
             jG.writeNull();
@@ -112,7 +111,8 @@ public class CompilationUnitSerializer extends StdSerializer<CompilationUnit> {
         jG.writeEndArray();
     }
 
-    private void serializeChild(CompilationUnit cu, ASTNode child, JsonGenerator jG, StructuralPropertyDescriptor descriptor, SerializerProvider provider) throws IOException {
+    private void serializeChild(CompilationUnit cu, ASTNode child, JsonGenerator jG,
+            StructuralPropertyDescriptor descriptor, SerializerProvider provider) throws IOException {
         jG.writeFieldName(descriptor.getId());
         serializeAll(cu, child, jG, provider);
     }
@@ -133,7 +133,8 @@ public class CompilationUnitSerializer extends StdSerializer<CompilationUnit> {
         jG.writeEndObject();
     }
 
-    private void serializePositionFields(CompilationUnit cu, JsonGenerator jG, int pos, String name) throws IOException {
+    private void serializePositionFields(CompilationUnit cu, JsonGenerator jG, int pos, String name)
+            throws IOException {
         jG.writeFieldName(name);
         jG.writeStartObject();
 
