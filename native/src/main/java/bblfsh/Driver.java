@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
 public class Driver {
 
     private final RequestReader reader;
-    private final ResponseWriter writer;
+    final ResponseWriter writer;
     private final EclipseParser parser;
 
     public Driver(final RequestReader reader, final ResponseWriter writer) {

@@ -6,6 +6,7 @@ import com.fasterxml.jackson.databind.ser.std.StdSerializer;
 import org.eclipse.jdt.core.dom.ASTNode;
 import org.eclipse.jdt.core.dom.Comment;
 import org.eclipse.jdt.core.dom.CompilationUnit;
+import org.eclipse.jdt.core.dom.StringLiteral;
 import org.eclipse.jdt.core.dom.StructuralPropertyDescriptor;
 
 import java.io.IOException;
@@ -49,6 +50,11 @@ public class CompilationUnitSerializer extends StdSerializer<CompilationUnit> {
         String ClassName = node.nodeClassForType(Ntype).getName().substring(25);
         jG.writeFieldName("@type");
         jG.writeString(ClassName);
+
+        if (node instanceof StringLiteral) { // add un-quoted & un-escaped StringLiteral
+            jG.writeFieldName("unescapedValue");
+            jG.writeString(((StringLiteral) node).getLiteralValue());
+        }
 
         for (StructuralPropertyDescriptor descriptor : descriptorList) {
             Object child = node.getStructuralProperty(descriptor);
