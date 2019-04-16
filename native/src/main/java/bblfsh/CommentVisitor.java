@@ -1,6 +1,5 @@
 package bblfsh;
 
-import org.eclipse.jdt.core.dom.ASTNode;
 import org.eclipse.jdt.core.dom.ASTVisitor;
 import org.eclipse.jdt.core.dom.BlockComment;
 import org.eclipse.jdt.core.dom.Comment;
@@ -53,7 +52,7 @@ public class CommentVisitor extends ASTVisitor {
 
         StringBuffer blockComment = new StringBuffer();
 
-        for (int lineCount = startLineNumber ; lineCount <= endLineNumber; lineCount++) {
+        for (int lineCount = startLineNumber; lineCount <= endLineNumber; lineCount++) {
 
             int startCol = lineCount == startLineNumber ? startLineColumn : 0;
             int endCol = lineCount == endLineNumber ? endLineColumn : source[lineCount].length();
