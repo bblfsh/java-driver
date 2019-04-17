@@ -10,7 +10,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/require"
-	"gopkg.in/bblfsh/sdk.v2/uast"
+	"github.com/bblfsh/sdk/v3/uast"
 )
 
 var (

@@ -1,11 +1,16 @@
 package normalizer
 
 import (
-	"gopkg.in/bblfsh/sdk.v2/uast"
-	. "gopkg.in/bblfsh/sdk.v2/uast/transformer"
+	"github.com/bblfsh/sdk/v3/uast"
+	. "github.com/bblfsh/sdk/v3/uast/transformer"
 )
 
 var Preprocess []Transformer
+
+// PreprocessCode is a preprocessor stage that can use the source code to
+// fix tokens and positional information.
+// Java already provides all the information we need.
+var PreprocessCode []CodeTransformer
 
 var Normalize = Transformers([][]Transformer{
 	// The main block of normalization rules.

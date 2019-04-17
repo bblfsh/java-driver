@@ -1,20 +1,20 @@
 package normalizer
 
 import (
-	"gopkg.in/bblfsh/sdk.v2/uast"
-	"gopkg.in/bblfsh/sdk.v2/uast/nodes"
-	"gopkg.in/bblfsh/sdk.v2/uast/role"
-	. "gopkg.in/bblfsh/sdk.v2/uast/transformer"
+	"github.com/bblfsh/sdk/v3/uast"
+	"github.com/bblfsh/sdk/v3/uast/nodes"
+	"github.com/bblfsh/sdk/v3/uast/role"
+	. "github.com/bblfsh/sdk/v3/uast/transformer"
 )
 
 // Native is the of list `transformer.Transformer` to apply to a native AST.
 // To learn more about the Transformers and the available ones take a look to:
-// https://godoc.org/gopkg.in/bblfsh/sdk.v2/uast/transformer
+// https://godoc.org/github.com/bblfsh/sdk/v3/uast/transformer
 var Native = Transformers([][]Transformer{
 	{
 		// ResponseMetadata is a transform that trims response metadata from AST.
 		//
-		// https://godoc.org/gopkg.in/bblfsh/sdk.v2/uast#ResponseMetadata
+		// https://godoc.org/github.com/bblfsh/sdk/v3/uast#ResponseMetadata
 		ResponseMetadata{
 			TopLevelIsRootNode: false,
 		},
@@ -27,13 +27,6 @@ var Native = Transformers([][]Transformer{
 		RolesDedup(),
 	},
 }...)
-
-// PreprocessCode is a preprocessor stage that can use the source code to
-// fix tokens and positional information.
-// Java already provides all the information we need.
-var PreprocessCode = []CodeTransformer{}
-
-var Code []CodeTransformer  //TODO(bzz): deprecated
 
 var (
 	modifierRoles = StringToRolesMap(map[string][]role.Role{
