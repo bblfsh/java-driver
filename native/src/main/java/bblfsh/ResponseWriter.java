@@ -13,7 +13,7 @@ import java.io.OutputStream;
 
 public class ResponseWriter {
 
-    private final OutputStream out;
+    final OutputStream out;
     private final ObjectMapper mapper;
     private String content;
     private CompilationUnitSerializer cu;

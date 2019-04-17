@@ -28,15 +28,15 @@ public class EclipseParser {
     }
 
     /**
-     * Parse the code and generate the JSON in outJ
+     * Parses the given source code text.
      *
      * @param source String to parses
      * @return CompilationUnit of the AST
-     * @throws IOException if anything related to I/O or Json generation failed
+     * @throws IllegalStateException if parser is not configured properly.
      */
     public CompilationUnit parse(final String source) throws IOException {
         parser.setSource(source.toCharArray());
-        Map options = JavaCore.getOptions();
+        Map<String, String> options = JavaCore.getOptions();
         JavaCore.setComplianceOptions(JavaCore.VERSION_1_8, options);
         parser.setCompilerOptions(options);
         return (CompilationUnit) parser.createAST(null);

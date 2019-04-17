@@ -2,19 +2,16 @@ package bblfsh;
 
 import org.eclipse.jdt.core.dom.Message;
 
-import sun.reflect.annotation.ExceptionProxy;
-
 import java.io.IOException;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.stream.Stream;
 import java.util.stream.Collectors;
 
 public class Driver {
 
     private final RequestReader reader;
-    private final ResponseWriter writer;
+    final ResponseWriter writer;
     private final EclipseParser parser;
 
     public Driver(final RequestReader reader, final ResponseWriter writer) {
@@ -70,9 +67,8 @@ public class Driver {
         } catch (IOException e) {
             return createFatalResponse(e);
         }
-        response.errors = Arrays.stream(response.ast.getMessages())
-            .map(Message::getMessage)
-            .collect(Collectors.toCollection(ArrayList::new));
+        response.errors = Arrays.stream(response.ast.getMessages()).map(Message::getMessage)
+                .collect(Collectors.toCollection(ArrayList::new));
         response.status = response.errors.isEmpty() ? "ok" : "error";
         return response;
     }

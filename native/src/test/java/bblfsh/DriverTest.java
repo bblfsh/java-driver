@@ -4,7 +4,13 @@ import org.junit.Test;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
+import java.io.IOException;
 import java.io.InputStream;
+
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.node.ObjectNode;
 
 import static org.fest.assertions.Assertions.*;
 
@@ -22,7 +28,7 @@ public class DriverTest {
         final Driver driver = new Driver(reader, writer);
         driver.processOne();
         driver.processOne();
-        //TODO: check output
+        // TODO: check output
     }
 
     @Test
@@ -37,7 +43,8 @@ public class DriverTest {
         final Driver driver = new Driver(reader, writer);
         try {
             driver.run();
-        } catch (CloseException ex) { }
+        } catch (CloseException ex) {
+        }
     }
 
     @Test
@@ -67,20 +74,44 @@ public class DriverTest {
         driver.processOne();
 
         final String result = new String(out.toByteArray());
-        assertThat(result).isEqualTo("{\"status\":\"fatal\",\"errors\":[\"Unrecognized token 'garbage': was expecting ('true', 'false' or 'null')\\n at [Source: (String)\\\"garbage\\\"; line: 1, column: 15]\"]}\n");
+        assertThat(result).isEqualTo(
+                "{\"status\":\"fatal\",\"errors\":[\"Unrecognized token 'garbage': was expecting ('true', 'false' or 'null')\\n at [Source: (String)\\\"garbage\\\"; line: 1, column: 15]\"]}\n");
     }
 
     @Test
     public void processComment() throws DriverException, CloseException {
         final String input = "{\"content\":\"class EOF_Test { public void method() {\\r\\n   /*\\r\\n*/ } }\"}";
+        final Driver driver = process(input);
+        driver.processOne();
+        // TODO: check output
+    }
+
+    @Test
+    public void processStringLiteral() throws DriverException, IOException {
+        // give
+        final String input = "{\"content\":\"class String_Test { String s = \\\"b\\\\nc\\\\41\\\"; \\r\\n }\"}";
+        final Driver driver = process(input);
+
+        // when
+        driver.processOne();
+
+        // then check a new node is present \w normalized value
+        String json = driver.writer.out.toString();
+        final ObjectNode node = new ObjectMapper().readValue(json, ObjectNode.class);
+        JsonNode newNode = node.findPath("unescapedValue");
+
+        assertThat(newNode.isMissingNode()).isFalse();
+        assertThat(newNode.asText()).isEqualTo("b\nc!");
+    }
+
+    public Driver process(String input) {
         final InputStream in = new ByteArrayInputStream(input.getBytes());
         final RequestReader reader = new RequestReader(in);
 
         final ByteArrayOutputStream out = new ByteArrayOutputStream();
         final ResponseWriter writer = new ResponseWriter(out);
 
-        final Driver driver = new Driver(reader, writer);
-        driver.processOne();
-        //TODO: check output
+        return new Driver(reader, writer);
     }
+
 }

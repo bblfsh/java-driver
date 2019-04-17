@@ -14,8 +14,9 @@ var Normalize = Transformers([][]Transformer{
 
 var Normalizers = []Mapping{
 	MapSemantic("StringLiteral", uast.String{}, MapObj(
-		Obj{
-			"escapedValue": Quote(Var("val")),
+		Fields{
+			{Name: "unescapedValue", Op: Var("val")},
+			{Name: "escapedValue", Drop: true, Op: Any()}, // only used in Annotated
 		},
 		Obj{
 			"Value":  Var("val"),
