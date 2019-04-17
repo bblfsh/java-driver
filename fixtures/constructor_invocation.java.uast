@@ -74,6 +74,7 @@
                         },
                         arguments: [
                            { '@type': "NumberLiteral",
+                              '@token': "0",
                               '@role': [Argument, Call, Expression, Literal, Number, Positional],
                               '@pos': { '@type': "uast:Positions",
                                  start: { '@type': "uast:Position",
@@ -87,7 +88,6 @@
                                     col: 11,
                                  },
                               },
-                              token: "0",
                            },
                         ],
                         typeArguments: ~,
