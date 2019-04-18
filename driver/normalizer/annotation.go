@@ -262,9 +262,19 @@ var Annotations = []Mapping{
 	AnnotateType("VariableDeclarationStatement", nil, role.Statement, role.Declaration, role.Variable),
 
 	// Literals
-	AnnotateType("BooleanLiteral", nil, role.Expression, role.Literal, role.Boolean),
 	AnnotateType("TypeLiteral", nil, role.Expression, role.Literal, role.Type),
-	AnnotateType("NumberLiteral", nil, role.Expression, role.Literal, role.Number),
+	AnnotateType("BooleanLiteral",
+		FieldRoles{
+			"booleanValue": {Rename: uast.KeyToken},
+		},
+		role.Expression, role.Literal, role.Boolean,
+	),
+	AnnotateType("NumberLiteral",
+		FieldRoles{
+			"token": {Rename: uast.KeyToken},
+		},
+		role.Expression, role.Literal, role.Number,
+	),
 
 	AnnotateType("NullLiteral",
 		FieldRoles{

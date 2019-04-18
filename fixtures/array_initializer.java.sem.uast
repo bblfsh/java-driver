@@ -122,6 +122,7 @@
                                           },
                                           expressions: [
                                              { '@type': "java:NumberLiteral",
+                                                '@token': "0",
                                                 '@role': [Expression, Literal, Number],
                                                 '@pos': { '@type': "uast:Positions",
                                                    start: { '@type': "uast:Position",
@@ -135,7 +136,6 @@
                                                       col: 18,
                                                    },
                                                 },
-                                                token: "0",
                                              },
                                           ],
                                        },

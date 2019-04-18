@@ -317,6 +317,7 @@
                                                 '@role': [Add, Arithmetic, Binary, Expression, Operator],
                                              },
                                              rightOperand: { '@type': "java:NumberLiteral",
+                                                '@token': "1",
                                                 '@role': [Binary, Expression, Literal, Number, Right],
                                                 '@pos': { '@type': "uast:Positions",
                                                    start: { '@type': "uast:Position",
@@ -330,7 +331,6 @@
                                                       col: 23,
                                                    },
                                                 },
-                                                token: "1",
                                              },
                                           },
                                           parameters: [
