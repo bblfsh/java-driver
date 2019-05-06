@@ -148,7 +148,7 @@ var Normalizers = []Mapping{
 				{Name: uast.KeyPos, Op: Var("apos")},
 				{Name: "extraDimensions2", Op: Is(nil)},
 				{Name: "initializer", Op: Var("ainit")},
-				{Name: "modifiers", Op: Is(nil)},
+				{Name: "modifiers", Op: Any(), Drop: true}, // FIXME: preserve this array
 				{Name: "name", Op: Var("aname")},
 				{Name: "type", Op: Var("atype")},
 				{Name: "varargs", Op: Cases("varg", String("false"), String("true"))},
