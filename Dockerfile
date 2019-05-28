@@ -12,7 +12,7 @@
 #==============================
 # Stage 1: Native Driver Build
 #==============================
-FROM openjdk:8-slim as native
+FROM openjdk:8u181-slim as native
 
 # install build dependencies
 RUN apt update && apt install -y maven
@@ -29,6 +29,7 @@ RUN mvn package
 # Stage 1.1: Native Driver Tests
 #================================
 FROM native as native_test
+
 # run native driver tests
 RUN mvn test
 
@@ -36,7 +37,7 @@ RUN mvn test
 #=================================
 # Stage 2: Go Driver Server Build
 #=================================
-FROM golang:1.10-alpine as driver
+FROM golang:1.12-alpine as driver
 
 ENV DRIVER_REPO=github.com/bblfsh/java-driver
 ENV DRIVER_REPO_PATH=/go/src/$DRIVER_REPO
@@ -49,6 +50,9 @@ WORKDIR $DRIVER_REPO_PATH/
 
 ENV GO111MODULE=on GOFLAGS=-mod=vendor
 
+# workaround for https://github.com/golang/go/issues/28065
+ENV CGO_ENABLED=0
+
 # build server binary
 RUN go build -o /tmp/driver ./driver/main.go
 # build tests
@@ -57,7 +61,7 @@ RUN go test -c -o /tmp/fixtures.test ./driver/fixtures/
 #=======================
 # Stage 3: Driver Build
 #=======================
-FROM openjdk:8-jre-alpine
+FROM openjdk:8u181-jre-alpine
 
 
 
