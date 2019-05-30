@@ -3,6 +3,7 @@ package normalizer
 import (
 	"github.com/bblfsh/sdk/v3/uast"
 	. "github.com/bblfsh/sdk/v3/uast/transformer"
+	"github.com/bblfsh/sdk/v3/uast/transformer/positioner"
 )
 
 var Preprocess []Transformer
@@ -10,7 +11,9 @@ var Preprocess []Transformer
 // PreprocessCode is a preprocessor stage that can use the source code to
 // fix tokens and positional information.
 // Java already provides all the information we need.
-var PreprocessCode []CodeTransformer
+var PreprocessCode = []CodeTransformer{
+	positioner.FromUTF16Offset(),
+}
 
 var Normalize = Transformers([][]Transformer{
 	// The main block of normalization rules.
