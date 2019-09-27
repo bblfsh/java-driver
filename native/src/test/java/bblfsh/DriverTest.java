@@ -74,8 +74,8 @@ public class DriverTest {
         driver.processOne();
 
         final String result = new String(out.toByteArray());
-        assertThat(result).isEqualTo(
-                "{\"status\":\"fatal\",\"errors\":[\"Unrecognized token 'garbage': was expecting ('true', 'false' or 'null')\\n at [Source: (String)\\\"garbage\\\"; line: 1, column: 15]\"]}\n");
+        assertThat(result).contains("{\"status\":\"fatal\",\"errors\":[\"");
+        assertThat(result).contains("Unrecognized token 'garbage'");
     }
 
     @Test
