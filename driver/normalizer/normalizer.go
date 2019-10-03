@@ -149,7 +149,7 @@ var Normalizers = []Mapping{
 			"parameters": Each("args", Fields{
 				{Name: uast.KeyType, Op: String("SingleVariableDeclaration")},
 				{Name: uast.KeyPos, Op: Var("apos")},
-				{Name: "extraDimensions2", Op: Is(nil)},
+				{Name: "extraDimensions2", Op: Cases("old_arr", Is(nil), Var("dims2"))},
 				{Name: "initializer", Op: Var("ainit")},
 				{Name: "modifiers", Op: Any(), Drop: true}, // FIXME: preserve this array
 				{Name: "name", Op: Var("aname")},
@@ -270,7 +270,17 @@ var Normalizers = []Mapping{
 var argsPart = Each("args", UASTType(uast.Argument{}, Obj{
 	uast.KeyPos: Var("apos"),
 	"Name":      Var("aname"),
-	"Type":      Var("atype"),
-	"Init":      Var("ainit"),
-	"Variadic":  Cases("varg", Bool(false), Bool(true)),
+	"Type": Cases("old_arr",
+		// case 1: new style (int[] a)
+		Var("atype"),
+		// case 2: old style (int a[]) - synthesize array type
+		Obj{
+			uast.KeyType:  String("ArrayType"),
+			uast.KeyPos:   Obj{},
+			"dimensions":  Var("dims2"),
+			"elementType": Var("atype"),
+		},
+	),
+	"Init":     Var("ainit"),
+	"Variadic": Cases("varg", Bool(false), Bool(true)),
 }))
