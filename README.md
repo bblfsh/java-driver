@@ -1,11 +1,11 @@
-# Java driver for [Babelfish](https://github.com/bblfsh/bblfshd) ![Driver Status](https://img.shields.io/badge/status-beta-dbd25c.svg) [![Build Status](https://travis-ci.org/bblfsh/java-driver.svg?branch=master)](https://travis-ci.org/bblfsh/java-driver) ![Native Version](https://img.shields.io/badge/java%20version-8u181-aa93ea.svg) ![Go Version](https://img.shields.io/badge/go%20version-1.12-63afbf.svg)
+# Java driver for [Babelfish](https://github.com/bblfsh/bblfshd) ![Driver Status](https://img.shields.io/badge/status-beta-dbd25c.svg) [![Build Status](https://travis-ci.org/bblfsh/java-driver.svg?branch=master)](https://travis-ci.org/bblfsh/java-driver) ![Native Version](https://img.shields.io/badge/java%20version-8u181-aa93ea.svg) ![Go Version](https://img.shields.io/badge/go%20version-1.13-63afbf.svg)
 
 Development Environment
 -----------------------
 
 Requirements:
 - `docker`
-- Go 1.12+
+- Go 1.13+
 
 To initialize the build system execute: `go test ./driver`, at the root of the project. This will generate the `Dockerfile` for this driver.
 
